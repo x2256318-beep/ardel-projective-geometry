@@ -110,16 +110,18 @@
 - 本理論は、「Arakelov 幾何の点集合を、Connes の作用素の言葉で貼り合わせ、解像度で見る」と位置づけられる。
 - 裏返せば、点集合・作用素・貼り合わせのそれぞれに強い先行がある。新しさは、それらの組み合わせ方と、解像度という見方の置き方にある。
 - 因子や次数のような量を持たないことは、今後の課題である。
-- アデール類空間を Arakelov 幾何の言葉で扱う最近の試み（2026 年の arXiv 論文）がある。両者の橋渡しとして文献照合の候補になる（本文は未読）。
+- アデール類空間を Arakelov 幾何の言葉で扱う最近の試みとして、Connes–Consani の *On the Jacobian of Spec ℤ*（2026）がある。要旨によれば、有理数のアデール類空間のリーマン部分を Spec ℤ のピカール群の拡張として解釈し、そこでの付加データは Arakelov 幾何の計量つき直線束を拡張したものになる。両者の橋渡しとして文献照合の候補になる（本文は未読）。
 
 ## 参考文献
 
-- A. Connes, C. Consani, *The Scaling Site*, C. R. Math. Acad. Sci. Paris 354 (2016); arXiv:1507.05818
-- A. Connes, C. Consani, *Geometry of the Scaling Site*, Selecta Math. (2017); arXiv:1603.03191
-- A. Connes, C. Consani, *The Riemann–Roch strategy, Complex lift of the Scaling Site*, arXiv:1805.10501
-- S. Arakelov, *Intersection theory of divisors on an arithmetic surface*, Math. USSR Izv. 8 (1974)
-- H. Gillet, C. Soulé, *An arithmetic Riemann–Roch theorem*, Invent. Math. 110 (1992)
-- S. Takagi, *Compactifying Spec ℤ*, arXiv:1203.4914
-- arXiv:2602.15941（アデール類空間と Arakelov 幾何。未読）
-- E. Cohen, *Arithmetical functions associated with the unitary divisors of an integer*, Math. Z. 74 (1960)
-- P. Terwilliger, *The subconstituent algebra of an association scheme I–III*, J. Algebraic Combin. 1–2 (1992–93)
+（2026-11-16 に各文献の実在と書誌を確認した。確認先は括弧内。）
+
+- A. Connes, C. Consani, *The Scaling Site*, C. R. Math. Acad. Sci. Paris 354(1) (2016) 1–6; arXiv:1507.05818（arXiv、Springer の文献表）
+- A. Connes, C. Consani, *Geometry of the Scaling Site*, Selecta Math. (N.S.) (2017), doi:10.1007/s00029-017-0313-y; arXiv:1603.03191（arXiv、著者の公開 PDF）
+- A. Connes, C. Consani, *The Riemann–Roch strategy, Complex lift of the Scaling Site*, arXiv:1805.10501（arXiv）
+- A. Connes, C. Consani, *On the Jacobian of Spec ℤ*, arXiv:2602.15941 (2026)（arXiv。要旨のみ確認、本文は未読）
+- S. Ju. Arakelov, *Intersection theory of divisors on an arithmetic surface*, Math. USSR Izv. 8(6) (1974) 1167–1180（nLab の文献表）
+- H. Gillet, C. Soulé, *An arithmetic Riemann–Roch theorem*, Invent. Math. 110 (1992) 473–543（nLab の文献表）
+- S. Takagi, *Compactifying Spec ℤ*, arXiv:1203.4914（arXiv）
+- E. Cohen, *Arithmetical functions associated with the unitary divisors of an integer*, Math. Z. 74 (1960) 66–80（EuDML、zbMATH 0094.02601）
+- P. Terwilliger, *The subconstituent algebra of an association scheme I*, J. Algebraic Combin. 1(4) (1992) 363–388; *II*, 2(1) (1993) 73–103; *III*, 2(2) (1993) 177–210（EMIS の掲載版、MaRDI）
