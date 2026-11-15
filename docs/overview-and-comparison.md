@@ -1,5 +1,7 @@
 # アーデル射影幾何学の基本構造と、既存の枠組みとの比較
 
+（比較の相手：アデール幾何（標準理論）、Connes の枠組み、Arakelov 幾何、遠アベール幾何）
+
 （2026-11-16。基礎文書の骨格（2026-11-15）と Part 259 までの形式化にもとづく概要。著者の定義・読みの層と、Lean で形式化済みの内容を区別して書く。）
 
 ## 1. 一言でいうと
@@ -105,11 +107,37 @@
 2. **道具立て**：Arakelov 幾何には、因子・交点数・算術次数がある。本理論には、まだこれらに当たる量がない。
 3. **ねらい**：Arakelov 幾何はディオファントス幾何の道具である。本理論の主題は解像度と見え方である。
 
-## 7. 位置づけ（解釈。確信度：中）
+## 7. 遠アベール幾何との比較
+
+**遠アベール幾何の概要**
+- 算術的な多様体 X のエタール基本群（非可換な副有限群）から、X をどこまで復元できるかを問う理論である。
+- 出発点は Grothendieck の Faltings への手紙（1983 年 6 月 27 日）で、「遠アベール」なスキームはエタール基本群で決まるという予想が述べられた。
+- 数体については Neukirch–内田の定理（Neukirch 1969、内田 1976）がある。絶対ガロア群が同型な代数体は同型である。
+- 双曲曲線については、中村・玉川の部分的な結果の後、望月新一が証明を与えた（1999 年の pro-p 版など）。
+- 類体論の一般化の一つと見られる。高次類体論や Langlands プログラムと違い、非可換で強く非線形である。
+- 近年も、S 整数環の上の双曲曲線への拡張などが続いている（Shimizu–Yamaguchi 2025）。
+
+**重なる点**
+- 素数（素点）を点として扱う。
+- Part 251 の両立系の群 unitSys は Ẑ^× の具体モデルで、類体論では ℚ の最大アーベル拡大のガロア群にあたる（標準的な事実）。本理論が扱うのは、遠アベール幾何が「その先」を問う出発点のアーベルな部分である。
+
+**違う点**
+1. **データ**：遠アベール幾何の主役は非可換な基本群である。本理論は、イデール類群・指標・ガウス和・可換な代数 T(0) といった可換なデータの上で動いている。
+2. **問いの型**：遠アベール幾何は復元・剛性を問う。本理論は、幾何の設計と、解像度による見え方を問う。
+3. **無限素点**：遠アベール幾何の中心は有限素点と p 進の側である。本理論は、無限素点の貼り合わせ（境界ユニタリ U）を中心に置く。
+4. **道具**：遠アベール幾何は群論と p 進ホッジ理論を使う。本理論は作用素とフーリエ解析を使う。
+
+**見立てと注意**
+- 解像度の読み L1（測る素点の集合）は、素点の集合 S を指定してガロア群を考える遠アベール幾何の設定（S 整数環の上の Neukirch–内田型の結果など）と形が似ている。比較の候補にはなるが、関係は確かめていない（確信度：低〜中）。
+- 望月の宇宙際タイヒミュラー理論は遠アベール幾何の上に立つが、abc 予想の証明としての評価は分かれている。Scholze と Stix は 2018 年の報告で、証明の要の段（第 3 論文の系 3.12）に深刻な欠落があると主張し、望月はこれに反論している。本理論がこの理論と近いとは書かない。
+- 方法の近い先行として、ZEN 大学の Project LANA（Lean for ANAbelian Geometry）がある。遠アベール幾何の主要な定理を Lean で形式化し、ライブラリを作ることを目標の一つにしている（中間報告は 2026 年 7 月）。
+
+## 8. 位置づけ（解釈。確信度：中）
 
 - 本理論は、「Arakelov 幾何の点集合を、Connes の作用素の言葉で貼り合わせ、解像度で見る」と位置づけられる。
 - 裏返せば、点集合・作用素・貼り合わせのそれぞれに強い先行がある。新しさは、それらの組み合わせ方と、解像度という見方の置き方にある。
 - 因子や次数のような量を持たないことは、今後の課題である。
+- 本理論のデータは可換（アーベル）な側にとどまっている。遠アベール幾何が扱う非可換な基本群の情報には、まだ触れていない。
 - アデール類空間を Arakelov 幾何の言葉で扱う最近の試みとして、Connes–Consani の *On the Jacobian of Spec ℤ*（2026）がある。要旨によれば、有理数のアデール類空間のリーマン部分を Spec ℤ のピカール群の拡張として解釈し、そこでの付加データは Arakelov 幾何の計量つき直線束を拡張したものになる。両者の橋渡しとして文献照合の候補になる（本文は未読）。
 
 ## 参考文献
@@ -125,3 +153,10 @@
 - S. Takagi, *Compactifying Spec ℤ*, arXiv:1203.4914（arXiv）
 - E. Cohen, *Arithmetical functions associated with the unitary divisors of an integer*, Math. Z. 74 (1960) 66–80（EuDML、zbMATH 0094.02601）
 - P. Terwilliger, *The subconstituent algebra of an association scheme I*, J. Algebraic Combin. 1(4) (1992) 363–388; *II*, 2(1) (1993) 73–103; *III*, 2(2) (1993) 177–210（EMIS の掲載版、MaRDI）
+- A. Grothendieck, *Brief an G. Faltings*（1983 年 6 月 27 日）, in: L. Schneps, P. Lochak (eds.), *Geometric Galois Actions 1*, London Math. Soc. Lecture Note Ser. 242, Cambridge Univ. Press (1997)（Cambridge の目次、Grothendieck Circle）
+- J. Neukirch, *Kennzeichnung der p-adischen und der endlichen algebraischen Zahlkörper*, Invent. Math. 6 (1969) 296–314, doi:10.1007/BF01425420（MaRDI、Numdam の文献表）
+- K. Uchida, *Isomorphisms of Galois groups*, J. Math. Soc. Japan 28(4) (1976) 617–620, doi:10.2969/jmsj/02840617（Project Euclid の掲載版、MaRDI）
+- S. Mochizuki, *The local pro-p anabelian geometry of curves*, Invent. Math. 138 (1999) 319–423（著者の公開 PDF、他論文の文献表）
+- R. Shimizu, N. Yamaguchi, *Étale fundamental groups of smooth arithmetic surfaces and the Grothendieck conjecture*, arXiv:2511.06725 (2025)（arXiv）
+- P. Scholze, J. Stix, *Why abc is still a conjecture*（報告、2018）（Scholze の公開 PDF）
+- Project LANA, *Project LANA Interim Report on IUT Theory*（2026 年 7 月）（ZEN 大学の発表、報告の PDF）
