@@ -1,0 +1,1 @@
+盲検の問いテスト（Part 258、段階 1）：general-purpose の新しいエージェント、WebSearch・WebFetch だけ（ツール 10 回、約 205 秒）。依頼文 prompt_blind.md（プロジェクトの言葉を除いた定義と Q1〜Q4）。予想は着手前の文書 §6 に先に書いた。出力は blind_output.md（通知の本文をそのまま写した）。

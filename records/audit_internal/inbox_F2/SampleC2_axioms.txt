@@ -1,0 +1,7 @@
+# SampleC2.out の要点（機械的に抜き出した。error の行の数：0）
+PAG.Audit257C.normSq_rootNum_of_PAG16: [propext, Classical.choice, Quot.sound]
+PAG.Audit257C.rootNum_one_of_eq_one_of_PAG196: [propext, Classical.choice, Quot.sound]
+PAG.Audit257C.units_eq_of_coprime_parts_of_PAG196: [propext, Classical.choice, Quot.sound]
+PAG.Audit257C.exists_primitive_odd_three_of_earlier: [propext, Classical.choice, Quot.sound]
+PAG.Audit257C.hartley_one_of_PAG3: [propext, Classical.choice, Quot.sound]
+PAG.Audit257C.casKer_eq_of_PAG3: [propext, Classical.choice, Quot.sound]

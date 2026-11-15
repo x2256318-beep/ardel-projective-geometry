@@ -1,0 +1,23 @@
+import PAG260
+import PAG3
+import PAG6
+set_option pp.funBinderTypes true
+#check @PAG.Part256.inv_apply_units_inv
+#check @PAG.Part256.sum_mul_stdAddChar_neg
+#check @PAG.Part257.not_isPrimitive_one_of_two_le
+#check @PAG.Part257.charU_one_mem_Vimprim
+#check @PAG.Part258.gaussSum_inv
+#check @PAG.Part257.not_isPrimitive_one_prime
+#check @PAG.Part257.Vprim_two
+#check @PAG.Part260.prodChar_neg_one
+#check @PAG.Part256.normSq_rootNum
+#check @PAG.Part258.rootNum_one_of_eq_one
+#check @PAG.Part255.units_eq_of_coprime_parts
+#check @PAG.Part256.exists_primitive_odd_three
+#check @PAG.Part256.hartley_one
+#check @PAG.Part256.hartley
+#check @PAG.Part3.hartley_char
+#check @PAG.Part256.casKer
+#check @PAG.Part257.charU
+#check @PAG.Part260.crossSign
+#check @PAG.Part256.rootNum

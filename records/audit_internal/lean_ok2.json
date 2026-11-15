@@ -1,0 +1,92 @@
+[
+ {
+  "id": 100448,
+  "goal": "PAG.Part55.ip_smul_left",
+  "using": "PAG.Part253.ipG_smul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part55.ip_smul_left",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 100460,
+  "goal": "PAG.Part229.herm_smul_left",
+  "using": "PAG.Part253.ipG_smul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part229.herm_smul_left",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 100468,
+  "goal": "PAG.Part55.ip_smul_right",
+  "using": "PAG.Part253.ipG_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_right",
+  "cand": "PAG.Part55.ip_smul_right",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 100480,
+  "goal": "PAG.Part229.herm_smul_right",
+  "using": "PAG.Part253.ipG_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_right",
+  "cand": "PAG.Part229.herm_smul_right",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 107126,
+  "goal": "PAG.Part199.cmul_apply",
+  "using": "PAG.Part260.prodChar_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part199.cmul_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 106713,
+  "goal": "PAG.Part260.charU_prodChar",
+  "using": "PAG.Part236.charMul_apply_unit",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part236.charMul_apply_unit",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 106725,
+  "goal": "PAG.Part260.charU_prodChar",
+  "using": "PAG.Part236.charMul_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part236.charMul_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 106729,
+  "goal": "PAG.Part260.charU_prodChar",
+  "using": "PAG.Part199.cmul_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part199.cmul_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 107125,
+  "goal": "PAG.Part260.prodChar_apply",
+  "using": "PAG.Part199.cmul_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part199.cmul_apply",
+  "kind": "thm",
+  "res": "OK"
+ }
+]

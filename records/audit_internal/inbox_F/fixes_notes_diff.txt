@@ -1,0 +1,163 @@
+######## pag2_part249_idele_class_density.md の差分
+--- before_fixes/notes/pag2_part249_idele_class_density.md	2026-11-14 17:28:48.048014412 +0900
++++ /home/claude/out185/pag2_part249_idele_class_density.md	2026-11-14 17:29:43.834972849 +0900
+@@ -352,3 +352,10 @@
+   - 判定不能だった点（B）：「Dirichlet の定理を使わない」は文からは確かめられない。→ Mathlib の該当モジュールが未ビルドで、PAG253 の import の閉包に入らないことを確かめました（§0.2）。
+   - その後（同じ日、著者の了承「3 点とも入れる」）：次の 3 点を PAG253 の §7 に入れました。試しのファイル S7 は 2 回目で通りました（1 回目は if 式の `Decidable (g = 1)` が合成できず、`[DecidableEq G]` を仮定に足しました）。組み立てた PAG253 は 1 回目で通りました。
+   - 入れた 3 点（この行は了承の前に書いた提案の文面）：hD を外した反例（U = M_s はすべての N ≥ 3 で自明な指標だけで示せる）、T_p F = F の形の仮定から M_a・S_s での不変性を出す系、`thm26_prime` の改名。
++
++## 8. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- 前の鎖（PAG.lean〜PAG252.lean と、鎖に import されていない付録 A・PAG 2.0 の初めのファイル PAG3・PAG5・PAG6）に、このパートの宣言と同じ文・直ちに出る文・数行で出る文は見つからなかった（照合者 R1、機械的な照合）。
++- 一般化の関係（示し直しではなく、前の文を特別な場合として含む形）：`ipG` は Part 48 の `ip`・Part 225 の `herm`（法 N の上の内積）を任意の有限型に広げた定義。`ipG_smul_left`・`ipG_smul_right` は Part 51 の `ip_smul_left`・`ip_smul_right`、Part 213 の `inner_smul_left'`、Part 225 の `herm_smul_left`・`herm_smul_right` を含む（前の文がこちらから出ることを Lean で確認）。照合者の判定では、`kUnit_mul_natCast`・`unitsMap_kUnit` は Part 33 の `five_val`・`unitsMap_five` の一般化、`mem_dilCommute_of_prime` は Part 220 の `mem_dilCommute` を強めた形。
++- 定理 2.6 の部分は、基本ファイル（Part 1、PAG.lean）の `eigen_of_commute`・`real_sector_sign` を使って組み立てている（示し直しではない）。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part250_resolution_emergence.md の差分
+--- before_fixes/notes/pag2_part250_resolution_emergence.md	2026-11-14 17:28:48.048056112 +0900
++++ /home/claude/out185/pag2_part250_resolution_emergence.md	2026-11-14 17:29:43.835580603 +0900
+@@ -218,3 +218,9 @@
+ - **直していないもの（提案として記録）。** 鎖の対称性・推移性と商の文、{2^a 3^b} と N と互いに素な有理数の鎖連結、ε > log p での {p^k} の連結、`emergence_contrast` の改名。
+ - **照合を受けていない文。** §6 の 4 文（B の後に追加）。次のパートを閉じるときに含めます。
+ - **較正。** 構築者の予想（`audit250/expected_before_results.md`）で当たったのは、自明な文の多さ、Φ6 が p 進距離でないこと、端の場合の多くです。予想しなかったのは、B の 1 番（基準の非対称）です。A が「ε > 1 では全体がつながる」と指摘した時点で 4f・4g を足しましたが、それが自分の「直線にならない」という言い方の根拠を崩すことには、B に言われるまで気づきませんでした。
++
++## 8. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- 前の鎖に、このパートの宣言と同じ文・直ちに出る文・数行で出る文は見つからなかった（照合者 R1、機械的な照合）。
++- 範囲の中の関係：`dense_logSet_coprime` は Part 249 の `exists_cls_near` から直ちに出る（照合者の判定 B）。`dense_logSet` も同じ定理から数行（C）。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part251_projective_limit.md の差分
+--- before_fixes/notes/pag2_part251_projective_limit.md	2026-11-14 17:28:48.048091357 +0900
++++ /home/claude/out185/pag2_part251_projective_limit.md	2026-11-14 17:29:43.836138564 +0900
+@@ -189,3 +189,10 @@
+ - **直していないもの。** Lean の文は足していません（筒が開集合であること、冪等性、`¬ Dense` の形）。どれも短い文のはずですが、このパートでは言葉の側を弱めました（次の候補）。
+ - **照合を受けていないもの。** B の後に直した文面（このノートの直した箇所、xlsx の直した行、docstring）。形式文は変えていません。
+ - **限界。** エージェントは構築者と同じ系統のモデルで、独立なのは文脈だけです。B に渡した A の結果は構築者の要約です。
++
++## 8. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- `units_eq_of_coprime_parts` は Part 192（PAG196）の `crt_unique` から数行で出る（照合者 R2 の判定 C。Lean で確認：`audit_internal/lean/SampleC.lean`）。
++- 範囲の中の関係：`kUnit_congr` は Part 249 の `kUnit_mul_natCast` から数行（C）。
++- そのほかの主な文（射影系 `unitSys`、素数の類の系 `primeSys`、稠密性 `dense_closure_primeGens` など）は、前の鎖に見つからなかった。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part252_hartley_gluing.md の差分
+--- before_fixes/notes/pag2_part252_hartley_gluing.md	2026-11-14 17:28:48.048113649 +0900
++++ /home/claude/out185/pag2_part252_hartley_gluing.md	2026-11-14 17:29:43.836656877 +0900
+@@ -6,7 +6,7 @@
+   - 重なりの読みは「ねじれた貼り合わせ（U）」と決まっています（同じ回答で、すでに決定済みと確認）。
+   - 着手前の 4 点は `pag2_next_question_preregistration.md` の Q1 です。残余は空で、残るのは計算の細部（モノグラフ §1.3 の主張 (2)「A1 のもとで U = JH_N」の確認）だけ、という判定でした。著者はその Lean 化を選びました。
+   - **記法の注意。** このノートの H_N は正規化しない離散 Hartley 変換で、Lean で扱ったのは J∘H_N/√N です。モノグラフの「JH_N」の正規化は、本文で確かめる必要があります（本文は手元にありません）。
+-  - 盲検の問いテストは済んでいます（同じ文書の §6 の S1：標準的な演習、Hartley の形の文献は見つからず）。
++  - 盲検の問いテストは済んでいます（同じ文書の §6 の S1：標準的な演習、Hartley の形の文献は見つからず）。自分の鎖には付録 A の Part 3（PAG3.lean）の命題 2.8 があった（内部照合 2026-11-14、§9）。
+ - **問い（幾何の言葉で）。** ねじれた貼り合わせの読みでは、無限大の側と無限小の側（切断した円筒の両端）を境界ユニタリ U で貼り合わせます。A1 のもとで、その貼り合わせの写像は何か。
+ - **結論（Lean）。** H_N は離散 Hartley 変換 (H_N f)(y) = Σ_x f(x)(cos + sin)(2π xy/N)、J は単数の上の反転 (Jg)(u) = g(u⁻¹) です。
+   - **すべての指標 χ** について、単数 u で (J H_N χ)(u)/√N = W(χ)·χ(u)、W(χ) = ε(χ)τ(χ)/√N です（`JH_eq_rootNum_mul_any`・`rootNum_eq`。ε(χ) は偶で 1、奇で −i）。単数に台をもつ関数に制限すれば、各指標は J∘H_N/√N の固有ベクトルということです（「乗法的な平行移動と可換だから」という理由づけは Lean の外で、Lean で示したのは各指標についてのこの式です）。
+@@ -187,3 +187,18 @@
+ - **直したもの。** Lean の冒頭の説明 3 か所と docstring 3 個（`rootNum`・`JH_eq_rootNum_mul`・`removal_counterexample_normSq`。形式文は変えていない。組み立て直して確認）。ノートの上の行（題、12・18・23・26・29・31・46・67・84・90・123・141・158・159・170・172 行）と、表の見出しと 1 行（`removal_counterexample_normSq`）。
+ - **第 2 回の直し（B3 の後）。** ノートの 24・26・68・161・170 行と §8 の B2 の段、Lean の冒頭の説明の末段（A1 を「読み」と明示）。照合 B4 で「入った」と判定された。B4 の後に §8 の記録（この行と B2 の段の言い方）だけを直した（照合を受けていない）。
+ - **第 3 の型の検知。** B の後の直しが、ノートの一部と表にだけ入り、ノートの題と行 26、Lean の文面に入っていなかった。
++
++## 9. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- **Hartley の部分は、付録 A の Part 3（PAG3.lean、命題 2.8）とほぼ重なっていた。** PAG3.lean は鎖に import されていない初めのファイルで、`casK`（Hartley の核）、`casK_even_part`・`casK_odd_part`、`sum_neg_twist`、`hartley_char`（Σ_y cas(xy)χ(y) = (偶 1／奇 −i)·Σ_y e(xy/N)χ(y)）、`apply_inv_eq_inv_apply` がある。xlsx では「命題 2.8」「付録 A.2 の注記」の行。
++- 前の鎖に同じ文・同じ値の定義があるもの（Lean で確認）：
++  - `inv_apply_neg_one`：Part 5 の `inv_apply_neg_one`、Part 21 の `chi_inv_neg_one`、Part 77 の `inv_neg_one` と同じ文。
++  - `neg_one_mul_self`：Part 5 の `chi_neg_one_sq`、Part 25 の `chi_neg_one_sq'` と同じ文。
++  - `isPrimitive_of_prime_of_ne_one`：Part 167 の `primitive_of_ne_one` と同じ文。
++  - `casKer`：付録 A の Part 3 の `casK` と同じ値（式の書き方は違う）。
++  - `rootNum`：Part 192 の `zN` を Part 194 の `gs` で割ったものと同じ値。
++  - `inv_apply_units_inv`・`sum_mul_stdAddChar_neg`：付録 A の Part 3 の `apply_inv_eq_inv_apply`・`sum_neg_twist`（x = 1）から 1 行。
++- 照合者 R2 の判定で数行で出るもの（C）：`hartley_one`・`hartley_eq_of_isPrimitive`・`hartley_eq_zero_of_not_isUnit`・`hartley_units_inv`・`JH_eq_rootNum_mul`・`JH_eq_rootNum_mul_any`・`casKer_eq`（付録 A の Part 3 の `hartley_char` などから。うち 5 件は確信度 低）、`normSq_rootNum`（Part 12 の `normSq_gaussSum` から。Lean で確認）、`exists_primitive_odd_three`（Part 115・163・167 から。Lean で確認）・`exists_primitive_even_five`、`parFac`・`rootNum_eq`（Part 194 の `gs`、付録 A の Part 2 の `parity_weight`）。`parFac_of_even`・`parFac_of_odd` は付録 A の Part 2 の `parity_weight`（r = 1）から [NeZero N] を外した形。
++- **鎖に新しいもの**：変換としての定義（`hartley`・`JH`）と、原始性を外したときの反例（`removal_counterexample`・`removal_counterexample_four`・`removal_counterexample_normSq`）。
++- §1 の位置づけ「既知の事実の書き直し（再導出）」は変わらない。加えて、鎖の中では付録 A の Part 3 の命題 2.8 の再導出だった。冒頭の「Hartley の形の文献は見つからず」は外の文献についての記録で、自分の鎖には命題 2.8 があった。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part253_primitive_operator.md の差分
+--- before_fixes/notes/pag2_part253_primitive_operator.md	2026-11-14 17:28:48.048140550 +0900
++++ /home/claude/out185/pag2_part253_primitive_operator.md	2026-11-14 17:29:43.837034994 +0900
+@@ -184,3 +184,11 @@
+     - 「Lean でない補足（数値・手計算）」の項を分け、証人の限界と問いの「外側」（V_imprim の上で T ≠ U_N、数値）を移しました。極限の U についての文に［予想・解釈、確信度：中］を付けました。
+ - **第 11 の型（形式文のずれ）。** B の判定では、xlsx の主張は 30 文中 26 文が形式文と一致、4 文（S13・S19・S23・S24）が「主張が強い」でした。4 文とも主張の側を直し、S23・S24 の根拠は Lean に足しました（`Vprim_two`、`charU_one_mem_Vimprim`）。弱い・別物・空虚の判定はありませんでした。
+ - **第 2 の型（注入→回収）。** A・B・C がそろって S13（`TopL_eq_of_A1`）を「ほぼ同語反復」と判定しました。ノートと xlsx はそう書いています。
++
++## 8. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- 前の定義と同じ対象：`charU` は基本ファイル（Part 1）の `PAG.charFun` に `MulChar.toUnitHom` を通したもの、`ip` は Part 249 の `ipG` の G = (ZMod N)ˣ の場合（Lean で確認）。このパートはそれらを使わずに定義し直していた。
++- 前の定理から直ちに出るもの（Lean で確認）：`eq_one_of_two`（Part 194 の `level_two_trivial`）、`not_isPrimitive_one_of_two_le`・`charU_one_mem_Vimprim`（Part 191 の `ne_one_of_isPrimitive`）、`not_isPrimitive_one_prime`（Part 28 の `prim_level_p_iff`）、`Vprim_two`（Part 26 の `no_prim_mod_two`）。
++- 照合者 R3 の判定で数行で出るもの（C）：`ip_charU`（Part 214 の `sum_units_char` と付録 A の Part 3 の `conj_apply_eq_inv`）、`Vprim_ne_bot_prime`（確信度 低）。範囲の中の関係（Part 252 から）：`JHL`・`TopL_charU`・`Vprim_ne_bot_three`・`TopL_charU_one_four`（低）、`ip_smul_smul`・`rootNum_ne_zero`。
++- 鎖に新しいもの：単数の上の作用素 T（`TopL`）、V_prim と V_imprim の分解と直交、V_prim の上のユニタリ性と一意性、V_imprim の上で等長でないこと。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part254_full_gluing.md の差分
+--- before_fixes/notes/pag2_part254_full_gluing.md	2026-11-14 17:28:48.048163034 +0900
++++ /home/claude/out185/pag2_part254_full_gluing.md	2026-11-14 17:29:43.837468322 +0900
+@@ -224,3 +224,10 @@
+ - **直していないもの。** 直和を 1 つの文（DirectSum.IsInternal）にすること、q ∤ M の部分が 0 であることの文、§1 の検証表への「Lean にしていないこと」の追記（31 行と Lean の冒頭の説明に書いた）、U_∞ が各部分を保つこと、極限での独立性（Lean の文を足すと、また照合されていない文が増えるため、文面を形式文に合わせる方で直した）。
+ - **第 2 回の直し（B3 の後）。** 題（q ∤ M の但し書き）、80・114 行のラベル、31 行の［推論］、209 行、§8 の A2 の要約と「直していないもの」、Lean の冒頭の説明 3 と 10。照合 B4 で「入った」と判定された。B4 の後に題の「法 M の」とこの行だけを足した（照合を受けていない）。
+ - **第 3 の型の検知。** 「直和の文を Lean で示した」は、部品の文を合わせた読みを、1 つの定理があるかのように書いていた。B の後の直しが Lean の docstring に入っていなかった。
++
++## 9. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- 前の定理から直ちに出るもの（Lean で確認）：`gaussSum_inv`（Part 5 の `conj_gaussSum` と `chi_neg_one_sq`）。
++- 照合者 R4 の判定で数行で出るもの（C）：`rootNum_one_of_eq_one`（Part 192 の `zN_level_one` から。Lean で確認）、`phaseA1_one`（確信度 低）。範囲の中の関係（Part 249・252・253 から）：`ip_add_right`・`ip_smul_right`・`normSq_phaseA1`（B）、`iSup_condPart`・`rootNum_one_prime`・`UA1_charU`（C。`UA1_charU` は低）。
++- 鎖に新しいもの：全空間の作用素 UA1 と導手ごとの部分 `condPart`、法を上げる引き戻しとの両立、帰納極限 `Lim` の上の作用素 `Uinf` と内積、族の一意性。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part255_resolution_discrete_limit.md の差分
+--- before_fixes/notes/pag2_part255_resolution_discrete_limit.md	2026-11-14 17:28:48.048203759 +0900
++++ /home/claude/out185/pag2_part255_resolution_discrete_limit.md	2026-11-14 17:29:43.837950778 +0900
+@@ -205,3 +205,9 @@
+ - **第 2 回の直し（B3 の後）。** `exists_near_in_subgroup` の docstring（S が素数の有限集合という条件）、Lean の冒頭の説明 3 と「Lean にしていないこと」（格子の離散の部分の範囲）、ノートの 17・31・36・38・39・107・138・158 行と §9。照合 B4 で、A2 の引用（36 行）以外は「入った」と判定された。B4 の後に、36 行の引用を A2 の原文どおりにして出所を書き、158 行の重複を消し、この行を足した（照合を受けていない）。
+ - **A2 が挙げたコメント「S42〜S45 で使う」** は、構築者が A2 への入力（中立化した定義）に書いたもので、Lean のファイルにはない（直すものはない）。
+ - **第 3 の型の検知。** B の後の直しが docstring に一部しか入っていなかった。`exists_near_in_subgroup` の docstring の括弧は、形式文の仮定のもとでは偽になりうる文だった（形式文そのものは真）。
++
++## 10. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- 前の鎖（Part 248 以前と付録 A）に、このパートの宣言と同じ文・直ちに出る文・数行で出る文は見つからなかった（照合者 R5）。
++- 範囲の中の関係（Part 250 から）：`closure_logSet`・`sep_of_inf_unmeasured` は直ちに出る（B）、`exists_near_measured`・`one_le_abs_intCast_sub` は数行（C）。`dense_closure_log_primes`・`exists_padicValRat_eq`・`exists_zpow_near`・`exists_near_of_two_unmeasured` は、Part 250 の (2, 3) の場合や素数 1 つの場合を一般化した形。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part256_gluing_cross_term.md の差分
+--- before_fixes/notes/pag2_part256_gluing_cross_term.md	2026-11-14 17:28:48.048254672 +0900
++++ /home/claude/out185/pag2_part256_gluing_cross_term.md	2026-11-14 17:29:43.838436785 +0900
+@@ -3,7 +3,7 @@
+ 2026-11-13。PAG260.lean（定理 23 個、定義 3 個）、step279.py（13 項目）。
+ 
+ - **問いの出所。** 著者の選択（2026-11-13 18:15、着手前の文書 `pag2_part256_preregistration.md` の候補 M1）。本来の道の「無限素点を含む大域対象」と「重なり」に仕えます。Part 252〜254 の貼り合わせ U（読み。Lean では `UA1`。固有値は `phaseA1` χ = W(χ の原始指標)）と、Part 255 の L1（測る素点の集合）をつなぐ問いです：互いに素な法 M, N の貼り合わせから、法 M·N の貼り合わせは決まるか。
+-- **問いへの答えの範囲（独立照合 B の指摘）。** Lean の文が答えるのは、互いに素な 2 つの法の、原始指標の積 1 つの上の固有値です：法 M と法 N の固有値と、交差項と符号から決まります（Part 254 の `UA1_charU` と合わせて）。「素点ごとに分かれるか」「決まるか」の全体には答えていません。Lean にしていないのは、(i) 法 M·N のすべての指標が積の形に一意に書けること、(ii) 原始でない成分（数値だけ）、(iii) 作用素全体の式、(iv) 素数冪ごとの分解（数値もない）と 3 つ以上の法（数値 (7) だけ）です。題の最初の版「貼り合わせ U は素点ごとに分かれるか」は、この範囲に合わせて直しました。
++- **問いへの答えの範囲（独立照合 B の指摘）。** Lean の文が答えるのは、互いに素な 2 つの法の、原始指標の積 1 つの上の固有値です：法 M と法 N の固有値と、交差項と符号から決まります（Part 254 の `UA1_charU` と合わせて）。「素点ごとに分かれるか」「決まるか」の全体には答えていません。Lean にしていないのは、(i) 法 M·N のすべての指標が積の形に一意に書けること（このパートでは。鎖には Part 190・232 にある。§9）、(ii) 原始でない成分（数値だけ）、(iii) 作用素全体の式、(iv) 素数冪ごとの分解（数値もない）と 3 つ以上の法（数値 (7) だけ）です。題の最初の版「貼り合わせ U は素点ごとに分かれるか」は、この範囲に合わせて直しました。
+ - **結論（Lean の文。すべて既知の事実の Lean 化）。**
+   1. **ガウス和の乗法性。** 互いに素な M, N と、法 M の指標 χ₁、法 N の指標 χ₂ について、τ(χ₁χ₂) = χ₁(N)·χ₂(M)·τ(χ₁)·τ(χ₂)（`gaussSum_prodChar`）。原始性は要りません。証明は a = a₁·N + a₂·M と分ける中国剰余定理です（`crtMap_bijective`・`stdAddChar_crtMap`・`prodChar_apply`）。互いに素の仮定を外しても等式は成り立ちますが、両辺が 0 になります（独立照合 A の手計算と数値 (10)。Lean の文は仮定つきのまま）。
+   2. **偶奇の因子のずれ。** ε(χ₁χ₂) = s·ε(χ₁)·ε(χ₂)。s は、χ₁, χ₂ がともに奇なら −1、それ以外は +1（`crossSign`・`parFac_prodChar`）。ε は Part 252 の `parFac`（偶で 1、奇で −i）です。
+@@ -22,7 +22,7 @@
+   - **言い方の注意（着手前の盲検の指摘）。** 文献では、大域の ε 因子は局所の ε 因子の積です（Tate、Deligne）。ここで言うずれは、ディリクレ指標を中国剰余定理で分けた成分 χ₁, χ₂ と、イデール類指標の局所成分との違いです。交差項は、χ₁ の、N を割る素点での局所成分（不分岐。一般には自明でないが、法 39 の例では χ₁(13) = 1 で自明）から出ます。「大域は局所の積ではない」とは書きません。
+ - **2 次の指標と相互法則（観察。主な結果にしない）。** p, q が異なる奇素数で χ₁, χ₂ がルジャンドル記号のとき、数値では W(χ₁) = W(χ₂) = W(χ₁χ₂) = 1 で、6 の文は平方剰余の相互法則 (q/p)(p/q) = (−1)^{(p−1)(q−1)/4} と同じ形になります（step279 の (2)：奇素数の 28 組）。ただし、ここから相互法則が出るのではありません。合成の法 pq の 2 次の指標で W = 1 であることは外から入れる事実で、その証明の引き方によっては循環します（着手前の盲検の指摘）。
+ - **公準 A1 との関係。** A1 は公準のままです。交差項の法則は W（原始指標ではルート数）についての恒等式で、A1 から何かを出すものではありません。A1 を外すと位相は自由に戻り、この法則は位相の選び方への制約ではなくなります（除去テスト。CLAUDE.md §7 の第 2 の型）。
+-- **位置づけ。** 既知の事実の Lean 化です（再導出、確信度：高）。Montgomery–Vaughan の Theorem 9.6 とそのルート数版の Lean 化です。文献では、大域の ε 因子が局所の積であることと、不分岐なひねりでの局所 ε 因子の変化から出る形にあたります（局所 ε 因子は Lean にしていない）。新規候補はありません。形式化としては、互いに素な法でのガウス和の乗法性は Mathlib と Isabelle AFP に見つかりませんでした（着手前の盲検と、この環境の Mathlib の grep。見落としの可能性あり）。兆候 4（既知の事実だけ）は 8 パート連続です（§6）。
++- **位置づけ。** 既知の事実の Lean 化です（再導出、確信度：高）。Montgomery–Vaughan の Theorem 9.6 とそのルート数版の Lean 化です。文献では、大域の ε 因子が局所の積であることと、不分岐なひねりでの局所 ε 因子の変化から出る形にあたります（局所 ε 因子は Lean にしていない）。新規候補はありません。形式化としては、互いに素な法でのガウス和の乗法性は Mathlib と Isabelle AFP に見つかりませんでした（着手前の盲検と、この環境の Mathlib の grep。見落としの可能性あり）。ただし自分の鎖には Part 189（PAG193）の `gaussSum_mul_coprime` として同じ文がありました（内部照合 2026-11-14、§9）。兆候 4（既知の事実だけ）は 8 パート連続です（§6）。
+ 
+ ## 0. 内容
+ 
+@@ -152,3 +152,16 @@
+ - **直したもの。** Lean の冒頭の説明を形式文から書き直し、docstring 12 個を直した（形式文は変えていない。組み立て直して確認）。ノートの上の行、表の見出しと 2 行（`rootNum_prodChar_ne_mul`・`rootNum_prodChar_eq_neg_mul`）。法 39 の例に「τ は乗法的、−1 は正規化から」を足した。交差項だけでずれる例は、数値で確かめた（`reaudit257/numeric/check_cross_only.py`。Lean にはしていない）。
+ - **第 2 回の直し（B3 の後）。** ノートの 22・102 行、表の `rootNum_prodChar_ne_mul`、Lean の冒頭の説明（Part 254 ＝ PAG258.lean の対応、数値の出所 step279.py、等号の組の書き方、「原始でない指標での phaseA1 の式」）と `cross_eq_sign_of_rootNum_one` の docstring。照合 B4 で、(e) の残り 2 か所以外は「入った」と判定された。B4 の後に、冒頭の説明の 2 か所（「0 にもなる」に Lean の例、「外しても成り立つ」に「外した形は Lean にしていない」）とこの行を直した（照合を受けていない）。
+ - **第 3 の型の検知。** B の後の直しが、ノートと表だけに入り、Lean の文面に入っていなかった（Part 252・254・255 と同じ型）。
++
++## 9. 内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）
++
++- **このパートの前半は、Part 189・190・195・232 の結果の示し直しだった（Lean で確認）。** PAG193（Part 189）は PAG260 の import の閉包に入っていて、使える状態だった。
++  - 同じ定義・同じ値：`prodChar` は Part 195 の `cmul`・Part 232 の `charMul` と同じ定義（同じ対象の 3 つ目の名前）、`crtMap` は Part 189 の `param` と同じ式、`crossSign` は Part 194 の `rs` と同じ値。
++  - 同じ文：`gaussSum_prodChar`（Part 189 の `gaussSum_mul_coprime`）、`isPrimitive_prodChar`（Part 190 の `isPrimitive_mul`、Part 232 の `isPrimitive_charMul`）、`prodChar_apply`（Part 189・195・232）、`crtMap_bijective`・`stdAddChar_crtMap`（Part 189）。
++  - 直ちに出る：`cast_crtMap_fst`・`cast_crtMap_snd`（Part 189 の `param_cast₁`・`param_cast₂`）、`charU_prodChar`（Part 232 の `charMul_apply_unit`）、`prodChar_neg_one`（Part 200 の `changeLevel_neg_one`）。
++- 照合者 R5 の判定で数行で出るもの（C）：`norm_char_unit`・`norm_cross`・`parFac_prodChar`（`parFac_prodChar` は Part 194 の `gs_combine` と同じ形）。`rootNum_prodChar` は照合者の判定で D（数行との境目）。中身は Part 189 の定理に偶奇の因子のずれを足したもの。
++- §1 で「Lean にしていない」とした (i)「法 M·N のすべての指標が積の形に一意に書けること」は、鎖には Part 190 の `decomp` と Part 232 の `charMul_injective`・`primEquiv`（Prim(m) × Prim(n) ≅ Prim(mn)）としてあった。
++- 相互法則：`cross_eq_sign_of_rootNum_one` で「3 つの仮定は外から入れる」とした仮定は、実原始指標では Part 194 の `gauss_sign_real` から成り立つ。相互法則そのものは Part 194 の `real_reciprocity` で、仮定なしに示してある（ガウスの符号決定と同時の帰納法）。着手前の盲検が挙げた循環の危険への答えも、Part 194 にあった。
++- §1 の位置づけの「Mathlib と Isabelle AFP に見つかりませんでした」は外の形式化についての記録で、自分の鎖には同じ文があった。着手前の文書（`pag2_part256_preregistration.md`）の「形式化としては新しい可能性があります」は誤りだった。
++- 鎖に新しいもの：UA1・phaseA1 の形の式（`phaseA1_prodChar`・`UA1_charU_prodChar`）、例（`rootNum_prodChar_ne_mul`・`rootNum_prodChar_eq_neg_mul`・`phaseA1_prodChar_ne_mul`）、一般の指標での条件つきの文（`cross_eq_sign_of_rootNum_one`）。
++- 限界：機械的な候補選び（型に現れる定数の近さ、上位 20 件）と Lean での直接の当てはめ、照合者の通読による。照合者は Grep が使えず、全宣言の文（約 2 万 2 千行）の 1〜3 割しか読めていない。「見つからなかった」は「ない」の証明ではない。
+######## pag2_part256_preregistration.md の差分
+--- before_fixes/notes/pag2_part256_preregistration.md	2026-11-14 17:28:48.048309619 +0900
++++ /home/claude/out185/pag2_part256_preregistration.md	2026-11-14 17:29:43.838725651 +0900
+@@ -119,3 +119,7 @@
+ 
+ - 選択肢「M1 で始める」。Part 256 を M1（貼り合わせ U は素点ごとに分かれるか。互いに素な法での交差項の法則、無限素点の因子を含む）で始める。
+ - 盲検で直した言い方（§6）に従う：「局所の積ではない」ではなく「中国剰余定理による成分とのずれ」と書く。相互法則は観察にとどめる。兆候 4 は 8 パート連続になる。
++
++## 訂正（2026-11-14、内部照合）
++
++- 結論の「形式化としては新しい可能性があります」は誤りでした。互いに素な法でのガウス和の乗法性は、Part 189（PAG193）の `gaussSum_mul_coprime` として自分の鎖にありました。Part 256 はそれを使わずに示し直しました。詳細は `pag2_internal_audit_249_256.md` と `pag2_part256_gluing_cross_term.md` の §9。

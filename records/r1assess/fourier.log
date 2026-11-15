@@ -1,0 +1,5 @@
+2 3 good 2 Fourier-equivariant [np.True_, np.False_] twist by (-1)^x: {1: [2], 2: [1]}
+2 5 good 2 Fourier-equivariant [np.True_, np.False_] twist by (-1)^x: {1: [2], 2: [1]}
+4 3 good 2 Fourier-equivariant [np.True_, np.False_] twist by (-1)^x: {1: [1], 2: [4], 4: [2]}
+2 9 good 4 Fourier-equivariant [np.True_, np.False_, np.False_, np.False_] twist by (-1)^x: {1: [2], 2: [1]}
+6 5 good 2 Fourier-equivariant [np.True_, np.False_] twist by (-1)^x: {1: [2], 2: [1], 3: [6], 6: [3]}

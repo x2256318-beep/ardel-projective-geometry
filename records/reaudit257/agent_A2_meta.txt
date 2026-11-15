@@ -1,0 +1,6 @@
+A2（逆翻訳、中立化）。2026-11-14 朝。新しいエージェント（general-purpose、文脈なし）。入力は inbox の A2_<Part>_input.md を Read で 1 回だけ読む形（依頼文に貼るには長すぎるため。補足3 の「形式文の全文と定義を渡す」に合わせた）。
+- A2_252：tool_uses 1、duration_ms 359308、subagent_tokens 132771。本人の申告「Read 1 回のみ」
+- A2_254：tool_uses 1、duration_ms 427390、subagent_tokens 154255。本人の申告「Read 1 回のみ」
+- A2_255：tool_uses 1、duration_ms 370612、subagent_tokens 138367。本人の申告「Read 1 回のみ」
+- A2_256：tool_uses 1、duration_ms 509759、subagent_tokens 171736。本人の申告「Read 1 回のみ」
+出力は agent_A2_<Part>_output.md（通知の本文を原文のまま写した）。

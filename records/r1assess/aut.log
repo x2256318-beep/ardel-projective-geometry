@@ -1,0 +1,8 @@
+2 dimA 4 #aut(fix D, permute E) 2 [{}, {1: 2, 2: 1}]
+3 dimA 5 #aut(fix D, permute E) 1 [{}]
+4 dimA 10 #aut(fix D, permute E) 2 [{}, {2: 4, 4: 2}]
+5 dimA 5 #aut(fix D, permute E) 1 [{}]
+6 dimA 20 #aut(fix D, permute E) 2 [{}, {1: 2, 2: 1, 3: 6, 6: 3}]
+8 dimA 19 #aut(fix D, permute E) 2 [{}, {4: 8, 8: 4}]
+9 dimA 12 #aut(fix D, permute E) 1 [{}]
+10 dimA 20 #aut(fix D, permute E) 2 [{}, {1: 2, 2: 1, 5: 10, 10: 5}]

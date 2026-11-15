@@ -1,0 +1,6298 @@
+[
+ {
+  "id": 200001,
+  "goal": "PAG.Part253.commSubmonoid",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part253.commSubmonoid",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200002,
+  "goal": "PAG.Part253.commSubmonoid",
+  "using": "PAG.rev",
+  "dir": "defeq",
+  "target": "PAG.Part253.commSubmonoid",
+  "cand": "PAG.rev",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200003,
+  "goal": "PAG.Part253.commSubmonoid",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part253.commSubmonoid",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200004,
+  "goal": "PAG.Part253.commute_transl_of_prime",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200005,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.commute_transl_of_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200006,
+  "goal": "PAG.Part253.commute_transl_of_prime",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200007,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.commute_transl_of_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200008,
+  "goal": "PAG.Part253.commute_transl_of_prime",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200009,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.commute_transl_of_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200010,
+  "goal": "PAG.Part253.commute_transl_of_prime",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200011,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.commute_transl_of_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200012,
+  "goal": "PAG.Part253.commute_transl_of_prime",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200013,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.commute_transl_of_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200014,
+  "goal": "PAG.Part253.commute_transl_of_prime",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200015,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.commute_transl_of_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.commute_transl_of_prime",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200016,
+  "goal": "PAG.Part253.conj_eigen_of_adjoint",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200017,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.conj_eigen_of_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200018,
+  "goal": "PAG.Part253.conj_eigen_of_adjoint",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200019,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.conj_eigen_of_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200020,
+  "goal": "PAG.Part253.conj_eigen_of_adjoint",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200021,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.conj_eigen_of_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200022,
+  "goal": "PAG.Part253.conj_eigen_of_adjoint",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200023,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.conj_eigen_of_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200024,
+  "goal": "PAG.Part253.conj_eigen_of_adjoint",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200025,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.conj_eigen_of_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200026,
+  "goal": "PAG.Part253.conj_eigen_of_adjoint",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200027,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.conj_eigen_of_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.conj_eigen_of_adjoint",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200028,
+  "goal": "PAG.Part253.eigenFun_of_commute_prime",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200029,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.eigenFun_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200030,
+  "goal": "PAG.Part253.eigenFun_of_commute_prime",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200031,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.eigenFun_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200032,
+  "goal": "PAG.Part253.eigenFun_of_commute_prime",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200033,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.eigenFun_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200034,
+  "goal": "PAG.Part253.eigenFun_of_commute_prime",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200035,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.eigenFun_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200036,
+  "goal": "PAG.Part253.eigenFun_of_commute_prime",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200037,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.eigenFun_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200038,
+  "goal": "PAG.Part253.eigenFun_of_commute_prime",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200039,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.eigenFun_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigenFun_of_commute_prime",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200040,
+  "goal": "PAG.Part253.eigen_of_commute_prime",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200041,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.eigen_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200042,
+  "goal": "PAG.Part253.eigen_of_commute_prime",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200043,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.eigen_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200044,
+  "goal": "PAG.Part253.eigen_of_commute_prime",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200045,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.eigen_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200046,
+  "goal": "PAG.Part253.eigen_of_commute_prime",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200047,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.eigen_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200048,
+  "goal": "PAG.Part253.eigen_of_commute_prime",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200049,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.eigen_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200050,
+  "goal": "PAG.Part253.eigen_of_commute_prime",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200051,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.eigen_of_commute_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eigen_of_commute_prime",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200052,
+  "goal": "PAG.Part253.eq_of_prime_invariant",
+  "using": "PAG.ker_Γ₀",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eq_of_prime_invariant",
+  "cand": "PAG.ker_Γ₀",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200053,
+  "goal": "PAG.ker_Γ₀",
+  "using": "PAG.Part253.eq_of_prime_invariant",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eq_of_prime_invariant",
+  "cand": "PAG.ker_Γ₀",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200054,
+  "goal": "PAG.Part253.eq_of_prime_invariant'",
+  "using": "PAG.ker_Γ₀",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.eq_of_prime_invariant'",
+  "cand": "PAG.ker_Γ₀",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200055,
+  "goal": "PAG.ker_Γ₀",
+  "using": "PAG.Part253.eq_of_prime_invariant'",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.eq_of_prime_invariant'",
+  "cand": "PAG.ker_Γ₀",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200056,
+  "goal": "PAG.Part253.globalInv",
+  "using": "PAG.Shells.Rg",
+  "dir": "defeq",
+  "target": "PAG.Part253.globalInv",
+  "cand": "PAG.Shells.Rg",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200057,
+  "goal": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "using": "PAG.Part3.casK_even_part",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Part3.casK_even_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200058,
+  "goal": "PAG.Part3.casK_even_part",
+  "using": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Part3.casK_even_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200059,
+  "goal": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "using": "PAG.Part3.casK_odd_part",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Part3.casK_odd_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200060,
+  "goal": "PAG.Part3.casK_odd_part",
+  "using": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Part3.casK_odd_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200061,
+  "goal": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200062,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200063,
+  "goal": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200064,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.globalInv_scaleShift_globalInv",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200065,
+  "goal": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200066,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200067,
+  "goal": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200068,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200069,
+  "goal": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200070,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200071,
+  "goal": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200072,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200073,
+  "goal": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200074,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_charFun_self_ne_zero",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200075,
+  "goal": "PAG.Part253.ipG_smul_left",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200076,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part253.ipG_smul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200077,
+  "goal": "PAG.Part253.ipG_smul_left",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200078,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part253.ipG_smul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200079,
+  "goal": "PAG.Part253.ipG_smul_right",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_smul_right",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200080,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part253.ipG_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_right",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200081,
+  "goal": "PAG.Part253.ipG_smul_right",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.ipG_smul_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200082,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part253.ipG_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200083,
+  "goal": "PAG.Part253.norm_eq_one_of_isometry",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200084,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.norm_eq_one_of_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200085,
+  "goal": "PAG.Part253.norm_eq_one_of_isometry",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200086,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.norm_eq_one_of_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200087,
+  "goal": "PAG.Part253.norm_eq_one_of_isometry",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200088,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.norm_eq_one_of_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200089,
+  "goal": "PAG.Part253.norm_eq_one_of_isometry",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200090,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.norm_eq_one_of_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200091,
+  "goal": "PAG.Part253.norm_eq_one_of_isometry",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200092,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.norm_eq_one_of_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.norm_eq_one_of_isometry",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200093,
+  "goal": "PAG.Part253.primeShiftInv",
+  "using": "PAG.Part3.casK",
+  "dir": "defeq",
+  "target": "PAG.Part253.primeShiftInv",
+  "cand": "PAG.Part3.casK",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200094,
+  "goal": "PAG.Part253.scaleShift",
+  "using": "PAG.Part3.casK",
+  "dir": "defeq",
+  "target": "PAG.Part253.scaleShift",
+  "cand": "PAG.Part3.casK",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200095,
+  "goal": "PAG.Part253.scaleShift",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part253.scaleShift",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200096,
+  "goal": "PAG.Part253.shift_invariant_of_prime_invariant",
+  "using": "PAG.ker_Γ₀",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.shift_invariant_of_prime_invariant",
+  "cand": "PAG.ker_Γ₀",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200097,
+  "goal": "PAG.ker_Γ₀",
+  "using": "PAG.Part253.shift_invariant_of_prime_invariant",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.shift_invariant_of_prime_invariant",
+  "cand": "PAG.ker_Γ₀",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200098,
+  "goal": "PAG.Part253.signMul",
+  "using": "PAG.rev",
+  "dir": "defeq",
+  "target": "PAG.Part253.signMul",
+  "cand": "PAG.rev",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200099,
+  "goal": "PAG.Part253.signMul",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part253.signMul",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200100,
+  "goal": "PAG.Part253.signMul_adjoint",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200101,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.signMul_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200102,
+  "goal": "PAG.Part253.signMul_adjoint",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200103,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.signMul_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200104,
+  "goal": "PAG.Part253.signMul_adjoint",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200105,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.signMul_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200106,
+  "goal": "PAG.Part253.signMul_adjoint",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200107,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.signMul_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200108,
+  "goal": "PAG.Part253.signMul_adjoint",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200109,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.signMul_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_adjoint",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200110,
+  "goal": "PAG.Part253.signMul_apply",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200111,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.signMul_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200112,
+  "goal": "PAG.Part253.signMul_apply",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200113,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.signMul_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200114,
+  "goal": "PAG.Part253.signMul_apply",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200115,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.signMul_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200116,
+  "goal": "PAG.Part253.signMul_apply",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200117,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.signMul_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_apply",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200118,
+  "goal": "PAG.Part253.signMul_isometry",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200119,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part253.signMul_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200120,
+  "goal": "PAG.Part253.signMul_isometry",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200121,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.signMul_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200122,
+  "goal": "PAG.Part253.signMul_isometry",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200123,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.signMul_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200124,
+  "goal": "PAG.Part253.signMul_isometry",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200125,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.signMul_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200126,
+  "goal": "PAG.Part253.signMul_isometry",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200127,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.signMul_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200128,
+  "goal": "PAG.Part253.signMul_not_commute",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200129,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.signMul_not_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200130,
+  "goal": "PAG.Part253.signMul_not_commute",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200131,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.signMul_not_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200132,
+  "goal": "PAG.Part253.signMul_not_commute",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200133,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.signMul_not_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200134,
+  "goal": "PAG.Part253.signMul_not_commute",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200135,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.signMul_not_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200136,
+  "goal": "PAG.Part253.signMul_not_commute",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200137,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.signMul_not_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200138,
+  "goal": "PAG.Part253.signMul_not_commute",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200139,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.signMul_not_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.signMul_not_commute",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200140,
+  "goal": "PAG.Part253.thm26_full",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200141,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.thm26_full",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200142,
+  "goal": "PAG.Part253.thm26_full",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200143,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.thm26_full",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200144,
+  "goal": "PAG.Part253.thm26_full",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200145,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.thm26_full",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200146,
+  "goal": "PAG.Part253.thm26_full",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200147,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.thm26_full",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200148,
+  "goal": "PAG.Part253.thm26_full",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200149,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.thm26_full",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200150,
+  "goal": "PAG.Part253.thm26_full",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200151,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.thm26_full",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200152,
+  "goal": "PAG.Part253.thm26_full_hyp_transl",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200153,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.thm26_full_hyp_transl",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200154,
+  "goal": "PAG.Part253.thm26_full_hyp_transl",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200155,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.thm26_full_hyp_transl",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200156,
+  "goal": "PAG.Part253.thm26_full_hyp_transl",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200157,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.thm26_full_hyp_transl",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200158,
+  "goal": "PAG.Part253.thm26_full_hyp_transl",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200159,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.thm26_full_hyp_transl",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200160,
+  "goal": "PAG.Part253.thm26_full_hyp_transl",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200161,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.thm26_full_hyp_transl",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200162,
+  "goal": "PAG.Part253.thm26_full_hyp_transl",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200163,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.thm26_full_hyp_transl",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_hyp_transl",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200164,
+  "goal": "PAG.Part253.thm26_full_of_commute",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200165,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.thm26_full_of_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200166,
+  "goal": "PAG.Part253.thm26_full_of_commute",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200167,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.thm26_full_of_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200168,
+  "goal": "PAG.Part253.thm26_full_of_commute",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200169,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.thm26_full_of_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200170,
+  "goal": "PAG.Part253.thm26_full_of_commute",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200171,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.thm26_full_of_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200172,
+  "goal": "PAG.Part253.thm26_full_of_commute",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200173,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.thm26_full_of_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200174,
+  "goal": "PAG.Part253.thm26_full_of_commute",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200175,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.thm26_full_of_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_full_of_commute",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200176,
+  "goal": "PAG.Part253.thm26_needs_adjoint",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200177,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.thm26_needs_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200178,
+  "goal": "PAG.Part253.thm26_needs_adjoint",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200179,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.thm26_needs_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200180,
+  "goal": "PAG.Part253.thm26_needs_adjoint",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200181,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.thm26_needs_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200182,
+  "goal": "PAG.Part253.thm26_needs_adjoint",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200183,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.thm26_needs_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200184,
+  "goal": "PAG.Part253.thm26_needs_adjoint",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200185,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.thm26_needs_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200186,
+  "goal": "PAG.Part253.thm26_needs_adjoint",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200187,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.thm26_needs_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_adjoint",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200188,
+  "goal": "PAG.Part253.thm26_needs_commute",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200189,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.thm26_needs_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200190,
+  "goal": "PAG.Part253.thm26_needs_commute",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200191,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.thm26_needs_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200192,
+  "goal": "PAG.Part253.thm26_needs_commute",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200193,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.thm26_needs_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200194,
+  "goal": "PAG.Part253.thm26_needs_commute",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200195,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.thm26_needs_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200196,
+  "goal": "PAG.Part253.thm26_needs_commute",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200197,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.thm26_needs_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200198,
+  "goal": "PAG.Part253.thm26_needs_commute",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200199,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.thm26_needs_commute",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_commute",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200200,
+  "goal": "PAG.Part253.thm26_needs_isometry",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200201,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.thm26_needs_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200202,
+  "goal": "PAG.Part253.thm26_needs_isometry",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200203,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.thm26_needs_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200204,
+  "goal": "PAG.Part253.thm26_needs_isometry",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200205,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.thm26_needs_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200206,
+  "goal": "PAG.Part253.thm26_needs_isometry",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200207,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.thm26_needs_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200208,
+  "goal": "PAG.Part253.thm26_needs_isometry",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200209,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.thm26_needs_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200210,
+  "goal": "PAG.Part253.thm26_needs_isometry",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200211,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.thm26_needs_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.thm26_needs_isometry",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200212,
+  "goal": "PAG.Part253.transl_adjoint",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200213,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.transl_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200214,
+  "goal": "PAG.Part253.transl_adjoint",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200215,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.transl_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200216,
+  "goal": "PAG.Part253.transl_adjoint",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200217,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.transl_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200218,
+  "goal": "PAG.Part253.transl_adjoint",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200219,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.transl_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200220,
+  "goal": "PAG.Part253.transl_adjoint",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200221,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.transl_adjoint",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_adjoint",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200222,
+  "goal": "PAG.Part253.transl_charFun",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200223,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.transl_charFun",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200224,
+  "goal": "PAG.Part253.transl_charFun",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200225,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.transl_charFun",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200226,
+  "goal": "PAG.Part253.transl_charFun",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200227,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.transl_charFun",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200228,
+  "goal": "PAG.Part253.transl_charFun",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200229,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.transl_charFun",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200230,
+  "goal": "PAG.Part253.transl_charFun",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200231,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.transl_charFun",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200232,
+  "goal": "PAG.Part253.transl_charFun",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200233,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.transl_charFun",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_charFun",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200234,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200235,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200236,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200237,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200238,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200239,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200240,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200241,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200242,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200243,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200244,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200245,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200246,
+  "goal": "PAG.Part253.transl_isometry",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200247,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.transl_isometry",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_isometry",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200248,
+  "goal": "PAG.Part253.transl_mul",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200249,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.transl_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200250,
+  "goal": "PAG.Part253.transl_mul",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200251,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.transl_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200252,
+  "goal": "PAG.Part253.transl_mul",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200253,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.transl_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200254,
+  "goal": "PAG.Part253.transl_mul",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200255,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.transl_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200256,
+  "goal": "PAG.Part253.transl_mul",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200257,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.transl_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200258,
+  "goal": "PAG.Part253.transl_mul",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200259,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part253.transl_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_mul",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200260,
+  "goal": "PAG.Part253.transl_one",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200261,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part253.transl_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200262,
+  "goal": "PAG.Part253.transl_one",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200263,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part253.transl_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200264,
+  "goal": "PAG.Part253.transl_one",
+  "using": "PAG.Part3.rev_not_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200265,
+  "goal": "PAG.Part3.rev_not_commute",
+  "using": "PAG.Part253.transl_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_not_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200266,
+  "goal": "PAG.Part253.transl_one",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200267,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part253.transl_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200268,
+  "goal": "PAG.Part253.transl_one",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200269,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part253.transl_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.transl_one",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200270,
+  "goal": "PAG.Part253.unitShift",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part253.unitShift",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200271,
+  "goal": "PAG.Part253.unitShift_scaleShift",
+  "using": "PAG.Part3.casK_even_part",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Part3.casK_even_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200272,
+  "goal": "PAG.Part3.casK_even_part",
+  "using": "PAG.Part253.unitShift_scaleShift",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Part3.casK_even_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200273,
+  "goal": "PAG.Part253.unitShift_scaleShift",
+  "using": "PAG.Part3.casK_odd_part",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Part3.casK_odd_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200274,
+  "goal": "PAG.Part3.casK_odd_part",
+  "using": "PAG.Part253.unitShift_scaleShift",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Part3.casK_odd_part",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200275,
+  "goal": "PAG.Part253.unitShift_scaleShift",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200276,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part253.unitShift_scaleShift",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200277,
+  "goal": "PAG.Part253.unitShift_scaleShift",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200278,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part253.unitShift_scaleShift",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.unitShift_scaleShift",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200279,
+  "goal": "PAG.Part254.chainIn_dP_iff",
+  "using": "PAG.Part31.dft_H_even_nonneg",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.chainIn_dP_iff",
+  "cand": "PAG.Part31.dft_H_even_nonneg",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200280,
+  "goal": "PAG.Part31.dft_H_even_nonneg",
+  "using": "PAG.Part254.chainIn_dP_iff",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.chainIn_dP_iff",
+  "cand": "PAG.Part31.dft_H_even_nonneg",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200281,
+  "goal": "PAG.Part254.chainIn_dP_of_one_lt",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.chainIn_dP_of_one_lt",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200282,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part254.chainIn_dP_of_one_lt",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.chainIn_dP_of_one_lt",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200283,
+  "goal": "PAG.Part254.chainIn_invariant",
+  "using": "PAG.Part149.fiber_digit",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.chainIn_invariant",
+  "cand": "PAG.Part149.fiber_digit",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200284,
+  "goal": "PAG.Part149.fiber_digit",
+  "using": "PAG.Part254.chainIn_invariant",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.chainIn_invariant",
+  "cand": "PAG.Part149.fiber_digit",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200285,
+  "goal": "PAG.Part254.chainIn_of_lt",
+  "using": "PAG.Part149.fiber_digit",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.chainIn_of_lt",
+  "cand": "PAG.Part149.fiber_digit",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200286,
+  "goal": "PAG.Part149.fiber_digit",
+  "using": "PAG.Part254.chainIn_of_lt",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.chainIn_of_lt",
+  "cand": "PAG.Part149.fiber_digit",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200287,
+  "goal": "PAG.Part254.chainIn_refl",
+  "using": "PAG.Part149.fiber_digit",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.chainIn_refl",
+  "cand": "PAG.Part149.fiber_digit",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200288,
+  "goal": "PAG.Part149.fiber_digit",
+  "using": "PAG.Part254.chainIn_refl",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.chainIn_refl",
+  "cand": "PAG.Part149.fiber_digit",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200289,
+  "goal": "PAG.Part254.dP",
+  "using": "PAG.Shells.Rc",
+  "dir": "defeq",
+  "target": "PAG.Part254.dP",
+  "cand": "PAG.Shells.Rc",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200290,
+  "goal": "PAG.Part254.dP_eq_dist",
+  "using": "PAG.Seesaw.sum_totient_int",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Seesaw.sum_totient_int",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200291,
+  "goal": "PAG.Seesaw.sum_totient_int",
+  "using": "PAG.Part254.dP_eq_dist",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Seesaw.sum_totient_int",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200292,
+  "goal": "PAG.Part254.dP_eq_dist",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200293,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part254.dP_eq_dist",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200294,
+  "goal": "PAG.Part254.dP_eq_dist",
+  "using": "PAG.Shells.Rc_invol",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Shells.Rc_invol",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200295,
+  "goal": "PAG.Shells.Rc_invol",
+  "using": "PAG.Part254.dP_eq_dist",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Shells.Rc_invol",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200296,
+  "goal": "PAG.Part254.dP_eq_dist",
+  "using": "PAG.Shells.Rc_maps_interval",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Shells.Rc_maps_interval",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200297,
+  "goal": "PAG.Shells.Rc_maps_interval",
+  "using": "PAG.Part254.dP_eq_dist",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Shells.Rc_maps_interval",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200298,
+  "goal": "PAG.Part254.dP_eq_dist",
+  "using": "PAG.Shells.Rg_comp_Rc",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Shells.Rg_comp_Rc",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200299,
+  "goal": "PAG.Shells.Rg_comp_Rc",
+  "using": "PAG.Part254.dP_eq_dist",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_eq_dist",
+  "cand": "PAG.Shells.Rg_comp_Rc",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200300,
+  "goal": "PAG.Part254.dP_lt_one_iff",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_lt_one_iff",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200301,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part254.dP_lt_one_iff",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_lt_one_iff",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200302,
+  "goal": "PAG.Part254.dP_lt_one_iff",
+  "using": "PAG.Shells.Rc_invol",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_lt_one_iff",
+  "cand": "PAG.Shells.Rc_invol",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200303,
+  "goal": "PAG.Shells.Rc_invol",
+  "using": "PAG.Part254.dP_lt_one_iff",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_lt_one_iff",
+  "cand": "PAG.Shells.Rc_invol",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200304,
+  "goal": "PAG.Part254.dP_mul_left",
+  "using": "PAG.Seesaw.sum_totient_int",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Seesaw.sum_totient_int",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200305,
+  "goal": "PAG.Seesaw.sum_totient_int",
+  "using": "PAG.Part254.dP_mul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Seesaw.sum_totient_int",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200306,
+  "goal": "PAG.Part254.dP_mul_left",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200307,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part254.dP_mul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200308,
+  "goal": "PAG.Part254.dP_mul_left",
+  "using": "PAG.Shells.Rc_invol",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Shells.Rc_invol",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200309,
+  "goal": "PAG.Shells.Rc_invol",
+  "using": "PAG.Part254.dP_mul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Shells.Rc_invol",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200310,
+  "goal": "PAG.Part254.dP_mul_left",
+  "using": "PAG.Shells.Rc_maps_interval",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Shells.Rc_maps_interval",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200311,
+  "goal": "PAG.Shells.Rc_maps_interval",
+  "using": "PAG.Part254.dP_mul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Shells.Rc_maps_interval",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200312,
+  "goal": "PAG.Part254.dP_mul_left",
+  "using": "PAG.Shells.Rg_comp_Rc",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Shells.Rg_comp_Rc",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200313,
+  "goal": "PAG.Shells.Rg_comp_Rc",
+  "using": "PAG.Part254.dP_mul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dP_mul_left",
+  "cand": "PAG.Shells.Rg_comp_Rc",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200314,
+  "goal": "PAG.Part254.dense_logSet",
+  "using": "PAG.Part253.exists_cls_near",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dense_logSet",
+  "cand": "PAG.Part253.exists_cls_near",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200315,
+  "goal": "PAG.Part253.exists_cls_near",
+  "using": "PAG.Part254.dense_logSet",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dense_logSet",
+  "cand": "PAG.Part253.exists_cls_near",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200316,
+  "goal": "PAG.Part254.dense_logSet_coprime",
+  "using": "PAG.Part253.exists_cls_near",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.dense_logSet_coprime",
+  "cand": "PAG.Part253.exists_cls_near",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200317,
+  "goal": "PAG.Part253.exists_cls_near",
+  "using": "PAG.Part254.dense_logSet_coprime",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.dense_logSet_coprime",
+  "cand": "PAG.Part253.exists_cls_near",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200318,
+  "goal": "PAG.Part254.not_forall_chainIn_dP",
+  "using": "PAG.Part147.eq_of_dvd_not_dvd_div",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.not_forall_chainIn_dP",
+  "cand": "PAG.Part147.eq_of_dvd_not_dvd_div",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200319,
+  "goal": "PAG.Part147.eq_of_dvd_not_dvd_div",
+  "using": "PAG.Part254.not_forall_chainIn_dP",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.not_forall_chainIn_dP",
+  "cand": "PAG.Part147.eq_of_dvd_not_dvd_div",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200320,
+  "goal": "PAG.Part254.padicValRat_eq_of_chainIn",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part254.padicValRat_eq_of_chainIn",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200321,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part254.padicValRat_eq_of_chainIn",
+  "dir": "T⇒S",
+  "target": "PAG.Part254.padicValRat_eq_of_chainIn",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part255.kUnit_congr",
+  "cand": "PAG.Part253.kUnit",
+  "kind": "thm",
+  "why": "claim",
+  "note": "種類が違う（thm と def）：手で確かめる"
+ },
+ {
+  "id": 200322,
+  "goal": "PAG.Part255.kUnit_congr",
+  "using": "PAG.Part253.kUnit_mul_natCast",
+  "dir": "S⇒T",
+  "target": "PAG.Part255.kUnit_congr",
+  "cand": "PAG.Part253.kUnit_mul_natCast",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200323,
+  "goal": "PAG.Part253.kUnit_mul_natCast",
+  "using": "PAG.Part255.kUnit_congr",
+  "dir": "T⇒S",
+  "target": "PAG.Part255.kUnit_congr",
+  "cand": "PAG.Part253.kUnit_mul_natCast",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200324,
+  "goal": "PAG.Part255.primeGens",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part255.primeGens",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200325,
+  "goal": "PAG.Part255.primeGens",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part255.primeGens",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200326,
+  "goal": "PAG.Part255.primeSys",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part255.primeSys",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200327,
+  "goal": "PAG.Part255.primeSys",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part255.primeSys",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200328,
+  "goal": "PAG.Part255.unitSys",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part255.unitSys",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200329,
+  "goal": "PAG.Part255.unitSys",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part255.unitSys",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200330,
+  "goal": "PAG.Part255.units_eq_of_coprime_parts",
+  "using": "PAG.Part196.crt_unique",
+  "dir": "S⇒T",
+  "target": "PAG.Part255.units_eq_of_coprime_parts",
+  "cand": "PAG.Part196.crt_unique",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200331,
+  "goal": "PAG.Part196.crt_unique",
+  "using": "PAG.Part255.units_eq_of_coprime_parts",
+  "dir": "T⇒S",
+  "target": "PAG.Part255.units_eq_of_coprime_parts",
+  "cand": "PAG.Part196.crt_unique",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200332,
+  "goal": "PAG.Part255.wNat",
+  "using": "PAG.Seesaw.cv",
+  "dir": "defeq",
+  "target": "PAG.Part255.wNat",
+  "cand": "PAG.Seesaw.cv",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200333,
+  "goal": "PAG.Part255.wNat",
+  "using": "PAG.Seesaw.dj",
+  "dir": "defeq",
+  "target": "PAG.Part255.wNat",
+  "cand": "PAG.Seesaw.dj",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200334,
+  "goal": "PAG.Part256.JH",
+  "using": "PAG.Part3.casK",
+  "dir": "defeq",
+  "target": "PAG.Part256.JH",
+  "cand": "PAG.Part3.casK",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200335,
+  "goal": "PAG.Part256.JH_eq_rootNum_mul",
+  "using": "PAG.Kloosterman.parity_weight",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.JH_eq_rootNum_mul",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200336,
+  "goal": "PAG.Kloosterman.parity_weight",
+  "using": "PAG.Part256.JH_eq_rootNum_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.JH_eq_rootNum_mul",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200337,
+  "goal": "PAG.Part256.JH_eq_rootNum_mul",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.JH_eq_rootNum_mul",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200338,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part256.JH_eq_rootNum_mul",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.JH_eq_rootNum_mul",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200339,
+  "goal": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200340,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200341,
+  "goal": "PAG.Part256.casKer",
+  "using": "PAG.Part3.casK",
+  "dir": "defeq",
+  "target": "PAG.Part256.casKer",
+  "cand": "PAG.Part3.casK",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200342,
+  "goal": "PAG.Part256.casKer",
+  "using": "PAG.s",
+  "dir": "defeq",
+  "target": "PAG.Part256.casKer",
+  "cand": "PAG.s",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200343,
+  "goal": "PAG.Part256.casKer_eq",
+  "using": "PAG.Part3.sum_neg_twist",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.casKer_eq",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200344,
+  "goal": "PAG.Part3.sum_neg_twist",
+  "using": "PAG.Part256.casKer_eq",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.casKer_eq",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part119.Lc",
+  "kind": "thm",
+  "why": "claim",
+  "note": "種類が違う（thm と def）：手で確かめる"
+ },
+ {
+  "id": 200345,
+  "goal": "PAG.Part256.exists_primitive_even_five",
+  "using": "PAG.Part119.Lc_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part119.Lc_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200346,
+  "goal": "PAG.Part119.Lc_ne_one",
+  "using": "PAG.Part256.exists_primitive_even_five",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part119.Lc_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200347,
+  "goal": "PAG.Part256.exists_primitive_even_five",
+  "using": "PAG.Part167.Lc_neg_one_pow",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part167.Lc_neg_one_pow",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200348,
+  "goal": "PAG.Part167.Lc_neg_one_pow",
+  "using": "PAG.Part256.exists_primitive_even_five",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part167.Lc_neg_one_pow",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200349,
+  "goal": "PAG.Part256.exists_primitive_even_five",
+  "using": "PAG.Part171.primitive_of_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200350,
+  "goal": "PAG.Part171.primitive_of_ne_one",
+  "using": "PAG.Part256.exists_primitive_even_five",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.exists_primitive_even_five",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200351,
+  "goal": "PAG.Part256.hartley",
+  "using": "PAG.Part3.casK",
+  "dir": "defeq",
+  "target": "PAG.Part256.hartley",
+  "cand": "PAG.Part3.casK",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200352,
+  "goal": "PAG.Part256.hartley",
+  "using": "PAG.s",
+  "dir": "defeq",
+  "target": "PAG.Part256.hartley",
+  "cand": "PAG.s",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200353,
+  "goal": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "using": "PAG.Kloosterman.parity_weight",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200354,
+  "goal": "PAG.Kloosterman.parity_weight",
+  "using": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200355,
+  "goal": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "using": "PAG.Part203.dft_rk",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "cand": "PAG.Part203.dft_rk",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200356,
+  "goal": "PAG.Part203.dft_rk",
+  "using": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.hartley_eq_of_isPrimitive",
+  "cand": "PAG.Part203.dft_rk",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200357,
+  "goal": "PAG.Part256.hartley_eq_zero_of_not_isUnit",
+  "using": "PAG.Part203.dft_rk",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.hartley_eq_zero_of_not_isUnit",
+  "cand": "PAG.Part203.dft_rk",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200358,
+  "goal": "PAG.Part203.dft_rk",
+  "using": "PAG.Part256.hartley_eq_zero_of_not_isUnit",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.hartley_eq_zero_of_not_isUnit",
+  "cand": "PAG.Part203.dft_rk",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200359,
+  "goal": "PAG.Part256.hartley_one",
+  "using": "PAG.Kloosterman.S_odd",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.hartley_one",
+  "cand": "PAG.Kloosterman.S_odd",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200360,
+  "goal": "PAG.Kloosterman.S_odd",
+  "using": "PAG.Part256.hartley_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.hartley_one",
+  "cand": "PAG.Kloosterman.S_odd",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200361,
+  "goal": "PAG.Part256.hartley_one",
+  "using": "PAG.Kloosterman.parity_weight",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.hartley_one",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200362,
+  "goal": "PAG.Kloosterman.parity_weight",
+  "using": "PAG.Part256.hartley_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.hartley_one",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200363,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part25.chi_inv_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part25.chi_inv_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200364,
+  "goal": "PAG.Part25.chi_inv_neg_one",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part25.chi_inv_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200365,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part3.sum_neg_twist",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200366,
+  "goal": "PAG.Part3.sum_neg_twist",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200367,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part81.inv_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part81.inv_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200368,
+  "goal": "PAG.Part81.inv_neg_one",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part81.inv_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200369,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part9.inv_apply_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part9.inv_apply_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200370,
+  "goal": "PAG.Part9.inv_apply_neg_one",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part9.inv_apply_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200371,
+  "goal": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "using": "PAG.Part171.primitive_of_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200372,
+  "goal": "PAG.Part171.primitive_of_ne_one",
+  "using": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200373,
+  "goal": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "using": "PAG.Part32.prim_level_p_iff",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "cand": "PAG.Part32.prim_level_p_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200374,
+  "goal": "PAG.Part32.prim_level_p_iff",
+  "using": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "cand": "PAG.Part32.prim_level_p_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200375,
+  "goal": "PAG.Part256.neg_one_mul_self",
+  "using": "PAG.Part29.chi_neg_one_sq'",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part29.chi_neg_one_sq'",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200376,
+  "goal": "PAG.Part29.chi_neg_one_sq'",
+  "using": "PAG.Part256.neg_one_mul_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part29.chi_neg_one_sq'",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200377,
+  "goal": "PAG.Part256.neg_one_mul_self",
+  "using": "PAG.Part3.sum_neg_twist",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200378,
+  "goal": "PAG.Part3.sum_neg_twist",
+  "using": "PAG.Part256.neg_one_mul_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200379,
+  "goal": "PAG.Part256.neg_one_mul_self",
+  "using": "PAG.Part9.chi_neg_one_sq",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part9.chi_neg_one_sq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200380,
+  "goal": "PAG.Part9.chi_neg_one_sq",
+  "using": "PAG.Part256.neg_one_mul_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part9.chi_neg_one_sq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200381,
+  "goal": "PAG.Part256.normSq_rootNum",
+  "using": "PAG.Part16.normSq_gaussSum",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.normSq_rootNum",
+  "cand": "PAG.Part16.normSq_gaussSum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200382,
+  "goal": "PAG.Part16.normSq_gaussSum",
+  "using": "PAG.Part256.normSq_rootNum",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.normSq_rootNum",
+  "cand": "PAG.Part16.normSq_gaussSum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part256.parFac",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "def",
+  "why": "claim",
+  "note": "種類が違う（def と thm）：手で確かめる"
+ },
+ {
+  "id": 200383,
+  "goal": "PAG.Part256.parFac",
+  "using": "PAG.Part198.gs",
+  "dir": "defeq",
+  "target": "PAG.Part256.parFac",
+  "cand": "PAG.Part198.gs",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part256.parFac",
+  "cand": "PAG.Part198.neg_one_sq_eq",
+  "kind": "def",
+  "why": "claim",
+  "note": "種類が違う（def と thm）：手で確かめる"
+ },
+ {
+  "id": 200384,
+  "goal": "PAG.Part256.rootNum",
+  "using": "PAG.Kloosterman.Wpow",
+  "dir": "defeq",
+  "target": "PAG.Part256.rootNum",
+  "cand": "PAG.Kloosterman.Wpow",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200385,
+  "goal": "PAG.Part256.rootNum",
+  "using": "PAG.Part196.zN",
+  "dir": "defeq",
+  "target": "PAG.Part256.rootNum",
+  "cand": "PAG.Part196.zN",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200386,
+  "goal": "PAG.Part256.rootNum",
+  "using": "PAG.Part198.gs",
+  "dir": "defeq",
+  "target": "PAG.Part256.rootNum",
+  "cand": "PAG.Part198.gs",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200387,
+  "goal": "PAG.Part256.rootNum.congr_simp",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.rootNum.congr_simp",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200388,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part256.rootNum.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.rootNum.congr_simp",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200389,
+  "goal": "PAG.Part256.rootNum_eq",
+  "using": "PAG.Kloosterman.parity_weight",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.rootNum_eq",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200390,
+  "goal": "PAG.Kloosterman.parity_weight",
+  "using": "PAG.Part256.rootNum_eq",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.rootNum_eq",
+  "cand": "PAG.Kloosterman.parity_weight",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200391,
+  "goal": "PAG.Part256.sum_mul_stdAddChar",
+  "using": "PAG.Part3.sum_neg_twist",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.sum_mul_stdAddChar",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200392,
+  "goal": "PAG.Part3.sum_neg_twist",
+  "using": "PAG.Part256.sum_mul_stdAddChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.sum_mul_stdAddChar",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200393,
+  "goal": "PAG.Part256.sum_mul_stdAddChar_neg",
+  "using": "PAG.Part3.sum_neg_twist",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.sum_mul_stdAddChar_neg",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200394,
+  "goal": "PAG.Part3.sum_neg_twist",
+  "using": "PAG.Part256.sum_mul_stdAddChar_neg",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.sum_mul_stdAddChar_neg",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200395,
+  "goal": "PAG.Part257.JHL",
+  "using": "PAG.Part256.JH",
+  "dir": "defeq",
+  "target": "PAG.Part257.JHL",
+  "cand": "PAG.Part256.JH",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200396,
+  "goal": "PAG.Part257.TopL_charU",
+  "using": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.TopL_charU",
+  "cand": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200397,
+  "goal": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "using": "PAG.Part257.TopL_charU",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.TopL_charU",
+  "cand": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200398,
+  "goal": "PAG.Part257.TopL_charU_one_four",
+  "using": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.TopL_charU_one_four",
+  "cand": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200399,
+  "goal": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "using": "PAG.Part257.TopL_charU_one_four",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.TopL_charU_one_four",
+  "cand": "PAG.Part256.JH_eq_rootNum_mul_any",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200400,
+  "goal": "PAG.Part257.TopL_charU_one_four",
+  "using": "PAG.Part256.removal_counterexample_four",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.TopL_charU_one_four",
+  "cand": "PAG.Part256.removal_counterexample_four",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200401,
+  "goal": "PAG.Part256.removal_counterexample_four",
+  "using": "PAG.Part257.TopL_charU_one_four",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.TopL_charU_one_four",
+  "cand": "PAG.Part256.removal_counterexample_four",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200402,
+  "goal": "PAG.Part257.TopL_charU_one_four",
+  "using": "PAG.Part45.five_pow_M",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.TopL_charU_one_four",
+  "cand": "PAG.Part45.five_pow_M",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200403,
+  "goal": "PAG.Part45.five_pow_M",
+  "using": "PAG.Part257.TopL_charU_one_four",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.TopL_charU_one_four",
+  "cand": "PAG.Part45.five_pow_M",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200404,
+  "goal": "PAG.Part257.Vimprim",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part257.Vimprim",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200405,
+  "goal": "PAG.Part257.Vprim",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part257.Vprim",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200406,
+  "goal": "PAG.Part257.Vprim_ne_bot_prime",
+  "using": "PAG.Part119.Lc_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part119.Lc_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200407,
+  "goal": "PAG.Part119.Lc_ne_one",
+  "using": "PAG.Part257.Vprim_ne_bot_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part119.Lc_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200408,
+  "goal": "PAG.Part257.Vprim_ne_bot_prime",
+  "using": "PAG.Part171.primitive_of_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200409,
+  "goal": "PAG.Part171.primitive_of_ne_one",
+  "using": "PAG.Part257.Vprim_ne_bot_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200410,
+  "goal": "PAG.Part257.Vprim_ne_bot_prime",
+  "using": "PAG.Part185.sqrt_ne_zero",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part185.sqrt_ne_zero",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200411,
+  "goal": "PAG.Part185.sqrt_ne_zero",
+  "using": "PAG.Part257.Vprim_ne_bot_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part185.sqrt_ne_zero",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200412,
+  "goal": "PAG.Part257.Vprim_ne_bot_prime",
+  "using": "PAG.Part196.exists_generator",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part196.exists_generator",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200413,
+  "goal": "PAG.Part196.exists_generator",
+  "using": "PAG.Part257.Vprim_ne_bot_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part196.exists_generator",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200414,
+  "goal": "PAG.Part257.Vprim_ne_bot_prime",
+  "using": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200415,
+  "goal": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "using": "PAG.Part257.Vprim_ne_bot_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200416,
+  "goal": "PAG.Part257.Vprim_ne_bot_prime",
+  "using": "PAG.Part32.prim_level_p_iff",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part32.prim_level_p_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200417,
+  "goal": "PAG.Part32.prim_level_p_iff",
+  "using": "PAG.Part257.Vprim_ne_bot_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_prime",
+  "cand": "PAG.Part32.prim_level_p_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200418,
+  "goal": "PAG.Part257.Vprim_ne_bot_three",
+  "using": "PAG.Part256.exists_primitive_odd_three",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_ne_bot_three",
+  "cand": "PAG.Part256.exists_primitive_odd_three",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200419,
+  "goal": "PAG.Part256.exists_primitive_odd_three",
+  "using": "PAG.Part257.Vprim_ne_bot_three",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_ne_bot_three",
+  "cand": "PAG.Part256.exists_primitive_odd_three",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200420,
+  "goal": "PAG.Part257.Vprim_two",
+  "using": "PAG.Part30.no_prim_mod_two",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.Vprim_two",
+  "cand": "PAG.Part30.no_prim_mod_two",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200421,
+  "goal": "PAG.Part30.no_prim_mod_two",
+  "using": "PAG.Part257.Vprim_two",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.Vprim_two",
+  "cand": "PAG.Part30.no_prim_mod_two",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200422,
+  "goal": "PAG.Part257.charU",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part257.charU",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200423,
+  "goal": "PAG.Part257.charU_one_mem_Vimprim",
+  "using": "PAG.Part195.ne_one_of_isPrimitive",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.charU_one_mem_Vimprim",
+  "cand": "PAG.Part195.ne_one_of_isPrimitive",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200424,
+  "goal": "PAG.Part195.ne_one_of_isPrimitive",
+  "using": "PAG.Part257.charU_one_mem_Vimprim",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.charU_one_mem_Vimprim",
+  "cand": "PAG.Part195.ne_one_of_isPrimitive",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200425,
+  "goal": "PAG.Part257.eq_one_of_two",
+  "using": "PAG.Part198.level_two_trivial",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.eq_one_of_two",
+  "cand": "PAG.Part198.level_two_trivial",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200426,
+  "goal": "PAG.Part198.level_two_trivial",
+  "using": "PAG.Part257.eq_one_of_two",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.eq_one_of_two",
+  "cand": "PAG.Part198.level_two_trivial",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200427,
+  "goal": "PAG.Part257.eq_zero_of_ip_self",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.eq_zero_of_ip_self",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200428,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.eq_zero_of_ip_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.eq_zero_of_ip_self",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200429,
+  "goal": "PAG.Part257.eq_zero_of_ip_self",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.eq_zero_of_ip_self",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200430,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.eq_zero_of_ip_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.eq_zero_of_ip_self",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200431,
+  "goal": "PAG.Part257.ip",
+  "using": "PAG.Part253.ipG",
+  "dir": "defeq",
+  "target": "PAG.Part257.ip",
+  "cand": "PAG.Part253.ipG",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200432,
+  "goal": "PAG.Part257.ip.congr_simp",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip.congr_simp",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200433,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip.congr_simp",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200434,
+  "goal": "PAG.Part257.ip.congr_simp",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip.congr_simp",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200435,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.ip.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip.congr_simp",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200436,
+  "goal": "PAG.Part257.ip_TopL_charU_prim",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_TopL_charU_prim",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200437,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip_TopL_charU_prim",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_TopL_charU_prim",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200438,
+  "goal": "PAG.Part257.ip_TopL_of_mem_Vprim",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_TopL_of_mem_Vprim",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200439,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip_TopL_of_mem_Vprim",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_TopL_of_mem_Vprim",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200440,
+  "goal": "PAG.Part257.ip_Vprim_Vimprim",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_Vprim_Vimprim",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200441,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip_Vprim_Vimprim",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_Vprim_Vimprim",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200442,
+  "goal": "PAG.Part257.ip_Vprim_Vimprim",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_Vprim_Vimprim",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200443,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.ip_Vprim_Vimprim",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_Vprim_Vimprim",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200444,
+  "goal": "PAG.Part257.ip_charU",
+  "using": "PAG.Part218.sum_units_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_charU",
+  "cand": "PAG.Part218.sum_units_char",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200445,
+  "goal": "PAG.Part218.sum_units_char",
+  "using": "PAG.Part257.ip_charU",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_charU",
+  "cand": "PAG.Part218.sum_units_char",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200446,
+  "goal": "PAG.Part257.ip_charU",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_charU",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200447,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.ip_charU",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_charU",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200448,
+  "goal": "PAG.Part257.ip_smul_smul",
+  "using": "PAG.Part253.ipG_smul_left",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part253.ipG_smul_left",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200449,
+  "goal": "PAG.Part253.ipG_smul_left",
+  "using": "PAG.Part257.ip_smul_smul",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part253.ipG_smul_left",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200450,
+  "goal": "PAG.Part257.ip_smul_smul",
+  "using": "PAG.Part253.ipG_smul_right",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part253.ipG_smul_right",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200451,
+  "goal": "PAG.Part253.ipG_smul_right",
+  "using": "PAG.Part257.ip_smul_smul",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part253.ipG_smul_right",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200452,
+  "goal": "PAG.Part257.ip_smul_smul",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200453,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip_smul_smul",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200454,
+  "goal": "PAG.Part257.ip_smul_smul",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200455,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.ip_smul_smul",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_smul_smul",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200456,
+  "goal": "PAG.Part257.ip_sum_right",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_sum_right",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200457,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip_sum_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_sum_right",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200458,
+  "goal": "PAG.Part257.ip_sum_right",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_sum_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200459,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.ip_sum_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_sum_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200460,
+  "goal": "PAG.Part257.ip_sum_sum",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_sum_sum",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200461,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.ip_sum_sum",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_sum_sum",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200462,
+  "goal": "PAG.Part257.ip_sum_sum",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.ip_sum_sum",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200463,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part257.ip_sum_sum",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.ip_sum_sum",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200464,
+  "goal": "PAG.Part257.not_isPrimitive_one_of_two_le",
+  "using": "PAG.Part195.ne_one_of_isPrimitive",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.not_isPrimitive_one_of_two_le",
+  "cand": "PAG.Part195.ne_one_of_isPrimitive",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200465,
+  "goal": "PAG.Part195.ne_one_of_isPrimitive",
+  "using": "PAG.Part257.not_isPrimitive_one_of_two_le",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.not_isPrimitive_one_of_two_le",
+  "cand": "PAG.Part195.ne_one_of_isPrimitive",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200466,
+  "goal": "PAG.Part257.not_isPrimitive_one_prime",
+  "using": "PAG.Part195.ne_one_of_isPrimitive",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.not_isPrimitive_one_prime",
+  "cand": "PAG.Part195.ne_one_of_isPrimitive",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200467,
+  "goal": "PAG.Part195.ne_one_of_isPrimitive",
+  "using": "PAG.Part257.not_isPrimitive_one_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.not_isPrimitive_one_prime",
+  "cand": "PAG.Part195.ne_one_of_isPrimitive",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200468,
+  "goal": "PAG.Part257.not_isPrimitive_one_prime",
+  "using": "PAG.Part32.prim_level_p_iff",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.not_isPrimitive_one_prime",
+  "cand": "PAG.Part32.prim_level_p_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200469,
+  "goal": "PAG.Part32.prim_level_p_iff",
+  "using": "PAG.Part257.not_isPrimitive_one_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.not_isPrimitive_one_prime",
+  "cand": "PAG.Part32.prim_level_p_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200470,
+  "goal": "PAG.Part257.not_isometry_Vimprim_prime",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.not_isometry_Vimprim_prime",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200471,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.not_isometry_Vimprim_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.not_isometry_Vimprim_prime",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200472,
+  "goal": "PAG.Part257.not_isometry_Vimprim_two",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.not_isometry_Vimprim_two",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200473,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part257.not_isometry_Vimprim_two",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.not_isometry_Vimprim_two",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200474,
+  "goal": "PAG.Part257.rootNum_ne_zero",
+  "using": "PAG.Part256.normSq_rootNum",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.rootNum_ne_zero",
+  "cand": "PAG.Part256.normSq_rootNum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200475,
+  "goal": "PAG.Part256.normSq_rootNum",
+  "using": "PAG.Part257.rootNum_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.rootNum_ne_zero",
+  "cand": "PAG.Part256.normSq_rootNum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200476,
+  "goal": "PAG.Part257.rootNum_ne_zero",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.rootNum_ne_zero",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200477,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part257.rootNum_ne_zero",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.rootNum_ne_zero",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200478,
+  "goal": "PAG.Part258.Gsp",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.Gsp",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200479,
+  "goal": "PAG.Part258.Lim",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.Lim",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200480,
+  "goal": "PAG.Part258.Lim",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part258.Lim",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200481,
+  "goal": "PAG.Part258.UA1_charU",
+  "using": "PAG.Part257.ip_charU",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.UA1_charU",
+  "cand": "PAG.Part257.ip_charU",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200482,
+  "goal": "PAG.Part257.ip_charU",
+  "using": "PAG.Part258.UA1_charU",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.UA1_charU",
+  "cand": "PAG.Part257.ip_charU",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200483,
+  "goal": "PAG.Part258.UA1_mem_condPart",
+  "using": "PAG.Part256.rootNum_eq",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.UA1_mem_condPart",
+  "cand": "PAG.Part256.rootNum_eq",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200484,
+  "goal": "PAG.Part256.rootNum_eq",
+  "using": "PAG.Part258.UA1_mem_condPart",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.UA1_mem_condPart",
+  "cand": "PAG.Part256.rootNum_eq",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200485,
+  "goal": "PAG.Part258.Uinf",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.Uinf",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200486,
+  "goal": "PAG.Part258.condPart",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.condPart",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200487,
+  "goal": "PAG.Part258.gaussSum_inv",
+  "using": "PAG.Part9.chi_neg_one_sq",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.gaussSum_inv",
+  "cand": "PAG.Part9.chi_neg_one_sq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200488,
+  "goal": "PAG.Part9.chi_neg_one_sq",
+  "using": "PAG.Part258.gaussSum_inv",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.gaussSum_inv",
+  "cand": "PAG.Part9.chi_neg_one_sq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200489,
+  "goal": "PAG.Part258.gaussSum_inv",
+  "using": "PAG.Part9.conj_gaussSum",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.gaussSum_inv",
+  "cand": "PAG.Part9.conj_gaussSum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200490,
+  "goal": "PAG.Part9.conj_gaussSum",
+  "using": "PAG.Part258.gaussSum_inv",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.gaussSum_inv",
+  "cand": "PAG.Part9.conj_gaussSum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200491,
+  "goal": "PAG.Part258.iSup_condPart",
+  "using": "PAG.Part257.span_charU_eq_top",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.iSup_condPart",
+  "cand": "PAG.Part257.span_charU_eq_top",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200492,
+  "goal": "PAG.Part257.span_charU_eq_top",
+  "using": "PAG.Part258.iSup_condPart",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.iSup_condPart",
+  "cand": "PAG.Part257.span_charU_eq_top",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200493,
+  "goal": "PAG.Part258.ipLim",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.ipLim",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200494,
+  "goal": "PAG.Part258.ipR",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part258.ipR",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200495,
+  "goal": "PAG.Part258.ip_add_right",
+  "using": "PAG.Part257.ip_sum_right",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_add_right",
+  "cand": "PAG.Part257.ip_sum_right",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200496,
+  "goal": "PAG.Part257.ip_sum_right",
+  "using": "PAG.Part258.ip_add_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_add_right",
+  "cand": "PAG.Part257.ip_sum_right",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200497,
+  "goal": "PAG.Part258.ip_add_right",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_add_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200498,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.ip_add_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_add_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200499,
+  "goal": "PAG.Part258.ip_condPart",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_condPart",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200500,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.ip_condPart",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_condPart",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200501,
+  "goal": "PAG.Part258.ip_pullL",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_pullL",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200502,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.ip_pullL",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_pullL",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200503,
+  "goal": "PAG.Part258.ip_smul_right",
+  "using": "PAG.Part253.ipG_smul_right",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part253.ipG_smul_right",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200504,
+  "goal": "PAG.Part253.ipG_smul_right",
+  "using": "PAG.Part258.ip_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part253.ipG_smul_right",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200505,
+  "goal": "PAG.Part258.ip_smul_right",
+  "using": "PAG.Part257.ip_smul_smul",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part257.ip_smul_smul",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200506,
+  "goal": "PAG.Part257.ip_smul_smul",
+  "using": "PAG.Part258.ip_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part257.ip_smul_smul",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200507,
+  "goal": "PAG.Part258.ip_smul_right",
+  "using": "PAG.Part3.apply_inv_eq_conj",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200508,
+  "goal": "PAG.Part3.apply_inv_eq_conj",
+  "using": "PAG.Part258.ip_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part3.apply_inv_eq_conj",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200509,
+  "goal": "PAG.Part258.ip_smul_right",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200510,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.ip_smul_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ip_smul_right",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200511,
+  "goal": "PAG.Part258.ipn_pullSys",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ipn_pullSys",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200512,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.ipn_pullSys",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ipn_pullSys",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200513,
+  "goal": "PAG.Part258.normSq_phaseA1",
+  "using": "PAG.Part256.normSq_rootNum",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.normSq_phaseA1",
+  "cand": "PAG.Part256.normSq_rootNum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200514,
+  "goal": "PAG.Part256.normSq_rootNum",
+  "using": "PAG.Part258.normSq_phaseA1",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.normSq_phaseA1",
+  "cand": "PAG.Part256.normSq_rootNum",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200515,
+  "goal": "PAG.Part258.ofL",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.ofL",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200516,
+  "goal": "PAG.Part258.ofL",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part258.ofL",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200517,
+  "goal": "PAG.Part258.ofL_charU",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ofL_charU",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200518,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part258.ofL_charU",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ofL_charU",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200519,
+  "goal": "PAG.Part258.ofL_injective",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.ofL_injective",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200520,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part258.ofL_injective",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.ofL_injective",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200521,
+  "goal": "PAG.Part258.phaseA1_inv",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.phaseA1_inv",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200522,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.phaseA1_inv",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.phaseA1_inv",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200523,
+  "goal": "PAG.Part258.phaseA1_one",
+  "using": "PAG.Part196.zN_level_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.phaseA1_one",
+  "cand": "PAG.Part196.zN_level_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200524,
+  "goal": "PAG.Part196.zN_level_one",
+  "using": "PAG.Part258.phaseA1_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.phaseA1_one",
+  "cand": "PAG.Part196.zN_level_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200525,
+  "goal": "PAG.Part258.pullL",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.pullL",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200526,
+  "goal": "PAG.Part258.pullL",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part258.pullL",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200527,
+  "goal": "PAG.Part258.pullL.congr_simp",
+  "using": "PAG.Part3.rev_charFun",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200528,
+  "goal": "PAG.Part3.rev_charFun",
+  "using": "PAG.Part258.pullL.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.Part3.rev_charFun",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200529,
+  "goal": "PAG.Part258.pullL.congr_simp",
+  "using": "PAG.Part3.rev_charFun_real",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200530,
+  "goal": "PAG.Part3.rev_charFun_real",
+  "using": "PAG.Part258.pullL.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.Part3.rev_charFun_real",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200531,
+  "goal": "PAG.Part258.pullL.congr_simp",
+  "using": "PAG.Part3.rev_not_eigen",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200532,
+  "goal": "PAG.Part3.rev_not_eigen",
+  "using": "PAG.Part258.pullL.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.Part3.rev_not_eigen",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200533,
+  "goal": "PAG.Part258.pullL.congr_simp",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200534,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part258.pullL.congr_simp",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.pullL.congr_simp",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200535,
+  "goal": "PAG.Part258.pullL_injective",
+  "using": "PAG.eigen_of_commute",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.pullL_injective",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200536,
+  "goal": "PAG.eigen_of_commute",
+  "using": "PAG.Part258.pullL_injective",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.pullL_injective",
+  "cand": "PAG.eigen_of_commute",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200537,
+  "goal": "PAG.Part258.pullSys",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part258.pullSys",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200538,
+  "goal": "PAG.Part258.pullSys",
+  "using": "PAG.transl",
+  "dir": "defeq",
+  "target": "PAG.Part258.pullSys",
+  "cand": "PAG.transl",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200539,
+  "goal": "PAG.Part258.rootNum_inv",
+  "using": "PAG.Part3.conj_apply_eq_inv",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.rootNum_inv",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200540,
+  "goal": "PAG.Part3.conj_apply_eq_inv",
+  "using": "PAG.Part258.rootNum_inv",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.rootNum_inv",
+  "cand": "PAG.Part3.conj_apply_eq_inv",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200541,
+  "goal": "PAG.Part258.rootNum_one_of_eq_one",
+  "using": "PAG.Part196.zN_level_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.rootNum_one_of_eq_one",
+  "cand": "PAG.Part196.zN_level_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200542,
+  "goal": "PAG.Part196.zN_level_one",
+  "using": "PAG.Part258.rootNum_one_of_eq_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.rootNum_one_of_eq_one",
+  "cand": "PAG.Part196.zN_level_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200543,
+  "goal": "PAG.Part258.rootNum_one_prime",
+  "using": "PAG.Part257.gaussSum_one_prime",
+  "dir": "S⇒T",
+  "target": "PAG.Part258.rootNum_one_prime",
+  "cand": "PAG.Part257.gaussSum_one_prime",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200544,
+  "goal": "PAG.Part257.gaussSum_one_prime",
+  "using": "PAG.Part258.rootNum_one_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.rootNum_one_prime",
+  "cand": "PAG.Part257.gaussSum_one_prime",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200545,
+  "goal": "PAG.Part259.closure_logSet",
+  "using": "PAG.Part254.dense_logSet",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.closure_logSet",
+  "cand": "PAG.Part254.dense_logSet",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200546,
+  "goal": "PAG.Part254.dense_logSet",
+  "using": "PAG.Part259.closure_logSet",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.closure_logSet",
+  "cand": "PAG.Part254.dense_logSet",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200547,
+  "goal": "PAG.Part259.exists_mem_one_le_abs_of_support",
+  "using": "PAG.Part253.exists_cls_near_of_dvd",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.exists_mem_one_le_abs_of_support",
+  "cand": "PAG.Part253.exists_cls_near_of_dvd",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200548,
+  "goal": "PAG.Part253.exists_cls_near_of_dvd",
+  "using": "PAG.Part259.exists_mem_one_le_abs_of_support",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.exists_mem_one_le_abs_of_support",
+  "cand": "PAG.Part253.exists_cls_near_of_dvd",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200549,
+  "goal": "PAG.Part259.exists_near_measured",
+  "using": "PAG.Part253.exists_cls_near",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.exists_near_measured",
+  "cand": "PAG.Part253.exists_cls_near",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200550,
+  "goal": "PAG.Part253.exists_cls_near",
+  "using": "PAG.Part259.exists_near_measured",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.exists_near_measured",
+  "cand": "PAG.Part253.exists_cls_near",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200551,
+  "goal": "PAG.Part259.exists_near_measured",
+  "using": "PAG.Part254.dense_logSet_coprime",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.exists_near_measured",
+  "cand": "PAG.Part254.dense_logSet_coprime",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200552,
+  "goal": "PAG.Part254.dense_logSet_coprime",
+  "using": "PAG.Part259.exists_near_measured",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.exists_near_measured",
+  "cand": "PAG.Part254.dense_logSet_coprime",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200553,
+  "goal": "PAG.Part259.exists_prime_one_le_abs",
+  "using": "PAG.Part253.exists_cls_near_of_dvd",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.exists_prime_one_le_abs",
+  "cand": "PAG.Part253.exists_cls_near_of_dvd",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200554,
+  "goal": "PAG.Part253.exists_cls_near_of_dvd",
+  "using": "PAG.Part259.exists_prime_one_le_abs",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.exists_prime_one_le_abs",
+  "cand": "PAG.Part253.exists_cls_near_of_dvd",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200555,
+  "goal": "PAG.Part259.imgST",
+  "using": "PAG.Part23.extS",
+  "dir": "defeq",
+  "target": "PAG.Part259.imgST",
+  "cand": "PAG.Part23.extS",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200556,
+  "goal": "PAG.Part259.mem_zmultiples_of_commensurable",
+  "using": "PAG.Seesaw.trace_seesaw",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.mem_zmultiples_of_commensurable",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200557,
+  "goal": "PAG.Seesaw.trace_seesaw",
+  "using": "PAG.Part259.mem_zmultiples_of_commensurable",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.mem_zmultiples_of_commensurable",
+  "cand": "PAG.Seesaw.trace_seesaw",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200558,
+  "goal": "PAG.Part259.one_le_abs_intCast_sub",
+  "using": "PAG.Part254.dP_lt_one_iff",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.one_le_abs_intCast_sub",
+  "cand": "PAG.Part254.dP_lt_one_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200559,
+  "goal": "PAG.Part254.dP_lt_one_iff",
+  "using": "PAG.Part259.one_le_abs_intCast_sub",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.one_le_abs_intCast_sub",
+  "cand": "PAG.Part254.dP_lt_one_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200560,
+  "goal": "PAG.Part259.one_le_abs_intCast_sub",
+  "using": "PAG.Part254.exists_padicValRat_eq",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.one_le_abs_intCast_sub",
+  "cand": "PAG.Part254.exists_padicValRat_eq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200561,
+  "goal": "PAG.Part254.exists_padicValRat_eq",
+  "using": "PAG.Part259.one_le_abs_intCast_sub",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.one_le_abs_intCast_sub",
+  "cand": "PAG.Part254.exists_padicValRat_eq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200562,
+  "goal": "PAG.Part259.padicValRat_prime_ne",
+  "using": "PAG.Part179.InQi_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.padicValRat_prime_ne",
+  "cand": "PAG.Part179.InQi_one",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200563,
+  "goal": "PAG.Part179.InQi_one",
+  "using": "PAG.Part259.padicValRat_prime_ne",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.padicValRat_prime_ne",
+  "cand": "PAG.Part179.InQi_one",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200564,
+  "goal": "PAG.Part259.padicValRat_prod_zpow",
+  "using": "PAG.Part254.chainIn_dP_iff",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.padicValRat_prod_zpow",
+  "cand": "PAG.Part254.chainIn_dP_iff",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200565,
+  "goal": "PAG.Part254.chainIn_dP_iff",
+  "using": "PAG.Part259.padicValRat_prod_zpow",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.padicValRat_prod_zpow",
+  "cand": "PAG.Part254.chainIn_dP_iff",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200566,
+  "goal": "PAG.Part259.rho_sep",
+  "using": "PAG.Part254.dense_logSet_coprime",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.rho_sep",
+  "cand": "PAG.Part254.dense_logSet_coprime",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200567,
+  "goal": "PAG.Part254.dense_logSet_coprime",
+  "using": "PAG.Part259.rho_sep",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.rho_sep",
+  "cand": "PAG.Part254.dense_logSet_coprime",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part259.sep_of_inf_unmeasured",
+  "cand": "PAG.Part254.dP",
+  "kind": "thm",
+  "why": "claim",
+  "note": "種類が違う（thm と def）：手で確かめる"
+ },
+ {
+  "id": 200568,
+  "goal": "PAG.Part259.sep_of_inf_unmeasured",
+  "using": "PAG.Part254.dP_lt_one_iff",
+  "dir": "S⇒T",
+  "target": "PAG.Part259.sep_of_inf_unmeasured",
+  "cand": "PAG.Part254.dP_lt_one_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200569,
+  "goal": "PAG.Part254.dP_lt_one_iff",
+  "using": "PAG.Part259.sep_of_inf_unmeasured",
+  "dir": "T⇒S",
+  "target": "PAG.Part259.sep_of_inf_unmeasured",
+  "cand": "PAG.Part254.dP_lt_one_iff",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200570,
+  "goal": "PAG.Part260.cast_crtMap_fst",
+  "using": "PAG.Part193.param_cast₁",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.cast_crtMap_fst",
+  "cand": "PAG.Part193.param_cast₁",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200571,
+  "goal": "PAG.Part193.param_cast₁",
+  "using": "PAG.Part260.cast_crtMap_fst",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.cast_crtMap_fst",
+  "cand": "PAG.Part193.param_cast₁",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200572,
+  "goal": "PAG.Part260.cast_crtMap_fst",
+  "using": "PAG.Part236.ext_tens",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.cast_crtMap_fst",
+  "cand": "PAG.Part236.ext_tens",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200573,
+  "goal": "PAG.Part236.ext_tens",
+  "using": "PAG.Part260.cast_crtMap_fst",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.cast_crtMap_fst",
+  "cand": "PAG.Part236.ext_tens",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200574,
+  "goal": "PAG.Part260.cast_crtMap_snd",
+  "using": "PAG.Part193.param_cast₂",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.cast_crtMap_snd",
+  "cand": "PAG.Part193.param_cast₂",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200575,
+  "goal": "PAG.Part193.param_cast₂",
+  "using": "PAG.Part260.cast_crtMap_snd",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.cast_crtMap_snd",
+  "cand": "PAG.Part193.param_cast₂",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200576,
+  "goal": "PAG.Part260.cast_crtMap_snd",
+  "using": "PAG.Part236.ext_tens",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.cast_crtMap_snd",
+  "cand": "PAG.Part236.ext_tens",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200577,
+  "goal": "PAG.Part236.ext_tens",
+  "using": "PAG.Part260.cast_crtMap_snd",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.cast_crtMap_snd",
+  "cand": "PAG.Part236.ext_tens",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200578,
+  "goal": "PAG.Part260.charU_prodChar",
+  "using": "PAG.Part236.charMul_apply_unit",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part236.charMul_apply_unit",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200579,
+  "goal": "PAG.Part236.charMul_apply_unit",
+  "using": "PAG.Part260.charU_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part236.charMul_apply_unit",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part257.charU",
+  "kind": "thm",
+  "why": "claim",
+  "note": "種類が違う（thm と def）：手で確かめる"
+ },
+ {
+  "id": 200580,
+  "goal": "PAG.Part260.crossSign",
+  "using": "PAG.Part198.rs",
+  "dir": "defeq",
+  "target": "PAG.Part260.crossSign",
+  "cand": "PAG.Part198.rs",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200581,
+  "goal": "PAG.Part260.crossSign_of_even_left",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.crossSign_of_even_left",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200582,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part260.crossSign_of_even_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.crossSign_of_even_left",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200583,
+  "goal": "PAG.Part260.crossSign_of_even_right",
+  "using": "PAG.Part3.hartley_char",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.crossSign_of_even_right",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200584,
+  "goal": "PAG.Part3.hartley_char",
+  "using": "PAG.Part260.crossSign_of_even_right",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.crossSign_of_even_right",
+  "cand": "PAG.Part3.hartley_char",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200585,
+  "goal": "PAG.Part260.crtMap",
+  "using": "PAG.Part193.param",
+  "dir": "defeq",
+  "target": "PAG.Part260.crtMap",
+  "cand": "PAG.Part193.param",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200586,
+  "goal": "PAG.Part260.crtMap_bijective",
+  "using": "PAG.Part193.param_bijective",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.crtMap_bijective",
+  "cand": "PAG.Part193.param_bijective",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200587,
+  "goal": "PAG.Part193.param_bijective",
+  "using": "PAG.Part260.crtMap_bijective",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.crtMap_bijective",
+  "cand": "PAG.Part193.param_bijective",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200588,
+  "goal": "PAG.Part260.gaussSum_prodChar",
+  "using": "PAG.Part193.gaussSum_mul_coprime",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.gaussSum_prodChar",
+  "cand": "PAG.Part193.gaussSum_mul_coprime",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200589,
+  "goal": "PAG.Part193.gaussSum_mul_coprime",
+  "using": "PAG.Part260.gaussSum_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.gaussSum_prodChar",
+  "cand": "PAG.Part193.gaussSum_mul_coprime",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200590,
+  "goal": "PAG.Part260.isPrimitive_prodChar",
+  "using": "PAG.Part194.isPrimitive_mul",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part194.isPrimitive_mul",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200591,
+  "goal": "PAG.Part194.isPrimitive_mul",
+  "using": "PAG.Part260.isPrimitive_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part194.isPrimitive_mul",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200592,
+  "goal": "PAG.Part260.isPrimitive_prodChar",
+  "using": "PAG.Part236.isPrimitive_charMul",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part236.isPrimitive_charMul",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200593,
+  "goal": "PAG.Part236.isPrimitive_charMul",
+  "using": "PAG.Part260.isPrimitive_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part236.isPrimitive_charMul",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200594,
+  "goal": "PAG.Part260.norm_char_unit",
+  "using": "PAG.Part198.neg_one_sq_eq",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.norm_char_unit",
+  "cand": "PAG.Part198.neg_one_sq_eq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200595,
+  "goal": "PAG.Part198.neg_one_sq_eq",
+  "using": "PAG.Part260.norm_char_unit",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.norm_char_unit",
+  "cand": "PAG.Part198.neg_one_sq_eq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200596,
+  "goal": "PAG.Part260.norm_char_unit",
+  "using": "PAG.Part202.normSq_chi_unit",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.norm_char_unit",
+  "cand": "PAG.Part202.normSq_chi_unit",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200597,
+  "goal": "PAG.Part202.normSq_chi_unit",
+  "using": "PAG.Part260.norm_char_unit",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.norm_char_unit",
+  "cand": "PAG.Part202.normSq_chi_unit",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200598,
+  "goal": "PAG.Part260.norm_char_unit",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.norm_char_unit",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200599,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part260.norm_char_unit",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.norm_char_unit",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200600,
+  "goal": "PAG.Part260.norm_cross",
+  "using": "PAG.Part199.normSq_chi_natCast",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.norm_cross",
+  "cand": "PAG.Part199.normSq_chi_natCast",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200601,
+  "goal": "PAG.Part199.normSq_chi_natCast",
+  "using": "PAG.Part260.norm_cross",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.norm_cross",
+  "cand": "PAG.Part199.normSq_chi_natCast",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200602,
+  "goal": "PAG.Part260.norm_cross",
+  "using": "PAG.Part200.chi_level_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.norm_cross",
+  "cand": "PAG.Part200.chi_level_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200603,
+  "goal": "PAG.Part200.chi_level_one",
+  "using": "PAG.Part260.norm_cross",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.norm_cross",
+  "cand": "PAG.Part200.chi_level_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200604,
+  "goal": "PAG.Part260.norm_cross",
+  "using": "PAG.real_sector_sign",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.norm_cross",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200605,
+  "goal": "PAG.real_sector_sign",
+  "using": "PAG.Part260.norm_cross",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.norm_cross",
+  "cand": "PAG.real_sector_sign",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200606,
+  "goal": "PAG.Part260.parFac_prodChar",
+  "using": "PAG.Part198.neg_one_sq_eq",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.parFac_prodChar",
+  "cand": "PAG.Part198.neg_one_sq_eq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200607,
+  "goal": "PAG.Part198.neg_one_sq_eq",
+  "using": "PAG.Part260.parFac_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.parFac_prodChar",
+  "cand": "PAG.Part198.neg_one_sq_eq",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200608,
+  "goal": "PAG.Part260.parFac_prodChar",
+  "using": "PAG.Part204.changeLevel_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.parFac_prodChar",
+  "cand": "PAG.Part204.changeLevel_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200609,
+  "goal": "PAG.Part204.changeLevel_neg_one",
+  "using": "PAG.Part260.parFac_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.parFac_prodChar",
+  "cand": "PAG.Part204.changeLevel_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": null,
+  "target": "PAG.Part260.parFac_prodChar",
+  "cand": "PAG.Part256.parFac",
+  "kind": "thm",
+  "why": "claim",
+  "note": "種類が違う（thm と def）：手で確かめる"
+ },
+ {
+  "id": 200610,
+  "goal": "PAG.Part260.prodChar",
+  "using": "PAG.Part199.cmul",
+  "dir": "defeq",
+  "target": "PAG.Part260.prodChar",
+  "cand": "PAG.Part199.cmul",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200611,
+  "goal": "PAG.Part260.prodChar",
+  "using": "PAG.Part236.charMul",
+  "dir": "defeq",
+  "target": "PAG.Part260.prodChar",
+  "cand": "PAG.Part236.charMul",
+  "kind": "def",
+  "why": "claim"
+ },
+ {
+  "id": 200612,
+  "goal": "PAG.Part260.prodChar",
+  "using": "PAG.charFun",
+  "dir": "defeq",
+  "target": "PAG.Part260.prodChar",
+  "cand": "PAG.charFun",
+  "kind": "def",
+  "why": "shortlist"
+ },
+ {
+  "id": 200613,
+  "goal": "PAG.Part260.prodChar_apply",
+  "using": "PAG.Part193.mul_changeLevel_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part193.mul_changeLevel_apply",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200614,
+  "goal": "PAG.Part193.mul_changeLevel_apply",
+  "using": "PAG.Part260.prodChar_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part193.mul_changeLevel_apply",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200615,
+  "goal": "PAG.Part260.prodChar_apply",
+  "using": "PAG.Part199.cmul_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part199.cmul_apply",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200616,
+  "goal": "PAG.Part199.cmul_apply",
+  "using": "PAG.Part260.prodChar_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part199.cmul_apply",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200617,
+  "goal": "PAG.Part260.prodChar_apply",
+  "using": "PAG.Part236.charMul_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part236.charMul_apply",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200618,
+  "goal": "PAG.Part236.charMul_apply",
+  "using": "PAG.Part260.prodChar_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part236.charMul_apply",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200619,
+  "goal": "PAG.Part260.prodChar_neg_one",
+  "using": "PAG.Part204.changeLevel_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_neg_one",
+  "cand": "PAG.Part204.changeLevel_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200620,
+  "goal": "PAG.Part204.changeLevel_neg_one",
+  "using": "PAG.Part260.prodChar_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_neg_one",
+  "cand": "PAG.Part204.changeLevel_neg_one",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200621,
+  "goal": "PAG.Part260.stdAddChar_crtMap",
+  "using": "PAG.Part193.stdAddChar_param",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.stdAddChar_crtMap",
+  "cand": "PAG.Part193.stdAddChar_param",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200622,
+  "goal": "PAG.Part193.stdAddChar_param",
+  "using": "PAG.Part260.stdAddChar_crtMap",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.stdAddChar_crtMap",
+  "cand": "PAG.Part193.stdAddChar_param",
+  "kind": "thm",
+  "why": "claim"
+ },
+ {
+  "id": 200623,
+  "goal": "PAG.Part260.stdAddChar_crtMap",
+  "using": "PAG.Part3.sum_neg_twist",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.stdAddChar_crtMap",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ },
+ {
+  "id": 200624,
+  "goal": "PAG.Part3.sum_neg_twist",
+  "using": "PAG.Part260.stdAddChar_crtMap",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.stdAddChar_crtMap",
+  "cand": "PAG.Part3.sum_neg_twist",
+  "kind": "thm",
+  "why": "shortlist"
+ }
+]

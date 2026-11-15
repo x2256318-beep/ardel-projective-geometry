@@ -1,0 +1,456 @@
+あなたは独立の照合者です。ある Lean 4（Mathlib）の形式化について、コンパイル済みの形式文と、それについて書かれた文面（ノート、表、Lean ファイルの docstring）を突き合わせ、文面が形式文の内容を正しく述べているかを判定してください。
+
+## 守ってほしいこと
+- ツールは一切使わないでください（ファイル、シェル、検索、エージェントの起動もしない）。
+- 定義名・定理名は意味の根拠にしないでください。定義の本文と文の形で判断してください。
+- 文面には、著者の解釈の言葉（貼り合わせ、素点、重なり、解像度、公準 A1 など）が出てきます。「読み」「解釈」と明示されていれば許容です。形式文の事実として書かれていれば、ずれとして挙げてください。
+- 判断ごとに確信度（高・中・低）を付けてください。
+- 回答は日本語で、6,000 字程度までにまとめてください。最後に、使ったツール（使っていなければ「なし」）を書いてください。
+
+## Mathlib の前提
+`ZMod N` は ℤ/N、`(ZMod N)ˣ` は単数群、`t.val` は 0 以上 N 未満の代表。`stdAddChar` は t ↦ exp(2πi·t.val/N)。`DirichletCharacter ℂ N` は法 N のディリクレ指標（単数でないところで 0）。`IsPrimitive` は導手が法に等しいこと、`Even` は χ(−1) = 1、`Odd` は χ(−1) = −1。`gaussSum χ ψ = Σ_a χ(a)ψ(a)`。`χ.conductor` は導手、`χ.primitiveCharacter` は χ を誘導する原始指標（法は導手）、`changeLevel h χ` は法を倍数に上げた指標。`ZMod.unitsMap h` は (ℤ/M)ˣ → (ℤ/N)ˣ の自然な準同型。`starRingEnd ℂ` は複素共役。`Submodule.span` は張る部分空間、`iSupIndep` は部分空間の族の独立、`⨆` は族の和。`Module.DirectLimit` は加群の帰納極限（代数的な直極限、完備化はしない）。`Complex.normSq z = |z|²`。
+
+## 入力 (1)：定義の全文（このファイルと前のファイル。原文のまま。コメントと docstring だけ除いた）
+```lean
+-- PAG256.lean（文脈：namespace PAG.Part256 / open ZMod Complex Finset / variable {N : ℕ} [NeZero N]）
+
+noncomputable def casKer (t : ZMod N) : ℂ :=
+  ((Real.cos (2 * Real.pi * t.val / N) + Real.sin (2 * Real.pi * t.val / N) : ℝ) : ℂ)
+
+noncomputable def hartley (f : ZMod N → ℂ) (y : ZMod N) : ℂ :=
+  ∑ x : ZMod N, f x * casKer (x * y)
+
+noncomputable def parFac (χ : DirichletCharacter ℂ N) : ℂ := ((1 - I) + (1 + I) * χ (-1)) / 2
+
+open Classical in
+noncomputable def rootNum (χ : DirichletCharacter ℂ N) : ℂ :=
+  gaussSum χ stdAddChar / ((if χ.Even then (1 : ℂ) else I) * (Real.sqrt N : ℂ))
+
+noncomputable def JH (f : ZMod N → ℂ) (u : (ZMod N)ˣ) : ℂ :=
+  hartley f ((u⁻¹ : (ZMod N)ˣ) : ZMod N) / (Real.sqrt N : ℂ)
+```
+
+## 入力 (2)：形式文の全文（PAG256.lean の定理 22 個すべて。原文のまま、証明だけ除いた。すべてコンパイル済みで sorry なし、公理は標準の範囲）
+★ は、前回の照合の後に足した文・文を変えた文です。
+```lean
+theorem casKer_eq (t : ZMod N) :
+    casKer t = ((1 - I) * stdAddChar t + (1 + I) * stdAddChar (-t)) / 2
+omit [NeZero N] in
+theorem parFac_of_even {χ : DirichletCharacter ℂ N} (h : χ.Even) : parFac χ = 1
+omit [NeZero N] in
+theorem parFac_of_odd {χ : DirichletCharacter ℂ N} (h : χ.Odd) : parFac χ = -I
+omit [NeZero N] in
+theorem inv_apply_neg_one (χ : DirichletCharacter ℂ N) : χ⁻¹ (-1) = χ (-1)
+theorem sum_mul_stdAddChar (χ : DirichletCharacter ℂ N) (y : ZMod N) :
+    ∑ x : ZMod N, χ x * stdAddChar (x * y) = gaussSum χ (stdAddChar.mulShift y)
+theorem hartley_eq_of_isPrimitive {χ : DirichletCharacter ℂ N} (hχ : χ.IsPrimitive) (y : ZMod N) :
+    hartley (χ : ZMod N → ℂ) y = parFac χ * gaussSum χ stdAddChar * χ⁻¹ y
+theorem hartley_eq_zero_of_not_isUnit {χ : DirichletCharacter ℂ N} (hχ : χ.IsPrimitive)
+    {y : ZMod N} (hy : ¬IsUnit y) : hartley (χ : ZMod N → ℂ) y = 0
+theorem rootNum_eq (χ : DirichletCharacter ℂ N) :
+    rootNum χ = parFac χ * gaussSum χ stdAddChar / (Real.sqrt N : ℂ)
+omit [NeZero N] in
+theorem inv_apply_units_inv (χ : DirichletCharacter ℂ N) (u : (ZMod N)ˣ) :
+    χ⁻¹ ((u⁻¹ : (ZMod N)ˣ) : ZMod N) = χ u
+theorem JH_eq_rootNum_mul {χ : DirichletCharacter ℂ N} (hχ : χ.IsPrimitive) (u : (ZMod N)ˣ) :
+    JH (χ : ZMod N → ℂ) u = rootNum χ * χ u
+theorem normSq_rootNum {χ : DirichletCharacter ℂ N} (hχ : χ.IsPrimitive) :
+    Complex.normSq (rootNum χ) = 1
+theorem hartley_units_inv (χ : DirichletCharacter ℂ N) (u : (ZMod N)ˣ) :
+    hartley (χ : ZMod N → ℂ) ((u⁻¹ : (ZMod N)ˣ) : ZMod N) = χ u * hartley (χ : ZMod N → ℂ) 1
+omit [NeZero N] in
+theorem neg_one_mul_self (χ : DirichletCharacter ℂ N) : χ (-1) * χ (-1) = 1
+theorem sum_mul_stdAddChar_neg (χ : DirichletCharacter ℂ N) :
+    ∑ x : ZMod N, χ x * stdAddChar (-x) = χ (-1) * gaussSum χ stdAddChar
+theorem hartley_one (χ : DirichletCharacter ℂ N) :
+    hartley (χ : ZMod N → ℂ) 1 = parFac χ * gaussSum χ stdAddChar
+theorem JH_eq_rootNum_mul_any (χ : DirichletCharacter ℂ N) (u : (ZMod N)ˣ) :
+    JH (χ : ZMod N → ℂ) u = rootNum χ * χ u
+theorem isPrimitive_of_prime_of_ne_one {p : ℕ} [hp : Fact p.Prime] {χ : DirichletCharacter ℂ p}
+    (h : χ ≠ 1) : χ.IsPrimitive
+theorem exists_primitive_odd_three : ∃ χ : DirichletCharacter ℂ 3, χ.IsPrimitive ∧ χ.Odd
+theorem exists_primitive_even_five :
+    ∃ χ : DirichletCharacter ℂ 5, χ.IsPrimitive ∧ χ.Even ∧ χ ≠ 1
+theorem removal_counterexample :
+    ¬(1 : DirichletCharacter ℂ 2).IsPrimitive ∧ ¬IsUnit (0 : ZMod 2) ∧
+      hartley ((1 : DirichletCharacter ℂ 2) : ZMod 2 → ℂ) 0 = 1
+theorem removal_counterexample_normSq :
+    Complex.normSq (rootNum (1 : DirichletCharacter ℂ 2)) = 1 / 2
+-- ★ 
+theorem removal_counterexample_four :
+    (∃ χ : DirichletCharacter ℂ (2 ^ 2), χ.IsPrimitive) ∧
+    ¬(1 : DirichletCharacter ℂ 4).IsPrimitive ∧ ¬IsUnit (2 : ZMod 4) ∧
+      hartley ((1 : DirichletCharacter ℂ 4) : ZMod 4 → ℂ) 2 = -2 ∧
+      Complex.normSq (rootNum (1 : DirichletCharacter ℂ 4)) = 0
+```
+
+## 入力 (3)：Lean ファイルの文面（ファイル冒頭の説明と、各宣言の docstring。原文のまま）
+```
+【ファイル冒頭の説明】
+/-
+  PAG 2.0 Part 252（2026-11-12）— 公理 A1 の境界ユニタリの原始指標の部分：離散 Hartley 変換と反転 J の合成
+  問いの出所：著者の判断（2026-11-12 17:14「判断 3：Lean 化してください」）。重なりは「ねじれた貼り合わせ（U）」と決まっている
+  （同日の著者の回答）。モノグラフ §1.3 の主張 (2)「A1 のもとで U = JH_N」を、各レベル N の原始指標の部分で Lean にする
+  （照合ノート §5 の 6、着手前の文書の Q1。盲検の問いテストの S1）。
+  記号：e = stdAddChar（e(t) = exp(2πi t.val/N)）、τ(χ) = gaussSum χ e、(H_N f)(y) = Σ_x f(x) cas(2π xy/N)、
+  cas = cos + sin（離散 Hartley 変換）、(J g)(u) = g(u⁻¹)（単数の上）、W(χ) = τ(χ)/(i^a √N)（a = 0 は偶、a = 1 は奇）。
+  1. Hartley の核：cas(2π t/N) = ((1 − i)e(t) + (1 + i)e(−t))/2
+  2. 原始指標 χ について H_N χ = ε(χ)·τ(χ)·χ⁻¹。ε(χ) = ((1 − i) + (1 + i)χ(−1))/2 は偶で 1、奇で −i
+  3. 単数でないところで H_N χ = 0（原始指標の部分は、単数の上の関数の空間に留まる）
+  4. 単数 u で (J H_N χ)(u)/√N = W(χ)·χ(u)。|W(χ)| = 1
+  5. 非空虚性の証人（法 3 の奇の原始指標、法 5 の偶で自明でない原始指標）と、除去テストの反例（原始性を外すと 3 と |W| = 1 が破れる）
+  6.（独立照合の指摘で追加）単数の上の式 4 は原始性なしで成り立つ（`JH_eq_rootNum_mul_any`）。原始性が効くのは 3 と |W| = 1 だけ。
+     除去テストの反例は、原始指標のない法 2 と、原始指標のある法 4 の両方で置いた
+  どれも既知の事実の書き直し（再導出）：原始指標のガウス和はフーリエ係数（Mathlib の `gaussSum_mulShift_of_isPrimitive`）。
+  Hartley の形で書いた文献は、盲検の問いテストでは見つからなかった（書き直しであって新しい内容ではない）。
+  公理 A1 は Lean の公理にしていない。ここでの文は、ルート数という量についての恒等式である（A1 は位相をこの値に選ぶ公準）。
+-/
+
+【casKer】
+/-- Hartley の核 cas(2π t/N) = cos(2π t/N) + sin(2π t/N)（t の代表は t.val）。 -/
+
+【hartley】
+/-- 離散 Hartley 変換 (H_N f)(y) = Σ_x f(x)·cas(2π xy/N)。 -/
+
+【casKer_eq】
+/-- **Hartley の核と標準の加法的指標**：cas(2π t/N) = ((1 − i)e(t) + (1 + i)e(−t))/2。 -/
+
+【parFac】
+/-- パリティ因子 ε(χ) = ((1 − i) + (1 + i)χ(−1))/2。 -/
+
+【inv_apply_neg_one】
+/-- χ⁻¹(−1) = χ(−1)（χ(−1) = ±1）。 -/
+
+【sum_mul_stdAddChar】
+/-- Σ_x χ(x) e(xy) をガウス和の形に。 -/
+
+【hartley_eq_of_isPrimitive】
+/-- **原始指標の Hartley 変換**：H_N χ = ε(χ)·τ(χ)·χ⁻¹（ℤ/N のすべての点で）。 -/
+
+【hartley_eq_zero_of_not_isUnit】
+/-- **単数でないところで H_N χ = 0**（χ 原始的）。 -/
+
+【rootNum】
+/-- ルート数 W(χ) = τ(χ)/(i^a √N)（a = 0 は偶、a = 1 は奇）。 -/
+
+【rootNum_eq】
+/-- W(χ) = ε(χ)·τ(χ)/√N。 -/
+
+【JH】
+/-- 単数の上の関数への J∘H_N/√N：(J H_N f)(u)/√N = (H_N f)(u⁻¹)/√N。 -/
+
+【inv_apply_units_inv】
+/-- χ⁻¹(u⁻¹) = χ(u)（u は単数）。 -/
+
+【JH_eq_rootNum_mul】
+/-- **主定理（モノグラフ §1.3 の主張 (2) の原始指標の部分）**：原始指標 χ は J∘H_N/√N の固有ベクトルで、
+固有値はルート数 W(χ)。 -/
+
+【normSq_rootNum】
+/-- |W(χ)|² = 1（χ 原始的。Part 16 の |τ(χ)|² = N から）。 -/
+
+【hartley_units_inv】
+/-- 単数 u で H_N χ (u⁻¹) = χ(u)·H_N χ (1)（x ↦ u·x の置換。原始性は要らない）。 -/
+
+【neg_one_mul_self】
+/-- χ(−1)·χ(−1) = 1。 -/
+
+【sum_mul_stdAddChar_neg】
+/-- Σ_x χ(x)e(−x) = χ(−1)·τ(χ)（x ↦ −x の置換。原始性は要らない）。 -/
+
+【hartley_one】
+/-- H_N χ (1) = ε(χ)·τ(χ)（原始性は要らない）。 -/
+
+【JH_eq_rootNum_mul_any】
+/-- **単数の上の固有値の式（すべての指標）**：(J H_N χ)(u)/√N = W(χ)·χ(u)。W(χ) = rootNum χ = ε(χ)τ(χ)/√N。
+原始指標では W(χ) はルート数で |W(χ)| = 1（`normSq_rootNum`）。 -/
+
+【isPrimitive_of_prime_of_ne_one】
+/-- 素数の法では、自明でない指標は原始的。 -/
+
+【exists_primitive_odd_three】
+/-- 証人（奇）：法 3 の奇の原始指標がある。 -/
+
+【exists_primitive_even_five】
+/-- 証人（偶）：法 5 の偶で自明でない原始指標がある（奇の χ をとった場合は χ² を使う）。 -/
+
+【removal_counterexample】
+/-- 除去テストの反例：原始性を外すと「単数でないところで 0」が破れる（法 2 の自明な指標、y = 0）。 -/
+
+【removal_counterexample_normSq】
+/-- 除去テストの反例（|W| = 1）：法 2 の自明な指標（原始的でない）では |W|² = 1/2。 -/
+
+【removal_counterexample_four】
+/-- 除去テストの反例（原始指標がある法 4 で。独立照合 B の指摘を受けて追加）：法 4 には原始指標があるが
+（Part 140 の `exists_primitive`）、自明な指標（原始的でない）では、単数でない 2 で H_N χ (2) = −2 ≠ 0、
+|W|² = 0（τ = i − i = 0）。法 2 の反例と違い、原始指標のある法でも原始性を外すと 2 つの文が破れることを示す。 -/
+```
+
+## 入力 (4)：ノートの全文（原文のまま、行番号つき）
+前回の照合の時点の版から変わった行（または足した行）の範囲：1〜19、23、28〜30、58〜59、65〜68、73〜180
+```
+   1| # アーデル射影幾何 — Part 252（PAG 2.0）：公理 A1 の境界ユニタリの原始指標の部分 — 離散 Hartley 変換と反転の合成は、原始指標にルート数を掛ける
+   2| 
+   3| 2026-11-12。PAG256.lean（22 項目、定義 5 個。うち 7 項目は独立照合の指摘を受けて追加）、step275.py（11 項目）。
+   4| 
+   5| - **問いの出所。** 著者の判断です（2026-11-12 17:14「判断 3：Lean 化してください」）。
+   6|   - 重なりの読みは「ねじれた貼り合わせ（U）」と決まっています（同じ回答で、すでに決定済みと確認）。
+   7|   - 着手前の 4 点は `pag2_next_question_preregistration.md` の Q1 です。残余は空で、残るのは計算の細部（モノグラフ §1.3 の主張 (2)「A1 のもとで U = JH_N」の確認）だけ、という判定でした。著者はその Lean 化を選びました。
+   8|   - **記法の注意。** このノートの H_N は正規化しない離散 Hartley 変換で、Lean で扱ったのは J∘H_N/√N です。モノグラフの「JH_N」の正規化は、本文で確かめる必要があります（本文は手元にありません）。
+   9|   - 盲検の問いテストは済んでいます（同じ文書の §6 の S1：標準的な演習、Hartley の形の文献は見つからず）。
+  10| - **問い（幾何の言葉で）。** ねじれた貼り合わせの読みでは、無限大の側と無限小の側（切断した円筒の両端）を境界ユニタリ U で貼り合わせます。A1 のもとで、その貼り合わせの写像は何か。
+  11| - **結論（Lean）。** H_N は離散 Hartley 変換 (H_N f)(y) = Σ_x f(x)(cos + sin)(2π xy/N)、J は単数の上の反転 (Jg)(u) = g(u⁻¹) です。
+  12|   - **すべての指標 χ** について、単数 u で (J H_N χ)(u)/√N = W(χ)·χ(u)、W(χ) = ε(χ)τ(χ)/√N です（`JH_eq_rootNum_mul_any`。ε(χ) は偶で 1、奇で −i）。単数に台をもつ関数に制限すれば、各指標は J∘H_N/√N の固有ベクトルということです（「乗法的な平行移動と可換だから」という理由づけは Lean の外で、Lean で示したのは各指標についてのこの式です）。
+  13|   - **原始指標 χ** では、さらに次の 2 つが成り立ちます。この 2 つだけが原始性を使います。
+  14|     - 単数でないところで H_N χ = 0（`hartley_eq_zero_of_not_isUnit`）。単数の上の関数の空間から漏れません。
+  15|     - |W(χ)|² = 1（`normSq_rootNum`）。W(χ) = τ(χ)/(i^a √N) は、L 関数の関数等式の定数（ルート数）と同じ式です。ただしこの一致は Lean の外です（Davenport などの文献と、Mathlib の `DirichletCharacter.rootNumber` の定義式による）。原始的でない χ では W(χ) はルート数ではありません。
+  16|   - したがって、**各原始指標 χ について**、J∘H_N/√N は χ をルート数 W(χ) 倍し（単数の上で）、H_N χ は単数の外に漏れず、|W(χ)| = 1 です。これを、構築者が再構成したモノグラフ §1.3 の主張 (2)（A1 のもとで U = J∘H_N/√N）の、原始指標の部分での形と読みます（`JH_eq_rootNum_mul` はその原始指標の場合の文）。U も A1 も Lean の文には出てきません。この位置づけは解釈で、モノグラフ本文とは未照合です。
+  17|   - 原始指標の張る部分空間の上の**作用素としての文**（線形性、部分空間を保つこと、指標の直交性による固有分解、ユニタリ性）は、Lean の外です。
+  18|   - 非空虚性の証人（法 3 の奇の原始指標、法 5 の偶で自明でない原始指標）と、原始性を外したときの反例も Lean に入れました。反例は、原始指標のない法 2（単数でない 0 で H_N χ (0) = 1、|W|² = 1/2）と、原始指標のある法 4（単数でない 2 で H_N χ (2) = −2、|W|² = 0）の両方で置きました。
+  19|   - sorry 0、警告 0。`#print axioms` 27 項目（定理 22、定義 5）はすべて [propext, Classical.choice, Quot.sound]。
+  20|   - **独立照合で直したこと。** 最初の版は、単数の上の式を原始指標についてだけ述べていました。独立照合の 3 つのエージェント（中立化しなかった最初のもの、中立化した A・C）が、それぞれ独立に「単数の上の式は原始性なしで成り立つ」と指摘しました。原始性の役割が分かるように、すべての指標の文を足しました（§7）。
+  21| - **位置づけ（正直な評価）。**
+  22|   - 既知の事実の書き直しです（再導出、確信度：高）。原始指標のガウス和はフーリエ係数（Mathlib の `gaussSum_mulShift_of_isPrimitive`）で、Hartley 変換はフーリエ変換を実の核で書き直したものです。新規候補はありません。
+  23|   - 意味としては（解釈）、A1 の貼り合わせが「点どうしの同一視」ではなく、フーリエ型の作用素であることの、原始指標の部分での確認です（着手前の文書の Q1）。Lean の文は A1 に触れていません。
+  24|   - A1 は Lean の公理にしていません。ここでの文はルート数という量についての恒等式で、「A1 を導いた」ことにはなりません（CLAUDE.md §6）。A1 は位相をこの値に選ぶ公準のままです。
+  25| - **Lean にしていないこと。**
+  26|   - (ℤ/N)^× 上の関数の空間全体での作用素の等式。原始的でない指標でも、単数に制限した J∘H_N/√N の固有ベクトルにはなります。ただし固有値 ε(χ)τ(χ)/√N は絶対値が 1 未満で（N ≤ 60 では最大 0.707、τ = 0 が 440 個中 135 個。数値 (9)）、誘導元の原始指標のルート数（A1 のもとでのレベル N の境界ユニタリの位相）と一致しません。H_N χ は単数でないところに値をもちます（数値 (8)、440/440）。したがって U = JH_N は空間全体では成り立たず、原始指標の部分に限られます。
+  27|     - 最初の版のこの箇所は「原始的でない指標では J∘H_N/√N の固有ベクトルにならず」と書いていました。誤りです。数値 (8) が破れていたのは単数でない点での値で、単数の上の式ではありませんでした（§7）。
+  28|   - 作用素としての文：線形性、原始指標の張る部分空間とそれを保つこと、指標の一次独立性と直交性（χ⁻¹ = χ̄ を含む）による固有分解、ユニタリ性、H_N² = N·I（独立照合 A・B の指摘）。原始的な複素指標 χ は H_N そのものの固有関数ではなく（H_N は χ と χ̄ の張る面で反対角）、J と合成して初めて対角になります。
+  29|   - 一般の恒等式 H_N χ (y) = ε(χ)·τ(χ, e(y·))（すべての χ と y。`hartley_eq_of_isPrimitive`・`hartley_one` はその特殊な場合）。原始的でない指標の数値 (8)・(9) の結果も、Parseval の等式などから一般の定理として示せるはずですが（独立照合 B）、文にしていません。
+  30|   - Mathlib の `DirichletCharacter.rootNumber`（Mathlib の関数等式 `IsPrimitive.completedLFunction_one_sub` に現れる定数）と rootNum の一致。定義の式は同じです（τ(χ)/I^(偶なら 0、奇なら 1)/N^(1/2)）。そのモジュール（Mathlib.NumberTheory.LSeries.DirichletContinuation）とその依存（L 級数、Mellin 変換など）はこの環境で未ビルドなので、Lean の文にしていません。
+  31|   - Lean の証人は実の指標（W = 1）だけです。W ≠ ±1 の場合は数値（7,517 個）で確かめています。
+  32|   - レベルを動かしたときの組み立て（L²(Ẑ^×) の上の一つの作用素として、局所の作用素の制限テンソル積と無限素点のパリティ因子）。Tate の枠組みで既知と見ていますが、文にしていません。
+  33|   - モノグラフの「U = JH_N」の正確な文（モノグラフ本文は手元になく、照合ノート §5 の 6）。ここで確かめたのは、私が再構成した原始指標の部分の形です。
+  34| 
+  35| ## 0. 内容
+  36| 
+  37| ### 0.0 ハンドシェイク（CLAUDE.md §0）
+  38| 
+  39| - **(a) 形式化済み。** 定理 2.6 の有限レベル版（PAG253）、ガウス和の性質（PAG16・PAG173・PAG198）、そしてこのパートの PAG256。
+  40| - **(b) 解釈の層。** 著者の 3 命題（§1）。重なり＝ねじれた貼り合わせ（U）は著者の決定です。A1 は解釈の層の公準（内容は Tate の定理）です。
+  41| - **(c) 未完の大域の問い。** 解像度のパラメータ（未決定）、レベルを動かした組み立て、Ẑ の上の定理 A。
+  42| 
+  43| ### 0.1 4 点（着手前の文書の Q1 から）
+  44| 
+  45| 1. **幾何の言葉。** 両端の貼り合わせは、点どうしの同一視か、別の種類の重なりか。
+  46| 2. **最善の翻訳。** 点の写像による貼り合わせは群の商に限られ、A1 と両立しない。A1 の貼り合わせはガウス和（フーリエ係数）で書ける作用素。
+  47| 3. **残余。** 空。残るのは計算の細部（主張 (2) の確認）。→ 著者の判断でこのパートとして Lean 化。
+  48| 4. **対照群テスト。** F_q(t) でもガウス和はフーリエ係数で、同じ形の恒等式が成り立つ（対照群のルート数の計算は `pag2_prereg_check.py` の (P3)）。一般化素数には指標がなく、文は空虚。ℚ に固有の内容はない。
+  49| 
+  50| ### 0.2 Hartley の核と原始指標（§1・§2）
+  51| 
+  52| - cas(2π t/N) = ((1 − i)e(t) + (1 + i)e(−t))/2（e = stdAddChar）。
+  53| - H_N χ = ε(χ)·τ(χ)·χ⁻¹（χ 原始的）。核を e(xy) と e(−xy) に分け、原始指標のガウス和の性質 τ(χ, e(y·)) = χ⁻¹(y)τ(χ) を 2 回使います。χ⁻¹(−y) = χ(−1)χ⁻¹(y) なので、係数は ((1 − i) + (1 + i)χ(−1))/2 = ε(χ) にまとまります。
+  54| - 単数でない y では χ⁻¹(y) = 0 なので H_N χ (y) = 0。原始指標の部分は、単数の上の関数の空間に留まります。
+  55| 
+  56| ### 0.3 ルート数と主定理（§3・§3b）
+  57| 
+  58| - **すべての指標で（§3・§3b）。** W(χ) = τ(χ)/(i^a √N) = ε(χ)·τ(χ)/√N（1/i = −i。`rootNum_eq`）。単数 u で H_N χ (u⁻¹) = χ(u)·H_N χ (1)（x ↦ u·x の置換）、H_N χ (1) = ε(χ)·τ(χ)（x ↦ −x の置換で Σ χ(x)e(−x) = χ(−1)τ(χ)）。よって (J H_N χ)(u)/√N = W(χ)χ(u)。
+  59| - **原始指標で（§3）。** (J H_N χ)(u)/√N = H_N χ (u⁻¹)/√N = ε(χ)τ(χ)χ⁻¹(u⁻¹)/√N = W(χ)·χ(u)（同じ式の別の導き方）。|W(χ)|² = |ε(χ)|²·|τ(χ)|²/N = 1（Part 16 の |τ(χ)|² = N）。
+  60| 
+  61| ### 0.4 ラベル（CLAUDE.md §7）
+  62| 
+  63| | 結果 | ラベル | 根拠 |
+  64| |---|---|---|
+  65| | Hartley の核の等式（`casKer_eq`） | 既知 | Euler の公式 |
+  66| | 原始指標の Hartley 変換（`hartley_eq_of_isPrimitive`）、単数でないところで 0 | 再導出 | 原始指標のガウス和はフーリエ係数（Mathlib にある）。Hartley の形は書き直し |
+  67| | 原始指標の場合の式（`JH_eq_rootNum_mul`）と \|W\| = 1（`normSq_rootNum`） | 再導出 | 同上と Part 16。素数の法のフーリエ版は Benoist 2024 の式 (3.5) |
+  68| | すべての指標での単数の上の式（`JH_eq_rootNum_mul_any`）と補題（`hartley_units_inv`・`hartley_one`・`sum_mul_stdAddChar_neg`） | 既知 | 平行移動と可換な作用素は指標で対角（定理 2.6 の (a) の型）。固有値は cas 版のガウス和 |
+  69| | 証人と除去テストの反例 | 既知 | 素数の法の自明でない指標は原始的、指標の分離性 |
+  70| 
+  71| - 新規候補：なし。CLAUDE.md §3 の 2 候補にも当たりません。
+  72| 
+  73| ## 1. 検証表
+  74| 
+  75| | 主張 | Lean | 数値（step275） | 新規性 |
+  76| |---|---|---|---|
+  77| | cas(2πt/N) = ((1 − i)e(t) + (1 + i)e(−t))/2 | `casKer_eq` | (1) | 既知 |
+  78| | ε(χ) は偶で 1、奇で −i | `parFac_of_even`・`parFac_of_odd` | (2) | 既知 |
+  79| | χ⁻¹(−1) = χ(−1)、χ⁻¹(u⁻¹) = χ(u) | `inv_apply_neg_one`・`inv_apply_units_inv` | — | 既知 |
+  80| | Σ_x χ(x)e(xy) をガウス和の形に | `sum_mul_stdAddChar` | — | 既知 |
+  81| | H_N χ = ε(χ)τ(χ)χ⁻¹（χ 原始的） | `hartley_eq_of_isPrimitive` | (3) | 再導出 |
+  82| | 単数でないところで H_N χ = 0（χ 原始的） | `hartley_eq_zero_of_not_isUnit` | (4) | 再導出 |
+  83| | W(χ) = ε(χ)τ(χ)/√N | `rootNum_eq` | (5) | 既知 |
+  84| | (J H_N χ)(u)/√N = W(χ)χ(u)（χ 原始的） | `JH_eq_rootNum_mul` | (5) | 再導出 |
+  85| | \|W(χ)\|² = 1（χ 原始的） | `normSq_rootNum` | (6) | 再導出 |
+  86| | 素数の法の自明でない指標は原始的 | `isPrimitive_of_prime_of_ne_one` | — | 既知 |
+  87| | 証人：法 3 の奇、法 5 の偶で自明でない原始指標 | `exists_primitive_odd_three`・`exists_primitive_even_five` | (7) | 既知 |
+  88| | 除去テスト：原始性を外すと「単数でないところで 0」が破れる | `removal_counterexample`（法 2 の自明な指標） | (8)（440/440） | — |
+  89| | 単数の上の式はすべての指標で成り立つ | `JH_eq_rootNum_mul_any`、補題 `hartley_units_inv`・`hartley_one`・`sum_mul_stdAddChar_neg`・`neg_one_mul_self` | (9)（1,101/1,101） | 既知 |
+  90| | 除去テスト：原始性を外すと \|W\| = 1 が破れる | `removal_counterexample_normSq`（法 2 の自明な指標で \|W\|² = 1/2） | (9)・(10) | — |
+  91| | 除去テスト（原始指標のある法 4）：自明な指標で H_N χ (2) = −2、\|W\|² = 0 | `removal_counterexample_four`（法 4 に原始指標があることも含む） | (11) | — |
+  92| 
+  93| ## 2. 数値照合（step275.py、11 項目すべて合格、約 3 秒）
+  94| 
+  95| | 項目 | 結果 |
+  96| |---|---|
+  97| | (1) Hartley の核の等式 | 1 ≤ N ≤ 200 のすべての t、最大誤差 1.5×10⁻¹⁵ |
+  98| | (2) パリティ因子 | 7,517/7,517（偶 3,755、奇 3,762） |
+  99| | (3) H_N χ = ε(χ)τ(χ)χ⁻¹（ℤ/N のすべての点で） | 7,517/7,517（1 ≤ N ≤ 200。N = 1 の自明な指標 1、2 の冪 63、奇素数の冪 4,563、合成数 2,890）、最大誤差 5.5×10⁻¹² |
+ 100| | (4) 単数でない点で H_N χ = 0 | 156,790/156,790 点 |
+ 101| | (5) (J H_N χ)(u)/√N = W(χ)χ(u)、W = ε·τ/√N | 7,517/7,517、最大誤差 4.2×10⁻¹³ |
+ 102| | (6) \|W(χ)\| = 1 | 7,517/7,517 |
+ 103| | (7) 証人 | 法 3 の奇の原始指標 1 個、法 5 の偶で自明でない原始指標（χ(2) = −1） |
+ 104| | (8) 除去テスト | 原始的でない指標 440/440 で (3) が破れる（2 ≤ N ≤ 60、主指標を含む。破れるのは単数でない点での値）。法 2 の自明な指標で H(1)(0) = 1 |
+ 105| | (9) 単数の上の式はすべての指標で成り立つ（独立照合で追加） | 1,101/1,101（2 ≤ N ≤ 60）。原始的でない 440 個で \|ε τ/√N\| の最大 0.7071、τ = 0 は 135 個 |
+ 106| | (10) 除去テスト（\|W\| = 1）（独立照合で追加） | 法 2 の自明な指標で τ = −1、W = −1/√2、\|W\|² = 1/2 |
+ 107| | (11) 除去テスト（原始指標のある法 4）（独立照合 B で追加） | 法 4 の原始指標 1 個。自明な指標で H(1)(2) = −2、τ = 0、\|W\|² = 0 |
+ 108| 
+ 109| - 退化ケース：N = 1（自明な指標は原始的で、0 が単数）、N = 2（原始指標がない）、2 の冪を含めました（第 5 の型）。
+ 110| - 数値の確認は証明ではありません。
+ 111| 
+ 112| ## 3. Lean（PAG256.lean）
+ 113| 
+ 114| - import：PAG255（鎖を保つ）、PAG16（`normSq_gaussSum`）、PAG144（ℂ の `HasEnoughRootsOfUnity` に要る `NeZero` の instance）、Mathlib の Fourier.ZMod・DirichletCharacter.GaussSum・DirichletCharacter.Orthogonality。Mathlib の追加ビルドなし。
+ 115| - 主に使った Mathlib の補題：`gaussSum_mulShift_of_isPrimitive`、`ZMod.stdAddChar_apply`、`ZMod.toCircle_apply`、`AddChar.map_neg_eq_inv`、`Complex.exp_mul_I`、`MulChar.inv_apply_eq_inv'`、`DirichletCharacter.exists_apply_ne_one_of_hasEnoughRootsOfUnity`、`DirichletCharacter.conductor_one`。
+ 116| - 最初の版（15 項目）は 3 回目のコンパイルで通過しました。独立照合 A0・A・C の後に §3b（5 項目）と除去テストの反例 1 項目を足し、2 回目で通過しました（1 回目のエラー：`neg_eq_neg_one_mul x` が stdAddChar の引数の −x まで書き換え、AddChar に `map_mul` を当てようとした。χ(−x) = χ(−1)χ(x) を `have` で作り、`linear_combination` で閉じた）。B の後に法 4 の反例 1 項目を足し、2 回目で通過しました（1 回目：`not_isUnit_zero` に要る `Nontrivial (ZMod 4)` の instance が見つからなかった。¬IsUnit 0 を `decide` で直接示した）。
+ 117|   - 1 回目のエラー 3 件：Hartley の核の等式の `linear_combination` の係数の符号、χ⁻¹(u⁻¹) の書き換えの向き、normSq の負号の補題（`Complex.normSq_neg` に替えた）。あわせて `if_pos`・`if_neg` の非推奨の警告を `simp only [h, ↓reduceIte]` で消しました。
+ 118|   - 2 回目のエラー 4 件：`omit` を docstring の前に置く必要、`Nat.Prime 5` は `Nat.prime_five` で示す、`Fact` を入れた後の `decide` が自由変数を含む型になった（`decide` を `Fact` の前に移した）、ZMod 2 の上の和に `Fin.sum_univ_two` が当たらなかった（`Finset.sum_eq_single` に替えた）。
+ 119| - 件数：theorem/lemma 22、定義 5、`#print axioms` 27 行。通算で theorem/lemma 3,366、`#print axioms` 3,667、xlsx 3,393 項目（行 3373〜3394）、検証手順 272。
+ 120| 
+ 121| ## 4. 残る問い（本来の道）
+ 122| 
+ 123| - レベル N の境界ユニタリ全体（原始的でない指標を含む）を、J∘H_q（q ∣ N）の新しい部分の直和として書く文。計算の細部で、主役にしません。
+ 124| - レベルを動かした組み立て（L²(Ẑ^×) の上の一つの作用素）。Tate の枠組み（局所の作用素の制限テンソル積と、無限素点のパリティ因子）として既知と見ています。文にするかは著者の判断です。
+ 125| - 解像度のパラメータは未決定のままです。着手前の文書の Q3 の材料（指標の方向の粗視化は法 N に近い）は、CLAUDE.md §1 の禁止（解像度を N と同一視しない）との緊張として記録しました（著者の指示、17:14）。
+ 126| 
+ 127| ## 5. 文献の確認の記録（検索ログ）
+ 128| 
+ 129| - 盲検の問いテスト（`prereg_next/`）の S1：「標準的な演習（確信度：高）。Hartley の形の文献は見つからなかった」。検索語は同じ記録の 15 件（"Hartley transform" "Dirichlet character" Gauss sum eigenvector ほか）。
+ 130| - 私の確かめ：Benoist, Fourier transform in cyclic groups（arXiv:2406.11529、2024）の式 (3.5)（素数の法のディリクレ指標のフーリエ変換をガウス和で書く。Hartley の核は使っていない）。
+ 131| - MathSciNet・zbMATH：未実施（このコンテナからは使えない）。
+ 132| - 見つからなかったことは、存在しないことの証明ではありません。
+ 133| 
+ 134| ## 6. 収束アラームの状況（CLAUDE.md §7、Part 252 の後）
+ 135| 
+ 136| - 辞書の未記入の件数：0。
+ 137| - 文献照合の未実施の連続パート数：0（盲検の問いテストと、Benoist 2024 の確認を行った）。
+ 138| - 兆候 4（初等的な部品の組み合わせだけ）：Part 249・250・251・252 で 4 パート連続です。ただし Part 252 は、著者が「計算の細部、小さいノートの水準」と知ったうえで選んだものです。
+ 139| - 兆候 2（構造・分類・次元の問い）：当たりません。
+ 140| - 対照群テスト：§0.1 の 4。ℚ に固有の内容はありません。
+ 141| - 第 11 の型（形式文のずれ）：独立照合で、単数の上の式に原始性の仮定が余分だったことが分かりました（A0・A・C が独立に指摘）。形式文を強め（§3b）、除去テストの反例を原始指標のない法 2 と原始指標のある法 4 の両方に置きました。B の照合では、xlsx の主張の本文は形式文と一致し、ずれは見出しとノートの位置づけの側でした（§7）。
+ 142| 
+ 143| ## 7. 検知記録：独立照合（2026-11-12）
+ 144| 
+ 145| 照合記録は `pag2_part252_independent_audit.md`、依頼文とエージェントの出力そのものは `audit252/` にあります。
+ 146| 
+ 147| - **手順。** 中立化した A（逆翻訳）と C（盲検の命名）を立て、A の後に B（照合）を立てました。どれもツールなしで、通知のツール使用回数は 0 です（A・C）。
+ 148| - **手順からの逸脱。** 最初に立てた逆翻訳（A0）は、入力を中立化していませんでした。自前の名前をそのまま渡し、意図した読みを課題文に書いてしまいました。A0 は補足として記録し、独立照合の本体には数えません。
+ 149| - **構築者の予想（結果を見る前に `audit252/expected_before_results.md` に書いた）との比較。**
+ 150|   - 当たったもの：中心の文（S6・S11）、N = 1・N = 2 の空虚さ、指標ごとの文で作用素全体の文ではないこと、除去テストの反例が S7 の仮定しか覆わないこと、原始的でない指標での Φ4 は意味をもたないこと、規約への依存。C の名前（cas、離散 Hartley 変換、i^{−a}、ルート数）と、Φ5 に定まった名前がないこと。
+ 151|   - **外れたもの：単数の上の式（S10）が原始性なしで成り立つこと。** A0・A・C の 3 つが独立に指摘しました。私は原始性が要ると思い込んでいました。数値の除去テスト（(P1′)・(8)）が「単数でない点の値」と「単数の上の式」をまとめて判定していたので、思い込みが確かめられないまま残りました。
+ 152| 
+ 153| | # | 指摘（出どころ） | 対応 |
+ 154| |---|---|---|
+ 155| | 1 | 単数の上の式は原始性なしで成り立つ。原始性が効くのは、単数でないところで 0 と \|W\| = 1 だけ（A0・A・C） | 受け入れます。§3b（`hartley_units_inv`・`neg_one_mul_self`・`sum_mul_stdAddChar_neg`・`hartley_one`・`JH_eq_rootNum_mul_any`）を足し、数値 (9) で 1,101/1,101 を確かめました。ノートの「原始的でない指標では固有ベクトルにならない」は誤りだったので直しました |
+ 156| | 2 | \|W\| = 1 についての除去テストがない（A0） | 受け入れます。`removal_counterexample_normSq`（法 2 の自明な指標で \|W\|² = 1/2）と数値 (10) を足しました |
+ 157| | 3 | 作用素としての文がない：線形性、原始指標の張る部分空間、直交性による固有分解、H_N² = N·I（A0・A） | 受け入れて、「Lean にしていないこと」に入れました |
+ 158| | 4 | 複素指標は H_N そのものの固有関数ではない（χ と χ̄ の面で反対角）（A） | 記録しました。J と合成して初めて対角になります |
+ 159| | 5 | Lean の証人は実の指標（W = 1）だけ（A） | 記録しました。W ≠ ±1 の場合は数値（7,517 個）で確かめています |
+ 160| | 6 | Φ4 を L 関数の関数等式に結ぶ補題がない（A。A0・C は Mathlib の rootNumber に言及） | 確かめました：Mathlib の `DirichletCharacter.rootNumber` は同じ式で定義され、関数等式 `IsPrimitive.completedLFunction_one_sub`（Λ(1 − s, χ) = N^{s − 1/2}·rootNumber·Λ(s, χ⁻¹)）に現れます。モジュールがこの環境で未ビルドなので、一致は Lean の文にしていません |
+ 161| | 7 | Φ5 は入力（ℤ/N 上の関数）と出力（単数の上の関数）の空間が違い、「固有値」は緩い意味（A） | 受け入れます。ノートでは「単数に制限した J∘H_N/√N」と書きます（単数に台をもつ関数に制限すれば、単数の上の関数の空間の作用素になります） |
+ 162| | 8 | 規約：e の向き、cos ± sin、J∘H と H∘J、i^a の組み合わせで、奇の指標の符号が変わる（A0・A・C） | 記録しました。今の組み合わせ（e(+)、cos + sin、J∘H、i^a）は互いに整合し、Davenport の W(χ) = τ(χ)/(i^a √q) と Mathlib の rootNumber に一致します。モノグラフの規約との照合は、照合ノート §5 の 4 のまま |
+ 163| | 9 | S14 の χ ≠ 1 は冗長（法 5 では原始性から従う）（A） | そのとおりです。害はないので文は変えていません |
+ 164| | 10 | より強い除去テストの例：法 9 で τ = 0 になる指標（A0） | 数値 (9) が覆っています（τ = 0 は 440 個中 135 個） |
+ 165| 
+ 166| - **B（照合）の結果。** S1〜S21 はすべて真で、表計算シートの主張の本文はすべて形式文と一致（「別物」「空虚」なし）。ずれは見出し・括弧書き・ノートの位置づけの側でした。ツール使用 0 回、約 9.2 分（セッションの中断で一度止まり、自動で再開）。
+ 167| 
+ 168| | # | B の指摘（重い順） | 対応 |
+ 169| |---|---|---|
+ 170| | 1 | 「モノグラフ §1.3 の主張 (2) の原始指標の部分」という位置づけは判定不能で過大（U も A1 も形式文にない、本文と未照合）。H_N を正規化なしで定義しているので「U = JH_N」と Lean の J∘H_N/√N が √N ずれる | 受け入れます。結論に「構築者の再構成、本文と未照合、解釈」と書き、正規化を U = J∘H_N/√N にそろえ、記法の注意を足しました。xlsx の見出しも直しました |
+ 171| | 2 | 「原始指標の張る部分の上で、ルート数を掛ける作用素」は、線形性・部分空間・直交性がないので「各原始指標について」に弱めるべき | 受け入れて弱めました。作用素としての文は「Lean の外」と明記しました |
+ 172| | 3 | 「関数等式の定数と同じ式」は Lean の外と明記すべき。原始的でない χ の W はルート数ではない。xlsx の見出しは「rootNum（原始的ならルート数）」に | 受け入れました（ノートと xlsx） |
+ 173| | 4 | 除去テストの反例が、原始指標のない法 2 だけ（原始性が効いたのか法の種類が効いたのか区別できない） | 受け入れて、原始指標のある法 4 の反例 `removal_counterexample_four`（H_N χ (2) = −2、\|W\|² = 0、法 4 に原始指標があることも含む）と数値 (11) を足しました |
+ 174| | 5 | 「平行移動と可換なので固有ベクトル」の理由づけは Lean の外 | 受け入れて注記しました |
+ 175| | 6 | 細かい点：S7 の括弧は指標ごとの言い方に、「反対角」は原始的な複素指標に限る、§0.3 の W = ετ/√N はすべての指標の側へ、axioms 26 項目の内訳 | 受け入れて直しました。axioms は 27 項目（定理 22、定義 5） |
+ 176| | 7 | 漏れ：一般の恒等式 H_N χ (y) = ε(χ)τ(χ, e(y·))、原始的でない指標の数値結果は Parseval で定理にできる、指標の一次独立性と χ⁻¹ = χ̄ | 「Lean にしていないこと」に足しました |
+ 177| 
+ 178| - B の検算：N ≤ 60 の原始的でない指標は Σφ − Σφ* = 1,102 − 662 = 440、τ = 0 は τ(χ) = μ(N/d)χ*(N/d)τ(χ*) から 135、|W| の最大は 1/√2。数値 (9) と一致しました。
+ 179| - **B の後に直した文面（法 4 の反例、ノートと xlsx の見出しの直し）は、照合を受けていません。**
+ 180| 
+```
+
+## 入力 (5)：表（xlsx）の見出しと各行（原文のまま。主張と証明の要点。★ は前回の照合の時点の版から足した・変えた行）
+```
+【見出し】PAG2.0-252 公理 A1 の境界ユニタリの原始指標の部分（著者の判断 3「Lean 化してください」。重なりはねじれた貼り合わせ U）：離散 Hartley 変換 H_N と反転 J の合成 J∘H_N/√N は、各原始指標 χ をルート数 W(χ) 倍する（単数の上の式はすべての指標で成り立つ。構築者が再構成したモノグラフ §1.3 の主張 (2)、U = J∘H_N/√N の原始指標の部分と読む。U と A1 は Lean の文に出てこない）  ★（前回の照合の時点から変わった）
+casKer_eq
+  主張：Hartley の核と標準の加法的指標：cas(2πt/N) = ((1 − i)e(t) + (1 + i)e(−t))/2（cas = cos + sin、e = stdAddChar）
+  証明の要点：e(t) = exp(iθ)、e(−t) = exp(−iθ) に Euler の公式
+parFac_of_even
+  主張：パリティ因子 ε(χ) = ((1 − i) + (1 + i)χ(−1))/2（def parFac）は、χ が偶なら 1
+  証明の要点：χ(−1) = 1 を代入
+parFac_of_odd
+  主張：χ が奇なら ε(χ) = −i
+  証明の要点：χ(−1) = −1 を代入
+inv_apply_neg_one
+  主張：χ⁻¹(−1) = χ(−1)
+  証明の要点：χ(−1) = ±1
+sum_mul_stdAddChar
+  主張：Σ_x χ(x)e(xy) = gaussSum χ (e.mulShift y)
+  証明の要点：定義
+hartley_eq_of_isPrimitive
+  主張：原始指標の Hartley 変換：χ が原始的なら、ℤ/N のすべての点 y で H_N χ (y) = ε(χ)·τ(χ)·χ⁻¹(y)（def casKer・hartley）
+  証明の要点：核を e(xy) と e(−xy) に分け、原始指標のガウス和の性質 gaussSum χ (e.mulShift y) = χ⁻¹(y)τ(χ) を 2 回使う
+★ hartley_eq_zero_of_not_isUnit
+  主張：χ が原始的なら、単数でない y で H_N χ (y) = 0（各原始指標 χ の H_N 像は単数の外で 0）
+  証明の要点：χ⁻¹(y) = 0
+★ rootNum_eq
+  主張：W(χ) = τ(χ)/(i^a √N)（def rootNum。原始的ならルート数。a = 0 は偶、a = 1 は奇）は、すべての χ で ε(χ)·τ(χ)/√N に等しい
+  証明の要点：偶奇で場合分け、1/i = −i
+inv_apply_units_inv
+  主張：単数 u で χ⁻¹(u⁻¹) = χ(u)
+  証明の要点：χ(u)χ(u⁻¹) = 1
+★ JH_eq_rootNum_mul
+  主張：χ が原始的なら、単数 u で (J H_N χ)(u)/√N = W(χ)·χ(u)（def JH。構築者が再構成したモノグラフ §1.3 の主張 (2) の原始指標の部分と読む。U と A1 は文に出てこない）。式そのものは原始性なしで成り立つ（JH_eq_rootNum_mul_any）。原始指標では、W(χ) は絶対値 1（normSq_rootNum）で、H_N χ は単数の外で 0（hartley_eq_zero_of_not_isUnit）
+  証明の要点：hartley_eq_of_isPrimitive・rootNum_eq・inv_apply_units_inv
+normSq_rootNum
+  主張：χ が原始的なら |W(χ)|² = 1
+  証明の要点：|ε(χ)| = 1 と Part 16 の |τ(χ)|² = N
+isPrimitive_of_prime_of_ne_one
+  主張：素数の法では、自明でない指標は原始的
+  証明の要点：導手は p を割るので 1 か p。1 なら自明な指標
+exists_primitive_odd_three
+  主張：非空虚性の証人（奇）：法 3 の奇の原始指標がある
+  証明の要点：χ(−1) ≠ 1 となる指標をとる（指標の分離性）
+exists_primitive_even_five
+  主張：非空虚性の証人（偶）：法 5 の偶で自明でない原始指標がある
+  証明の要点：χ(2) ≠ 1 の χ をとり、奇なら χ² を使う（−1 = 2·2 なので χ(2)² = −1）
+removal_counterexample
+  主張：除去テストの反例：法 2 の自明な指標は原始的でなく、単数でない 0 で H_N(1)(0) = 1 ≠ 0（原始性を外すと hartley_eq_zero_of_not_isUnit が破れる）
+  証明の要点：導手は 1、和は 2 項
+★ hartley_units_inv
+  主張：単数 u で H_N χ (u⁻¹) = χ(u)·H_N χ (1)（すべての指標。原始性は要らない）
+  証明の要点：x ↦ u·x の置換
+★ neg_one_mul_self
+  主張：χ(−1)·χ(−1) = 1
+  証明の要点：χ((−1)·(−1)) = χ(1)
+★ sum_mul_stdAddChar_neg
+  主張：Σ_x χ(x)e(−x) = χ(−1)·τ(χ)（すべての指標）
+  証明の要点：x ↦ −x の置換
+★ hartley_one
+  主張：H_N χ (1) = ε(χ)·τ(χ)（すべての指標）
+  証明の要点：核を e(x) と e(−x) に分ける
+★ JH_eq_rootNum_mul_any
+  主張：単数の上の式（すべての指標）：(J H_N χ)(u)/√N = W(χ)·χ(u)、W(χ) = rootNum χ（原始的ならルート数）= ε(χ)τ(χ)/√N。原始性が効くのは、単数でないところで 0 と |W| = 1 だけ（独立照合の指摘を受けて追加）
+  証明の要点：hartley_units_inv・hartley_one・rootNum_eq
+★ removal_counterexample_normSq
+  主張：除去テストの反例（|W| = 1）：法 2 の自明な指標（原始的でない）で |rootNum|² = 1/2（原始指標のない法での例）
+  証明の要点：τ = −1、W = −1/√2
+★ removal_counterexample_four
+  主張：除去テストの反例（原始指標のある法 4）：法 4 には原始指標があるが（Part 140 の exists_primitive）、自明な指標（原始的でない）では単数でない 2 で H_N χ (2) = −2 ≠ 0、|rootNum|² = 0（τ = i − i = 0）
+  証明の要点：和は 2 項（x = 1, 3）。e(1) = i、e(3) = e(−1) = −i
+```
+
+## 入力 (6)：逆翻訳の査読者 A2 の出力の全文（原文のまま）
+A2 は ★ の文を、名前を中立化した入力で判定しました。名前の対応：S16 = `hartley_units_inv`、S17 = `neg_one_mul_self`、S18 = `sum_mul_stdAddChar_neg`、S19 = `hartley_one`、S20 = `JH_eq_rootNum_mul_any`、S21 = `removal_counterexample_normSq`、S22 = `removal_counterexample_four`、Φ1 = `casKer`、Φ2 = `hartley`、Φ3 = `parFac`、Φ4 = `rootNum`、Φ5 = `JH`
+
+{{A2_OUTPUT}}
+
+## 課題
+1. 表（入力 (5)）：各行の主張と証明の要点を形式文と突き合わせ、「一致／主張が強い／主張が弱い／別物／偽」で判定してください。★ の行はすべて判定を書いてください。ほかの行は、ずれがあるものだけ挙げ、残りは「一致」とまとめて構いません。
+2. ノート（入力 (4)）：題、冒頭の結論・位置づけ・読み、検証表、「Lean にしていないこと」を形式文と突き合わせてください。形式文より強い箇所、形式文にないことを形式文の事実として書いた箇所、解釈の言葉を事実として書いた箇所を、行番号つきで挙げてください。変わった行の範囲は必ず見てください。
+3. Lean ファイルの文面（入力 (3)）：冒頭の説明と docstring について同じ観点で。★ の宣言は必ず見てください。
+4. ★ の文について、A2 の訳と判定（入力 (6)）と、文面の言い方が食い違うところを挙げてください。
+5. 直すべき点を重要な順に挙げてください。各点に、どこを、どう直すかを、形式文から起こした言い方の案で書いてください。
+6. 全体：形式文に偽・空虚・別物があるか。標準を超える内容があるか。

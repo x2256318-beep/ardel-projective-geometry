@@ -1,0 +1,6 @@
+B2（照合）。2026-11-14 朝。新しいエージェント（general-purpose、文脈なし）。入力は inbox の B2_<Part>_input.md（形式文と定義の全文、Lean の docstring の全文、ノートの全文（行番号つき）、表の全行、A2 の出力の全文）。Read はこのファイルだけ、長ければ続きを読むことだけ許した。
+- B2_252：tool_uses 2（Read 2 回。1 回目が途中で切れ、offset で続き）、duration_ms 791746、subagent_tokens 263896
+- B2_254：tool_uses 4（Read 4 回。1 回はサイズ上限のエラーで内容なし、範囲を分けて読み直し）、duration_ms 745508、subagent_tokens 275088
+- B2_255：tool_uses 2（Read 2 回）、duration_ms 868109、subagent_tokens 300585
+- B2_256：tool_uses 2（Read 2 回）、duration_ms 664513、subagent_tokens 234520
+出力は agent_B2_<Part>_output.md（通知の本文を原文のまま写した）。

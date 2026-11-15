@@ -1,0 +1,9204 @@
+[
+ {
+  "target": "PAG.Part232.crtLin.congr_simp",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtLin_apply",
+    "module": "PAG232",
+    "score": 0.813
+   },
+   {
+    "name": "PAG.Part232.crtLin_symm_apply",
+    "module": "PAG232",
+    "score": 0.807
+   },
+   {
+    "name": "PAG.Part262.crtLin_pull",
+    "module": "PAG262",
+    "score": 0.731
+   },
+   {
+    "name": "PAG.Part236.crtProd.congr_simp",
+    "module": "PAG236",
+    "score": 0.709
+   },
+   {
+    "name": "PAG.Part236.crtLin_crtProd",
+    "module": "PAG236",
+    "score": 0.709
+   },
+   {
+    "name": "PAG.Part236.crtProd_smul_smul",
+    "module": "PAG236",
+    "score": 0.706
+   },
+   {
+    "name": "PAG.Part236.crtProd_apply",
+    "module": "PAG236",
+    "score": 0.635
+   },
+   {
+    "name": "PAG.Part232.crtConj.congr_simp",
+    "module": "PAG238",
+    "score": 0.614
+   },
+   {
+    "name": "PAG.Part232.crtConj_apply",
+    "module": "PAG232",
+    "score": 0.605
+   },
+   {
+    "name": "PAG.Part240.map_symm_map_crtConj",
+    "module": "PAG240",
+    "score": 0.572
+   },
+   {
+    "name": "PAG.Part233.crtConj_commute_iff",
+    "module": "PAG233",
+    "score": 0.56
+   },
+   {
+    "name": "ZMod.chineseRemainder.congr_simp",
+    "module": "PAG232",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part233.mem_map_crtConj_iff",
+    "module": "PAG233",
+    "score": 0.548
+   },
+   {
+    "name": "PAG.Part234.map_crtConj_centralizer",
+    "module": "PAG234",
+    "score": 0.547
+   },
+   {
+    "name": "PAG.Part236.crtConj_apply_tens",
+    "module": "PAG236",
+    "score": 0.522
+   },
+   {
+    "name": "PAG.Part233.finrank_map_crtConj_gen",
+    "module": "PAG233",
+    "score": 0.511
+   },
+   {
+    "name": "PAG.Part251.crtConj_sum_dind",
+    "module": "PAG251",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part232.crtConj_dind",
+    "module": "PAG232",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part232.crtConj_geps",
+    "module": "PAG232",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part232.gcd_crt",
+    "module": "PAG232",
+    "score": 0.45
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part232.shellAlgTensorEquiv.congr_simp",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.984
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.977
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.972
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.957
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.894
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.874
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.869
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.866
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.855
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.85
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.83
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.789
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.787
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.776
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.706
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.705
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.681
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.66
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift.congr_simp",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.99
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.987
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.987
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.974
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.968
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.917
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.871
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.858
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.853
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.84
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.788
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.699
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.689
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.639
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.626
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.623
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.616
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.601
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.597
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.Compat",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.617
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.575
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.429
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.379
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.305
+   },
+   {
+    "name": "PAG.Part229.shellAlgEquiv",
+    "module": "PAG229",
+    "score": 0.304
+   },
+   {
+    "name": "PAG.Part229.centerShellMathlibEquiv",
+    "module": "PAG229",
+    "score": 0.304
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.296
+   },
+   {
+    "name": "PAG.Part242.radialHom",
+    "module": "PAG242",
+    "score": 0.293
+   },
+   {
+    "name": "PAG.Part244.shellAvg",
+    "module": "PAG244",
+    "score": 0.292
+   },
+   {
+    "name": "PAG.Part229.centerShellLinearEquiv",
+    "module": "PAG229",
+    "score": 0.29
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.CompatF",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.462
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.379
+   },
+   {
+    "name": "PAG.Part246.fourierConj",
+    "module": "PAG246",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.347
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.347
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.338
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.312
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.31
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.302
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part246.shellAlgEquivOfMem",
+    "module": "PAG246",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part229.shellAlgEquiv",
+    "module": "PAG229",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part242.radialHom",
+    "module": "PAG242",
+    "score": 0.271
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.27
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.UDvd",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part220.InLayer",
+    "module": "PAG220",
+    "score": 0.681
+   },
+   {
+    "name": "PAG.Part221.layerInd",
+    "module": "PAG221",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part203.rk",
+    "module": "PAG203",
+    "score": 0.338
+   },
+   {
+    "name": "PAG.Part221.layerDivs",
+    "module": "PAG221",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part222.twistFn",
+    "module": "PAG222",
+    "score": 0.31
+   },
+   {
+    "name": "PAG.Part253.kUnit",
+    "module": "PAG253",
+    "score": 0.193
+   },
+   {
+    "name": "PAG.Part201.jt",
+    "module": "PAG201",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part208.gbas",
+    "module": "PAG208",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part196.lift",
+    "module": "PAG196",
+    "score": 0.166
+   },
+   {
+    "name": "PAG.Part241.crtE",
+    "module": "PAG241",
+    "score": 0.165
+   },
+   {
+    "name": "PAG.Part220.layerPart",
+    "module": "PAG220",
+    "score": 0.159
+   },
+   {
+    "name": "PAG.Part211.KetIdx",
+    "module": "PAG211",
+    "score": 0.148
+   },
+   {
+    "name": "PAG.Part241.crtLinN",
+    "module": "PAG241",
+    "score": 0.146
+   },
+   {
+    "name": "PAG.Part13.tameOrder",
+    "module": "PAG13",
+    "score": 0.144
+   },
+   {
+    "name": "PAG.Part232.crtLin",
+    "module": "PAG232",
+    "score": 0.138
+   },
+   {
+    "name": "PAG.Part251.charP",
+    "module": "PAG251",
+    "score": 0.137
+   },
+   {
+    "name": "PAG.Part221.layerProjV",
+    "module": "PAG221",
+    "score": 0.136
+   },
+   {
+    "name": "PAG.Part241.liftF",
+    "module": "PAG241",
+    "score": 0.135
+   },
+   {
+    "name": "PAG.Part240.CoprimeList",
+    "module": "PAG240",
+    "score": 0.134
+   },
+   {
+    "name": "PAG.Part199.thmAConst",
+    "module": "PAG199",
+    "score": 0.13
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.canon",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.433
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.355
+   },
+   {
+    "name": "PAG.Part246.fourierConj",
+    "module": "PAG246",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.334
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.329
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.325
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.325
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.317
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.298
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.293
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.269
+   },
+   {
+    "name": "PAG.Part229.shellAlgEquiv",
+    "module": "PAG229",
+    "score": 0.269
+   },
+   {
+    "name": "PAG.Part246.shellAlgEquivOfMem",
+    "module": "PAG246",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part242.radialHom",
+    "module": "PAG242",
+    "score": 0.258
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.253
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.canon_comp",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.531
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.53
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.426
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.422
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.421
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.421
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.407
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.4
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.396
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.396
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.395
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.389
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.388
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.385
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.canon_eq_shellLift",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.848
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.832
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.83
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.826
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.82
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.772
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.74
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.731
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.726
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.722
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.647
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.584
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.576
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.531
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.525
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.506
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.494
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.canon_self",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.434
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.426
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.422
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.422
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.42
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.414
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.41
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chi2",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part7.push",
+    "module": "PAG7",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part260.crossSign",
+    "module": "PAG260",
+    "score": 0.246
+   },
+   {
+    "name": "PAG.Part171.ω",
+    "module": "PAG171",
+    "score": 0.184
+   },
+   {
+    "name": "PAG.Kloosterman.Wpow",
+    "module": "PAG2",
+    "score": 0.16
+   },
+   {
+    "name": "PAG.Part119.Lc",
+    "module": "PAG119",
+    "score": 0.157
+   },
+   {
+    "name": "PAG.Part171.InZω",
+    "module": "PAG171",
+    "score": 0.156
+   },
+   {
+    "name": "PAG.Part160.epsG",
+    "module": "PAG160",
+    "score": 0.148
+   },
+   {
+    "name": "PAG.Part248.pairFn",
+    "module": "PAG248",
+    "score": 0.139
+   },
+   {
+    "name": "PAG.Part247.testFn",
+    "module": "PAG247",
+    "score": 0.136
+   },
+   {
+    "name": "PAG.Part176.InQω",
+    "module": "PAG176",
+    "score": 0.134
+   },
+   {
+    "name": "PAG.Part180.Rep2",
+    "module": "PAG180",
+    "score": 0.133
+   },
+   {
+    "name": "PAG.Part184.chiOf",
+    "module": "PAG184",
+    "score": 0.122
+   },
+   {
+    "name": "PAG.Part257.ip",
+    "module": "PAG257",
+    "score": 0.121
+   },
+   {
+    "name": "PAG.Part10.ind",
+    "module": "PAG10",
+    "score": 0.111
+   },
+   {
+    "name": "PAG.Part166.Pz",
+    "module": "PAG166",
+    "score": 0.11
+   },
+   {
+    "name": "PAG.Part253.signMul",
+    "module": "PAG253",
+    "score": 0.107
+   },
+   {
+    "name": "PAG.Part185.powChar",
+    "module": "PAG185",
+    "score": 0.106
+   },
+   {
+    "name": "PAG.Part146.evalHom",
+    "module": "PAG146",
+    "score": 0.101
+   },
+   {
+    "name": "PAG.Part251.unitWit",
+    "module": "PAG251",
+    "score": 0.1
+   },
+   {
+    "name": "PAG.Part250.twoPt",
+    "module": "PAG250",
+    "score": 0.099
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chi2_mul_self",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part120.psi_two_one",
+    "module": "PAG120",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part120.quad_root_two",
+    "module": "PAG120",
+    "score": 0.34
+   },
+   {
+    "name": "PAG.Part153.orderOf_of_sq_neg_one",
+    "module": "PAG153",
+    "score": 0.337
+   },
+   {
+    "name": "PAG.Part198.real_val_gen",
+    "module": "PAG198",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part185.sum_pow_lt",
+    "module": "PAG185",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part72.prim4_neg_one",
+    "module": "PAG72",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part151.neg_one_mod4",
+    "module": "PAG151",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part172.quartic_eq_one",
+    "module": "PAG172",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part198.leg_pm_one",
+    "module": "PAG198",
+    "score": 0.262
+   },
+   {
+    "name": "PAG.Part251.dind_self_apply",
+    "module": "PAG251",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part257.gaussSum_one_prime",
+    "module": "PAG257",
+    "score": 0.254
+   },
+   {
+    "name": "PAG.Part84.chi4_conv_self_zero",
+    "module": "PAG84",
+    "score": 0.251
+   },
+   {
+    "name": "PAG.Part198.rs_symm_val",
+    "module": "PAG198",
+    "score": 0.247
+   },
+   {
+    "name": "PAG.Part256.removal_counterexample",
+    "module": "PAG256",
+    "score": 0.24
+   },
+   {
+    "name": "PAG.Part198.neg_one_sq_eq",
+    "module": "PAG198",
+    "score": 0.235
+   },
+   {
+    "name": "PAG.Part118.P_sq",
+    "module": "PAG118",
+    "score": 0.233
+   },
+   {
+    "name": "PAG.Part198.gs_combine",
+    "module": "PAG198",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part185.sum_pow_eq",
+    "module": "PAG185",
+    "score": 0.224
+   },
+   {
+    "name": "PAG.Part119.quad_root",
+    "module": "PAG119",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part120.quad_root_all",
+    "module": "PAG120",
+    "score": 0.215
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiConj",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part246.fourierConj",
+    "module": "PAG246",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part232.crtConj",
+    "module": "PAG232",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part241.endCongr",
+    "module": "PAG241",
+    "score": 0.251
+   },
+   {
+    "name": "PAG.Part232.leftHom",
+    "module": "PAG232",
+    "score": 0.235
+   },
+   {
+    "name": "PAG.Part240.substEquiv",
+    "module": "PAG240",
+    "score": 0.235
+   },
+   {
+    "name": "PAG.Part232.rightHom",
+    "module": "PAG232",
+    "score": 0.232
+   },
+   {
+    "name": "PAG.Part229.AdjClosed",
+    "module": "PAG229",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part235.dilAlg",
+    "module": "PAG235",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.188
+   },
+   {
+    "name": "PAG.Part228.doubleComm",
+    "module": "PAG228",
+    "score": 0.184
+   },
+   {
+    "name": "PAG.Part226.fullCommAlg",
+    "module": "PAG226",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part224.fullComm",
+    "module": "PAG224",
+    "score": 0.178
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.178
+   },
+   {
+    "name": "PAG.Part241.locOp",
+    "module": "PAG241",
+    "score": 0.173
+   },
+   {
+    "name": "PAG.Part240.tensAlg",
+    "module": "PAG240",
+    "score": 0.173
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.169
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.163
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.159
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiConj_apply",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part248.fourierConj_apply",
+    "module": "PAG248",
+    "score": 0.352
+   },
+   {
+    "name": "PAG.Part232.crtConj_apply",
+    "module": "PAG232",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part251.crtConj_sum_dind",
+    "module": "PAG251",
+    "score": 0.286
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.281
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.278
+   },
+   {
+    "name": "PAG.Part232.crtConj_dind",
+    "module": "PAG232",
+    "score": 0.272
+   },
+   {
+    "name": "PAG.Part233.symm_leftOp_mem_fullComm",
+    "module": "PAG233",
+    "score": 0.271
+   },
+   {
+    "name": "PAG.Part233.symm_rightOp_mem_fullComm",
+    "module": "PAG233",
+    "score": 0.27
+   },
+   {
+    "name": "PAG.Part232.crtConj_geps",
+    "module": "PAG232",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part233.crtConj_commute_iff",
+    "module": "PAG233",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part233.mem_map_crtConj_iff",
+    "module": "PAG233",
+    "score": 0.261
+   },
+   {
+    "name": "PAG.Part235.crtConj_mulPull",
+    "module": "PAG235",
+    "score": 0.252
+   },
+   {
+    "name": "PAG.Part236.crtConj_apply_tens",
+    "module": "PAG236",
+    "score": 0.25
+   },
+   {
+    "name": "PAG.Part232.crtConj.congr_simp",
+    "module": "PAG238",
+    "score": 0.244
+   },
+   {
+    "name": "PAG.Part237.smul_crtConj_mulLeft",
+    "module": "PAG237",
+    "score": 0.242
+   },
+   {
+    "name": "PAG.Part235.crtConj_layerInd",
+    "module": "PAG235",
+    "score": 0.24
+   },
+   {
+    "name": "PAG.Part248.fourierConj_shellAvg",
+    "module": "PAG248",
+    "score": 0.238
+   },
+   {
+    "name": "PAG.Part241.endCongr_rfl",
+    "module": "PAG241",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part232.leftHom_apply",
+    "module": "PAG232",
+    "score": 0.218
+   },
+   {
+    "name": "PAG.Part232.rightHom_apply",
+    "module": "PAG232",
+    "score": 0.216
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiConj_chiConj",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part248.fourierConj_apply",
+    "module": "PAG248",
+    "score": 0.344
+   },
+   {
+    "name": "PAG.Part232.crtConj_apply",
+    "module": "PAG232",
+    "score": 0.284
+   },
+   {
+    "name": "PAG.Part251.crtConj_sum_dind",
+    "module": "PAG251",
+    "score": 0.28
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.274
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.271
+   },
+   {
+    "name": "PAG.Part233.crtConj_commute_iff",
+    "module": "PAG233",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part232.crtConj_dind",
+    "module": "PAG232",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part233.symm_leftOp_mem_fullComm",
+    "module": "PAG233",
+    "score": 0.266
+   },
+   {
+    "name": "PAG.Part233.symm_rightOp_mem_fullComm",
+    "module": "PAG233",
+    "score": 0.266
+   },
+   {
+    "name": "PAG.Part232.crtConj_geps",
+    "module": "PAG232",
+    "score": 0.264
+   },
+   {
+    "name": "PAG.Part233.mem_map_crtConj_iff",
+    "module": "PAG233",
+    "score": 0.262
+   },
+   {
+    "name": "PAG.Part235.crtConj_mulPull",
+    "module": "PAG235",
+    "score": 0.248
+   },
+   {
+    "name": "PAG.Part232.crtConj.congr_simp",
+    "module": "PAG238",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part236.crtConj_apply_tens",
+    "module": "PAG236",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part237.smul_crtConj_mulLeft",
+    "module": "PAG237",
+    "score": 0.238
+   },
+   {
+    "name": "PAG.Part235.crtConj_layerInd",
+    "module": "PAG235",
+    "score": 0.235
+   },
+   {
+    "name": "PAG.Part248.fourierConj_shellAvg",
+    "module": "PAG248",
+    "score": 0.232
+   },
+   {
+    "name": "PAG.Part241.endCongr_rfl",
+    "module": "PAG241",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part232.leftHom_apply",
+    "module": "PAG232",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part235.crtConj_dil_unitLeft",
+    "module": "PAG235",
+    "score": 0.21
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiConj_geps_one",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.423
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.414
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part232.crtConj_geps",
+    "module": "PAG232",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.39
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.383
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part248.fourierConj_shellAvg",
+    "module": "PAG248",
+    "score": 0.375
+   },
+   {
+    "name": "PAG.Part251.two_level_identity",
+    "module": "PAG251",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.355
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiConj_geps_two",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.423
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.414
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part232.crtConj_geps",
+    "module": "PAG232",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.39
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.383
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part248.fourierConj_shellAvg",
+    "module": "PAG248",
+    "score": 0.375
+   },
+   {
+    "name": "PAG.Part251.two_level_identity",
+    "module": "PAG251",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.355
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiConj_mulLeft",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.379
+   },
+   {
+    "name": "PAG.Part251.crtConj_sum_dind",
+    "module": "PAG251",
+    "score": 0.368
+   },
+   {
+    "name": "PAG.Part232.crtConj_dind",
+    "module": "PAG232",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part262.exists_mulLeft_of_mem_span",
+    "module": "PAG262",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part248.fourierConj_apply",
+    "module": "PAG248",
+    "score": 0.326
+   },
+   {
+    "name": "PAG.Part237.smul_crtConj_mulLeft",
+    "module": "PAG237",
+    "score": 0.312
+   },
+   {
+    "name": "PAG.Part235.crtConj_layerInd",
+    "module": "PAG235",
+    "score": 0.309
+   },
+   {
+    "name": "PAG.Part251.mulLeft_dind_mul_self",
+    "module": "PAG251",
+    "score": 0.302
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.298
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.286
+   },
+   {
+    "name": "PAG.Part232.crtConj_apply",
+    "module": "PAG232",
+    "score": 0.269
+   },
+   {
+    "name": "PAG.Part232.sum_mulLeft_dind",
+    "module": "PAG232",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part248.fourierConj_shellAvg",
+    "module": "PAG248",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part237.smul_crtConj_twistLayer",
+    "module": "PAG237",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part251.two_level_identity",
+    "module": "PAG251",
+    "score": 0.255
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part233.crtConj_commute_iff",
+    "module": "PAG233",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part233.symm_leftOp_mem_fullComm",
+    "module": "PAG233",
+    "score": 0.252
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.chiMul",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part232.leftOp",
+    "module": "PAG232",
+    "score": 0.169
+   },
+   {
+    "name": "PAG.Part232.rightOp",
+    "module": "PAG232",
+    "score": 0.167
+   },
+   {
+    "name": "PAG.Part7.push",
+    "module": "PAG7",
+    "score": 0.161
+   },
+   {
+    "name": "PAG.Part234.inclY",
+    "module": "PAG234",
+    "score": 0.153
+   },
+   {
+    "name": "PAG.Part234.matE",
+    "module": "PAG234",
+    "score": 0.139
+   },
+   {
+    "name": "PAG.Part257.extL",
+    "module": "PAG257",
+    "score": 0.132
+   },
+   {
+    "name": "PAG.Part229.adjOp",
+    "module": "PAG229",
+    "score": 0.13
+   },
+   {
+    "name": "PAG.Part253.signMul",
+    "module": "PAG253",
+    "score": 0.128
+   },
+   {
+    "name": "PAG.Part260.crossSign",
+    "module": "PAG260",
+    "score": 0.126
+   },
+   {
+    "name": "PAG.Part258.pullL",
+    "module": "PAG258",
+    "score": 0.126
+   },
+   {
+    "name": "PAG.Part234.restrY",
+    "module": "PAG234",
+    "score": 0.123
+   },
+   {
+    "name": "PAG.Part4.T",
+    "module": "PAG4",
+    "score": 0.117
+   },
+   {
+    "name": "PAG.Part258.ipR",
+    "module": "PAG258",
+    "score": 0.113
+   },
+   {
+    "name": "PAG.Part4.M",
+    "module": "PAG4",
+    "score": 0.112
+   },
+   {
+    "name": "PAG.Part4.F",
+    "module": "PAG4",
+    "score": 0.112
+   },
+   {
+    "name": "PAG.Part26.ptEquiv",
+    "module": "PAG26",
+    "score": 0.109
+   },
+   {
+    "name": "PAG.Part227.matUnit",
+    "module": "PAG227",
+    "score": 0.108
+   },
+   {
+    "name": "PAG.transl",
+    "module": "PAG",
+    "score": 0.107
+   },
+   {
+    "name": "PAG.Part218.blockProjL",
+    "module": "PAG218",
+    "score": 0.106
+   },
+   {
+    "name": "PAG.Part219.ShellInvariant",
+    "module": "PAG219",
+    "score": 0.106
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_canon",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.545
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.544
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.508
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.506
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.406
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.403
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.398
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.398
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.396
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.38
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.375
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.374
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.373
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_comp",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.609
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.602
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.585
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.581
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.491
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.439
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_id",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.599
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.572
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.557
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.478
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.477
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.477
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.462
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.436
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.432
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_iff_eq_shellLift",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.871
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.855
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.853
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.848
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.842
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.793
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.76
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.751
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.746
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.741
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.665
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.598
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.592
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.52
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.507
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_of_dind",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.67
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.663
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.623
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.555
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.54
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.502
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.449
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_shellLift",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.861
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.844
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.842
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.837
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.831
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.783
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.746
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.737
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.732
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.727
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.647
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.579
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.571
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.524
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.499
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.482
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compatF_unique",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.633
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.626
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.589
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.51
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.456
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compat_dind_unique",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.965
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.955
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.897
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.821
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.803
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.764
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.712
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.708
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.702
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.696
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.696
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.693
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.693
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.678
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.671
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.67
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.649
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compat_injective",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.749
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.704
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.573
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.557
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.556
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.554
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.554
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.545
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.54
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.534
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.compat_twLift",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.595
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.587
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.584
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.584
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.577
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.575
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.421
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.415
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.41
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.406
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.393
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.convL_geps_one_ne_zero",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.978
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.879
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.873
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.873
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.814
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.814
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.809
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.797
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.764
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_one_sub",
+    "module": "PAG250",
+    "score": 0.655
+   },
+   {
+    "name": "PAG.Part250.convL_geps_twoPt",
+    "module": "PAG250",
+    "score": 0.653
+   },
+   {
+    "name": "PAG.Part248.convL_geps_one_pairFn_ne_zero",
+    "module": "PAG248",
+    "score": 0.652
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part248.convL_geps_pairFn_apply",
+    "module": "PAG248",
+    "score": 0.629
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.617
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.607
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part251.convL_geps_commute_charP",
+    "module": "PAG251",
+    "score": 0.59
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.convL_geps_two_one",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part250.convL_geps_eq_one_sub",
+    "module": "PAG250",
+    "score": 0.753
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.751
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.751
+   },
+   {
+    "name": "PAG.Part251.two_level_identity",
+    "module": "PAG251",
+    "score": 0.735
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.705
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.671
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.667
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.666
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul_aux",
+    "module": "PAG251",
+    "score": 0.634
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.628
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.617
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.616
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul",
+    "module": "PAG251",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part248.sum_smul_shellDev",
+    "module": "PAG248",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part250.convL_geps_twoPt",
+    "module": "PAG250",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.483
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.conv_geps_self_const",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part205.geps_conv_geps",
+    "module": "PAG205",
+    "score": 0.969
+   },
+   {
+    "name": "PAG.Part210.conv_eq_sum_shells",
+    "module": "PAG210",
+    "score": 0.957
+   },
+   {
+    "name": "PAG.Part205.sum_geps_conv",
+    "module": "PAG205",
+    "score": 0.957
+   },
+   {
+    "name": "PAG.Part243.conv_geps_dind",
+    "module": "PAG243",
+    "score": 0.947
+   },
+   {
+    "name": "PAG.Part243.dft_conv_geps",
+    "module": "PAG243",
+    "score": 0.925
+   },
+   {
+    "name": "PAG.Part243.conv_geps_self",
+    "module": "PAG243",
+    "score": 0.916
+   },
+   {
+    "name": "PAG.Part208.geps_conv_gbas",
+    "module": "PAG208",
+    "score": 0.866
+   },
+   {
+    "name": "PAG.Part205.geps.congr_simp",
+    "module": "PAG205",
+    "score": 0.836
+   },
+   {
+    "name": "PAG.Part205.dft_geps",
+    "module": "PAG205",
+    "score": 0.836
+   },
+   {
+    "name": "PAG.Part216.inner_geps_conv_comm",
+    "module": "PAG216",
+    "score": 0.813
+   },
+   {
+    "name": "PAG.Part209.inner_geps_conv_ne",
+    "module": "PAG209",
+    "score": 0.789
+   },
+   {
+    "name": "PAG.Part243.dft_dind",
+    "module": "PAG243",
+    "score": 0.775
+   },
+   {
+    "name": "PAG.Part251.geps_eq_zero_of_not_dvd_val",
+    "module": "PAG251",
+    "score": 0.771
+   },
+   {
+    "name": "PAG.Part232.geps_eq_zero_of_not_dvd",
+    "module": "PAG232",
+    "score": 0.765
+   },
+   {
+    "name": "PAG.Part207.geps_ne_zero",
+    "module": "PAG207",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part251.geps_self_apply",
+    "module": "PAG251",
+    "score": 0.742
+   },
+   {
+    "name": "PAG.Part243.geps_self",
+    "module": "PAG243",
+    "score": 0.741
+   },
+   {
+    "name": "PAG.Part208.inner_gbas_geps_conv",
+    "module": "PAG208",
+    "score": 0.736
+   },
+   {
+    "name": "PAG.Part250.geps_add_of_dvd",
+    "module": "PAG250",
+    "score": 0.734
+   },
+   {
+    "name": "PAG.Part16.dft_conv",
+    "module": "PAG16",
+    "score": 0.69
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.dsub_eq_zero",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.723
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.706
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.672
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.636
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.613
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.587
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.571
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.565
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.eTop_const",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.987
+   },
+   {
+    "name": "PAG.Part262.dTop_eTop_dTop",
+    "module": "PAG262",
+    "score": 0.784
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.781
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.772
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.771
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.727
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.725
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.725
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.712
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.703
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.693
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.665
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.665
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.655
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.644
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.639
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.635
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.632
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.esub_eq_zero",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.701
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.692
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.692
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.668
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.65
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.65
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.639
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.63
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.621
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.597
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.59
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.589
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_lt_shellAlg",
+    "module": "PAG246",
+    "score": 0.585
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.584
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_two_pow",
+    "module": "PAG246",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.58
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.esub_mul_esub",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.697
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.688
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.688
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.683
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.68
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.68
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.648
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.647
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.647
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.635
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.627
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.618
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.611
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.598
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_two_pow",
+    "module": "PAG246",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow_odd",
+    "module": "PAG246",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_lt_shellAlg",
+    "module": "PAG246",
+    "score": 0.593
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.existsUnique_compatF_iff",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.621
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.609
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.579
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.569
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.484
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.477
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.468
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.467
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.459
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.45
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.45
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.446
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.fC",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.658
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.568
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part246.fourierConj",
+    "module": "PAG246",
+    "score": 0.482
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.437
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.412
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.391
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.391
+   },
+   {
+    "name": "PAG.Part246.shellAlgEquivOfMem",
+    "module": "PAG246",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.336
+   },
+   {
+    "name": "PAG.Part235.dilCommTensorEquiv",
+    "module": "PAG235",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part229.shellAlgEquiv",
+    "module": "PAG229",
+    "score": 0.319
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.fC_coe",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.768
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.648
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.641
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.602
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.602
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.591
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.591
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.575
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.571
+   },
+   {
+    "name": "PAG.Part248.fourierConj_apply",
+    "module": "PAG248",
+    "score": 0.555
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_oneEAlg",
+    "module": "PAG246",
+    "score": 0.555
+   },
+   {
+    "name": "PAG.Part249.dualOneEAlg_le",
+    "module": "PAG249",
+    "score": 0.545
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.544
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.fC_dind",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.661
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.636
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.631
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.605
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.598
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.598
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.562
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.544
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.537
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.fC_geps",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.661
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.636
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.631
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.605
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.598
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.598
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.562
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.544
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.537
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.fourierConj_mem_spanE",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.968
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.957
+   },
+   {
+    "name": "PAG.Part248.fourierConj_apply",
+    "module": "PAG248",
+    "score": 0.749
+   },
+   {
+    "name": "PAG.Part248.fourierConj_shellAvg",
+    "module": "PAG248",
+    "score": 0.741
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.704
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.667
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_one_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.662
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.655
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.654
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.646
+   },
+   {
+    "name": "PAG.Part262.exists_mulLeft_of_mem_span",
+    "module": "PAG262",
+    "score": 0.629
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_oneEAlg",
+    "module": "PAG246",
+    "score": 0.618
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.592
+   },
+   {
+    "name": "PAG.Part250.map_fourierConj_addEAlg",
+    "module": "PAG250",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.586
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.582
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.582
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.573
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_dualOneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.566
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.map_chiConj_le",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.587
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part244.oneEAlg_le",
+    "module": "PAG244",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part246.shellAlg_le_oneEAlg_of_forall_mem",
+    "module": "PAG246",
+    "score": 0.553
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part249.dualOneEAlg_le",
+    "module": "PAG249",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.518
+   },
+   {
+    "name": "PAG.Part250.addEAlg_le",
+    "module": "PAG250",
+    "score": 0.518
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.516
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg_le",
+    "module": "PAG243",
+    "score": 0.508
+   },
+   {
+    "name": "PAG.Part229.doubleComm_le_shellAlg",
+    "module": "PAG229",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part228.shellAlg_le_doubleComm",
+    "module": "PAG228",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.496
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.map_mem_spanD",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.907
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.897
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.874
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.854
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.843
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.813
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.803
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.747
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.741
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.741
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.737
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.737
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.69
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.684
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.682
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.673
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.673
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.map_mem_spanE",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.864
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.854
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.854
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.852
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.844
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.806
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.804
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.794
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.793
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.788
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.788
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.784
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.784
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.758
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.725
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.713
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.not_directed_udvd",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part196.pcomp_aux",
+    "module": "PAG196",
+    "score": 0.313
+   },
+   {
+    "name": "PAG.Part219.coprime_shell",
+    "module": "PAG219",
+    "score": 0.299
+   },
+   {
+    "name": "PAG.Part200.exists_split",
+    "module": "PAG200",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part250.exists_witness_coeff",
+    "module": "PAG250",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part204.mixed_unit_factor_eq_zero",
+    "module": "PAG204",
+    "score": 0.28
+   },
+   {
+    "name": "PAG.Part200.split_eq",
+    "module": "PAG200",
+    "score": 0.274
+   },
+   {
+    "name": "PAG.Part213.block_dvd",
+    "module": "PAG213",
+    "score": 0.251
+   },
+   {
+    "name": "PAG.Part210.shell_quot",
+    "module": "PAG210",
+    "score": 0.251
+   },
+   {
+    "name": "PAG.Part245.mul_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.241
+   },
+   {
+    "name": "PAG.Part245.coprime_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.241
+   },
+   {
+    "name": "PAG.Part205.coprime_mul_of_rad",
+    "module": "PAG205",
+    "score": 0.237
+   },
+   {
+    "name": "PAG.Part222.layerInd_apply_of_not_inLayer",
+    "module": "PAG222",
+    "score": 0.229
+   },
+   {
+    "name": "PAG.Part235.inLayer_iff_dvd",
+    "module": "PAG235",
+    "score": 0.222
+   },
+   {
+    "name": "PAG.Part132.p_dvd_div_gcd",
+    "module": "PAG132",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part223.eq_of_inLayer_inLayer",
+    "module": "PAG223",
+    "score": 0.215
+   },
+   {
+    "name": "PAG.Part200.not_dvd_mul'",
+    "module": "PAG200",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part221.layerInd_mul_of_not_inLayer",
+    "module": "PAG221",
+    "score": 0.211
+   },
+   {
+    "name": "PAG.Part220.layer_unique",
+    "module": "PAG220",
+    "score": 0.209
+   },
+   {
+    "name": "PAG.Part220.exists_layer",
+    "module": "PAG220",
+    "score": 0.195
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.not_existsUnique_compat",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.744
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.681
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.675
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.521
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.512
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.506
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.493
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.479
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.not_isDirected_udvd",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part196.pcomp_aux",
+    "module": "PAG196",
+    "score": 0.204
+   },
+   {
+    "name": "PAG.Part219.coprime_shell",
+    "module": "PAG219",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part204.mixed_unit_factor_eq_zero",
+    "module": "PAG204",
+    "score": 0.183
+   },
+   {
+    "name": "PAG.Part200.split_eq",
+    "module": "PAG200",
+    "score": 0.179
+   },
+   {
+    "name": "PAG.Part213.block_dvd",
+    "module": "PAG213",
+    "score": 0.164
+   },
+   {
+    "name": "PAG.Part210.shell_quot",
+    "module": "PAG210",
+    "score": 0.164
+   },
+   {
+    "name": "PAG.Part245.mul_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.157
+   },
+   {
+    "name": "PAG.Part245.coprime_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.157
+   },
+   {
+    "name": "PAG.Part205.coprime_mul_of_rad",
+    "module": "PAG205",
+    "score": 0.155
+   },
+   {
+    "name": "PAG.Part250.exists_witness_coeff",
+    "module": "PAG250",
+    "score": 0.145
+   },
+   {
+    "name": "PAG.Part132.p_dvd_div_gcd",
+    "module": "PAG132",
+    "score": 0.143
+   },
+   {
+    "name": "PAG.Part200.not_dvd_mul'",
+    "module": "PAG200",
+    "score": 0.139
+   },
+   {
+    "name": "PAG.Part133.not_sq_dvd_div_gcd",
+    "module": "PAG133",
+    "score": 0.123
+   },
+   {
+    "name": "PAG.Part200.split_dvd",
+    "module": "PAG200",
+    "score": 0.122
+   },
+   {
+    "name": "PAG.Part262.p_dvd_div_p",
+    "module": "PAG262",
+    "score": 0.119
+   },
+   {
+    "name": "PAG.Part217.div_dual_eq",
+    "module": "PAG217",
+    "score": 0.119
+   },
+   {
+    "name": "PAG.Part217.div_div_swap",
+    "module": "PAG217",
+    "score": 0.119
+   },
+   {
+    "name": "PAG.Part216.gblock_shell",
+    "module": "PAG216",
+    "score": 0.119
+   },
+   {
+    "name": "PAG.Part212.kdual_shell_eq",
+    "module": "PAG212",
+    "score": 0.119
+   },
+   {
+    "name": "PAG.Part209.shell_eq",
+    "module": "PAG209",
+    "score": 0.119
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.not_udvd_and_udvd_sq",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part196.pcomp_aux",
+    "module": "PAG196",
+    "score": 0.32
+   },
+   {
+    "name": "PAG.Part219.coprime_shell",
+    "module": "PAG219",
+    "score": 0.306
+   },
+   {
+    "name": "PAG.Part204.mixed_unit_factor_eq_zero",
+    "module": "PAG204",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part200.split_eq",
+    "module": "PAG200",
+    "score": 0.28
+   },
+   {
+    "name": "PAG.Part213.block_dvd",
+    "module": "PAG213",
+    "score": 0.257
+   },
+   {
+    "name": "PAG.Part210.shell_quot",
+    "module": "PAG210",
+    "score": 0.257
+   },
+   {
+    "name": "PAG.Part245.mul_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.247
+   },
+   {
+    "name": "PAG.Part245.coprime_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.247
+   },
+   {
+    "name": "PAG.Part205.coprime_mul_of_rad",
+    "module": "PAG205",
+    "score": 0.243
+   },
+   {
+    "name": "PAG.Part250.exists_witness_coeff",
+    "module": "PAG250",
+    "score": 0.227
+   },
+   {
+    "name": "PAG.Part132.p_dvd_div_gcd",
+    "module": "PAG132",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part200.not_dvd_mul'",
+    "module": "PAG200",
+    "score": 0.218
+   },
+   {
+    "name": "PAG.Part133.not_sq_dvd_div_gcd",
+    "module": "PAG133",
+    "score": 0.194
+   },
+   {
+    "name": "PAG.Part200.split_dvd",
+    "module": "PAG200",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part262.p_dvd_div_p",
+    "module": "PAG262",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part217.div_dual_eq",
+    "module": "PAG217",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part217.div_div_swap",
+    "module": "PAG217",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part216.gblock_shell",
+    "module": "PAG216",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part212.kdual_shell_eq",
+    "module": "PAG212",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part209.shell_eq",
+    "module": "PAG209",
+    "score": 0.187
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.one_sub_eTop_const",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.687
+   },
+   {
+    "name": "PAG.Part262.dTop_eTop_dTop",
+    "module": "PAG262",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.544
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.506
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleModule",
+    "module": "PAG229",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.446
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.445
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.one_sub_eTop_eq",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.674
+   },
+   {
+    "name": "PAG.Part262.dTop_eTop_dTop",
+    "module": "PAG262",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.502
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.5
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.5
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.477
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.464
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleModule",
+    "module": "PAG229",
+    "score": 0.44
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.primeProd",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part259.BoxCoord",
+    "module": "PAG259",
+    "score": 0.726
+   },
+   {
+    "name": "PAG.Part259.rho",
+    "module": "PAG259",
+    "score": 0.366
+   },
+   {
+    "name": "PAG.Part259.rhoBox",
+    "module": "PAG259",
+    "score": 0.307
+   },
+   {
+    "name": "PAG.Part114.crtRing",
+    "module": "PAG114",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part110.ptens",
+    "module": "PAG110",
+    "score": 0.183
+   },
+   {
+    "name": "PAG.Part110.crtPi",
+    "module": "PAG110",
+    "score": 0.173
+   },
+   {
+    "name": "PAG.Part170.Uq",
+    "module": "PAG170",
+    "score": 0.166
+   },
+   {
+    "name": "PAG.Part215.BlockIdx",
+    "module": "PAG215",
+    "score": 0.159
+   },
+   {
+    "name": "PAG.Part211.KetIdx",
+    "module": "PAG211",
+    "score": 0.153
+   },
+   {
+    "name": "PAG.Part114.unitComp",
+    "module": "PAG114",
+    "score": 0.136
+   },
+   {
+    "name": "PAG.Kloosterman.Kl",
+    "module": "PAG2",
+    "score": 0.104
+   },
+   {
+    "name": "PAG.Part213.blockX",
+    "module": "PAG213",
+    "score": 0.103
+   },
+   {
+    "name": "PAG.Part124.pchr",
+    "module": "PAG124",
+    "score": 0.098
+   },
+   {
+    "name": "PAG.Part241.tpEquiv",
+    "module": "PAG241",
+    "score": 0.097
+   },
+   {
+    "name": "PAG.Part185.Pjbar",
+    "module": "PAG185",
+    "score": 0.096
+   },
+   {
+    "name": "PAG.Part185.Pj",
+    "module": "PAG185",
+    "score": 0.096
+   },
+   {
+    "name": "PAG.Part213.blockA",
+    "module": "PAG213",
+    "score": 0.094
+   },
+   {
+    "name": "PAG.Part243.ramMat",
+    "module": "PAG243",
+    "score": 0.086
+   },
+   {
+    "name": "PAG.Part212.ketClass",
+    "module": "PAG212",
+    "score": 0.083
+   },
+   {
+    "name": "PAG.Part220.layerIdx",
+    "module": "PAG220",
+    "score": 0.081
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.primeProd_pos",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part259.val_ne_of_mem_of_not_mem",
+    "module": "PAG259",
+    "score": 0.391
+   },
+   {
+    "name": "PAG.Part131.prod_dvd_of_coprime_nat",
+    "module": "PAG131",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part188.prod_root_of_root",
+    "module": "PAG188",
+    "score": 0.312
+   },
+   {
+    "name": "PAG.Part230.factorization_prod_pow_subtype",
+    "module": "PAG230",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part131.orderOf_prod_coprime",
+    "module": "PAG131",
+    "score": 0.286
+   },
+   {
+    "name": "PAG.Part259.exists_two_primes_not_mem",
+    "module": "PAG259",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part230.prod_primeFactors_pow_factorization",
+    "module": "PAG230",
+    "score": 0.257
+   },
+   {
+    "name": "PAG.Part131.dvd_orderOf_prod",
+    "module": "PAG131",
+    "score": 0.231
+   },
+   {
+    "name": "PAG.Part199.pos_of_mul",
+    "module": "PAG199",
+    "score": 0.228
+   },
+   {
+    "name": "PAG.Part131.prod_dvd_orderOf_prod",
+    "module": "PAG131",
+    "score": 0.226
+   },
+   {
+    "name": "PAG.Part230.ind_primCount_pos_eq_prod",
+    "module": "PAG230",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part136.ppart_prod",
+    "module": "PAG136",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part230.prod_primeFactors_mul_of_coprime",
+    "module": "PAG230",
+    "score": 0.219
+   },
+   {
+    "name": "PAG.Part169.ord_prod_general",
+    "module": "PAG169",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part136.ppart_prod_pow",
+    "module": "PAG136",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part259.rho_one",
+    "module": "PAG259",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part216.gblock_shell_inj",
+    "module": "PAG216",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part214.div_mul_div_of_dvd",
+    "module": "PAG214",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part212.mul_div_div_cancel",
+    "module": "PAG212",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part204.div_mul_aux",
+    "module": "PAG204",
+    "score": 0.2
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.primeProd_udvd",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part259.val_ne_of_mem_of_not_mem",
+    "module": "PAG259",
+    "score": 0.272
+   },
+   {
+    "name": "PAG.Part131.prod_dvd_of_coprime_nat",
+    "module": "PAG131",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part259.dense_imgST_iff",
+    "module": "PAG259",
+    "score": 0.232
+   },
+   {
+    "name": "PAG.Part259.threshold_iff",
+    "module": "PAG259",
+    "score": 0.226
+   },
+   {
+    "name": "PAG.Part131.orderOf_prod_coprime",
+    "module": "PAG131",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part259.exists_two_primes_not_mem",
+    "module": "PAG259",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part230.factorization_prod_pow_subtype",
+    "module": "PAG230",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part131.dvd_orderOf_prod",
+    "module": "PAG131",
+    "score": 0.181
+   },
+   {
+    "name": "PAG.Part230.prod_primeFactors_pow_factorization",
+    "module": "PAG230",
+    "score": 0.179
+   },
+   {
+    "name": "PAG.Part131.prod_dvd_orderOf_prod",
+    "module": "PAG131",
+    "score": 0.178
+   },
+   {
+    "name": "PAG.Part230.prod_primeFactors_mul_of_coprime",
+    "module": "PAG230",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part136.ppart_prod_pow",
+    "module": "PAG136",
+    "score": 0.171
+   },
+   {
+    "name": "PAG.Part136.ppart_prod",
+    "module": "PAG136",
+    "score": 0.164
+   },
+   {
+    "name": "PAG.Part188.prod_root_of_root",
+    "module": "PAG188",
+    "score": 0.162
+   },
+   {
+    "name": "PAG.Part169.ord_prod_general",
+    "module": "PAG169",
+    "score": 0.158
+   },
+   {
+    "name": "PAG.Part220.block_decomposition",
+    "module": "PAG220",
+    "score": 0.157
+   },
+   {
+    "name": "PAG.Part249.prod_eq_sum_iff",
+    "module": "PAG249",
+    "score": 0.153
+   },
+   {
+    "name": "PAG.Part185.exists_eval_Pj",
+    "module": "PAG185",
+    "score": 0.146
+   },
+   {
+    "name": "PAG.Part230.layerSize_eq_prod",
+    "module": "PAG230",
+    "score": 0.145
+   },
+   {
+    "name": "PAG.Part131.gauss_prod_pdvd_sharp",
+    "module": "PAG131",
+    "score": 0.145
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.pull_injective'",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.847
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.841
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.831
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.789
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.712
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part21.push_apply_emb",
+    "module": "PAG21",
+    "score": 0.518
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.512
+   },
+   {
+    "name": "PAG.Part17.sum_push_mul",
+    "module": "PAG17",
+    "score": 0.506
+   },
+   {
+    "name": "PAG.Part18.push_smul",
+    "module": "PAG18",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.499
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.477
+   },
+   {
+    "name": "PAG.Part17.push_conv",
+    "module": "PAG17",
+    "score": 0.452
+   },
+   {
+    "name": "PAG.Part262.crtLin_pull",
+    "module": "PAG262",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.431
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.428
+   },
+   {
+    "name": "PAG.Part55.conj_push",
+    "module": "PAG55",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part30.push_neg_apply",
+    "module": "PAG30",
+    "score": 0.411
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.pull_one",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.728
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.714
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.678
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.612
+   },
+   {
+    "name": "PAG.Part205.sum_dind",
+    "module": "PAG205",
+    "score": 0.605
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part205.dft_delta",
+    "module": "PAG205",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.44
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.429
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.41
+   },
+   {
+    "name": "PAG.Part11.ind_sum_eq_one",
+    "module": "PAG11",
+    "score": 0.386
+   },
+   {
+    "name": "PAG.Part262.crtLin_pull",
+    "module": "PAG262",
+    "score": 0.38
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.371
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.368
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part241.tpProd_one",
+    "module": "PAG241",
+    "score": 0.326
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.318
+   },
+   {
+    "name": "PAG.Part217.gket_congr2",
+    "module": "PAG217",
+    "score": 0.256
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.pull_pull",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.663
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.65
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.617
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.606
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.557
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.515
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.502
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.48
+   },
+   {
+    "name": "PAG.Part201.gket_pull_same",
+    "module": "PAG201",
+    "score": 0.468
+   },
+   {
+    "name": "PAG.Part201.gket_pull",
+    "module": "PAG201",
+    "score": 0.462
+   },
+   {
+    "name": "PAG.Part201.zket_pull",
+    "module": "PAG201",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part262.crtLin_pull",
+    "module": "PAG262",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.433
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.43
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.421
+   },
+   {
+    "name": "PAG.Part201.hconv_zket_pull",
+    "module": "PAG201",
+    "score": 0.417
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.404
+   },
+   {
+    "name": "PAG.Part236.changeLevel_charMul",
+    "module": "PAG236",
+    "score": 0.34
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.289
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.pull_self",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.618
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.558
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.473
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.42
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.405
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.391
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.374
+   },
+   {
+    "name": "PAG.Part262.crtLin_pull",
+    "module": "PAG262",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.338
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.335
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.29
+   },
+   {
+    "name": "PAG.Part217.gket_congr2",
+    "module": "PAG217",
+    "score": 0.234
+   },
+   {
+    "name": "PAG.Part211.gket_congr",
+    "module": "PAG211",
+    "score": 0.234
+   },
+   {
+    "name": "PAG.Part199.gket_apply",
+    "module": "PAG199",
+    "score": 0.228
+   },
+   {
+    "name": "PAG.Part199.gket_memb",
+    "module": "PAG199",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.219
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.shellAlg_hom_ext",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.862
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.853
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.824
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.806
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.766
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.711
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.699
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.699
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.695
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.695
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.689
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.679
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.672
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.645
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.643
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.632
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.shellLift_fC",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.938
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.925
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.922
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.91
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.904
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.871
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.833
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.812
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.808
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.796
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.731
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.659
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.657
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.648
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.599
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.592
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.571
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.557
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.sqLim",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.278
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.266
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.196
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.194
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.185
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.183
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.178
+   },
+   {
+    "name": "PAG.Part229.shellAlgEquiv",
+    "module": "PAG229",
+    "score": 0.177
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part246.shellAlgEquivOfMem",
+    "module": "PAG246",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part242.radialHom",
+    "module": "PAG242",
+    "score": 0.17
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.165
+   },
+   {
+    "name": "PAG.Part229.shellAlgMatrixEquiv",
+    "module": "PAG229",
+    "score": 0.165
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.sqLim_of_injective",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.422
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.415
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.388
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.388
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.388
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part240.finrank_shellAlg_eq_prod",
+    "module": "PAG240",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.357
+   },
+   {
+    "name": "PAG.Part230.finrank_center_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.355
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.352
+   },
+   {
+    "name": "PAG.Part249.dualOneEAlg_le",
+    "module": "PAG249",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part232.finrank_map_crtConj",
+    "module": "PAG232",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.341
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.34
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.sqMap",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.395
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.368
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.362
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part246.fourierConj",
+    "module": "PAG246",
+    "score": 0.289
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.279
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.275
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.272
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.271
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.244
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.243
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.236
+   },
+   {
+    "name": "PAG.Part229.shellAlgEquiv",
+    "module": "PAG229",
+    "score": 0.227
+   },
+   {
+    "name": "PAG.Part246.shellAlgEquivOfMem",
+    "module": "PAG246",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part242.radialHom",
+    "module": "PAG242",
+    "score": 0.217
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.sum_zmod2",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part120.psi_two_one",
+    "module": "PAG120",
+    "score": 0.68
+   },
+   {
+    "name": "PAG.Part185.sum_pow_eq",
+    "module": "PAG185",
+    "score": 0.601
+   },
+   {
+    "name": "PAG.Part185.sum_pow_card_sub_one",
+    "module": "PAG185",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part166.sum_pow_top",
+    "module": "PAG166",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part119.psi_one_primitive",
+    "module": "PAG119",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part140.isUnit_iff_cast_ne_zero",
+    "module": "PAG140",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part119.two_ne_zero'",
+    "module": "PAG119",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part139.cast_eq_of_P",
+    "module": "PAG139",
+    "score": 0.459
+   },
+   {
+    "name": "PAG.Part198.two_ne_zero_zmod",
+    "module": "PAG198",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part119.quad_closed",
+    "module": "PAG119",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part192.z_ne_zero",
+    "module": "PAG192",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part166.factorial_sq",
+    "module": "PAG166",
+    "score": 0.433
+   },
+   {
+    "name": "PAG.Part175.z4_eq",
+    "module": "PAG175",
+    "score": 0.431
+   },
+   {
+    "name": "PAG.Part185.sum_pow_lt",
+    "module": "PAG185",
+    "score": 0.428
+   },
+   {
+    "name": "PAG.Part154.chi_pow_of_cast_eq",
+    "module": "PAG154",
+    "score": 0.427
+   },
+   {
+    "name": "PAG.Part166.sum_range_zmod",
+    "module": "PAG166",
+    "score": 0.426
+   },
+   {
+    "name": "PAG.Part185.sum_mul_one_sub_pow",
+    "module": "PAG185",
+    "score": 0.425
+   },
+   {
+    "name": "PAG.Part171.chi_neg_one",
+    "module": "PAG171",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part185.choose_ne_zero_mod",
+    "module": "PAG185",
+    "score": 0.422
+   },
+   {
+    "name": "PAG.Part119.complete_square",
+    "module": "PAG119",
+    "score": 0.418
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.tensor_eTop_mem_spanE",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.934
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.923
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.906
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.906
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.858
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.856
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.842
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.832
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.831
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.825
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.812
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.735
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.715
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.648
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.641
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.618
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.612
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.603
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twLift",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.636
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.635
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.513
+   },
+   {
+    "name": "PAG.Part235.dilCommTensorEquiv",
+    "module": "PAG235",
+    "score": 0.408
+   },
+   {
+    "name": "PAG.Part233.crtTensorEquiv",
+    "module": "PAG233",
+    "score": 0.389
+   },
+   {
+    "name": "PAG.Part233.fullCommTensorEquiv",
+    "module": "PAG233",
+    "score": 0.373
+   },
+   {
+    "name": "PAG.Part240.CRTMul",
+    "module": "PAG240",
+    "score": 0.363
+   },
+   {
+    "name": "PAG.Part233.tensLiftGen",
+    "module": "PAG233",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part233.centerTensorEquiv",
+    "module": "PAG233",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part233.tensorSupEquiv",
+    "module": "PAG233",
+    "score": 0.344
+   },
+   {
+    "name": "PAG.Part232.rightHom",
+    "module": "PAG232",
+    "score": 0.305
+   },
+   {
+    "name": "PAG.Part232.leftHom",
+    "module": "PAG232",
+    "score": 0.302
+   },
+   {
+    "name": "PAG.Part241.shellAlgPiEquiv",
+    "module": "PAG241",
+    "score": 0.3
+   },
+   {
+    "name": "PAG.Part241.locOp",
+    "module": "PAG241",
+    "score": 0.298
+   },
+   {
+    "name": "PAG.Part241.dilCommAlgPiEquiv",
+    "module": "PAG241",
+    "score": 0.288
+   },
+   {
+    "name": "PAG.Part240.tensEquiv",
+    "module": "PAG240",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.276
+   },
+   {
+    "name": "PAG.Part241.ppFam",
+    "module": "PAG241",
+    "score": 0.265
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twLift.congr_simp",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.634
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.616
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.614
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.612
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.612
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.607
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.602
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.574
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.51
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.508
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.437
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.435
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twLift_apply",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.66
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.652
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.644
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.633
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.623
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.615
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.606
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.601
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.432
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twLift_dind",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.709
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.692
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.689
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.68
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.676
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.613
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.602
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.493
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.484
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.434
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.427
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.414
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twLift_ne_shellLift",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.701
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.693
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.691
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.683
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.682
+   },
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.678
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.589
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.49
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.482
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.436
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.421
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.418
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twLift_pull",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.shellLift_pull",
+    "module": "PAG262",
+    "score": 0.638
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.631
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.623
+   },
+   {
+    "name": "PAG.Part262.shellLift_geps",
+    "module": "PAG262",
+    "score": 0.621
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.615
+   },
+   {
+    "name": "PAG.Part262.shellLift_injective",
+    "module": "PAG262",
+    "score": 0.611
+   },
+   {
+    "name": "PAG.Part262.crtConj_shellLift",
+    "module": "PAG262",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.607
+   },
+   {
+    "name": "PAG.Part262.shellLift_dind",
+    "module": "PAG262",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.564
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.508
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.43
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.427
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twTens",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.431
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.343
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.342
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.289
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.258
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.246
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.239
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.236
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.23
+   },
+   {
+    "name": "PAG.Part235.dilCommTensorEquiv",
+    "module": "PAG235",
+    "score": 0.229
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.228
+   },
+   {
+    "name": "PAG.Part233.tensLiftGen",
+    "module": "PAG233",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part229.centerShellLinearEquiv",
+    "module": "PAG229",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.204
+   },
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.196
+   },
+   {
+    "name": "PAG.Part235.dilCommAlgLinearEquiv",
+    "module": "PAG235",
+    "score": 0.194
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twTensLin",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.362
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.313
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.272
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.261
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.259
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.252
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.243
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.241
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.217
+   },
+   {
+    "name": "PAG.Part229.centerShellLinearEquiv",
+    "module": "PAG229",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.215
+   },
+   {
+    "name": "PAG.Part235.dilCommTensorEquiv",
+    "module": "PAG235",
+    "score": 0.213
+   },
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part235.dilCommAlgLinearEquiv",
+    "module": "PAG235",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part246.shellAlgEquivOfMem",
+    "module": "PAG246",
+    "score": 0.184
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twTensLin_apply",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.431
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.362
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part262.dTop_eTop_dTop",
+    "module": "PAG262",
+    "score": 0.349
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.335
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.33
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.319
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.318
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.316
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_two_pow",
+    "module": "PAG246",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow_odd",
+    "module": "PAG246",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_lt_shellAlg",
+    "module": "PAG246",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_primePow_odd",
+    "module": "PAG246",
+    "score": 0.313
+   },
+   {
+    "name": "PAG.Part233.finrank_tensorGen",
+    "module": "PAG233",
+    "score": 0.311
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.311
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twTens_apply",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.396
+   },
+   {
+    "name": "PAG.Part262.shellLift_apply",
+    "module": "PAG262",
+    "score": 0.364
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.347
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part262.dTop_eTop_dTop",
+    "module": "PAG262",
+    "score": 0.335
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.332
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.325
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.321
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.317
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.313
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.313
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.306
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.305
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.303
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_two_pow",
+    "module": "PAG246",
+    "score": 0.301
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.301
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow_odd",
+    "module": "PAG246",
+    "score": 0.301
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_lt_shellAlg",
+    "module": "PAG246",
+    "score": 0.301
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2",
+  "module": "PAG263",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.541
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.433
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.414
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.406
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.372
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.363
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.333
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.324
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.322
+   },
+   {
+    "name": "PAG.Part262.shellLift",
+    "module": "PAG262",
+    "score": 0.311
+   },
+   {
+    "name": "PAG.Part229.centerShellLinearEquiv",
+    "module": "PAG229",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part235.dilCommTensorEquiv",
+    "module": "PAG235",
+    "score": 0.264
+   },
+   {
+    "name": "PAG.Part235.dilCommAlgLinearEquiv",
+    "module": "PAG235",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part242.radialHom",
+    "module": "PAG242",
+    "score": 0.261
+   },
+   {
+    "name": "PAG.Part229.centerShellMathlibEquiv",
+    "module": "PAG229",
+    "score": 0.256
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_bijective",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.53
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.524
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.493
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.484
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.484
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.482
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.45
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.434
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.431
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_coe",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.54
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.533
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.491
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.437
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.437
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.436
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.433
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_dind",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.561
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.553
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.547
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.522
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.516
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.484
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.482
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.476
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.476
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.475
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.428
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_geps",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.541
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.493
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.482
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.438
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_geps_one",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.462
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.439
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_geps_two",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part262.eTop_mul_self",
+    "module": "PAG262",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.462
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.439
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.twist2_twist2",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.55
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.503
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.492
+   },
+   {
+    "name": "PAG.Part246.map_fourierConj_shellAlg",
+    "module": "PAG246",
+    "score": 0.49
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.441
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.udvd_iff_inLayer",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part235.inLayer_iff_dvd",
+    "module": "PAG235",
+    "score": 0.647
+   },
+   {
+    "name": "PAG.Part223.eq_of_inLayer_inLayer",
+    "module": "PAG223",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part187.root_pow_iff",
+    "module": "PAG187",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part183.root_mul_iff",
+    "module": "PAG183",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part212.dvd_div_iff_dvd",
+    "module": "PAG212",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part232.mul_eq_mul_iff_of_coprime",
+    "module": "PAG232",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part187.orderOf_ne_zero_iff_root",
+    "module": "PAG187",
+    "score": 0.39
+   },
+   {
+    "name": "PAG.Part235.inLayer_mul_iff",
+    "module": "PAG235",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part208.gcd_eq_iff_coprime",
+    "module": "PAG208",
+    "score": 0.379
+   },
+   {
+    "name": "PAG.Part196.pcomp_aux",
+    "module": "PAG196",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part220.layer_unique",
+    "module": "PAG220",
+    "score": 0.371
+   },
+   {
+    "name": "PAG.Part220.exists_layer",
+    "module": "PAG220",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part205.gcd_dual_iff",
+    "module": "PAG205",
+    "score": 0.344
+   },
+   {
+    "name": "PAG.Part216.gblock_shell_inj",
+    "module": "PAG216",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part214.div_mul_div_of_dvd",
+    "module": "PAG214",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part212.mul_div_div_cancel",
+    "module": "PAG212",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part204.div_mul_aux",
+    "module": "PAG204",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part222.layerInd_apply_of_inLayer",
+    "module": "PAG222",
+    "score": 0.316
+   },
+   {
+    "name": "PAG.Part215.div_shell_aux",
+    "module": "PAG215",
+    "score": 0.309
+   },
+   {
+    "name": "PAG.Part221.mem_layerDivs",
+    "module": "PAG221",
+    "score": 0.308
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.udvd_refl",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part196.pcomp_aux",
+    "module": "PAG196",
+    "score": 0.436
+   },
+   {
+    "name": "PAG.Part216.gblock_shell_inj",
+    "module": "PAG216",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part214.div_mul_div_of_dvd",
+    "module": "PAG214",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part212.mul_div_div_cancel",
+    "module": "PAG212",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part204.div_mul_aux",
+    "module": "PAG204",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part215.div_shell_aux",
+    "module": "PAG215",
+    "score": 0.357
+   },
+   {
+    "name": "PAG.Part199.pos_of_mul",
+    "module": "PAG199",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part147.eq_of_dvd_not_dvd_div",
+    "module": "PAG147",
+    "score": 0.329
+   },
+   {
+    "name": "PAG.Part223.div_shell_hub",
+    "module": "PAG223",
+    "score": 0.317
+   },
+   {
+    "name": "PAG.Part223.conductor_eq_of_shells",
+    "module": "PAG223",
+    "score": 0.317
+   },
+   {
+    "name": "PAG.Part223.eq_of_inLayer_inLayer",
+    "module": "PAG223",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part235.inLayer_iff_dvd",
+    "module": "PAG235",
+    "score": 0.304
+   },
+   {
+    "name": "PAG.Part219.coprime_shell",
+    "module": "PAG219",
+    "score": 0.296
+   },
+   {
+    "name": "PAG.Part169.ord_split",
+    "module": "PAG169",
+    "score": 0.296
+   },
+   {
+    "name": "PAG.Part245.div_gcd_pos",
+    "module": "PAG245",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part252.natCast_div_ne_zero",
+    "module": "PAG252",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part174.not_root_mul",
+    "module": "PAG174",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part212.dvd_div_iff_dvd",
+    "module": "PAG212",
+    "score": 0.266
+   },
+   {
+    "name": "PAG.Part30.fourLe",
+    "module": "PAG30",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part213.block_dvd",
+    "module": "PAG213",
+    "score": 0.249
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part263.udvd_trans",
+  "module": "PAG263",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part219.coprime_shell",
+    "module": "PAG219",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part213.block_dvd",
+    "module": "PAG213",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part210.shell_quot",
+    "module": "PAG210",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part245.mul_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part245.coprime_div_gcd_of_coprime",
+    "module": "PAG245",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part205.coprime_mul_of_rad",
+    "module": "PAG205",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part196.pcomp_aux",
+    "module": "PAG196",
+    "score": 0.238
+   },
+   {
+    "name": "PAG.Part204.mixed_unit_factor_eq_zero",
+    "module": "PAG204",
+    "score": 0.193
+   },
+   {
+    "name": "PAG.Part262.p_dvd_div_p",
+    "module": "PAG262",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part217.div_dual_eq",
+    "module": "PAG217",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part217.div_div_swap",
+    "module": "PAG217",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part216.gblock_shell",
+    "module": "PAG216",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part212.kdual_shell_eq",
+    "module": "PAG212",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part209.shell_eq",
+    "module": "PAG209",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part209.fine_eq",
+    "module": "PAG209",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part208.dual_shell_eq",
+    "module": "PAG208",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part202.dual_eq",
+    "module": "PAG202",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part232.mul_eq_mul_iff_of_coprime",
+    "module": "PAG232",
+    "score": 0.188
+   },
+   {
+    "name": "PAG.Part245.gcd_mul_of_coprime",
+    "module": "PAG245",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part233.gcd_mul_right_of_dvd",
+    "module": "PAG233",
+    "score": 0.182
+   }
+  ]
+ }
+]

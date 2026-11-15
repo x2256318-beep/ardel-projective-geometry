@@ -1,0 +1,14 @@
+/home/claude/out/audit_internal/lean/SampleC2.lean:63:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/home/claude/out/audit_internal/lean/SampleC2.lean:70:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'PAG.Audit257C.normSq_rootNum_of_PAG16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257C.rootNum_one_of_eq_one_of_PAG196' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257C.units_eq_of_coprime_parts_of_PAG196' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257C.exists_primitive_odd_three_of_earlier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257C.hartley_one_of_PAG3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257C.casKer_eq_of_PAG3' depends on axioms: [propext, Classical.choice, Quot.sound]

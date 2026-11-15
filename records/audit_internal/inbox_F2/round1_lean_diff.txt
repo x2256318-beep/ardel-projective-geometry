@@ -1,0 +1,351 @@
+######## PAG255.lean の差分（左：直す前、右：直した後）
+--- before_fixes/PAG255.lean	2026-11-14 17:27:01.898549796 +0900
++++ /home/claude/leanwork/pagpkg/PAG255.lean	2026-11-14 17:27:26.386377582 +0900
+@@ -15,6 +15,9 @@
+   4. 一意性：p ∤ N のレベルで p⁻¹、p の冪のレベルで 1 となる両立する系は κ_p だけ
+   どれも既知（C_ℚ ≅ Ẑ^× × ℝ_{>0} のもとで、素数イデールの類が生成する部分群の稠密性）。構造定理 C_ℚ ≅ Ẑ^× × ℝ_{>0}
+   そのものと、unitSys ≅ Ẑ^×（Mathlib の Ẑ との同一視）は Lean にしていない
++
++内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）：`units_eq_of_coprime_parts` は Part 192（PAG196）の `crt_unique` から
++数行で出る（照合者の判定。Lean で確認）。そのほかの主な文は、前の鎖（PAG.lean〜PAG254.lean と PAG3・PAG5・PAG6）に見つからなかった。
+ -/
+ import PAG254
+ import Mathlib.FieldTheory.Finite.Basic
+######## PAG256.lean の差分（左：直す前、右：直した後）
+--- before_fixes/PAG256.lean	2026-11-14 17:27:01.900047930 +0900
++++ /home/claude/leanwork/pagpkg/PAG256.lean	2026-11-14 17:27:01.909227935 +0900
+@@ -18,6 +18,15 @@
+   Hartley の形で書いた文献は、盲検の問いテストでは見つからなかった（書き直しであって新しい内容ではない）。
+   公理 A1 は Lean の公理にしていない。ここでの文は W（`rootNum`。原始指標ではルート数）についての恒等式である（読み：A1 は原始指標の
+   位相をこの値に選ぶ公準）。
++
++内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）：次の宣言は前の鎖に同じ文・同じ値の定義がある（Lean で確認）。
++`inv_apply_neg_one`・`neg_one_mul_self`（Part 5・21・25・77）、`isPrimitive_of_prime_of_ne_one`（Part 167）、`casKer`（付録 A の
++Part 3 の `casK`）、`rootNum`（Part 192 の `zN` ÷ Part 194 の `gs`）、`inv_apply_units_inv`・`sum_mul_stdAddChar_neg`（付録 A の Part 3）。
++照合者の判定では、Hartley の部分（`hartley_one`・`hartley_eq_of_isPrimitive`・`hartley_eq_zero_of_not_isUnit`・`hartley_units_inv`・
++`JH_eq_rootNum_mul`・`JH_eq_rootNum_mul_any`・`casKer_eq`）は付録 A の Part 3 の命題 2.8（`hartley_char`）から数行で出る。
++`normSq_rootNum`（Part 12 の `normSq_gaussSum` から。Lean で確認）、`exists_primitive_odd_three`（Part 115・163・167 から。Lean で確認）・
++`exists_primitive_even_five`、`parFac`・`rootNum_eq`（Part 194 の `gs`、付録 A の Part 2 の `parity_weight`）も同様。
++このファイルで鎖に新しいのは、変換としての定義（`hartley`・`JH`）と、反例（`removal_counterexample` など）。
+ -/
+ import PAG255
+ import PAG16
+@@ -34,7 +43,8 @@
+ 
+ /-! ### 1. Hartley の核と離散 Hartley 変換 -/
+ 
+-/-- Hartley の核 cas(2π t/N) = cos(2π t/N) + sin(2π t/N)（t の代表は t.val）。 -/
++/-- Hartley の核 cas(2π t/N) = cos(2π t/N) + sin(2π t/N)（t の代表は t.val）。
++内部照合（2026-11-14）：付録 A の Part 3（PAG3.lean）の `casK` と同じ値（式の書き方は違う。Lean で値の一致を確認）。 -/
+ noncomputable def casKer (t : ZMod N) : ℂ :=
+   ((Real.cos (2 * Real.pi * t.val / N) + Real.sin (2 * Real.pi * t.val / N) : ℝ) : ℂ)
+ 
+@@ -77,7 +87,8 @@
+   ring
+ 
+ omit [NeZero N] in
+-/-- χ⁻¹(−1) = χ(−1)（χ(−1) = ±1）。 -/
++/-- χ⁻¹(−1) = χ(−1)（χ(−1) = ±1）。
++内部照合（2026-11-14）：Part 5（PAG9）の `inv_apply_neg_one`、Part 21（PAG25）の `chi_inv_neg_one`、Part 77（PAG81）の `inv_neg_one` と同じ文（Lean で両向きに確認）。 -/
+ theorem inv_apply_neg_one (χ : DirichletCharacter ℂ N) : χ⁻¹ (-1) = χ (-1) := by
+   rw [MulChar.inv_apply_eq_inv']
+   rcases χ.even_or_odd with h | h
+@@ -121,7 +132,8 @@
+ 
+ open Classical in
+ /-- W(χ) = τ(χ)/(i^a √N)（a = 0 は偶、a = 1 は奇）。χ が原始ならルート数（関数等式との一致は Lean の外）。原始的でない
+-χ ではルート数ではなく、0 にもなる（法 4 の自明な指標）。 -/
++χ ではルート数ではなく、0 にもなる（法 4 の自明な指標）。
++内部照合（2026-11-14）：Part 192（PAG196）の `zN` を Part 194（PAG198）の `gs` で割ったものと同じ値（Lean で確認）。 -/
+ noncomputable def rootNum (χ : DirichletCharacter ℂ N) : ℂ :=
+   gaussSum χ stdAddChar / ((if χ.Even then (1 : ℂ) else I) * (Real.sqrt N : ℂ))
+ 
+@@ -148,7 +160,8 @@
+   hartley f ((u⁻¹ : (ZMod N)ˣ) : ZMod N) / (Real.sqrt N : ℂ)
+ 
+ omit [NeZero N] in
+-/-- χ⁻¹(u⁻¹) = χ(u)（u は単数）。 -/
++/-- χ⁻¹(u⁻¹) = χ(u)（u は単数）。
++内部照合（2026-11-14）：付録 A の Part 3（PAG3.lean）の `apply_inv_eq_inv_apply` から 1 行で出る（Lean で確認）。 -/
+ theorem inv_apply_units_inv (χ : DirichletCharacter ℂ N) (u : (ZMod N)ˣ) :
+     χ⁻¹ ((u⁻¹ : (ZMod N)ˣ) : ZMod N) = χ u := by
+   have h1 : χ (u : ZMod N) * χ ((u⁻¹ : (ZMod N)ˣ) : ZMod N) = 1 := by
+@@ -196,11 +209,13 @@
+   ring
+ 
+ omit [NeZero N] in
+-/-- χ(−1)·χ(−1) = 1。 -/
++/-- χ(−1)·χ(−1) = 1。
++内部照合（2026-11-14）：Part 5（PAG9）の `chi_neg_one_sq`、Part 25（PAG29）の `chi_neg_one_sq'` と同じ文（Lean で両向きに確認）。 -/
+ theorem neg_one_mul_self (χ : DirichletCharacter ℂ N) : χ (-1) * χ (-1) = 1 := by
+   rw [← map_mul, neg_one_mul, neg_neg, map_one]
+ 
+-/-- Σ_x χ(x)e(−x) = χ(−1)·τ(χ)（x ↦ −x の置換。原始性は要らない）。 -/
++/-- Σ_x χ(x)e(−x) = χ(−1)·τ(χ)（x ↦ −x の置換。原始性は要らない）。
++内部照合（2026-11-14）：付録 A の Part 3（PAG3.lean）の `sum_neg_twist` の x = 1 の場合（Lean で確認）。 -/
+ theorem sum_mul_stdAddChar_neg (χ : DirichletCharacter ℂ N) :
+     ∑ x : ZMod N, χ x * stdAddChar (-x) = χ (-1) * gaussSum χ stdAddChar := by
+   unfold gaussSum
+@@ -233,7 +248,8 @@
+ 
+ /-! ### 4. 非空虚性の証人と、除去テストの反例 -/
+ 
+-/-- 素数の法では、自明でない指標は原始的。 -/
++/-- 素数の法では、自明でない指標は原始的。
++内部照合（2026-11-14）：Part 167（PAG171）の `primitive_of_ne_one` と同じ文（Lean で両向きに確認）。 -/
+ theorem isPrimitive_of_prime_of_ne_one {p : ℕ} [hp : Fact p.Prime] {χ : DirichletCharacter ℂ p}
+     (h : χ ≠ 1) : χ.IsPrimitive := by
+   have : NeZero p := ⟨hp.out.ne_zero⟩
+######## PAG257.lean の差分（左：直す前、右：直した後）
+--- before_fixes/PAG257.lean	2026-11-14 17:27:01.909556518 +0900
++++ /home/claude/leanwork/pagpkg/PAG257.lean	2026-11-14 17:27:01.920102037 +0900
+@@ -45,6 +45,11 @@
+ V_imprim の上のノルムの評価 ‖T↾V_imprim‖ ≤ 1/√2 は、原始的でない指標のガウス和の式（Montgomery–Vaughan
+ Thm 9.10。Mathlib にない）が要るので、このファイルでは扱わない（数値は step276 の (10)）。
+ 「長さが保たれるのはちょうど V_prim の上」（Sz.-Nagy–Foiaș の標準分解のユニタリ部分）も同じ理由で数値だけ（(14)）。
++
++内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）：`charU`（Part 1 の `PAG.charFun`）と `ip`（Part 249 の `ipG`）は前の定義と
++同じ対象。`eq_one_of_two`（Part 194）、`not_isPrimitive_one_of_two_le`・`charU_one_mem_Vimprim`（Part 191）、`not_isPrimitive_one_prime`
++（Part 28）、`Vprim_two`（Part 26）は前の定理から直ちに出る（Lean で確認）。照合者の判定では `ip_charU`（Part 214 の `sum_units_char` と
++付録 A の Part 3 の `conj_apply_eq_inv`）も数行で出る。作用素 T と V_prim の上のユニタリ性などの主な文は、前の鎖に見つからなかった。
+ -/
+ import PAG256
+ 
+@@ -92,7 +97,8 @@
+ /-- 単数の上の作用素 T = (J∘H_N/√N)∘(0 での延長)。 -/
+ noncomputable def TopL : ((ZMod N)ˣ → ℂ) →ₗ[ℂ] ((ZMod N)ˣ → ℂ) := JHL.comp extL
+ 
+-/-- 指標を単数の上の関数とみたもの。 -/
++/-- 指標を単数の上の関数とみたもの。
++内部照合（2026-11-14）：基本ファイル（PAG.lean、Part 1）の `PAG.charFun` に `MulChar.toUnitHom` を通したものと同じ関数（Lean で確認）。 -/
+ def charU (χ : DirichletCharacter ℂ N) : (ZMod N)ˣ → ℂ := fun u => χ u
+ 
+ /-- 単数の上の指標を 0 で延ばすと、もとの指標（単数でないところで 0）。 -/
+@@ -112,7 +118,8 @@
+ 
+ /-! ### 2. 単数の上の内積と指標の直交性 -/
+ 
+-/-- 単数の上の内積 ⟨f, g⟩ = Σ_u conj(f u)·g u。 -/
++/-- 単数の上の内積 ⟨f, g⟩ = Σ_u conj(f u)·g u。
++内部照合（2026-11-14）：Part 249（PAG253）の `ipG` の G = (ZMod N)ˣ の場合と定義上同じ（`rfl` で確認）。 -/
+ noncomputable def ip (f g : (ZMod N)ˣ → ℂ) : ℂ := ∑ u, (starRingEnd ℂ) (f u) * g u
+ 
+ /-- ⟨a f, b g⟩ = conj(a)·b·⟨f, g⟩。 -/
+@@ -433,7 +440,8 @@
+   rw [rootNum_eq, parFac_of_even heven, gaussSum_one_prime, one_mul, map_div₀, Complex.normSq_neg,
+     Complex.normSq_one, hsq]
+ 
+-/-- 素数の法では自明な指標は原始的でない。 -/
++/-- 素数の法では自明な指標は原始的でない。
++内部照合（2026-11-14）：Part 28（PAG32）の `prim_level_p_iff` から 1 行（Lean で確認）。 -/
+ theorem not_isPrimitive_one_prime (p : ℕ) [hp : Fact p.Prime] :
+     ¬(1 : DirichletCharacter ℂ p).IsPrimitive := by
+   rw [DirichletCharacter.isPrimitive_def, DirichletCharacter.conductor_one]
+@@ -485,23 +493,27 @@
+ 
+ /-! ### 10. 独立照合 B の指摘を受けて追加（形式文のなかった主張を文にする） -/
+ 
+-/-- 法 N ≥ 2 では自明な指標は原始的でない（導手 1 ≠ N。素数の法の `not_isPrimitive_one_prime` の一般化）。 -/
++/-- 法 N ≥ 2 では自明な指標は原始的でない（導手 1 ≠ N。素数の法の `not_isPrimitive_one_prime` の一般化）。
++内部照合（2026-11-14）：Part 191（PAG195）の `ne_one_of_isPrimitive` の対偶（Lean で確認）。 -/
+ theorem not_isPrimitive_one_of_two_le (hN : 2 ≤ N) : ¬(1 : DirichletCharacter ℂ N).IsPrimitive := by
+   rw [DirichletCharacter.isPrimitive_def, DirichletCharacter.conductor_one]
+   omega
+ 
+-/-- 法 N ≥ 2 では、単数の上の自明な指標は V_imprim に入る（`TopL_charU_one_four` の「V_imprim の上で単射でない」の根拠）。 -/
++/-- 法 N ≥ 2 では、単数の上の自明な指標は V_imprim に入る（`TopL_charU_one_four` の「V_imprim の上で単射でない」の根拠）。
++内部照合（2026-11-14）：Part 191（PAG195）の `ne_one_of_isPrimitive` から 1 行（Lean で確認）。 -/
+ theorem charU_one_mem_Vimprim (hN : 2 ≤ N) : charU (1 : DirichletCharacter ℂ N) ∈ Vimprim N :=
+   Submodule.subset_span ⟨⟨1, not_isPrimitive_one_of_two_le hN⟩, rfl⟩
+ 
+-/-- 法 2 の指標は自明な指標だけ（(ℤ/2)ˣ は 1 元）。 -/
++/-- 法 2 の指標は自明な指標だけ（(ℤ/2)ˣ は 1 元）。
++内部照合（2026-11-14）：Part 194（PAG198）の `level_two_trivial` から直ちに出る（Lean で確認）。 -/
+ theorem eq_one_of_two (χ : DirichletCharacter ℂ 2) : χ = 1 := by
+   have hcard : Fintype.card (ZMod 2)ˣ ≤ 1 := by
+     rw [ZMod.card_units_eq_totient, Nat.totient_two]
+   refine MulChar.ext (fun u => ?_)
+   rw [Fintype.card_le_one_iff.mp hcard u 1, Units.val_one, map_one, map_one]
+ 
+-/-- 法 2 では V_prim = 0（原始指標がない）。 -/
++/-- 法 2 では V_prim = 0（原始指標がない）。
++内部照合（2026-11-14）：Part 26（PAG30）の `no_prim_mod_two` から出る（張る集合が空。Lean で確認）。 -/
+ theorem Vprim_two : Vprim 2 = ⊥ := by
+   rw [Vprim, Submodule.span_eq_bot]
+   rintro _ ⟨⟨χ, hχ⟩, rfl⟩
+######## PAG258.lean の差分（左：直す前、右：直した後）
+--- before_fixes/PAG258.lean	2026-11-14 17:27:01.920462357 +0900
++++ /home/claude/leanwork/pagpkg/PAG258.lean	2026-11-14 17:27:01.923809780 +0900
+@@ -63,6 +63,10 @@
+ （ノートの §7）。一般の N ∣ M（N < M）での T の非両立と、N ≥ 2 一般での U_N ≠ T（τ(1 mod N) = μ(N)）は Lean に
+ していない。10 について：q ∤ M の部分が 0 であること、直和を 1 つの文（DirectSum.IsInternal）にすること、極限での
+ 独立性、U_∞ が各部分を保つことは Lean にしていない。
++
++内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）：`gaussSum_inv` は Part 5（PAG9）の `conj_gaussSum` から直ちに出る
++（Lean で確認）。照合者の判定では `rootNum_one_of_eq_one`（Part 192 の `zN_level_one` から。Lean で確認）と `phaseA1_one` も数行。
++直極限、作用素 Uinf と UA1 の一意性などの主な文は、前の鎖に見つからなかった。
+ -/
+ import PAG257
+ import Mathlib.Algebra.Colimit.Module
+@@ -342,7 +346,8 @@
+ 
+ /-! ### 5c. 実数性（核は実数値：複素共役と可換） -/
+ 
+-/-- τ(χ⁻¹) = χ(−1)·conj τ(χ)。 -/
++/-- τ(χ⁻¹) = χ(−1)·conj τ(χ)。
++内部照合（2026-11-14）：Part 5（PAG9）の `conj_gaussSum` と `chi_neg_one_sq` から 1 行（Lean で確認）。 -/
+ theorem gaussSum_inv (χ : DirichletCharacter ℂ N) :
+     gaussSum χ⁻¹ (stdAddChar (N := N)) = χ (-1) * (starRingEnd ℂ) (gaussSum χ stdAddChar) := by
+   have h1 : (starRingEnd ℂ) (gaussSum χ stdAddChar) = gaussSum χ⁻¹ (stdAddChar (N := N))⁻¹ := by
+######## PAG260.lean の差分（左：直す前、右：直した後）
+--- before_fixes/PAG260.lean	2026-11-14 17:27:01.924178547 +0900
++++ /home/claude/leanwork/pagpkg/PAG260.lean	2026-11-14 17:27:15.953603905 +0900
+@@ -45,6 +45,16 @@
+ 交差項 χ₁*(d₂)·χ₂*(d₁)。数値 (4)）、作用素の形、3 つ以上の法（数値 (7)）、互いに素でない法（両辺が 0。数値 (10)）、
+ 対照群 F_q[t]（数値 (5)）、イデール類指標の局所成分と局所の ε 因子（文献では、交差項は不分岐なひねりでの局所 ε 因子の
+ 変化から出る形にあたる）。
++
++内部照合（2026-11-14、`pag2_internal_audit_249_256.md`）：上の 1〜3 と 6 の前半は前の鎖にあった。4 は Part 194 の `gs_combine`（偶奇の
++因子を逆数で正規化した形）と同じ内容で、5 はそれらから数行（照合者の判定は数行と新しいの境目）。`prodChar` は Part 195 の `cmul`・
++Part 232 の `charMul` と同じ定義、`crtMap` は Part 189 の `param` と同じ式、`crossSign` は Part 194 の `rs` と同じ値（Lean で確認）。
++`crtMap_bijective`・`stdAddChar_crtMap`・`gaussSum_prodChar`・`prodChar_apply` は Part 189 の定理と同じ文、`isPrimitive_prodChar` は
++Part 190・232 の定理と同じ文、`cast_crtMap_fst`・`cast_crtMap_snd`・`charU_prodChar`・`prodChar_neg_one` は Part 189・200・232 の定理から
++直ちに出る（Lean で確認）。照合者の判定では `norm_char_unit`・`norm_cross`・`parFac_prodChar`（Part 194 の `gs_combine` と同じ形）も数行。
++「法 M·N のすべての指標が積の形に一意に書けること」は、Part 190 の `decomp` と Part 232 の `charMul_injective`・`primEquiv` で鎖にある。
++8 の相互法則は、Part 194 の `real_reciprocity` で仮定なしに示してある。このファイルで鎖に新しいのは、UA1・phaseA1 の形の式（6 の後半）、
++例（7）、一般の指標での条件つきの文（8）。
+ -/
+ import PAG259
+ 
+@@ -57,16 +67,19 @@
+ /-- 法の積は 0 でない。 -/
+ instance : NeZero (M * N) := ⟨mul_ne_zero (NeZero.ne M) (NeZero.ne N)⟩
+ 
+-/-- 法 M, N の指標の積（法 M·N の指標）。定義に互いに素は要らない。 -/
++/-- 法 M, N の指標の積（法 M·N の指標）。定義に互いに素は要らない。
++内部照合（2026-11-14）：Part 195（PAG199）の `cmul`、Part 232（PAG236）の `charMul` と同じ定義（Lean で `HEq` の `rfl` を確認）。同じ対象の 3 つ目の名前。 -/
+ noncomputable def prodChar (χ₁ : DirichletCharacter ℂ M) (χ₂ : DirichletCharacter ℂ N) :
+     DirichletCharacter ℂ (M * N) :=
+   changeLevel (dvd_mul_right M N) χ₁ * changeLevel (dvd_mul_left N M) χ₂
+ 
+-/-- 分解の写像 (a₁, a₂) ↦ a₁·N + a₂·M（mod M·N）。 -/
++/-- 分解の写像 (a₁, a₂) ↦ a₁·N + a₂·M（mod M·N）。
++内部照合（2026-11-14）：Part 189（PAG193）の `param` と同じ式（Lean で `rfl` を確認）。 -/
+ def crtMap (M N : ℕ) [NeZero M] [NeZero N] (x : ZMod M × ZMod N) : ZMod (M * N) :=
+   ((x.1.val * N + x.2.val * M : ℕ) : ZMod (M * N))
+ 
+-/-- 分解の写像の法 M への像は a₁·N。 -/
++/-- 分解の写像の法 M への像は a₁·N。
++内部照合（2026-11-14）：Part 189（PAG193）の `param_cast₁` から直ちに出る（Lean で確認）。 -/
+ theorem cast_crtMap_fst (x : ZMod M × ZMod N) :
+     ((crtMap M N x : ZMod (M * N)).cast : ZMod M) = x.1 * (N : ZMod M) := by
+   unfold crtMap
+@@ -74,7 +87,8 @@
+   push_cast
+   rw [ZMod.natCast_zmod_val, ZMod.natCast_self, mul_zero, add_zero]
+ 
+-/-- 分解の写像の法 N への像は a₂·M。 -/
++/-- 分解の写像の法 N への像は a₂·M。
++内部照合（2026-11-14）：Part 189（PAG193）の `param_cast₂` から直ちに出る（Lean で確認）。 -/
+ theorem cast_crtMap_snd (x : ZMod M × ZMod N) :
+     ((crtMap M N x : ZMod (M * N)).cast : ZMod N) = x.2 * (M : ZMod N) := by
+   unfold crtMap
+@@ -82,7 +96,8 @@
+   push_cast
+   rw [ZMod.natCast_zmod_val, ZMod.natCast_self, mul_zero, zero_add]
+ 
+-/-- 互いに素な法では、分解の写像は全単射（中国剰余定理）。 -/
++/-- 互いに素な法では、分解の写像は全単射（中国剰余定理）。
++内部照合（2026-11-14）：Part 189（PAG193）の `param_bijective` と同じ文（Lean で両向きに確認）。 -/
+ theorem crtMap_bijective (h : M.Coprime N) : Function.Bijective (crtMap M N) := by
+   have hinj : Function.Injective (crtMap M N) := by
+     intro x y hxy
+@@ -95,7 +110,8 @@
+   refine (Fintype.bijective_iff_injective_and_card _).mpr ⟨hinj, ?_⟩
+   simp [ZMod.card]
+ 
+-/-- 加法指標は分解の写像で積に分かれる：e((a₁N + a₂M)/(MN)) = e(a₁/M)·e(a₂/N)。 -/
++/-- 加法指標は分解の写像で積に分かれる：e((a₁N + a₂M)/(MN)) = e(a₁/M)·e(a₂/N)。
++内部照合（2026-11-14）：Part 189（PAG193）の `stdAddChar_param` と同じ文（Lean で両向きに確認）。 -/
+ theorem stdAddChar_crtMap (x : ZMod M × ZMod N) :
+     stdAddChar (crtMap M N x) = stdAddChar x.1 * stdAddChar x.2 := by
+   have e1 : stdAddChar x.1 = exp (2 * Real.pi * I * (x.1.val : ℤ) / M) := by
+@@ -112,7 +128,8 @@
+   push_cast
+   field_simp
+ 
+-/-- 積の指標の値：(χ₁χ₂)(a) = χ₁(a mod M)·χ₂(a mod N)（単数でない a では両辺 0）。 -/
++/-- 積の指標の値：(χ₁χ₂)(a) = χ₁(a mod M)·χ₂(a mod N)（単数でない a では両辺 0）。
++内部照合（2026-11-14）：Part 189（PAG193）の `mul_changeLevel_apply`、Part 195（PAG199）の `cmul_apply`、Part 232（PAG236）の `charMul_apply` と同じ文（Lean で両向きに確認）。 -/
+ theorem prodChar_apply (χ₁ : DirichletCharacter ℂ M) (χ₂ : DirichletCharacter ℂ N)
+     (a : ZMod (M * N)) :
+     prodChar χ₁ χ₂ a = χ₁ (a.cast : ZMod M) * χ₂ (a.cast : ZMod N) := by
+@@ -141,7 +158,8 @@
+     have := (ZMod.isUnit_iff_coprime a.val (M * N)).mpr (Nat.Coprime.mul_right hc1 hc2)
+     rwa [ZMod.natCast_zmod_val] at this
+ 
+-/-- **互いに素な法でのガウス和の乗法性**：τ(χ₁χ₂) = χ₁(N)·χ₂(M)·τ(χ₁)·τ(χ₂)。原始性は要らない。 -/
++/-- **互いに素な法でのガウス和の乗法性**：τ(χ₁χ₂) = χ₁(N)·χ₂(M)·τ(χ₁)·τ(χ₂)。原始性は要らない。
++内部照合（2026-11-14）：Part 189（PAG193）の `gaussSum_mul_coprime` と同じ文（Lean で両向きに確認）。この Part はそれを使わずに示し直していた。 -/
+ theorem gaussSum_prodChar (h : M.Coprime N) (χ₁ : DirichletCharacter ℂ M)
+     (χ₂ : DirichletCharacter ℂ N) :
+     gaussSum (prodChar χ₁ χ₂) stdAddChar =
+@@ -157,14 +175,16 @@
+   rw [prodChar_apply, cast_crtMap_fst, cast_crtMap_snd, stdAddChar_crtMap, map_mul, map_mul]
+   ring
+ 
+-/-- (χ₁χ₂)(−1) = χ₁(−1)·χ₂(−1)。 -/
++/-- (χ₁χ₂)(−1) = χ₁(−1)·χ₂(−1)。
++内部照合（2026-11-14）：Part 200（PAG204）の `changeLevel_neg_one` を 2 回使うだけ（Lean で確認）。 -/
+ theorem prodChar_neg_one (χ₁ : DirichletCharacter ℂ M) (χ₂ : DirichletCharacter ℂ N) :
+     prodChar χ₁ χ₂ (-1) = χ₁ (-1) * χ₂ (-1) := by
+   rw [prodChar_apply, ZMod.cast_neg (dvd_mul_right M N), ZMod.cast_neg (dvd_mul_left N M),
+     ZMod.cast_one (dvd_mul_right M N), ZMod.cast_one (dvd_mul_left N M)]
+ 
+ open Classical in
+-/-- 偶奇の符号 s：χ₁, χ₂ がともに奇なら −1、それ以外は +1（交差項 χ₁(N)·χ₂(M) とは別の因子）。 -/
++/-- 偶奇の符号 s：χ₁, χ₂ がともに奇なら −1、それ以外は +1（交差項 χ₁(N)·χ₂(M) とは別の因子）。
++内部照合（2026-11-14）：Part 194（PAG198）の `rs` と同じ値（式は違う。χ(−1) = ±1 による。Lean で確認）。 -/
+ noncomputable def crossSign (χ₁ : DirichletCharacter ℂ M) (χ₂ : DirichletCharacter ℂ N) : ℂ :=
+   if χ₁.Odd ∧ χ₂.Odd then -1 else 1
+ 
+@@ -216,7 +236,8 @@
+     have : (-1 : ℂ) * -I * -I = -(I * I) := by ring
+     rw [this, Complex.I_mul_I]; ring
+ 
+-/-- **交差項の法則**：互いに素な法で W(χ₁χ₂) = s·χ₁(N)·χ₂(M)·W(χ₁)·W(χ₂)。原始性は要らない（W がルート数なのは原始のとき）。 -/
++/-- **交差項の法則**：互いに素な法で W(χ₁χ₂) = s·χ₁(N)·χ₂(M)·W(χ₁)·W(χ₂)。原始性は要らない（W がルート数なのは原始のとき）。
++内部照合（2026-11-14）：中身は Part 189（PAG193）の `gaussSum_mul_coprime`（この Part の `gaussSum_prodChar` と同じ文）に、偶奇の因子のずれ（Part 194 の `gs_combine` と同じ形）を足したもの。 -/
+ theorem rootNum_prodChar (h : M.Coprime N) (χ₁ : DirichletCharacter ℂ M)
+     (χ₂ : DirichletCharacter ℂ N) :
+     PAG.Part256.rootNum (prodChar χ₁ χ₂) =
+@@ -235,7 +256,8 @@
+   rw [hs]
+   field_simp
+ 
+-/-- 積の導手：法 M, N が互いに素で χ₁, χ₂ が原始なら、χ₁χ₂ も原始（法 M·N）。 -/
++/-- 積の導手：法 M, N が互いに素で χ₁, χ₂ が原始なら、χ₁χ₂ も原始（法 M·N）。
++内部照合（2026-11-14）：Part 190（PAG194）の `isPrimitive_mul`、Part 232（PAG236）の `isPrimitive_charMul` と同じ文（Lean で両向きに確認）。 -/
+ theorem isPrimitive_prodChar (h : M.Coprime N) {χ₁ : DirichletCharacter ℂ M}
+     {χ₂ : DirichletCharacter ℂ N} (h1 : χ₁.IsPrimitive) (h2 : χ₂.IsPrimitive) :
+     (prodChar χ₁ χ₂).IsPrimitive := by
+@@ -280,7 +302,8 @@
+   rw [PAG.Part258.UA1_charU, phaseA1_prodChar h h1 h2]
+ 
+ /-- 条件つきの文：W(χ₁) = W(χ₂) = W(χ₁χ₂) = 1 なら s·χ₁(N)·χ₂(M) = 1（互いに素の仮定は余分。外した形は Lean にしていない）。2 次の指標では平方剰余の
+-相互法則と同じ形になるが、3 つの仮定は外から入れるもので、ここからは出ない。 -/
++相互法則と同じ形になるが、3 つの仮定は外から入れるもので、ここからは出ない。
++内部照合（2026-11-14）：実原始指標では、3 つの仮定は Part 194（PAG198）の `gauss_sign_real` から成り立ち、結論は Part 194 の `real_reciprocity` と同じ式になる（数学として。Lean ではつないでいない）。相互法則そのものは Part 194 で、仮定なしに示してある。 -/
+ theorem cross_eq_sign_of_rootNum_one (h : M.Coprime N) (χ₁ : DirichletCharacter ℂ M)
+     (χ₂ : DirichletCharacter ℂ N) (w1 : PAG.Part256.rootNum χ₁ = 1)
+     (w2 : PAG.Part256.rootNum χ₂ = 1) (w12 : PAG.Part256.rootNum (prodChar χ₁ χ₂) = 1) :
+@@ -400,7 +423,8 @@
+   rw [norm_mul, ← hN.unit_spec, ← hM.unit_spec, norm_char_unit, norm_char_unit, mul_one]
+ 
+ /-- 積の指標の単数での値：(χ₁χ₂)(u) = χ₁(u mod M)·χ₂(u mod N)（互いに素は要らない。「中国剰余定理の 2 つの成分の
+-関数の積」は読み）。 -/
++関数の積」は読み）。
++内部照合（2026-11-14）：Part 232（PAG236）の `charMul_apply_unit` から直ちに出る（Lean で確認）。 -/
+ theorem charU_prodChar (χ₁ : DirichletCharacter ℂ M) (χ₂ : DirichletCharacter ℂ N)
+     (u : (ZMod (M * N))ˣ) :
+     PAG.Part257.charU (prodChar χ₁ χ₂) u =

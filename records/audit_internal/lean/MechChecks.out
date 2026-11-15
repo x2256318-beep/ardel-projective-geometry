@@ -1,0 +1,961 @@
+/home/claude/out/audit_internal/lean/MechChecks.lean:10:8: warning: The declaration 'Part217_inner_smul_left___of__Part253_ipG_smul_left' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:13:4: warning: Unused tactic linter: `exact PAG.Part253.ipG_smul_left` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:14:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:14:41: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:15:4: warning: Unused tactic linter: `(apply PAG.Part253.ipG_smul_left <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:14:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:15:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:18:8: warning: The declaration 'Part55_ip_smul_left__of__Part253_ipG_smul_left' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:21:4: warning: Unused tactic linter: `exact PAG.Part253.ipG_smul_left` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:22:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:22:41: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:23:4: warning: Unused tactic linter: `(apply PAG.Part253.ipG_smul_left <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:22:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:23:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:26:8: warning: The declaration 'Part229_herm_smul_left__of__Part253_ipG_smul_left' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:29:4: warning: Unused tactic linter: `exact PAG.Part253.ipG_smul_left` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:30:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:30:41: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:31:4: warning: Unused tactic linter: `(apply PAG.Part253.ipG_smul_left <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:30:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:31:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:34:8: warning: The declaration 'Part55_ip_smul_right__of__Part253_ipG_smul_right' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:37:4: warning: Unused tactic linter: `exact PAG.Part253.ipG_smul_right` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:38:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:38:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:39:4: warning: Unused tactic linter: `(apply PAG.Part253.ipG_smul_right <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:38:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:39:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:42:8: warning: The declaration 'Part229_herm_smul_right__of__Part253_ipG_smul_right' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:45:4: warning: Unused tactic linter: `exact PAG.Part253.ipG_smul_right` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:46:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:46:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:47:4: warning: Unused tactic linter: `(apply PAG.Part253.ipG_smul_right <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:46:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:47:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:50:8: warning: The declaration 'Part256_inv_apply_neg_one__of__Part25_chi_inv_neg_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:53:4: warning: Unused tactic linter: `exact PAG.Part25.chi_inv_neg_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:54:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:54:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:55:4: warning: Unused tactic linter: `(apply PAG.Part25.chi_inv_neg_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:54:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:55:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:58:8: warning: The declaration 'Part256_inv_apply_neg_one__of__Part81_inv_neg_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:61:4: warning: Unused tactic linter: `exact PAG.Part81.inv_neg_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:62:34: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:62:38: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:63:4: warning: Unused tactic linter: `(apply PAG.Part81.inv_neg_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:62:38: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:63:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:66:8: warning: The declaration 'Part256_inv_apply_neg_one__of__Part9_inv_apply_neg_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:69:4: warning: Unused tactic linter: `exact PAG.Part9.inv_apply_neg_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:70:39: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:70:43: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:71:4: warning: Unused tactic linter: `(apply PAG.Part9.inv_apply_neg_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:70:43: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:71:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:74:8: warning: The declaration 'Part81_inv_neg_one__of__Part256_inv_apply_neg_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:77:4: warning: Unused tactic linter: `exact PAG.Part256.inv_apply_neg_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:78:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:78:45: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:79:4: warning: Unused tactic linter: `(apply PAG.Part256.inv_apply_neg_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:78:45: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:79:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:82:8: warning: The declaration 'Part25_chi_inv_neg_one__of__Part256_inv_apply_neg_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:85:4: warning: Unused tactic linter: `exact PAG.Part256.inv_apply_neg_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:86:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:86:45: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:87:4: warning: Unused tactic linter: `(apply PAG.Part256.inv_apply_neg_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:86:45: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:87:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:90:8: warning: The declaration 'Part9_inv_apply_neg_one__of__Part256_inv_apply_neg_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:93:4: warning: Unused tactic linter: `exact PAG.Part256.inv_apply_neg_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:94:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:94:45: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:95:4: warning: Unused tactic linter: `(apply PAG.Part256.inv_apply_neg_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:94:45: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:95:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:98:8: warning: The declaration 'Part256_isPrimitive_of_prime_of_ne_one__of__Part171_primitive_of_ne_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:101:4: warning: Unused tactic linter: `exact PAG.Part171.primitive_of_ne_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:102:43: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:103:4: warning: Unused tactic linter: `(apply PAG.Part171.primitive_of_ne_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:103:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:102:43: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:106:8: warning: The declaration 'Part171_primitive_of_ne_one__of__Part256_isPrimitive_of_prime_of_ne_one' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:109:4: warning: Unused tactic linter: `exact PAG.Part256.isPrimitive_of_prime_of_ne_one` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:110:54: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:111:4: warning: Unused tactic linter: `(apply PAG.Part256.isPrimitive_of_prime_of_ne_one <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:111:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:110:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:114:8: warning: The declaration 'Part256_neg_one_mul_self__of__Part29_chi_neg_one_sq_' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:117:4: warning: Unused tactic linter: `exact PAG.Part29.chi_neg_one_sq'` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:118:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:118:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:119:4: warning: Unused tactic linter: `(apply PAG.Part29.chi_neg_one_sq' <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:118:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:119:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:122:8: warning: The declaration 'Part256_neg_one_mul_self__of__Part9_chi_neg_one_sq' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:125:4: warning: Unused tactic linter: `exact PAG.Part9.chi_neg_one_sq` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:126:36: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:126:40: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:127:4: warning: Unused tactic linter: `(apply PAG.Part9.chi_neg_one_sq <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:126:40: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:127:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:130:8: warning: The declaration 'Part29_chi_neg_one_sq___of__Part256_neg_one_mul_self' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:133:4: warning: Unused tactic linter: `exact PAG.Part256.neg_one_mul_self` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:134:40: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:134:44: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:135:4: warning: Unused tactic linter: `(apply PAG.Part256.neg_one_mul_self <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:134:44: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:135:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:138:8: warning: The declaration 'Part9_chi_neg_one_sq__of__Part256_neg_one_mul_self' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:141:4: warning: Unused tactic linter: `exact PAG.Part256.neg_one_mul_self` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:142:40: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:142:44: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:143:4: warning: Unused tactic linter: `(apply PAG.Part256.neg_one_mul_self <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:142:44: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:143:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:146:8: warning: The declaration 'Part257_eq_one_of_two__of__Part198_level_two_trivial' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:149:4: warning: Unused tactic linter: `exact PAG.Part198.level_two_trivial` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:150:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:150:45: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:151:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:150:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:151:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:154:8: warning: The declaration 'Part256_removal_counterexample_normSq__of__Part257_normSq_rootNum_one_prime' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:155:2: warning: Unused tactic linter: `intros` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:157:4: warning: Unused tactic linter: `exact PAG.Part257.normSq_rootNum_one_prime` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:158:48: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:158:52: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:159:4: warning: Unused tactic linter: `(apply PAG.Part257.normSq_rootNum_one_prime <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:158:52: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:159:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:162:8: warning: The declaration 'Part258_ip_smul_right__of__Part253_ipG_smul_right' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:165:4: warning: Unused tactic linter: `exact PAG.Part253.ipG_smul_right` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:166:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:166:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:167:4: warning: Unused tactic linter: `(apply PAG.Part253.ipG_smul_right <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:166:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:167:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:170:8: warning: The declaration 'Part260_cast_crtMap_fst__of__Part193_param_cast_' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:173:4: warning: Unused tactic linter: `exact PAG.Part193.param_cast₁` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:174:35: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:174:39: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:175:4: warning: Unused tactic linter: `(apply PAG.Part193.param_cast₁ <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:174:39: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:175:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:178:8: warning: The declaration 'Part260_cast_crtMap_snd__of__Part193_param_cast_' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:181:4: warning: Unused tactic linter: `exact PAG.Part193.param_cast₂` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:182:35: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:182:39: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:183:4: warning: Unused tactic linter: `(apply PAG.Part193.param_cast₂ <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:182:39: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:183:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:186:8: warning: The declaration 'Part260_charU_prodChar__of__Part193_mul_changeLevel_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:189:4: warning: Unused tactic linter: `exact PAG.Part193.mul_changeLevel_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:190:45: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:190:49: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:191:4: warning: Unused tactic linter: `(apply PAG.Part193.mul_changeLevel_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:190:49: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:191:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:194:8: warning: The declaration 'Part260_charU_prodChar__of__Part199_cmul_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:197:4: warning: Unused tactic linter: `exact PAG.Part199.cmul_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:198:34: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:198:38: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:199:4: warning: Unused tactic linter: `(apply PAG.Part199.cmul_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:198:38: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:199:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:202:8: warning: The declaration 'Part260_charU_prodChar__of__Part236_charMul_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:205:4: warning: Unused tactic linter: `exact PAG.Part236.charMul_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:206:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:206:41: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:207:4: warning: Unused tactic linter: `(apply PAG.Part236.charMul_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:206:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:207:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:210:8: warning: The declaration 'Part260_charU_prodChar__of__Part236_charMul_apply_unit' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:213:4: warning: Unused tactic linter: `exact PAG.Part236.charMul_apply_unit` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:214:42: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:214:46: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:215:4: warning: Unused tactic linter: `(apply PAG.Part236.charMul_apply_unit <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:214:46: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:215:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:218:8: warning: The declaration 'Part260_crtMap_bijective__of__Part193_param_bijective' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:221:4: warning: Unused tactic linter: `exact PAG.Part193.param_bijective` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:222:39: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:223:4: warning: Unused tactic linter: `(apply PAG.Part193.param_bijective <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:223:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:222:39: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:226:8: warning: The declaration 'Part193_param_bijective__of__Part260_crtMap_bijective' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:229:4: warning: Unused tactic linter: `exact PAG.Part260.crtMap_bijective` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:230:40: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:231:4: warning: Unused tactic linter: `(apply PAG.Part260.crtMap_bijective <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:231:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:230:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:234:8: warning: The declaration 'Part260_gaussSum_prodChar__of__Part193_gaussSum_mul_coprime' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:237:4: warning: Unused tactic linter: `exact PAG.Part193.gaussSum_mul_coprime` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:238:44: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:239:4: warning: Unused tactic linter: `(apply PAG.Part193.gaussSum_mul_coprime <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:239:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:238:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:242:8: warning: The declaration 'Part193_gaussSum_mul_coprime__of__Part260_gaussSum_prodChar' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:245:4: warning: Unused tactic linter: `exact PAG.Part260.gaussSum_prodChar` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:246:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:247:4: warning: Unused tactic linter: `(apply PAG.Part260.gaussSum_prodChar <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:247:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:246:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:250:8: warning: The declaration 'Part260_isPrimitive_prodChar__of__Part194_isPrimitive_mul' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:253:4: warning: Unused tactic linter: `exact PAG.Part194.isPrimitive_mul` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:255:4: warning: Unused tactic linter: `(apply PAG.Part194.isPrimitive_mul <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:255:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:258:8: warning: The declaration 'Part260_isPrimitive_prodChar__of__Part236_isPrimitive_charMul' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:261:4: warning: Unused tactic linter: `exact PAG.Part236.isPrimitive_charMul` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:263:4: warning: Unused tactic linter: `(apply PAG.Part236.isPrimitive_charMul <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:263:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:266:8: warning: The declaration 'Part194_isPrimitive_mul__of__Part260_isPrimitive_prodChar' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:269:4: warning: Unused tactic linter: `exact PAG.Part260.isPrimitive_prodChar` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:271:4: warning: Unused tactic linter: `(apply PAG.Part260.isPrimitive_prodChar <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:271:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:274:8: warning: The declaration 'Part236_isPrimitive_charMul__of__Part260_isPrimitive_prodChar' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:277:4: warning: Unused tactic linter: `exact PAG.Part260.isPrimitive_prodChar` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:279:4: warning: Unused tactic linter: `(apply PAG.Part260.isPrimitive_prodChar <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:279:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:282:8: warning: The declaration 'defeq_Part260_prodChar__Part199_cmul' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:285:8: warning: The declaration 'defeq_Part260_prodChar__Part236_charMul' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:288:8: warning: The declaration 'Part260_prodChar_apply__of__Part193_mul_changeLevel_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:291:4: warning: Unused tactic linter: `exact PAG.Part193.mul_changeLevel_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:292:45: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:292:49: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:293:4: warning: Unused tactic linter: `(apply PAG.Part193.mul_changeLevel_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:292:49: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:293:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:296:8: warning: The declaration 'Part260_prodChar_apply__of__Part199_cmul_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:299:4: warning: Unused tactic linter: `exact PAG.Part199.cmul_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:300:34: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:300:38: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:301:4: warning: Unused tactic linter: `(apply PAG.Part199.cmul_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:300:38: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:301:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:304:8: warning: The declaration 'Part260_prodChar_apply__of__Part236_charMul_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:307:4: warning: Unused tactic linter: `exact PAG.Part236.charMul_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:308:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:308:41: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:309:4: warning: Unused tactic linter: `(apply PAG.Part236.charMul_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:308:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:309:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:312:8: warning: The declaration 'Part236_charMul_apply__of__Part260_prodChar_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:315:4: warning: Unused tactic linter: `exact PAG.Part260.prodChar_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:316:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:316:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:317:4: warning: Unused tactic linter: `(apply PAG.Part260.prodChar_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:316:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:317:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:320:8: warning: The declaration 'Part193_mul_changeLevel_apply__of__Part260_prodChar_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:323:4: warning: Unused tactic linter: `exact PAG.Part260.prodChar_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:324:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:324:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:325:4: warning: Unused tactic linter: `(apply PAG.Part260.prodChar_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:324:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:325:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:328:8: warning: The declaration 'Part199_cmul_apply__of__Part260_prodChar_apply' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:331:4: warning: Unused tactic linter: `exact PAG.Part260.prodChar_apply` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:332:38: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:332:42: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:333:4: warning: Unused tactic linter: `(apply PAG.Part260.prodChar_apply <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:332:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:333:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:336:8: warning: The declaration 'Part260_stdAddChar_crtMap__of__Part193_stdAddChar_param' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:339:4: warning: Unused tactic linter: `exact PAG.Part193.stdAddChar_param` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:340:40: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:340:44: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:341:4: warning: Unused tactic linter: `(apply PAG.Part193.stdAddChar_param <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:340:44: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:341:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:344:8: warning: The declaration 'Part193_stdAddChar_param__of__Part260_stdAddChar_crtMap' contains '__', which does not follow the mathlib naming conventions. Consider using single underscores instead.
+
+Note: This linter can be disabled with `set_option linter.style.nameCheck false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:347:4: warning: Unused tactic linter: `exact PAG.Part260.stdAddChar_crtMap` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:348:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:348:45: warning: Unused tactic linter: `assumption` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:349:4: warning: Unused tactic linter: `(apply PAG.Part260.stdAddChar_crtMap <;> simp_all)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:348:45: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/claude/out/audit_internal/lean/MechChecks.lean:349:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'PAG.AuditMech.Part217_inner_smul_left___of__Part253_ipG_smul_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part55_ip_smul_left__of__Part253_ipG_smul_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part229_herm_smul_left__of__Part253_ipG_smul_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part55_ip_smul_right__of__Part253_ipG_smul_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part229_herm_smul_right__of__Part253_ipG_smul_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_inv_apply_neg_one__of__Part25_chi_inv_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_inv_apply_neg_one__of__Part81_inv_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_inv_apply_neg_one__of__Part9_inv_apply_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part81_inv_neg_one__of__Part256_inv_apply_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part25_chi_inv_neg_one__of__Part256_inv_apply_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part9_inv_apply_neg_one__of__Part256_inv_apply_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_isPrimitive_of_prime_of_ne_one__of__Part171_primitive_of_ne_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part171_primitive_of_ne_one__of__Part256_isPrimitive_of_prime_of_ne_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_neg_one_mul_self__of__Part29_chi_neg_one_sq_' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_neg_one_mul_self__of__Part9_chi_neg_one_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part29_chi_neg_one_sq___of__Part256_neg_one_mul_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part9_chi_neg_one_sq__of__Part256_neg_one_mul_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part257_eq_one_of_two__of__Part198_level_two_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part256_removal_counterexample_normSq__of__Part257_normSq_rootNum_one_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part258_ip_smul_right__of__Part253_ipG_smul_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_cast_crtMap_fst__of__Part193_param_cast_' depends on axioms: [propext, Quot.sound]
+'PAG.AuditMech.Part260_cast_crtMap_snd__of__Part193_param_cast_' depends on axioms: [propext, Quot.sound]
+'PAG.AuditMech.Part260_charU_prodChar__of__Part193_mul_changeLevel_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_charU_prodChar__of__Part199_cmul_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_charU_prodChar__of__Part236_charMul_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_charU_prodChar__of__Part236_charMul_apply_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_crtMap_bijective__of__Part193_param_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part193_param_bijective__of__Part260_crtMap_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_gaussSum_prodChar__of__Part193_gaussSum_mul_coprime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part193_gaussSum_mul_coprime__of__Part260_gaussSum_prodChar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_isPrimitive_prodChar__of__Part194_isPrimitive_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_isPrimitive_prodChar__of__Part236_isPrimitive_charMul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part194_isPrimitive_mul__of__Part260_isPrimitive_prodChar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part236_isPrimitive_charMul__of__Part260_isPrimitive_prodChar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.defeq_Part260_prodChar__Part199_cmul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.AuditMech.defeq_Part260_prodChar__Part236_charMul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.AuditMech.Part260_prodChar_apply__of__Part193_mul_changeLevel_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_prodChar_apply__of__Part199_cmul_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_prodChar_apply__of__Part236_charMul_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part236_charMul_apply__of__Part260_prodChar_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part193_mul_changeLevel_apply__of__Part260_prodChar_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part199_cmul_apply__of__Part260_prodChar_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part260_stdAddChar_crtMap__of__Part193_stdAddChar_param' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PAG.AuditMech.Part193_stdAddChar_param__of__Part260_stdAddChar_crtMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

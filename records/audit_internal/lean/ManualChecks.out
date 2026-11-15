@@ -1,0 +1,15 @@
+/home/claude/out/audit_internal/lean/ManualChecks.lean:28:0: warning: automatically included section variable(s) unused in theorem `PAG.Audit257.inv_apply_units_inv_of_PAG3`:
+  [NeZero N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/claude/out/audit_internal/lean/ManualChecks.lean:41:0: warning: automatically included section variable(s) unused in theorem `PAG.Audit257.charU_eq_charFun`:
+  [NeZero N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NeZero N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'PAG.Audit257.casKer_eq_casK' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257.rootNum_eq_zN_div_gs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PAG.Audit257.crossSign_eq_rs' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,23 @@
+# アーデル射影幾何 — Part 254（PAG 2.0）の独立照合の記録（2026-11-13）
+
+- 対象：PAG258.lean（A・C の時点で 17 項目、B の時点で 50 項目、B の後に 7 項目を足して 57 項目）、ノート `pag2_part254_full_gluing.md`、xlsx（final73）の Part 254 の行。
+- 手順：引き継ぎメモの「パートを閉じるたびに、独立照合を行う」（著者の許可、2026-11-10）。中立化、構築者の予想を先に記録、A・C の後に B、ツールなし（通知のツール使用回数はどれも 0）。
+- ファイル（`/home/claude/out/audit254/`。送付の zip に同梱）：
+  - `expected_before_results.md`（A・B・C の前）・`expected_before_results_B_v2.md`（B の前の追補）：構築者の予想。
+  - `rename.json`（S1〜S17）・`rename_v2.json`（S1〜S50）、`defs_neutral.lean`・`defs_neutral_v2.lean`、`statements_neutral.lean`・`statements_neutral_v2.lean`：中立化の対応と入力。
+  - `prompt_A.md`・`prompt_C.md`・`prompt_B.md`：依頼文（このまま渡した）。
+  - `agent_A_output.md`・`agent_C_output.md`・`agent_B_output.md`：出力そのもの。
+  - `claims_per_statement_B.txt`・`note_excerpt_for_B.md`：B に渡した主張とノートの文面。
+  - 直す前の版：`PAG258_v1.lean`（17 項目）・`PAG258_v2.lean`（50 項目、B に渡した版）・`PAG258_v3_before_B_fixes.lean`・`PAG258_v4.lean`（57 項目、最終）と .out、`note_v1_before_AC_fixes.md`・`note_v2_before_B_fixes.md`、`step277_v1.*`（10 項目）・`step277_v2_before_B.*`（19 項目）、`xlsx_rows_part254_v1.py`・`xlsx_rows_part254_v2_before_B.py`。
+  - `xlsx_rows_part254.py`・`update_xlsx_part254.py`・`update_handoff_part254.py`：xlsx と引き継ぎメモの更新の手順。
+- 結果の要約：
+  - A（S1〜S17）：自明・ほぼ同語反復が多い（S9・S13 はほぼ同語反復）。固有値の絶対値 1 と法を上げても不変なことは Θ1 の定義に組み込まれている。予想外の指摘：両立する族の一意性が文にない、Θ2 と Ψ3 の可換性が文にない、Ψ3 の u⁻¹、Θ2 は Ψ3 の極分解のユニタリ因子でない（一般の形。後で B が誤りと指摘）。
+  - C（P1〜P5）：Θ1 は原始指標のルート数、Θ3 は inflation、P3 は新形式・旧形式分解の GL(1) 版、族は Ẑ^× の上のルート数を記号とするフーリエ乗数（正規化したハール測度、完備化は L²(Ẑ^×)）。P5 は証明できる。核は測度でない分布、UJ は対合、ε は素数ごとの積に分かれない。新しい定理はない。
+  - B（S1〜S50）：xlsx の主張は 50 文すべて一致（強い・別物・空虚なし、注記つき 7 文）。S18〜S50 は手ですべて真。ノートへの指摘 5 つ：極分解の一般文は偽（法 1・6 で反例）、直和の文は Lean にない、一般の形の見出し（T の非両立、U ≠ T）、(2) が代数的な帰納極限までと題から読めない、表のラベルと記号 ε。
+- 直したこと：ノート §7 のとおり。
+  - A・C の後：Lean に 33 項目（族の一意性、可換・不変、法 1 → p での T の非両立、W(1 mod p)、実数性、正規化した内積の両立、帰納極限の上の U_∞ と内積）。数値に 9 項目（(11)〜(19)。C の主張の確認を含む）。
+  - B の後：Lean に 7 項目（有限レベルの直和と、その上の U、極限での原始部分の像の直交）。数値に 2 項目（(20) 極分解の反例の確認、(21) 直和）。ノートと xlsx の書き方（極分解を素数の法に限る、指標ごとの式は定義の言い換え、一般の形の見出しを Lean の範囲に、題と問いの出所、ラベル、記号）。
+  - 著者の定義（CLAUDE.md §1）と公理 A1 は変えていない。
+- C の名前の確認：Iwaniec–Kowalski Thm 4.15（p. 84）、Davenport 第 9 章・第 5 章、Atkin–Lehner 1970、Li 1975、Tate 1979、Deligne 1973、Hartley 1942 は、ウェブで実在を確かめた。
+- 構築者の誤り（記録）：A の「Θ2 は Ψ3 の極分解のユニタリ因子でもない」を、確かめずに一般の形でノート・xlsx・Lean の docstring に書いた（C の主張は数値で確かめてから書いたのに、A の主張は確かめなかった）。B が法 1・6 の反例を出した。数値 (20) で確認し、素数の法に限って直した。監査者の主張も、確かめてから採用する。
+- B の後に直した文面と、足した Lean（7 項目）・数値（2 項目）は、照合を受けていない。

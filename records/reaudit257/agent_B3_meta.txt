@@ -1,0 +1,6 @@
+B3（第 1 回の直しの照合）。2026-11-14 朝。新しいエージェント（general-purpose、文脈なし）。入力は inbox の B3_<Part>_input.md（形式文と定義の全文（B2 と同じ）、B2 の出力の全文、直しの前後の差分：Lean の文面・ノート・表）。
+- B3_252：tool_uses 1（Read 1 回）、duration_ms 550051、subagent_tokens 201921
+- B3_254：tool_uses 2（Read 2 回）、duration_ms 493369、subagent_tokens 194843
+- B3_255：tool_uses 2（Read 2 回）、duration_ms 626055、subagent_tokens 227217
+- B3_256：tool_uses 1（Read 1 回）、duration_ms 543945、subagent_tokens 207175
+出力は agent_B3_<Part>_output.md（原文のまま）。第 2 回の直しは fixes/fix_round2.py、照合は B4（4 Part をまとめた 1 体）。

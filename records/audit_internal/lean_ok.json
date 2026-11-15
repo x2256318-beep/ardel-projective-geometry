@@ -1,0 +1,342 @@
+[
+ {
+  "id": 298,
+  "goal": "PAG.Part217.inner_smul_left'",
+  "using": "PAG.Part253.ipG_smul_left",
+  "dir": "T⇒S",
+  "target": "PAG.Part253.ipG_smul_left",
+  "cand": "PAG.Part217.inner_smul_left'",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1390,
+  "goal": "PAG.Part253.kUnit.congr_simp",
+  "using": "PAG.Part255.kUnit_congr",
+  "dir": "T⇒S",
+  "target": "PAG.Part255.kUnit_congr",
+  "cand": "PAG.Part253.kUnit.congr_simp",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1782,
+  "goal": "PAG.Part81.inv_neg_one",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part81.inv_neg_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1784,
+  "goal": "PAG.Part25.chi_inv_neg_one",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part25.chi_inv_neg_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1790,
+  "goal": "PAG.Part9.inv_apply_neg_one",
+  "using": "PAG.Part256.inv_apply_neg_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part9.inv_apply_neg_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1814,
+  "goal": "PAG.Part171.primitive_of_ne_one",
+  "using": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1830,
+  "goal": "PAG.Part29.chi_neg_one_sq'",
+  "using": "PAG.Part256.neg_one_mul_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part29.chi_neg_one_sq'",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1838,
+  "goal": "PAG.Part9.chi_neg_one_sq",
+  "using": "PAG.Part256.neg_one_mul_self",
+  "dir": "T⇒S",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part9.chi_neg_one_sq",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 2528,
+  "goal": "PAG.Part256.removal_counterexample_normSq",
+  "using": "PAG.Part257.normSq_rootNum_one_prime",
+  "dir": "T⇒S",
+  "target": "PAG.Part257.normSq_rootNum_one_prime",
+  "cand": "PAG.Part256.removal_counterexample_normSq",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 3646,
+  "goal": "PAG.Part256.rootNum.congr_simp",
+  "using": "PAG.Part258.rootNum_congr",
+  "dir": "T⇒S",
+  "target": "PAG.Part258.rootNum_congr",
+  "cand": "PAG.Part256.rootNum.congr_simp",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4662,
+  "goal": "PAG.Part193.param_bijective",
+  "using": "PAG.Part260.crtMap_bijective",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.crtMap_bijective",
+  "cand": "PAG.Part193.param_bijective",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4696,
+  "goal": "PAG.Part193.gaussSum_mul_coprime",
+  "using": "PAG.Part260.gaussSum_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.gaussSum_prodChar",
+  "cand": "PAG.Part193.gaussSum_mul_coprime",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4710,
+  "goal": "PAG.Part194.isPrimitive_mul",
+  "using": "PAG.Part260.isPrimitive_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part194.isPrimitive_mul",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4720,
+  "goal": "PAG.Part236.isPrimitive_charMul",
+  "using": "PAG.Part260.isPrimitive_prodChar",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part236.isPrimitive_charMul",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4806,
+  "goal": "PAG.Part260.prodChar",
+  "using": "PAG.Part199.cmul",
+  "dir": "defeq",
+  "target": "PAG.Part260.prodChar",
+  "cand": "PAG.Part199.cmul",
+  "kind": "def",
+  "res": "OK"
+ },
+ {
+  "id": 4814,
+  "goal": "PAG.Part236.charMul_apply",
+  "using": "PAG.Part260.prodChar_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part236.charMul_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4826,
+  "goal": "PAG.Part193.mul_changeLevel_apply",
+  "using": "PAG.Part260.prodChar_apply",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part193.mul_changeLevel_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4896,
+  "goal": "PAG.Part193.stdAddChar_param",
+  "using": "PAG.Part260.stdAddChar_crtMap",
+  "dir": "T⇒S",
+  "target": "PAG.Part260.stdAddChar_crtMap",
+  "cand": "PAG.Part193.stdAddChar_param",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1781,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part81.inv_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part81.inv_neg_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1783,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part25.chi_inv_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part25.chi_inv_neg_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1789,
+  "goal": "PAG.Part256.inv_apply_neg_one",
+  "using": "PAG.Part9.inv_apply_neg_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.inv_apply_neg_one",
+  "cand": "PAG.Part9.inv_apply_neg_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1813,
+  "goal": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "using": "PAG.Part171.primitive_of_ne_one",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.isPrimitive_of_prime_of_ne_one",
+  "cand": "PAG.Part171.primitive_of_ne_one",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1829,
+  "goal": "PAG.Part256.neg_one_mul_self",
+  "using": "PAG.Part29.chi_neg_one_sq'",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part29.chi_neg_one_sq'",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 1837,
+  "goal": "PAG.Part256.neg_one_mul_self",
+  "using": "PAG.Part9.chi_neg_one_sq",
+  "dir": "S⇒T",
+  "target": "PAG.Part256.neg_one_mul_self",
+  "cand": "PAG.Part9.chi_neg_one_sq",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 2253,
+  "goal": "PAG.Part257.eq_one_of_two",
+  "using": "PAG.Part198.level_two_trivial",
+  "dir": "S⇒T",
+  "target": "PAG.Part257.eq_one_of_two",
+  "cand": "PAG.Part198.level_two_trivial",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4557,
+  "goal": "PAG.Part260.charU_prodChar",
+  "using": "PAG.Part193.mul_changeLevel_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.charU_prodChar",
+  "cand": "PAG.Part193.mul_changeLevel_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4661,
+  "goal": "PAG.Part260.crtMap_bijective",
+  "using": "PAG.Part193.param_bijective",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.crtMap_bijective",
+  "cand": "PAG.Part193.param_bijective",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4695,
+  "goal": "PAG.Part260.gaussSum_prodChar",
+  "using": "PAG.Part193.gaussSum_mul_coprime",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.gaussSum_prodChar",
+  "cand": "PAG.Part193.gaussSum_mul_coprime",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4709,
+  "goal": "PAG.Part260.isPrimitive_prodChar",
+  "using": "PAG.Part194.isPrimitive_mul",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part194.isPrimitive_mul",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4719,
+  "goal": "PAG.Part260.isPrimitive_prodChar",
+  "using": "PAG.Part236.isPrimitive_charMul",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.isPrimitive_prodChar",
+  "cand": "PAG.Part236.isPrimitive_charMul",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4805,
+  "goal": "PAG.Part260.prodChar",
+  "using": "PAG.Part236.charMul",
+  "dir": "defeq",
+  "target": "PAG.Part260.prodChar",
+  "cand": "PAG.Part236.charMul",
+  "kind": "def",
+  "res": "OK"
+ },
+ {
+  "id": 4813,
+  "goal": "PAG.Part260.prodChar_apply",
+  "using": "PAG.Part236.charMul_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part236.charMul_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4825,
+  "goal": "PAG.Part260.prodChar_apply",
+  "using": "PAG.Part193.mul_changeLevel_apply",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.prodChar_apply",
+  "cand": "PAG.Part193.mul_changeLevel_apply",
+  "kind": "thm",
+  "res": "OK"
+ },
+ {
+  "id": 4895,
+  "goal": "PAG.Part260.stdAddChar_crtMap",
+  "using": "PAG.Part193.stdAddChar_param",
+  "dir": "S⇒T",
+  "target": "PAG.Part260.stdAddChar_crtMap",
+  "cand": "PAG.Part193.stdAddChar_param",
+  "kind": "thm",
+  "res": "OK"
+ }
+]

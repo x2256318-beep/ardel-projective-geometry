@@ -1,0 +1,2998 @@
+[
+ {
+  "target": "PAG.Part262.castHom_crt_symm",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part240.crt_fst_eq_castHom",
+    "module": "PAG240",
+    "score": 0.964
+   },
+   {
+    "name": "PAG.Part232.gcd_crt",
+    "module": "PAG232",
+    "score": 0.733
+   },
+   {
+    "name": "PAG.Part237.crt_fst_div_cast",
+    "module": "PAG237",
+    "score": 0.731
+   },
+   {
+    "name": "PAG.Part232.dind_crt",
+    "module": "PAG232",
+    "score": 0.712
+   },
+   {
+    "name": "PAG.Part237.crt_snd_div_cast",
+    "module": "PAG237",
+    "score": 0.695
+   },
+   {
+    "name": "PAG.Part236.cast_crt_fst",
+    "module": "PAG236",
+    "score": 0.683
+   },
+   {
+    "name": "PAG.Part232.crtLin_apply",
+    "module": "PAG232",
+    "score": 0.666
+   },
+   {
+    "name": "PAG.Part232.crtLin_symm_apply",
+    "module": "PAG232",
+    "score": 0.661
+   },
+   {
+    "name": "PAG.Part236.cast_crt_snd",
+    "module": "PAG236",
+    "score": 0.649
+   },
+   {
+    "name": "ZMod.chineseRemainder.congr_simp",
+    "module": "PAG232",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part232.geps_crt",
+    "module": "PAG232",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part232.crt_fst_val",
+    "module": "PAG232",
+    "score": 0.614
+   },
+   {
+    "name": "PAG.Part240.castHom_crt_snd",
+    "module": "PAG240",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part241.crtE_fst",
+    "module": "PAG241",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part232.crt_snd_val",
+    "module": "PAG232",
+    "score": 0.584
+   },
+   {
+    "name": "PAG.Part241.castHom_liftF",
+    "module": "PAG241",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part236.crtProd_apply",
+    "module": "PAG236",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part237.twist_mul_layerInd_crt",
+    "module": "PAG237",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part241.castHom_crtE_snd",
+    "module": "PAG241",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part241.castHom_liftF_of_dvd",
+    "module": "PAG241",
+    "score": 0.507
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.conv_single",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part250.conv_single",
+    "module": "PAG250",
+    "score": 0.907
+   },
+   {
+    "name": "PAG.Part247.conv_single_apply",
+    "module": "PAG247",
+    "score": 0.907
+   },
+   {
+    "name": "PAG.Part57.conv_delta",
+    "module": "PAG57",
+    "score": 0.902
+   },
+   {
+    "name": "PAG.Part247.sum_mul_single",
+    "module": "PAG247",
+    "score": 0.756
+   },
+   {
+    "name": "PAG.Part59.delta_eq_ball",
+    "module": "PAG59",
+    "score": 0.679
+   },
+   {
+    "name": "PAG.Part229.apply_eq_sum_single",
+    "module": "PAG229",
+    "score": 0.674
+   },
+   {
+    "name": "PAG.Part111.conv_single_gen",
+    "module": "PAG111",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part205.sum_geps",
+    "module": "PAG205",
+    "score": 0.573
+   },
+   {
+    "name": "PAG.Part210.sum_gbas_one",
+    "module": "PAG210",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part89.conv_assoc'",
+    "module": "PAG89",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part80.conv_right_comm",
+    "module": "PAG80",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part15.conv_comm",
+    "module": "PAG15",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part111.fix_conv",
+    "module": "PAG111",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part109.conv_assoc_gen",
+    "module": "PAG109",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part55.ip_delta",
+    "module": "PAG55",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part58.conv_smul_right'",
+    "module": "PAG58",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part52.conv_smul_right",
+    "module": "PAG52",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part206.conv_smul_left",
+    "module": "PAG206",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part17.conv_normalized",
+    "module": "PAG17",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part15.conv_smul_smul",
+    "module": "PAG15",
+    "score": 0.509
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.crtConj_shellLift",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.878
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.857
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.848
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.836
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.686
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.685
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.677
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.616
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.587
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.577
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.572
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.568
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_shellDilAlg",
+    "module": "PAG235",
+    "score": 0.561
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm_centralizer",
+    "module": "PAG235",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm",
+    "module": "PAG235",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part235.crtConj_dilCommTensorEquiv_tmul",
+    "module": "PAG235",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part232.finrank_sup_leftHom_rightHom",
+    "module": "PAG232",
+    "score": 0.534
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.crtLin_pull",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part232.crtLin_apply",
+    "module": "PAG232",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part232.crtLin_symm_apply",
+    "module": "PAG232",
+    "score": 0.595
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.576
+   },
+   {
+    "name": "PAG.Part236.crtProd.congr_simp",
+    "module": "PAG236",
+    "score": 0.55
+   },
+   {
+    "name": "PAG.Part236.crtLin_crtProd",
+    "module": "PAG236",
+    "score": 0.55
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.55
+   },
+   {
+    "name": "PAG.Part236.crtProd_smul_smul",
+    "module": "PAG236",
+    "score": 0.547
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part240.crt_fst_eq_castHom",
+    "module": "PAG240",
+    "score": 0.508
+   },
+   {
+    "name": "PAG.Part236.crtProd_apply",
+    "module": "PAG236",
+    "score": 0.493
+   },
+   {
+    "name": "PAG.Part236.crtProd_mem_blockSpan",
+    "module": "PAG236",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.468
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.438
+   },
+   {
+    "name": "PAG.Part232.crtConj_apply",
+    "module": "PAG232",
+    "score": 0.438
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.dTop",
+  "module": "PAG262",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.728
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.551
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.522
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.512
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.407
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.364
+   },
+   {
+    "name": "PAG.Part244.shellAvg",
+    "module": "PAG244",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part244.oneETrans",
+    "module": "PAG244",
+    "score": 0.335
+   },
+   {
+    "name": "PAG.Part229.centerShellMathlibEquiv",
+    "module": "PAG229",
+    "score": 0.332
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.326
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.324
+   },
+   {
+    "name": "PAG.Part243.radialMatOp",
+    "module": "PAG243",
+    "score": 0.318
+   },
+   {
+    "name": "PAG.Part229.centerShellLinearEquiv",
+    "module": "PAG229",
+    "score": 0.316
+   },
+   {
+    "name": "PAG.Part245.shellDev",
+    "module": "PAG245",
+    "score": 0.314
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.dTop_eTop_dTop",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.585
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.56
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.547
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.545
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.531
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.524
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.499
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.488
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.477
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.477
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.dft_const_on_shells",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part205.geps.congr_simp",
+    "module": "PAG205",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part205.dft_geps",
+    "module": "PAG205",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part243.dft_dind",
+    "module": "PAG243",
+    "score": 0.703
+   },
+   {
+    "name": "PAG.Part251.geps_eq_zero_of_not_dvd_val",
+    "module": "PAG251",
+    "score": 0.699
+   },
+   {
+    "name": "PAG.Part232.geps_eq_zero_of_not_dvd",
+    "module": "PAG232",
+    "score": 0.694
+   },
+   {
+    "name": "PAG.Part207.geps_ne_zero",
+    "module": "PAG207",
+    "score": 0.685
+   },
+   {
+    "name": "PAG.Part207.finrank_span_geps",
+    "module": "PAG207",
+    "score": 0.679
+   },
+   {
+    "name": "PAG.Part251.geps_self_apply",
+    "module": "PAG251",
+    "score": 0.676
+   },
+   {
+    "name": "PAG.Part243.geps_self",
+    "module": "PAG243",
+    "score": 0.675
+   },
+   {
+    "name": "PAG.Part250.geps_add_of_dvd",
+    "module": "PAG250",
+    "score": 0.666
+   },
+   {
+    "name": "PAG.Part205.geps_conv_geps",
+    "module": "PAG205",
+    "score": 0.613
+   },
+   {
+    "name": "PAG.Part210.conv_eq_sum_shells",
+    "module": "PAG210",
+    "score": 0.606
+   },
+   {
+    "name": "PAG.Part205.sum_geps_conv",
+    "module": "PAG205",
+    "score": 0.606
+   },
+   {
+    "name": "PAG.Part243.conv_geps_dind",
+    "module": "PAG243",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part205.geps_apply_zero",
+    "module": "PAG205",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part208.gbas_one",
+    "module": "PAG208",
+    "score": 0.589
+   },
+   {
+    "name": "PAG.Part243.ramMat_mul_coprime",
+    "module": "PAG243",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part243.dft_conv_geps",
+    "module": "PAG243",
+    "score": 0.585
+   },
+   {
+    "name": "PAG.Part243.conv_geps_self",
+    "module": "PAG243",
+    "score": 0.582
+   },
+   {
+    "name": "PAG.Part243.geps_neg",
+    "module": "PAG243",
+    "score": 0.57
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.eTop",
+  "module": "PAG262",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.745
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.564
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.533
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.524
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.502
+   },
+   {
+    "name": "PAG.Part251.dualOneEAlgOf",
+    "module": "PAG251",
+    "score": 0.451
+   },
+   {
+    "name": "PAG.Part15.convL",
+    "module": "PAG15",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.417
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part229.centerShellMathlibEquiv",
+    "module": "PAG229",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part244.shellAvg",
+    "module": "PAG244",
+    "score": 0.336
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.333
+   },
+   {
+    "name": "PAG.Part229.centerShellLinearEquiv",
+    "module": "PAG229",
+    "score": 0.323
+   },
+   {
+    "name": "PAG.Part244.oneETrans",
+    "module": "PAG244",
+    "score": 0.322
+   },
+   {
+    "name": "PAG.Part249.sumSub",
+    "module": "PAG249",
+    "score": 0.32
+   },
+   {
+    "name": "PAG.Part224.fullComm",
+    "module": "PAG224",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.313
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.eTop_mul_self",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.712
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.703
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.703
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.665
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.663
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.655
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.646
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.633
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.63
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.63
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.607
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.593
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.585
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_oneEAlg_of_forall",
+    "module": "PAG246",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part246.shellAlg_eq_oneEAlg_iff",
+    "module": "PAG246",
+    "score": 0.576
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.exists_compatible_hom",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.716
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.701
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.668
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.66
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.66
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.631
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.623
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.619
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.619
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.615
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.615
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.615
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.592
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.572
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.57
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.exists_compatible_hom_iff",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.761
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.744
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.71
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.702
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.702
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.682
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.67
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.664
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.658
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.658
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.657
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.657
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.653
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.645
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.633
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.612
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.61
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.exists_convL_of_mem_span",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.873
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.867
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.866
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.819
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.791
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.751
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.667
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.663
+   },
+   {
+    "name": "PAG.Part250.convL_geps_twoPt",
+    "module": "PAG250",
+    "score": 0.659
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.659
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_one_sub",
+    "module": "PAG250",
+    "score": 0.654
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.646
+   },
+   {
+    "name": "PAG.Part248.convL_geps_one_pairFn_ne_zero",
+    "module": "PAG248",
+    "score": 0.639
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.638
+   },
+   {
+    "name": "PAG.Part248.convL_geps_pairFn_apply",
+    "module": "PAG248",
+    "score": 0.636
+   },
+   {
+    "name": "PAG.Part113.mem_range_convL",
+    "module": "PAG113",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.629
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.exists_mulLeft_of_mem_span",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part251.mulLeft_dind_mul_self",
+    "module": "PAG251",
+    "score": 0.71
+   },
+   {
+    "name": "PAG.Part232.sum_mulLeft_dind",
+    "module": "PAG232",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.622
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.581
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.558
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.532
+   },
+   {
+    "name": "PAG.Part251.convL_geps_commute_charP",
+    "module": "PAG251",
+    "score": 0.53
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_not_commute_charP",
+    "module": "PAG251",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.512
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_one_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part252.mulLeft_dind_primePow_not_mem_dualAddEAlg_of_level",
+    "module": "PAG252",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part252.mulLeft_dind_one_not_mem_dualAddEAlg_of_level",
+    "module": "PAG252",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul",
+    "module": "PAG251",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part250.mulLeft_dind_one_not_mem_dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul_aux",
+    "module": "PAG251",
+    "score": 0.448
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.geps_self",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part243.geps_self",
+    "module": "PAG243",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part243.dft_dind",
+    "module": "PAG243",
+    "score": 0.902
+   },
+   {
+    "name": "PAG.Part205.geps.congr_simp",
+    "module": "PAG205",
+    "score": 0.894
+   },
+   {
+    "name": "PAG.Part205.dft_geps",
+    "module": "PAG205",
+    "score": 0.894
+   },
+   {
+    "name": "PAG.Part251.geps_self_apply",
+    "module": "PAG251",
+    "score": 0.866
+   },
+   {
+    "name": "PAG.Part243.conv_geps_self",
+    "module": "PAG243",
+    "score": 0.863
+   },
+   {
+    "name": "PAG.Part251.geps_eq_zero_of_not_dvd_val",
+    "module": "PAG251",
+    "score": 0.829
+   },
+   {
+    "name": "PAG.Part232.geps_eq_zero_of_not_dvd",
+    "module": "PAG232",
+    "score": 0.823
+   },
+   {
+    "name": "PAG.Part207.geps_ne_zero",
+    "module": "PAG207",
+    "score": 0.812
+   },
+   {
+    "name": "PAG.Part250.geps_add_of_dvd",
+    "module": "PAG250",
+    "score": 0.79
+   },
+   {
+    "name": "PAG.Part243.conv_geps_dind",
+    "module": "PAG243",
+    "score": 0.77
+   },
+   {
+    "name": "PAG.Part205.geps_apply_zero",
+    "module": "PAG205",
+    "score": 0.765
+   },
+   {
+    "name": "PAG.Part243.ramMat_mul_coprime",
+    "module": "PAG243",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part205.geps_conv_geps",
+    "module": "PAG205",
+    "score": 0.727
+   },
+   {
+    "name": "PAG.Part210.conv_eq_sum_shells",
+    "module": "PAG210",
+    "score": 0.719
+   },
+   {
+    "name": "PAG.Part205.sum_geps_conv",
+    "module": "PAG205",
+    "score": 0.719
+   },
+   {
+    "name": "PAG.Part208.gbas_one",
+    "module": "PAG208",
+    "score": 0.698
+   },
+   {
+    "name": "PAG.Part243.dft_conv_geps",
+    "module": "PAG243",
+    "score": 0.693
+   },
+   {
+    "name": "PAG.Part243.geps_neg",
+    "module": "PAG243",
+    "score": 0.676
+   },
+   {
+    "name": "PAG.Part208.geps_conv_gbas",
+    "module": "PAG208",
+    "score": 0.654
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.mem_ker_iff",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.671
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.634
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.607
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part187.root_pow_iff",
+    "module": "PAG187",
+    "score": 0.452
+   },
+   {
+    "name": "PAG.Part183.root_mul_iff",
+    "module": "PAG183",
+    "score": 0.452
+   },
+   {
+    "name": "PAG.Part118.dvd_of_P_mul",
+    "module": "PAG118",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part198.castHom_neg_one",
+    "module": "PAG198",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part246.two_dvd_primePow_iff",
+    "module": "PAG246",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part197.pow_dvd_iff_of_ne",
+    "module": "PAG197",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part117.stdAddChar_mul_cast",
+    "module": "PAG117",
+    "score": 0.425
+   },
+   {
+    "name": "PAG.Part232.mul_eq_mul_iff_of_coprime",
+    "module": "PAG232",
+    "score": 0.408
+   },
+   {
+    "name": "PAG.Part118.P_sq",
+    "module": "PAG118",
+    "score": 0.396
+   },
+   {
+    "name": "PAG.Part120.divQ",
+    "module": "PAG120",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part214.totient_mul_eq_iff'",
+    "module": "PAG214",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part214.totient_mul_eq_iff",
+    "module": "PAG214",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part24.isUnit_of_castHom",
+    "module": "PAG24",
+    "score": 0.388
+   },
+   {
+    "name": "PAG.Part24.chi_cast_nonunit",
+    "module": "PAG24",
+    "score": 0.378
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.mul_x_ne_zero",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part252.div_mul_eq_zero_of_dvd_val",
+    "module": "PAG252",
+    "score": 0.627
+   },
+   {
+    "name": "PAG.Part251.mul_div_eq_zero_of_dvd",
+    "module": "PAG251",
+    "score": 0.627
+   },
+   {
+    "name": "PAG.Part251.dvd_val_of_mul_eq_zero",
+    "module": "PAG251",
+    "score": 0.627
+   },
+   {
+    "name": "PAG.Part252.natCast_div_ne_zero",
+    "module": "PAG252",
+    "score": 0.605
+   },
+   {
+    "name": "PAG.Part215.div_ne_zero_of_dvd",
+    "module": "PAG215",
+    "score": 0.556
+   },
+   {
+    "name": "PAG.Part118.P_sq",
+    "module": "PAG118",
+    "score": 0.532
+   },
+   {
+    "name": "PAG.Part215.chi_eq_zero_of_rad",
+    "module": "PAG215",
+    "score": 0.446
+   },
+   {
+    "name": "PAG.Part120.one_add_unit",
+    "module": "PAG120",
+    "score": 0.41
+   },
+   {
+    "name": "PAG.Part9.one_add_pow_of_sq_zero",
+    "module": "PAG9",
+    "score": 0.399
+   },
+   {
+    "name": "PAG.Part248.not_dvd_two_mul",
+    "module": "PAG248",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part118.dvd_of_P_mul",
+    "module": "PAG118",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part120.pow_zero_of_le",
+    "module": "PAG120",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part223.div_shell_hub",
+    "module": "PAG223",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part223.conductor_eq_of_shells",
+    "module": "PAG223",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part247.three_le_div",
+    "module": "PAG247",
+    "score": 0.357
+   },
+   {
+    "name": "PAG.Part134.not_dvd_div_gcd",
+    "module": "PAG134",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part215.div_shell_aux",
+    "module": "PAG215",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part250.dft_twoPt_ne_zero",
+    "module": "PAG250",
+    "score": 0.341
+   },
+   {
+    "name": "PAG.Part120.divQ",
+    "module": "PAG120",
+    "score": 0.34
+   },
+   {
+    "name": "PAG.Part219.not_dvd_of_chi_ne_zero",
+    "module": "PAG219",
+    "score": 0.338
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.no_compatible_hom",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.768
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.751
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.717
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.708
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.708
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.676
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.67
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.668
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.663
+   },
+   {
+    "name": "PAG.Part219.exists_shellAlg_apply_eq",
+    "module": "PAG219",
+    "score": 0.662
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.659
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.656
+   },
+   {
+    "name": "PAG.Part219.transitive_iff",
+    "module": "PAG219",
+    "score": 0.656
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.655
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.655
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.645
+   },
+   {
+    "name": "PAG.Part219.shellAlg_apply_ne_of_dvd",
+    "module": "PAG219",
+    "score": 0.621
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.617
+   },
+   {
+    "name": "PAG.Part229.mem_shellAlg_iff_commute",
+    "module": "PAG229",
+    "score": 0.611
+   },
+   {
+    "name": "PAG.Part224.mem_fullComm_iff_commute",
+    "module": "PAG224",
+    "score": 0.611
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.p_dvd_div_p",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part217.div_dual_eq",
+    "module": "PAG217",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part217.div_div_swap",
+    "module": "PAG217",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part216.gblock_shell",
+    "module": "PAG216",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part212.kdual_shell_eq",
+    "module": "PAG212",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part209.shell_eq",
+    "module": "PAG209",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part209.fine_eq",
+    "module": "PAG209",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part208.dual_shell_eq",
+    "module": "PAG208",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part202.dual_eq",
+    "module": "PAG202",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part213.block_dvd",
+    "module": "PAG213",
+    "score": 0.724
+   },
+   {
+    "name": "PAG.Part210.shell_quot",
+    "module": "PAG210",
+    "score": 0.724
+   },
+   {
+    "name": "PAG.Part251.prime_dvd_div_of_dvd",
+    "module": "PAG251",
+    "score": 0.657
+   },
+   {
+    "name": "PAG.Part219.coprime_shell",
+    "module": "PAG219",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part215.div_ne_zero_of_dvd",
+    "module": "PAG215",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part252.div_mul_eq_zero_of_dvd_val",
+    "module": "PAG252",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part251.mul_div_eq_zero_of_dvd",
+    "module": "PAG251",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part251.dvd_val_of_mul_eq_zero",
+    "module": "PAG251",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part132.p_dvd_div_gcd",
+    "module": "PAG132",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part246.eq_of_gcd_eq",
+    "module": "PAG246",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part261.tri_succ",
+    "module": "PAG261",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part246.half_mul_succ",
+    "module": "PAG246",
+    "score": 0.494
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.pull_one",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.984
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.941
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.858
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.737
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.658
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.629
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.613
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.405
+   },
+   {
+    "name": "PAG.Part201.gket_pull_same",
+    "module": "PAG201",
+    "score": 0.332
+   },
+   {
+    "name": "PAG.Part217.gket_congr2",
+    "module": "PAG217",
+    "score": 0.33
+   },
+   {
+    "name": "PAG.Part211.gket_congr",
+    "module": "PAG211",
+    "score": 0.33
+   },
+   {
+    "name": "PAG.Part201.gket_pull",
+    "module": "PAG201",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part199.gket_apply",
+    "module": "PAG199",
+    "score": 0.323
+   },
+   {
+    "name": "PAG.Part199.gket_memb",
+    "module": "PAG199",
+    "score": 0.319
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift",
+  "module": "PAG262",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.865
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.691
+   },
+   {
+    "name": "PAG.Part235.dilCommTensorEquiv",
+    "module": "PAG235",
+    "score": 0.558
+   },
+   {
+    "name": "PAG.Part233.crtTensorEquiv",
+    "module": "PAG233",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part233.fullCommTensorEquiv",
+    "module": "PAG233",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part240.CRTMul",
+    "module": "PAG240",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part233.tensLiftGen",
+    "module": "PAG233",
+    "score": 0.482
+   },
+   {
+    "name": "PAG.Part233.centerTensorEquiv",
+    "module": "PAG233",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part233.tensorSupEquiv",
+    "module": "PAG233",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part232.rightHom",
+    "module": "PAG232",
+    "score": 0.402
+   },
+   {
+    "name": "PAG.Part241.locOp",
+    "module": "PAG241",
+    "score": 0.398
+   },
+   {
+    "name": "PAG.Part232.leftHom",
+    "module": "PAG232",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part241.shellAlgPiEquiv",
+    "module": "PAG241",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part241.dilCommAlgPiEquiv",
+    "module": "PAG241",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.373
+   },
+   {
+    "name": "PAG.Part240.tensEquiv",
+    "module": "PAG240",
+    "score": 0.372
+   },
+   {
+    "name": "PAG.Part241.ppFam",
+    "module": "PAG241",
+    "score": 0.357
+   },
+   {
+    "name": "PAG.Part239.matTensorEquiv",
+    "module": "PAG239",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part232.crtConj",
+    "module": "PAG232",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part241.piPrimeEquiv",
+    "module": "PAG241",
+    "score": 0.331
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift_apply",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.823
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.822
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.815
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.803
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.715
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.665
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.65
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.567
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.56
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.541
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.532
+   },
+   {
+    "name": "PAG.Part235.crtConj_dilCommTensorEquiv_tmul",
+    "module": "PAG235",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_shellDilAlg",
+    "module": "PAG235",
+    "score": 0.516
+   },
+   {
+    "name": "PAG.Part232.finrank_sup_leftHom_rightHom",
+    "module": "PAG232",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part233.crtConj_crtTensorEquiv_tmul",
+    "module": "PAG233",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm_centralizer",
+    "module": "PAG235",
+    "score": 0.5
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift_dind",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.854
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.846
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.825
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.818
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.746
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.676
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.675
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.667
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.601
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.599
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.579
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.563
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.56
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_shellDilAlg",
+    "module": "PAG235",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm_centralizer",
+    "module": "PAG235",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm",
+    "module": "PAG235",
+    "score": 0.535
+   },
+   {
+    "name": "PAG.Part232.finrank_sup_leftHom_rightHom",
+    "module": "PAG232",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part240.crtMul_shellAlg",
+    "module": "PAG240",
+    "score": 0.526
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift_geps",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.856
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.85
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.836
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.816
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.755
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.684
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.683
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.675
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.606
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.59
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.586
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.567
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_shellDilAlg",
+    "module": "PAG235",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.553
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm_centralizer",
+    "module": "PAG235",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm",
+    "module": "PAG235",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part232.finrank_sup_leftHom_rightHom",
+    "module": "PAG232",
+    "score": 0.533
+   },
+   {
+    "name": "PAG.Part240.crtMul_shellAlg",
+    "module": "PAG240",
+    "score": 0.533
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift_injective",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.861
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.84
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.831
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.819
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.76
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.703
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.702
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.678
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.613
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.611
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.59
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.574
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_shellDilAlg",
+    "module": "PAG235",
+    "score": 0.563
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.557
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm_centralizer",
+    "module": "PAG235",
+    "score": 0.545
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm",
+    "module": "PAG235",
+    "score": 0.545
+   },
+   {
+    "name": "PAG.Part232.finrank_sup_leftHom_rightHom",
+    "module": "PAG232",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part240.crtMul_shellAlg",
+    "module": "PAG240",
+    "score": 0.536
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.shellLift_pull",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv",
+    "module": "PAG232",
+    "score": 0.844
+   },
+   {
+    "name": "PAG.Part232.crtConj_shellAlgTensorEquiv_tmul",
+    "module": "PAG232",
+    "score": 0.823
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_geps",
+    "module": "PAG232",
+    "score": 0.815
+   },
+   {
+    "name": "PAG.Part232.shellAlgTensorEquiv_dind",
+    "module": "PAG232",
+    "score": 0.803
+   },
+   {
+    "name": "PAG.Part232.range_tensLift",
+    "module": "PAG232",
+    "score": 0.744
+   },
+   {
+    "name": "PAG.Part232.tensLift_injective",
+    "module": "PAG232",
+    "score": 0.674
+   },
+   {
+    "name": "PAG.Part233.tensLift_injective_gen",
+    "module": "PAG233",
+    "score": 0.673
+   },
+   {
+    "name": "PAG.Part232.tensLift_tmul",
+    "module": "PAG232",
+    "score": 0.665
+   },
+   {
+    "name": "PAG.Part233.tensLift_eq_tensLiftGen",
+    "module": "PAG233",
+    "score": 0.599
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_shellAlg",
+    "module": "PAG232",
+    "score": 0.597
+   },
+   {
+    "name": "PAG.Part232.mem_shellAlg_mul_iff",
+    "module": "PAG232",
+    "score": 0.581
+   },
+   {
+    "name": "PAG.Part232.map_crtConj_le",
+    "module": "PAG232",
+    "score": 0.577
+   },
+   {
+    "name": "PAG.Part232.map_rightHom_le",
+    "module": "PAG232",
+    "score": 0.562
+   },
+   {
+    "name": "PAG.Part232.map_leftHom_le",
+    "module": "PAG232",
+    "score": 0.558
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_shellDilAlg",
+    "module": "PAG235",
+    "score": 0.551
+   },
+   {
+    "name": "PAG.Part233.mem_fullComm_mul_iff",
+    "module": "PAG233",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm_centralizer",
+    "module": "PAG235",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part235.map_crtConj_dilComm",
+    "module": "PAG235",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part232.finrank_sup_leftHom_rightHom",
+    "module": "PAG232",
+    "score": 0.525
+   },
+   {
+    "name": "PAG.Part240.crtMul_shellAlg",
+    "module": "PAG240",
+    "score": 0.525
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.sq_x_eq_zero",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part252.div_mul_eq_zero_of_dvd_val",
+    "module": "PAG252",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part251.mul_div_eq_zero_of_dvd",
+    "module": "PAG251",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part251.dvd_val_of_mul_eq_zero",
+    "module": "PAG251",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part118.P_sq",
+    "module": "PAG118",
+    "score": 0.849
+   },
+   {
+    "name": "PAG.Part252.natCast_div_ne_zero",
+    "module": "PAG252",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part118.dvd_of_P_mul",
+    "module": "PAG118",
+    "score": 0.609
+   },
+   {
+    "name": "PAG.Part120.pow_zero_of_le",
+    "module": "PAG120",
+    "score": 0.601
+   },
+   {
+    "name": "PAG.Part120.divQ",
+    "module": "PAG120",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part32.pc_sq",
+    "module": "PAG32",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part133.Pc_sq",
+    "module": "PAG133",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part217.div_dual_eq",
+    "module": "PAG217",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part217.div_div_swap",
+    "module": "PAG217",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part216.gblock_shell",
+    "module": "PAG216",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part212.kdual_shell_eq",
+    "module": "PAG212",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part209.shell_eq",
+    "module": "PAG209",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part209.fine_eq",
+    "module": "PAG209",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part208.dual_shell_eq",
+    "module": "PAG208",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part202.dual_eq",
+    "module": "PAG202",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part49.ball_apply_zero",
+    "module": "PAG49",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part39.sum_dft",
+    "module": "PAG39",
+    "score": 0.432
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.sum_ker_stdAddChar",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part117.stdAddChar_mul_cast",
+    "module": "PAG117",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.633
+   },
+   {
+    "name": "PAG.Part14.stationary_phase",
+    "module": "PAG14",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part218.card_fix_eq_gcd",
+    "module": "PAG218",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part119.quad_root",
+    "module": "PAG119",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part140.exists_delta",
+    "module": "PAG140",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part152.e8_pow",
+    "module": "PAG152",
+    "score": 0.446
+   },
+   {
+    "name": "PAG.Part19.conv_shell_inv",
+    "module": "PAG19",
+    "score": 0.442
+   },
+   {
+    "name": "ZMod.stdAddChar.congr_simp",
+    "module": "PAG2",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part3.sum_neg_twist",
+    "module": "PAG3",
+    "score": 0.434
+   },
+   {
+    "name": "PAG.Part211.gbas_apply",
+    "module": "PAG211",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part120.quad_root_all",
+    "module": "PAG120",
+    "score": 0.43
+   },
+   {
+    "name": "PAG.Part119.quad_root'",
+    "module": "PAG119",
+    "score": 0.43
+   },
+   {
+    "name": "PAG.Part142.freq_mul",
+    "module": "PAG142",
+    "score": 0.427
+   },
+   {
+    "name": "PAG.Kloosterman.addChar_sum",
+    "module": "PAG2",
+    "score": 0.427
+   },
+   {
+    "name": "PAG.Part145.fiber_eq",
+    "module": "PAG145",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part121.sum_chr_mul",
+    "module": "PAG121",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part127.stdAddChar_pow_eq_one_iff",
+    "module": "PAG127",
+    "score": 0.424
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part262.x_mul_N",
+  "module": "PAG262",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part252.div_mul_eq_zero_of_dvd_val",
+    "module": "PAG252",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part251.mul_div_eq_zero_of_dvd",
+    "module": "PAG251",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part251.dvd_val_of_mul_eq_zero",
+    "module": "PAG251",
+    "score": 1.0
+   },
+   {
+    "name": "PAG.Part118.P_sq",
+    "module": "PAG118",
+    "score": 0.849
+   },
+   {
+    "name": "PAG.Part252.natCast_div_ne_zero",
+    "module": "PAG252",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part118.dvd_of_P_mul",
+    "module": "PAG118",
+    "score": 0.609
+   },
+   {
+    "name": "PAG.Part120.pow_zero_of_le",
+    "module": "PAG120",
+    "score": 0.601
+   },
+   {
+    "name": "PAG.Part120.divQ",
+    "module": "PAG120",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part32.pc_sq",
+    "module": "PAG32",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part133.Pc_sq",
+    "module": "PAG133",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part217.div_dual_eq",
+    "module": "PAG217",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part217.div_div_swap",
+    "module": "PAG217",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part216.gblock_shell",
+    "module": "PAG216",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part212.kdual_shell_eq",
+    "module": "PAG212",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part209.shell_eq",
+    "module": "PAG209",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part209.fine_eq",
+    "module": "PAG209",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part208.dual_shell_eq",
+    "module": "PAG208",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part202.dual_eq",
+    "module": "PAG202",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part49.ball_apply_zero",
+    "module": "PAG49",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part39.sum_dft",
+    "module": "PAG39",
+    "score": 0.432
+   }
+  ]
+ }
+]
