@@ -1,0 +1,25 @@
+== C2: archimedean epsilon by numerical local functional equation ==
+  chi_inf=1    T: psi=e(-x):  eps(s) for s=0.3,0.5,0.8 = +1.000000+0.000000i, +1.000000+0.000000i, +1.000000+0.000000i
+  chi_inf=1    C: psi=e(+x):  eps(s) for s=0.3,0.5,0.8 = +1.000000+0.000000i, +1.000000+0.000000i, +1.000000+0.000000i
+  chi_inf=sgn  T: psi=e(-x):  eps(s) for s=0.3,0.5,0.8 = +0.000000-1.000000i, +0.000000-1.000000i, +0.000000-1.000000i
+  chi_inf=sgn  C: psi=e(+x):  eps(s) for s=0.3,0.5,0.8 = +0.000000+1.000000i, +0.000000+1.000000i, +0.000000+1.000000i
+
+== C3/C4: local eps (LFE numerics vs Tate formula) and product vs tau ==
+  primitive characters tested: 2162 (moduli 1..100 and 120,128,135,180,243,256,360,400)
+  local eps: LFE numerics vs Tate formula, 6288 comparisons, max |diff| = 3.09e-13
+  C3 max |prod_T eps_p(0) - tau|, |prod_T eps_p(1/2) - tau/sqrtN| = 1.58e-13
+  C4 max |prod_C eps_p - xi(-1) tau| (s=0 and 1/2)            = 1.79e-12
+
+== C5 ==
+  conv T: max |eps_inf * prod eps_p(1/2) - W| = 1.79e-14
+  conv C: max |eps_inf * prod eps_p(1/2) - W| = 1.05e-13
+  mixed (T psi_p, C eps_inf): odd chars disagreeing 1082/1082 (all equal -W); even agreeing 1080/1080
+  independent check of W via theta transformation theta(1/t,xi) = W t^(a+1/2) theta(t,conj xi): max err 3.11e-13
+
+== C6 ==
+  max |eps(xi) - eps_T,inf| = 3.33e-14
+  max |sum xi(x) cas(2 pi x y/N) - eps(xi) tau(xi) conj(xi(y))| over all y = 4.24e-12
+
+== C6 control: imprimitive character (trivial char mod 4 induced from mod 1; char mod 12 induced from mod 3) ==
+  N=4: y with mismatch: [0, 2]
+  N=12: y with mismatch: [2, 4, 8, 10]
