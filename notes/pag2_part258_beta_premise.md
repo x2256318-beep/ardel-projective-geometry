@@ -1,4 +1,4 @@
-# アーデル射影幾何 — Part 258（PAG 2.0）：N ∣ M のとき、(i) φ(S) π^* = π^* S、(ii) φ(D_s)・φ(E_s) が D_t・E_t の線形結合、を満たす単位的な代数準同型 φ : A_N → A_M がある ⇔ gcd(N, M/N) = 1（登録の言葉では「方向βの前提」の判定。存在の側のテンソル積は既知、不存在の側は文献が見つからなかった）
+# アーデル射影幾何 — Part 258（PAG 2.0）：N, M ≥ 1、N ∣ M のとき、(i) φ(S) π^* = π^* S、(ii) φ(D_s) は D_t の、φ(E_s) は E_t の線形結合、を満たす単位的な代数準同型 φ : A_N → A_M がある ⇔ gcd(N, M/N) = 1（登録の言葉では「方向βの前提」の判定。存在の側のテンソル積は既知、不存在の側は文献が見つからなかった）
 
 2026-11-14 夜〜11-15。PAG262.lean（定理 23 個、定義 3 個）、step281.py（段階 2 の数値、13 組）。
 
@@ -57,8 +57,8 @@
 
 | 主張 | Lean | 数値（step281） | 新規性 |
 |---|---|---|---|
-| 互いに素な段の写像と条件 2・3 | `shellLift`・`crtConj_shellLift`・`shellLift_pull`・`shellLift_dind`・`shellLift_geps`・`shellLift_injective`・`exists_compatible_hom` | (2,6)・(3,6)・(2,10)・(3,12)・(4,12) で CRT の写像が条件を満たす（(4,12) の確認行は照合者 B の後に足した） | 既知＋確認 |
-| gcd > 1 で写像はない | `no_compatible_hom`（補助：`dTop_eTop_dTop`・`eTop_mul_self`・`exists_mulLeft_of_mem_span`・`exists_convL_of_mem_span`・`dft_const_on_shells`・`mem_ker_iff`・`sum_ker_stdAddChar`・`p_dvd_div_p`・`sq_x_eq_zero`・`x_mul_N`・`mul_x_ne_zero`・`conv_single`・`castHom_crt_symm`・`crtLin_pull`） | (2,4)・(2,8)・(3,9)・(4,8)・(6,12)・(2,12)・(6,18)・(9,27) で全数探索して 0 | 著者の判断事項 |
+| 互いに素な段の写像と条件 2・3 | `shellLift`・`crtConj_shellLift`・`shellLift_pull`（補助：`castHom_crt_symm`・`crtLin_pull`）・`shellLift_dind`・`shellLift_geps`・`shellLift_injective`・`exists_compatible_hom` | (2,6)・(3,6)・(2,10)・(3,12)・(4,12) で CRT の写像が条件を満たす（(4,12) の確認行は照合者 B の後に足した） | 既知＋確認 |
+| gcd > 1 で写像はない | `no_compatible_hom`（補助：`dTop_eTop_dTop`・`eTop_mul_self`・`exists_mulLeft_of_mem_span`・`exists_convL_of_mem_span`・`dft_const_on_shells`・`mem_ker_iff`・`sum_ker_stdAddChar`・`p_dvd_div_p`・`sq_x_eq_zero`・`x_mul_N`・`mul_x_ne_zero`・`conv_single`。前の鎖から `PAG.Part207.gcd_val_unit_mul`・`PAG.Part201.card_ker_cast`。照合 T の指摘で、存在の側の補助 2 つを上の行へ移した） | (2,4)・(2,8)・(3,9)・(4,8)・(6,12)・(2,12)・(6,18)・(9,27) で全数探索して 0 | 著者の判断事項 |
 | 二分法 | `exists_compatible_hom_iff` | 13 組すべてで一致 | 著者の判断事項 |
 | 単位元を保たない版 | Lean にしていない | 条件から自動的に単位元を保つ（数値） | — |
 | 互いに素な組で CRT 以外の写像もある | Lean にしていない | (2,6)・(2,10) で {1→2, 2→1}、(4,12) で {1→1, 2→4, 4→2}（ログは照合者 B の後に足した） | — |

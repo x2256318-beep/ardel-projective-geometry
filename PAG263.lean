@@ -15,8 +15,8 @@ Part 258（PAG262）の条件 (i)(ii)（`Compat`）：(i) φ(S) π^* = π^* S、
    `InLayer` で c = d = N とした場合と同じ（`udvd_iff_inLayer`、N > 0）。素数 p について p と p² の共通の上界がなく
    （`not_directed_udvd`）、したがって ℕ の上で有向でない（`not_isDirected_udvd`）。
 2. 生成元 D_s・E_s で一致する A_N からの代数準同型は等しい（`shellAlg_hom_ext`）。(i)(ii) の D の側から φ(D_s) は
-   一意に決まる（`compat_dind_unique`。文は N ∣ M だけを仮定するが、gcd(N, M/N) ≠ 1 なら Part 258 により (i)(ii) を
-   満たす φ はないので、その場合は空虚に真）。
+   一意に決まる（`compat_dind_unique`。文は N ∣ M だけを仮定する。Part 258 の不存在は (ii) の E の側も仮定する文なので、
+   gcd(N, M/N) ≠ 1 で (i) と D の側だけを満たす写像があるかは、Lean にも Part 258 にもない（照合 T の指摘で直した）。
 3. 一意性：(i)(ii)(iii) を満たす写像は高々 1 つ（`compatF_unique`）。これは φ(D_s) の一意性を (iii) で E の側へ
    運ぶだけの、ほぼ即座の帰結である（(ii) の E の側も互いに素も使わない）。同じ理由で (ii) の E の側は (i)、(ii) の
    D の側、(iii) から出る（`compatF_of_dind`）。内容があるのは存在の側：`shellLift`（φ(S) = S ⊗ 1）がフーリエと
@@ -35,7 +35,7 @@ Part 258（PAG262）の条件 (i)(ii)（`Compat`）：(i) φ(S) π^* = π^* S、
    (i)(ii) だけで一意で、(iii) が効くのは a が偶数のときだけと見られる（Lean にしていない）。
 6. 有向な部分系の例：素数の有限集合 S の積 N_S（無平方数）の段は、包含の順で `canon` により帰納系をなし
    （`DirectedSystem` のインスタンス）、ℂ 加群としての帰納極限 `sqLim` に各 A_{N_S} は単射で入る
-   （`sqLim_of_injective`。遷移写像の単射性 `compat_injective` からほぼ自動的に出る）。この系は、極大な有向部分系
+   （`sqLim_of_injective`。遷移写像の単射性 `compat_injective`（仮定は `Compat`、証明は (i) だけを使う）からほぼ自動的に出る）。この系は、極大な有向部分系
    （各素数の指数を 1 つに固定したもの）のうち指数がすべて 1 の場合にすぎず、A_{p^k}（k ≥ 2）を含まない。
 
 Lean にしていないこと：一意でない写像の個数（数値の観察では a が偶数なら 2^{d(b)−1}、奇数なら 1）、a が 2 以外の
@@ -145,7 +145,8 @@ theorem pull_self (f : ZMod N → ℂ) : PAG.Part201.pull (dvd_refl N) f = f := 
 omit [NeZero N] [NeZero M] in
 theorem pull_one (hNM : N ∣ M) : PAG.Part201.pull hNM (1 : ZMod N → ℂ) = 1 := rfl
 
-/-- **φ(D_s) は (i)(ii) の D の側から一意に決まる**（N ∣ M。互いに素は要らない）。 -/
+/-- **φ(D_s) は (i) と (ii) の D の側から一意に決まる**（文は N ∣ M だけを仮定する。gcd(N, M/N) ≠ 1 でこの前提を
+満たす写像があるかは未確認）。 -/
 theorem compat_dind_unique (hNM : N ∣ M) {φ ψ : shellAlg N →ₐ[ℂ] shellAlg M}
     (hφ1 : ∀ (S : shellAlg N) (f : ZMod N → ℂ),
       (φ S : Module.End ℂ (ZMod M → ℂ)) (PAG.Part201.pull hNM f) =
@@ -685,8 +686,9 @@ theorem twLift_ne_shellLift (hab : Nat.Coprime 2 b) (hb : 1 < b) : twLift hab �
     ZeroMemClass.coe_zero] at hΘ
   exact convL_geps_one_ne_zero (2 * b) hΘ
 
-/-- **(iii) を外すと一意でない**：gcd(2, b) = 1、1 < b のとき、Part 258 の条件 (i)(ii) を満たす
-A_2 → A_{2b} は少なくとも 2 つある（`shellLift` と φ'）。 -/
+/-- **(iii) を外すと一意でない場合がある（a = 2 の例）**：gcd(2, b) = 1、1 < b のとき、Part 258 の条件 (i)(ii) だけを
+課すと、それを満たす A_2 → A_{2b} は一意でない（`shellLift` と φ'。2 つあることは `compat_twLift`・`compatF_shellLift`・
+`twLift_ne_shellLift` による）。 -/
 theorem not_existsUnique_compat (hab : Nat.Coprime 2 b) (hb : 1 < b) :
     ¬ ∃! φ : shellAlg 2 →ₐ[ℂ] shellAlg (2 * b), Compat (dvd_mul_right 2 b) φ := by
   rintro ⟨φ, -, hu⟩
@@ -703,7 +705,7 @@ theorem pull_injective' (hNM : N ∣ M) : Function.Injective (PAG.Part201.pull h
   have : NeZero t := ⟨by rintro rfl; exact NeZero.ne (N * 0) (by simp)⟩
   exact PAG.Part206.pull_injective N t
 
-/-- (i) を満たす写像は単射。 -/
+/-- (i)(ii)（`Compat`）を満たす写像は単射（証明は (i) だけを使う）。 -/
 theorem compat_injective (hNM : N ∣ M) {φ : shellAlg N →ₐ[ℂ] shellAlg M} (hφ : Compat hNM φ) :
     Function.Injective φ := by
   intro S T h

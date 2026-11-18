@@ -12,22 +12,22 @@
 1. **一意な存在の二分法**（`existsUnique_compatF_iff`）。N ∣ M のとき、(i)(ii)(iii) を満たす単位的な代数準同型 A_N → A_M がちょうど 1 つあるのは、gcd(N, M/N) = 1 のとき、かつそのときに限る。
    - 互いに素な段では、その写像は `shellLift`（S ↦ S ⊗ 1）である（`compatF_iff_eq_shellLift`）。
    - 互いに素でない段で成り立たないのは、(i)(ii) を満たす写像が 1 つもないから（Part 258）であって、複数あるからではない。
-2. **(iii) を外すと一意でない場合がある**（`not_existsUnique_compat`）。gcd(2, b) = 1 かつ 1 < b のとき、(i)(ii) だけを満たす A_2 → A_{2b} は 2 つ以上ある。もう 1 つは、χ(x) = (−1)^x による A_2 の自己同型で捩った写像 `twLift` である。Lean が示すのはこの a = 2 の場合だけ。数値（9 組）では、a が奇数なら (i)(ii) だけで一意だった。
+2. **(iii) を外すと一意でない場合がある**（`not_existsUnique_compat`）。gcd(2, b) = 1 かつ 1 < b のとき、(i)(ii) だけを課すと、それを満たす A_2 → A_{2b} は 2 つ以上ある（`compat_twLift`・`compatF_shellLift`・`twLift_ne_shellLift`）。もう 1 つは、χ(x) = (−1)^x による A_2 の自己同型で捩った写像 `twLift` である。Lean が示すのはこの a = 2 の場合だけ。数値（9 組）では、a が奇数なら (i)(ii) だけで一意だった。
 3. **帰納系**（`canon_self`・`canon_comp`）。互いに素な段の標準の写像は、合成と両立する。
 4. **添字は有向でない**（`not_directed_udvd`・`not_isDirected_udvd`）。p と p² の両方の上に来る互いに素な段はない。互いに素な段は、古典的なユニタリ約数 N ∥ M の関係である（E. Cohen, Math. Z. 74 (1960) 66–80）。
 5. **有向な部分系の例**。素数の有限集合の積（無平方数）の段は、包含の順で帰納系をなす（`DirectedSystem` のインスタンス）。ℂ 加群としての帰納極限 `sqLim` に、各段は単射で入る（`sqLim_of_injective`）。
 
-規模：定理 67 個、定義 14 個、インスタンス 3 個。sorry 0、警告 0。公理は標準の範囲（[propext, Classical.choice, Quot.sound] または [propext, Quot.sound]）。
+規模：定理 67 個、定義 15 個（`def` 14 個と `abbrev` 1 個）、インスタンス 3 個。sorry 0、警告 0。公理は標準の範囲（[propext, Classical.choice, Quot.sound] または [propext, Quot.sound]）。
 
 ## §1 どこに内容があるか（照合 B の指摘を受けて）
 
-- **一意性（`compatF_unique`）は、ほぼ即座の帰結である。** (i) を定数 1 に当てると φ(D_s) が決まり（`compat_dind_unique`）、(iii) はそれを E の側に運ぶだけ。同じ理由で、(ii) の E の側は (i)、(ii) の D の側、(iii) から出る（`compatF_of_dind`）。
+- **一意性（`compatF_unique`）は、ほぼ即座の帰結である。** (ii) の D の側から φ(D_s) は掛け算の作用素で、(i) を定数 1 に当てるとそれが決まり（`compat_dind_unique`）、(iii) はそれを E の側に運ぶだけ。同じ理由で、(ii) の E の側は (i)、(ii) の D の側、(iii) から出る（`compatF_of_dind`）。
 - **内容があるのは次の 3 つである。**
   - 存在：`shellLift` がフーリエと両立すること（`shellLift_fC`）。
   - (iii) が外せないこと：a = 2 の捩れ。
   - 帰納系の添字の構造：有向でないこと、有向な部分系、単射性。
 - **(iii) は自然な条件である見込み**（照合 B の手計算、確信度：中〜高、Lean にしていない）。𝓕⁻¹ π^* 𝓕 は、双対側の部分群の埋め込みに沿った零延長 ι_* になる。そのため (i)(iii) から φ(S) ι_* = ι_* S が出る。逆向きも成り立つ見込み（確信度：中）。成り立てば、(iii) は「射影 π とその双対の埋め込み ι の両方と両立する」と言い換えられる。
-- **「互いに素は要らない」と書いた文について。** `compat_dind_unique`・`compatF_unique`・`compatF_comp` は N ∣ M だけを仮定する。しかし互いに素でなければ Part 258 により前提を満たす写像がないので、その場合は空虚に真である。
+- **「互いに素は要らない」と書いた文について。** `compat_dind_unique`・`compatF_unique`・`compatF_comp` は N ∣ M だけを仮定する。`compatF_unique`・`compatF_comp` は、互いに素でなければ Part 258 により前提を満たす写像がないので、その場合は空虚に真である。`compat_dind_unique` は (ii) の E の側を仮定しないので Part 258 は当てはまらず、gcd(N, M/N) ≠ 1 で前提を満たす写像があるかは未確認である（照合 T の指摘で直した。照合者の小さい数値では、(2,4)・(2,8)・(3,9) でそのような写像は見つからなかった。証明ではない）。
 
 ## §2 第5章への帰結（解釈。Lean の文ではない）
 
@@ -52,7 +52,7 @@
 - 使えたもの：Part 242 の `fourierConj`（D と E を入れ替える）、Part 228 の `shellAlg_eq_adjoin`、Part 254 の `Lvl` と `DirectedSystem`（関数のレベルの帰納系の前例）、Part 239・247 の `geps_self`。
 - 同じ主張は見つからなかった。
 
-**閉じる前の内部照合。** 全宣言 4424 件、TF-IDF の上位 20 件と照らして 3440 回、`#dupcheck`・`#defeqcheck` にかけ、言葉でも検索した。
+**閉じる前の内部照合。** 全宣言 4424 件、TF-IDF の上位 20 件と照らして 3440 回（対象 86 件＝定理・インスタンス 71、定義 15。定義も含めて両向きに数えた：86·20·2）、`#dupcheck`・`#defeqcheck` にかけ、言葉でも検索した。
 - `pull_injective'` は、Part 202 の `pull_injective`（M = N·t の形）から出す形に直した。
 - `pull_pull` は、Part 192 の `castHom_castHom` から出す形に直した。
 - `UDvd` は、Part 216 の層 `InLayer` で c = d = N とした場合と同じだった。一致を示す定理（`udvd_iff_inLayer`）を足した。

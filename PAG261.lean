@@ -336,7 +336,7 @@ theorem isPrimitive_listChar_iff (χ : ∀ i, DirichletCharacter ℂ (N i)) (l :
     simp
 
 omit [DecidableEq ι] in
-/-- 成分がすべて原始なら、UA1 の固有値 phaseA1 も同じ式で分かれる（原始でない指標では、phaseA1 は一般には W と違う。これは Lean の外）。 -/
+/-- 法がどの 2 つも互いに素で（`hl`）、成分がすべて原始なら、UA1 の固有値 phaseA1 も同じ式で分かれる（原始でない指標では、phaseA1 は一般には W と違う。これは Lean の外）。 -/
 theorem phaseA1_listChar (χ : ∀ i, DirichletCharacter ℂ (N i)) (l : List ι)
     (hl : l.Pairwise fun i j => (N i).Coprime (N j)) (hp : ∀ i ∈ l, (χ i).IsPrimitive) :
     PAG.Part258.phaseA1 (listChar χ l) =

@@ -770,6 +770,8 @@
 
 - **Part 259（PAG263.lean、2026-11-15、著者の指示「Lean」）**：互いに素な段（ユニタリ約数）の写像。(i)(ii) に (iii) フーリエとの両立を足すと、N ∣ M で写像がちょうど 1 つある ⇔ gcd(N, M/N) = 1（`existsUnique_compatF_iff`、それは `shellLift`）。一意性自体は (iii) からほぼ即座（内容は存在 `shellLift_fC`）。(iii) を外すと a = 2 で一意でない（`not_existsUnique_compat`、χ(x) = (−1)^x の捩れ `twLift`。数値では a が奇数なら一意、Lean なし）。標準の写像は合成と両立（`canon_comp`）。順序は有向でない（`not_isDirected_udvd`）。無平方数の段の帰納系と ℂ 加群の極限 `sqLim`（各段は単射で入る）。定理 67 個。ノート `pag2_part259_unitary_step_maps.md`、R1 の査定 `pag2_R1_assessment.md`。独立照合 B の後の直しは照合を受けていない。ラベルは［再導出（小さい）］の見込み、文献照合は未了（著者側）。
 
+- **尾の統合照合（2026-11-18、補足 11 の独立の納品物）**：F3 の後の記録の直し、Part 258・259 の照合者 B の後の直し、Part 259 のノートと xlsx を、形式文の全文を渡した照合者 T が 1 回で照らした。偽・空虚な形式文はなし。食い違い 2 件（PAG263 の「`compat_dind_unique` は Part 258 により空虚に真」の根拠の誤り、Part 258 のノートの表の補助の行の誤り）ほかを、主張を変えない直しで直し、尾の台帳は空になった（記録 `notes/pag2_tail_audit_20261118.md`、`records/tail_audit/`、xlsx final81）。開いたまま残る問い：gcd ≠ 1 で (i) と D の側だけを満たす写像の不存在（数値の見込みのみ）。
+
 ## 点検（2026-10-24、Part 204 の後）
 - 全体の再ビルド：PAG.lean〜PAG208.lean（208 本）を空のディレクトリで最初からコンパイルし直した。208 本すべて成功、エラー・警告 0、約 10 分。#print axioms 1903 項目すべて標準の公理（またはその一部）。作業用の .out と 208/208 一致。
 - ソースに sorry・admit・axiom 宣言・native_decide・implemented_by などはない（コメントを除いて検索）。
