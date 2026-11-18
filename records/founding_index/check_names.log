@@ -7,6 +7,7 @@ ok  PAG.Part201.zket_pull
 ok  PAG.Part206.dft_pull_apply
 ok  PAG.Part206.oldP_eq_self_iff
 ok  PAG.Part218.shellAlg
+ok  PAG.Part220.InLayer
 ok  PAG.Part23.Compat
 ok  PAG.Part23.W
 ok  PAG.Part232.leftHom
@@ -100,4 +101,4 @@ ok  PAG.Part27.Wproj
 ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
-合計 102 件、確認 102、見つからない 0
+合計 103 件、確認 103、見つからない 0
