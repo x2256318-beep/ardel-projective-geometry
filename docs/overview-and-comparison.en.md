@@ -99,6 +99,7 @@ Here $A_N$ is the shell algebra, which is the same as the known Terwilliger alge
 **Open questions**
 
 - How to formulate the "projection" in the name (the operation fusing the adelic and the idelic sides) as a specific map or construction.
+  - Candidate reading (construction side, 2026-11-18, awaiting the author's confirmation): read the "projection" as a combination of three layers. The stage is the projective line P¹ (Parts 19–28; inversion swaps 0 and ∞). The transform is the composition of inversion (the multiplicative side) and a Fourier-type additive transform (the additive side); at the finite level this is $J \circ H_N$ of Part 252. The phase is a local factor for primitive characters: with the Hartley kernel of Part 252 it is $\tau(\chi)/(i^a\sqrt N)$ (the root number for primitive χ; that identification is outside Lean), and with the plain Fourier kernel $e(xy)$ it is $\tau(\chi)/\sqrt N$ (differing by a factor $i$ for odd characters, and also depending on the sign of the kernel). Which kernel to use, and whether $i^a$ can be read as a factor from the infinite place, are not yet checked against the literature. Axiom A1 remains a postulate that chooses the phase of the boundary unitary to be this value. All ingredients are known, and this is not made a new Part (`notes/pag2_projection_material.md`, Japanese).
 - Whether the finite-level inductive system reaches the side of $T(0)$ (literature check for direction γ).
 - Whether the operation of resolution needs a formulation beyond L1.
 - Drafting the foundational document (author's side).
