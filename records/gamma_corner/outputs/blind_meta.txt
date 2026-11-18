@@ -1,0 +1,3 @@
+盲検の問いテスト（方向 γ の立て直し、2026-11-19）：general-purpose の新しいエージェント、WebSearch・WebFetch だけ（ツール 38 回、約 773 秒）。
+依頼文は prompt_blind.md（プロジェクトの言葉と私の数値・見込みを除いた定義と Q1〜Q5）。予想は expected_note.md に先に書いた。
+出力は blind_output.md（通知の本文をそのまま写した）。

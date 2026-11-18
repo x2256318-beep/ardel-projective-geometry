@@ -1,0 +1,16 @@
+p=2 e'=1 → e=1: dimA_R'=4 dimA_R=4 像⊂A_R True φ(E)は E のどれか True dim像=4 dim角=4
+p=2 e'=1 → e=2: dimA_R'=4 dimA_R=10 像⊂A_R True φ(E)は E のどれか True dim像=4 dim角=4
+p=2 e'=2 → e=2: dimA_R'=10 dimA_R=10 像⊂A_R True φ(E)は E のどれか True dim像=10 dim角=10
+p=2 e'=1 → e=3: dimA_R'=4 dimA_R=19 像⊂A_R True φ(E)は E のどれか True dim像=4 dim角=4
+p=2 e'=2 → e=3: dimA_R'=10 dimA_R=19 像⊂A_R True φ(E)は E のどれか True dim像=10 dim角=10
+p=2 e'=3 → e=3: dimA_R'=19 dimA_R=19 像⊂A_R True φ(E)は E のどれか True dim像=19 dim角=19
+p=2 e'=1 → e=4: dimA_R'=4 dimA_R=31 像⊂A_R True φ(E)は E のどれか True dim像=4 dim角=4
+p=2 e'=2 → e=4: dimA_R'=10 dimA_R=31 像⊂A_R True φ(E)は E のどれか True dim像=10 dim角=10
+p=2 e'=3 → e=4: dimA_R'=19 dimA_R=31 像⊂A_R True φ(E)は E のどれか True dim像=19 dim角=19
+p=2 e'=4 → e=4: dimA_R'=31 dimA_R=31 像⊂A_R True φ(E)は E のどれか True dim像=31 dim角=31
+p=3 e'=1 → e=1: dimA_R'=5 dimA_R=5 像⊂A_R True φ(E)は E のどれか True dim像=5 dim角=5
+p=3 e'=1 → e=2: dimA_R'=5 dimA_R=12 像⊂A_R True φ(E)は E のどれか True dim像=5 dim角=5
+p=3 e'=2 → e=2: dimA_R'=12 dimA_R=12 像⊂A_R True φ(E)は E のどれか True dim像=12 dim角=12
+p=3 e'=1 → e=3: dimA_R'=5 dimA_R=22 像⊂A_R True φ(E)は E のどれか True dim像=5 dim角=5
+p=3 e'=2 → e=3: dimA_R'=12 dimA_R=22 像⊂A_R True φ(E)は E のどれか True dim像=12 dim角=12
+p=3 e'=3 → e=3: dimA_R'=22 dimA_R=22 像⊂A_R True φ(E)は E のどれか True dim像=22 dim角=22
