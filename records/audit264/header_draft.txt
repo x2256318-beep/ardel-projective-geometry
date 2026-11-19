@@ -1,0 +1,64 @@
+/-
+アーデル射影幾何 — PAG264（短期層の小さいノート、2026-11-19）：角の写像 A_N → A_M（N ∣ M、単位元を保たない代数準同型）
+
+問いの出所：方向 γ の立て直しの推薦案（`pag2_gamma_corner_preregistration.md` §4）。2026-11-19 09:37 に著者が採用した。
+基礎文書の第 5 章（索引 5.2 の留保「代数版にはならない」）と第 6 章 6.3（Bost–Connes との接続）の材料。新しいパートではない。
+
+記号：A_N = `shellAlg N`、D_s = mulLeft(dind N s)、E_s = convL(geps N s)、π^* = `pull`（Part 197）、P = `oldP`（Part 202、旧部分への射影）。
+定義：
+- `fsum h`（h : N ∣ M）：繊維の和 π_* g(x) = Σ_{π y = x} g(y)。
+- `cornerOp h S = (N/M)·π^* ∘ S ∘ π_*`。ι = π^*/√(M/N) とおくと ι S ι^† に当たる。√ は使っていない。
+- `cornerHom h : shellAlg N →ₙₐ[ℂ] shellAlg M`。単位元を保たない代数準同型。
+
+Lean の文：
+1. 一般の S ∈ End(ℂ^{ℤ/N})：
+   - π_*(π^* f) = (M/N)·f（`fsum_pull`）。
+   - 引き戻しと両立 φ(S) π^* = π^* S（`cornerOp_pull`）。
+   - 積（`cornerOp_mul`）、和・スカラー倍・0（`cornerOp_add`・`cornerOp_smul`・`cornerOp_zero`）。
+   - 像は φ(1) の角に入る：φ(1)φ(S) = φ(S) = φ(S)φ(1)（`cornerOp_one_mul`・`cornerOp_mul_one`）。
+   - 単射（`cornerOp_injective`）。
+   - φ(1)(δ₀)(0) = N/M（`cornerOp_one_single`）なので、N < M なら φ(1) ≠ 1（`cornerOp_one_ne_one`）。
+2. M = N·t の形（Part 202 の P を使う）：
+   - π^*(π_* g) = t·P g（`pull_fsum`）。
+   - φ(1) = P（`cornerOp_one_apply`）。
+   - ε_{ts} ⋆ P g = ε_{ts} ⋆ g（`conv_geps_oldP`）。
+   - φ(E_s) = E_{ts}（`cornerOp_geps_mul`）。
+3. 一般の N ∣ M：
+   - φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E_s（`cornerOp_one`）。
+   - φ(E_s) = E_{(M/N)s}（`cornerOp_geps`）。
+   - π^* 1_{D_s} = Σ_{u ∣ M, gcd(u, N) = s} 1_{D_u}（`pull_dind`）。
+   - φ(D_s) = (π^* 1_{D_s} の掛け算)·φ(1)（`cornerOp_dind`）。
+   - φ は A_N を A_M に送る（`cornerOp_mem`）。gcd(N, M/N) は仮定にない。
+   - まとめたものが `cornerHom`（値は `cornerHom_coe`）。
+4. 一意性と合成：
+   - (i) すべての S, f で φ(S)(π^* f) = π^*(S f)、(ii) φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E_s。この 2 つを満たす単位元を保たない代数準同型 A_N → A_M は、ちょうど 1 つ（`existsUnique_corner`）。
+   - 繊維の和の合成（`fsum_trans`）。
+   - φ_{M,L} ∘ φ_{N,M} = φ_{N,L}（`cornerOp_comp`・`cornerHom_comp`。引き戻しの合成は Part 259 の `pull_pull`）。
+   - 単射（`cornerHom_injective`）。N < M なら φ(1) ≠ 1（`cornerHom_one_ne_one`）。
+5. D 側（(N, M) = (2, 4) の証人）：φ(D_2) は D_t の線形結合でない（`cornerOp_dind_not_mem_span`）。
+   - Part 258 の条件 (ii)（強い読み）の D 側を満たさない。
+   - E 側は φ(E_s) = E_{(M/N)s} なので満たす。
+
+範囲（Lean にしていないもの）：
+- 像が角全体であること：φ(A_N) = φ(1) A_M φ(1)。数値 111 組と手計算があり、三重正則性（文献）からの短い帰結の見込み。
+- 整除の順序全体の帰納系の極限の対象。合成の文からは組めるが、極限は Lean にしていない。
+- Bost–Connes の ρ との対応（数値と手計算）。
+- 一般の N < M で D 側が殻の span に入らないこと（数値のみ）。
+- 関数体の対照群（数値）。
+
+位置づけ（閉鎖時に確定）：
+- E 側の像は、Bose–Mesner 代数の商スキームの古典的事実（べき等元による角）の作用素版。
+- A_N を A_M に送ること・一意性・合成は［再導出（小さい）］の見込み。T(0) 版の文献は、盲検では見つからなかった（確信度：低〜中）。
+- 対照群（関数体）でも成り立つ（数値）ので、算術の内容ではない。
+- A1 とは関係しない。
+
+内部照合：
+- 着手前（言葉の検索）：商に沿った単位元を保たない写像 A_N → A_M の宣言は、鎖になかった（網羅ではない）。Part 202 の `oldP` 系（Q = P、Σ E_t への分解、`geps_conv_pull`）を使った。
+- 閉じる前（機械的、全宣言 4470 件、PAG264 の 46 件、候補上位 20、計 1740 回）：
+  - 一致と出たのは `cornerOp_apply` と Part 197 の `pull_smul` の 1 組だけ。どちらも定義を展開すると等しくなる式で、中身の重複ではない。
+  - 候補の上位を言葉で確かめて、下書きの次の 2 つを消した。
+    - `pull_trans`：Part 259（PAG263）の `pull_pull` と向きが逆の同じ文（A）。
+    - `apply_single_two_of_mem_span`：Part 258（PAG262）の `exists_mulLeft_of_mem_span` から直ちに出る（B）。
+  - 単射の証明は Part 259 の `pull_injective'` を使う形に直した。
+- 2 回目（4468 件、44 件、1660 回）：上の定義の展開の 1 組だけ。
+-/

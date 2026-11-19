@@ -1,0 +1,3 @@
+再照合（直した文面、PAG264、2026-11-19）：general-purpose の新しいエージェント、Read 1 回（input_recheck.md の全文）、約 251 秒。
+依頼文は request_recheck.md。入力は input_recheck.md（冒頭の説明 header_final.txt、ノートの §1〜§3、形式文と定義）。
+出力は recheck_output.md（通知の本文を写した。宣言名の列挙だけ省略）。
