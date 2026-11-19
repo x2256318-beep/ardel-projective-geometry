@@ -22,7 +22,7 @@ Lean の文：
    - 積（`cornerOp_mul`）、和・スカラー倍・0（`cornerOp_add`・`cornerOp_smul`・`cornerOp_zero`）。
    - φ(1)φ(S) = φ(S) = φ(S)φ(1)（`cornerOp_one_mul`・`cornerOp_mul_one`）。
    - 単射（`cornerOp_injective`）。
-   - φ(1)(δ₀)(0) = N/M（`cornerOp_one_single`）。N < M なら φ(1) ≠ 1（`cornerOp_one_ne_one`）。
+   - φ(1)(δ₀)(0) = N/M（`cornerOp_one_single`）。N < M なら φ(1) ≠ 1（`cornerOp_one_ne_one`）。N = M では φ(1) = 1（4 の恒等の法則）なので、N ∣ M のもとで φ(1) ≠ 1 ⟺ N < M（直ちに出る。単独の宣言はない）。
 2. M = N·t の形：
    - π^*(π_* g) = t·P g（`pull_fsum`）。
    - φ(1) = P（`cornerOp_one_apply`）。
@@ -37,15 +37,17 @@ Lean の文：
    - まとめたものが `cornerHom`（値は `cornerHom_coe`）。
    - 像が φ(1) の角に入ること（⊆）は、`cornerOp_mem`・`cornerOp_one_mem`・`cornerOp_one_mul`・`cornerOp_mul_one` から直ちに出る（単独の宣言はない）。
 4. 一意性と合成：
-   - (a) すべての S, f で φ(S)(π^* f) = π^*(S f)、(b) φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E^{(M)}_s。
+   - (a) すべての S ∈ A_N と f で φ(S)(π^* f) = π^*(S f)、(b) φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E^{(M)}_s。
    - (a)(b) を満たす非単位的な代数準同型 A_N → A_M（`→ₙₐ` の中で）は、ちょうど 1 つ（`existsUnique_corner`）。
    - 一意性の証明は φ(S) = φ(S)φ(1) と (a)(b) だけを使う短い議論で、引き戻しとの両立だけで決まるという文ではない。
-   - 独立照合の手計算の反例（Lean にしていない）：(b) を外すと一意でない（(N, M) = (1,2) で φ'(c) = c·1 も (a) を満たす）。(a) を外しても、積を保つことを外しても一意でない。
+   - 独立照合の手計算の反例（Lean にしていない）：(b) を外すと一意でない（(N, M) = (1,2) で φ'(c) = c·1 も (a) を満たす）。(a) を外しても、積を保つことを外しても一意でない（どちらも (2,4) の例。(1,2) では A_1 = ℂ なので (b) だけで決まる）。
    - 繊維の和の合成（`fsum_trans`）。
    - N ∣ M ∣ L で φ_{M,L} ∘ φ_{N,M} = φ_{N,L}（`cornerOp_comp`・`cornerHom_comp`）。引き戻しの合成は Part 259（PAG263）の `pull_pull`。
    - 単射（`cornerHom_injective`）。N < M なら cornerHom(1) ≠ 1（`cornerHom_one_ne_one`）。
+   - 恒等の法則（2026-11-19 午後に追加）：N → N の繊維の和は恒等（`fsum_self`）、φ_{N,N} = id（`cornerOp_self`・`cornerHom_self`。引き戻しの恒等は Part 259（PAG263）の `pull_self`）。
+   - 合成の法則と恒等の法則が揃ったので、(A_N, φ_{N,M}) は正の整数の整除の順序（N ∣ M）の上で、帰納系の 2 法則を満たす。Mathlib の `DirectedSystem` としての束ねと、極限の対象は Lean にしていない。
 5. D 側の証人：(N, M) = (2, 4) で、φ(D^{(2)}_2) は D^{(4)}_u の線形結合でない（`cornerOp_dind_not_mem_span`）。
-   - Part 258（PAG262）の殻を混ぜない条件（強い読み）の D 側を満たさない。E 側は 3 の φ(E^{(N)}_s) = E^{(M)}_{(M/N)s} から満たす。
+   - Part 258（PAG262）の殻を混ぜない条件（強い読み：φ(D_s) は D_t の、φ(E_s) は E_t の線形結合）の D 側を満たさない。E 側は 3 の φ(E^{(N)}_s) = E^{(M)}_{(M/N)s} から満たす（直ちに出る。単独の宣言はない）。
    - この現象は素数冪の段に固有ではない。N ∣ M、N < M なら、すべての s ∣ N で φ(D^{(N)}_s) は D^{(M)}_u の span に入らない。
      - 数値：M ≤ 30 の N < M の 81 組。
      - 手計算：(1,2)・(2,6)、独立照合。
@@ -53,21 +55,21 @@ Lean の文：
 
 範囲（Lean にしていないもの）：
 - 像が角全体であること（φ(1) A_M φ(1) ⊆ φ(A_N) の側）。
-  - 数値：111 組。
+  - 数値：M ≤ 30 で N ∣ M の 111 組（N = M の 30 組を含み、その 30 組は `cornerHom_self` から直ちに出る。自明でないのは N < M の 81 組）。
   - 手計算：構築側と盲検が一致。三重正則性（文献）からの短い帰結の見込み。
-- 恒等の法則 φ_{N,N} = id（照合者の手計算では N = M で π^*・π_* が恒等なので φ = id）。帰納系としての組み立てと、その極限。
+- 帰納系の `DirectedSystem` としての束ねと、その極限 A_∞（有限次元の代数の和集合。完備化は解像度が落ちる側の操作と読む）。
 - Bost–Connes の ρ との対応（数値と手計算）。
-- 随伴を保つこと φ(S^*) = φ(S)^*（行列の形からの手計算）。
+- 随伴を保つこと φ(S^*) = φ(S)^*（独立照合の照合者による、行列の形からの手計算）。
 - 対照群 F_p[t]/(t^e) → F_p[t]/(t^{e'})（数値。ℤ/p^e の段に当たる場合だけを試した）。
 
 位置づけ（ラベル）：
 - ［既知］：E 側の像 φ(E^{(N)}_s) = E^{(M)}_{(M/N)s} と φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E^{(M)}_s。
   - Bose–Mesner 代数の商スキームの古典的事実（べき等元による角。Zieschang 2005、Kodalen 2019 §2.5）の作用素版。
   - 関数のレベルは Part 202（PAG206）。
-- ［再導出（小さい）］：A_N を A_M に送ること、非単位的であること（N < M）、単射、一意性、合成、D 側の証人。
+- ［再導出（小さい）］：A_N を A_M に送ること、非単位的であること（N < M）、単射、一意性、合成、恒等の法則、D 側の証人。
   - 初等的な議論。
   - T(0) 版の文献は、盲検の問いテスト（2026-11-19）では見つからなかった（確信度：低〜中。MathSciNet・zbMATH は未実施）。
-- 新規候補はない。対照群でも成り立つ（数値）ので、算術の内容ではない。
+- 新規候補はない。対照群は、ℤ/p^e の段に当たる場合（F_p[t]/(t^e) → F_p[t]/(t^{e'})。関数体そのものではない）に限って同じ文が成り立つ（数値）。互いに素な段は試していない。盲検の手計算では、使うのは平行移動スキームの形式（商とフーリエ双対）だけ。ℚ に固有の算術の内容は、試した範囲では見つかっていない。
 - A1 とは関係しない。
 
 内部照合：
@@ -82,15 +84,18 @@ Lean の文：
     - `apply_single_two_of_mem_span`：Part 258（PAG262）の `exists_mulLeft_of_mem_span` から直ちに出る（B）。
   - 単射の証明は Part 259（PAG263）の `pull_injective'` を使う形に直した。
 - 2 回目：全宣言 4468 件、対象 44 件（定理 39・定義 5）、39·20·2 + 5·20 = 1660 回。上の定義の展開の 1 組だけ。
-- 宣言は定理 37・定義 5 で、自動生成の宣言は数えない。
+- 3 回目（午後、恒等の法則の 3 つ）：全宣言 4471 件、対象 3 件、候補上位 20、3·20·2 = 120 回。一致なし。
+- 宣言は定理 40・定義 5（午後に 3 つを足した）。自動生成の宣言は数えない。
 - 「見つからなかった」は「重複はない」ではない。
 
-照合：
+照合（記録は `records/audit264/`）：
 - 独立照合（形式文と定義だけ）：偽・空虚な文はなかった。除去テストの反例を文面に反映した。
-- 直した文面の再照合で、7 点の指摘を受けて直した。
-  - 直した内容：非単位的の言い方、恒等の法則が Lean の外であること、条件の記号 (a)(b)、M = N·t の形、D 側の量化と根拠、水準の明示、件数の内訳、対照群の範囲。
-  - 再照合の後のこの直しは、主張を狭めるか明確にするもので、照合を受けていない（尾。次の統合照合の対象）。
-- 記録は `records/audit264/`。
+- 直した文面の再照合で、7 点の指摘を受けて直した：(1) 非単位的の言い方、(2) 「帰納系をなす」を外し恒等の法則を Lean の外と書いた、(3) M = N·t の形、(4) D 側の量化と根拠、(5) 三重正則性を「見込み」に、(6) ι S ι^† は読み、(7) 条件の記号 (a)(b)。ほかに水準の明示・件数の内訳・対照群の範囲・PAG 番号を直した。
+- 午後に恒等の法則を Lean に入れたので、(2) の「恒等の法則は Lean の外」は置き換えた。
+- 統合照合（恒等の法則の 3 定理と、再照合の後の直しの尾をまとめて 1 回）：
+  - 足した 3 定理は意図どおりで、宣言名・記号の取り違えはなかった。
+  - 散文のずれ 11 点を直した：N = M の文、件数、(2) の置き換えの注記、対照群の結論、反例の組、span の対象、正の整数、S ∈ A_N、⊆ の注記、7 点の列挙、随伴の根拠。
+  - 統合照合の後のこの直しは、主張を狭めるか明確にするもの（強める直しはない）。補足8の停止の規約の範囲として、尾の台帳は空とする。
 -/
 import PAG263
 
@@ -474,6 +479,22 @@ theorem cornerHom_comp {L : ℕ} [NeZero L] (h1 : N ∣ M) (h2 : M ∣ L) :
   apply Subtype.ext
   exact cornerOp_comp h1 h2 S
 
+/-- 恒等の法則の補助：N → N の繊維の和は恒等。 -/
+theorem fsum_self (g : ZMod N → ℂ) : fsum (dvd_refl N) g = g := by
+  funext x
+  simp [fsum, Finset.sum_filter]
+
+/-- **4e. 恒等の法則**：φ_{N,N} = id（引き戻しの恒等は Part 259 の `pull_self`）。 -/
+theorem cornerOp_self (S : Module.End ℂ (ZMod N → ℂ)) : cornerOp (dvd_refl N) S = S := by
+  have hN : (N : ℂ) ≠ 0 := Nat.cast_ne_zero.mpr (NeZero.ne N)
+  apply LinearMap.ext; intro g
+  rw [cornerOp_apply, fsum_self, PAG.Part263.pull_self, div_self hN, one_smul]
+
+theorem cornerHom_self : cornerHom (dvd_refl N) = NonUnitalAlgHom.id ℂ (shellAlg N) := by
+  apply NonUnitalAlgHom.ext; intro S
+  apply Subtype.ext
+  exact cornerOp_self (S : Module.End ℂ (ZMod N → ℂ))
+
 /-- **4c.** φ は単射。 -/
 theorem cornerHom_injective (h : N ∣ M) : Function.Injective (cornerHom h) :=
   fun _ _ hST => Subtype.ext (cornerOp_injective h (congrArg Subtype.val hST))
@@ -537,6 +558,9 @@ end PAG.Part264
 #print axioms PAG.Part264.fsum_trans
 #print axioms PAG.Part264.cornerOp_comp
 #print axioms PAG.Part264.cornerHom_comp
+#print axioms PAG.Part264.fsum_self
+#print axioms PAG.Part264.cornerOp_self
+#print axioms PAG.Part264.cornerHom_self
 #print axioms PAG.Part264.cornerHom_injective
 #print axioms PAG.Part264.cornerHom_one_ne_one
 #print axioms PAG.Part264.cornerOp_dind_not_mem_span

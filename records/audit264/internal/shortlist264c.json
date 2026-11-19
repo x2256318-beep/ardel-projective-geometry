@@ -1,0 +1,5031 @@
+[
+ {
+  "target": "PAG.Part264.card_fiber",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.713
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.695
+   },
+   {
+    "name": "PAG.Part218.card_fix_eq_gcd",
+    "module": "PAG218",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.57
+   },
+   {
+    "name": "PAG.Part244.card_stab_mul_totient",
+    "module": "PAG244",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part244.sum_units_mul",
+    "module": "PAG244",
+    "score": 0.522
+   },
+   {
+    "name": "PAG.Part244.card_fiber_eq",
+    "module": "PAG244",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.515
+   },
+   {
+    "name": "PAG.Part205.card_dsh",
+    "module": "PAG205",
+    "score": 0.513
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part245.card_filter_totient_eq_one",
+    "module": "PAG245",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part214.card_isUnit_castHom",
+    "module": "PAG214",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part246.card_divisors_primePow",
+    "module": "PAG246",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part214.card_isUnit",
+    "module": "PAG214",
+    "score": 0.415
+   },
+   {
+    "name": "PAG.Part202.fiber_of_power_sums",
+    "module": "PAG202",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part145.card_units_filter",
+    "module": "PAG145",
+    "score": 0.385
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.373
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.conv_geps_oldP",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part206.oldP_eq_sum",
+    "module": "PAG206",
+    "score": 0.873
+   },
+   {
+    "name": "PAG.Part206.dft_oldP",
+    "module": "PAG206",
+    "score": 0.847
+   },
+   {
+    "name": "PAG.Part209.oldP_gbas",
+    "module": "PAG209",
+    "score": 0.818
+   },
+   {
+    "name": "PAG.Part206.oldP_idem",
+    "module": "PAG206",
+    "score": 0.8
+   },
+   {
+    "name": "PAG.Part206.oldP.congr_simp",
+    "module": "PAG206",
+    "score": 0.8
+   },
+   {
+    "name": "PAG.Part209.oldP_sum_smul",
+    "module": "PAG209",
+    "score": 0.786
+   },
+   {
+    "name": "PAG.Part206.sub_oldP_eq_sum",
+    "module": "PAG206",
+    "score": 0.739
+   },
+   {
+    "name": "PAG.Part206.oldP_selfAdjoint",
+    "module": "PAG206",
+    "score": 0.73
+   },
+   {
+    "name": "PAG.Part206.oldP_orth",
+    "module": "PAG206",
+    "score": 0.689
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.581
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.576
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.563
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_of_dvd",
+    "module": "PAG206",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part243.conv_geps_self",
+    "module": "PAG243",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part205.dft_ball",
+    "module": "PAG205",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part243.conv_geps_dind",
+    "module": "PAG243",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part206.oldP_gket",
+    "module": "PAG206",
+    "score": 0.52
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_eq_zero_iff",
+    "module": "PAG206",
+    "score": 0.502
+   },
+   {
+    "name": "PAG.Part263.conv_geps_self_const",
+    "module": "PAG263",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part243.ramMat_mul_coprime",
+    "module": "PAG243",
+    "score": 0.499
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerHom",
+  "module": "PAG264",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part243.radialSection",
+    "module": "PAG243",
+    "score": 0.405
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.374
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.32
+   },
+   {
+    "name": "PAG.Part263.Compat",
+    "module": "PAG263",
+    "score": 0.318
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.309
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.281
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.279
+   },
+   {
+    "name": "PAG.Part263.fC",
+    "module": "PAG263",
+    "score": 0.279
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part263.CompatF",
+    "module": "PAG263",
+    "score": 0.259
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.259
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.257
+   },
+   {
+    "name": "PAG.Part250.dualAddEAlg",
+    "module": "PAG250",
+    "score": 0.257
+   },
+   {
+    "name": "PAG.Part263.twist2",
+    "module": "PAG263",
+    "score": 0.252
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.252
+   },
+   {
+    "name": "PAG.Part250.addEAlg",
+    "module": "PAG250",
+    "score": 0.25
+   },
+   {
+    "name": "PAG.Part263.canon",
+    "module": "PAG263",
+    "score": 0.243
+   },
+   {
+    "name": "PAG.Part244.shellAvg",
+    "module": "PAG244",
+    "score": 0.241
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerHom_coe",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.405
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.403
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.403
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.381
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.375
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.372
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.364
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.357
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.351
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerHom_comp",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.377
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.347
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.334
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.334
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.333
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.332
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.33
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.33
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.327
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.327
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerHom_injective",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.527
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.402
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.4
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.4
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.379
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.373
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.368
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.368
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.362
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.355
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.352
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.351
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.349
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.349
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.349
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.349
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerHom_one_ne_one",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part263.one_sub_eTop_const",
+    "module": "PAG263",
+    "score": 0.399
+   },
+   {
+    "name": "PAG.Part263.one_sub_eTop_eq",
+    "module": "PAG263",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.391
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.385
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.385
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.364
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.355
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_lt_shellAlg",
+    "module": "PAG246",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_primePow_odd",
+    "module": "PAG246",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_two_pow",
+    "module": "PAG246",
+    "score": 0.343
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.342
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.342
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.341
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.34
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.339
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerHom_self",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.478
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.395
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.372
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.366
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.363
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.355
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.349
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.343
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.342
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.342
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.342
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp",
+  "module": "PAG264",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull",
+    "module": "PAG201",
+    "score": 0.246
+   },
+   {
+    "name": "PAG.Part238.blockSum",
+    "module": "PAG238",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part227.matSum",
+    "module": "PAG227",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part237.gaugeUnit",
+    "module": "PAG237",
+    "score": 0.19
+   },
+   {
+    "name": "PAG.Part244.unitAvg",
+    "module": "PAG244",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.17
+   },
+   {
+    "name": "PAG.Part227.matUnit",
+    "module": "PAG227",
+    "score": 0.169
+   },
+   {
+    "name": "PAG.Part227.matSumL",
+    "module": "PAG227",
+    "score": 0.165
+   },
+   {
+    "name": "PAG.Part244.shellAvg",
+    "module": "PAG244",
+    "score": 0.162
+   },
+   {
+    "name": "PAG.Part218.blockProjL",
+    "module": "PAG218",
+    "score": 0.154
+   },
+   {
+    "name": "PAG.Part223.blockHomExt",
+    "module": "PAG223",
+    "score": 0.154
+   },
+   {
+    "name": "PAG.Part226.centralElt",
+    "module": "PAG226",
+    "score": 0.149
+   },
+   {
+    "name": "PAG.Part228.refProj",
+    "module": "PAG228",
+    "score": 0.149
+   },
+   {
+    "name": "PAG.Part243.radialMatOp",
+    "module": "PAG243",
+    "score": 0.147
+   },
+   {
+    "name": "PAG.Part245.shellDev",
+    "module": "PAG245",
+    "score": 0.145
+   },
+   {
+    "name": "PAG.Part221.blockExt",
+    "module": "PAG221",
+    "score": 0.144
+   },
+   {
+    "name": "PAG.Part224.commBlock",
+    "module": "PAG224",
+    "score": 0.143
+   },
+   {
+    "name": "PAG.Part244.oneETrans",
+    "module": "PAG244",
+    "score": 0.141
+   },
+   {
+    "name": "PAG.Part227.matLin",
+    "module": "PAG227",
+    "score": 0.141
+   },
+   {
+    "name": "PAG.Part232.leftOp",
+    "module": "PAG232",
+    "score": 0.139
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp.congr_simp",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.341
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.308
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.302
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.262
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.227
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.222
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.217
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.213
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.194
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.192
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part238.blockSum.congr_simp",
+    "module": "PAG238",
+    "score": 0.185
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_add",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.332
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.307
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.3
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.294
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.255
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part227.matSum_add",
+    "module": "PAG227",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.194
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.189
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.188
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.182
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_apply",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.321
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.313
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.312
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.261
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.218
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.215
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.214
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part238.blockSum.congr_simp",
+    "module": "PAG238",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.186
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.186
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_comp",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.32
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.296
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.289
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.27
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.247
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.246
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.236
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.213
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part201.gket_pull",
+    "module": "PAG201",
+    "score": 0.209
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part201.gket_pull_same",
+    "module": "PAG201",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.198
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.198
+   },
+   {
+    "name": "PAG.Part201.zket_pull",
+    "module": "PAG201",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.197
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_dind",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.sum_mulLeft_dind",
+    "module": "PAG232",
+    "score": 0.41
+   },
+   {
+    "name": "PAG.Part251.mulLeft_dind_mul_self",
+    "module": "PAG251",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.343
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.337
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part245.shellTrans_mul_mulLeft_dind",
+    "module": "PAG245",
+    "score": 0.318
+   },
+   {
+    "name": "PAG.Part245.mulLeft_dind_mul_shellTrans",
+    "module": "PAG245",
+    "score": 0.318
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mul_shellAvg",
+    "module": "PAG247",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.308
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul",
+    "module": "PAG251",
+    "score": 0.305
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul_aux",
+    "module": "PAG251",
+    "score": 0.293
+   },
+   {
+    "name": "PAG.Part262.exists_mulLeft_of_mem_span",
+    "module": "PAG262",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part251.two_level_identity",
+    "module": "PAG251",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.279
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.273
+   },
+   {
+    "name": "PAG.Part237.matUnit_eq_mul",
+    "module": "PAG237",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part236.matUnit_self_eq",
+    "module": "PAG236",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.254
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_dind_not_mem_span",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part262.exists_mulLeft_of_mem_span",
+    "module": "PAG262",
+    "score": 0.38
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.308
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.286
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.28
+   },
+   {
+    "name": "PAG.Part251.mulLeft_dind_mul_self",
+    "module": "PAG251",
+    "score": 0.274
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.273
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.272
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.269
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.264
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.257
+   },
+   {
+    "name": "PAG.Part232.sum_mulLeft_dind",
+    "module": "PAG232",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part245.shellTrans_mul_mulLeft_dind",
+    "module": "PAG245",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part245.mulLeft_dind_mul_shellTrans",
+    "module": "PAG245",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part263.fourierConj_mem_spanE",
+    "module": "PAG263",
+    "score": 0.244
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mul_shellAvg",
+    "module": "PAG247",
+    "score": 0.243
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.241
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.24
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul",
+    "module": "PAG251",
+    "score": 0.239
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.237
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.236
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_geps",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.473
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.428
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.42
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.417
+   },
+   {
+    "name": "PAG.Part248.shellAvg_convL_geps",
+    "module": "PAG248",
+    "score": 0.417
+   },
+   {
+    "name": "PAG.Part263.convL_geps_one_ne_zero",
+    "module": "PAG263",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part250.uperp_dind_mul",
+    "module": "PAG250",
+    "score": 0.41
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.404
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.39
+   },
+   {
+    "name": "PAG.Part243.shellTrans.congr_simp",
+    "module": "PAG243",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part243.shellTrans_apply",
+    "module": "PAG243",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part243.shellTrans_dind",
+    "module": "PAG243",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.374
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.367
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.366
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_geps_mul",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.446
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.427
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.42
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.407
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.407
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.403
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.396
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part263.convL_geps_one_ne_zero",
+    "module": "PAG263",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part248.shellAvg_convL_geps",
+    "module": "PAG248",
+    "score": 0.389
+   },
+   {
+    "name": "PAG.Part250.uperp_dind_mul",
+    "module": "PAG250",
+    "score": 0.381
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.381
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.372
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.367
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.352
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_injective",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.371
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.333
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.308
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.308
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.301
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.295
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.222
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.217
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part55.conj_push",
+    "module": "PAG55",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part21.push_apply_emb",
+    "module": "PAG21",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.198
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part17.sum_push_mul",
+    "module": "PAG17",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part18.push_smul",
+    "module": "PAG18",
+    "score": 0.194
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.19
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_mem",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.597
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.596
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.573
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.562
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.561
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.56
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.55
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.546
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part243.radialMatOp_mem",
+    "module": "PAG243",
+    "score": 0.521
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.521
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.52
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.517
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_mul",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.337
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.312
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.305
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.299
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.259
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.224
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.215
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.211
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.204
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.204
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.198
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.192
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.19
+   },
+   {
+    "name": "PAG.Part227.matSum_mul",
+    "module": "PAG227",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part227.matUnit_mul_matSum_mul_matUnit",
+    "module": "PAG227",
+    "score": 0.186
+   },
+   {
+    "name": "PAG.Part227.matUnit_mul_matSum",
+    "module": "PAG227",
+    "score": 0.186
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_mul_one",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.329
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.304
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.219
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.214
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part251.leftOp_one'",
+    "module": "PAG251",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part251.rightOp_one'",
+    "module": "PAG251",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part227.matSum_one",
+    "module": "PAG227",
+    "score": 0.194
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_one",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part250.sum_convL_geps",
+    "module": "PAG250",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part232.sum_convL_geps",
+    "module": "PAG232",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_apply",
+    "module": "PAG251",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part251.convL_geps_one_add_self_of_prime",
+    "module": "PAG251",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mul_self",
+    "module": "PAG251",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_zero_of_uperp",
+    "module": "PAG250",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.42
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.417
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part248.shellAvg_convL_geps",
+    "module": "PAG248",
+    "score": 0.415
+   },
+   {
+    "name": "PAG.Part262.exists_convL_of_mem_span",
+    "module": "PAG262",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part250.uperp_dind_mul",
+    "module": "PAG250",
+    "score": 0.408
+   },
+   {
+    "name": "PAG.Part250.convL_geps_of_not_dvd",
+    "module": "PAG250",
+    "score": 0.407
+   },
+   {
+    "name": "PAG.Part263.convL_geps_one_ne_zero",
+    "module": "PAG263",
+    "score": 0.405
+   },
+   {
+    "name": "PAG.Part250.convL_geps_eq_one_sub",
+    "module": "PAG250",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part15.convL_apply",
+    "module": "PAG15",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part251.convL_geps_of_two_mul",
+    "module": "PAG251",
+    "score": 0.38
+   },
+   {
+    "name": "PAG.Part263.convL_geps_two_one",
+    "module": "PAG263",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part248.sum_smul_shellDev",
+    "module": "PAG248",
+    "score": 0.369
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_one_apply",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.54
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.536
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part206.oldP_idem",
+    "module": "PAG206",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part206.oldP.congr_simp",
+    "module": "PAG206",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.389
+   },
+   {
+    "name": "PAG.Part209.oldP_sum_smul",
+    "module": "PAG209",
+    "score": 0.385
+   },
+   {
+    "name": "PAG.Part206.oldP_selfAdjoint",
+    "module": "PAG206",
+    "score": 0.385
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part206.dft_oldP",
+    "module": "PAG206",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part206.oldP_orth",
+    "module": "PAG206",
+    "score": 0.363
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_sum",
+    "module": "PAG206",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part209.oldP_gbas",
+    "module": "PAG209",
+    "score": 0.35
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_of_dvd",
+    "module": "PAG206",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part206.oldP_gket",
+    "module": "PAG206",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.319
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_eq_zero_iff",
+    "module": "PAG206",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_ket",
+    "module": "PAG206",
+    "score": 0.309
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_one_mem",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.587
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.586
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mem",
+    "module": "PAG243",
+    "score": 0.563
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.551
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.55
+   },
+   {
+    "name": "PAG.Part244.shellAvg_mem",
+    "module": "PAG244",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part244.commute_shellAvg",
+    "module": "PAG244",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.541
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.537
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.533
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part243.radialMatOp_mem",
+    "module": "PAG243",
+    "score": 0.513
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.512
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.512
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.508
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_one_mul",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.329
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.304
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.219
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.214
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part251.leftOp_one'",
+    "module": "PAG251",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part251.rightOp_one'",
+    "module": "PAG251",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part227.matSum_one",
+    "module": "PAG227",
+    "score": 0.194
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_one_ne_one",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.304
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.218
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.214
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part251.leftOp_one'",
+    "module": "PAG251",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part251.rightOp_one'",
+    "module": "PAG251",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part227.matSum_one",
+    "module": "PAG227",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.192
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part227.matSum.congr_simp",
+    "module": "PAG227",
+    "score": 0.186
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_one_single",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.324
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.299
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.293
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.287
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.246
+   },
+   {
+    "name": "PAG.Part229.apply_eq_sum_single",
+    "module": "PAG229",
+    "score": 0.24
+   },
+   {
+    "name": "PAG.Part251.leftOp_one'",
+    "module": "PAG251",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part247.sum_mul_single",
+    "module": "PAG247",
+    "score": 0.215
+   },
+   {
+    "name": "PAG.Part251.rightOp_one'",
+    "module": "PAG251",
+    "score": 0.214
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.211
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.204
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part262.conv_single",
+    "module": "PAG262",
+    "score": 0.2
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part227.matSum_one",
+    "module": "PAG227",
+    "score": 0.198
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.196
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_pull",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.34
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.307
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.301
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.261
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.226
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.219
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.217
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.215
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.193
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.192
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.186
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.186
+   },
+   {
+    "name": "PAG.Part238.blockSum.congr_simp",
+    "module": "PAG238",
+    "score": 0.184
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_self",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.322
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.298
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.248
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.214
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.196
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.189
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.183
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.177
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.177
+   },
+   {
+    "name": "PAG.Part238.blockSum.congr_simp",
+    "module": "PAG238",
+    "score": 0.175
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_smul",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.425
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part234.exists_basis_subalg",
+    "module": "PAG234",
+    "score": 0.335
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.316
+   },
+   {
+    "name": "PAG.Part218.blockProjL_eq_sum_dil",
+    "module": "PAG218",
+    "score": 0.312
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.292
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.292
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.289
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.284
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.28
+   },
+   {
+    "name": "PAG.Part227.matUnit_mul_matSum_mul_matUnit",
+    "module": "PAG227",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part227.matUnit_mul_matSum",
+    "module": "PAG227",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part227.matSum_mul_eq",
+    "module": "PAG227",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part245.radialMatOp_smul",
+    "module": "PAG245",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part253.thm26_needs_adjoint",
+    "module": "PAG253",
+    "score": 0.26
+   },
+   {
+    "name": "PAG.Part226.sum_centralElt_apply",
+    "module": "PAG226",
+    "score": 0.258
+   },
+   {
+    "name": "PAG.Part245.radialMatOp_single",
+    "module": "PAG245",
+    "score": 0.258
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.cornerOp_zero",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.332
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.307
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.3
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.294
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mul",
+    "module": "PAG243",
+    "score": 0.213
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part251.leftOp_smul'",
+    "module": "PAG251",
+    "score": 0.205
+   },
+   {
+    "name": "PAG.Part227.matSum_eq_zero",
+    "module": "PAG227",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part234.leftOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part234.rightOp_sum_smul",
+    "module": "PAG234",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part243.shellTrans_mul_div",
+    "module": "PAG243",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part226.sum_centralElt_apply",
+    "module": "PAG226",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part245.shellTrans_mul_mulLeft_dind",
+    "module": "PAG245",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part245.mulLeft_dind_mul_shellTrans",
+    "module": "PAG245",
+    "score": 0.197
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.197
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.existsUnique_corner",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part263.one_sub_eTop_const",
+    "module": "PAG263",
+    "score": 0.576
+   },
+   {
+    "name": "PAG.Part263.one_sub_eTop_eq",
+    "module": "PAG263",
+    "score": 0.568
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.558
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_mul",
+    "module": "PAG230",
+    "score": 0.558
+   },
+   {
+    "name": "PAG.Part229.shellAlg_isSemisimpleRing",
+    "module": "PAG229",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.52
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.513
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.513
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part230.finrank_shellAlg_eq_prod",
+    "module": "PAG230",
+    "score": 0.497
+   },
+   {
+    "name": "PAG.Part232.finrank_tensor_shellAlg",
+    "module": "PAG232",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_le",
+    "module": "PAG246",
+    "score": 0.49
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_two_pow",
+    "module": "PAG246",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow_odd",
+    "module": "PAG246",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_two_pow",
+    "module": "PAG246",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part246.finrank_oneEAlg_lt_shellAlg",
+    "module": "PAG246",
+    "score": 0.486
+   },
+   {
+    "name": "PAG.Part246.finrank_lt_of_eq_primePow_odd",
+    "module": "PAG246",
+    "score": 0.484
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum",
+  "module": "PAG264",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part7.push",
+    "module": "PAG7",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part257.ip",
+    "module": "PAG257",
+    "score": 0.403
+   },
+   {
+    "name": "PAG.Part52.ip",
+    "module": "PAG52",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part229.herm",
+    "module": "PAG229",
+    "score": 0.328
+   },
+   {
+    "name": "PAG.Part201.pull",
+    "module": "PAG201",
+    "score": 0.317
+   },
+   {
+    "name": "PAG.Part253.ipG",
+    "module": "PAG253",
+    "score": 0.314
+   },
+   {
+    "name": "PAG.Part196.lift",
+    "module": "PAG196",
+    "score": 0.259
+   },
+   {
+    "name": "PAG.Part30.tilde",
+    "module": "PAG30",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part220.layerIdx",
+    "module": "PAG220",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part213.blockGram",
+    "module": "PAG213",
+    "score": 0.186
+   },
+   {
+    "name": "PAG.Part229.adjOp",
+    "module": "PAG229",
+    "score": 0.182
+   },
+   {
+    "name": "PAG.Part258.ipn",
+    "module": "PAG258",
+    "score": 0.18
+   },
+   {
+    "name": "PAG.Part221.layerDivs",
+    "module": "PAG221",
+    "score": 0.165
+   },
+   {
+    "name": "PAG.Part227.matUnit",
+    "module": "PAG227",
+    "score": 0.162
+   },
+   {
+    "name": "PAG.Part258.ipR",
+    "module": "PAG258",
+    "score": 0.159
+   },
+   {
+    "name": "PAG.Part199.gket",
+    "module": "PAG199",
+    "score": 0.157
+   },
+   {
+    "name": "PAG.Part215.blockProj",
+    "module": "PAG215",
+    "score": 0.154
+   },
+   {
+    "name": "PAG.Part245.devSet",
+    "module": "PAG245",
+    "score": 0.153
+   },
+   {
+    "name": "PAG.Part201.zket",
+    "module": "PAG201",
+    "score": 0.153
+   },
+   {
+    "name": "PAG.Part30.auto",
+    "module": "PAG30",
+    "score": 0.146
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum.congr_simp",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.389
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.372
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part198.castHom_neg_one",
+    "module": "PAG198",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part117.stdAddChar_mul_cast",
+    "module": "PAG117",
+    "score": 0.321
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.296
+   },
+   {
+    "name": "PAG.Part24.isUnit_of_castHom",
+    "module": "PAG24",
+    "score": 0.292
+   },
+   {
+    "name": "PAG.Part24.chi_cast_nonunit",
+    "module": "PAG24",
+    "score": 0.285
+   },
+   {
+    "name": "PAG.Part18.inv_pullback",
+    "module": "PAG18",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part100.char_eq_one_of_units",
+    "module": "PAG100",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part214.card_isUnit_castHom",
+    "module": "PAG214",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part24.chi_cast_inv",
+    "module": "PAG24",
+    "score": 0.254
+   },
+   {
+    "name": "PAG.Part12.zmod_pow_pr_eq_one",
+    "module": "PAG12",
+    "score": 0.253
+   },
+   {
+    "name": "PAG.Part218.card_fix_eq_gcd",
+    "module": "PAG218",
+    "score": 0.243
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsumLin",
+  "module": "PAG264",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part234.inclY",
+    "module": "PAG234",
+    "score": 0.217
+   },
+   {
+    "name": "PAG.Part232.leftOp",
+    "module": "PAG232",
+    "score": 0.211
+   },
+   {
+    "name": "PAG.Part232.rightOp",
+    "module": "PAG232",
+    "score": 0.209
+   },
+   {
+    "name": "PAG.Part229.adjOp",
+    "module": "PAG229",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part7.push",
+    "module": "PAG7",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part258.ipR",
+    "module": "PAG258",
+    "score": 0.199
+   },
+   {
+    "name": "PAG.Part257.extL",
+    "module": "PAG257",
+    "score": 0.186
+   },
+   {
+    "name": "PAG.Part258.pullL",
+    "module": "PAG258",
+    "score": 0.185
+   },
+   {
+    "name": "PAG.Part234.restrY",
+    "module": "PAG234",
+    "score": 0.18
+   },
+   {
+    "name": "PAG.Part257.ip",
+    "module": "PAG257",
+    "score": 0.175
+   },
+   {
+    "name": "PAG.Part234.matE",
+    "module": "PAG234",
+    "score": 0.173
+   },
+   {
+    "name": "PAG.Part4.T",
+    "module": "PAG4",
+    "score": 0.172
+   },
+   {
+    "name": "PAG.Part4.M",
+    "module": "PAG4",
+    "score": 0.164
+   },
+   {
+    "name": "PAG.Part4.F",
+    "module": "PAG4",
+    "score": 0.164
+   },
+   {
+    "name": "PAG.Part218.blockProjL",
+    "module": "PAG218",
+    "score": 0.162
+   },
+   {
+    "name": "PAG.transl",
+    "module": "PAG",
+    "score": 0.158
+   },
+   {
+    "name": "PAG.Part258.UA1",
+    "module": "PAG258",
+    "score": 0.156
+   },
+   {
+    "name": "PAG.Part263.chiMul",
+    "module": "PAG263",
+    "score": 0.149
+   },
+   {
+    "name": "PAG.Part227.matUnit",
+    "module": "PAG227",
+    "score": 0.143
+   },
+   {
+    "name": "PAG.Part52.ip",
+    "module": "PAG52",
+    "score": 0.143
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum_add",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part93.conv_add_right'",
+    "module": "PAG93",
+    "score": 0.634
+   },
+   {
+    "name": "PAG.Part258.ip_add_right",
+    "module": "PAG258",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part229.herm_add_right",
+    "module": "PAG229",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part229.herm_add_left",
+    "module": "PAG229",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part108.tens_add_left",
+    "module": "PAG108",
+    "score": 0.524
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.347
+   },
+   {
+    "name": "PAG.Part28.ball_eq_sum_shellInd",
+    "module": "PAG28",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.31
+   },
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part252.dft_witness_primePow_ne_zero",
+    "module": "PAG252",
+    "score": 0.291
+   },
+   {
+    "name": "PAG.Part252.dft_witness_primePow",
+    "module": "PAG252",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part252.dft_witness_one",
+    "module": "PAG252",
+    "score": 0.283
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.265
+   },
+   {
+    "name": "PAG.Part28.cascade_eu",
+    "module": "PAG28",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.252
+   },
+   {
+    "name": "PAG.Part57.ball_decomp",
+    "module": "PAG57",
+    "score": 0.251
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.246
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum_pull",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.723
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.684
+   },
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.666
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.556
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.481
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.451
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.437
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.429
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.429
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.426
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.356
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum_self",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.6
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.345
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.308
+   },
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.29
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.276
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.264
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.25
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part198.castHom_neg_one",
+    "module": "PAG198",
+    "score": 0.235
+   },
+   {
+    "name": "PAG.Part117.stdAddChar_mul_cast",
+    "module": "PAG117",
+    "score": 0.228
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part24.isUnit_of_castHom",
+    "module": "PAG24",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part24.chi_cast_nonunit",
+    "module": "PAG24",
+    "score": 0.202
+   },
+   {
+    "name": "PAG.Part18.inv_pullback",
+    "module": "PAG18",
+    "score": 0.201
+   },
+   {
+    "name": "PAG.Part100.char_eq_one_of_units",
+    "module": "PAG100",
+    "score": 0.19
+   },
+   {
+    "name": "PAG.Part214.card_isUnit_castHom",
+    "module": "PAG214",
+    "score": 0.188
+   },
+   {
+    "name": "PAG.Part263.compatF_id",
+    "module": "PAG263",
+    "score": 0.181
+   },
+   {
+    "name": "PAG.Part24.chi_cast_inv",
+    "module": "PAG24",
+    "score": 0.181
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum_single",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part247.sum_mul_single",
+    "module": "PAG247",
+    "score": 0.568
+   },
+   {
+    "name": "PAG.Part229.apply_eq_sum_single",
+    "module": "PAG229",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.469
+   },
+   {
+    "name": "PAG.Part250.conv_single",
+    "module": "PAG250",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part247.conv_single_apply",
+    "module": "PAG247",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part262.conv_single",
+    "module": "PAG262",
+    "score": 0.431
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part55.ip_delta",
+    "module": "PAG55",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part59.delta_eq_ball",
+    "module": "PAG59",
+    "score": 0.413
+   },
+   {
+    "name": "PAG.Part80.ip_delta_conv",
+    "module": "PAG80",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part56.ip_delta_self",
+    "module": "PAG56",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part57.conv_delta",
+    "module": "PAG57",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.356
+   },
+   {
+    "name": "PAG.Part205.sum_geps",
+    "module": "PAG205",
+    "score": 0.355
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.339
+   },
+   {
+    "name": "PAG.Part210.sum_gbas_one",
+    "module": "PAG210",
+    "score": 0.338
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.324
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.307
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum_smul",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.528
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.478
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.427
+   },
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.365
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.346
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.338
+   },
+   {
+    "name": "PAG.Part198.castHom_neg_one",
+    "module": "PAG198",
+    "score": 0.325
+   },
+   {
+    "name": "PAG.Part117.stdAddChar_mul_cast",
+    "module": "PAG117",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.29
+   },
+   {
+    "name": "PAG.Part24.isUnit_of_castHom",
+    "module": "PAG24",
+    "score": 0.286
+   },
+   {
+    "name": "PAG.Part24.chi_cast_nonunit",
+    "module": "PAG24",
+    "score": 0.279
+   },
+   {
+    "name": "PAG.Part18.inv_pullback",
+    "module": "PAG18",
+    "score": 0.278
+   },
+   {
+    "name": "PAG.Part217.inner_smul_left'",
+    "module": "PAG217",
+    "score": 0.274
+   },
+   {
+    "name": "PAG.Part208.inner_smul_smul",
+    "module": "PAG208",
+    "score": 0.274
+   },
+   {
+    "name": "PAG.Part100.char_eq_one_of_units",
+    "module": "PAG100",
+    "score": 0.263
+   },
+   {
+    "name": "PAG.Part214.card_isUnit_castHom",
+    "module": "PAG214",
+    "score": 0.26
+   },
+   {
+    "name": "PAG.Part212.inner_sum_smul_right",
+    "module": "PAG212",
+    "score": 0.254
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.fsum_trans",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.623
+   },
+   {
+    "name": "PAG.Part21.castHom_eq_natCast",
+    "module": "PAG21",
+    "score": 0.371
+   },
+   {
+    "name": "PAG.Part196.castHom_castHom",
+    "module": "PAG196",
+    "score": 0.371
+   },
+   {
+    "name": "PAG.Part196.crt_unique",
+    "module": "PAG196",
+    "score": 0.336
+   },
+   {
+    "name": "PAG.Part236.changeLevel_charMul",
+    "module": "PAG236",
+    "score": 0.317
+   },
+   {
+    "name": "PAG.Part196.crt_exists",
+    "module": "PAG196",
+    "score": 0.3
+   },
+   {
+    "name": "PAG.Part262.sum_ker_stdAddChar",
+    "module": "PAG262",
+    "score": 0.282
+   },
+   {
+    "name": "PAG.Part201.gket_pull_same",
+    "module": "PAG201",
+    "score": 0.28
+   },
+   {
+    "name": "PAG.Part201.gket_pull",
+    "module": "PAG201",
+    "score": 0.276
+   },
+   {
+    "name": "PAG.Part117.dft_pullback_mul",
+    "module": "PAG117",
+    "score": 0.268
+   },
+   {
+    "name": "PAG.Part201.zket_pull",
+    "module": "PAG201",
+    "score": 0.266
+   },
+   {
+    "name": "PAG.Part262.mem_ker_iff",
+    "module": "PAG262",
+    "score": 0.256
+   },
+   {
+    "name": "PAG.Part201.hconv_zket_pull",
+    "module": "PAG201",
+    "score": 0.248
+   },
+   {
+    "name": "PAG.Part17.dft_pullback_eq_zero",
+    "module": "PAG17",
+    "score": 0.243
+   },
+   {
+    "name": "PAG.Part193.param_cast₁",
+    "module": "PAG193",
+    "score": 0.24
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.238
+   },
+   {
+    "name": "PAG.Part198.castHom_neg_one",
+    "module": "PAG198",
+    "score": 0.228
+   },
+   {
+    "name": "PAG.Part117.stdAddChar_mul_cast",
+    "module": "PAG117",
+    "score": 0.221
+   },
+   {
+    "name": "PAG.Part240.crt_fst_eq_castHom",
+    "module": "PAG240",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.218
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.mulLeft_pull_dind_mem",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.931
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.91
+   },
+   {
+    "name": "PAG.Part263.compat_dind_unique",
+    "module": "PAG263",
+    "score": 0.886
+   },
+   {
+    "name": "PAG.Part232.convL_geps_mem",
+    "module": "PAG232",
+    "score": 0.866
+   },
+   {
+    "name": "PAG.Part218.shellAlg.congr_simp",
+    "module": "PAG219",
+    "score": 0.855
+   },
+   {
+    "name": "PAG.Part220.commute_shellAlg",
+    "module": "PAG220",
+    "score": 0.855
+   },
+   {
+    "name": "PAG.Part262.no_compatible_hom",
+    "module": "PAG262",
+    "score": 0.854
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom_iff",
+    "module": "PAG262",
+    "score": 0.845
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanD",
+    "module": "PAG263",
+    "score": 0.812
+   },
+   {
+    "name": "PAG.Part244.radial_apply_of_mem",
+    "module": "PAG244",
+    "score": 0.802
+   },
+   {
+    "name": "PAG.Part262.exists_compatible_hom",
+    "module": "PAG262",
+    "score": 0.795
+   },
+   {
+    "name": "PAG.Part218.shellAlg_comm_dil",
+    "module": "PAG218",
+    "score": 0.788
+   },
+   {
+    "name": "PAG.Part221.commute_shellAlg_on",
+    "module": "PAG221",
+    "score": 0.777
+   },
+   {
+    "name": "PAG.Part219.shellInvariant_iff",
+    "module": "PAG219",
+    "score": 0.766
+   },
+   {
+    "name": "PAG.Part263.shellAlg_hom_ext",
+    "module": "PAG263",
+    "score": 0.765
+   },
+   {
+    "name": "PAG.Part218.shellAlg_eigen_of_rad",
+    "module": "PAG218",
+    "score": 0.75
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanE",
+    "module": "PAG263",
+    "score": 0.747
+   },
+   {
+    "name": "PAG.Part218.shellAlg_ne_of_rad",
+    "module": "PAG218",
+    "score": 0.743
+   },
+   {
+    "name": "PAG.Part246.finrank_shellAlg_primePow",
+    "module": "PAG246",
+    "score": 0.74
+   },
+   {
+    "name": "PAG.Part233.finrank_shellAlg_mul_of_crt",
+    "module": "PAG233",
+    "score": 0.737
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.mulLeft_sum",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part251.mulLeft_dind_mul_self",
+    "module": "PAG251",
+    "score": 0.842
+   },
+   {
+    "name": "PAG.Part232.sum_mulLeft_dind",
+    "module": "PAG232",
+    "score": 0.792
+   },
+   {
+    "name": "PAG.Part262.exists_mulLeft_of_mem_span",
+    "module": "PAG262",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part251.convL_geps_mem_of_squarefree",
+    "module": "PAG251",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_mul_mulLeft_dind_self",
+    "module": "PAG251",
+    "score": 0.502
+   },
+   {
+    "name": "PAG.Part232.mulLeft_dind_mem",
+    "module": "PAG232",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part245.shellTrans_mul_mulLeft_dind",
+    "module": "PAG245",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part245.mulLeft_dind_mul_shellTrans",
+    "module": "PAG245",
+    "score": 0.479
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mul_shellAvg",
+    "module": "PAG247",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part246.fourierConj_convL_geps",
+    "module": "PAG246",
+    "score": 0.464
+   },
+   {
+    "name": "PAG.Part263.fourierConj_mem_spanE",
+    "module": "PAG263",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part251.level_identity",
+    "module": "PAG251",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part232.shellAlg_eq_adjoin",
+    "module": "PAG232",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul",
+    "module": "PAG251",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part251.convL_geps_commute_charP",
+    "module": "PAG251",
+    "score": 0.437
+   },
+   {
+    "name": "PAG.Part251.convL_geps_self_not_commute_charP",
+    "module": "PAG251",
+    "score": 0.434
+   },
+   {
+    "name": "PAG.Part251.convL_geps_prime_mul_aux",
+    "module": "PAG251",
+    "score": 0.432
+   },
+   {
+    "name": "PAG.Part246.fourierConj_mulLeft_dind",
+    "module": "PAG246",
+    "score": 0.423
+   },
+   {
+    "name": "PAG.Part263.map_mem_spanD",
+    "module": "PAG263",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part247.mulLeft_dind_mem_dualOneEAlg_iff",
+    "module": "PAG247",
+    "score": 0.405
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.pullLin",
+  "module": "PAG264",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull",
+    "module": "PAG201",
+    "score": 0.44
+   },
+   {
+    "name": "PAG.Part232.leftOp",
+    "module": "PAG232",
+    "score": 0.219
+   },
+   {
+    "name": "PAG.Part199.gket",
+    "module": "PAG199",
+    "score": 0.217
+   },
+   {
+    "name": "PAG.Part232.rightOp",
+    "module": "PAG232",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part201.zket",
+    "module": "PAG201",
+    "score": 0.212
+   },
+   {
+    "name": "PAG.Part218.blockProjL",
+    "module": "PAG218",
+    "score": 0.207
+   },
+   {
+    "name": "PAG.Part107.pullL",
+    "module": "PAG107",
+    "score": 0.203
+   },
+   {
+    "name": "PAG.Part258.pullL",
+    "module": "PAG258",
+    "score": 0.191
+   },
+   {
+    "name": "PAG.Part234.restrY",
+    "module": "PAG234",
+    "score": 0.187
+   },
+   {
+    "name": "PAG.Part214.kblock",
+    "module": "PAG214",
+    "score": 0.185
+   },
+   {
+    "name": "PAG.Part234.inclY",
+    "module": "PAG234",
+    "score": 0.183
+   },
+   {
+    "name": "PAG.Part4.T",
+    "module": "PAG4",
+    "score": 0.178
+   },
+   {
+    "name": "PAG.Part223.blockHomExt",
+    "module": "PAG223",
+    "score": 0.173
+   },
+   {
+    "name": "PAG.Part4.M",
+    "module": "PAG4",
+    "score": 0.17
+   },
+   {
+    "name": "PAG.Part4.F",
+    "module": "PAG4",
+    "score": 0.17
+   },
+   {
+    "name": "PAG.Part263.Compat",
+    "module": "PAG263",
+    "score": 0.17
+   },
+   {
+    "name": "PAG.Part219.blockSpan",
+    "module": "PAG219",
+    "score": 0.165
+   },
+   {
+    "name": "PAG.Part227.matUnit",
+    "module": "PAG227",
+    "score": 0.164
+   },
+   {
+    "name": "PAG.transl",
+    "module": "PAG",
+    "score": 0.163
+   },
+   {
+    "name": "PAG.Part224.commBlock",
+    "module": "PAG224",
+    "score": 0.161
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.pull_dind",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part201.pull.congr_simp",
+    "module": "PAG206",
+    "score": 0.846
+   },
+   {
+    "name": "PAG.Part201.pull_smul",
+    "module": "PAG201",
+    "score": 0.826
+   },
+   {
+    "name": "PAG.Part201.pull_apply",
+    "module": "PAG201",
+    "score": 0.782
+   },
+   {
+    "name": "PAG.Part263.pull_injective'",
+    "module": "PAG263",
+    "score": 0.703
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.697
+   },
+   {
+    "name": "PAG.Part263.pull_one",
+    "module": "PAG263",
+    "score": 0.595
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.591
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.576
+   },
+   {
+    "name": "PAG.Part263.pull_self",
+    "module": "PAG263",
+    "score": 0.571
+   },
+   {
+    "name": "PAG.Part263.pull_pull",
+    "module": "PAG263",
+    "score": 0.553
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part206.sum_dind_dvd",
+    "module": "PAG206",
+    "score": 0.494
+   },
+   {
+    "name": "PAG.Part201.hconv_pull",
+    "module": "PAG201",
+    "score": 0.493
+   },
+   {
+    "name": "PAG.Part201.card_ker_cast",
+    "module": "PAG201",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part262.crtLin_pull",
+    "module": "PAG262",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.412
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.399
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.pull_fsum",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part206.oldP_pull",
+    "module": "PAG206",
+    "score": 0.846
+   },
+   {
+    "name": "PAG.Part206.exists_pull_of_oldP",
+    "module": "PAG206",
+    "score": 0.839
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_self_iff",
+    "module": "PAG206",
+    "score": 0.82
+   },
+   {
+    "name": "PAG.Part206.oldP_idem",
+    "module": "PAG206",
+    "score": 0.614
+   },
+   {
+    "name": "PAG.Part206.oldP.congr_simp",
+    "module": "PAG206",
+    "score": 0.614
+   },
+   {
+    "name": "PAG.Part206.dft_pull_apply",
+    "module": "PAG206",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part209.oldP_sum_smul",
+    "module": "PAG209",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part206.oldP_selfAdjoint",
+    "module": "PAG206",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part206.geps_conv_pull",
+    "module": "PAG206",
+    "score": 0.589
+   },
+   {
+    "name": "PAG.Part206.dft_oldP",
+    "module": "PAG206",
+    "score": 0.58
+   },
+   {
+    "name": "PAG.Part206.oldP_orth",
+    "module": "PAG206",
+    "score": 0.569
+   },
+   {
+    "name": "PAG.Part206.pull_geps",
+    "module": "PAG206",
+    "score": 0.566
+   },
+   {
+    "name": "PAG.Part206.mem_geps_pull_iff",
+    "module": "PAG206",
+    "score": 0.561
+   },
+   {
+    "name": "PAG.Part206.oldP_eq_sum",
+    "module": "PAG206",
+    "score": 0.553
+   },
+   {
+    "name": "PAG.Part209.oldP_gbas",
+    "module": "PAG209",
+    "score": 0.549
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_of_dvd",
+    "module": "PAG206",
+    "score": 0.533
+   },
+   {
+    "name": "PAG.Part206.oldP_gket",
+    "module": "PAG206",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part206.oldP_gket_eq_zero_iff",
+    "module": "PAG206",
+    "score": 0.484
+   },
+   {
+    "name": "PAG.Part206.pull_injective",
+    "module": "PAG206",
+    "score": 0.47
+   },
+   {
+    "name": "PAG.Part206.sub_oldP_eq_sum",
+    "module": "PAG206",
+    "score": 0.468
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part264.scal_cancel",
+  "module": "PAG264",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part185.pow_two_mul_of_root",
+    "module": "PAG185",
+    "score": 0.8
+   },
+   {
+    "name": "PAG.Part77.lam_ne_zero",
+    "module": "PAG77",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part251.geps_self_apply",
+    "module": "PAG251",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part185.sqrt_sq_cast",
+    "module": "PAG185",
+    "score": 0.43
+   },
+   {
+    "name": "PAG.Part205.geps_apply_zero",
+    "module": "PAG205",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part211.gbas_of_isPrimitive_apply",
+    "module": "PAG211",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part208.inner_gbas_self",
+    "module": "PAG208",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part208.inner_gbas",
+    "module": "PAG208",
+    "score": 0.338
+   },
+   {
+    "name": "PAG.Part201.conv_pull",
+    "module": "PAG201",
+    "score": 0.33
+   },
+   {
+    "name": "PAG.Part195.squarefull_root",
+    "module": "PAG195",
+    "score": 0.321
+   },
+   {
+    "name": "PAG.Part211.rk_eq_smul_dft",
+    "module": "PAG211",
+    "score": 0.32
+   },
+   {
+    "name": "PAG.Part210.kcoef_mul_kcoef_inv",
+    "module": "PAG210",
+    "score": 0.319
+   },
+   {
+    "name": "PAG.Part211.invDFT_rk",
+    "module": "PAG211",
+    "score": 0.315
+   },
+   {
+    "name": "PAG.Part171.jacobi_eq_gauss_cube",
+    "module": "PAG171",
+    "score": 0.306
+   },
+   {
+    "name": "PAG.Part174.z6_eq",
+    "module": "PAG174",
+    "score": 0.302
+   },
+   {
+    "name": "PAG.Part211.gbas_of_isPrimitive",
+    "module": "PAG211",
+    "score": 0.299
+   },
+   {
+    "name": "PAG.Part195.z_level_one",
+    "module": "PAG195",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part232.geps_apply_eq_sum",
+    "module": "PAG232",
+    "score": 0.271
+   },
+   {
+    "name": "PAG.Part209.kcoef_div",
+    "module": "PAG209",
+    "score": 0.262
+   },
+   {
+    "name": "PAG.Part152.phase_mod4_eq",
+    "module": "PAG152",
+    "score": 0.258
+   }
+  ]
+ }
+]

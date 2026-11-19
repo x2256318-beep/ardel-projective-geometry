@@ -99,6 +99,7 @@ ok  PAG.Part263.udvd_iff_inLayer
 ok  PAG.Part264.cornerHom
 ok  PAG.Part264.cornerHom_comp
 ok  PAG.Part264.cornerHom_one_ne_one
+ok  PAG.Part264.cornerHom_self
 ok  PAG.Part264.cornerOp_dind
 ok  PAG.Part264.cornerOp_dind_not_mem_span
 ok  PAG.Part264.cornerOp_geps
@@ -111,4 +112,4 @@ ok  PAG.Part27.Wproj
 ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
-合計 113 件、確認 113、見つからない 0
+合計 114 件、確認 114、見つからない 0
