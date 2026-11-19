@@ -1,0 +1,1 @@
+統合照合 II-a（台帳 L3・L4）。2026-11-20 07:43〜07:52。general-purpose の新しいエージェント、ツール 15 回（Read 6、Bash 7、WebSearch 1、WebFetch 1（拒否））、約 518 秒。依頼文 request_IIa.md、入力 input_IIa.md（2024 行）。出力は IIa_output.md（通知の本文をそのまま写した）。照合者の申告：CLAUDE.md は文脈に入っていた（使ったのは「出所：入力外」と書いた箇所だけ）。
