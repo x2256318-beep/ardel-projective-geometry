@@ -23,6 +23,7 @@ ok  PAG.Part240.crtMul_shellAlg
 ok  PAG.Part240.locHom
 ok  PAG.Part240.ppEquiv
 ok  PAG.Part240.tensEquiv
+ok  PAG.Part242.finrank_shellAlg_primePow
 ok  PAG.Part246.finrank_shellAlg_primePow
 ok  PAG.Part246.fourierConj_convL_geps
 ok  PAG.Part246.fourierConj_mulLeft_dind
@@ -139,4 +140,4 @@ ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
 ok  PAG.Part29.equator_intertwine_proj
-合計 141 件、確認 141、見つからない 0
+合計 142 件、確認 142、見つからない 0

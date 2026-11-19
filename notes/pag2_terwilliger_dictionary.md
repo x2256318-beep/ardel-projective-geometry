@@ -466,8 +466,8 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 
 | 名前・主張 | 文献の言葉 | 出典・注意 |
 |---|---|---|
-| `conj_Jhat_eq_gauss`・`conj_Jhat_eq_rootNum`・`conj_Jhat_sq_eq_rootNum` | ヤコビ和はガウス和の比 J = G₁G₂/G₁₂（積が原始的なとき）と |G|² = N。位相 conj(Ĵ) はガウス和の位相の余境界（2 乗で符号が消える） | K. Conrad, Gauss and Jacobi sums on finite fields and ℤ/mℤ の定理 3.15・3.12（法 m は一般。WebFetch の要約で確認）。符号つきの形は Long–Pigno–Pinner（arXiv:1410.6179）の式 (10)（盲検の照合者による） |
-| `equator_intertwine_rootNum`・`equator_intertwine_proj_rootNum` | P¹(ℤ/p^K) の 2 チャートの畳み込みの、重なりでの比較（この設定の文献の名前は見つからなかった） | Part 21（PAG25）・Part 25（PAG29）の定理の係数の書き換え。射影直線の版は 2 チャートの版を `projFunEquiv` で移したもので同値。設定そのものは盲検の 1 回の検索では見つからなかった |
+| `conj_Jhat_eq_gauss`（［既知］）・`conj_Jhat_eq_rootNum`・`conj_Jhat_sq_eq_rootNum`（［再導出（小さい）］） | ヤコビ和はガウス和の比 J = G₁G₂/G₁₂（積が原始的なとき）と |G|² = N。位相 conj(Ĵ) はガウス和の位相の余境界（2 乗で符号が消える） | K. Conrad, Gauss and Jacobi sums on finite fields and ℤ/mℤ の定理 3.15・3.12（法 m は一般。WebFetch の要約で確認）。符号つきの形・𝔀 による形を書いた文献は見つかっていない。Long–Pigno–Pinner（arXiv:1410.6179）の式 (10) は符号のない比（すべて原始的なとき。出典は Zhang–Yao の補題 3、Zhang–Xu の補題 1。WebFetch の要約で確認）。以前の版の「符号つきの形は LPP の式 (10)」は誤り（統合照合 I の指摘） |
+| `equator_intertwine_rootNum`・`equator_intertwine_proj_rootNum` | P¹(ℤ/p^K) の 2 チャートの畳み込みの、重なりでの比較（この設定の文献の名前は見つからなかった） | Part 21（PAG25）・Part 25（PAG29）の定理の係数の書き換え。射影直線の版は 2 チャートの版を `projFunEquiv` で移したもので同値（手の論証、Lean の文ではない）。設定そのものは盲検の 1 回の検索では見つからなかった |
 | 条件「U'² が赤道で B_S を B_N に移す」の解の集まり（Lean の外） | 部分群の補集合の上で乗法的な関数は準同型に延びる（|X/Y| ≥ 3）、ポントリャーギン双対 | 盲検の照合者の手計算（補題を書いた文献は探していない）。加法指標の取り替えで局所定数が χ(b) 倍になること（Tate、Biswas arXiv:1401.5591 §4.3） |
 
-- 未記入の件数（この節）：0。
+- 未記入の件数（この節）：1（作用素の形の 2 つの行：この設定の文献の名前は見つかっていない。2026-11-20 に 0 から直した。統合照合 I の指摘）。
