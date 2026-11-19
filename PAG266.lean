@@ -1,29 +1,36 @@
 /-
-アーデル射影幾何 — Part 262（PAG266、短期層の小さいノート、2026-11-20）：舞台 P¹ の赤道の絡み合いを、貼り合わせの位相 𝔀 で書く
+アーデル射影幾何 — Part 262（PAG266、短期層の小さいノート、2026-11-20）：舞台 P¹ の赤道の絡み合いの係数を 𝔀（`rootNum`）で書く
 
 問いの出所：基礎文書の索引 1.4（舞台は P¹）と 2.4（「射影」の変換）の留保「`JH` は P¹ の上の作用素ではなく、P¹ のモデルと結ぶ Lean の文はない」。
 - 推薦案 `pag2_p1_gluing_preregistration.md` §4 を、2026-11-20 06:55 に著者が採用した（「進めてください」）。
 - 著者の言葉「舞台は P¹、その上で働く貼り合わせの合成を射影と呼ぶ」の読みの材料（読みの地位は変えない）。
+- この文書の文に `JH` は現れない。Lean で結んだのは 𝔀（`rootNum`）の値と P¹ の赤道の係数で、留保「`JH` と P¹ のモデルを結ぶ Lean の文はない」はこの文書の後も残る。
 
 記号：
-- N = p^(n+1)（p は素数）。e = stdAddChar、τ(χ) = gaussSum χ e。J = `PAG.Part7.J`（ヤコビ和）、Ĵ = J/√N（`PAG.Part25.Jhat`）。
+- N = p^(n+1)（p は素数）は指標の法。定理の P¹ のモデルの法は p^K で、N とは別（K > n+1 なら値も違う）。e = stdAddChar、τ(χ) = gaussSum χ e。J = `PAG.Part7.J`（ヤコビ和）、Ĵ = J/√N（`PAG.Part25.Jhat`）。
 - 𝔀(χ) = `PAG.Part256.rootNum` χ = τ(χ)/(i^a √N)（偶なら a = 0、奇なら a = 1）。原始指標でルート数であることは Lean の外。
+  𝔀 は `rootNum` の docstring で W(χ) と書かれている値。B_N の定義に入る反転 `PAG.Part23.W`（南北の入れ替え）と区別して 𝔀 と書く。
 - P¹(ℤ/p^K) の 2 チャートのモデル、南北の畳み込み B_S・B_N、赤道のケット |0, χ⟩ = `PAG.Part23.kS K 0 (n+1) h χ`（Part 19（PAG23））。
+- 扱うのは殻 0（赤道）と、導手がちょうど p^(n+1) の同じ法の指標の組だけ。係数は K によらない。
 
 主な定理（χ₁・χ₂・χ₁χ₂ が法 p^(n+1) の原始指標のとき）：
 1. conj(Ĵ) = √N·τ(χ₁χ₂)/(τ(χ₁)τ(χ₂))（`conj_Jhat_eq_gauss`）。
-2. conj(Ĵ) = s·𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂))、s は χ₁ か χ₂ が偶なら 1、両方とも奇なら −1（`conj_Jhat_eq_rootNum`）。
+2. conj(Ĵ) = s·𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂))、s は χ₁・χ₂ の少なくとも一方が偶なら 1、両方とも奇なら −1（`conj_Jhat_eq_rootNum`）。
 3. conj(Ĵ)² = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))²（`conj_Jhat_sq_eq_rootNum`）。
-4. 赤道のケットについて B_N(|0,χ₁⟩, |0,χ₂⟩) = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))² · B_S(|0,χ₁⟩, |0,χ₂⟩)（`equator_intertwine_rootNum`、2 チャートのモデル）。
-5. 同じ式を、射影直線そのもの（`PAG.Part27.ProjLine`）の上の関数として（`equator_intertwine_proj_rootNum`、Part 25（PAG29）の `equator_intertwine_proj` から）。
+4. n + 1 ≤ K のとき、赤道のケットについて B_N(|0,χ₁⟩, |0,χ₂⟩) = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))² · B_S(|0,χ₁⟩, |0,χ₂⟩)（`equator_intertwine_rootNum`、2 チャートのモデル）。
+5. 4 の両辺を `projFunEquiv`（Part 24（PAG28）の ℂ 線形同型：`PAG.Part27.ProjLine (p^K)` 上の関数 ≃ 貼り合わせ条件を満たす組）で移した形（`equator_intertwine_proj_rootNum`、Part 25（PAG29）の `equator_intertwine_proj` から）。
+   5 は 4 と同値（`projFun_*` と線形性による手の論証。Lean の文にはしていない）。点 [x:1]・[1:y] での値としての読みは `projEquiv`（Part 23（PAG27））と `ptEquiv`（Part 22（PAG26））による。
 
-読み（Lean の外）：χ の成分に 𝔀(χ) を掛ける作用素を U とすると、4 は赤道のケットの上で B_N(k₁, k₂) = U² B_S(U⁻²k₁, U⁻²k₂) と読める。
-この条件を満たす位相は 𝔀 だけではない（単数 u と指標ごとの符号の分。数値と照合者の手計算、`pag2_p1_gluing_preregistration.md`）。
+読み（Lean の外）：原始指標 χ の成分に、導手 p^(n+1) で計算した 𝔀(χ) を掛ける作用素を U とする（法 p^K の指標として計算すると、K > n+1 では τ = 0 になるため）。
+B_S(|0,χ₁⟩, |0,χ₂⟩) が χ₁χ₂ の成分に入ること（この文書の文にはない）と合わせて、4 は赤道のケットの上で B_N(k₁, k₂) = U² B_S(U⁻²k₁, U⁻²k₂) と読める。
+この条件を満たす位相は 𝔀 だけではない（少なくとも、単数 u による √χ(u) の分と指標ごとの符号 ±1 の分がある。数値と照合者の手計算、`pag2_p1_gluing_preregistration.md`）。
 A1 は導かれない。p = 2（すべての n）と p = 3、n = 0 では原始指標の三つ組がなく、5 つの文は空（独立照合の指摘。p = 2 は Part 26（PAG30）の注意とも合う）。
 仮定は必要十分ではない：1〜3 では χ₁χ₂ の原始性は不要に見え、χ₁・χ₂ の原始性が中身を運ぶのは n = 0 だけ（n ≥ 1 では両辺が 0 になる。独立照合の手計算）。
-4・5 では χ₁χ₂ の原始性が要る（単数でない点で両辺が 0 になる部分）。4・5 は Part 21・25 の定理の係数の書き換えで、絡み合いの中身はそちらにある。
+4・5 では χ₁χ₂ の原始性を外すと偽になる（独立照合の反例）。反例は単数でない点（n = 1）にも、単数の点（n = 0、χ₂ = χ̄₁、x = 1）にも出る。
+単数の点での比 B_N/B_S は conj(J)/J で、conj(Ĵ)² に等しいのは |J|² = N のとき（Lean の外。再照合者の手計算と数値 `records/audit266/numeric/unit_point_ratio.py`、K = n+1 の場合）。
+4・5 は Part 21（PAG25）・Part 25（PAG29）の定理の係数の書き換えで、絡み合いの中身はそちらにある（名前空間 `PAG.Part25` は Part 21（PAG25）を指し、Part 25（PAG29）とは別）。
 
-ラベル（見込み、照合の後に確定）：1〜3 は［既知］（積が原始的ならヤコビ和はガウス和の比、|τ|² = N。Conrad の定理 3.15・3.12）、4・5 は［再導出（小さい）］。新規候補なし。
+ラベル（見込み、照合の後に確定）：1〜3 は［既知］（積が原始的ならヤコビ和はガウス和の比、|τ|² = N。K. Conrad, Gauss and Jacobi sums on finite fields and ℤ/mℤ の定理 3.15・3.12。法 m は一般で ℤ/p^(n+1) を覆う（WebFetch の要約で確認））、4・5 は［再導出（小さい）］。新規候補なし。
 -/
 import PAG265
 import PAG25
@@ -69,7 +76,7 @@ theorem conj_Jhat_eq_gauss (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 1)))
 
 open Classical in
 /-- **2. 𝔀 による形（2 乗を外した形）**：χ₁・χ₂・χ₁χ₂ が原始的なら、
-conj(Ĵ(χ₁, χ₂)) = s·𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂))。符号 s は、χ₁ か χ₂ が偶なら 1、両方とも奇なら −1
+conj(Ĵ(χ₁, χ₂)) = s·𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂))。符号 s は、χ₁・χ₂ の少なくとも一方が偶なら 1、両方とも奇なら −1
 （𝔀 = `PAG.Part256.rootNum`、τ/(i^a √N)）。符号 s は、Ĵ（i^a を含まない）と 𝔀（i^a を含む）の正規化の違いから来る
 （加法指標の向きや i^a を (−i)^a に替えても変わらない。独立照合の手計算）。 -/
 theorem conj_Jhat_eq_rootNum (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 1)))
@@ -113,7 +120,8 @@ theorem conj_Jhat_eq_rootNum (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 1))
     field_simp
     rw [Complex.I_sq]; ring
 
-/-- **3. 2 乗の形**：χ₁・χ₂・χ₁χ₂ が原始的なら、conj(Ĵ(χ₁, χ₂))² = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))²。 -/
+/-- **3. 2 乗の形**：χ₁・χ₂・χ₁χ₂ が原始的なら、conj(Ĵ(χ₁, χ₂))² = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))²。
+2 乗で定理 2 の符号 s は落ちる（4・5 も同じ）。 -/
 theorem conj_Jhat_sq_eq_rootNum (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 1)))
     (h₁ : χ₁.IsPrimitive) (h₂ : χ₂.IsPrimitive) (h₁₂ : (χ₁ * χ₂).IsPrimitive) :
     (starRingEnd ℂ (Jhat χ₁ χ₂)) ^ 2
@@ -125,7 +133,7 @@ theorem conj_Jhat_sq_eq_rootNum (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 
 P¹(ℤ/p^K) の 2 チャートのモデルの赤道のケット |0, χ⟩ について、
 B_N(|0,χ₁⟩, |0,χ₂⟩) = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))² · B_S(|0,χ₁⟩, |0,χ₂⟩)
 （Part 21（PAG25）の `equator_intertwine_hat` と 3 から）。この定理は `equator_intertwine_hat` の係数 conj(Ĵ)² を 3 で書き換えたもので、
-絡み合いの中身（単数でない点で両辺が 0 になることを含む）は Part 21 にある。 -/
+絡み合いの中身（単数でない点で両辺が 0 になることを含む）は Part 21（PAG25）にある。 -/
 theorem equator_intertwine_rootNum (K : ℕ) (h : 0 + (n + 1) ≤ K)
     (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 1)))
     (h₁ : χ₁.IsPrimitive) (h₂ : χ₂.IsPrimitive) (h₁₂ : (χ₁ * χ₂).IsPrimitive) :
@@ -134,9 +142,11 @@ theorem equator_intertwine_rootNum (K : ℕ) (h : 0 + (n + 1) ≤ K)
           • PAG.Part23.BS (PAG.Part23.kS K 0 (n + 1) h χ₁) (PAG.Part23.kS K 0 (n + 1) h χ₂) := by
   rw [PAG.Part25.equator_intertwine_hat K h χ₁ χ₂ h₁ h₂ h₁₂, conj_Jhat_sq_eq_rootNum χ₁ χ₂ h₁ h₂ h₁₂]
 
-/-- **5. 射影直線そのものの上の形**：Part 25（PAG29）の `equator_intertwine_proj`（射影直線 P¹(ℤ/p^K) = `PAG.Part27.ProjLine` の上の
-関数としての南北の畳み込み B_S^proj・B_N^proj と赤道のケット）について、4 と同じ式が成り立つ。`equator_intertwine_proj` の係数を
-3 で書き換えたもの。1 ≤ K は h から出るので、仮定に置かない（独立照合の指摘で外した）。 -/
+/-- **5. 射影直線の上の関数に移した形**：4 の両辺を `projFunEquiv`（Part 24（PAG28）。`PAG.Part27.ProjLine (p^K)` 上の関数と、
+貼り合わせ条件を満たす組との ℂ 線形同型）で移した等式。B_S^proj・B_N^proj は Part 24（PAG28）、ketS_proj は Part 25（PAG29）で、
+2 チャートの版をこの同型で移して定義したもの。Part 25（PAG29）の `equator_intertwine_proj` の係数を 3 で書き換えたもの。
+5 は 4 と同値（`projFun_*` と線形性による。Lean の文にはしていない）。点 [x:1]・[1:y] での値としての読みは `projEquiv`・`ptEquiv` による。
+1 ≤ K は h から出るので、仮定に置かない（独立照合の指摘で外した）。 -/
 theorem equator_intertwine_proj_rootNum (K : ℕ) (h : 0 + (n + 1) ≤ K)
     (χ₁ χ₂ : DirichletCharacter ℂ (p ^ (n + 1)))
     (h₁ : χ₁.IsPrimitive) (h₂ : χ₂.IsPrimitive) (h₁₂ : (χ₁ * χ₂).IsPrimitive) :

@@ -11,6 +11,8 @@ ok  PAG.Part218.shellAlg_comm_dil
 ok  PAG.Part220.InLayer
 ok  PAG.Part224.fullComm
 ok  PAG.Part225.fullComm_commute_iff_dvd_twelve
+ok  PAG.Part23.BN
+ok  PAG.Part23.BS
 ok  PAG.Part23.Compat
 ok  PAG.Part23.W
 ok  PAG.Part232.leftHom
@@ -25,6 +27,7 @@ ok  PAG.Part246.finrank_shellAlg_primePow
 ok  PAG.Part246.fourierConj_convL_geps
 ok  PAG.Part246.fourierConj_mulLeft_dind
 ok  PAG.Part249.sumSub_eq_shellAlg_iff
+ok  PAG.Part25.equator_intertwine_hat
 ok  PAG.Part251.addEAlg_one_eq_shellAlg_iff
 ok  PAG.Part252.addEAlg_eq_shellAlg_iff_all
 ok  PAG.Part253.commute_transl_of_prime
@@ -125,9 +128,15 @@ ok  PAG.Part265.exists_local_unit_finset
 ok  PAG.Part265.not_exists_left_one
 ok  PAG.Part265.ofCorner_injective
 ok  PAG.Part265.ofCorner_one_le
+ok  PAG.Part266.conj_Jhat_eq_gauss
+ok  PAG.Part266.conj_Jhat_eq_rootNum
+ok  PAG.Part266.conj_Jhat_sq_eq_rootNum
+ok  PAG.Part266.equator_intertwine_proj_rootNum
+ok  PAG.Part266.equator_intertwine_rootNum
 ok  PAG.Part27.ProjLine
 ok  PAG.Part27.Wproj
 ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
-合計 132 件、確認 132、見つからない 0
+ok  PAG.Part29.equator_intertwine_proj
+合計 141 件、確認 141、見つからない 0
