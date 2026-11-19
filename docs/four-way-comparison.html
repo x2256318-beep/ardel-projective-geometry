@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>類体論・Tate理論・遠アーベル幾何学・アーデル射影幾何学の四者比較</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f3ec; --bg2:#efe8db; --surface:#fffdf8; --surface2:#f3eee3;
+    --ink:#1c1a16; --ink2:#4a463e; --muted:#7a7466; --line:#d8d0bf; --line2:#c4bba4;
+    --c1:#0f5c5c; --c1bg:#e2efec;
+    --c2:#9a5b12; --c2bg:#f7ecd4;
+    --c3:#3d5a3a; --c3bg:#e6eee1;
+    --c4:#7c2434; --c4bg:#f6e3e6;
+    --accent:#7c2434; --accent-ink:#fff;
+    --warn-bg:#fdf3d7; --warn-line:#d9b84a; --warn-ink:#5c4a08;
+    --shadow:0 1px 3px rgba(28,26,22,.08),0 8px 24px rgba(28,26,22,.06);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#171512; --bg2:#1e1b17; --surface:#22201b; --surface2:#2a2721;
+      --ink:#ece7db; --ink2:#c9c2b2; --muted:#9a927f; --line:#3d382e; --line2:#524c3e;
+      --c1:#7fc4bd; --c1bg:#1d3331;
+      --c2:#e0aa5a; --c2bg:#3a2e16;
+      --c3:#a3c49b; --c3bg:#263325;
+      --c4:#e08a98; --c4bg:#3a2126;
+      --accent:#c94f63; --warn-bg:#332b12; --warn-line:#8a6f22; --warn-ink:#ecd88a;
+      --shadow:0 1px 3px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 72px}
+  h1,h2,h3{font-family:"Noto Serif JP",serif;line-height:1.45}
+  a{color:var(--c1);text-underline-offset:3px;word-break:break-all}
+  @media (prefers-color-scheme: dark){ a{color:var(--c1)} }
+  .mono{font-family:"IBM Plex Mono",monospace;font-size:.92em}
+  math, .math{font-family:"Noto Serif JP",serif}
+
+  /* ---------- hero ---------- */
+  .hero{padding:44px 0 8px;border-bottom:2px solid var(--ink)}
+  .hero .kicker{font-size:.82rem;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:0 0 14px}
+  .hero h1{font-size:clamp(1.65rem,4.6vw,2.6rem);font-weight:900;margin:0 0 18px;letter-spacing:.01em}
+  .hero .lead{font-size:1.06rem;color:var(--ink2);max-width:52em;margin:0 0 20px}
+  .hero .lead strong{color:var(--ink)}
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.85rem;color:var(--muted);padding-bottom:22px}
+  .verdict{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;padding:20px 22px;margin:26px 0 6px;box-shadow:var(--shadow)}
+  .verdict p{margin:0;font-size:.98rem}
+  .verdict p + p{margin-top:10px}
+
+  /* ---------- nav ---------- */
+  nav.toc{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin:18px -20px 0;padding:6px 20px}
+  nav.toc ul{display:flex;flex-wrap:wrap;gap:2px 4px;list-style:none;margin:0;padding:0}
+  nav.toc a{display:inline-flex;align-items:center;min-height:36px;padding:4px 10px;border-radius:8px;color:var(--ink2);text-decoration:none;font-size:.86rem;font-weight:500}
+  nav.toc a:hover{background:var(--surface2);color:var(--ink)}
+
+  section{padding-top:44px}
+  .sec-head{margin-bottom:18px}
+  .sec-head .no{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--accent);font-weight:600;letter-spacing:.1em}
+  .sec-head h2{font-size:clamp(1.35rem,3.4vw,1.85rem);font-weight:900;margin:4px 0 8px}
+  .sec-head p{color:var(--ink2);margin:0;max-width:54em}
+  h3.sub{font-size:1.12rem;font-weight:700;margin:30px 0 10px}
+  p{margin:0 0 14px}
+  .small{font-size:.88rem;color:var(--ink2)}
+  .src{font-size:.8rem;color:var(--muted)}
+  .src a{color:var(--muted)}
+
+  /* badges */
+  .badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:2px 9px;border-radius:999px;vertical-align:middle;white-space:nowrap}
+  .b-thm{background:var(--c1bg);color:var(--c1)}
+  .b-def{background:var(--surface2);color:var(--ink2);border:1px solid var(--line)}
+  .b-prog{background:var(--c2bg);color:var(--c2)}
+  .b-abs{background:var(--warn-bg);color:var(--warn-ink);border:1px solid var(--warn-line)}
+  .b-judge{background:var(--c4bg);color:var(--c4)}
+  .b-author{background:var(--surface);color:var(--c4);border:1px dashed var(--c4)}
+
+  /* ---------- four items ---------- */
+  .four{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:720px){ .four{grid-template-columns:1fr} }
+  .item{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+  .item .num{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.85rem}
+  .item h3{font-size:1.18rem;margin:6px 0 4px;font-weight:900}
+  .item .en{font-size:.82rem;color:var(--muted);margin-bottom:12px}
+  .item p{font-size:.94rem;color:var(--ink2);margin-bottom:10px}
+  .item p:last-child{margin-bottom:0}
+  .item .tagline{font-weight:700;color:var(--ink);font-size:.95rem}
+  .item.c1{border-top:5px solid var(--c1)} .item.c1 .num{color:var(--c1)}
+  .item.c2{border-top:5px solid var(--c2)} .item.c2 .num{color:var(--c2)}
+  .item.c3{border-top:5px solid var(--c3)} .item.c3 .num{color:var(--c3)}
+  .item.c4{border-top:5px solid var(--c4)} .item.c4 .num{color:var(--c4)}
+  .formula{background:var(--surface2);border-radius:10px;padding:10px 14px;font-family:"Noto Serif JP",serif;font-size:.98rem;margin:10px 0;overflow-x:auto;white-space:nowrap}
+
+  /* relation diagram */
+  .diagram{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+  .diagram svg{width:100%;height:auto;display:block}
+  .diagram figcaption{font-size:.85rem;color:var(--ink2);margin-top:12px}
+  figure{margin:0}
+
+  /* pairwise tabs */
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .tabs button{min-height:44px;padding:10px 18px;border-radius:10px;border:1px solid var(--line2);background:var(--surface);color:var(--ink2);font-family:inherit;font-size:.95rem;font-weight:700;cursor:pointer}
+  .tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .panel[hidden]{display:none}
+  .panel h3{font-size:1.25rem;margin:0 0 6px;font-weight:900}
+  .panel .panel-lead{color:var(--ink2);margin-bottom:18px}
+  .point{border-top:1px solid var(--line);padding:16px 0 4px}
+  .point:first-of-type{border-top:none;padding-top:4px}
+  .point h4{font-family:"Noto Serif JP",serif;font-size:1.02rem;margin:0 0 6px}
+  .point p{font-size:.95rem;color:var(--ink2)}
+  .point p strong{color:var(--ink)}
+  blockquote{margin:12px 0;padding:12px 16px;background:var(--surface2);border-radius:10px;font-size:.92rem;color:var(--ink2)}
+  blockquote p{margin:0}
+  .callout{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:var(--radius);padding:18px 20px;margin:18px 0}
+  .callout p{margin:0;font-size:.95rem;color:var(--ink)}
+  .callout p + p{margin-top:8px}
+
+  /* axes */
+  .axis{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:16px;box-shadow:var(--shadow)}
+  .axis h3{margin:0 0 4px;font-size:1.15rem;font-weight:900}
+  .axis h3 .axno{font-family:"IBM Plex Mono",monospace;color:var(--accent);font-size:.85rem;margin-right:8px}
+  .axis .axis-lead{color:var(--ink2);font-size:.95rem;margin-bottom:14px}
+  .cells{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media (max-width:720px){ .cells{grid-template-columns:1fr} }
+  .cell{border-radius:10px;padding:14px 16px;font-size:.9rem}
+  .cell .who{font-weight:700;font-size:.82rem;letter-spacing:.04em;margin-bottom:5px}
+  .cell p{margin:0;color:var(--ink2)}
+  .cell p strong{color:var(--ink)}
+  .cell.k1{background:var(--c1bg)} .cell.k1 .who{color:var(--c1)}
+  .cell.k2{background:var(--c2bg)} .cell.k2 .who{color:var(--c2)}
+  .cell.k3{background:var(--c3bg)} .cell.k3 .who{color:var(--c3)}
+  .cell.k4{background:var(--c4bg)} .cell.k4 .who{color:var(--c4)}
+
+  /* table */
+  .table-tools{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+  .table-tools span{font-size:.88rem;color:var(--muted);margin-right:4px}
+  .table-tools button{min-height:40px;padding:8px 14px;border-radius:999px;border:1px solid var(--line2);background:var(--surface);color:var(--ink2);font-family:inherit;font-size:.88rem;font-weight:600;cursor:pointer}
+  .table-tools button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow)}
+  table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.88rem;line-height:1.7}
+  table.cmp th, table.cmp td{padding:13px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+  table.cmp thead th{font-family:"Noto Serif JP",serif;font-size:.95rem;background:var(--surface2);border-bottom:2px solid var(--line2);position:sticky;top:0}
+  table.cmp tbody th{font-weight:700;width:15%;background:var(--surface2);font-size:.88rem}
+  table.cmp td{width:21.25%;color:var(--ink2)}
+  table.cmp td.hi{color:var(--ink);font-weight:500}
+  table.cmp tr.hl td, table.cmp tr.hl th{background:color-mix(in srgb,var(--c4bg) 55%,var(--surface))}
+  @media (max-width:720px){
+    .tbl-wrap{overflow-x:visible;border:none;background:transparent;box-shadow:none}
+    table.cmp{min-width:0}
+    table.cmp thead{display:none}
+    table.cmp, table.cmp tbody, table.cmp tr, table.cmp td, table.cmp th{display:block;width:100%}
+    table.cmp tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;padding:8px 4px;box-shadow:var(--shadow)}
+    table.cmp tbody th{background:transparent;border-bottom:1px solid var(--line);font-size:1rem;font-family:"Noto Serif JP",serif}
+    table.cmp td{border-bottom:1px dashed var(--line);padding:10px 14px}
+    table.cmp td:last-child{border-bottom:none}
+    table.cmp td::before{content:attr(data-who);display:block;font-weight:700;font-size:.78rem;letter-spacing:.05em;color:var(--muted);margin-bottom:3px}
+  }
+
+  /* timeline */
+  .tl{list-style:none;margin:0;padding:0;position:relative}
+  .tl::before{content:"";position:absolute;left:86px;top:6px;bottom:6px;width:2px;background:var(--line2)}
+  @media (max-width:560px){ .tl::before{left:66px} }
+  .tl li{display:grid;grid-template-columns:72px 28px 1fr;gap:0 6px;padding:10px 0;position:relative}
+  @media (max-width:560px){ .tl li{grid-template-columns:52px 28px 1fr} }
+  .tl .yr{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.92rem;text-align:right;padding-top:2px}
+  .tl .dot{width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--muted);justify-self:center;margin-top:6px;z-index:1}
+  .tl li.key .dot{border-color:var(--accent);background:var(--accent)}
+  .tl .ev{font-size:.94rem;color:var(--ink2)}
+  .tl .ev strong{color:var(--ink)}
+  .bc-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-top:20px}
+  .bc-box h3{margin:0 0 10px;font-size:1.12rem}
+  .bc-box p{font-size:.95rem;color:var(--ink2)}
+  .bc-box p strong{color:var(--ink)}
+
+  .caveats{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .caveats ul{margin:0;padding-left:1.3em}
+  .caveats li{margin-bottom:10px;font-size:.93rem;color:var(--ink2)}
+  .caveats li strong{color:var(--ink)}
+  .sources{font-size:.86rem;color:var(--ink2)}
+  .sources ol{padding-left:1.4em}
+  .sources li{margin-bottom:9px}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">四者比較 — FOUR-WAY COMPARISON</p>
+  <h1>類体論・Tate理論・遠アーベル幾何学・<br>アーデル射影幾何学の四者比較</h1>
+  <p class="lead">比較の相手は、名前の付け方からして非対称です。古典側の2つは「〜幾何学」とは呼ばず、対象と理論の名前で表します —— <strong>（1）イデール類群 C<sub>ℚ</sub> と類体論</strong>、<strong>（2）アデール環 𝔸 上の調和解析（Tate 理論）</strong>。これに <strong>（3）遠アーベル幾何学</strong> と、設計による新しい対象 <strong>（4）アーデル射影幾何学（PAG）</strong> を加えた4つは、重なる機械を使いながら、目的も方法も地位も異なります。本ページは、その相違を二者関係・7つの軸・年表・対照表で出典つきに整理したものです。</p>
+  <div class="meta-row">
+    <span>調査：2026年11月19–20日の出典つき調査報告に基づく</span>
+    <span>（1）–（3）は出版文献、（4）は著者の記述による（未出版）</span>
+    <span>改訂：2026-11-20 精査の修正を反映（<a href="#revision">改訂記録</a>。修正は独立照合を未実施）</span>
+    <span>地位表示：<span class="badge b-thm">定理</span> <span class="badge b-def">定義</span> <span class="badge b-prog">プログラム／予想</span> <span class="badge b-abs">不在の所見</span> <span class="badge b-judge">判断</span></span>
+  </div>
+  <div class="verdict">
+    <p><strong>結論の芯。</strong>（1）と（2）は対象と言葉を共有しますが定理を共有しません —— （1）はアーベル拡大の<strong>分類</strong>、（2）は L 関数の<strong>解析</strong>で、Tate の学位論文は類体論を証明もせず、その深い結果も使いません。（3）は（1）の非アーベルへの一般化として生まれ、その原型 Neukirch–Uchida 定理（1969/76）はプログラムの命名（1983/84）より前に、類体論の内部から出ました。（2）と（3）の間には文献上の直接の接点はほぼありません。</p>
+    <p>（4）は（1）（2）と舞台 C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub> を共有しながら、決定的な軸で3つすべてと分かれます。類体論が Artin 写像の核として捨てる ℝ<sub>&gt;0</sub> 方向を切り取り、境界ユニタリで貼り直すこと。その位相が、（2）では<strong>定理として証明される</strong> Tate の局所定数（ε 因子）の値に一致するよう<strong>公準 A1 として置かれる</strong>こと。そして有限レベルの代数 A<sub>N</sub> が<strong>非可換</strong>で、整除の順序に沿った単位的な帰納系が素数冪の段で作れないこと（著者の Part 258）です。なお、ℝ<sub>&gt;0</sub> 方向の切断と境界条件そのものには、（1）–（3）の外に Connes 系統の先行研究があります（<a href="#connes">Connes 系統との比較</a>）。</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="目次">
+  <ul>
+    <li><a href="#items">四者の位置づけ</a></li>
+    <li><a href="#relations">二者関係 A–C</a></li>
+    <li><a href="#axes">7つの軸 D</a></li>
+    <li><a href="#table">四者対照表 F</a></li>
+    <li><a href="#timeline">系譜と年表 E</a></li>
+    <li><a href="#connes">Connes 系統</a></li>
+    <li><a href="#caveats">留保</a></li>
+    <li><a href="#sources">出典</a></li>
+  </ul>
+</nav>
+
+<!-- ============ 四者 ============ -->
+<section id="items">
+  <div class="sec-head">
+    <span class="no">OVERVIEW</span>
+    <h2>四者の位置づけ</h2>
+    <p>3つは出版された文献の理論、1つは著者の設計による未出版の枠組みです。まず各者の「何をする理論か」を1枚ずつ押さえます。（4）の記述はすべて著者の説明に基づきます。</p>
+  </div>
+  <div class="four">
+    <article class="item c1">
+      <span class="num">(1) CLASS FIELD THEORY</span>
+      <h3>イデール類群 C<sub>ℚ</sub> と類体論</h3>
+      <p class="en">大域類体論 — Chevalley（1940）、Artin–Tate（Cassels–Fröhlich 1967）、Neukirch『Algebraic Number Theory』（1999）第VI章</p>
+      <p class="tagline">分類の定理（Galois 理論的）</p>
+      <p>有限アーベル拡大と、局所では K<sub>v</sub><sup>×</sup>、大域ではイデール類群 C<sub>K</sub> の開いた有限指数（ノルム）部分群とが、Artin 相互法則写像を通じて1対1に対応するという分類が中身です。出力は Gal(K<sup>ab</sup>/K) の記述そのものです。</p>
+      <div class="formula">Gal(K<sup>ab</sup>/K) ≅ C<sub>K</sub> / D<sub>K</sub>　（D<sub>K</sub> は連結成分）</div>
+      <p>存在定理：C<sub>K</sub> の開いた有限指数部分群はすべて、ある有限アーベル拡大のノルム群である。<span class="badge b-thm">定理</span></p>
+    </article>
+    <article class="item c2">
+      <span class="num">(2) TATE THEORY</span>
+      <h3>アデール環 𝔸 上の調和解析（Tate 理論）</h3>
+      <p class="en">Tate の学位論文（1950、Princeton、指導 Artin）／ Cassels–Fröhlich『Algebraic Number Theory』（1967）第XV章として初出版</p>
+      <p class="tagline">解析の定理（アーベル調和解析による）</p>
+      <p>局所コンパクト環 𝔸<sub>K</sub> 上の Fourier 解析で、Hecke の Grössencharakter に付随する L 関数の解析接続と関数等式を証明します。局所 L 因子と ε 因子は、局所 Fourier 理論の<strong>定理として</strong>現れます。</p>
+      <div class="formula">W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>)　（大域根数の局所分解も定理）</div>
+      <p>Tate 自身の言では、学位論文は「局所的な側面を除けば新しい結果ではなかった」。新しさは Hecke（1920年頃）の定理を、すべての素点を等しく扱う調和解析で証明し直した方法にあります。</p>
+    </article>
+    <article class="item c3">
+      <span class="num">(3) ANABELIAN GEOMETRY</span>
+      <h3>遠アーベル幾何学</h3>
+      <p class="en">Grothendieck の Faltings への手紙（1983年6月27日）と『Esquisse d'un programme』（1984）で命名</p>
+      <p class="tagline">再構成のプログラム／定理族（非アーベル）</p>
+      <p>双曲曲線については、スキームがその（射有限で非アーベルな）エタール基本群 π<sub>1</sub> から回復できるという主張です。「anabelian（遠アーベル）」という語自体が、アーベルから「非常に遠い」ことを標榜します。</p>
+      <div class="formula">Isom<sub>k</sub>(X, Y) ≃ Isom<sup>out</sup><sub>G<sub>k</sub></sub>(π<sub>1</sub>(X), π<sub>1</sub>(Y))</div>
+      <p class="small">右辺は G<sub>k</sub> = Gal(k̄/k) への射影と整合する外部同型に限る。この条件を外すと偽です（代数閉体上では、同じ型 (g, ν) の双曲曲線の幾何的基本群はすべて同型）。</p>
+      <p>双曲曲線の同型予想は定理（中村・玉川 1997・望月 1996/99）。切断予想は、確認できた最新の出典（2023年）の時点で一般には未解決です。<span class="badge b-thm">定理</span> <span class="badge b-prog">予想は未解決</span></p>
+    </article>
+    <article class="item c4">
+      <span class="num">(4) PAG — PER AUTHOR</span>
+      <h3>アーデル射影幾何学</h3>
+      <p class="en">未出版・著者の設計による幾何。検証は Lean 形式化による（著者の記述）</p>
+      <p class="tagline">定義と公準による設計（アーベル／GL(1)）</p>
+      <p>点は ℚ の素数と無限素点。大域の舞台は C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub> で、Λ で切り取った円柱上に作用素系（D = −i∂<sub>u</sub>、素数平行移動、反転）を置き、境界ユニタリ U の指標ごとの位相を、Tate の局所定数の値に一致するよう公準 A1 で固定します（加法指標は Tate の学位論文の規約、原始指標、s = 1/2。値の一致は Lean の外）。</p>
+      <div class="formula">有限レベル：A<sub>N</sub>（ℤ/N の円分スキームの Terwilliger 代数 T(0)、非可換）</div>
+      <p class="small">整除の順序に沿って A<sub>N</sub> をつなぐ写像は、単位元を保ち引き戻しと両立し殻を混ぜないものに限ると gcd(N, M/N) = 1 の段にしかない（Part 258、PAG262）。全整除順序の上の帰納系は単位元を保たない角の写像で組まれ、極限 <span class="mono">CornerLim</span> は左単位元を持たない（Part 260–261、PAG264–265）。</p>
+      <p>系譜として著者が挙げるのは Tate の学位論文＋類体論＋Bost–Connes —— すなわち（1）（2）のアーベルな世界の中の系譜であり、（3）を経由しません。<span class="badge b-author">著者の記述による</span></p>
+    </article>
+  </div>
+
+  <figure class="diagram" style="margin-top:18px">
+    <svg viewBox="0 0 920 300" role="img" aria-label="四者の関係図：類体論とTate理論は機械を共有し、類体論から遠アーベル幾何学へ系譜が伸び、Tate理論と遠アーベル幾何学の間に直接の接点はなく、アーデル射影幾何学は類体論・Tate理論と同じ舞台に立つ">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+      <!-- boxes -->
+      <g font-family="Noto Sans JP, sans-serif">
+        <rect x="30" y="30" width="250" height="86" rx="12" fill="var(--c1bg)" stroke="var(--c1)" stroke-width="1.5"/>
+        <text x="155" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)">(1) 類体論</text>
+        <text x="155" y="90" text-anchor="middle" font-size="12.5" fill="var(--ink2)">分類の定理・アーベル</text>
+        <rect x="340" y="30" width="250" height="86" rx="12" fill="var(--c2bg)" stroke="var(--c2)" stroke-width="1.5"/>
+        <text x="465" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)">(2) Tate 理論</text>
+        <text x="465" y="90" text-anchor="middle" font-size="12.5" fill="var(--ink2)">解析の定理・GL(1)</text>
+        <rect x="650" y="30" width="240" height="86" rx="12" fill="var(--c3bg)" stroke="var(--c3)" stroke-width="1.5"/>
+        <text x="770" y="66" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)">(3) 遠アーベル幾何学</text>
+        <text x="770" y="90" text-anchor="middle" font-size="12.5" fill="var(--ink2)">再構成・非アーベル</text>
+        <rect x="340" y="196" width="250" height="86" rx="12" fill="var(--c4bg)" stroke="var(--c4)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="465" y="232" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink)">(4) アーデル射影幾何学</text>
+        <text x="465" y="256" text-anchor="middle" font-size="12.5" fill="var(--ink2)">設計・公準 A1・非可換な有限レベル</text>
+      </g>
+      <!-- 1-2 shared machinery -->
+      <g color="var(--muted)" stroke="var(--muted)"><line x1="282" y1="62" x2="336" y2="62" stroke-width="2" marker-end="url(#arr)"/><line x1="338" y1="84" x2="284" y2="84" stroke-width="2" marker-end="url(#arr)"/></g>
+      <text x="310" y="46" text-anchor="middle" font-size="11.5" fill="var(--muted)" font-family="Noto Sans JP, sans-serif">対象・言葉を共有</text>
+      <!-- 1 -> 3 genealogy -->
+      <g color="var(--c3)" stroke="var(--c3)"><path d="M 282 100 C 420 150, 620 130, 700 118" fill="none" stroke-width="2" marker-end="url(#arr)"/></g>
+      <text x="480" y="152" text-anchor="middle" font-size="11.5" fill="var(--c3)" font-family="Noto Sans JP, sans-serif">非アーベルへの一般化（原型は1969/76）</text>
+      <!-- 2 - 3 no contact -->
+      <g color="var(--muted)" stroke="var(--muted)" stroke-dasharray="4 4"><line x1="592" y1="73" x2="646" y2="73" stroke-width="1.5"/></g>
+      <text x="619" y="60" text-anchor="middle" font-size="13" fill="var(--muted)" font-family="Noto Sans JP, sans-serif">✕</text>
+      <text x="619" y="96" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="Noto Sans JP, sans-serif">直接の接点なし</text>
+      <!-- 4 stage -->
+      <g color="var(--c4)" stroke="var(--c4)"><path d="M 155 118 C 200 190, 300 220, 336 232" fill="none" stroke-width="2" marker-end="url(#arr)"/><line x1="465" y1="118" x2="465" y2="192" stroke-width="2" marker-end="url(#arr)"/></g>
+      <text x="196" y="196" font-size="11.5" fill="var(--c4)" font-family="Noto Sans JP, sans-serif">舞台 C_ℚ を共有</text>
+      <text x="478" y="160" font-size="11.5" fill="var(--c4)" font-family="Noto Sans JP, sans-serif">ε 因子を公準として取り込む</text>
+    </svg>
+    <figcaption>関係の骨格。（1）⇄（2）は同じ1967年の Cassels–Fröhlich の巻に同居するが、定理の依存関係はない。（1）→（3）は系譜の関係で、証明の中でも（1）が道具として使われる。（2）—（3）は（1）を介した「きょうだい」で、直接の往来はない。（4）は（1）（2）の舞台に立ち、（3）とは交わりません。図には描いていませんが、（4）の Λ 切断と境界条件に最も近い既存の研究は Connes 系統です（<a href="#connes">後述</a>）。</figcaption>
+  </figure>
+</section>
+
+<!-- ============ 二者関係 ============ -->
+<section id="relations">
+  <div class="sec-head">
+    <span class="no">PAIRWISE RELATIONS A–C</span>
+    <h2>古典側3つの二者関係</h2>
+    <p>4者のうち古典側の3つについて、組ごとの関係を精密に述べます。タブで切り替えてください。</p>
+  </div>
+  <div class="tabs" role="tablist" aria-label="二者関係の選択">
+    <button role="tab" id="tab-a" aria-selected="true" aria-controls="panel-a" data-tab="a">A　Tate理論 ⇄ 類体論</button>
+    <button role="tab" id="tab-b" aria-selected="false" aria-controls="panel-b" data-tab="b">B　類体論 → 遠アーベル</button>
+    <button role="tab" id="tab-c" aria-selected="false" aria-controls="panel-c" data-tab="c">C　Tate理論 — 遠アーベル</button>
+  </div>
+
+  <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+    <h3>A. Tate 理論（2）と類体論（1）—— 対象と本を共有し、定理を共有しない</h3>
+    <p class="panel-lead">どちらも Chevalley の対象 —— アデール環 𝔸<sub>K</sub>、イデール群 𝔸<sub>K</sub><sup>×</sup>、商 C<sub>K</sub> = 𝔸<sub>K</sub><sup>×</sup>/K<sup>×</sup> —— の上に住みます。Milne の Tate 論文調査によれば、Chevalley は類体論をイデールの言葉で定式化し直し、C<sub>K</sub> → Gal(K<sup>ab</sup>/K) という準同型と、有限アーベル拡大ごとの C<sub>K</sub>/N<sub>L/K</sub>C<sub>L</sub> ≅ Gal(L/K)、および局所写像との両立を与えました。分岐はそこから先です。</p>
+    <div class="point">
+      <h4>A.1 目的の違い —— 分類か、解析か</h4>
+      <p><strong>（1）の目的は分類</strong>です。「類体論は、局所体・大域体のアーベル Galois 拡大のすべてを、基礎体に付随する対象で記述することを目的とする、代数的数論の基本分野」であり、存在定理がアーベル拡大と C<sub>F</sub> の閉じた有限指数部分群との全単射を与えます。数体では Gal(K<sup>ab</sup>/K) は C<sub>K</sub> をその連結成分で割ったものに同型です。</p>
+      <p><strong>（2）の目的は解析</strong>です。Kudla の解説：学位論文は「Hecke が Grössencharakter に付随させた L 関数の解析接続と関数等式の、エレガントで統一的な扱い」を与え、「Chevalley のアデール／イデールの設定におけるアーベル調和解析の方法の力が、Hecke の古典的技巧に対する顕著な進歩」をもたらしました。</p>
+    </div>
+    <div class="point">
+      <h4>A.2 方法の違い —— コホモロジーか、Fourier 解析か</h4>
+      <p>（1）の現代的な方法は<strong>群コホモロジーと類形成（class formations）</strong>です（Neukirch にはコホモロジーを避ける公理的な変種もあります）。（2）の方法は<strong>局所コンパクトアーベル群上の Fourier 解析</strong>です。Tate は 𝔸<sub>K</sub> が加法位相群として自己双対であること、離散余コンパクト部分群 K ⊂ 𝔸<sub>K</sub> がそれ自身の直交補群であることを示し、アデール的 Poisson 和公式を得ました。局所 L 関数は K<sub>v</sub><sup>×</sup> 上の積分として定義され、大域関数等式は局所関数等式と Poisson 公式から従います。試験関数は Schwartz–Bruhat 関数（ℝ では Schwartz 空間、非アルキメデス体では局所定数コンパクト台関数）です。</p>
+    </div>
+    <div class="point">
+      <h4>A.3 学位論文は類体論を証明するか、使うか —— どちらも「いいえ」 <span class="badge b-judge">通説（出典は百科事典的要約）</span></h4>
+      <p>百科事典的要約（出典 3）の文言そのままに：<strong>「Iwasawa–Tate 理論は類体論由来の構造をいくつか使うが、類体論の深い結果は一切使わない」</strong>。使うのは語彙 —— アデール、イデール、C<sub>K</sub>、そして Hecke 指標が C<sub>K</sub> の準指標であるという事実 —— であって、相互法則でも存在定理でもありません。</p>
+      <p>逆向きも成り立ちません。学位論文の定理は解析接続・関数等式・極の位置・ε 因子の局所理論であり、類体論の分類はその帰結ではありません。副産物として Iwasawa の変種が類数の有限性と Dirichlet の単数定理を直ちに導きましたが、それは有限性の結果であって相互法則の分類ではありません。</p>
+      <p>前方への供給先は類体論ではなく <strong>Langlands プログラム</strong>です。大域根数の局所分解 W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>) こそ、Langlands 対応が Artin L 級数に要求する分解であり、Dwork（1956）、Langlands、Deligne（1973）がこの GL(1) の雛形の上に一般の表現の局所定数の理論を築きました。Kudla の枠付けでは、学位論文は「GL(1) の保型表現と L 関数の理論」で、GL(n) への一般化は Godement–Jacquet（1972）です。</p>
+    </div>
+    <div class="point">
+      <h4>A.4 Tate の二重の役割 —— 同じ人物、別の仕事</h4>
+      <p>Tate の（1）への貢献は学位論文ではなく、コホモロジーの仕事です。</p>
+      <p>・<strong>Tate コホモロジー</strong> <span class="badge b-def">定義</span>：すべての整数 r に対する Ĥ<sup>r</sup>(G, M) を（次数 −1, 0 のノルム写像経由で）定義し、G 加群の短完全列から両側無限の長完全列が得られるようにした。</p>
+      <p>・<strong>「Tate の定理」</strong>（1952）<span class="badge b-thm">定理</span>：u ∈ H²(G, C) が、<strong>すべての部分群 H ⊆ G について</strong> H¹(H, C) = 0 と、H²(H, C) が res(u) で生成される |H| 位の巡回群であることを満たせば、u とのカップ積が Ĥ<sup>r</sup>(G, ℤ) ≅ Ĥ<sup>r+2</sup>(G, C) を与える。r = −2、C = C<sub>L</sub>、u を基本類として、<strong>Artin 相互法則写像の逆写像</strong>が得られます。</p>
+      <p>・<strong>Tate–Nakayama の定理</strong> <span class="badge b-thm">定理</span>：Nakayama（1957）が仮定を Sylow 部分群だけに弱めて一般化。Langlands プログラムの基本補題の証明を含む広い範囲で使われます。</p>
+      <p>・<strong>類形成</strong> <span class="badge b-def">公理化</span>：Artin と Tate（1961、第14章）が、Tate の仮定を満たす抽象的な「類形成」の概念を導入し、そこから相互法則同型を導出しました。Artin–Tate セミナー・ノート（Benjamin 1967、AMS 再版）は1961年以来の標準的参考文献です。</p>
+      <p>1967年の同居は文字どおりです。学位論文は Cassels–Fröhlich 編『Algebraic Number Theory』（1967）の<strong>第XV章（pp. 305–347）として初出版</strong>され、同じ巻の他の章がコホモロジー的類体論を展開しました。Tate はその巻に大域類体論の記事も寄稿しています。</p>
+      <blockquote><p>判定 A：（1）と（2）は対象と1冊の本を共有しますが、定理は共有しません。（1）は C<sub>K</sub> によってアーベル拡大を分類し、（2）は 𝔸<sub>K</sub> と C<sub>K</sub> 上の調和解析で L 関数の解析的性質を証明します。どちらも他方を証明しません。（2）が前提とするのは（1）の言語だけです。Tate はこの2つを、1950年の学位論文と1952年以降のコホモロジー／類形成という、別々の仕事によって架橋しています。</p></blockquote>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+    <h3>B. 類体論（1）と遠アーベル幾何学（3）—— アーベルの場合から非アーベルへの系譜</h3>
+    <p class="panel-lead">参考文献で「類体論の主な一般化」として標準的に並ぶのは、高次類体論、Langlands プログラム、そして遠アーベル幾何学の3つです。つまり（3）は（1）の一般化として公認の位置にあります。その中身を精密に見ます。</p>
+    <div class="point">
+      <h4>B.1 精密なアーベルの文 <span class="badge b-thm">定理</span></h4>
+      <p>数体 K とその整数環 O<sub>K</sub> について、π<sub>1</sub><sup>ét</sup>(Spec O<sub>K</sub>)<sup>ab</sup> ≅ Gal(K̃/K) —— ここで K̃ は狭い Hilbert 類体（有限素点で不分岐な最大アーベル拡大。Spec O<sub>K</sub> のエタール被覆は実素点での分岐を見ないので、無限素点での分岐は許される）—— であり、古典的類体論によりこの群は<strong>狭義イデアル類群 Cl<sup>+</sup>(K) と標準的に同型</strong>です。広義のイデアル類群 Cl(K) と一致するのは、両者が等しい体（例えば実素点のない体）に限ります。例：ℚ(√3) は類数 1 ですが狭義類数 2 で、π<sub>1</sub><sup>ét</sup>(Spec ℤ[√3])<sup>ab</sup> ≅ ℤ/2 です。分岐条件を法（モジュラス／導手）𝔇 に替えると、制限分岐つき基本群のアーベル化は<strong>射線類体（ray class field）の Galois 群</strong>、1次元では射線類群そのものに同型になります（Hiranouchi 2006）。</p>
+      <p>S の外で不分岐な版では、π<sub>1</sub><sup>ét</sup>(Spec O<sub>K,S</sub>) は S の外で不分岐な最大拡大の Galois 群 G<sub>K,S</sub> そのものであることが、Neukirch–Schmidt–Wingberg『Cohomology of Number Fields』（第2版、2008）の序文でその言葉で述べられています。すべての法／開部分群について極限を取れば A.1 のイデール的な文 Gal(K<sup>ab</sup>/K) ≅ C<sub>K</sub>/D<sub>K</sub> に戻ります。</p>
+      <p><strong>すなわち、アーベル類体論は、算術的基本群 π<sub>1</sub>(Spec O<sub>K,S</sub>) と G<sub>K</sub> = π<sub>1</sub>(Spec K) のアーベル化をイデール的な対象で記述する</strong> —— これが系譜の精密な形です（「ちょうど〜の計算である」は要約の言い方で、定理の文ではありません <span class="badge b-judge">判断</span>）。</p>
+    </div>
+    <div class="point">
+      <h4>B.2 Grothendieck の一般化 <span class="badge b-prog">プログラム</span></h4>
+      <p>Faltings への手紙（1983年6月27日）で Grothendieck は、有限生成体 K 上の「遠アーベル的」スキーム X について「X の幾何は、（射有限）基本群 π<sub>1</sub>(X, ξ) と、π<sub>1</sub>(X, ξ) → π<sub>1</sub>(K, ξ) = Gal(K̄/K) という準同型が与える追加構造によって完全に決定される」と提案しました。非特異連結曲線が遠アーベル的であるのは、その Euler–Poincaré 標数が負のとき、言い換えれば「基本群が<strong>アーベルでない</strong>とき」（標数0・固有の場合）で、除外される型は (g, ν) = (0,0), (0,1), (0,2), (1,0) です。</p>
+      <p>語そのものが（1）からの距離を示します。「anabelian」は「アーベル群から<strong>非常に遠い</strong>」ことを示すために使われました（『Esquisse』1984、p. 14；Nakamura の解説による）。Nakamura はまた、Grothendieck 自身がこの予想を「アーベル多様体に対する Faltings の定理（Tate 予想）の非アーベル類似」と位置づけていたことを記録しています。なお、ここでの「Tate」は学位論文ではなくアーベル多様体の Tate 加群の Tate です（C.3 参照）。</p>
+    </div>
+    <div class="point">
+      <h4>B.3 Neukirch–Uchida —— 類体論生まれの原型 <span class="badge b-thm">定理</span></h4>
+      <p>Neukirch（Invent. Math. 6, 1969；Caen 1976、Astérisque 41–42, 1977）と Uchida（J. Math. Soc. Japan 28, 1976）：数体の絶対 Galois 群の同型 G<sub>K</sub> ≅ G<sub>L</sub> は（Uchida の強化では関手的に）体の同型 K ≅ L を導きます。範囲に注意：Neukirch の元の証明は K と L の少なくとも一方が ℚ 上 Galois であることを仮定しており、この仮定を外して一般の数体にしたのは Uchida です（Ikeda も同時期に独立に Neukirch の問題を解き、Iwasawa も方法の適用を注意しました）［Saïdi–Tamagawa、Uchida 1976 の序文］。</p>
+      <p>これは曲線ではなく（1）が研究する対象 G<sub>K</sub> 自身についての定理で、Grothendieck がプログラムに名前を与える<strong>14年前</strong>に証明されました。文献はこれを遠アーベル幾何学の「前史」と明示し、証明の出発点が「実閉体に対する Artin–Schreier の特徴づけの p 進類似」という Neukirch の洞察にあり、分解群の（位相群としての）群論的特徴づけ —— 「Neukirch の議論の局所理論」と呼ばれる部分 —— に結実したと述べます（arXiv:2301.10342 は “topological characterization”、Saïdi–Tamagawa は “group-theoretically … using the method of Brauer groups” と書く。指しているものは同じ）。標準的な類体論の教科書（Neukirch 1999、第IV–VI章）の著者が、類体論の内部から —— CFT が完全に計算するアーベル化の向こうに G<sub>K</sub> が何を見ているかを問うて —— 最初の遠アーベル的定理に到達した、という経路が記録されています。</p>
+    </div>
+    <div class="point">
+      <h4>B.4 分解群 —— （3）の中に生きる（1）の局所理論 <span class="badge b-thm">定理／方法</span></h4>
+      <p>Neukirch–Uchida の証明とその子孫において、群から体への橋は<strong>局所理論</strong>です。「絶対 Galois 群（の商）の同型から出発して、非アルキメデス素点の集合の間の1対1対応と、対応する分解群の間の1対1対応を確立する。後者は通常、分解群の純群論的特徴づけによって達成される（Neukirch–Uchida の証明では、分解群は Brauer 群の方法で群論的に特徴づけられた）」（Saïdi–Tamagawa）。</p>
+      <p>分解群 D<sub>𝔭</sub> ⊂ G<sub>K</sub> は定義により局所絶対 Galois 群 G<sub>K<sub>𝔭</sub></sub> のコピーであり、そのアーベル化を計算するのが局所類体論（K<sub>𝔭</sub><sup>×</sup> の射有限完備化）です。依存は概念的にとどまりません。関数体に対する Uchida の定理の証明では、Step 2-1 が D<sub>x</sub><sup>ab</sup> から局所乗法群 K<sub>x</sub><sup>×</sup> ⊃ O<sub>x</sub><sup>×</sup> ⊃ U<sub>x</sub> を<strong>「（局所類体論）」と明記して</strong>回復し、大域の K<sup>×</sup> を K<sub>x</sub><sup>×</sup> の制限積の中の核として<strong>「（大域類体論）」</strong>で得ます（玉川のサーベイ）。同じ型 —— 分解部分群を群論的に特徴づけ、そこから組み直す —— が、有限体上の曲線に対する玉川の方法です。</p>
+      <p><strong>つまり（3）において局所類体論は、各分解群のアーベル化された影として生き残り、体の乗法モノイドを再構成するための補題として使われます。（3）が付け加えるのは、非アーベルな射有限群が、それらの局所的な部品がどこに座っているかを覚えている、ということです。</strong></p>
+    </div>
+    <div class="point">
+      <h4>B.5 曲線の定理と、B.6 単遠アーベル、B.7 切断予想</h4>
+      <p><strong>双曲曲線の Grothendieck 予想</strong> <span class="badge b-thm">定理</span>：種数0は中村、アフィンの場合は玉川（Compositio Math. 109, 1997）、そして「当初予想されたより強い一般形」（sub-p 進体上の基底）で望月（1996、J. Math. Sci. Univ. Tokyo 3；1999、Invent. Math. 138 の局所 pro-p の仕事）が証明しました。</p>
+      <p><strong>単遠アーベル幾何学</strong> <span class="badge b-prog">プログラム／定理</span>（2010年代–2020年代）：双遠アーベルが2つの群を比べるのに対し、単遠アーベルは<strong>1つの群 Π<sub>X</sub> だけから、群論的操作のみで X を再構成するアルゴリズム</strong>を求めます。望月が『Topics in Absolute Anabelian Geometry』I（2012）・II（2013）・III（2015）で、数体・局所体上の（strictly Belyi 型の）双曲曲線について導入・展開し、星裕一郎の入門が標準的な解説です。</p>
+      <p><strong>切断予想</strong> <span class="badge b-prog">未解決</span>：有限生成体 k 上の滑らかな射影双曲曲線 X について、X(k) → {π<sub>1</sub>(X) → G<sub>k</sub> の切断}/共役 が全単射であるという予想（1983）。単射性は知られていますが全射性が未解決の核心で、「今日に至るまで広く未解決のままで、知られているのはごく少数の非常に特殊な例だけ」（Betts、AHGT セミナー、2023年7月3日）。</p>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+    <h3>C. Tate 理論（2）と遠アーベル幾何学（3）—— 直接の接点はほぼない</h3>
+    <p class="panel-lead"><span class="badge b-abs">不在の所見</span> <span class="badge b-judge">判断</span> この節は、調査の想定どおり、薄い出典の上での判断を含みます。まず所見から：<strong>Tate の学位論文（1950）を、遠アーベル的定理への入力として、あるいはその帰結として引用する出典は、今回の調査では見つかりませんでした。</strong>遠アーベルのサーベイの道具立ては Galois コホモロジー、Brauer 群、Kummer 理論、そして類体論（B.4）であって、アデール的 Fourier 解析ではありません。ただし間接的な接触は実在し、精密に述べられます。</p>
+    <div class="point">
+      <h4>C.2 接触は（1）を介する</h4>
+      <p>両分野とも G<sub>K</sub> に触れますが、その両端です。（2）が使うのは C<sub>K</sub> の指標だけ —— それは（自身は援用しない）類体論を通せばアーベル化 G<sub>K</sub><sup>ab</sup> です。（3）はアーベル化を拒むことによって定義されます（「アーベルから非常に遠い」、B.2）。接触の連鎖は （2）—語彙—（1）—アーベル化—（3） です。</p>
+    </div>
+    <div class="point">
+      <h4>C.3 Jacobian／Tate 加群を介する接触 —— 別の「Tate」 <span class="badge b-thm">定理</span></h4>
+      <p>曲線 X について、その<strong>幾何的</strong>基本群のアーベル化は Jacobian／Tate 加群の対象であって、学位論文の対象ではありません。π<sub>1</sub>(X)<sup>ab</sup> ≅ π<sub>1</sub>(Jac X)（コンパクト Riemann 面／代数閉体上の曲線に対する幾何的類体論；Fargues）、そして k 上の X のアーベル化基本完全列は、Albanese 多様体の全 Tate 加群 T(Alb<sub>X</sub>) への押し出しで関係します（Harari–Szamuely）。</p>
+      <p>ここでの「Tate 加群」は Tate の<strong>もう1つの</strong>同名の仕事（1960年代、アーベル多様体）であり、1950年の学位論文とは無関係です。この2つを混同するのは標準的な落とし穴で、本比較でも区別を保ちます。</p>
+    </div>
+    <div class="point">
+      <h4>C.4 L 関数を介する接触 —— 一段隔てて</h4>
+      <p>遠アーベル幾何学そのものは L 関数を研究しません。曲線の L 関数が現れる場所（Hasse–Weil、BSD）では、その局所因子は Tate 加群への分解元／Frobenius 元の作用から作られます —— すなわち B.4 の群を、GL(1) の解析理論が（2）であり一般形が Langlands である Artin／Hecke の形式へ流し込んだものです。</p>
+      <div class="callout">
+        <p><strong>正直な要約 <span class="badge b-judge">判断</span></strong>：（2）と（3）は（1）を通じた「きょうだい」です —— （2）は（1）と同じ対象 C<sub>K</sub> の上の GL(1) の解析であり（A で見たとおり定理は共有しない）、（3）は（1）の非アーベルへの一般化です。その間に、定理レベルの直接の往来はありません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7つの軸 ============ -->
+<section id="axes">
+  <div class="sec-head">
+    <span class="no">AXES D (i)–(vii)</span>
+    <h2>古典側3つと PAG —— 7つの軸で見る</h2>
+    <p>軸ごとに4者を並べます。（4）のセルはすべて著者の記述によります（調査対象外）。古典側のセルには出典があります（出典一覧参照）。</p>
+  </div>
+
+  <article class="axis">
+    <h3><span class="axno">(i)</span>点／原始的な対象は何か</h3>
+    <p class="axis-lead">「素数が点である」かどうかは、4者を分ける最初の軸です。古典側では、素点はどこでも積を数える添字であって、幾何の点ではありません。</p>
+    <div class="cells">
+      <div class="cell k1"><p class="who">(1) 類体論</p><p>原始データは K の<strong>素点 v</strong>（O<sub>K</sub> の素イデアル＋アルキメデス埋め込み）で、イデール (a<sub>v</sub>)<sub>v</sub> ∈ ∏′<sub>v</sub> K<sub>v</sub><sup>×</sup> として<strong>乗法的に</strong>梱包されます。中心対象は点の空間ではなく群 C<sub>K</sub> です（Neukirch 1999、第VI章§1）。</p></div>
+      <div class="cell k2"><p class="who">(2) Tate 理論</p><p>原始対象は、すべての素点にわたる完備化 K<sub>v</sub> の制限積である<strong>環 𝔸<sub>K</sub></strong> を局所コンパクト加法群として見たものと、その上の関数（Schwartz–Bruhat）です。</p></div>
+      <div class="cell k3"><p class="who">(3) 遠アーベル</p><p>原始対象は<strong>スキーム／曲線 X</strong> とその射有限群 π<sub>1</sub><sup>ét</sup>(X)。「点」は分解部分群として（B.4）、予想としては切断として（B.7）再登場します。</p></div>
+      <div class="cell k4"><p class="who">(4) PAG ［著者の記述］</p><p>点は ℚ の<strong>素数＋無限素点</strong>、設計による。古典側の先例は「積を数える素点の集合」であって幾何の点集合ではありません。（3）では点は真に幾何的（曲線の閉点）ですが、公準として置かれるのではなく群論的に回復されます。</p></div>
+    </div>
+  </article>
+
+  <article class="axis">
+    <h3><span class="axno">(ii)</span>無限素点／アルキメデス素点の地位</h3>
+    <div class="cells">
+      <div class="cell k1"><p class="who">(1) 類体論</p><p><strong>完全に対等に含まれる。</strong>イデール群は「すべての異なる有限および無限素イデアル」にわたって走ります（Chevalley 1940 の AMS 書評）。法に実素点を含めると狭義の類群・狭義の射線類群が現れます（射線類群を広義のイデアル類群から区別するのは主に法の有限部分で、実素点が区別するのは狭義と広義です。B.1 の狭義 Hilbert 類体もこの例）。</p></div>
+      <div class="cell k2"><p class="who">(2) Tate 理論</p><p><strong>含まれ、説明の中心。</strong>「Γ 因子は無限素点の局所ゼータ関数として自然に現れ」、その古典的な謎が解けます（Milne）。Tate 自身が述べた新しさは「体のすべての素点を等しく扱う」ことでした。</p></div>
+      <div class="cell k3"><p class="who">(3) 遠アーベル</p><p><strong>素点としては本質的に不在。</strong>G<sub>ℝ</sub>（複素共役）は G<sub>K</sub> から見え、Neukirch の局所理論はアルキメデス味の特徴づけ（実閉体に対する Artin–Schreier の p 進類似）から始まることで有名ですが、遠アーベル幾何学に無限素点の<strong>因子</strong>や解析的対象はありません。<span class="badge b-judge">判断（サーベイに基づく）</span></p></div>
+      <div class="cell k4"><p class="who">(4) PAG ［著者の記述］</p><p>無限素点は設計された点の1つで、連続方向（ℝ<sub>&gt;0</sub>／円柱）を担います。（1）（2）の簿記の扱いに最も近く、（3）には対応物がありません。</p></div>
+    </div>
+  </article>
+
+  <article class="axis">
+    <h3><span class="axno">(iii)</span>C<sub>ℚ</sub> の ℝ<sub>&gt;0</sub> 方向の地位 —— 比較の心臓部</h3>
+    <p class="axis-lead">構造的事実：C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub> で、ℝ<sub>&gt;0</sub> が連結成分 D<sub>ℚ</sub> です。ただし D<sub>K</sub> ≅ ℝ<sub>&gt;0</sub> が成り立つのは ℚ と虚二次体（単数階数 0 の体）の場合で、単数階数が正の体では D<sub>K</sub> は C<sub>K</sub><sup>1</sup> の連結成分（ソレノイド状の部分）も含みます。以下で「ℝ<sub>&gt;0</sub> 方向」と書くときは K = ℚ の場合です。一般にイデールノルム |·| : C<sub>K</sub> → ℝ<sub>&gt;0</sub> の核 C<sub>K</sub><sup>1</sup> はコンパクトで、C<sub>K</sub> 自体は数体ではコンパクトではありません。この1つの方向への態度が、4者を最も鋭く分けます。</p>
+    <div class="cells">
+      <div class="cell k1"><p class="who">(1) 類体論 —— 捨てる</p><p>ℝ<sub>&gt;0</sub> 方向は<strong>殺される</strong>。Artin 写像は C<sub>K</sub>/D<sub>K</sub> を経由し、連結成分こそが相互法則の核です。ℚ では Gal(ℚ<sup>ab</sup>/ℚ) ≅ Ẑ<sup>×</sup>（Kronecker–Weber＋Artin）。<strong>Galois 理論は ℝ<sub>&gt;0</sub> を文字どおり見ることができません。</strong></p></div>
+      <div class="cell k2"><p class="who">(2) Tate 理論 —— スペクトルとして使う</p><p>ℝ<sub>&gt;0</sub> 方向は<strong>スペクトルパラメータ</strong>。C<sub>K</sub> の準指標は s ↦ |·|<sup>s</sup>（s ∈ ℂ）の区別されたコピーで分類され、各準指標には実指数 σ が一意に付随します（Kedlaya の類体論ノート §6.6）。ゼータ積分はこの方向の Mellin 変換で、C<sub>K</sub> 上の積分はコンパクトな C<sub>K</sub><sup>1</sup> 上の積分と ℝ<sub>&gt;0</sub> 上の積分に分かれます。<strong>証明の中には ℝ<sub>&gt;0</sub> 方向の切断があります</strong>：Riemann の方法にならって積分を |x| ≥ 1 と |x| ≤ 1 に分け、後者に Poisson 和公式を使うと、切り口から出る項 f̂(0)、f(0) が s = 1, 0 の極を生みます。ただしこの切断は<strong>証明の道具</strong>で、結果は切る位置によらず、両側とも積分し尽くされ、境界条件は課されません。定義域は完備な群のままです。</p></div>
+      <div class="cell k3"><p class="who">(3) 遠アーベル —— 不在</p><p><strong>不在。</strong>π<sub>1</sub> も G<sub>K</sub> も射有限（完全不連結）で、理論のどこにも連結な ℝ<sub>&gt;0</sub> 因子はありません。最も近い ℝ<sub>&gt;0</sub> 風の対象 —— 局所分解群の次数／付値の Ẑ 方向 —— も射有限です。<span class="badge b-thm">射有限性はエタール π₁ の定義そのもの</span></p></div>
+      <div class="cell k4"><p class="who">(4) PAG ［著者の記述］ —— 切り取って貼り直す</p><p>ℝ<sub>&gt;0</sub> 方向は幾何の円柱座標 u として保持され、次いで <strong>Λ 切断と境界による貼り合わせ</strong>を受けます。すなわち PAG は、（1）が商で消し（2）が完備なまま積分する方向を、まさに「切り取るべき空間」として扱います（（2）の証明の切断と違い、Λ は構成の一部で、境界ユニタリ U という追加のデータを伴います）。モノグラフの中心問題 P1（自己共役拡張の境界条件 U の両立の分類、定理 2.6）は、この方向の中で立てられています。なお著者の定義では、有限レベル（法 N）と Λ 切断は大域対象への「見方」の 2 つの軸で、解像度のパラメータは N・Λ のいずれとも同一視しません。</p></div>
+    </div>
+  </article>
+
+  <article class="axis">
+    <h3><span class="axno">(iv)</span>境界条件／自己共役拡大の問題は現れるか</h3>
+    <div class="cells">
+      <div class="cell k1"><p class="who">(1) 類体論</p><p><strong>なし。</strong>作用素も Hilbert 空間もなく、理論は代数的／位相群論的です。<span class="badge b-abs">不在（定義的）</span></p></div>
+      <div class="cell k2"><p class="who">(2) Tate 理論</p><p><strong>なし。</strong>解析は<strong>完備な</strong>局所コンパクト群 𝔸<sub>K</sub>、K<sub>v</sub> の Haar 測度で行われ、Fourier 変換は Pontryagin 双対により群全体の L² 上でユニタリです。切断された定義域がないので拡大問題もありません。Tate 理論の「境界」現象はゼータ積分の極であり、有理型接続で処理されるもので、境界条件ではありません（証明の中の |x| = 1 での切断は軸 (iii) のとおり道具で、切る位置によらない）。</p></div>
+      <div class="cell k3"><p class="who">(3) 遠アーベル</p><p><strong>なし。</strong>解析は一切なく、射有限群論とスキーム論です。<span class="badge b-abs">不在（定義的）</span></p></div>
+      <div class="cell k4"><p class="who">(4) PAG ［著者の記述］</p><p>切り取った円柱上の<strong>境界ユニタリによる貼り合わせ U が構成要素そのもの</strong>です。この要素には（1）–（3）のどれにも対応物がありません。ただし（1）–（3）の外には近い先行研究があります：ℝ<sub>&gt;0</sub> 方向（スケーリング）の切断と境界条件を構成に持つのは Connes 系統です —— アデール類空間の上の Λ 切断（Connes 1999）、ζ-サイクル（Connes–Consani 2023）、区間 [λ<sup>−1</sup>, λ] 上のスケーリング作用素に周期境界条件を課したランク1摂動（Connes–Consani–Moscovici 2025）。Bost–Connes 系はこの意味では最も近い親戚ではありません。これらにも、ε 因子を境界ユニタリの位相として公準で置く要素は見つかっていません（要旨・導入の水準の確認。<a href="#connes">Connes 系統との比較</a>）。</p></div>
+    </div>
+  </article>
+
+  <article class="axis">
+    <h3><span class="axno">(v)</span>アーベルか、非アーベルか</h3>
+    <div class="cells">
+      <div class="cell k1"><p class="who">(1) 類体論</p><p><strong>定義によりアーベル。</strong>分類するのはアーベル拡大であり、非アーベル拡大はまさにその届かないところです。</p></div>
+      <div class="cell k2"><p class="who">(2) Tate 理論</p><p><strong>アーベル。</strong>局所コンパクト<strong>アーベル</strong>群上の調和解析（Pontryagin 双対）で、明示的に GL(1) の場合。その非アーベルな継続が保型表現論／Langlands です。</p></div>
+      <div class="cell k3"><p class="who">(3) 遠アーベル</p><p><strong>定義により非アーベル。</strong>「anabelian ＝ アーベルから遠い」。アーベル化すると定理は崩れます —— アーベル化が見えるのは Jacobian／Tate 加群（C.3）と類体論のデータ（B.1）だけです。</p></div>
+      <div class="cell k4"><p class="who">(4) PAG ［著者の記述］</p><p>形式化されたものはすべて<strong>アーベル（GL(1)）</strong>。PAG はこの軸では（3）ではなく（1）（2）の側に座ります。</p></div>
+    </div>
+  </article>
+
+  <article class="axis">
+    <h3><span class="axno">(vi)</span>有限レベルの構造 —— 可換な逆極限か、非可換な有限代数か</h3>
+    <p class="axis-lead">注意：有限群（有限集合）の逆系から関数代数を取ると、自動的に帰納系になります（C(Ẑ<sup>×</sup>) = lim→ C((ℤ/N)<sup>×</sup>)、Bost–Connes の C*(ℚ/ℤ) = lim→ C*(ℤ/N)）。したがって「逆極限か帰納極限か」という変化の向きだけでは、Gelfand–Pontryagin 双対で同じものを見ているにすぎず、決定的な相違になりません。（4）を古典側から本当に分けるのは、有限レベルの代数が<strong>非可換</strong>であることと、そのために単位的な帰納系が素数冪の段で壊れること（著者の Part 258）です。<span class="badge b-judge">判断（双対性の部分は標準的事実）</span></p>
+    <div class="cells">
+      <div class="cell k1"><p class="who">(1) 類体論 —— 逆極限</p><p><strong>全体を通じて逆極限。</strong>Galois 群は射有限：Gal(K<sup>ab</sup>/K) = lim← Gal(L/K)。局所的には Gal(K<sub>v</sub><sup>ab</sup>/K<sub>v</sub>) は K<sub>v</sub><sup>×</sup> の射有限完備化、Ẑ = lim← ℤ/nℤ。有限レベルは<strong>商</strong>（開部分群 U に対する射線類群 C<sub>K</sub>/U）で、逆極限で組み立てられます。</p></div>
+      <div class="cell k2"><p class="who">(2) Tate 理論 —— 混在</p><p>算術側は射有限（C<sub>ℚ</sub> の Ẑ<sup>×</sup> 部分は（1）と同様）ですが、𝔸<sub>K</sub> 自体は制限積 —— S が大きくなるにつれて開部分環 𝔸<sub>K</sub>(S) = ∏<sub>v∈S</sub> K<sub>v</sub> × ∏<sub>v∉S</sub> O<sub>v</sub> の帰納極限（位相的に）です。𝔸<sub>K</sub>(S) は局所コンパクトですが、ℝ や ℚ<sub>p</sub> の因子を含むのでコンパクトではありません。コンパクト開部分群の帰納極限になっているのは有限アデールの側で、𝔸<sub>f</sub> = ⋃<sub>N</sub> N<sup>−1</sup>Ẑ です。解析そのものは連続であり、有限次元代数の極限ではありません。<span class="badge b-judge">標準的構造（単一出典寄り）</span></p></div>
+      <div class="cell k3"><p class="who">(3) 遠アーベル —— 逆極限</p><p><strong>定義により逆極限。</strong>π<sub>1</sub><sup>ét</sup> は有限エタール被覆を分類する射有限完備化であり、有限 Galois 群の逆極限です。</p></div>
+      <div class="cell k4"><p class="who">(4) PAG ［著者の記述］ —— 非可換な有限代数の帰納系</p><p>有限レベルは ℤ/N の円分スキームの有限次元 <strong>Terwilliger 代数 A<sub>N</sub> = T(0)</strong> で、<strong>非可換</strong>です。可換な関数代数なら引き戻しは常に単位的ですが、A<sub>N</sub> では、単位元を保ち引き戻しと両立し殻を混ぜない写像 A<sub>N</sub> → A<sub>M</sub>（N | M）があるのは gcd(N, M/N) = 1 のとき、そのときに限ります（Part 258、PAG262）。全整除順序の上の帰納系は単位元を保たない角の写像で組まれ（Part 260、PAG264）、その極限 <span class="mono">CornerLim</span> は局所的な単位元を持つが左単位元を持ちません（Part 261、PAG265）。互いに素な段だけを使う無平方数の部分系なら帰納系になります（Part 259、PAG263）。古典的な帰納極限の対象としては ℚ/ℤ = lim→ ℤ/N（自己同型群が Ẑ<sup>×</sup>、Bost–Connes 代数の生成元 e(r) の添字）があり、群環の側で角の写像が Bost–Connes の ρ と一致することは数値でのみ確認されています（Lean の外、著者の記録）。</p></div>
+    </div>
+  </article>
+
+  <article class="axis">
+    <h3><span class="axno">(vii)</span>定理か、公準か —— ε 因子の非対称性</h3>
+    <p class="axis-lead">この非対称性は実在し、鋭いものです。<span class="badge b-judge">論理の判断（（4）は著者の記述による）</span></p>
+    <div class="cells">
+      <div class="cell k2"><p class="who">(2) Tate 理論 —— 定理</p><p>局所関数等式は<strong>定理</strong>です。各局所体 F と Schwartz–Bruhat 関数 f について、局所ゼータ積分は関数等式を満たし、その比（局所定数 ρ、現代の言葉では γ 因子）は <strong>f の選択によらないことが証明されます</strong>。ただし ε(s, χ, ψ) は加法指標 ψ、Haar 測度の正規化、s に依存するので、「ε の値」と言うときはこれらの規約を固定する必要があります。局所根数は w<sub>F</sub>(χ) = ε<sub>F</sub>(χ)/|ε<sub>F</sub>(χ)|。大域的には W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>) が導出される分解で、K 上自明な大域の ψ を使えば積は ψ によりません（これも定理）。<strong>ε について何も仮定されません。ε は出力です。</strong></p></div>
+      <div class="cell k1"><p class="who">(1) 類体論 ／ (3) 遠アーベル</p><p>（1）でも類似の「位相」（局所 Artin 写像、Hilbert 記号）は定理です（局所相互法則）。（3）には ε 因子はそもそも存在しません。</p></div>
+      <div class="cell k4" style="grid-column:1/-1"><p class="who">(4) PAG ［著者の記述］ —— 公準</p><p>境界ユニタリ U の指標ごとの位相は、<strong>Tate の局所定数の値に一致するよう公準（公理 A1）で固定</strong>されます。著者の記録では、規約は固定されています：加法指標は Tate の学位論文の規約（ψ<sub>∞</sub>(x) = e<sup>−2πix</sup>、ψ<sub>p</sub>(x) = e<sup>+2πi{x}<sub>p</sub></sup>）、原始指標、s = 1/2 で、原始指標の位相をこの値 τ(χ)/(i<sup>a</sup>√N)（Part 252 の Hartley 核の値）に選ぶ、というのが著者の記録での A1 の読みです。この値が無限素点と有限素点の局所定数の積と一致することは Lean の外の一致です。<strong>非対称性の言明</strong>：PAG は、切り取られた幾何における境界条件についての公理として、Tate の理論が切り取られていないアデール環上の Fourier 解析から<strong>証明する</strong>数値を取り込みます。したがって A1 を ε 因子の導出や説明として引用することはできません。A1 は ε 因子の<strong>符号化（エンコーディング）</strong>です。PAG が Tate 理論を「回復する」という主張は、ちょうどこの分だけ割り引かなければなりません —— ε のデータは入力であって出力ではない。この比較で最も鋭い不類似であり、解釈の問題ではなく論理（公理か定理か）の問題です。ただし条件があります：PAG の中で A1 が他の公理から導かれない限り、です。A1 が独立な要請（例えば反転・実性との両立）から一意に定まることが示されれば、A1 は符号化以上のものになり、この非対称性は弱まります。現時点の著者の記録では A1 は公準のままで、定理 2.6 の条件を満たすことはルート数の整合性の確認にとどまり、A1 を導いたことにはなりません。</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 対照表 ============ -->
+<section id="table">
+  <div class="sec-head">
+    <span class="no">FOUR-WAY TABLE F</span>
+    <h2>四者対照表 —— 7つの軸＋出力と地位</h2>
+    <p>D の7つの軸に「出力の型と地位」を加えた8行の一覧です（英語版と同じ行・同じ核心行）。（4）の列は全体を通じて著者の記述によります。（1）–（3）のセルは A–E 節で出典を確認したもの、独立に出典を確認できなかったセルには ⚠ を付けました。「ε 因子」の行は比較の核心として強調しています。</p>
+  </div>
+  <div class="table-tools" role="group" aria-label="表の表示切替">
+    <span>表示：</span>
+    <button data-filter="all" aria-pressed="true">全8行</button>
+    <button data-filter="core" aria-pressed="false">核心の4行のみ</button>
+  </div>
+  <div class="tbl-wrap">
+    <table class="cmp">
+      <thead><tr><th scope="col">軸</th><th scope="col">(1) イデール類体論</th><th scope="col">(2) Tate 理論</th><th scope="col">(3) 遠アーベル幾何学</th><th scope="col">(4) PAG［著者の記述］</th></tr></thead>
+      <tbody>
+        <tr data-core="1"><th scope="row">原始対象／「点」</th>
+          <td data-who="(1) 類体論">K の素点 v をイデールとして梱包。中心対象は群 C<sub>K</sub></td>
+          <td data-who="(2) Tate 理論">局所コンパクト加法群としての環 𝔸<sub>K</sub> と、その上の Schwartz–Bruhat 関数</td>
+          <td data-who="(3) 遠アーベル">スキーム／曲線 X と射有限 π<sub>1</sub><sup>ét</sup>(X)。点 ↔ 分解部分群</td>
+          <td data-who="(4) PAG" class="hi">ℚ の素数＋無限素点が、設計された点</td></tr>
+        <tr><th scope="row">無限素点</th>
+          <td data-who="(1) 類体論">含まれる、対等。法に実素点を含めると狭義の類群が現れる</td>
+          <td data-who="(2) Tate 理論">含まれる。その局所ゼータ積分が Γ 因子そのもの</td>
+          <td data-who="(3) 遠アーベル">本質的に不在（G<sub>ℝ</sub>／複素共役が見えるのみ）⚠（サーベイからの判断）</td>
+          <td data-who="(4) PAG">点の1つ。連続方向を担う</td></tr>
+        <tr data-core="1"><th scope="row">C<sub>ℚ</sub> の ℝ<sub>&gt;0</sub> 方向（K = ℚ）</th>
+          <td data-who="(1) 類体論" class="hi">殺される：Artin 写像の核 D<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub>。Gal(ℚ<sup>ab</sup>/ℚ) ≅ C<sub>ℚ</sub>/D<sub>ℚ</sub> ≅ Ẑ<sup>×</sup>（一般の K では D<sub>K</sub> はより大きい）</td>
+          <td data-who="(2) Tate 理論" class="hi">スペクトル／Mellin 方向：準指標 |·|<sup>s</sup>（s ∈ ℂ）。完備に積分され、C<sub>K</sub><sup>1</sup> がコンパクトな核。証明の |x| = 1 での切断は道具で、切る位置によらない</td>
+          <td data-who="(3) 遠アーベル">不在：すべての群が射有限・完全不連結</td>
+          <td data-who="(4) PAG" class="hi">円柱座標 u として保持し、Λ 切断を構成の一部として課す</td></tr>
+        <tr data-core="1"><th scope="row">境界／自己共役拡大</th>
+          <td data-who="(1) 類体論">なし</td>
+          <td data-who="(2) Tate 理論">なし（完備な群、Haar 測度、Pontryagin 双対。境界条件は課されない）</td>
+          <td data-who="(3) 遠アーベル">なし</td>
+          <td data-who="(4) PAG" class="hi">構成要素：境界ユニタリによる貼り合わせ U（（1）–（3）の外では Connes 系統に先行あり）</td></tr>
+        <tr><th scope="row">アーベル／非アーベル</th>
+          <td data-who="(1) 類体論">アーベルのみ（アーベル拡大）</td>
+          <td data-who="(2) Tate 理論">アーベル（GL(1) 調和解析）</td>
+          <td data-who="(3) 遠アーベル">定義により非アーベル（「アーベルから遠い」）</td>
+          <td data-who="(4) PAG">指標と L の側はアーベル（GL(1)）。ただし有限レベルの代数 A<sub>N</sub> は非可換</td></tr>
+        <tr><th scope="row">有限レベルの構造</th>
+          <td data-who="(1) 類体論">逆極限（射有限完備化、射線類群という商）。関数代数で見れば帰納極限（双対）</td>
+          <td data-who="(2) Tate 理論">算術部分は射有限、解析は連続。𝔸<sub>K</sub> は開部分環 𝔸<sub>K</sub>(S)（コンパクトでない）の帰納極限、𝔸<sub>f</sub> はコンパクト開部分群 N<sup>−1</sup>Ẑ の帰納極限</td>
+          <td data-who="(3) 遠アーベル">逆極限（射有限 π<sub>1</sub>）</td>
+          <td data-who="(4) PAG" class="hi">非可換な Terwilliger 代数 A<sub>N</sub>。単位的・両立・殻を混ぜない写像は gcd(N, M/N) = 1 の段だけ（Part 258）。全整除順序では単位元を保たない角の写像の帰納系（極限は左単位元なし、Part 260–261）</td></tr>
+        <tr data-core="1" class="hl"><th scope="row">ε 因子：定理か公準か</th>
+          <td data-who="(1) 類体論">局所相互法則／記号は定理。ε の形式そのものはない</td>
+          <td data-who="(2) Tate 理論" class="hi"><strong>定理</strong>：局所関数等式の比 ρ（γ 因子）は試験関数によらないことが証明され、W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>) が導出される。ε は ψ・測度・s の規約に依存</td>
+          <td data-who="(3) 遠アーベル">ε 因子なし</td>
+          <td data-who="(4) PAG" class="hi"><strong>公準</strong>：U の原始指標の位相を、規約 T・s = 1/2 の局所定数の値に一致するよう公理 A1 で固定（値の一致は Lean の外）。A1 が他の公理から導かれない限り符号化</td></tr>
+        <tr><th scope="row">出力の型と地位</th>
+          <td data-who="(1) 類体論">分類定理（拡大 ↔ C<sub>K</sub> の部分群）。完成した理論（Takagi–Artin–Chevalley–Artin/Tate–Neukirch）</td>
+          <td data-who="(2) Tate 理論">解析的定理（解析接続、関数等式、極）。完成した理論（1950。GL(n) への継続は Godement–Jacquet 1972、Langlands）</td>
+          <td data-who="(3) 遠アーベル">再構成定理＋未解決の予想。双曲曲線の定理は証明済み、切断予想と高次元の場合が未解決</td>
+          <td data-who="(4) PAG">設計された幾何。Lean で検証された形式化（定理・補題 約 3,690 件、著者による）。未出版</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 年表 ============ -->
+<section id="timeline">
+  <div class="sec-head">
+    <span class="no">GENEALOGY &amp; TIMELINE E</span>
+    <h2>系譜と年表</h2>
+    <p>順序に注意すべきは、遠アーベルの原型（1969/76）がプログラムの命名（1983/84）より<strong>前</strong>にあること、そして Bost–Connes（1995）が玉川・望月（1996–99）と同時代でありながら（3）の系譜ではなく（1）の系譜に属することです。</p>
+  </div>
+  <ol class="tl">
+    <li><span class="yr">1920s</span><span class="dot"></span><p class="ev"><strong>高木・Artin の類体論。</strong>アーベル拡大が射線類群で分類され、Artin 相互法則（1927）が写像 C<sub>𝔪</sub>/H ≅ Gal(L/K) を与える。</p></li>
+    <li><span class="yr">1936</span><span class="dot"></span><p class="ev"><strong>Chevalley が「éléments idéaux（理想元）」を導入</strong>し、無限次拡大に対する類体論を位相群の言葉で定式化する。</p></li>
+    <li><span class="yr">1940</span><span class="dot"></span><p class="ev"><strong>Chevalley『La théorie du corps de classes』</strong>（Ann. of Math. 41, 394–418）。名前は（Hasse の提案で）「idèle」と略され、証明は純代数的で「ゼータ関数の理論は今や省略できる」ものとなった。</p></li>
+    <li class="key"><span class="yr">1950</span><span class="dot"></span><p class="ev"><strong>Tate の学位論文</strong>『Fourier analysis in number fields and Hecke's zeta-functions』（Princeton、指導 Artin、1950年5月完成）。Iwasawa も独立に同様の結果を得た（1950 ICM ノート、1952年の Dieudonné への手紙）。</p></li>
+    <li><span class="yr">1952–61</span><span class="dot"></span><p class="ev"><strong>コホモロジー的類体論。</strong>Tate コホモロジー（1952、カップ積の定理）→ Nakayama の一般化（1957）＝ Tate–Nakayama → Artin–Tate セミナーが<strong>類形成</strong>を公理化（ノートは1961年から流通、第XIV章）。</p></li>
+    <li class="key"><span class="yr">1967</span><span class="dot"></span><p class="ev"><strong>Cassels–Fröhlich『Algebraic Number Theory』</strong>（Brighton 1965 会議録）。コホモロジー的類体論の章群と、Tate の学位論文（第XV章、pp. 305–347）が同居する。学位論文は「秘密文献として深い影響を与えた」末の、この巻での初出版。</p></li>
+    <li class="key"><span class="yr">1969/76</span><span class="dot"></span><p class="ev"><strong>Neukirch–Uchida 定理。</strong>Neukirch（Invent. Math. 6, 1969；Caen 1976、Astérisque 41–42, 1977）、Uchida（J. Math. Soc. Japan 28, 1976）。Neukirch の 1969 年の証明は一方が ℚ 上 Galois である場合で、一般の数体と関手性は Uchida による。<strong>原型がプログラムの命名に14年先行する。</strong></p></li>
+    <li><span class="yr">1983/84</span><span class="dot"></span><p class="ev"><strong>Grothendieck が遠アーベル・プログラムを命名。</strong>Faltings への手紙（1983年6月27日）と『Esquisse d'un programme』（1984）。切断予想もここで述べられる。</p></li>
+    <li><span class="yr">1995</span><span class="dot"></span><p class="ev"><strong>Bost–Connes 系</strong>（Selecta Math. (N.S.) 1(3), 411–456）。下の囲み参照。</p></li>
+    <li><span class="yr">1996–99</span><span class="dot"></span><p class="ev"><strong>双曲曲線の Grothendieck 予想の証明。</strong>玉川（Compositio 109, 1997、アフィンの場合）、望月（J. Math. Sci. Univ. Tokyo 3, 1996；Invent. Math. 138, 1999、固有／sub-p 進、局所 pro-p）。</p></li>
+    <li class="key"><span class="yr">1999</span><span class="dot"></span><p class="ev"><strong>Connes の跡公式</strong>（Selecta Math. (N.S.) 5, 1999；arXiv:math/9811068）。明示公式をアデール類空間上の跡公式として解釈し、Λ 切断を使う。（4）の Λ 切断に最も近い先行の一つ（下の Connes 系統の節）。</p></li>
+    <li><span class="yr">1999</span><span class="dot"></span><p class="ev"><strong>Neukirch『Algebraic Number Theory』</strong>（Springer；ドイツ語原版1992）。第IV章 抽象的類体論、第V章 局所類体論、第VI章 大域（イデール的）類体論。</p></li>
+    <li><span class="yr">2012–15</span><span class="dot"></span><p class="ev"><strong>単遠アーベル幾何学。</strong>望月『Topics in Absolute Anabelian Geometry』I（2012）・II（2013）・III（2015）と星の解説。切断予想はこの時期も（2012、2023の時点でも）未解決。</p></li>
+    <li class="key"><span class="yr">2021–25</span><span class="dot"></span><p class="ev"><strong>Connes–Consani（–Moscovici）。</strong>『Spectral triples and ζ-cycles』（arXiv 2021、Enseign. Math. 69, 2023）、『Zeta Spectral Triples』（Connes–Consani–Moscovici、arXiv:2511.22755、2025年11月）：区間 [λ<sup>−1</sup>, λ] 上のスケーリング作用素に周期境界条件を課したランク1摂動。（4）の「Λ 切断＋境界ユニタリ」と形の上で最も近い。</p></li>
+  </ol>
+
+  <div class="bc-box">
+    <h3>Bost–Connes 系（1995）はどこに座るか</h3>
+    <p>Bost–Connes は <strong>（1）の子孫で、（2）の登場人物を使う</strong>ものです。C* 力学系 (A, σ<sub>t</sub>) は「連結成分で割った ℚ のイデール類群を対称性として」持ち、Riemann ゼータ関数が分配関数として現れます。β &gt; 1 では極値 KMS<sub>β</sub> 状態が C<sub>ℚ</sub>/D<sub>ℚ</sub> = Ẑ<sup>×</sup> の自由かつ推移的な作用でパラメータ化され、零温度では類体論の同型 θ : Gal(ℚ<sup>ab</sup>/ℚ) ≅ Ẑ<sup>×</sup> が「Galois 群の作用と Ẑ<sup>×</sup> の対称性としての作用を intertwine する」—— すなわち <strong>ℚ の明示的類体論（Kronecker–Weber）を量子統計系の中で実現</strong>し、β = 1 で自発的対称性の破れを伴います（Shirbisheh、arXiv:0808.1767 による解説）。</p>
+    <p>年表の上では BC（1995）は玉川・望月（1996–99）と同時代ですが、属するのは（3）ではなく<strong>（1）の系譜（作用素環的類体論）</strong>です。そのゼータ関数は分配関数（（2）風の ζ の使い方）ですが、対称群も主定理も純粋に（1）です。したがって、PAG の著者が挙げる系譜「Tate の学位論文＋類体論＋Bost–Connes」は、<strong>（1）＋（2）のアーベル／GL(1) の世界の中の系譜</strong>を、それに BC の（1）の作用素環的実現を継ぎ足したものであり、どの点でも（3）を経由しません。<span class="badge b-author">PAG の系譜は著者の記述による</span></p>
+    <p>ただし、Bost–Connes は（4）の<strong>境界ユニタリ</strong>の先行ではありません。BC 系に ℝ<sub>&gt;0</sub> 方向の切断や境界条件はなく、（4）の Λ 切断と境界条件に近いのは、同じ Connes の別系統（跡公式と ζ-サイクル）です。次節で比べます。</p>
+  </div>
+</section>
+
+<!-- ============ Connes 系統 ============ -->
+<section id="connes">
+  <div class="sec-head">
+    <span class="no">ADDENDUM — CONNES LINEAGE</span>
+    <h2>Connes 系統との比較 —— Λ 切断と境界条件</h2>
+    <p>四者比較の（1）–（3）には、（4）の境界ユニタリの対応物がありません。しかし（1）–（3）の外には、ℝ<sub>&gt;0</sub> 方向（スケーリング）の切断と境界条件を構成に持つ研究があります。PAG の新しさを述べるなら、まずこちらと比べる必要があります。基本構造の比較はリポジトリの <span class="mono">docs/overview-and-comparison.md</span> §5 にあり、本節はそこで扱っていない切断と境界条件の点だけを補います。</p>
+  </div>
+  <div class="bc-box">
+    <h3>先行研究（いずれも要旨・導入の水準で確認）</h3>
+    <p>・<strong>Connes（1999）</strong>『Trace formula in noncommutative geometry and the zeros of the Riemann zeta function』Selecta Math. (N.S.) 5：明示公式をアデール類の非可換空間上の跡公式として幾何学的に解釈する。Λ 切断を使い、零点を吸収スペクトルとして読む。</p>
+    <p>・<strong>Connes–Consani（2023）</strong>『Spectral triples and ζ-cycles』Enseign. Math. 69, 93–148：長さ L の円の標準的なスペクトル三つ組を、Weil の明示公式の二次形式の小さい固有値の固有ベクトル（扁長楕円体波動関数から作る）で条件づける。</p>
+    <p>・<strong>Connes–Consani–Moscovici（2025）</strong>『Zeta Spectral Triples』arXiv:2511.22755：区間 [λ<sup>−1</sup>, λ] 上のスケーリング作用素に<strong>周期境界条件</strong>を課し、そのランク1摂動として自己共役作用素を構成する。</p>
+  </div>
+  <div class="bc-box">
+    <h3>重なる点と違う点</h3>
+    <p><strong>重なる点。</strong>ℝ<sub>&gt;0</sub> 方向を有限の区間で切り、端の貼り合わせ（境界条件）を作用素の定義に入れること。これは（4）の Λ 切断と境界ユニタリ U と形の上で同じ型です。したがって「切断して境界で貼る」こと自体を PAG の新しさとして書くことはできません <span class="badge b-judge">判断</span>。</p>
+    <p><strong>違う点（著者の記述による）。</strong>(a) PAG は境界ユニタリの原始指標ごとの位相を、Tate の局所定数の値に一致するよう公準 A1 で置く。上の3つの要旨・導入には、ε 因子を境界の位相として公準で置く要素は見当たりません（本文は未照合、確信度：低〜中）。(b) ねらいが違う：Connes 系統はリーマン予想に関わるスペクトル実現を目指すが、PAG はその方向を取らず、モノグラフは零点への接近が注入や循環に行き着いたという否定的な結果を記録しています（PAG はリーマン予想へのアプローチではない）。(c) PAG の有限レベルは非可換な Terwilliger 代数 A<sub>N</sub> で組まれ、Connes 系統の有限次元近似（扁長関数・Sonin 空間）とは別の対象です。</p>
+    <p class="small">残る問い：（4）の境界ユニタリの両立分類（定理 2.6）と、CCM 2025 の周期境界条件＋ランク1摂動との関係。本文での照合は未実施です。</p>
+  </div>
+</section>
+
+<!-- ============ 留保 ============ -->
+<section id="caveats">
+  <div class="sec-head">
+    <span class="no">CAVEATS</span>
+    <h2>留保 —— 確認できなかったこと</h2>
+    <p>調査報告が明示した未確認事項を、そのまま残します。「見つからなかった」は、いずれも調べた範囲での不在の報告であって、存在しないことの証明ではありません。</p>
+  </div>
+  <div class="caveats">
+    <ul>
+      <li><strong>C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub> の一次教科書出典。</strong>この分解は標準的で、すべての Bost–Connes 出典が C<sub>ℚ</sub>/D<sub>ℚ</sub> = Ẑ<sup>×</sup>、D<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub> として同一に使いますが、積分解を逐語的に述べた一次教科書のページは開けませんでした（補題として述べた弱い出典1件を確認）。信頼度は高いものの、引用は間接的です。</li>
+      <li><strong>「（2）と（3）は相互作用しない」と明言する出典はない。</strong>不在は直接には出典化できません。C 節は、遠アーベルのサーベイに見える道具立て（類体論、Brauer 群、Kummer 理論 —— アデール的 Fourier 解析は決して現れない）に基づく不在の所見／判断として表示しています。</li>
+      <li><strong>（3）におけるアルキメデス素点のセル</strong>（D(ii)）は、サーベイ水準の読みと arXiv:2301.10342 の Artin–Schreier に関する注意に基づきます。「遠アーベル幾何学に無限素点は不在」とその言葉で述べる単一の出典はありません。</li>
+      <li><strong>Neukirch の個人的経路</strong>（類体論から1969年の定理へ）は、定理の内容と証明技法（局所理論、Brauer 群）と二次的な言及の水準でのみ記録されており、自伝的な出典は見つかりませんでした。</li>
+      <li><strong>PAG（4）は調査対象外</strong>です。（4）のセルは、調査への依頼文に含まれた著者側の要約と、本改訂で参照したリポジトリの CLAUDE.md（著者の記録：Part 252・258–261、規約 T、A1 の読み）に基づきます。</li>
+      <li><strong>Connes 系統の3文献</strong>は、要旨・導入の水準で確認しただけです。「ε 因子を境界の位相として公準で置く要素はない」は本文未照合の不在の所見です。</li>
+      <li><strong>本改訂（2026-11-20）の修正そのものは独立照合を受けていません。</strong>修正の一覧は下の改訂記録にあります。照合を受けるまで、これらの直しは未照合として扱ってください。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 出典 ============ -->
+<section id="sources">
+  <div class="sec-head">
+    <span class="no">SOURCES</span>
+    <h2>出典</h2>
+    <p>主要出典の一覧です（本文中にも逐次記載）。「実地確認」は調査時に実際に開いて読んだもの、「索引」は検索索引経由で内容を確認したものを示します。</p>
+  </div>
+  <div class="sources">
+    <ol>
+      <li>J.S. Milne, <i>The Work of John Tate</i>（Abel 賞記念巻、2012）— <a href="https://mail.jmilne.org/math/xnotes/Tate.pdf">https://mail.jmilne.org/math/xnotes/Tate.pdf</a> — 実地確認（§1.1–1.3 を通読）。</li>
+      <li>S.S. Kudla, <i>Tate's Thesis</i>, in Bernstein–Gelbart (eds.), <i>An Introduction to the Langlands Program</i>, Springer — <a href="https://link.springer.com/chapter/10.1007/978-0-8176-8226-2_6">https://link.springer.com/chapter/10.1007/978-0-8176-8226-2_6</a> — 索引。</li>
+      <li><i>Tate's thesis</i>（百科事典的要約。「類体論の深い結果を使わない」の文言、Godement–Jacquet 1972 を含む）— <a href="https://en.wikipedia.org/wiki/Tate's_thesis">https://en.wikipedia.org/wiki/Tate's_thesis</a> — 索引。</li>
+      <li>M. Raussen, C. Skau, <i>Interview with Abel Laureate John Tate</i>, Notices of the AMS 58(3)（2011年3月）444 頁から（初出は EMS Newsletter 2010年9月号）— 改訂で個人ブログ経由のリンクを書誌に置き換え。</li>
+      <li><i>Class field theory</i>（百科事典的要約：目的、存在定理、Artin–Tate コホモロジー、Neukirch の証明、3つの一般化）— <a href="https://en.wikipedia.org/wiki/Class_field_theory">https://en.wikipedia.org/wiki/Class_field_theory</a> — 索引。改訂で、無関係なドメインのクローラ経由のリンクを直接リンクに置き換え。</li>
+      <li>Encyclopedia of Mathematics, <i>Class field theory</i> — <a href="https://encyclopediaofmath.org/index.php?title=Class_field_theory&diff=55453&oldid=51883">https://encyclopediaofmath.org/index.php?title=Class_field_theory&amp;diff=55453&amp;oldid=51883</a> — 索引。</li>
+      <li><i>Local class field theory</i> — <a href="https://en.wikipedia.org/wiki/Local_class_field_theory">https://en.wikipedia.org/wiki/Local_class_field_theory</a>；H.-C. Li, <i>A brief introduction on local class field theory</i> — <a href="https://math.ntnu.edu.tw/~li/note/lcft.pdf">https://math.ntnu.edu.tw/~li/note/lcft.pdf</a> — 索引。</li>
+      <li><i>Adelic algebraic group</i>（Chevalley 1936/1940 の歴史）— <a href="https://en.wikipedia.org/wiki/Adelic_algebraic_group">https://en.wikipedia.org/wiki/Adelic_algebraic_group</a>；AMS, <i>Hello, Adele</i>（Chevalley 1940 の書評）— <a href="https://blogs.ams.org/beyondreviews/2015/11/24/hello-adele/">https://blogs.ams.org/beyondreviews/2015/11/24/hello-adele/</a> — 索引。</li>
+      <li>J. Neukirch, <i>Algebraic Number Theory</i>, Grundlehren 322, Springer 1999 — <a href="https://doi.org/10.1007/978-3-662-03983-0">doi:10.1007/978-3-662-03983-0</a> — 索引。改訂で、転載と思われるサイトへのリンクを出版社の DOI に置き換え。</li>
+      <li><i>Idele group</i>（C<sub>K</sub><sup>1</sup> のコンパクト性、ℝ<sub>&gt;0</sub> へのノルム写像）— <a href="https://en.wikipedia.org/wiki/Idele_group">https://en.wikipedia.org/wiki/Idele_group</a>；K. Kedlaya, <i>Class Field Theory</i> ノート §6.6（準指標、|·|<sup>s</sup> の区別された ℂ）— <a href="https://kskedlaya.org/cft/sec_adelic-fourier.html">https://kskedlaya.org/cft/sec_adelic-fourier.html</a> — 索引。</li>
+      <li>D.K. Angdinata, <i>Tate's thesis and epsilon factors</i>（2022）— <a href="https://multramate.github.io/talks/ttaef.pdf">https://multramate.github.io/talks/ttaef.pdf</a>；D. Kim, <i>Tate's thesis 1</i> — <a href="http://web.stanford.edu/~dkim04/blog/tate-thesis-1/">http://web.stanford.edu/~dkim04/blog/tate-thesis-1/</a>；A. Mine, <i>Overview of Tate's Thesis</i> — <a href="http://math.uchicago.edu/~may/REU2016/REUPapers/Mine.pdf">http://math.uchicago.edu/~may/REU2016/REUPapers/Mine.pdf</a> — 索引。</li>
+      <li>nLab, <i>anabelian geometry</i>（Grothendieck 1983/84、Neukirch 1969/1976、Uchida 1976、Mochizuki 1996）— <a href="https://ncatlab.org/nlab/revision/anabelian+geometry/16">https://ncatlab.org/nlab/revision/anabelian+geometry/16</a> — 索引。</li>
+      <li>A. Grothendieck, <i>Letter to Faltings</i>（1983年6月27日）英訳 — <a href="https://wstein.org/sga/circle/GtoF.pdf">https://wstein.org/sga/circle/GtoF.pdf</a> — 索引。</li>
+      <li>H. Nakamura, <i>On Galois rigidity of fundamental groups of algebraic curves</i> — <a href="http://www4.math.sci.osaka-u.ac.jp/~nakamura/zoo/monkey/02nakamura.pdf">http://www4.math.sci.osaka-u.ac.jp/~nakamura/zoo/monkey/02nakamura.pdf</a> — 索引。</li>
+      <li>M. Saïdi – A. Tamagawa, arXiv:1909.08829 — <a href="https://arxiv.org/pdf/1909.08829">https://arxiv.org/pdf/1909.08829</a>；A. Tamagawa, <i>Developments of anabelian geometry of curves over finite fields</i>（2021）— 転載サイト経由で閲覧したもので、一次の所在は未確認（改訂でリンクを外した。B.4 の Step 2-1 の引用はこの経路に依るので、一次文献での照合が必要）；K. Uchida, <i>Isomorphisms of Galois groups</i>, J. Math. Soc. Japan 28 (1976) — 序文（Neukirch・Ikeda・Iwasawa の経緯）；M. Saïdi, <i>On the anabelian geometry of hyperbolic curves over finite fields</i> — <a href="https://empslocal.ex.ac.uk/people/staff/ms220/Site/Lectures_and_Video_files/fukuoka.pdf">https://empslocal.ex.ac.uk/people/staff/ms220/Site/Lectures_and_Video_files/fukuoka.pdf</a> — 索引。</li>
+      <li>T. Hiranouchi, <i>On the fundamental groups with restricted ramification</i>（2006）— <a href="https://www.mathnet.or.kr/mathnet/kms_tex/986001.pdf">https://www.mathnet.or.kr/mathnet/kms_tex/986001.pdf</a>；Neukirch–Schmidt–Wingberg, <i>Cohomology of Number Fields</i>（2008）前付け — <a href="https://media2.ebook.de/shop/coverscans/219PDF/21989623_lprob_1.pdf">https://media2.ebook.de/shop/coverscans/219PDF/21989623_lprob_1.pdf</a>；T. Szamuely, <i>Heidelberg Lectures on Fundamental Groups</i> — <a href="https://web.archive.org/web/20200405211320/https://www.renyi.hu/~szamuely/heid.pdf">https://web.archive.org/web/20200405211320/https://www.renyi.hu/~szamuely/heid.pdf</a> — 索引。改訂で、第三者のプロキシ経由のリンクを Internet Archive への直接リンクに置き換え。</li>
+      <li><i>Anabelian geometry</i>（単遠アーベル：Mochizuki 2012/2013/2015、Hoshi）— <a href="https://en.wikipedia.org/wiki/Anabelian_geometry">https://en.wikipedia.org/wiki/Anabelian_geometry</a>；B. Collas, <i>Anabelian Geometry — a modern overview</i>（2021）— <a href="http://collas.perso.math.cnrs.fr/exposes/collas_jente.pdf">http://collas.perso.math.cnrs.fr/exposes/collas_jente.pdf</a> — 索引。</li>
+      <li>J. Stix, <i>Rational Points and Arithmetic of Fundamental Groups</i>, Springer 2012（切断予想「いまだ未解決」）— <a href="https://books.google.gr/books?id=pEe5BQAAQBAJ&">https://books.google.gr/books?id=pEe5BQAAQBAJ&amp;</a>；A. Betts、AHGT セミナー 2023 — <a href="https://ahgt.math.cnrs.fr/seminar/2023/07/03/Betts_p-sections.html">https://ahgt.math.cnrs.fr/seminar/2023/07/03/Betts_p-sections.html</a> — 索引。</li>
+      <li>L. Fargues, <i>The Curve and the Langlands Program: The Abelian Case</i> — <a href="https://webusers.imj-prg.fr/~laurent.fargues/ICBS.pdf">https://webusers.imj-prg.fr/~laurent.fargues/ICBS.pdf</a>；D. Harari – T. Szamuely, <i>Galois sections for abelianized fundamental groups</i> — <a href="https://www.imo.universite-paris-saclay.fr/~david.harari/articles/bash4.pdf">https://www.imo.universite-paris-saclay.fr/~david.harari/articles/bash4.pdf</a> — 索引。</li>
+      <li>V. Shirbisheh, <i>Quantum statistical mechanics of Q-lattices and noncommutative geometry</i>（Bost–Connes 1995 の解説）、arXiv:0808.1767 — <a href="https://arxiv.org/pdf/0808.1767">https://arxiv.org/pdf/0808.1767</a>；<i>Galois group</i>（BC 系の要約：C<sub>ℚ</sub>/D<sub>ℚ</sub> = Ẑ<sup>×</sup>、KMS 状態）— <a href="https://www.sciencedirect.com/topics/mathematics/galois-group">https://www.sciencedirect.com/topics/mathematics/galois-group</a> — 索引。</li>
+      <li>C<sub>ℚ</sub> の構造（補題：C<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub> × Ẑ<sup>×</sup>）— <a href="http://zenodo.org/records/17576973/files/16.pdf?download=1">http://zenodo.org/records/17576973/files/16.pdf?download=1</a> — 索引、弱い出典（出典20で裏づけ）。</li>
+      <li><i>Two-step nilpotent extensions are not anabelian</i>, arXiv:2301.10342（Neukirch の局所理論、Artin–Schreier の洞察）— <a href="https://arxiv.org/pdf/2301.10342">https://arxiv.org/pdf/2301.10342</a> — 索引。</li>
+      <li>A. Connes, <i>Trace formula in noncommutative geometry and the zeros of the Riemann zeta function</i>, Selecta Math. (N.S.) 5 (1999) — <a href="https://arxiv.org/abs/math/9811068">arXiv:math/9811068</a> — 改訂で追加、要旨を確認。</li>
+      <li>A. Connes, C. Consani, <i>Spectral triples and ζ-cycles</i>, Enseign. Math. 69 (2023), 93–148 — <a href="https://doi.org/10.4171/LEM/1049">doi:10.4171/LEM/1049</a>（arXiv:2106.01715）— 改訂で追加、要旨・導入を確認。</li>
+      <li>A. Connes, C. Consani, H. Moscovici, <i>Zeta Spectral Triples</i>（2025）— <a href="https://arxiv.org/abs/2511.22755">arXiv:2511.22755</a> — 改訂で追加、要旨・導入を確認。</li>
+    </ol>
+    <p class="small">ほかに本文中で言及したもの：Kudla 経由の Exeter ノート（<a href="http://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/NTfourier.htm">http://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/NTfourier.htm</a>）、ar5iv サーベイ（<a href="https://ar5iv.labs.arxiv.org/html/2511.06725">https://ar5iv.labs.arxiv.org/html/2511.06725</a>）。</p>
+  </div>
+</section>
+
+<section id="revision">
+  <div class="sec-head">
+    <span class="no">REVISION</span>
+    <h2>改訂記録（2026-11-20）</h2>
+    <p>精査で見つかった点を反映しました。<strong>どの直しも独立照合を受けていません。</strong>英語版にも同じ直しを入れています。</p>
+  </div>
+  <div class="caveats">
+    <ul>
+      <li><strong>数学の誤り：</strong>B.1 の π<sub>1</sub><sup>ét</sup>(Spec O<sub>K</sub>)<sup>ab</sup> は狭義イデアル類群に同型（以前は「イデアル類群」。反例 ℚ(√3)）。（3）の Isom の公式に「k 上、G<sub>k</sub> と整合する」条件を補った。</li>
+      <li><strong>比較の論点の直し：</strong>軸 (vi) の「逆極限か帰納極限か」は Gelfand–Pontryagin 双対で同じものを見ているにすぎないので、相違の芯を「有限レベルの代数の非可換性と、単位的な帰納系が素数冪の段で壊れること（Part 258）」に移した。「最も近い古典的親戚は Bost–Connes」を撤回し、Connes 系統（1999・2023・2025）との比較の節を追加した。</li>
+      <li><strong>言い過ぎ・不正確の直し：</strong>Tate 理論の証明にある |x| = 1 での切断（道具であり、切る位置によらない）を明記した。𝔸<sub>K</sub>(S) はコンパクトでない。ε の ψ・測度・s への依存と、A1 の規約（規約 T、s = 1/2）を明記した。A1 の非対称性に「他の公理から導かれない限り」の条件を付けた。Neukirch 1969 の範囲（一方が ℚ 上 Galois）を明記した。D<sub>K</sub> ≅ ℝ<sub>&gt;0</sub> は ℚ（と虚二次体）に限ると明記した。軸 (ii) の実素点の役割、Tate の定理（1952）の「すべての部分群 H」を直した。地位ラベルを、出典の強さと論理の種類に合わせた。</li>
+      <li><strong>表記：</strong>分解群の特徴づけは「（位相群としての）群論的」と書き、出典ごとの言い回しを併記した（以前の精査で「位相的は誤訳」と述べたのは撤回。arXiv:2301.10342 は topological と書いている）。「遠アベール」を、依頼文の表記に合わせて「遠アーベル」に統一した（リポジトリの他の文書は「遠アベール」のまま）。「問題 P1」を定義した。</li>
+      <li><strong>英語版との整合：</strong>対照表を両版とも8行（7つの軸＋出力と地位）にし、核心の4行を「原始対象・ℝ<sub>&gt;0</sub> 方向・境界・ε 因子」に揃えた。（4）のカードの作用素系の記述を英語版にも入れた。</li>
+      <li><strong>出典：</strong>無関係なドメインのクローラ経由（#5）、第三者プロキシ経由（#16）、個人ブログ経由（#4）、転載と思われるサイト（#9、#15）のリンクを、直接リンク・DOI・書誌に置き換えるか外した。Connes 系統の3文献と Uchida 1976 を追加した。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>本ページは2026年11月19–20日の出典つき調査報告（四者比較）に基づく要約・再構成です。（1）–（3）についての事実主張には出典を付け、定理／定義／プログラム／不在の所見／判断の区別を保ちました。（4）アーデル射影幾何学については未出版のため調査対象外とし、すべての記述を「著者の記述による」と明示しています。</p>
+</footer>
+
+</div>
+<script>
+(function(){
+  // Pairwise tabs
+  var tabs = document.querySelectorAll('[data-tab]');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.setAttribute('aria-selected', b === btn ? 'true' : 'false'); });
+      ['a','b','c'].forEach(function(k){
+        var p = document.getElementById('panel-' + k);
+        if (p) p.hidden = (k !== btn.getAttribute('data-tab'));
+      });
+    });
+  });
+  // Table filter
+  var filterBtns = document.querySelectorAll('[data-filter]');
+  var rows = document.querySelectorAll('table.cmp tbody tr');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      var mode = btn.getAttribute('data-filter');
+      rows.forEach(function(r){
+        r.style.display = (mode === 'core' && !r.hasAttribute('data-core')) ? 'none' : '';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

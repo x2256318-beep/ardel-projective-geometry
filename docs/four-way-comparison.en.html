@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Four-Way Comparison: Class Field Theory, Tate Theory, Anabelian Geometry, and Ardel Projective Geometry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f4ec; --surface:#fffdf7; --surface2:#efe9da; --ink:#1c2430; --ink2:#4a5468; --line:#d8d0bd;
+    --accent:#7c2d3e; --accent-ink:#7c2d3e; --gold:#9a6b1f; --teal:#1f5f56; --chip:#ece5d2;
+    --shadow:0 1px 3px rgba(28,36,48,.08), 0 8px 24px rgba(28,36,48,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14171d; --surface:#1d2129; --surface2:#262b35; --ink:#ece7da; --ink2:#aeb6c2; --line:#3a4150;
+      --accent:#e08a9c; --accent-ink:#e8a3b2; --gold:#d9ab5e; --teal:#7fc4b8; --chip:#2b303c;
+      --shadow:0 1px 3px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16.5px;line-height:1.65}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px 72px}
+  h1,h2,h3{font-family:"Newsreader",Georgia,serif;line-height:1.2;margin:0}
+  h1{font-size:clamp(30px,5.4vw,46px);font-weight:700;letter-spacing:-.01em}
+  h2{font-size:clamp(23px,3.6vw,30px);font-weight:700;margin-bottom:10px}
+  h3{font-size:19px;font-weight:600}
+  p{margin:0 0 14px}
+  a{color:var(--accent-ink);text-underline-offset:3px;word-break:break-word}
+  .mono{font-family:"IBM Plex Mono",monospace;font-size:.92em}
+  math, .math{font-family:"Newsreader",Georgia,serif;font-style:italic}
+
+  header{padding:44px 0 8px}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .lede{font-size:clamp(17px,2.4vw,19.5px);color:var(--ink2);max-width:820px;margin-top:16px}
+  .lede strong{color:var(--ink)}
+
+  .four{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 8px}
+  @media (max-width:900px){.four{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.four{grid-template-columns:1fr}}
+  .item{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:10px;padding:16px 16px 12px;box-shadow:var(--shadow)}
+  .item:nth-child(2){border-top-color:var(--teal)}
+  .item:nth-child(3){border-top-color:#5b6fa6}
+  @media (prefers-color-scheme: dark){.item:nth-child(3){border-top-color:#93a5d4}}
+  .item:nth-child(4){border-top-color:var(--accent)}
+  .item .num{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink2);letter-spacing:.1em}
+  .item h3{margin:6px 0 8px;font-size:18.5px}
+  .item p{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
+  .tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;padding:3px 9px;border-radius:999px;background:var(--chip);color:var(--ink);margin:0 6px 6px 0}
+  .tag.thm{border:1px solid var(--teal);color:var(--teal);background:transparent}
+  .tag.prog{border:1px solid #5b6fa6;color:#5b6fa6;background:transparent}
+  @media (prefers-color-scheme: dark){.tag.prog{border-color:#93a5d4;color:#93a5d4}}
+  .tag.post{border:1px solid var(--accent);color:var(--accent-ink);background:transparent}
+
+  section{margin-top:52px}
+  .sec-note{color:var(--ink2);max-width:820px}
+  .findings{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+  @media (max-width:760px){.findings{grid-template-columns:1fr}}
+  .finding{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:var(--shadow)}
+  .finding.wide{grid-column:1/-1}
+  .finding h3{margin-bottom:8px}
+  .finding p{font-size:15px;color:var(--ink2);margin-bottom:8px}
+  .finding p:last-child{margin-bottom:0}
+  .finding .fn{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gold);letter-spacing:.1em}
+
+  /* Tabs */
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+  .tab-btn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:10px 18px;font:inherit;font-size:14.5px;font-weight:600;cursor:pointer;min-height:44px}
+  .tab-btn[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .panel{display:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:var(--shadow);margin-top:14px}
+  .panel.active{display:block}
+  .panel h3{margin-bottom:10px}
+  .panel p,.panel li{font-size:15.5px}
+  .panel ul{margin:0 0 12px;padding-left:22px}
+  .panel li{margin-bottom:8px}
+  .verdict{border-left:3px solid var(--gold);padding:10px 14px;background:var(--surface2);border-radius:0 8px 8px 0;font-size:15px;margin-top:14px}
+  .src{font-size:13px;color:var(--ink2)}
+
+  /* Table */
+  .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0}
+  .toggle-btn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 16px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;min-height:44px}
+  .toggle-btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  @media (prefers-color-scheme: dark){.toggle-btn[aria-pressed="true"]{color:#14171d}}
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:var(--shadow)}
+  table{border-collapse:collapse;width:100%;min-width:860px;font-size:14px}
+  th,td{padding:13px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+  thead th{font-family:"Newsreader",serif;font-size:16px;background:var(--surface2);position:sticky;top:0}
+  tbody th{font-weight:600;width:170px;background:var(--surface);font-size:14.5px}
+  tbody tr:last-child td, tbody tr:last-child th{border-bottom:none}
+  td{color:var(--ink2)}
+  td strong{color:var(--ink)}
+  tr.core-row th{border-left:4px solid var(--gold)}
+  .core-badge{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--gold);display:block;letter-spacing:.08em;margin-top:3px}
+  @media (max-width:640px){
+    table{min-width:0}
+    thead{display:none}
+    tbody th{width:auto;display:block;border-bottom:none;padding-bottom:2px}
+    td{display:block;border-bottom:none;padding:4px 14px}
+    td::before{content:attr(data-col);display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--gold);margin-bottom:2px}
+    tbody tr{border-bottom:1px solid var(--line);display:block;padding:8px 0}
+    tbody tr:last-child{border-bottom:none}
+  }
+
+  /* Timeline */
+  .tl{position:relative;margin:22px 0 0;padding-left:26px;border-left:2px solid var(--line)}
+  .tl-ev{position:relative;padding:0 0 20px}
+  .tl-ev::before{content:"";position:absolute;left:-33px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+  .tl-ev.hl::before{background:var(--accent)}
+  .tl-date{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--gold);letter-spacing:.06em}
+  .tl-ev h3{font-size:17px;margin:2px 0 4px}
+  .tl-ev p{font-size:14.5px;color:var(--ink2);margin:0;max-width:800px}
+
+  .callout{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:var(--shadow)}
+  .callout p{font-size:15.5px}
+  .caveats li{margin-bottom:10px;font-size:15px}
+  .sources{font-size:13.5px;color:var(--ink2)}
+  .sources li{margin-bottom:9px}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Four-Way Comparison · English Edition</div>
+  <h1>Class Field Theory, Tate Theory, Anabelian Geometry, and Ardel Projective Geometry</h1>
+  <p class="lede">The three published items are <strong>three different uses of overlapping machinery</strong>, not three versions of one theory — and the fourth, Ardel projective geometry (PAG), shares their stage while differing from all three on the decisive axes. Items (1)–(3) are published literature, researched with sources. Item (4) is an unpublished framework; everything said about it is <strong>per its author's description</strong> and was not independently researched. <em>Revised 2026-11-20 to apply the corrections from a review (see the <a href="#revision">revision record</a>; the corrections themselves have not been independently checked).</em></p>
+
+  <div class="four">
+    <div class="item">
+      <div class="num">(1) THE IDELE SIDE</div>
+      <h3>The Idele Class Group C<sub>ℚ</sub> and Class Field Theory</h3>
+      <p>A classification theorem: finite abelian extensions of local and global fields correspond, via the Artin reciprocity map, to open finite-index subgroups of K<sub>v</sub><sup>×</sup> and of the idele class group C<sub>K</sub>.</p>
+      <span class="tag thm">THEOREM</span><span class="tag">GALOIS-THEORETIC</span>
+    </div>
+    <div class="item">
+      <div class="num">(2) THE ADELE SIDE</div>
+      <h3>Harmonic Analysis on the Adele Ring 𝔸 — Tate Theory</h3>
+      <p>Tate's thesis (1950): additive Fourier analysis on the locally compact ring 𝔸, Poisson summation over K ⊂ 𝔸, zeta integrals over 𝔸<sup>×</sup> — yielding analytic continuation and the functional equation of Hecke L-functions.</p>
+      <span class="tag thm">THEOREM</span><span class="tag">ANALYTIC</span>
+    </div>
+    <div class="item">
+      <div class="num">(3)</div>
+      <h3>Anabelian Geometry</h3>
+      <p>Grothendieck's programme: for hyperbolic curves, recover the scheme from its profinite, non-abelian étale fundamental group. Proved for hyperbolic curves (Nakamura, Tamagawa, Mochizuki) in the form Isom<sub>k</sub>(X, Y) ≅ Isom<sup>out</sup><sub>G<sub>k</sub></sub>(π₁(X), π₁(Y)) — the G<sub>k</sub>-compatibility is essential (over an algebraically closed field all hyperbolic curves of the same type (g, ν) have isomorphic geometric π₁). The section conjecture remains open as of the latest source checked (2023).</p>
+      <span class="tag thm">THEOREMS</span><span class="tag prog">PROGRAMME · PART OPEN</span>
+    </div>
+    <div class="item">
+      <div class="num">(4)</div>
+      <h3>Ardel Projective Geometry (PAG)</h3>
+      <p>A designed geometry whose points are the primes plus the infinite place of ℚ; on the cylinder C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub>, a Λ-cutoff carries an operator system (D = −i∂<sub>u</sub>, prime translations, inversion) and a boundary unitary U whose phases on primitive characters are fixed by postulate A1 to Tate's local-constant values (Tate-thesis additive characters, s = 1/2; the value match is outside Lean). Finite levels are the <strong>non-commutative</strong> Terwilliger algebras A<sub>N</sub> = T(0); unital, pullback-compatible, shell-preserving maps A<sub>N</sub> → A<sub>M</sub> exist only when gcd(N, M/N) = 1 (Part 258), and the system over all of divisibility uses non-unital corner maps (Parts 260–261).</p>
+      <span class="tag post">POSTULATE (A1)</span><span class="tag">PER AUTHOR'S DESCRIPTION</span>
+    </div>
+  </div>
+</header>
+
+<section id="findings">
+  <h2>The five sharp contrasts</h2>
+  <p class="sec-note">The core of the comparison, as established by the sourced research. Status labels follow the report: <em>theorem</em>, <em>definition</em>, <em>programme</em>, <em>absence-finding</em>, <em>judgement</em>.</p>
+  <div class="findings">
+    <div class="finding">
+      <div class="fn">FINDING 1</div>
+      <h3>Tate theory neither proves nor uses class field theory</h3>
+      <p>Both theories live on Chevalley's objects — 𝔸<sub>K</sub>, 𝔸<sub>K</sub><sup>×</sup>, C<sub>K</sub> — and in the same 1967 Cassels–Fröhlich volume, but their aims diverge: (1) classifies abelian extensions via C<sub>K</sub>; (2) does harmonic analysis on 𝔸<sub>K</sub> and C<sub>K</sub> to prove analytic properties of L-functions.</p>
+      <p>The encyclopedic summary (source 3) is explicit — a received view rather than a theorem: Iwasawa–Tate theory "does not use any deep result of class field theory" — it uses the <em>vocabulary</em> (a Hecke character is a quasicharacter of C<sub>K</sub>), not the reciprocity law or the existence theorem. What connects the two is Tate the person, through separate work: Tate cohomology (1952), the Tate–Nakayama theorem, and the Artin–Tate class formations (1961).</p>
+    </div>
+    <div class="finding">
+      <div class="fn">FINDING 2</div>
+      <h3>Class field theory is the abelian case of anabelian geometry — literally</h3>
+      <p>π₁<sup>ét</sup>(Spec 𝒪<sub>K</sub>)<sup>ab</sup> ≅ Gal(K̃/K), the narrow Hilbert class field group, canonically isomorphic to the <strong>narrow</strong> ideal class group Cl<sup>+</sup>(K) (étale covers of Spec 𝒪<sub>K</sub> do not see ramification at real places; e.g. ℚ(√3) has class number 1 but narrow class number 2, so π₁<sup>ét</sup>(Spec ℤ[√3])<sup>ab</sup> ≅ ℤ/2); with a modulus 𝔇, π₁(Spec 𝒪<sub>K</sub>, 𝔇)<sup>ab</sup> is the ray class group (Hiranouchi 2006). Abelian CFT describes the abelianizations of the arithmetic fundamental groups in idelic terms (“is exactly the computation of” is a summary, not a theorem).</p>
+      <p>The prototype, Neukirch–Uchida (1969/1976), predates the programme's naming (1983/84) by fourteen years (Neukirch 1969 assumed one of the two fields Galois over ℚ; Uchida removed this and proved functoriality), and its proofs use CFT as a tool: decomposition groups are characterized group-theoretically, then local multiplicative groups K<sub>x</sub><sup>×</sup> are recovered from D<sub>x</sub><sup>ab</sup> via <em>local</em> class field theory, and the global K<sup>×</sup> via <em>global</em> class field theory.</p>
+    </div>
+    <div class="finding">
+      <div class="fn">FINDING 3</div>
+      <h3>Tate theory and anabelian geometry: essentially no direct interface</h3>
+      <p>No source found cites Tate (1950) as an input to, or consequence of, any anabelian theorem; the anabelian toolkit is Galois cohomology, Brauer groups, Kummer theory, and CFT — never adelic Fourier analysis. This is an <em>absence-finding</em>, flagged in the report as a judgement call on thin sources.</p>
+      <p>The real contacts are indirect: through (1), and through the Jacobian/Tate module — where "Tate module" is Tate's <em>other</em> eponym (abelian varieties, 1960s), disjoint from the 1950 thesis. In short: (2) and (3) are siblings through (1) — (2) is GL(1) analysis on the same object C<sub>K</sub> as (1) (sharing no theorems, per Finding 1); (3) is (1)'s non-abelian generalization.</p>
+    </div>
+    <div class="finding">
+      <div class="fn">FINDING 4</div>
+      <h3>The theorem–postulate asymmetry is real and sharp</h3>
+      <p>In Tate theory, the local functional equation is a <em>theorem</em>: the ratio ρ (in modern terms the γ-factor) is proved independent of the choice of Schwartz–Bruhat test function f — while ε(s, χ, ψ) depends on the additive character ψ, the Haar-measure normalization, and s, so “the value of ε” presupposes fixed conventions — and the global root number factorizes as a derived result, W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>). Nothing about ε is assumed; ε is <em>output</em>.</p>
+      <p>In PAG (per the author's description), axiom A1 takes those same numerical values as an <em>axiom about a boundary condition in a truncated geometry</em>. Consequently A1 cannot be cited as a derivation or explanation of ε-factors — it is an <em>encoding</em> of them. This is a matter of logic (axiom vs. theorem), not of interpretation — <em>provided A1 is not derived from PAG's other axioms</em>. If A1 were shown to be the unique boundary condition satisfying an independent requirement (e.g. compatibility with inversion/reality), it would be more than an encoding. Per the author's records A1 remains a postulate; that it satisfies the conditions of Theorem 2.6 is a consistency check on root numbers, not a derivation. The conventions are fixed in the author's records: Tate-thesis additive characters (ψ<sub>∞</sub>(x) = e<sup>−2πix</sup>, ψ<sub>p</sub>(x) = e<sup>+2πi{x}<sub>p</sub></sup>), primitive χ, s = 1/2, phase value τ(χ)/(i<sup>a</sup>√N) (the Hartley kernel of Part 252).</p>
+    </div>
+    <div class="finding wide">
+      <div class="fn">FINDING 5</div>
+      <h3>No boundary problem exists in any of the three classical items</h3>
+      <p>In (1) there are no operators and no Hilbert space. In (2), analysis runs on the <em>complete</em> locally compact groups with Haar measure; the Fourier transform is unitary on L² of the whole group by Pontryagin duality — there is no truncated domain and hence no self-adjoint extension problem. (Tate's proof does split the ℝ<sub>&gt;0</sub> direction at |x| = 1, Riemann-style, and the boundary terms f̂(0), f(0) at the cut produce the poles at s = 1, 0; but this cut is a proof device: the result is independent of where one cuts, both sides are integrated out, and no boundary condition is imposed.) In (3) there is no analysis at all. Among the four, a boundary unitary gluing is <em>constitutive only in PAG</em>, where it arises from the Λ-cutoff of the ℝ<sub>&gt;0</sub> direction — for K = ℚ exactly the direction that (1) quotients away (D<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub> is the kernel of the Artin map; for number fields of positive unit rank D<sub>K</sub> is larger) and that (2) integrates over completely as the Mellin/spectral parameter. Outside (1)–(3), however, cutting the scaling direction and imposing a boundary condition has precedents in the Connes lineage (1999, 2023, 2025) — see <a href="#connes">the Connes section</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pairs">
+  <h2>The pairwise relations in detail</h2>
+  <p class="sec-note">Three relations among the classical items. Select one to read.</p>
+  <div class="tabs" role="tablist" aria-label="Pairwise relations">
+    <button class="tab-btn" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true">A · Tate theory ⇄ Class field theory</button>
+    <button class="tab-btn" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false">B · Class field theory → Anabelian geometry</button>
+    <button class="tab-btn" role="tab" id="tab-c" aria-controls="panel-c" aria-selected="false">C · Tate theory — Anabelian geometry</button>
+  </div>
+
+  <div class="panel active" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+    <h3>Same machinery, different aim — and one person bridging both</h3>
+    <p><strong>Shared objects.</strong> Chevalley reformulated class field theory in terms of ideles, giving C<sub>K</sub> → Gal(K<sup>ab</sup>/K) with C<sub>K</sub>/N<sub>L/K</sub>C<sub>L</sub> ≅ Gal(L/K) for each finite abelian L/K, and compatible local maps K<sub>v</sub><sup>×</sup> → Gal(K<sub>v</sub><sup>ab</sup>/K<sub>v</sub>) [Milne, <em>The Work of John Tate</em>, §1.1].</p>
+    <p><strong>Diverging aims.</strong> (1) is classification: the global existence theorem says every open finite-index subgroup of C<sub>K</sub> is a norm subgroup, and Gal(K<sup>ab</sup>/K) ≅ C<sub>K</sub> modulo its connected component [Encyclopedia of Mathematics, <em>Class field theory</em>]. (2) is analysis: Tate's thesis gives "an elegant and unified treatment of the analytic continuation and functional equation of the L-functions attached by Hecke to his Grössencharaktere" by abelian harmonic analysis on Chevalley's adeles/ideles [Kudla, <em>Tate's Thesis</em>]. Tate himself noted the thesis "was not a new result, except perhaps for some local aspects" — Hecke had proved the global theorem around 1920; Artin suggested reproving it by harmonic analysis on the adele ring, "treating all places of the field equally" [Tate, Abel Prize interview].</p>
+    <p><strong>Methods.</strong> (1)'s modern method is group cohomology and class formations (or Neukirch's cohomology-free variant). (2)'s method: 𝔸<sub>K</sub> is self-dual, the discrete cocompact subgroup K ⊂ 𝔸<sub>K</sub> is its own orthogonal complement, adelic Poisson summation follows, local L-functions are integrals over K<sub>v</sub><sup>×</sup>, and the global functional equation follows from the local ones plus Poisson [Milne, §1.2].</p>
+    <p><strong>Tate's double role.</strong> His contribution to (1) is not the thesis but cohomology: Tate cohomology Ĥ<sup>r</sup>(G, M) for all integers r; the 1952 cup-product theorem (with r = −2 it yields the <em>inverse</em> of the Artin reciprocity map); the Tate–Nakayama theorem (Nakayama 1957); and the Artin–Tate class formations (1961, Ch. XIV), from which reciprocity isomorphisms are derived [Milne, §1.3]. The shared volume is literal: the thesis first appeared in print as Chapter XV of Cassels–Fröhlich (1967), pp. 305–347, alongside the cohomological CFT chapters [Kudla].</p>
+    <p><strong>The forward feed is into Langlands.</strong> Tate's factorization W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>) is exactly the decomposition the Langlands correspondence requires for Artin L-series; Dwork, Langlands, and Deligne built the theory of local constants on this GL(1) template, and Godement–Jacquet (1972) generalized the thesis itself to GL(n) [Milne, §1.2].</p>
+    <div class="verdict"><strong>Verdict A.</strong> (1) and (2) share objects and a book, not theorems. Neither proves the other; (2) presupposes only CFT's language. Tate bridges them biographically, through two separate bodies of work.</div>
+  </div>
+
+  <div class="panel" id="panel-b" role="tabpanel" aria-labelledby="tab-b">
+    <h3>The abelian case of the fundamental-group philosophy</h3>
+    <p><strong>The precise statement.</strong> Unramified case: π₁<sup>ét</sup>(Spec 𝒪<sub>K</sub>)<sup>ab</sup> is the Galois group of the narrow Hilbert class field, i.e. the <em>narrow</em> class group Cl<sup>+</sup>(K) — equal to Cl(K) only when the two coincide. For a number field K, π₁<sup>ét</sup>(Spec 𝒪<sub>K,S</sub>) is the Galois group G<sub>K,S</sub> of the maximal extension unramified outside S [Neukirch–Schmidt–Wingberg, <em>Cohomology of Number Fields</em>, 2nd ed. 2008, introduction]; its abelianization with restricted ramification is described by CFT — the narrow ideal class group in the unramified case, the ray class group with a modulus [Hiranouchi 2006]. Passing to the limit over all moduli recovers Gal(K<sup>ab</sup>/K) ≅ C<sub>K</sub>/D<sub>K</sub>.</p>
+    <p><strong>Grothendieck's generalization.</strong> In the letter to Faltings (27 June 1983), the geometry of an anabelian scheme X is to be "completely determined by the (profinite) fundamental group π₁(X, ξ), together with" the map to π₁(K) = Gal(K̄/K); a curve is anabelian iff its Euler–Poincaré characteristic is &lt; 0 — "in other words, when its fundamental group is <strong>not abelian</strong>", excluding types (g, ν) = (0,0), (0,1), (0,2), (1,0) [Grothendieck, <em>Letter to Faltings</em>]. The word "anabelian" itself marks the distance from (1): "very far from abelian groups" (<em>Esquisse d'un programme</em>, 1984) [Nakamura]. Reference literature lists exactly three "main generalizations of class field theory": higher CFT, the Langlands programme, and anabelian geometry.</p>
+    <p><strong>The prototype predates the name.</strong> Neukirch (Invent. Math. 6, 1969; Caen 1976) and Uchida (J. Math. Soc. Japan 28, 1976): an isomorphism G<sub>K</sub> ≅ G<sub>L</sub> implies K ≅ L. Neukirch's original proof assumed one of K, L Galois over ℚ; Uchida removed the assumption and proved functoriality (Ikeda independently solved Neukirch's problem at about the same time, and Iwasawa remarked on the method) [Saïdi–Tamagawa; Uchida 1976, introduction]. The literature calls this anabelian geometry's "pre-history"; the proof starts from Neukirch's insight that there is a p-adic counterpart to Artin–Schreier's characterization of real closed fields, culminating in the (topological-)group-theoretic characterization of decomposition groups — the "local theory" [arXiv:2301.10342 says “topological characterization”; Saïdi–Tamagawa, “group-theoretically … using the method of Brauer groups”]. Neukirch, author of the standard CFT textbook, arrived at the first anabelian theorem from <em>inside</em> class field theory.</p>
+    <p><strong>Decomposition groups are local CFT's descendants.</strong> A decomposition group D<sub>𝔭</sub> ⊂ G<sub>K</sub> is a copy of the local absolute Galois group G<sub>K<sub>𝔭</sub></sub> — the very group whose abelianization local CFT computes as the profinite completion of K<sub>𝔭</sub><sup>×</sup>. In Uchida's function-field proof, Step 2-1 recovers K<sub>x</sub><sup>×</sup> ⊃ 𝒪<sub>x</sub><sup>×</sup> ⊃ U<sub>x</sub> from D<sub>x</sub><sup>ab</sup> explicitly by local CFT, and the global K<sup>×</sup> as a kernel in the restricted product by global CFT [Saïdi–Tamagawa, arXiv:1909.08829; Tamagawa survey].</p>
+    <p><strong>The curve theorems.</strong> Grothendieck's conjecture (Isom form and Hom form) was proved: genus 0 by Nakamura; the affine case by Tamagawa (Compositio Math. 109, 1997); in a stronger form over sub-p-adic bases by Mochizuki (1996; local pro-p work, Invent. Math. 138, 1999). Mono-anabelian geometry (Mochizuki, <em>Topics in Absolute Anabelian Geometry</em> I–III, 2012–2015; Hoshi's exposition) asks for a group-theoretic <em>algorithm</em> reconstructing X from a single group Π<sub>X</sub> alone. The section conjecture (1983) remains open: "to this day, this conjecture remains wide open, with only a small handful of very special examples known" [Betts, AHGT seminar, 2023]; injectivity is known, surjectivity is the open core.</p>
+    <div class="verdict"><strong>Verdict B.</strong> Anabelian geometry is not outside class field theory looking in; it is CFT's generalization from within — CFT computes the abelianizations, anabelian geometry asks what the full non-abelian group remembers beyond them, and its proofs still use CFT as a lemma.</div>
+  </div>
+
+  <div class="panel" id="panel-c" role="tabpanel" aria-labelledby="tab-c">
+    <h3>Siblings through class field theory — no direct traffic</h3>
+    <p><strong>The absence-finding.</strong> There is essentially no direct interface in the literature between Tate's thesis and anabelian geometry. No source found in the research cites Tate (1950) as an input to, or a consequence of, any anabelian theorem. The report flags this section as a judgement call on thin sources, as the research mission anticipated.</p>
+    <p><strong>Contact via (1), at opposite ends.</strong> Both fields touch G<sub>K</sub>, but (2) uses only characters of C<sub>K</sub> — through CFT (which it does not invoke), the abelianization G<sub>K</sub><sup>ab</sup> — while (3) is defined by refusing to abelianize. The chain of contact is (2) — vocabulary — (1) — abelianization — (3).</p>
+    <p><strong>Contact via the Jacobian — a different "Tate".</strong> For a curve X, π₁(X)<sup>ab</sup> ≅ π₁(Jac X) (geometric class field theory) [Fargues], and the abelianized fundamental exact sequence relates by pushout to the full Tate module T(Alb<sub>X</sub>) of the Albanese variety [Harari–Szamuely]. Here "Tate module" is Tate's other eponym, from abelian varieties — disjoint from the 1950 thesis. Conflating the two is a standard trap.</p>
+    <p><strong>Contact via L-functions, at one remove.</strong> Where L-functions of curves appear (Hasse–Weil, BSD), their local factors are built from the action of decomposition/Frobenius elements on Tate modules — the groups of relation B — fed into the Artin/Hecke formalism whose GL(1) analytic theory is (2) and whose general form is Langlands.</p>
+    <div class="verdict"><strong>Verdict C.</strong> (2) and (3) are siblings through (1): (2) is GL(1) analysis on the same object C<sub>K</sub> as (1), (3) is (1)'s non-abelian generalization — with no direct theorem-level traffic between them. <span class="src">[Judgement, based on the absence-finding above.]</span></div>
+  </div>
+</section>
+
+<section id="table">
+  <h2>The four-way table: seven axes plus output &amp; status</h2>
+  <p class="sec-note">Eight rows — the seven axes plus output &amp; status, matching the Japanese edition, with the same four core rows. Column (4) is per the author's description throughout. Cells for (1)–(3) are sourced in the research report; cells that could not be independently sourced are marked ⚠ there and noted below.</p>
+  <div class="controls">
+    <button class="toggle-btn" id="coreToggle" aria-pressed="false">Show core four axes only</button>
+    <span class="src">Core axes: primitive objects · ℝ<sub>&gt;0</sub> direction · boundary problem · ε-factors.</span>
+  </div>
+  <div class="tbl-wrap">
+    <table id="cmpTable">
+      <thead>
+        <tr><th scope="col">Axis</th><th scope="col">(1) Idele CFT</th><th scope="col">(2) Tate theory</th><th scope="col">(3) Anabelian geometry</th><th scope="col">(4) PAG — per author's description</th></tr>
+      </thead>
+      <tbody>
+        <tr class="core-row">
+          <th scope="row">Primitive objects / "points"<span class="core-badge">CORE</span></th>
+          <td data-col="(1) CFT">Places v of K packaged as ideles; the central object is the <strong>group</strong> C<sub>K</sub>, not a space of points</td>
+          <td data-col="(2) Tate theory">The <strong>ring</strong> 𝔸<sub>K</sub> as a locally compact additive group; Schwartz–Bruhat functions on it</td>
+          <td data-col="(3) Anabelian">Schemes/curves X; profinite π₁<sup>ét</sup>(X); points ↔ decomposition subgroups</td>
+          <td data-col="(4) PAG">Primes + infinite place of ℚ, as <strong>designed points</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">Infinite (archimedean) place</th>
+          <td data-col="(1) CFT">Included, on equal footing; real places in the modulus give the <em>narrow</em> class and ray class groups</td>
+          <td data-col="(2) Tate theory">Included; its local zeta integrals <strong>are</strong> the Γ-factors, removing their classical mystery [Milne §1.2]</td>
+          <td data-col="(3) Anabelian">Essentially absent — only G<sub>ℝ</sub> / complex conjugation is visible ⚠ (judgement from surveys)</td>
+          <td data-col="(4) PAG">One of the points; carries the continuous direction</td>
+        </tr>
+        <tr class="core-row">
+          <th scope="row">ℝ<sub>&gt;0</sub> direction of C<sub>ℚ</sub><span class="core-badge">CORE</span></th>
+          <td data-col="(1) CFT"><strong>Killed:</strong> for K = ℚ it is D<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub>, the kernel of the Artin map; Gal(ℚ<sup>ab</sup>/ℚ) ≅ C<sub>ℚ</sub>/D<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> (for general K, D<sub>K</sub> is larger). Galois theory literally cannot see ℝ<sub>&gt;0</sub></td>
+          <td data-col="(2) Tate theory"><strong>The spectral parameter:</strong> quasicharacters |·|<sup>s</sup>, s ∈ ℂ; the zeta integral is a Mellin transform along it; integrated completely, with compact kernel C<sub>K</sub><sup>1</sup>; the proof's cut at |x| = 1 is a device, independent of where one cuts</td>
+          <td data-col="(3) Anabelian"><strong>Absent:</strong> all groups are profinite, totally disconnected</td>
+          <td data-col="(4) PAG">Kept as the cylinder coordinate u; a <strong>Λ-cutoff</strong> is imposed as part of the construction (finite level N and Λ are two “views”; the resolution parameter is identified with neither)</td>
+        </tr>
+        <tr class="core-row">
+          <th scope="row">Boundary / self-adjoint extension problem<span class="core-badge">CORE</span></th>
+          <td data-col="(1) CFT">None — no operators, no Hilbert space</td>
+          <td data-col="(2) Tate theory">None — complete groups, Haar measure, Pontryagin duality; "boundary" phenomena are poles of zeta integrals, handled by meromorphic continuation</td>
+          <td data-col="(3) Anabelian">None — no analysis at all</td>
+          <td data-col="(4) PAG"><strong>Constitutive:</strong> a boundary unitary gluing U on the cutoff cylinder — with no counterpart in any of (1)–(3); precedents outside them in the Connes lineage</td>
+        </tr>
+        <tr>
+          <th scope="row">Abelian vs. non-abelian</th>
+          <td data-col="(1) CFT">Abelian only — it classifies abelian extensions</td>
+          <td data-col="(2) Tate theory">Abelian — GL(1) harmonic analysis on locally compact abelian groups</td>
+          <td data-col="(3) Anabelian">Non-abelian <strong>by definition</strong> — "far from abelian"; the theorems fail if one abelianizes</td>
+          <td data-col="(4) PAG">Characters and L-data are abelian (GL(1)) — on this axis PAG sits with (1) and (2), not (3); but the finite-level algebras A<sub>N</sub> are non-commutative</td>
+        </tr>
+        <tr>
+          <th scope="row">Finite-level structure</th>
+          <td data-col="(1) CFT"><strong>Inverse limits</strong> throughout: profinite completions; finite levels are quotient groups (ray class groups). Their function algebras form direct limits (Gelfand–Pontryagin duality), so variance alone is not a decisive difference</td>
+          <td data-col="(2) Tate theory">Profinite arithmetic part (Ẑ<sup>×</sup> as in (1)); continuous analysis; 𝔸<sub>K</sub> is a direct limit of the open subrings 𝔸<sub>K</sub>(S) = ∏<sub>v∈S</sub>K<sub>v</sub> × ∏<sub>v∉S</sub>𝒪<sub>v</sub> (locally compact, <em>not</em> compact); the finite adeles 𝔸<sub>f</sub> = ⋃ N<sup>−1</sup>Ẑ are a direct limit of compact open subgroups</td>
+          <td data-col="(3) Anabelian"><strong>Inverse limits</strong> by definition: π₁<sup>ét</sup> classifies finite étale covers</td>
+          <td data-col="(4) PAG"><strong>Non-commutative</strong> finite-dimensional Terwilliger algebras A<sub>N</sub> of cyclotomic schemes on ℤ/N. Unital, pullback-compatible, shell-preserving maps exist only on steps with gcd(N, M/N) = 1 (Part 258); over all of divisibility, non-unital corner maps form a directed system whose limit has no left unit (Parts 260–261). The genuine difference is non-commutativity, not variance</td>
+        </tr>
+        <tr class="core-row">
+          <th scope="row">ε-factors: theorem or postulate?<span class="core-badge">CORE</span></th>
+          <td data-col="(1) CFT">Local reciprocity and symbols are theorems; no ε-formalism per se</td>
+          <td data-col="(2) Tate theory"><strong>Theorems:</strong> the local ratio ρ (γ-factor) proved independent of the test function; W(χ) = ∏<sub>v</sub> W<sub>v</sub>(χ<sub>v</sub>) derived. ε depends on the ψ, measure, and s conventions</td>
+          <td data-col="(3) Anabelian">No ε-factors at all</td>
+          <td data-col="(4) PAG"><strong>Postulate:</strong> the phases of U on primitive characters are fixed by axiom A1 to match Tate's local-constant values (convention T, s = 1/2; value match outside Lean) — an encoding, not a derivation, unless A1 follows from PAG's other axioms</td>
+        </tr>
+        <tr>
+          <th scope="row">Output type &amp; status</th>
+          <td data-col="(1) CFT">Classification theorem (extensions ↔ subgroups of C<sub>K</sub>); complete theory (Takagi–Artin–Chevalley–Artin/Tate–Neukirch)</td>
+          <td data-col="(2) Tate theory">Analytic theorems (continuation, functional equation, poles); complete theory, 1950; GL(n) continuation by Godement–Jacquet 1972 and Langlands</td>
+          <td data-col="(3) Anabelian">Reconstruction theorems + open conjectures; hyperbolic-curve theorems proved, section conjecture and higher-dimensional cases open</td>
+          <td data-col="(4) PAG">A designed geometry; Lean-verified formalization (about 3,690 theorems and lemmas, per author); unpublished</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="src" style="margin-top:10px">Note on the one classical direct-limit object nearby: ℚ/ℤ = lim<sub>→</sub> ℤ/N — precisely the torsion group whose automorphism group is the inverse-limit Ẑ<sup>×</sup>; cf. the Bost–Connes algebra's generators e(r), r ∈ ℚ/ℤ.</p>
+</section>
+
+<section id="timeline">
+  <h2>Genealogy and timeline</h2>
+  <p class="sec-note">One chronology for all four items. Note the order: the anabelian prototype (1969) predates the programme's naming (1983) by fourteen years.</p>
+  <div class="tl">
+    <div class="tl-ev"><div class="tl-date">1920s</div><h3>Takagi and Artin</h3><p>Abelian extensions classified by ray class groups; Artin's reciprocity law (1927) gives the map C<sub>𝔪</sub>/H ≅ Gal(L/K). [Milne §1.1]</p></div>
+    <div class="tl-ev"><div class="tl-date">1936 / 1940</div><h3>Chevalley introduces ideles</h3><p>"Éléments idéaux" (1936), abbreviated to "idèle" in <em>La théorie du corps de classes</em>, Ann. of Math. 41 (1940), 394–418 — a purely algebraic proof of CFT in which, as Chevalley noted, the theory of zeta functions "can now be omitted".</p></div>
+    <div class="tl-ev"><div class="tl-date">1950</div><h3>Tate's thesis</h3><p><em>Fourier analysis in number fields and Hecke's zeta-functions</em>, Princeton PhD thesis (adviser Artin), completed May 1950. Iwasawa obtained similar results independently (1950 ICM note; 1952 letter to Dieudonné). [Milne §1.2; Kudla]</p></div>
+    <div class="tl-ev"><div class="tl-date">1952–1961</div><h3>Cohomological class field theory</h3><p>Tate cohomology (1952) and the cup-product theorem; Nakayama's generalization (1957) → Tate–Nakayama; the Artin–Tate seminar (notes circulating 1961; Benjamin 1967) axiomatizes class formations. [Milne §1.3]</p></div>
+    <div class="tl-ev"><div class="tl-date">1967</div><h3>Cassels–Fröhlich, <em>Algebraic Number Theory</em></h3><p>The Brighton 1965 proceedings: cohomological CFT chapters <em>and</em> Tate's thesis as Chapter XV, pp. 305–347 — published there for the first time after years of influence "as a piece of clandestine literature". [Kudla]</p></div>
+    <div class="tl-ev hl"><div class="tl-date">1969 / 1976–77</div><h3>Neukirch–Uchida — the prototype</h3><p>Neukirch, Invent. Math. 6 (1969); Caen 1976 (Astérisque 41–42, 1977); Uchida, J. Math. Soc. Japan 28 (1976). G<sub>K</sub> ≅ G<sub>L</sub> implies K ≅ L (Neukirch 1969: one field Galois over ℚ; general case and functoriality: Uchida) — fourteen years before the programme had a name.</p></div>
+    <div class="tl-ev"><div class="tl-date">1983 / 1984</div><h3>Grothendieck names the programme</h3><p>Letter to Faltings (27 June 1983) and <em>Esquisse d'un programme</em> (1984): the anabelian programme is stated; the section conjecture is formulated.</p></div>
+    <div class="tl-ev hl"><div class="tl-date">1995</div><h3>Bost–Connes</h3><p><em>Hecke algebras, type III factors and phase transitions with spontaneous symmetry breaking in number theory</em>, Selecta Math. (N.S.) 1(3) (1995), 411–456. See the placement note below.</p></div>
+    <div class="tl-ev"><div class="tl-date">1996–1999</div><h3>Tamagawa and Mochizuki</h3><p>Tamagawa, Compositio Math. 109 (1997), the affine Grothendieck conjecture; Mochizuki, J. Math. Sci. Univ. Tokyo 3 (1996) and Invent. Math. 138 (1999), the proper/sub-p-adic and local pro-p cases.</p></div>
+    <div class="tl-ev hl"><div class="tl-date">1999</div><h3>Connes's trace formula</h3><p>Selecta Math. (N.S.) 5 (1999); arXiv:math/9811068. The explicit formulas read as a trace formula on the adele class space, with a Λ-cutoff — one of the nearest precedents for (4)'s Λ-cutoff (see the Connes section).</p></div>
+    <div class="tl-ev"><div class="tl-date">1999</div><h3>Neukirch, <em>Algebraic Number Theory</em></h3><p>Springer (German orig. 1992): Ch. IV abstract CFT, Ch. V local CFT, Ch. VI global idelic CFT — the standard textbook of item (1).</p></div>
+    <div class="tl-ev"><div class="tl-date">2012–2015 →</div><h3>Mono-anabelian geometry</h3><p>Mochizuki, <em>Topics in Absolute Anabelian Geometry</em> I (2012), II (2013), III (2015); Hoshi's expositions. The section conjecture is still open (status confirmed 2012 and 2023).</p></div>
+    <div class="tl-ev hl"><div class="tl-date">2021–2025</div><h3>Connes–Consani (–Moscovici)</h3><p><em>Spectral triples and ζ-cycles</em> (arXiv 2021; Enseign. Math. 69, 2023) and <em>Zeta Spectral Triples</em> (Connes–Consani–Moscovici, arXiv:2511.22755, Nov 2025): rank-one perturbations of the scaling operator on [λ<sup>−1</sup>, λ] with periodic boundary conditions — formally the closest precedent for (4)'s “Λ-cutoff + boundary unitary”.</p></div>
+  </div>
+</section>
+
+<section id="bc">
+  <h2>Where Bost–Connes sits</h2>
+  <div class="callout">
+    <p>The Bost–Connes system (1995) is a descendant of <strong>(1), using (2)'s cast of characters</strong>: a C*-dynamical system with "an action of the idele class group of ℚ modulo the connected component of the identity as symmetry. The Riemann zeta function appears as the partition function"; for β &gt; 1 the extremal KMS<sub>β</sub> states are parametrized with free transitive action of C<sub>ℚ</sub>/D<sub>ℚ</sub> = Ẑ<sup>×</sup>, and at zero temperature the CFT isomorphism θ: Gal(ℚ<sup>ab</sup>/ℚ) →<sup>∼</sup> Ẑ<sup>×</sup> "intertwines the actions of the Galois group with the action of Ẑ<sup>×</sup> by symmetries" — it <em>realizes explicit class field theory of ℚ</em> (Kronecker–Weber) in a quantum statistical system, with spontaneous symmetry breaking at β = 1 [Shirbisheh, arXiv:0808.1767].</p>
+    <p>It is contemporaneous with Tamagawa/Mochizuki (1996–99) but belongs to the (1)-line — operator-algebraic class field theory — not to (3). PAG's claimed lineage "Tate thesis + class field theory + Bost–Connes" (per the author's description) is therefore a lineage <em>within the abelian/GL(1) world of (1) + (2)</em>, extended by Bost–Connes's operator-algebraic realization of (1); it does not pass through (3) at any point. Bost–Connes is not, however, a precedent for PAG's <em>boundary unitary</em>: the BC system has no cutoff of the ℝ<sub>&gt;0</sub> direction and no boundary condition. The nearer precedent for that is a different Connes line (trace formula and ζ-cycles), compared in the next section.</p>
+  </div>
+</section>
+
+<section id="connes">
+  <h2>The Connes lineage — Λ-cutoff and boundary conditions</h2>
+  <p class="sec-note">Items (1)–(3) have no counterpart to (4)'s boundary unitary. Outside them, however, work exists in which a cutoff of the scaling (ℝ<sub>&gt;0</sub>) direction and a boundary condition are part of the construction. Any claim of novelty for PAG must be measured against this first. The structural comparison with Connes's framework is in the repository's <span class="mono">docs/overview-and-comparison.en.md</span> §5; this section adds only the cutoff/boundary point.</p>
+  <div class="callout">
+    <p><strong>Precedents (each checked at abstract/introduction level only).</strong> Connes (1999), <em>Trace formula in noncommutative geometry and the zeros of the Riemann zeta function</em>, Selecta Math. (N.S.) 5: the explicit formulas as a trace formula on the noncommutative adele class space, with a Λ-cutoff and zeros read as an absorption spectrum. Connes–Consani (2023), <em>Spectral triples and ζ-cycles</em>, Enseign. Math. 69, 93–148: the canonical spectral triple of a circle of length L conditioned by eigenvectors (built from prolate spheroidal functions) of the Weil quadratic form. Connes–Consani–Moscovici (2025), <em>Zeta Spectral Triples</em>, arXiv:2511.22755: self-adjoint operators as rank-one perturbations of the scaling operator on [λ<sup>−1</sup>, λ] with <strong>periodic boundary conditions</strong>.</p>
+    <p><strong>Overlap.</strong> Cutting the ℝ<sub>&gt;0</sub> direction to a finite interval and building the end-gluing (boundary condition) into the operator is formally the same type as (4)'s Λ-cutoff and boundary unitary U. “Cut and glue at the boundary” therefore cannot by itself be claimed as PAG's novelty <span class="src">[judgement]</span>.</p>
+    <p><strong>Differences (per the author's description).</strong> (a) PAG fixes the phases of the boundary unitary on primitive characters by postulate A1 to Tate's local-constant values; the abstracts/introductions above show no element that postulates ε-factors as boundary phases (full texts not checked; confidence low–medium). (b) Aims differ: the Connes lineage seeks a spectral realization bearing on the Riemann hypothesis; PAG does not take that direction, and its monograph records the negative result that attempts to approach the zeros ended in injection or circularity (PAG is not an approach to the Riemann hypothesis). (c) PAG's finite levels are the non-commutative Terwilliger algebras A<sub>N</sub>, a different object from the Connes lineage's finite-dimensional approximations (prolate functions, Sonin spaces).</p>
+    <p class="src">Open question: the relation between (4)'s compatibility classification of boundary unitaries (Theorem 2.6) and CCM 2025's periodic boundary condition plus rank-one perturbation. Not checked against the full texts.</p>
+  </div>
+</section>
+
+<section id="caveats">
+  <h2>What could not be verified — stated plainly</h2>
+  <ul class="caveats">
+    <li><strong>The decomposition C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub> from a primary textbook page.</strong> It is standard, and is used identically by all Bost–Connes sources (C<sub>ℚ</sub>/D<sub>ℚ</sub> = Ẑ<sup>×</sup>, D<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub>) and stated as a lemma in one weak (Zenodo) preprint; the research did not open a primary textbook page stating the product decomposition verbatim. Confidence remains high, but the citation is indirect.</li>
+    <li><strong>Relation C is an absence-finding.</strong> No source explicitly asserts "(2) and (3) do not interact" — absence cannot be sourced directly. It rests on the toolkits visible in the anabelian surveys (CFT, Brauer groups, Kummer theory — never adelic Fourier analysis) and is flagged as a judgement.</li>
+    <li><strong>The archimedean place in (3)</strong> rests on survey-level reading plus the Artin–Schreier remark in arXiv:2301.10342; no single source states "the infinite place is absent in anabelian geometry" in those words.</li>
+    <li><strong>Neukirch's personal path</strong> from CFT to the 1969 theorem is documented only at the level of the theorem's content and proof technique, plus secondary remarks; no autobiographical source was found.</li>
+    <li><strong>Item (4) was not researched.</strong> Statements about PAG rest on the author's description supplied for the comparison and, in this revision, on the repository's CLAUDE.md (the author's records: Parts 252, 258–261, convention T, the reading of A1); "not found in the literature" findings throughout are absences in the searched sources, not proofs of non-existence.</li>
+    <li><strong>The three Connes-lineage papers</strong> were checked at abstract/introduction level only; “no element postulating ε-factors as boundary phases” is an absence-finding not checked against the full texts.</li>
+    <li><strong>The corrections of this revision (2026-11-20) have not been independently checked.</strong> Treat them as unverified until they have been.</li>
+  </ul>
+</section>
+
+<section id="revision">
+  <h2>Revision record (2026-11-20)</h2>
+  <p class="sec-note">Corrections from a review. <strong>None has been independently checked.</strong> The Japanese edition carries the same corrections.</p>
+  <ul class="caveats">
+    <li><strong>Mathematical errors:</strong> π₁<sup>ét</sup>(Spec 𝒪<sub>K</sub>)<sup>ab</sup> is the <em>narrow</em> ideal class group (previously “the ideal class group”; counterexample ℚ(√3)). The anabelian Isom statement now carries the “over k, compatible with G<sub>k</sub>” condition.</li>
+    <li><strong>Comparison points revised:</strong> “inverse vs. direct limits” is the same data seen through Gelfand–Pontryagin duality, so the core difference on that axis is now the non-commutativity of the finite-level algebras and the failure of a unital direct system at prime-power steps (Part 258). The claim that Bost–Connes is PAG's nearest relative is withdrawn, and a section on the Connes lineage (1999, 2023, 2025) is added.</li>
+    <li><strong>Overstatements and inaccuracies fixed:</strong> Tate's proof does cut at |x| = 1 (a device, independent of the cut point). 𝔸<sub>K</sub>(S) is not compact. ε depends on ψ, measure, and s, and A1's conventions (convention T, s = 1/2) are stated. The A1 asymmetry carries the condition “unless A1 follows from PAG's other axioms”. Neukirch 1969's scope (one field Galois over ℚ) is stated. D<sub>K</sub> ≅ ℝ<sub>&gt;0</sub> only for ℚ (and imaginary quadratic fields). The role of real places in moduli is corrected. Status wording matched to source strength.</li>
+    <li><strong>Consistency with the Japanese edition:</strong> both tables now have eight rows (seven axes plus output &amp; status) with the same core four (primitive objects, ℝ<sub>&gt;0</sub> direction, boundary, ε-factors). Item (4)'s operator system is now described in both editions.</li>
+    <li><strong>Sources:</strong> links through an unrelated-domain crawler, a third-party proxy, a personal blog, and apparent unauthorized copies were replaced by direct links, DOIs, or citations, or removed. The three Connes-lineage papers and Uchida 1976 were added.</li>
+  </ul>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <p class="sec-note">The 22 sources of the underlying research report, plus the additions of the 2026-11-20 revision (researched 2026-11-19/20). Milne's survey was verified live; the remainder are index-level unless noted in the report.</p>
+  <ol class="sources">
+    <li>J. S. Milne, <em>The Work of John Tate</em> (Abel Prize volume, 2012) — <a href="https://mail.jmilne.org/math/xnotes/Tate.pdf">mail.jmilne.org/math/xnotes/Tate.pdf</a> — verified live (§§1.1–1.3 read in full).</li>
+    <li>S. S. Kudla, <em>Tate's Thesis</em>, in Bernstein–Gelbart (eds.), <em>An Introduction to the Langlands Program</em>, Springer — <a href="https://link.springer.com/chapter/10.1007/978-0-8176-8226-2_6">link.springer.com/chapter/10.1007/978-0-8176-8226-2_6</a>.</li>
+    <li><em>Tate's thesis</em> (encyclopedic summary, incl. "does not use any deep result of class field theory"; Godement–Jacquet 1972) — <a href="https://en.wikipedia.org/wiki/Tate's_thesis">en.wikipedia.org/wiki/Tate's_thesis</a>.</li>
+    <li>M. Raussen, C. Skau, <em>Interview with Abel Laureate John Tate</em>, Notices of the AMS 58(3) (March 2011), from p. 444 (first published in the EMS Newsletter, September 2010) — revision: a personal-blog link replaced by the citation.</li>
+    <li><em>Class field theory</em> (encyclopedic summary: aims, existence theorem, Artin–Tate cohomology, Neukirch's proof, three generalizations) — <a href="https://en.wikipedia.org/wiki/Class_field_theory">en.wikipedia.org/wiki/Class_field_theory</a> — revision: a link through a crawler on an unrelated domain replaced by the direct link.</li>
+    <li>Encyclopedia of Mathematics, <em>Class field theory</em> — <a href="https://encyclopediaofmath.org/index.php?title=Class_field_theory&diff=55453&oldid=51883">encyclopediaofmath.org</a>.</li>
+    <li><em>Local class field theory</em> — <a href="https://en.wikipedia.org/wiki/Local_class_field_theory">en.wikipedia.org/wiki/Local_class_field_theory</a>; H.-C. Li, <em>A brief introduction on local class field theory</em> — <a href="https://math.ntnu.edu.tw/~li/note/lcft.pdf">math.ntnu.edu.tw/~li/note/lcft.pdf</a>.</li>
+    <li><em>Adelic algebraic group</em> (Chevalley 1936/1940 history) — <a href="https://en.wikipedia.org/wiki/Adelic_algebraic_group">en.wikipedia.org/wiki/Adelic_algebraic_group</a>; AMS, <em>Hello, Adele</em> (review of Chevalley 1940) — <a href="https://blogs.ams.org/beyondreviews/2015/11/24/hello-adele/">blogs.ams.org</a>.</li>
+    <li>J. Neukirch, <em>Algebraic Number Theory</em>, Grundlehren 322, Springer 1999 — <a href="https://doi.org/10.1007/978-3-662-03983-0">doi:10.1007/978-3-662-03983-0</a> — revision: links to apparent unauthorized copies replaced by the publisher DOI.</li>
+    <li><em>Idele group</em> (C<sub>K</sub><sup>1</sup> compact; norm map to ℝ<sub>&gt;0</sub>) — <a href="https://en.wikipedia.org/wiki/Idele_group">en.wikipedia.org/wiki/Idele_group</a>; K. Kedlaya, <em>Class Field Theory</em> notes §6.6 — <a href="https://kskedlaya.org/cft/sec_adelic-fourier.html">kskedlaya.org/cft/sec_adelic-fourier.html</a>.</li>
+    <li>D. K. Angdinata, <em>Tate's thesis and epsilon factors</em> (2022) — <a href="https://multramate.github.io/talks/ttaef.pdf">multramate.github.io/talks/ttaef.pdf</a>; D. Kim, <em>Tate's thesis 1</em> — <a href="http://web.stanford.edu/~dkim04/blog/tate-thesis-1/">web.stanford.edu/~dkim04/blog/tate-thesis-1/</a>; A. Mine, <em>Overview of Tate's Thesis</em> — <a href="http://math.uchicago.edu/~may/REU2016/REUPapers/Mine.pdf">math.uchicago.edu</a>.</li>
+    <li>nLab, <em>anabelian geometry</em> — <a href="https://ncatlab.org/nlab/revision/anabelian+geometry/16">ncatlab.org/nlab/revision/anabelian+geometry/16</a>.</li>
+    <li>A. Grothendieck, <em>Letter to Faltings</em> (27 June 1983), Engl. transl. — <a href="https://wstein.org/sga/circle/GtoF.pdf">wstein.org/sga/circle/GtoF.pdf</a>.</li>
+    <li>H. Nakamura, <em>On Galois rigidity of fundamental groups of algebraic curves</em> — <a href="http://www4.math.sci.osaka-u.ac.jp/~nakamura/zoo/monkey/02nakamura.pdf">math.sci.osaka-u.ac.jp</a>.</li>
+    <li>M. Saïdi &amp; A. Tamagawa, <em>The m-step solvable anabelian geometry of number fields</em>, arXiv:1909.08829 — <a href="https://arxiv.org/pdf/1909.08829">arxiv.org/pdf/1909.08829</a>; A. Tamagawa, <em>Developments of anabelian geometry of curves over finite fields</em> (2021) — read via a re-hosting site; primary location unconfirmed (link removed in revision; the Step 2-1 quotation in relation B relies on it and needs checking against a primary copy); K. Uchida, <em>Isomorphisms of Galois groups</em>, J. Math. Soc. Japan 28 (1976) — introduction (Neukirch, Ikeda, Iwasawa); M. Saïdi, <em>On the anabelian geometry of hyperbolic curves over finite fields</em> — <a href="https://empslocal.ex.ac.uk/people/staff/ms220/Site/Lectures_and_Video_files/fukuoka.pdf">empslocal.ex.ac.uk</a>.</li>
+    <li>T. Hiranouchi, <em>On the fundamental groups with restricted ramification</em> (2006) — <a href="https://www.mathnet.or.kr/mathnet/kms_tex/986001.pdf">mathnet.or.kr</a>; Neukirch–Schmidt–Wingberg, <em>Cohomology of Number Fields</em> (2008), front matter — <a href="https://media2.ebook.de/shop/coverscans/219PDF/21989623_lprob_1.pdf">media2.ebook.de</a>; T. Szamuely, <em>Heidelberg Lectures on Fundamental Groups</em> — <a href="https://web.archive.org/web/20200405211320/https://www.renyi.hu/~szamuely/heid.pdf">web.archive.org</a> — revision: third-party proxy removed.</li>
+    <li><em>Anabelian geometry</em> (mono-anabelian: Mochizuki 2012/2013/2015; Hoshi) — <a href="https://en.wikipedia.org/wiki/Anabelian_geometry">en.wikipedia.org/wiki/Anabelian_geometry</a>; B. Collas, <em>Anabelian Geometry — a modern overview</em> (2021) — <a href="http://collas.perso.math.cnrs.fr/exposes/collas_jente.pdf">collas.perso.math.cnrs.fr</a>.</li>
+    <li>J. Stix, <em>Rational Points and Arithmetic of Fundamental Groups</em>, Springer 2012 — <a href="https://books.google.gr/books?id=pEe5BQAAQBAJ&">books.google.gr</a>; A. Betts, AHGT seminar (3 July 2023) — <a href="https://ahgt.math.cnrs.fr/seminar/2023/07/03/Betts_p-sections.html">ahgt.math.cnrs.fr</a>.</li>
+    <li>L. Fargues, <em>The Curve and the Langlands Program: The Abelian Case</em> — <a href="https://webusers.imj-prg.fr/~laurent.fargues/ICBS.pdf">webusers.imj-prg.fr</a>; D. Harari &amp; T. Szamuely, <em>Galois sections for abelianized fundamental groups</em> — <a href="https://www.imo.universite-paris-saclay.fr/~david.harari/articles/bash4.pdf">universite-paris-saclay.fr</a>.</li>
+    <li>V. Shirbisheh, <em>Quantum statistical mechanics of Q-lattices and noncommutative geometry</em> (Bost–Connes exposition), arXiv:0808.1767 — <a href="https://arxiv.org/pdf/0808.1767">arxiv.org/pdf/0808.1767</a>; <em>Galois group</em> (BC system summary) — <a href="https://www.sciencedirect.com/topics/mathematics/galois-group">sciencedirect.com/topics/mathematics/galois-group</a>.</li>
+    <li>Structure of C<sub>ℚ</sub> (lemma: C<sub>ℚ</sub> ≅ ℝ<sub>&gt;0</sub> × Ẑ<sup>×</sup>) — <a href="http://zenodo.org/records/17576973/files/16.pdf?download=1">zenodo.org/records/17576973</a> — weak source, corroborated by source 20.</li>
+    <li><em>Two-step nilpotent extensions are not anabelian</em>, arXiv:2301.10342 — <a href="https://arxiv.org/pdf/2301.10342">arxiv.org/pdf/2301.10342</a>.</li>
+    <li>A. Connes, <em>Trace formula in noncommutative geometry and the zeros of the Riemann zeta function</em>, Selecta Math. (N.S.) 5 (1999) — <a href="https://arxiv.org/abs/math/9811068">arXiv:math/9811068</a> — added in revision; abstract checked.</li>
+    <li>A. Connes, C. Consani, <em>Spectral triples and ζ-cycles</em>, Enseign. Math. 69 (2023), 93–148 — <a href="https://doi.org/10.4171/LEM/1049">doi:10.4171/LEM/1049</a> (arXiv:2106.01715) — added in revision; abstract/introduction checked.</li>
+    <li>A. Connes, C. Consani, H. Moscovici, <em>Zeta Spectral Triples</em> (2025) — <a href="https://arxiv.org/abs/2511.22755">arXiv:2511.22755</a> — added in revision; abstract/introduction checked.</li>
+  </ol>
+</section>
+
+<footer>
+  English edition of the four-way comparison, built from the sourced research report of 2026-11-19/20 and revised on 2026-11-20 (see the revision record). Classical items (1)–(3) carry theorem / definition / programme / absence-finding / judgement status labels as in the report; item (4), Ardel projective geometry, is described per its author's description only.
+</footer>
+
+</div>
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){
+        b.setAttribute('aria-selected','false');
+        document.getElementById(b.getAttribute('aria-controls')).classList.remove('active');
+      });
+      btn.setAttribute('aria-selected','true');
+      document.getElementById(btn.getAttribute('aria-controls')).classList.add('active');
+    });
+  });
+
+  var toggle = document.getElementById('coreToggle');
+  var rows = document.querySelectorAll('#cmpTable tbody tr');
+  toggle.addEventListener('click', function(){
+    var on = toggle.getAttribute('aria-pressed') === 'true';
+    toggle.setAttribute('aria-pressed', String(!on));
+    toggle.textContent = !on ? 'Show all eight rows' : 'Show core four axes only';
+    rows.forEach(function(r){
+      r.style.display = (!on && !r.classList.contains('core-row')) ? 'none' : '';
+    });
+  });
+})();
+</script>
+</body>
+</html>
