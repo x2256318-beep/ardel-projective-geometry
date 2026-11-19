@@ -16,7 +16,7 @@ Lean は PAG264.lean：定理 40（午後に恒等の法則の 3 つを足した
   - 読み：ι = π^*/√(M/N) とおくと ι S ι^† に当たる。π_* が π^* の随伴であることは Lean の外。
 - **A_N を A_M に送る**（`cornerOp_mem`）。
   - gcd(N, M/N) は仮定にないので、素数冪の段 (2,4)・(3,9) なども含む。
-  - 非単位的な代数準同型 `cornerHom : A_N →ₙₐ A_M`（型は単位元の保存を課さない）としてまとめた。
+  - 単位元を保つとは限らない代数準同型 `cornerHom : A_N →ₙₐ A_M`（型は単位元の保存を課さない。N < M では保たず、N = M では恒等）としてまとめた（2026-11-19 夕方の索引の再照合の指摘で、「非単位的な」をこの言い方に揃えた。Lean の docstring も同じ）。
 - **生成元の像**：
   - φ(E^{(N)}_s) = E^{(M)}_{(M/N)s}（`cornerOp_geps`）。
   - φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E^{(M)}_s（`cornerOp_one`）。M = N·t と書いたとき、Part 202（PAG206）の `oldP N t` に等しい（`cornerOp_one_apply`）。
@@ -25,7 +25,7 @@ Lean は PAG264.lean：定理 40（午後に恒等の法則の 3 つを足した
 - **像は φ(1) の角に入る**（⊆。`cornerOp_one_mul`・`cornerOp_mul_one` と `cornerOp_mem` から直ちに出る。単独の宣言はない）。
 - **単射**（`cornerOp_injective`・`cornerHom_injective`）。
 - **非単位的**：N < M なら φ(1) ≠ 1（`cornerOp_one_ne_one`・`cornerHom_one_ne_one`）。N = M では恒等の法則（下）から φ(1) = 1 なので、N ∣ M のもとで φ(1) ≠ 1 ⟺ N < M（直ちに出る。単独の宣言はない）。
-- **一意性**：次の (a)(b) を満たす非単位的な代数準同型 A_N → A_M は、`→ₙₐ` の中でちょうど 1 つ（`existsUnique_corner`）。
+- **一意性**：次の (a)(b) を満たす、単位元の保存を課さない代数準同型 A_N → A_M は、`→ₙₐ` の中でちょうど 1 つ（`existsUnique_corner`）。
   - (a) すべての S ∈ A_N と f で φ(S)(π^* f) = π^*(S f)（引き戻しと両立）。
   - (b) φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E^{(M)}_s。
   - 証明は φ(S) = φ(S)φ(1) と (a)(b) だけを使う短い議論。

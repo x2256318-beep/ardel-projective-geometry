@@ -9,7 +9,7 @@ J_in_dil: 真となる N = [2, 3, 4, 6, 8, 12, 24]
 JR: 偽となる N = []（35 個）
 H_swap: 偽となる N = []（35 個）
 JH_norm: 偽となる N = []（35 個）
-Fphi_psi: 偽となる N = []（28 個）
+Fphi_psi: 偽となる 組 (N, M) = []（28 個）
 corner_dim: 組 35、不一致 []
 U_comm_corner: 偽となる N = []（35 個）
 U_in_corner: 真となる N = [2, 3, 4, 6, 8, 12, 24]

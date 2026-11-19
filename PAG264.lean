@@ -1,5 +1,5 @@
 /-
-アーデル射影幾何 — Part 260（PAG264、短期層の小さいノート、2026-11-19）：角の写像 A_N → A_M（N ∣ M、非単位的な代数準同型）
+アーデル射影幾何 — Part 260（PAG264、短期層の小さいノート、2026-11-19）：角の写像 A_N → A_M（N ∣ M、単位元を保つとは限らない代数準同型。N < M では保たず、N = M では恒等）
 
 問いの出所：方向 γ の立て直しの推薦案（`pag2_gamma_corner_preregistration.md` §4）。2026-11-19 09:37 に著者が採用した。
 基礎文書の第 5 章（索引 5.2 の留保「代数版にはならない」）と第 6 章 6.3（Bost–Connes との接続）の材料。新しいパートではない。
@@ -13,7 +13,7 @@
 - `fsum h`（h : N ∣ M）：繊維の和 π_* g(x) = Σ_{π y = x} g(y)。
 - `cornerOp h S = (N/M)·π^* ∘ S ∘ π_*`（S ∈ End(ℂ^{ℤ/N})）。
   - 読み：ι = π^*/√(M/N) とおくと ι S ι^† に当たる。π_* が π^* の随伴であること（数え上げの内積）は Lean の外。
-- `cornerHom h : shellAlg N →ₙₐ[ℂ] shellAlg M`：非単位的な代数準同型。型は単位元の保存を課さない。
+- `cornerHom h : shellAlg N →ₙₐ[ℂ] shellAlg M`：単位元を保つとは限らない代数準同型（型は単位元の保存を課さない。N < M では保たず（`cornerHom_one_ne_one`）、N = M では恒等（`cornerHom_self`））。
 
 Lean の文：
 1. 一般の S ∈ End(ℂ^{ℤ/N})：
@@ -38,7 +38,7 @@ Lean の文：
    - 像が φ(1) の角に入ること（⊆）は、`cornerOp_mem`・`cornerOp_one_mem`・`cornerOp_one_mul`・`cornerOp_mul_one` から直ちに出る（単独の宣言はない）。
 4. 一意性と合成：
    - (a) すべての S ∈ A_N と f で φ(S)(π^* f) = π^*(S f)、(b) φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E^{(M)}_s。
-   - (a)(b) を満たす非単位的な代数準同型 A_N → A_M（`→ₙₐ` の中で）は、ちょうど 1 つ（`existsUnique_corner`）。
+   - (a)(b) を満たす、単位元の保存を課さない代数準同型 A_N → A_M（`→ₙₐ` の中で）は、ちょうど 1 つ（`existsUnique_corner`）。
    - 一意性の証明は φ(S) = φ(S)φ(1) と (a)(b) だけを使う短い議論で、引き戻しとの両立だけで決まるという文ではない。
    - 独立照合の手計算の反例（Lean にしていない）：(b) を外すと一意でない（(N, M) = (1,2) で φ'(c) = c·1 も (a) を満たす）。(a) を外しても、積を保つことを外しても一意でない（どちらも (2,4) の例。(1,2) では A_1 = ℂ なので (b) だけで決まる）。
    - 繊維の和の合成（`fsum_trans`）。
@@ -405,7 +405,7 @@ theorem cornerOp_mem (h : N ∣ M) {S : Module.End ℂ (ZMod N → ℂ)} (hS : S
   | add x y _ _ hx hy => rw [cornerOp_add]; exact Subalgebra.add_mem _ hx hy
   | mul x y _ _ hx hy => rw [cornerOp_mul]; exact Subalgebra.mul_mem _ hx hy
 
-/-- **3d. 角の写像** A_N → A_M（単位元を保たない代数準同型、φ(S) = (N/M)·π^* ∘ S ∘ π_*）。 -/
+/-- **3d. 角の写像** A_N → A_M（単位元を保つとは限らない代数準同型、φ(S) = (N/M)·π^* ∘ S ∘ π_*。N < M では単位元を保たず（`cornerHom_one_ne_one`）、N = M では恒等（`cornerHom_self`））。 -/
 noncomputable def cornerHom (h : N ∣ M) : shellAlg N →ₙₐ[ℂ] shellAlg M where
   toFun S := ⟨cornerOp h S, cornerOp_mem h S.2⟩
   map_smul' c S := Subtype.ext (show cornerOp h (c • (S : Module.End ℂ (ZMod N → ℂ))) = c • cornerOp h S from
@@ -425,7 +425,7 @@ section uniq
 
 variable {N M : ℕ} [NeZero N] [NeZero M]
 
-/-- **4a. 一意性**：引き戻しと両立し、φ(1) = Σ_{(M/N) ∣ s} E_s を満たす単位元を保たない代数準同型は φ だけ。 -/
+/-- **4a. 一意性**：引き戻しと両立し、φ(1) = Σ_{(M/N) ∣ s} E_s を満たす、単位元の保存を課さない代数準同型（`→ₙₐ`）は φ だけ。 -/
 theorem existsUnique_corner (h : N ∣ M) :
     ∃! φ : shellAlg N →ₙₐ[ℂ] shellAlg M,
       (∀ (S : shellAlg N) (f : ZMod N → ℂ),

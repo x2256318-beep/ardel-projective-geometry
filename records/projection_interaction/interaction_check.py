@@ -2,7 +2,8 @@
 
 記号：V_N = ℤ/N 上の関数。A_N = ⟨D_s, E_s⟩（Part 214（PAG218）の shellAlg）。R_u f(x) = f(ux)（Part 214（PAG218）の dil）。
 P = R_{-1}（パリティ、無限素点の符号）。H = 離散 Hartley 変換/√N（核 cas(2πxy/N)）。F = フーリエ（e(−kx/N)/√N）。
-J = 殻ごとの反転：x = s·w（s = gcd(x, N)、w は法 N/s の単数）↦ s·w⁻¹（w⁻¹ は法 N/s）。
+J = 素数冪ごとの殻の反転 p^k w ↦ p^k w⁻¹ を中国剰余定理でつないだ置換（shell_inv の既定、naive=False）。
+法 N の殻ごとの反転 x = s·w ↦ s·w⁻¹（法 N/s）は shell_inv(naive=True) で、項目 Jnaive_comm で比べる（N = 10, 14, … で A_N と可換でない）。
 U_N = Σ_χ phaseA1(χ)·P_χ（Part 254 の UA1、単数の上の関数）。phaseA1(χ) = rootNum(χ の原始指標)。
 """
 import math, sys, cmath
@@ -167,4 +168,5 @@ if __name__ == '__main__':
         elif k in ('P_in_A', 'J_in_A', 'J_in_dil', 'U_in_corner', 'Pu_in_corner', 'U_is_identity'):
             print(f'{k}: 真となる N = {[n for n, b in v if b]}')
         else:
-            print(f'{k}: 偽となる N = {[n for n, b in v if not b]}（{len(v)} 個）')
+            lab = '組 (N, M)' if k == 'Fphi_psi' else 'N'
+            print(f'{k}: 偽となる {lab} = {[n for n, b in v if not b]}（{len(v)} 個）')

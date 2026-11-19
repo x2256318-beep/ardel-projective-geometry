@@ -8,7 +8,7 @@
 記号：
 - `Lvl`（Part 254（PAG258））：正の整数を整除の前順序で並べた型。a ≤ b ⇔ a ∣ b。有向（`IsDirectedOrder`、上界は積）で、`Nonempty`。
 - A_a = `shellAlg a.val`。
-- φ = Part 260（PAG264）の `cornerHom`（非単位的な代数準同型）。
+- φ = Part 260（PAG264）の `cornerHom`（単位元を保つとは限らない代数準同型。N < M では保たない）。
 
 定義：
 - `cornerSys a b h`（a ≤ b）：φ_{a,b}。
@@ -81,7 +81,7 @@ namespace PAG.Part265
 
 open PAG.Part218 PAG.Part258 PAG.Part264
 
-/-- 系の写像：a ≤ b（a ∣ b）なら角の写像 φ_{a,b}（Part 260 の `cornerHom`、非単位的な代数準同型）。 -/
+/-- 系の写像：a ≤ b（a ∣ b）なら角の写像 φ_{a,b}（Part 260 の `cornerHom`、単位元を保つとは限らない代数準同型。a < b では保たない）。 -/
 noncomputable def cornerSys (a b : Lvl) (h : a ≤ b) : shellAlg a.val →ₙₐ[ℂ] shellAlg b.val :=
   cornerHom (N := a.val) (M := b.val) h
 

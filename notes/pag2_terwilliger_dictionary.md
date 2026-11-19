@@ -433,7 +433,7 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | `cornerOp`・`cornerHom`（φ(S) = (N/M)·π^* ∘ S ∘ π_*） | 等長写像 ι = π^*/√(M/N) による共役 ι S ι^†（角への埋め込み、単位元を保つとは限らない準同型。* の保存は Lean の文にない）。Bose–Mesner の側では、商スキーム（部分群 H = Nℤ/Mℤ による商）の隣接代数がべき等元による角 e_H A e_H に同型という古典的事実 | 盲検（2026-11-19）が挙げた Zieschang, Theory of Association Schemes（2005）Thm 2.1.8(ii)・4.1.3、Kodalen 2019 §2.5（Lemma 2.13・2.14）。T(0) 版（T(X//H) が T(X) の角）の文献は見つからなかった（確信度：低〜中） |
 | `cornerOp_one`（φ(1) = Σ_{(M/N) ∣ s} E_s） | 商スキームのべき等元 e_H = (1/|H|) σ_H（Bose–Mesner 代数の中） | 同上 |
 | 像 = 角全体（Lean の外） | 三重正則性（T = span{E*_i A_j E*_k}）からの帰結の見込み | Munemasa 1993 Lemma 4、Bhattacharyya–Song–Tanaka 2010 Thm 3.10（盲検が本文を開いた）、ℤ/p^e が K_p のリース冪であることは Bastian–Humphries 2026 Thm 3.7 |
-| 群環の側での φ（数値） | Bost–Connes の自己準同型 ρ_n（ρ_n(e(r)) = (1/n)Σ_{ns=r} e(s)、ρ_n(1) = μ_n μ_n^*） | 盲検の手計算（L²(Ẑ) の表現で ψ ↔ Ad μ_n）。T(0) の片側だけが BC に対応する |
+| 群環の側での φ（数値） | Bost–Connes の自己準同型 ρ_n（ρ_n(e(r)) = (1/n)Σ_{ns=r} e(s)、ρ_n(1) = μ_n μ_n^*） | 盲検の手計算（L²(Ẑ) の表現で ψ ↔ Ad μ_n）。どちらの片側が BC に対応するかは表示による：引き戻しの表示では平行移動の側（E 側を含む）、0 拡張の表示（L²(Ẑ) の μ_n）では D 側（索引 6.3・2.9） |
 
 - 未記入の件数（この節）：0。
 

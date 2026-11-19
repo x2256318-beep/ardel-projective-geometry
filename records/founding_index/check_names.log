@@ -21,6 +21,7 @@ ok  PAG.Part240.crtMul_shellAlg
 ok  PAG.Part240.locHom
 ok  PAG.Part240.ppEquiv
 ok  PAG.Part240.tensEquiv
+ok  PAG.Part246.finrank_shellAlg_primePow
 ok  PAG.Part246.fourierConj_convL_geps
 ok  PAG.Part246.fourierConj_mulLeft_dind
 ok  PAG.Part249.sumSub_eq_shellAlg_iff
@@ -129,4 +130,4 @@ ok  PAG.Part27.Wproj
 ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
-合計 131 件、確認 131、見つからない 0
+合計 132 件、確認 132、見つからない 0
