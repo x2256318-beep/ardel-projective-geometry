@@ -42,4 +42,4 @@ o += ['\n## §H 構築側が WebFetch の要約で確かめた文献の記述（
 t = '\n'.join(o)
 out = pathlib.Path('/home/claude/out/int266'); out.mkdir(parents=True, exist_ok=True)
 (R/'records/audit266/recheck_int/input_R.md').write_text(t, encoding='utf-8'); (out/'input_R.md').write_text(t, encoding='utf-8')
-print(len(t.split('\n')), 'lines', '見つからない' in t, 'x2256318' in t, 'Author:' in t)
+print(len(t.split('\n')), 'lines', '見つからない' in t, 'Author:' in t)
