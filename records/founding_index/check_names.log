@@ -7,7 +7,10 @@ ok  PAG.Part201.zket_pull
 ok  PAG.Part206.dft_pull_apply
 ok  PAG.Part206.oldP_eq_self_iff
 ok  PAG.Part218.shellAlg
+ok  PAG.Part218.shellAlg_comm_dil
 ok  PAG.Part220.InLayer
+ok  PAG.Part224.fullComm
+ok  PAG.Part225.fullComm_commute_iff_dvd_twelve
 ok  PAG.Part23.Compat
 ok  PAG.Part23.W
 ok  PAG.Part232.leftHom
@@ -18,6 +21,8 @@ ok  PAG.Part240.crtMul_shellAlg
 ok  PAG.Part240.locHom
 ok  PAG.Part240.ppEquiv
 ok  PAG.Part240.tensEquiv
+ok  PAG.Part246.fourierConj_convL_geps
+ok  PAG.Part246.fourierConj_mulLeft_dind
 ok  PAG.Part249.sumSub_eq_shellAlg_iff
 ok  PAG.Part251.addEAlg_one_eq_shellAlg_iff
 ok  PAG.Part252.addEAlg_eq_shellAlg_iff_all
@@ -36,7 +41,9 @@ ok  PAG.Part255.dense_closure_primeGens
 ok  PAG.Part255.primeSys_unique
 ok  PAG.Part255.unitSys
 ok  PAG.Part256.JH
+ok  PAG.Part256.JH_eq_rootNum_mul
 ok  PAG.Part256.JH_eq_rootNum_mul_any
+ok  PAG.Part256.hartley
 ok  PAG.Part256.hartley_eq_zero_of_not_isUnit
 ok  PAG.Part256.normSq_rootNum
 ok  PAG.Part256.parFac
@@ -46,6 +53,7 @@ ok  PAG.Part256.removal_counterexample_normSq
 ok  PAG.Part256.rootNum
 ok  PAG.Part257.TopL_charU
 ok  PAG.Part257.TopL_eq_of_A1
+ok  PAG.Part257.Vprim
 ok  PAG.Part257.unitary_Vprim
 ok  PAG.Part258.Lim
 ok  PAG.Part258.UA1
@@ -53,6 +61,7 @@ ok  PAG.Part258.UA1_family_unique
 ok  PAG.Part258.UA1_star
 ok  PAG.Part258.Uinf
 ok  PAG.Part258.Uinf_unique
+ok  PAG.Part258.condPart
 ok  PAG.Part258.condPart_eq_map
 ok  PAG.Part258.ipLim_Uinf
 ok  PAG.Part258.ip_UA1
@@ -120,4 +129,4 @@ ok  PAG.Part27.Wproj
 ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
-合計 122 件、確認 122、見つからない 0
+合計 131 件、確認 131、見つからない 0

@@ -425,12 +425,12 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 
 ## 17. Part 260（PAG264、短期層）で足した名前（角の写像 A_N → A_M、2026-11-19）
 
-（Part 257〜259 の名前はこの辞書に未記入。今回の分だけ足す。）
+（Part 257〜259 の名前はこの辞書に未記入で、行そのものがない。例：`listChar`、`shellLift`、`twLift`、`UDvd`、`sqLim`、`canon`。下の「未記入の件数」はこの節の表の右列についての数で、行のない名前は含まない（2026-11-19 夕方の統合照合の指摘で明記した）。）
 
 | 名前・主張 | 文献の言葉 | 出典・注意 |
 |---|---|---|
 | `fsum`（繊維の和 π_*） | 押し出し（pushforward）、引き戻しの随伴（数え上げの内積で） | 標準 |
-| `cornerOp`・`cornerHom`（φ(S) = (N/M)·π^* ∘ S ∘ π_*） | 等長写像 ι = π^*/√(M/N) による共役 ι S ι^†（角への埋め込み、非単位的な *準同型）。Bose–Mesner の側では、商スキーム（部分群 H = Nℤ/Mℤ による商）の隣接代数がべき等元による角 e_H A e_H に同型という古典的事実 | 盲検（2026-11-19）が挙げた Zieschang, Theory of Association Schemes（2005）Thm 2.1.8(ii)・4.1.3、Kodalen 2019 §2.5（Lemma 2.13・2.14）。T(0) 版（T(X//H) が T(X) の角）の文献は見つからなかった（確信度：低〜中） |
+| `cornerOp`・`cornerHom`（φ(S) = (N/M)·π^* ∘ S ∘ π_*） | 等長写像 ι = π^*/√(M/N) による共役 ι S ι^†（角への埋め込み、単位元を保つとは限らない準同型。* の保存は Lean の文にない）。Bose–Mesner の側では、商スキーム（部分群 H = Nℤ/Mℤ による商）の隣接代数がべき等元による角 e_H A e_H に同型という古典的事実 | 盲検（2026-11-19）が挙げた Zieschang, Theory of Association Schemes（2005）Thm 2.1.8(ii)・4.1.3、Kodalen 2019 §2.5（Lemma 2.13・2.14）。T(0) 版（T(X//H) が T(X) の角）の文献は見つからなかった（確信度：低〜中） |
 | `cornerOp_one`（φ(1) = Σ_{(M/N) ∣ s} E_s） | 商スキームのべき等元 e_H = (1/|H|) σ_H（Bose–Mesner 代数の中） | 同上 |
 | 像 = 角全体（Lean の外） | 三重正則性（T = span{E*_i A_j E*_k}）からの帰結の見込み | Munemasa 1993 Lemma 4、Bhattacharyya–Song–Tanaka 2010 Thm 3.10（盲検が本文を開いた）、ℤ/p^e が K_p のリース冪であることは Bastian–Humphries 2026 Thm 3.7 |
 | 群環の側での φ（数値） | Bost–Connes の自己準同型 ρ_n（ρ_n(e(r)) = (1/n)Σ_{ns=r} e(s)、ρ_n(1) = μ_n μ_n^*） | 盲検の手計算（L²(Ẑ) の表現で ψ ↔ Ad μ_n）。T(0) の片側だけが BC に対応する |
@@ -445,7 +445,7 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | `exists_local_unit_finset`・`not_exists_left_one` | 局所的な単位元を持つが単位的でない環 | 同上 |
 | 極限の V_∞（Ẑ 上の局所定数関数）への作用（Lean の外） | Bruhat–Schwartz 関数の空間 C^∞(Ẑ) ≅ ⊗'_p C^∞(ℤ_p) | Bump、Ramakrishnan–Valenza（盲検が Wikipedia 経由で挙げた。未照合） |
 | 極限の素点ごとの分解 ⊗'_p（Lean の外） | Flath 型の制限テンソル積（球関数のべき等元 ↔ 定数への射影 e_1） | Flath 1979、Deitmar arXiv:1002.0475。Bost–Connes 型は Laca–Larsen–Neshveyev arXiv:math/0609316 定理 3.2 |
-| A_N = End(V_N)^{G_N}（照合者の手計算、Lean の外） | 根付き p 分木の頂点の固定部分群の中心化代数（Terwilliger 代数 = 中心化代数） | 次元の一致（Bhattacharyya–Song、Bastian–Humphries の命題 3.3）。文献での明記は未確認 |
+| A_N = End(V_N)^{G_N}（照合者の手計算、Lean の外） | 根付き p 分木の頂点の固定部分群の中心化代数（Terwilliger 代数 = 中心化代数） | 次元の一致（Bhattacharyya–Song（arXiv:0809.1052、wreath powers。§17 の Bhattacharyya–Song–Tanaka 2010 とは別の文献の可能性がある、未照合）、Bastian–Humphries の命題 3.3）。文献での明記は未確認 |
 
 - 未記入の件数（この節）：0。
 

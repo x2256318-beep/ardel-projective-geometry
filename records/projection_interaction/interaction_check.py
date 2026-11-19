@@ -1,6 +1,6 @@
 """無限素点・スケーリング・貼り合わせ U と、有限素点の側の代数 A_N の相互作用（着手前の見込み確認。数値。証明ではない）。2026-11-19。
 
-記号：V_N = ℤ/N 上の関数。A_N = ⟨D_s, E_s⟩（Part 214 の shellAlg）。R_u f(x) = f(ux)（Part 218 の dil）。
+記号：V_N = ℤ/N 上の関数。A_N = ⟨D_s, E_s⟩（Part 214（PAG218）の shellAlg）。R_u f(x) = f(ux)（Part 214（PAG218）の dil）。
 P = R_{-1}（パリティ、無限素点の符号）。H = 離散 Hartley 変換/√N（核 cas(2πxy/N)）。F = フーリエ（e(−kx/N)/√N）。
 J = 殻ごとの反転：x = s·w（s = gcd(x, N)、w は法 N/s の単数）↦ s·w⁻¹（w⁻¹ は法 N/s）。
 U_N = Σ_χ phaseA1(χ)·P_χ（Part 254 の UA1、単数の上の関数）。phaseA1(χ) = rootNum(χ の原始指標)。
@@ -115,13 +115,12 @@ def run(Nmax):
         rep['H_swap'].append((N, all(np.allclose(H @ D[s] @ H, E[s]) and np.allclose(H @ E[s] @ H, D[s]) for s in dvs)))
         rep['JH_norm'].append((N, normalizes(B, J @ H, N)))
         # F φ F⁻¹ = ψ(F · F⁻¹)（M = N·k、k ≤ 3）
-        ok = True
+        # 比べた組だけを数える（統合照合 tail_audit4 の指摘 2-1 で直した。以前は比べない N も「偽でない」に数えていた）
         for k in (2, 3):
             M = N * k
             if M > Nmax: continue
             FN, FM = fourier(N), fourier(M); I, V = iota(N, M), vemb(N, M)
-            ok &= np.allclose(FM @ I, V @ FN)
-        rep['Fphi_psi'].append((N, ok))
+            rep['Fphi_psi'].append(((N, M), np.allclose(FM @ I, V @ FN)))
         # 単数の角：D_1 A_N D_1 を単数の上の関数に制限
         Ui = units(N)
         S = np.zeros((N, len(Ui)), dtype=complex)
