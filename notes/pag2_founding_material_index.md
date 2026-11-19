@@ -60,6 +60,7 @@
   - 射影直線 `PAG.Part27.ProjLine`、反転 [a:b] ↦ [b:a] の定義 `PAG.Part27.Wproj`、対合 `PAG.Part27.Wproj_Wproj`（一般の N）。
   - N = p^K（K ≥ 1）では、点モデル `PAG.Part26.Pt` との点集合の全単射 `PAG.Part27.projEquiv` と、点の数 `PAG.Part27.card_ProjLine`。
   - 2 チャートモデルの貼り合わせ条件 `PAG.Part23.Compat` と、その反転 `PAG.Part23.W`。点モデルの関数との線形同型 `PAG.Part26.ptEquiv`（一般の N）。
+  - 南北のチャートの畳み込み `PAG.Part23.BS`・`PAG.Part23.BN`（Part 19（PAG23））。赤道（単数）での絡み合い：χ₁・χ₂・χ₁χ₂ が原始的なら、赤道のケットについて B_N = conj(Ĵ)² · B_S（`PAG.Part25.equator_intertwine_hat`、Part 21（PAG25）。射影直線の上の版は `PAG.Part29.equator_intertwine_proj`、Part 25（PAG29））。第 6 版までの索引はこれらを拾っていなかった（2026-11-19 夜の内部照合で見つけた）。係数を貼り合わせの位相 𝔀 で書いた形は 2.4 の Part 262。
 - 留保：
   - 「0 と ∞ は別の点で、反転がこの 2 点を入れ替える」という文は Lean にない（N ≥ 2 で正しい）。
   - N が 2 つ以上の素因数を持つとき、点モデルと P¹(ℤ/N) の点の数は一致しない（数え上げ、Lean の外）。
@@ -117,7 +118,10 @@
   - 原始指標で単数の外に漏れない：`PAG.Part256.hartley_eq_zero_of_not_isUnit`。
   - 原始性を外した反例：`PAG.Part256.removal_counterexample`・`PAG.Part256.removal_counterexample_normSq`・`PAG.Part256.removal_counterexample_four`。
 - 留保：
-  - `JH` は ℤ/N の関数を単数の上の関数に送る写像で、P¹ の上の作用素ではない。照合した範囲（PAG23・PAG26・PAG27・PAG256）では、P¹ のモデルと結ぶ Lean の文はない（鎖全体は検索していない）。
+  - `JH` は ℤ/N の関数を単数の上の関数に送る写像で、P¹ の上の作用素ではない。
+  - P¹ のモデルと結ぶ Lean の文（Part 262（PAG266）、2026-11-20、短期層）：χ₁・χ₂・χ₁χ₂ が法 p^(n+1) の原始指標なら、P¹(ℤ/p^K) の赤道のケットについて B_N = (𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂)))² · B_S（2 チャートのモデル `PAG.Part266.equator_intertwine_rootNum`、射影直線 `PAG.Part266.equator_intertwine_proj_rootNum`）。係数の等式 conj(Ĵ) = s·𝔀(χ₁χ₂)/(𝔀(χ₁)𝔀(χ₂))（s は両方とも奇のときだけ −1）は `PAG.Part266.conj_Jhat_eq_rootNum`、2 乗の形は `PAG.Part266.conj_Jhat_sq_eq_rootNum`、ガウス和の形は `PAG.Part266.conj_Jhat_eq_gauss`。
+    - 範囲：p = 2（すべての n）と p = 3、n = 0 では文は空。4・5（作用素の形）は Part 21・25 の定理の係数の書き換えで、絡み合いの中身はそちらにある。
+    - 読み（Lean の外）：χ の成分に 𝔀 を掛ける作用素を U とすると、北の畳み込みは南の畳み込みを U² で移したもの。この条件は U を有限個の候補（単数 u と指標ごとの符号の分）に絞るが選ばず、A1 は導かれない。関数体では本来のルート数が一般にこの条件を満たさない（ℚ に固有の小さな観察、確信度：中）。P¹(ℤ/N) の 0・∞ を定義の「無限小と無限大」と結ぶ読みは構築側の候補（著者の判断が先）。ノート `pag2_pag266_p1_equator_rootnum.md`。
   - 原始指標で 𝔀 がルート数であることは Lean の外。
   - 素朴なフーリエ核 e(xy) では値が τ(χ)/√N で、奇の指標で i 倍ずれる。このずれは滑らかにしない。
 - ノート：`pag2_part252_hartley_gluing.md`、`pag2_projection_material.md`、`pag2_prereg_projection.md`。

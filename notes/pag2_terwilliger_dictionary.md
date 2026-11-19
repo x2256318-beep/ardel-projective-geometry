@@ -461,3 +461,13 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | F_M ι = V F_N（数値、Lean の外） | Pontryagin 双対の関手性（商 ℤ/M → ℤ/N と包含の双対）。φ と ψ は Bost–Connes の ρ_n の 2 つの見方（平行移動の側と乗法作用素の側） | Shirbisheh arXiv:0808.1767、Arledge–Laca–Raeburn 1997。有限レベルで並べた文は見つからなかった（盲検、検索は浅い） |
 
 - 未記入の件数（この節）：0。
+
+## 20. Part 262（PAG266）の名前（2026-11-20）
+
+| 名前・主張 | 文献の言葉 | 出典・注意 |
+|---|---|---|
+| `conj_Jhat_eq_gauss`・`conj_Jhat_eq_rootNum`・`conj_Jhat_sq_eq_rootNum` | ヤコビ和はガウス和の比 J = G₁G₂/G₁₂（積が原始的なとき）と |G|² = N。位相 conj(Ĵ) はガウス和の位相の余境界（2 乗で符号が消える） | K. Conrad, Gauss and Jacobi sums on finite fields and ℤ/mℤ の定理 3.15・3.12。符号つきの形は Long–Pigno–Pinner（arXiv:1410.6179）の式 (10)（盲検の照合者による） |
+| `equator_intertwine_rootNum`・`equator_intertwine_proj_rootNum` | P¹(ℤ/p^K) の 2 チャートの畳み込みの、重なりでの比較（この設定の文献の名前は見つからなかった） | Part 21・25 の定理の係数の書き換え。設定そのものは盲検の 1 回の検索では見つからなかった |
+| 条件「U'² が赤道で B_S を B_N に移す」の解の集まり（Lean の外） | 部分群の補集合の上で乗法的な関数は準同型に延びる（|X/Y| ≥ 3）、ポントリャーギン双対 | 盲検の照合者の手計算（補題を書いた文献は探していない）。加法指標の取り替えで局所定数が χ(b) 倍になること（Tate、Biswas arXiv:1401.5591 §4.3） |
+
+- 未記入の件数（この節）：0。

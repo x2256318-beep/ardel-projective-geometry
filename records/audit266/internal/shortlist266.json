@@ -1,0 +1,537 @@
+[
+ {
+  "target": "PAG.Part266.conj_Jhat_eq_gauss",
+  "module": "PAG266",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part25.conjJ_div_J",
+    "module": "PAG25",
+    "score": 0.951
+   },
+   {
+    "name": "PAG.Part25.Jhat.congr_simp",
+    "module": "PAG29",
+    "score": 0.865
+   },
+   {
+    "name": "PAG.Part15.gauss_ratio_eq_jacobi",
+    "module": "PAG15",
+    "score": 0.704
+   },
+   {
+    "name": "PAG.Part25.normSq_Jhat",
+    "module": "PAG25",
+    "score": 0.697
+   },
+   {
+    "name": "PAG.Part16.conv_chars_eq_jacobi",
+    "module": "PAG16",
+    "score": 0.672
+   },
+   {
+    "name": "PAG.Part24.J_inv",
+    "module": "PAG24",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part25.normSq_J",
+    "module": "PAG25",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part7.J.congr_simp",
+    "module": "PAG17",
+    "score": 0.513
+   },
+   {
+    "name": "PAG.Part8.gauss_mul_gauss_eq_jacobi_mul_of_stab",
+    "module": "PAG8",
+    "score": 0.451
+   },
+   {
+    "name": "PAG.Part17.conv_shell_chars",
+    "module": "PAG17",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part15.Bcv_shift_jacobi",
+    "module": "PAG15",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part7.J_eq_jacobiSum",
+    "module": "PAG7",
+    "score": 0.434
+   },
+   {
+    "name": "PAG.Part25.equator_intertwine_hat",
+    "module": "PAG25",
+    "score": 0.428
+   },
+   {
+    "name": "PAG.Part8.gauss_sq_primitive",
+    "module": "PAG8",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part8.gauss_mul_gauss_eq_jacobi_mul_primitive",
+    "module": "PAG8",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part7.gauss_mul_gauss_eq_jacobi_mul",
+    "module": "PAG7",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part7.fiber_unit",
+    "module": "PAG7",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part7.fiber_one",
+    "module": "PAG7",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part9.conj_gaussSum",
+    "module": "PAG9",
+    "score": 0.34
+   },
+   {
+    "name": "PAG.Part258.gaussSum_inv",
+    "module": "PAG258",
+    "score": 0.34
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part266.conj_Jhat_eq_rootNum",
+  "module": "PAG266",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part25.conjJ_div_J",
+    "module": "PAG25",
+    "score": 0.684
+   },
+   {
+    "name": "PAG.Part25.Jhat.congr_simp",
+    "module": "PAG29",
+    "score": 0.622
+   },
+   {
+    "name": "PAG.Part15.gauss_ratio_eq_jacobi",
+    "module": "PAG15",
+    "score": 0.506
+   },
+   {
+    "name": "PAG.Part25.normSq_Jhat",
+    "module": "PAG25",
+    "score": 0.501
+   },
+   {
+    "name": "PAG.Part258.rootNum_inv",
+    "module": "PAG258",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part16.conv_chars_eq_jacobi",
+    "module": "PAG16",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part258.rootNum_one_prime",
+    "module": "PAG258",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part256.rootNum.congr_simp",
+    "module": "PAG257",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part257.rootNum_ne_zero",
+    "module": "PAG257",
+    "score": 0.452
+   },
+   {
+    "name": "PAG.Part258.rootNum_one_of_eq_one",
+    "module": "PAG258",
+    "score": 0.44
+   },
+   {
+    "name": "PAG.Part24.J_inv",
+    "module": "PAG24",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part25.normSq_J",
+    "module": "PAG25",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part258.rootNum_congr",
+    "module": "PAG258",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part7.J.congr_simp",
+    "module": "PAG17",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part258.phaseA1_inv",
+    "module": "PAG258",
+    "score": 0.348
+   },
+   {
+    "name": "PAG.Part172.quartic_eq_one",
+    "module": "PAG172",
+    "score": 0.334
+   },
+   {
+    "name": "PAG.Part8.gauss_mul_gauss_eq_jacobi_mul_of_stab",
+    "module": "PAG8",
+    "score": 0.324
+   },
+   {
+    "name": "PAG.Part17.conv_shell_chars",
+    "module": "PAG17",
+    "score": 0.323
+   },
+   {
+    "name": "PAG.Part15.Bcv_shift_jacobi",
+    "module": "PAG15",
+    "score": 0.319
+   },
+   {
+    "name": "PAG.Part25.equator_intertwine_hat",
+    "module": "PAG25",
+    "score": 0.318
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part266.conj_Jhat_sq_eq_rootNum",
+  "module": "PAG266",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part25.conjJ_div_J",
+    "module": "PAG25",
+    "score": 0.83
+   },
+   {
+    "name": "PAG.Part25.Jhat.congr_simp",
+    "module": "PAG29",
+    "score": 0.755
+   },
+   {
+    "name": "PAG.Part15.gauss_ratio_eq_jacobi",
+    "module": "PAG15",
+    "score": 0.614
+   },
+   {
+    "name": "PAG.Part25.normSq_Jhat",
+    "module": "PAG25",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part258.rootNum_inv",
+    "module": "PAG258",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part16.conv_chars_eq_jacobi",
+    "module": "PAG16",
+    "score": 0.586
+   },
+   {
+    "name": "PAG.Part256.rootNum.congr_simp",
+    "module": "PAG257",
+    "score": 0.554
+   },
+   {
+    "name": "PAG.Part257.rootNum_ne_zero",
+    "module": "PAG257",
+    "score": 0.548
+   },
+   {
+    "name": "PAG.Part258.rootNum_one_of_eq_one",
+    "module": "PAG258",
+    "score": 0.534
+   },
+   {
+    "name": "PAG.Part24.J_inv",
+    "module": "PAG24",
+    "score": 0.509
+   },
+   {
+    "name": "PAG.Part25.normSq_J",
+    "module": "PAG25",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part258.rootNum_one_prime",
+    "module": "PAG258",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part258.rootNum_congr",
+    "module": "PAG258",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part7.J.congr_simp",
+    "module": "PAG17",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part258.phaseA1_inv",
+    "module": "PAG258",
+    "score": 0.423
+   },
+   {
+    "name": "PAG.Part8.gauss_mul_gauss_eq_jacobi_mul_of_stab",
+    "module": "PAG8",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part17.conv_shell_chars",
+    "module": "PAG17",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part15.Bcv_shift_jacobi",
+    "module": "PAG15",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part25.equator_intertwine_hat",
+    "module": "PAG25",
+    "score": 0.386
+   },
+   {
+    "name": "PAG.Part7.J_eq_jacobiSum",
+    "module": "PAG7",
+    "score": 0.379
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part266.equator_intertwine_proj_rootNum",
+  "module": "PAG266",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part29.equator_intertwine_proj",
+    "module": "PAG29",
+    "score": 0.942
+   },
+   {
+    "name": "PAG.Part29.projFun_ketS",
+    "module": "PAG29",
+    "score": 0.901
+   },
+   {
+    "name": "PAG.Part29.thmA_BSproj",
+    "module": "PAG29",
+    "score": 0.894
+   },
+   {
+    "name": "PAG.Part29.ketS_proj.congr_simp",
+    "module": "PAG29",
+    "score": 0.893
+   },
+   {
+    "name": "PAG.Part38.adjoint_ketS",
+    "module": "PAG38",
+    "score": 0.881
+   },
+   {
+    "name": "PAG.Part35.BNproj_smul",
+    "module": "PAG35",
+    "score": 0.879
+   },
+   {
+    "name": "PAG.Part29.projFun_BNproj",
+    "module": "PAG29",
+    "score": 0.878
+   },
+   {
+    "name": "PAG.Part28.BNproj.congr_simp",
+    "module": "PAG29",
+    "score": 0.878
+   },
+   {
+    "name": "PAG.Part29.thmB_BSproj",
+    "module": "PAG29",
+    "score": 0.872
+   },
+   {
+    "name": "PAG.Part34.BSproj_W",
+    "module": "PAG34",
+    "score": 0.861
+   },
+   {
+    "name": "PAG.Part34.BNproj_W",
+    "module": "PAG34",
+    "score": 0.861
+   },
+   {
+    "name": "PAG.Part28.BNproj_eq",
+    "module": "PAG28",
+    "score": 0.861
+   },
+   {
+    "name": "PAG.Part35.BSproj_smul",
+    "module": "PAG35",
+    "score": 0.861
+   },
+   {
+    "name": "PAG.Part36.BSproj_north_interior",
+    "module": "PAG36",
+    "score": 0.86
+   },
+   {
+    "name": "PAG.Part29.projFun_BSproj",
+    "module": "PAG29",
+    "score": 0.86
+   },
+   {
+    "name": "PAG.Part28.BSproj.congr_simp",
+    "module": "PAG29",
+    "score": 0.86
+   },
+   {
+    "name": "PAG.Part29.ketS0_eq_ketN0_proj",
+    "module": "PAG29",
+    "score": 0.859
+   },
+   {
+    "name": "PAG.Part43.mixed_BSproj",
+    "module": "PAG43",
+    "score": 0.854
+   },
+   {
+    "name": "PAG.Part29.BNproj_symm",
+    "module": "PAG29",
+    "score": 0.852
+   },
+   {
+    "name": "PAG.Part32.tildePull_ketS",
+    "module": "PAG32",
+    "score": 0.852
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part266.equator_intertwine_rootNum",
+  "module": "PAG266",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part28.descent_equator_zero",
+    "module": "PAG28",
+    "score": 0.754
+   },
+   {
+    "name": "PAG.Part28.kS_equator_zero",
+    "module": "PAG28",
+    "score": 0.737
+   },
+   {
+    "name": "PAG.Part23.W_kS",
+    "module": "PAG23",
+    "score": 0.729
+   },
+   {
+    "name": "PAG.Part23.kS.congr_simp",
+    "module": "PAG28",
+    "score": 0.723
+   },
+   {
+    "name": "PAG.Part31.tildeP1_kS",
+    "module": "PAG31",
+    "score": 0.697
+   },
+   {
+    "name": "PAG.Part24.equator_intertwine",
+    "module": "PAG24",
+    "score": 0.692
+   },
+   {
+    "name": "PAG.Part31.W_tilde_kS",
+    "module": "PAG31",
+    "score": 0.689
+   },
+   {
+    "name": "PAG.Part28.thmA_south",
+    "module": "PAG28",
+    "score": 0.687
+   },
+   {
+    "name": "PAG.Part24.kS0_eq_kN0",
+    "module": "PAG24",
+    "score": 0.68
+   },
+   {
+    "name": "PAG.Part25.equator_intertwine_hat",
+    "module": "PAG25",
+    "score": 0.672
+   },
+   {
+    "name": "PAG.Part25.mirror_thmB_eq_W",
+    "module": "PAG25",
+    "score": 0.663
+   },
+   {
+    "name": "PAG.Part35.BN_smul",
+    "module": "PAG35",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part24.equator_north",
+    "module": "PAG24",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part24.equator_south",
+    "module": "PAG24",
+    "score": 0.622
+   },
+   {
+    "name": "PAG.Part25.equator_residue",
+    "module": "PAG25",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part25.mirror_thmB",
+    "module": "PAG25",
+    "score": 0.604
+   },
+   {
+    "name": "PAG.Part25.thmB_south",
+    "module": "PAG25",
+    "score": 0.591
+   },
+   {
+    "name": "PAG.Part23.BN_eq",
+    "module": "PAG23",
+    "score": 0.591
+   },
+   {
+    "name": "PAG.Part28.kN_equator_zero",
+    "module": "PAG28",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part23.mirror_thmA",
+    "module": "PAG23",
+    "score": 0.588
+   }
+  ]
+ }
+]
