@@ -309,7 +309,7 @@
   - A_M に入る：`PAG.Part264.cornerOp_mem`。写像 `PAG.Part264.cornerHom`。
   - 生成元の像：`PAG.Part264.cornerOp_geps`（φ(E_s) = E_{(M/N)s}）、`PAG.Part264.cornerOp_one`（φ(1) = Σ_{s ∣ M, (M/N) ∣ s} E_s）、`PAG.Part264.cornerOp_dind`。
   - 引き戻しと両立：`PAG.Part264.cornerOp_pull`。
-  - 一意性：`PAG.Part264.existsUnique_corner`。条件は (a) 引き戻しとの両立と (b) φ(1) の値。(b) を外すと一意でない（照合者の手計算）。
+  - 一意性：`PAG.Part264.existsUnique_corner`。条件は (a) 引き戻しとの両立、(b) φ(1) の値、積を保つこと（`→ₙₐ` の中で考える）の 3 つ。どれを外しても一意でない（(b) は (1,2)、(a) と積は (2,4) の例。独立照合の照合者の手計算で、Lean の外）。一意性は「引き戻しとの両立だけで決まる」ではない（補足 15）。
   - 合成：`PAG.Part264.cornerHom_comp`。恒等の法則：`PAG.Part264.cornerHom_self`（2026-11-19 午後に追加）。合成と恒等の 2 法則で、正の整数の整除の順序の上の帰納系の法則が揃う。
   - N < M なら φ(1) ≠ 1：`PAG.Part264.cornerHom_one_ne_one`。
   - D 側の証人：`PAG.Part264.cornerOp_dind_not_mem_span`（(2,4)）。
@@ -320,7 +320,7 @@
     - Bost–Connes の ρ との対応（6.3）。
   - D 側は殻の span に入らないので、5.1 の強い読みの外。これは素数冪の段に固有ではない（数値：N < M の 81 組（M ≤ 30）のすべての s ∣ N で、φ(D_s) は D_t の span に入らない）。
   - 極限は直極限（有限次元の代数の和集合）の側でとる。完備化は解像度が落ちる側の操作と読む（CLAUDE.md §1 の 08:41 の定義、索引 3.1）。
-  - 照合：独立照合、再照合、統合照合（恒等の法則と尾）。統合照合の後の直しは主張を狭める・明確にするものだけで、尾の台帳は空。
+  - 照合：独立照合、再照合、統合照合（恒等の法則と尾）、恒等の法則の 3 定理の独立照合（2026-11-19 夜、形式文と定義だけ）。統合照合の後の直し（散文 11 点）は自己申告で「尾の台帳は空」としていたが、2026-11-19 19:58 の著者の規則に照らして台帳 `pag2_tail_ledger.md` の L3 に戻した（未照合）。
 - 帰納系と極限（Part 261（PAG265）、短期層、2026-11-19 午後）：
   - 正の整数の整除の順序（Part 254 の `Lvl`）の上の `DirectedSystem`：`PAG.Part265.cornerSys_self`・`PAG.Part265.cornerSys_comp`。
   - 極限 `PAG.Part265.CornerLim`（Mathlib の一般の `DirectLimit`）は、非単位的な環の構造と ℂ のスカラー倍を持つ。
