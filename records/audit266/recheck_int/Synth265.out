@@ -1,0 +1,7 @@
+DirectLimit.instNonUnitalRingOfNonUnitalRingHomClass
+DirectLimit.instModule
+DirectLimit.instIsScalarTower
+DirectLimit.instSMulCommClass
+@IsIdempotentElem.one : ∀ {M : Type u_1} [inst : MulOneClass M], IsIdempotentElem 1
+@IsIdempotentElem.map : ∀ {M : Type u_1} {N : Type u_2} {F : Type u_3} [inst : Mul M] [inst_1 : Mul N]
+  [inst_2 : FunLike F M N] [MulHomClass F M N] {e : M}, IsIdempotentElem e → ∀ (f : F), IsIdempotentElem (f e)
