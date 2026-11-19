@@ -1,0 +1,1 @@
+盲検の問いテスト（2026-11-19 20:25〜20:36）。新しいエージェント（general-purpose、WebSearch・WebFetch だけを使うよう依頼）。依頼文は ../prompt_blind.md の全文。ツール 27 回、約 620 秒。出力の全文は blind_output.md。
