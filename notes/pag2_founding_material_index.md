@@ -265,13 +265,21 @@
   - D 側の証人：`PAG.Part264.cornerOp_dind_not_mem_span`（(2,4)）。
 - 留保：
   - 次のものは Lean の外。
-    - Mathlib の `DirectedSystem` としての束ねと、極限 A_∞。
+    - 極限の具体形（Ẑ 上の局所定数関数への作用）。
     - 像が角全体であること（数値 111 組、三重正則性からの短い帰結の見込み）。
     - Bost–Connes の ρ との対応（6.3）。
   - D 側は殻の span に入らないので、5.1 の強い読みの外。これは素数冪の段に固有ではない（N < M のすべての s：数値 81 組）。
   - 極限は直極限（有限次元の代数の和集合）の側でとる。完備化は解像度が落ちる側の操作と読む（§1 の 08:41 の定義）。
   - 照合：独立照合、再照合、統合照合（恒等の法則と尾）。統合照合の後の直しは主張を狭める・明確にするものだけで、尾の台帳は空。
-- ノート：`pag2_pag264_corner_maps.md`、`pag2_gamma_corner_preregistration.md`。
+- 帰納系と極限（Part 261（PAG265）、短期層、2026-11-19 午後）：
+  - 正の整数の整除の順序（Part 254 の `Lvl`）の上の `DirectedSystem`：`PAG.Part265.cornerSys_self`・`PAG.Part265.cornerSys_comp`。
+  - 極限 `PAG.Part265.CornerLim`（Mathlib の一般の `DirectLimit`）は、非単位的な環の構造と ℂ のスカラー倍を持つ。
+  - 各段は単射に入る：`PAG.Part265.ofCorner_injective`。
+  - 局所的な単位元：1 元ごとが `PAG.Part265.exists_local_unit`、有限集合ごとが `PAG.Part265.exists_local_unit_finset`。べき等元 e_a は a について増大する（`PAG.Part265.ofCorner_one_le`）。
+  - 左単位元はない：`PAG.Part265.not_exists_left_one`。
+  - 局所的な単位元の文はどの直極限でも成り立つ一般論で、非単位的という内容を運ぶのは左単位元がないことだけ。その証明は素数冪の段を要らない見込み（手計算）。
+  - 極限は直極限の側でとり、完備化は使っていない。
+- ノート：`pag2_pag264_corner_maps.md`、`pag2_pag265_corner_limit.md`、`pag2_gamma_corner_preregistration.md`。
 
 **5.3 関数のレベルの帰納系。**
 - 地位：定理（Lean）。ラベルは、この索引では確かめていない。
@@ -355,7 +363,7 @@
   - `sqLim` の代数構造（5.2）。
   - a が奇数のときの一意性（5.2）。
   - (i) と D の側だけを満たす写像の有無（5.2）。
-  - 角の写像の像が角全体であること、帰納系の `DirectedSystem` としての束ねと極限、Bost–Connes の ρ との対応（5.5・6.3）。
+  - 角の写像の像が角全体であること、極限の具体形、Bost–Connes の ρ との対応（5.5・6.3）。
 - **定式化の問い**：
   - 解像度の操作に、L1 を超える定式化が要るか。骨格の記述では、現時点では L1 と 08:41 の定義で文書は書ける。
   - 「射影」の、全素点を通した一つの構成（空間と作用素のレベル）としての定式化。値のレベルについては 2.7。

@@ -107,9 +107,17 @@ ok  PAG.Part264.cornerOp_mem
 ok  PAG.Part264.cornerOp_one
 ok  PAG.Part264.cornerOp_pull
 ok  PAG.Part264.existsUnique_corner
+ok  PAG.Part265.CornerLim
+ok  PAG.Part265.cornerSys_comp
+ok  PAG.Part265.cornerSys_self
+ok  PAG.Part265.exists_local_unit
+ok  PAG.Part265.exists_local_unit_finset
+ok  PAG.Part265.not_exists_left_one
+ok  PAG.Part265.ofCorner_injective
+ok  PAG.Part265.ofCorner_one_le
 ok  PAG.Part27.ProjLine
 ok  PAG.Part27.Wproj
 ok  PAG.Part27.Wproj_Wproj
 ok  PAG.Part27.card_ProjLine
 ok  PAG.Part27.projEquiv
-合計 114 件、確認 114、見つからない 0
+合計 122 件、確認 122、見つからない 0

@@ -1,0 +1,5 @@
+PAG265（Part 261）の照合の記録（2026-11-19 午後）：
+- 1 回目の独立照合：最初の版（Module.DirectLimit）。入力 input_formal_v1.md・input_prose_v1.md、依頼 request_v1.md、Read 2 回、約 317 秒。出力 check1_output.md。
+- 2 回目の独立照合：組み直した版（一般の DirectLimit）。入力 input_formal_v2.md・input_prose_v2.md、依頼 request_v2.md、Read 2 回、約 350 秒。出力 check2_output.md。
+- 再照合：足した 3 定理と直した文面。入力 input_formal.md・input_prose.md・input_prev_findings.md、依頼 request.md、Read 3 回、約 414 秒。出力 recheck_output.md。
+- どの照合者も、CLAUDE.md がシステムによって文脈に入っていたことを申告した（独立性の留保）。

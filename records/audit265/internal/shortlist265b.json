@@ -1,0 +1,1179 @@
+[
+ {
+  "target": "PAG.Part265.CornerLim",
+  "module": "PAG265",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom",
+    "module": "PAG264",
+    "score": 0.78
+   },
+   {
+    "name": "PAG.Part264.cornerOp",
+    "module": "PAG264",
+    "score": 0.421
+   },
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.395
+   },
+   {
+    "name": "PAG.Part243.radialSection",
+    "module": "PAG243",
+    "score": 0.331
+   },
+   {
+    "name": "PAG.Part258.pullSys",
+    "module": "PAG258",
+    "score": 0.316
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.277
+   },
+   {
+    "name": "PAG.Part263.Compat",
+    "module": "PAG263",
+    "score": 0.247
+   },
+   {
+    "name": "PAG.Part264.fsumLin",
+    "module": "PAG264",
+    "score": 0.245
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.239
+   },
+   {
+    "name": "PAG.Part264.pullLin",
+    "module": "PAG264",
+    "score": 0.237
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.232
+   },
+   {
+    "name": "PAG.Part258.Lim",
+    "module": "PAG258",
+    "score": 0.225
+   },
+   {
+    "name": "PAG.Part243.shellTrans",
+    "module": "PAG243",
+    "score": 0.22
+   },
+   {
+    "name": "PAG.Part258.ipLim",
+    "module": "PAG258",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.216
+   },
+   {
+    "name": "PAG.Part258.ofL",
+    "module": "PAG258",
+    "score": 0.211
+   },
+   {
+    "name": "PAG.Part244.shellAvg",
+    "module": "PAG244",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part263.fC",
+    "module": "PAG263",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part245.shellDev",
+    "module": "PAG245",
+    "score": 0.206
+   },
+   {
+    "name": "PAG.Part258.Uinf",
+    "module": "PAG258",
+    "score": 0.202
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.cornerSys",
+  "module": "PAG265",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom",
+    "module": "PAG264",
+    "score": 0.897
+   },
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.473
+   },
+   {
+    "name": "PAG.Part264.cornerOp",
+    "module": "PAG264",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part243.radialSection",
+    "module": "PAG243",
+    "score": 0.364
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part258.pullSys",
+    "module": "PAG258",
+    "score": 0.347
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.307
+   },
+   {
+    "name": "PAG.Part263.Compat",
+    "module": "PAG263",
+    "score": 0.306
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.273
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.27
+   },
+   {
+    "name": "PAG.Part264.fsumLin",
+    "module": "PAG264",
+    "score": 0.269
+   },
+   {
+    "name": "PAG.Part263.fC",
+    "module": "PAG263",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.267
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.266
+   },
+   {
+    "name": "PAG.Part264.pullLin",
+    "module": "PAG264",
+    "score": 0.261
+   },
+   {
+    "name": "PAG.Part263.CompatF",
+    "module": "PAG263",
+    "score": 0.249
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.248
+   },
+   {
+    "name": "PAG.Part258.Lim",
+    "module": "PAG258",
+    "score": 0.247
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.247
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.cornerSys_apply",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.9
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.894
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.855
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.849
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.806
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.578
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.529
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.514
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.507
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.5
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.47
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.468
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.468
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.467
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.455
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.cornerSys_comp",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.88
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.874
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.836
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.83
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.788
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.575
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.517
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.503
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.496
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.489
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.485
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.459
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.445
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.445
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.cornerSys_self",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.883
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.877
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.838
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.833
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.791
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.577
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.567
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.519
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.498
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.491
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.487
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.459
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.458
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.454
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.449
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.447
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.exists_local_unit",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.709
+   },
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.678
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.673
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.64
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.607
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.468
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.451
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.404
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.398
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.382
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.374
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mul",
+    "module": "PAG264",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul_one",
+    "module": "PAG264",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_ne_one",
+    "module": "PAG264",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_single",
+    "module": "PAG264",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.353
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.352
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.not_exists_left_one",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.752
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.719
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.714
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.678
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.495
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.453
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.441
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.435
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.425
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.41
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.402
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.397
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.39
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.39
+   },
+   {
+    "name": "PAG.Part264.cornerOp_add",
+    "module": "PAG264",
+    "score": 0.39
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.ofCorner",
+  "module": "PAG265",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom",
+    "module": "PAG264",
+    "score": 0.7
+   },
+   {
+    "name": "PAG.Part243.radialMatHom",
+    "module": "PAG243",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part264.cornerOp",
+    "module": "PAG264",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part243.radialSection",
+    "module": "PAG243",
+    "score": 0.297
+   },
+   {
+    "name": "PAG.Part218.shellAlg",
+    "module": "PAG218",
+    "score": 0.281
+   },
+   {
+    "name": "PAG.Part258.pullSys",
+    "module": "PAG258",
+    "score": 0.271
+   },
+   {
+    "name": "PAG.Part262.eTop",
+    "module": "PAG262",
+    "score": 0.24
+   },
+   {
+    "name": "PAG.Part263.Compat",
+    "module": "PAG263",
+    "score": 0.239
+   },
+   {
+    "name": "PAG.Part262.dTop",
+    "module": "PAG262",
+    "score": 0.232
+   },
+   {
+    "name": "PAG.Part229.endToComplex",
+    "module": "PAG229",
+    "score": 0.213
+   },
+   {
+    "name": "PAG.Part244.oneEAlg",
+    "module": "PAG244",
+    "score": 0.211
+   },
+   {
+    "name": "PAG.Part264.fsumLin",
+    "module": "PAG264",
+    "score": 0.21
+   },
+   {
+    "name": "PAG.Part263.fC",
+    "module": "PAG263",
+    "score": 0.209
+   },
+   {
+    "name": "PAG.Part232.tensLift",
+    "module": "PAG232",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part246.dualOneEAlg",
+    "module": "PAG246",
+    "score": 0.208
+   },
+   {
+    "name": "PAG.Part264.pullLin",
+    "module": "PAG264",
+    "score": 0.204
+   },
+   {
+    "name": "PAG.Part263.CompatF",
+    "module": "PAG263",
+    "score": 0.195
+   },
+   {
+    "name": "PAG.Part235.dilCommAlg",
+    "module": "PAG235",
+    "score": 0.194
+   },
+   {
+    "name": "PAG.Part258.Lim",
+    "module": "PAG258",
+    "score": 0.193
+   },
+   {
+    "name": "PAG.Part243.diagAvgAlg",
+    "module": "PAG243",
+    "score": 0.192
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.ofCorner_apply",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.696
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.692
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.661
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.657
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.624
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.409
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.398
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.393
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.387
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.384
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.363
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.362
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.362
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.358
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.354
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.352
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.352
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.ofCorner_cornerSys",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.711
+   },
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.707
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.675
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.671
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.637
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.465
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.457
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.418
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.406
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.401
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.395
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.392
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.371
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.366
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.361
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.36
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.36
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part265.ofCorner_injective",
+  "module": "PAG265",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part264.cornerHom_injective",
+    "module": "PAG264",
+    "score": 0.714
+   },
+   {
+    "name": "PAG.Part264.cornerHom_coe",
+    "module": "PAG264",
+    "score": 0.709
+   },
+   {
+    "name": "PAG.Part264.cornerHom_one_ne_one",
+    "module": "PAG264",
+    "score": 0.673
+   },
+   {
+    "name": "PAG.Part264.cornerHom_self",
+    "module": "PAG264",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part264.cornerHom_comp",
+    "module": "PAG264",
+    "score": 0.635
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mem",
+    "module": "PAG264",
+    "score": 0.463
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one_mem",
+    "module": "PAG264",
+    "score": 0.455
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps",
+    "module": "PAG264",
+    "score": 0.416
+   },
+   {
+    "name": "PAG.Part264.cornerOp_one",
+    "module": "PAG264",
+    "score": 0.405
+   },
+   {
+    "name": "PAG.Part264.cornerOp_smul",
+    "module": "PAG264",
+    "score": 0.4
+   },
+   {
+    "name": "PAG.Part264.existsUnique_corner",
+    "module": "PAG264",
+    "score": 0.394
+   },
+   {
+    "name": "PAG.Part264.cornerOp_geps_mul",
+    "module": "PAG264",
+    "score": 0.391
+   },
+   {
+    "name": "PAG.Part264.cornerOp_injective",
+    "module": "PAG264",
+    "score": 0.378
+   },
+   {
+    "name": "PAG.Part243.radialMatHom_injective",
+    "module": "PAG243",
+    "score": 0.376
+   },
+   {
+    "name": "PAG.Part264.cornerOp_pull",
+    "module": "PAG264",
+    "score": 0.37
+   },
+   {
+    "name": "PAG.Part264.cornerOp_apply",
+    "module": "PAG264",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part264.cornerOp.congr_simp",
+    "module": "PAG264",
+    "score": 0.369
+   },
+   {
+    "name": "PAG.Part264.cornerOp_mul",
+    "module": "PAG264",
+    "score": 0.365
+   },
+   {
+    "name": "PAG.Part264.cornerOp_zero",
+    "module": "PAG264",
+    "score": 0.359
+   },
+   {
+    "name": "PAG.Part264.cornerOp_dind",
+    "module": "PAG264",
+    "score": 0.359
+   }
+  ]
+ }
+]
