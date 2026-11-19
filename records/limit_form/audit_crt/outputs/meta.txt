@@ -1,0 +1,2 @@
+照合（極限の具体形の数値 crt_corner_check.py と、それを引く記録の文）。2026-11-19 19:18〜19:23。general-purpose の新しいエージェント、Read 1 回・Bash 7 回、約 292 秒。依頼文は ../request.md、入力は ../input.md（記録の文・スクリプト・ログ・corner_check.py）。計算は照合者の /tmp/indep_crt/ の中。
+出力は crt_output.md（通知の本文をそのまま写した）。

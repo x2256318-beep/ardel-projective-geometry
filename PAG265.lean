@@ -81,7 +81,7 @@ namespace PAG.Part265
 
 open PAG.Part218 PAG.Part258 PAG.Part264
 
-/-- 系の写像：a ≤ b（a ∣ b）なら角の写像 φ_{a,b}（Part 260 の `cornerHom`、単位元を保つとは限らない代数準同型。a < b では保たない）。 -/
+/-- 系の写像：a ≤ b（a ∣ b）なら角の写像 φ_{a,b}（Part 260 の `cornerHom`、単位元を保つとは限らない代数準同型。a ≠ b のとき（このとき a.val < b.val）は保たない：`cornerHom_one_ne_one`）。 -/
 noncomputable def cornerSys (a b : Lvl) (h : a ≤ b) : shellAlg a.val →ₙₐ[ℂ] shellAlg b.val :=
   cornerHom (N := a.val) (M := b.val) h
 

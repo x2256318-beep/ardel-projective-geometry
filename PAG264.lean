@@ -425,7 +425,7 @@ section uniq
 
 variable {N M : ℕ} [NeZero N] [NeZero M]
 
-/-- **4a. 一意性**：引き戻しと両立し、φ(1) = Σ_{(M/N) ∣ s} E_s を満たす、単位元の保存を課さない代数準同型（`→ₙₐ`）は φ だけ。 -/
+/-- **4a. 一意性**：引き戻しと両立し、φ(1) = Σ_{(M/N) ∣ s} E_s を満たす、単位元の保存を課さない代数準同型（`→ₙₐ`）は、ちょうど 1 つ（形式文は ∃!。それが φ = `cornerHom h` であることは証明の中で示す）。 -/
 theorem existsUnique_corner (h : N ∣ M) :
     ∃! φ : shellAlg N →ₙₐ[ℂ] shellAlg M,
       (∀ (S : shellAlg N) (f : ZMod N → ℂ),
