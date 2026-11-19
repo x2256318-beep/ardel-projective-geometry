@@ -436,3 +436,15 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | 群環の側での φ（数値） | Bost–Connes の自己準同型 ρ_n（ρ_n(e(r)) = (1/n)Σ_{ns=r} e(s)、ρ_n(1) = μ_n μ_n^*） | 盲検の手計算（L²(Ẑ) の表現で ψ ↔ Ad μ_n）。T(0) の片側だけが BC に対応する |
 
 - 未記入の件数（この節）：0。
+
+## 18. Part 261（PAG265）と極限の具体形の読みで足した名前（2026-11-19 午後）
+
+| 名前・主張 | 文献の言葉 | 出典・注意 |
+|---|---|---|
+| `CornerLim`・`ofCorner`（Mathlib の一般の `DirectLimit`） | 有限次元の代数の非単位的な直極限。局所的な単位元を持つ環（rings with local units） | Ánh–Márki の流儀の定義（照合者の記憶、本文は未照合） |
+| `exists_local_unit_finset`・`not_exists_left_one` | 局所的な単位元を持つが単位的でない環 | 同上 |
+| 極限の V_∞（Ẑ 上の局所定数関数）への作用（Lean の外） | Bruhat–Schwartz 関数の空間 C^∞(Ẑ) ≅ ⊗'_p C^∞(ℤ_p) | Bump、Ramakrishnan–Valenza（盲検が Wikipedia 経由で挙げた。未照合） |
+| 極限の素点ごとの分解 ⊗'_p（Lean の外） | Flath 型の制限テンソル積（球関数のべき等元 ↔ 定数への射影 e_1） | Flath 1979、Deitmar arXiv:1002.0475。Bost–Connes 型は Laca–Larsen–Neshveyev arXiv:math/0609316 定理 3.2 |
+| A_N = End(V_N)^{G_N}（照合者の手計算、Lean の外） | 根付き p 分木の頂点の固定部分群の中心化代数（Terwilliger 代数 = 中心化代数） | 次元の一致（Bhattacharyya–Song、Bastian–Humphries の命題 3.3）。文献での明記は未確認 |
+
+- 未記入の件数（この節）：0。

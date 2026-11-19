@@ -279,7 +279,13 @@
   - 左単位元はない：`PAG.Part265.not_exists_left_one`。
   - 局所的な単位元の文はどの直極限でも成り立つ一般論で、非単位的という内容を運ぶのは左単位元がないことだけ。その証明は素数冪の段を要らない見込み（手計算）。
   - 極限は直極限の側でとり、完備化は使っていない。
-- ノート：`pag2_pag264_corner_maps.md`、`pag2_pag265_corner_limit.md`、`pag2_gamma_corner_preregistration.md`。
+- 極限の具体形（読み。Lean の外。2026-11-19 午後の盲検の問いテスト、`pag2_limit_form_preregistration.md`）：
+  - 極限は Ẑ 上の局所定数関数の空間 V_∞ に、完備化なしに忠実に作用する（照合者の手計算）。
+  - 素点ごとに、局所の単位 e_1（定数への射影）に関する制限テンソル積 ⊗'_p に分かれる。Flath 型の当てはめ。角の写像が中国剰余定理と両立することは数値で 1098 回確かめた。
+  - 文献：Flath（1979）、Deitmar（arXiv:1002.0475）、アデールの Schwartz–Bruhat 関数、Laca–Larsen–Neshveyev（arXiv:math/0609316、定理 3.2）。
+  - 否定的な観察（照合者、確信度：中）：局所の代数は抽象的な代数としては p によらない見込みで、A_∞ に入る算術は素点が可算個あることだけ。無限素点・スケーリング・貼り合わせ U は A_∞ に現れない。
+  - 残余がないので、Lean にしない（推薦）。
+- ノート：`pag2_pag264_corner_maps.md`、`pag2_pag265_corner_limit.md`、`pag2_gamma_corner_preregistration.md`、`pag2_limit_form_preregistration.md`。
 
 **5.3 関数のレベルの帰納系。**
 - 地位：定理（Lean）。ラベルは、この索引では確かめていない。
