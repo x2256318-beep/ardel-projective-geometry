@@ -448,3 +448,16 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | A_N = End(V_N)^{G_N}（照合者の手計算、Lean の外） | 根付き p 分木の頂点の固定部分群の中心化代数（Terwilliger 代数 = 中心化代数） | 次元の一致（Bhattacharyya–Song、Bastian–Humphries の命題 3.3）。文献での明記は未確認 |
 
 - 未記入の件数（この節）：0。
+
+## 19. 無限素点・スケーリング・貼り合わせ U との相互作用の読みで足した名前（2026-11-19 夕方。Lean は足していない）
+
+| 名前・主張 | 文献の言葉 | 出典・注意 |
+|---|---|---|
+| 素数冪ごとの殻の反転の CRT の積 J（数値、Lean の外） | 基点 0 を固定する、スキームの自己同型（固定群 G_0 の元） | 盲検の手計算。法 N の殻ごとの反転 s·w ↦ s·w⁻¹ は N = 10, 14, … で自己同型でない（数値） |
+| `fullComm`（Part 220、PAG224）の群による記述（Lean の外） | 二重可換子定理：A_N = End_{G_0}(V_N) なら A_N' は G_0 の群環の像。T(v) ⊆ End_{G_v} | arXiv:2510.17118 の式 (2)。三重推移性（木のスキーム）の明記は見つからなかった（盲検） |
+| Hartley・フーリエによる共役（`fourierConj_*` は Part 242、Hartley 版は Lean の外） | translation scheme の指標による双対性（形式的自己双対性） | Martin–Tanaka の解説 arXiv:0811.2475 §6、Kim–Kim arXiv:1108.4947 |
+| 単数の角 D_1 A_N D_1 = 導手ごとの射影（Lean の外。`condPart` は Part 254） | E*_1 T E*_1（双対冪等元の角）。単数群の部分群 ker((ℤ/N)^× → (ℤ/g)^×) の上の平均 | 盲検の手計算 |
+| range(D_1) ∩ range(E_1) = V_prim（`Vprim` は Part 253、等式は Lean の外） | E*_1 V ∩ E_1 V。原始指標 ⇔ ガウス和 τ(χ, n) = χ̄(n)τ(χ) がすべての n で成り立つ | Montgomery–Vaughan Thm 9.7・Ex. 9.2.6 |
+| F_M ι = V F_N（数値、Lean の外） | Pontryagin 双対の関手性（商 ℤ/M → ℤ/N と包含の双対）。φ と ψ は Bost–Connes の ρ_n の 2 つの見方（平行移動の側と乗法作用素の側） | Shirbisheh arXiv:0808.1767、Arledge–Laca–Raeburn 1997。有限レベルで並べた文は見つからなかった（盲検、検索は浅い） |
+
+- 未記入の件数（この節）：0。

@@ -1,0 +1,9 @@
+p=2 e=1: dimA=4 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 1 導手の数 1 原始の位相の幅 0.000 JF|単数∈角 True
+p=2 e=2: dimA=10 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 2 導手の数 2 原始の位相の幅 0.000 JF|単数∈角 True
+p=2 e=3: dimA=19 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 3 導手の数 3 原始の位相の幅 1.414 JF|単数∈角 False
+p=2 e=4: dimA=31 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 4 導手の数 4 原始の位相の幅 2.000 JF|単数∈角 False
+p=3 e=1: dimA=5 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 2 導手の数 2 原始の位相の幅 0.000 JF|単数∈角 True
+p=3 e=2: dimA=12 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 3 導手の数 3 原始の位相の幅 2.000 JF|単数∈角 False
+p=3 e=3: dimA=22 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 4 導手の数 4 原始の位相の幅 2.000 JF|単数∈角 False
+p=5 e=1: dimA=5 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 2 導手の数 2 原始の位相の幅 1.747 JF|単数∈角 False
+p=5 e=2: dimA=12 R_u可換 True J可換 True F交換 True JF正規化 True 角の次元 3 導手の数 3 原始の位相の幅 2.000 JF|単数∈角 False

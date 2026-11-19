@@ -166,6 +166,27 @@
   - 局所定数との一致を書くときは、イデール類指標の正規化（2.7）も併記する（出所：索引の照合者の指摘と Part 257 の冒頭の説明。CLAUDE.md §1 に正規化を足すことを 2026-11-19 06:36 に著者が承認した）。
 - ノート：`pag2_literature_ia_sign.md`、CLAUDE.md §1。
 
+**2.9 有限素点の側の代数 A_∞ と、射影の変換・貼り合わせの位相・無限素点の符号。A_∞ は位相も符号も見ない（否定的な結果）。**
+- 地位：読みと否定的な結果（2026-11-19 夕方の関門、`pag2_projection_interaction_preregistration.md`）。新しい Lean はない。数値と盲検の手計算が一致した。
+- 内容：
+  - 単数の乗法 R_u・パリティ P = R_{−1}（無限素点の符号）・素数冪ごとの殻の反転の CRT の積 J は、どれも A_N と可換（可換子の側、イーデルの側）。読み：A_N = End(V_N)^{G_N}（G_N は 0 を固定し、すべての d ∣ N で合同関係を保つ置換の群）、可換子はその群環の像（二重可換子定理）。
+  - 射影の変換 J∘H（2.4）は、A_N の上で D_s ↔ E_s の双対の自己同型として働く（J が可換なので Ad(JH) = Ad(H) = Ad(F)）。
+  - フーリエは角の写像の系 φ（5.5）を 0 拡張の系 ψ（スケーリング、Bost–Connes の μ_n の型）に移す（F_M ι = V F_N。Pontryagin 双対）。
+  - 単数の角 D_1 A_N D_1 は導手ごとの射影の張る可換代数。U_N はこれと可換だが、属するのは N ∣ 24（そのとき U_N = I）のときだけ。符号の単数への制限が属するのは N ∣ 12 のときだけ。P ∈ A_N も N ∣ 12 のときだけで、極限では、符号は N ∣ 12 のレベルの角の上でだけ A_∞ に入る（数値 139 組）。
+  - したがって A_∞ は、貼り合わせの位相（A1）にも無限素点の符号にも、導手の区分け以外の制約を課さない。位相はガウス和（H の中）と公準 A1 から入る。
+  - range(D_1) ∩ range(E_1) は原始指標の張る空間（2.5 の V_prim）で、J∘H はこれを保ち、そこでの制限が U_N の制限（2.5 のユニタリ性の構造上の理由づけ）。
+- 素朴な一般化の失敗（第 6 の型）：法 N の殻ごとの反転 s·w ↦ s·w⁻¹（法 N/s）は、N = 10, 14, 15, … で A_N と可換でない。可換なのは素数冪ごとの反転の CRT の積。
+- 書き方の規則：「A_∞ と射影の変換からルート数が出る」と書かない（円環の第 2 の型、注入→回収）。
+- Lean（既にあるもの）：
+  - 単数の乗法との可換：`PAG.Part218.shellAlg_comm_dil`。可換子 `PAG.Part224.fullComm`、可換子が可換 ⇔ N ∣ 12：`PAG.Part225.fullComm_commute_iff_dvd_twelve`。
+  - フーリエ共役：`PAG.Part246.fourierConj_convL_geps`・`PAG.Part246.fourierConj_mulLeft_dind`。
+  - 導手ごとの部分 `PAG.Part258.condPart`、原始部分 `PAG.Part257.Vprim`、`PAG.Part256.JH_eq_rootNum_mul`、U_N `PAG.Part258.UA1`。
+- Lean の外：Hartley 変換と殻の反転 J による共役の文、F_M ι = V F_N、単数の角の記述、N ∣ 24・N ∣ 12 の判定。
+- 対照群：関数体 F_p[t]/(t^e) でも同じ形（数値、p = 2, 3, 5）。判定の値（N ∣ 24 に当たるリスト）と位相の値は変わり、ℚ の値は Gauss の符号定理と i^a を無限素点の因子と読むこと（2.8 の規約 T）に依存する（照合者）。
+- 文献：Bastian–Humphries（arXiv:2606.19095）、Bhattacharyya–Song（arXiv:0809.1052）、arXiv:2510.17118 の式 (2)（T(v) ⊆ End_{G_v}）、Martin–Tanaka の解説（arXiv:0811.2475）、Kim–Kim（arXiv:1108.4947）、Montgomery–Vaughan 第 9 章、Shirbisheh（arXiv:0808.1767）、Arledge–Laca–Raeburn（1997）。照合者の WebSearch・WebFetch による。MathSciNet・zbMATH は未実施。
+- 推薦：Lean にしない。残余が空。
+- ノート：`pag2_projection_interaction_preregistration.md`。
+
 ## 第 3 章　解像度と有効な姿（§1 の命題 3）
 
 **3.1 定義文と、その置き方と読み。**
@@ -285,6 +306,7 @@
   - 文献：Flath（1979）、Deitmar（arXiv:1002.0475）、アデールの Schwartz–Bruhat 関数、Laca–Larsen–Neshveyev（arXiv:math/0609316、定理 3.2）。
   - 否定的な観察（照合者、確信度：中）：局所の代数は抽象的な代数としては p によらない見込みで、A_∞ に入る算術は素点が可算個あることだけ。無限素点・スケーリング・貼り合わせ U は A_∞ に現れない。
   - 残余がないので、Lean にしない（推薦）。
+- 無限素点・スケーリング・貼り合わせ U との相互作用（読みと否定的な結果）：2.9。
 - ノート：`pag2_pag264_corner_maps.md`、`pag2_pag265_corner_limit.md`、`pag2_gamma_corner_preregistration.md`、`pag2_limit_form_preregistration.md`。
 
 **5.3 関数のレベルの帰納系。**
