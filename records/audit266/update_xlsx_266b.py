@@ -22,6 +22,6 @@ fix(c, '内部照合（言葉の検索で Part 21 の equator_intertwine_hat と
     '内部照合（言葉の検索で Part 21（PAG25）の equator_intertwine_hat と Part 25（PAG29）の equator_intertwine_proj を使った。')
 fix(c, '独立照合・再照合（記録は records/audit266/outputs/）。再照合の後の直しは尾の台帳の L6。',
     '独立照合・再照合（記録は records/audit266/outputs/）、統合照合（records/audit266/integrated/）。再照合の後の直しは尾の台帳の L6、統合照合の後の直しは L7。')
-c = ws2.cell(285, 2)
+c = ws2.cell(285, 2)  # 注（2026-11-20、再照合 R2 の指摘）：この行とその次の fix は置き換え前と後が同じで、何も変えていない
 fix(c, '（舞台 P¹ の赤道の絡み合いの係数を 𝔀（rootNum）で書く：', '（舞台 P¹ の赤道の絡み合いの係数を 𝔀（rootNum）で書く：')
 wb.save(p); shutil.copy(p, '/home/claude/out/final84/lean_verification_status.xlsx'); print('ok', memo_r)
