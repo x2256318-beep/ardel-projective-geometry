@@ -10,3 +10,4 @@ memo_r = next(r for r in range(3724, ws.max_row + 1) if isinstance(ws.cell(r, 1)
 c = ws.cell(memo_r, 1); a = 'その再照合（R2）の後の直しは L9。'; assert c.value.count(a) == 1
 c.value = c.value.replace(a, 'その再照合（R2）の後の直しは L9、L9 の照合（R3）の後の直しは L10。')
 wb.save(p); shutil.copy(p, '/home/claude/out/final84/lean_verification_status.xlsx'); print('ok')
+# 追記（2026-11-20、照合 R4 の後）：メモの台帳の行を「…L10、L10 の照合（R4）の後の直しは L11（開いている）。」に替えた（同じ形の置き換えを手で 1 回実行）。
