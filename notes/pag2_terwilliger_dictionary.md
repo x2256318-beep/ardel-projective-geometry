@@ -502,5 +502,5 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | `cornerSys` | Part 261（PAG265） | 帰納系（directed system）の移行写像。各段は §17 の角の写像 | Mathlib の `DirectedSystem`（定義の読み）。インスタンス `DirectedSystem` を含む。 |
 | `parFac` | Part 252（PAG256） | 規約 T のもとで、原始指標について無限素点の局所定数 ε(1/2, χ_∞, ψ_∞) と値が一致する因子 (−i)^a | CLAUDE.md §1 と文献照合 `notes/pag2_literature_ia_sign.md`（独立照合 1 回と統合照合 2 回。値の一致は Lean の外、確信度は 2026-11-19 の著者の判断で高）。 |
 
-- 未記入の件数（この節）：0（すべての行に文献の言葉か「文献用語なし」がある）。「文献用語なし」の行は 9 つ（`lvl`、`oddCount`、`Compat`、`CompatF`、捩れの 6 つをまとめた行、`primeProd`、`sqMap`）。
+- 未記入の件数（この節）：0（すべての行に文献の言葉か「文献用語なし」がある）。「文献用語なし」の行は 7 つ（`lvl`、`oddCount`、`Compat`、`CompatF`、捩れの 6 つをまとめた行、`primeProd`、`sqMap`）。
 - 次の統合照合で完全性を確かめるときは、上のさらい方で同じ範囲を抜き出し、この表と突き合わせる。
