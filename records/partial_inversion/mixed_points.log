@@ -1,0 +1,7 @@
+N=  6 primes=[2, 3] |P1(Z/N)|=12 (formula 12) |Pt(N)|=10 mixed=2 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^2
+N= 10 primes=[2, 5] |P1(Z/N)|=18 (formula 18) |Pt(N)|=16 mixed=2 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^2
+N= 12 primes=[2, 3] |P1(Z/N)|=24 (formula 24) |Pt(N)|=20 mixed=4 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^2
+N= 15 primes=[3, 5] |P1(Z/N)|=24 (formula 24) |Pt(N)|=22 mixed=2 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^2
+N= 30 primes=[2, 3, 5] |P1(Z/N)|=72 (formula 72) |Pt(N)|=52 mixed=20 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^3
+N= 36 primes=[2, 3] |P1(Z/N)|=72 (formula 72) |Pt(N)|=60 mixed=12 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^2
+N= 60 primes=[2, 3, 5] |P1(Z/N)|=144 (formula 144) |Pt(N)|=104 mixed=40 PtClosedUnderGlobalW=True closureUnderLocalInversions=P1:True partial-inversion group size 2^3

@@ -1,0 +1,10 @@
+p=2 K=2 |P1|=6  dimT(0)=11 dimT(inf)=11 dimT(0,inf)=26 centerT(0,inf)=2  dim End_torus=26 dim End_(torus+w)=14  T(0,inf) commutes w/ torus=True
+p=3 K=1 |P1|=4  dimT(0)=5 dimT(inf)=5 dimT(0,inf)=10 centerT(0,inf)=2  dim End_torus=10 dim End_(torus+w)=6  T(0,inf) commutes w/ torus=True
+p=3 K=2 |P1|=12  dimT(0)=12 dimT(inf)=12 dimT(0,inf)=29 centerT(0,inf)=5  dim End_torus=38 dim End_(torus+w)=20  T(0,inf) commutes w/ torus=True
+p=2 K=3 |P1|=12  dimT(0)=20 dimT(inf)=20 dimT(0,inf)=53 centerT(0,inf)=5  dim End_torus=60 dim End_(torus+w)=32  T(0,inf) commutes w/ torus=True
+p=5 K=1 |P1|=6  dimT(0)=5 dimT(inf)=5 dimT(0,inf)=10 centerT(0,inf)=2  dim End_torus=12 dim End_(torus+w)=7  T(0,inf) commutes w/ torus=True
+p=5 K=2 |P1|=30  dimT(0)=12 dimT(inf)=12 dimT(0,inf)=29 centerT(0,inf)=5  dim End_torus=68 dim End_(torus+w)=35  T(0,inf) commutes w/ torus=True
+p=2 K=4 |P1|=24  dimT(0)=32 dimT(inf)=32 dimT(0,inf)=90 centerT(0,inf)=10  dim End_torus=128 dim End_(torus+w)=66  T(0,inf) commutes w/ torus=True
+p=3 K=3 |P1|=36  dimT(0)=22 dimT(inf)=22 dimT(0,inf)=58 centerT(0,inf)=10  dim End_torus=122 dim End_(torus+w)=62  T(0,inf) commutes w/ torus=True
+p=7 K=1 |P1|=8  dimT(0)=5 dimT(inf)=5 dimT(0,inf)=10 centerT(0,inf)=2  dim End_torus=14 dim End_(torus+w)=8  T(0,inf) commutes w/ torus=True
+p=7 K=2 |P1|=56  dimT(0)=12 dimT(inf)=12 dimT(0,inf)=29 centerT(0,inf)=5  dim End_torus=106 dim End_(torus+w)=54  T(0,inf) commutes w/ torus=True
