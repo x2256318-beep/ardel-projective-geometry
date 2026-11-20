@@ -28,6 +28,7 @@
 | `handoff/` | 作業の引き継ぎメモ（進め方のルール、これまでの成果、収束アラームの状況） |
 | `docs/overview-and-comparison.md` | 基本構造の概要と、アデール幾何・Connes の枠組み・Arakelov 幾何・遠アベール幾何との比較（英語版は `docs/overview-and-comparison.en.md`） |
 | `docs/four-way-comparison.html` | 類体論・Tate 理論・遠アーベル幾何学・アーデル射影幾何学の四者比較（HTML、2026-11-20 改訂。改訂の修正は独立照合を未実施。英語版は `docs/four-way-comparison.en.html`） |
+| `docs/pag-vs-terwilliger.html` | アーデル射影幾何学と Terwilliger 代数の相違（HTML、2026-11-20 改訂。改訂の修正は独立照合を未実施。数値の再計算は `records/terwilliger-check/`） |
 | `CLAUDE.en.md` | `CLAUDE.md` の英語版（参照用。食い違いがあれば日本語版を正とする） |
 | `CLAUDE.md` | 作業全体の方針（定義層の扱い、書かないこと、収束アラーム） |
 

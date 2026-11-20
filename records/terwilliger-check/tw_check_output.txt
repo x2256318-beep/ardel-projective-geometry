@@ -1,0 +1,24 @@
+N=  2 d(N)=2 dimA=   4 dimZ=  1 primepow=True formula=4 almostComm=True
+N=  3 d(N)=2 dimA=   5 dimZ=  2 primepow=True formula=5 almostComm=True
+N=  4 d(N)=3 dimA=  10 dimZ=  2 primepow=True formula=10 almostComm=True
+N=  5 d(N)=2 dimA=   5 dimZ=  2 primepow=True formula=5 almostComm=True
+N=  7 d(N)=2 dimA=   5 dimZ=  2 primepow=True formula=5 almostComm=True
+N=  8 d(N)=4 dimA=  19 dimZ=  4 primepow=True formula=19 almostComm=True
+N=  9 d(N)=3 dimA=  12 dimZ=  4 primepow=True formula=12 almostComm=True
+N= 16 d(N)=5 dimA=  31 dimZ=  7 primepow=True formula=31 almostComm=True
+N= 25 d(N)=3 dimA=  12 dimZ=  4 primepow=True formula=12 almostComm=True
+N= 27 d(N)=4 dimA=  22 dimZ=  7 primepow=True formula=22 almostComm=True
+N= 32 d(N)=6 dimA=  46 dimZ= 11 primepow=True formula=46 almostComm=True
+N=  6 d(N)=4 dimA=  20 dimZ=  2 primepow=False formula= almostComm=False
+N= 10 d(N)=4 dimA=  20 dimZ=  2 primepow=False formula= almostComm=False
+N= 12 d(N)=6 dimA=  50 dimZ=  4 primepow=False formula= almostComm=False
+N= 15 d(N)=4 dimA=  25 dimZ=  4 primepow=False formula= almostComm=False
+N= 18 d(N)=6 dimA=  48 dimZ=  4 primepow=False formula= almostComm=False
+N= 20 d(N)=6 dimA=  50 dimZ=  4 primepow=False formula= almostComm=False
+N= 30 d(N)=8 dimA= 100 dimZ=  4 primepow=False formula= almostComm=False
+A_6: 20 vs A_2*A_3: 20
+A_10: 20 vs A_2*A_5: 20
+A_12: 50 vs A_4*A_3: 50
+A_15: 25 vs A_3*A_5: 25
+A_18: 48 vs A_2*A_9: 48
+A_20: 50 vs A_4*A_5: 50

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>アーデル射影幾何学とTerwilliger代数の相違</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f4; --surface:#ffffff; --surface2:#eef1ee; --ink:#1a1e1c; --muted:#5a6560; --line:#d8ddd8;
+  --accent:#9a2c1e; --accent-soft:#f3e2de; --teal:#1e4d4a; --teal-soft:#dfeae8; --amber:#7a5a12; --amber-soft:#f5ecd2;
+  --found:#1e4d4a; --notfound:#9a2c1e;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#141716; --surface:#1e2220; --surface2:#262b28; --ink:#eceeec; --muted:#a7b0aa; --line:#363d39; --accent:#e08a7a; --accent-soft:#3a2320; --teal:#8fc0ba; --teal-soft:#223332; --amber:#d9b96a; --amber-soft:#332d1a; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px 80px}
+.hero{padding:44px 0 28px;border-bottom:3px solid var(--ink)}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(28px,5.2vw,48px);line-height:1.25;margin:14px 0 16px;letter-spacing:.01em}
+.lead{font-size:17px;line-height:1.9;max-width:820px;color:var(--ink)}
+.lead strong{background:linear-gradient(transparent 62%, var(--amber-soft) 62%)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.meta span{font-size:12.5px;border:1px solid var(--line);background:var(--surface);padding:6px 10px;border-radius:999px;color:var(--muted)}
+.verdict{margin:28px 0;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);padding:22px 22px 18px}
+.verdict h2{margin:0 0 10px;font-family:"Noto Serif JP",serif;font-size:20px}
+.verdict-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+@media(max-width:700px){.verdict-grid{grid-template-columns:1fr}}
+.vbox{padding:14px 16px;border:1px solid var(--line)}
+.vbox.same{border-left:4px solid var(--teal)} .vbox.diff{border-left:4px solid var(--accent)}
+.vbox h3{margin:0 0 6px;font-size:14px} .vbox p{margin:0;font-size:14px;line-height:1.75;color:var(--muted)}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:36px;margin-top:36px}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+nav.toc{position:sticky;top:16px;align-self:start}
+@media(max-width:860px){nav.toc{position:static}}
+nav.toc h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-family:"IBM Plex Mono",monospace}
+nav.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc}
+nav.toc li{border-top:1px solid var(--line)}
+nav.toc a{display:flex;gap:10px;padding:10px 4px;min-height:44px;align-items:center;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
+nav.toc a::before{counter-increment:toc;content:counter(toc,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--accent)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+section:first-child{padding-top:6px}
+h2.sec{font-family:"Noto Serif JP",serif;font-size:26px;line-height:1.4;margin:0 0 8px;display:flex;gap:12px;align-items:baseline}
+h2.sec .num{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#fff;background:var(--ink);padding:3px 8px;border-radius:2px;flex-shrink:0;transform:translateY(-2px)}
+@media (prefers-color-scheme: dark){h2.sec .num{background:var(--accent);color:#141716}}
+h3{font-family:"Noto Serif JP",serif;font-size:19px;margin:28px 0 8px}
+p{margin:10px 0} .small{font-size:13.5px;color:var(--muted);line-height:1.75}
+code, .mono{font-family:"IBM Plex Mono",monospace;font-size:.92em;background:var(--surface2);padding:1px 5px;border-radius:3px}
+.formula{background:var(--surface);border:1px solid var(--line);padding:16px 18px;margin:16px 0;font-family:"IBM Plex Mono",monospace;font-size:14px;line-height:1.9;overflow-x:auto;white-space:nowrap}
+.callout{padding:16px 18px;margin:18px 0;border:1px solid var(--line);background:var(--surface)}
+.callout.warn{border-left:4px solid var(--amber);background:var(--amber-soft)}
+.callout.teal{border-left:4px solid var(--teal)}
+.callout.red{border-left:4px solid var(--accent)}
+.callout p:first-child{margin-top:0}.callout p:last-child{margin-bottom:0}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;vertical-align:middle;white-space:nowrap}
+.badge.found{background:var(--teal-soft);color:var(--teal);border:1px solid var(--teal)}
+.badge.notfound{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent)}
+.badge.v{background:var(--surface2);color:var(--muted);border:1px solid var(--line);font-family:"IBM Plex Mono",monospace}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;line-height:1.7;background:var(--surface)}
+th,td{border:1px solid var(--line);padding:12px 12px;vertical-align:top;text-align:left}
+th{background:var(--surface2);font-weight:700;font-size:13px}
+td:first-child{font-weight:700;width:22%}
+@media(max-width:700px){
+  table,thead,tbody,tr,th,td{display:block;width:100%}
+  thead{display:none}
+  tr{border:1px solid var(--line);margin-bottom:12px;background:var(--surface)}
+  td{border:none;border-top:1px solid var(--line)} td:first-child{border-top:none;background:var(--surface2)}
+}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);padding:16px}
+.card h4{margin:0 0 6px;font-size:15px} .card p{font-size:14px;color:var(--muted);margin:6px 0}
+ul,ol{padding-left:1.3em} li{margin:6px 0}
+.timeline{border-left:2px solid var(--line);margin:18px 0 18px 6px;padding-left:20px}
+.timeline div{position:relative;margin-bottom:16px}
+.timeline div::before{content:"";position:absolute;left:-27px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.timeline b{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent)}
+details{background:var(--surface);border:1px solid var(--line);margin:12px 0}
+summary{padding:14px 16px;cursor:pointer;font-weight:700;min-height:48px;display:flex;align-items:center}
+details div{padding:0 16px 16px;font-size:14.5px}
+.sources{font-size:13.5px;line-height:1.75}
+.sources li{margin:10px 0;word-break:break-word}
+footer{padding:28px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
+.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tag{font-size:12px;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Comparative Research — 2026-11-20 調査</div>
+    <h1>アーデル射影幾何学と<br>Terwilliger 代数の相違</h1>
+    <p class="lead">結論は二層です。有限レベルでは、アーデル射影幾何学（PAG）の代数 <strong>A<sub>N</sub> は Terwilliger 代数 T(0) そのもの</strong>です。定義が一致し、<strong>単一レベルの構造（素数冪の Wedderburn 分解と次元、互いに素な法でのテンソル積分解）は既知</strong>です（BST 2010、Hanaki–Kim–Maekawa 2011、Bastian–Humphries 2026）。PAG がその上に積むもののうち、レベル間写像は存在の側と角の写像の E 側が既知、帰納系は［再導出（小さい）］で、<strong>新規候補として残るのは、単位的な写像の不存在の側と、合成数 N の生成の分類だけ</strong>です（どちらも確信度は低〜中で、MathSciNet・zbMATH での照合は未実施）。単行書層（Tate の γ 因子、自己共役拡張）は、Terwilliger 理論に対応する問題設定がありません。逆に、一般の Terwilliger 理論が扱う任意のスキームや Leonard 対の世界は、ℤ/N に限る PAG の外に広がっています。</p>
+    <div class="meta">
+      <span>調査日：2026年11月20日</span><span>検証区分：[V] 原文確認 ／ [S] 要約レベル</span><span>「見つからず」は「調査した出典の範囲で見つからず」の意味</span><span>改訂：2026-11-20 精査の修正を反映（<a href="#revision">改訂記録</a>。修正は独立照合を未実施）</span>
+    </div>
+    <div class="verdict">
+      <h2>まず押さえるべき3点</h2>
+      <div class="verdict-grid">
+        <div class="vbox same"><h3>同一である部分</h3><p>A<sub>N</sub> は、Z/N 上の gcd 殻を基本集合とする軌道 Schur 環（orbit S-ring）の Terwilliger 代数 T(0) に定義照合で一致する。殻代数という PAG の呼び名は、この同一視の別名である。</p></div>
+        <div class="vbox diff"><h3>相違が集中する部分</h3><p>「異なる N の間の代数をどうつなぐか」と「その代数を何につなぐか」。前者のうち既知でないのは単位的な写像の不存在の側だけ（新規候補、確信度 低〜中）。後者（単行書層）は Terwilliger 理論の外。単一レベルの構造論では、逆に文献の方がはるかに広く、PAG の素数冪・テンソル積の結果はその特別な場合。</p></div>
+      </div>
+      <p class="small" style="margin-top:14px">⚠ 用語の罠：文献で「cyclotomic scheme（円分スキーム）」と言えば通常は有限体 <span class="mono">F<sub>q</sub></span> の剰余類によるスキームを指し、Z/N の gcd 殻スキームとは別物です。両者を混同すると、有限体側の結果（Jacobi 和など）を PAG 側へ誤って移すことになります。PAG の対象の標準的な呼び名は「巡回群上の軌道 Schur 環（cyclotomic S-ring）」から来るスキームです。</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="目次">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#identity">同一視の中身</a></li>
+        <li><a href="#terwilliger">Terwilliger 代数とは</a></li>
+        <li><a href="#cyclotomic">円分／gcd スキーム</a></li>
+        <li><a href="#maps">レベル間写像と極限</a></li>
+        <li><a href="#generation">生成の分類</a></li>
+        <li><a href="#connections">外部への接続</a></li>
+        <li><a href="#breadth">一般理論の広がり</a></li>
+        <li><a href="#dictionary">辞書との照合</a></li>
+        <li><a href="#table">対照表</a></li>
+        <li><a href="#sources">出典</a></li>
+        <li><a href="#revision">改訂記録</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="identity">
+        <h2 class="sec"><span class="num">01</span>同一視の中身 — A<sub>N</sub> = T(0)</h2>
+        <p>PAG の有限レベル代数 A<sub>N</sub> は、<span class="mono">End(ℂ<sup>ℤ/N</sup>)</span> の中で次の2種類の作用素で生成されます。</p>
+        <div class="formula">D<sub>t</sub> ≡ E*<sub>t</sub> : 殻 { x ∈ ℤ/N : gcd(x, N) = t } （t | N）への対角の射影 ＝ 基点 0 における双対冪等元<br>E<sub>t</sub> : 周波数側の殻（フーリエ変換が殻に台を持つ関数）への射影 ＝ Bose–Mesner 代数の原始冪等元</div>
+        <p>E<sub>t</sub> は、gcd で関係を分けるアソシエーション・スキームの Bose–Mesner 代数の原始冪等元です。D<sub>t</sub> は基点 0 に対する双対冪等元 E*<sub>t</sub> で、点の側の殻への対角の射影そのものです（改訂前の版は、この射影を E<sub>t</sub> と書いていた）。この生成元の組は、Terwilliger 代数の定義そのものです。</p>
+        <div class="callout teal">
+          <p><strong>定義（Terwilliger, 1992）<span class="badge v">[V]</span></strong></p>
+          <p>可換アソシエーション・スキーム Y と頂点 x に対し、非可換・結合的・半単純な ℂ-代数 T = T(x) を導入し、subconstituent algebra と呼ぶ。現代的な定式化では「Bose–Mesner 代数と、点 x に関する双対冪等元で生成される行列代数の部分代数」である（Maleki, arXiv:2310.19609 の要旨で確認）。</p>
+          <p class="small">出典：Terwilliger, “The subconstituent algebra of an association scheme” I–III, <em>J. Algebraic Combin.</em> 1 (1992), 2 (1993). ／ Herman による概説, <em>Indian J. Pure Appl. Math.</em> 52 (2021) 631–642 <span class="badge v">[S]</span></p>
+        </div>
+        <p>したがって相違は「A<sub>N</sub> が Terwilliger 代数かどうか」にはありません。相違は、<strong>どのスキームの T なのか</strong>、そして <strong>T の上に何を載せるか</strong>にあります。</p>
+        <p>PAG のスキームは特殊です。自己同型群全体 <span class="mono">(ℤ/N)<sup>×</sup></span> の軌道で割った軌道 Schur 環であり、基本集合がちょうど gcd 殻になります。類の数は N の約数の個数しかなく、Bose–Mesner 代数は小さい。これが後述する「群スキームでは T が全行列代数になる」という結果が PAG へ移らない理由です。</p>
+      </section>
+
+      <section id="terwilliger">
+        <h2 class="sec"><span class="num">02</span>Terwilliger 代数とは何か — 標準理論</h2>
+        <p>Terwilliger 代数（subconstituent algebra）は、1992年に Paul Terwilliger が導入した、アソシエーション・スキームの組合せ構造を反映する代数です。生成元は隣接行列 A<sub>i</sub>（あるいはその原始冪等元 E<sub>i</sub>）と、基点 x で決まる対角行列である双対冪等元 E*<sub>i</sub>(x) です。</p>
+        <div class="formula">T(x) = ⟨ { A<sub>i</sub> } ∪ { E*<sub>i</sub>(x) } ⟩ ⊆ M<sub>|X|</sub>(ℂ), &nbsp; (E*<sub>i</sub>(x))<sub>uu</sub> = (A<sub>i</sub>)<sub>x,u</sub></div>
+        <h3>中心的な主題</h3>
+        <ul>
+          <li><strong>既約加群と thin 性：</strong>標準加群 V = ℂ<sup>X</sup> を既約 T-加群に分解する。dim E*<sub>i</sub>W ≤ 1 を thin、dim E<sub>i</sub>W ≤ 1 を dual thin と呼ぶ。endpoint、diameter などの不変量で加群を分類するのが Part I–III の骨格 <span class="badge v">[V]</span>。</li>
+          <li><strong>Wedderburn 分解：</strong>T は共役転置で閉じ半単純なので T ≅ ⊕ Mat<sub>n<sub>i</sub></sub>(ℂ)。個々のスキームごとに成分・重複度・次元を決めるのが標準的な「構造問題」。</li>
+          <li><strong>P-多項式／Q-多項式スキーム：</strong>Delsarte 理論（1973、符号理論）と結びつき、Bose–Mesner の線形計画 bound を Terwilliger 代数で半正定値 bound へ精密化する（Schrijver、Tanaka）<span class="badge v">[S]</span>。</li>
+          <li><strong>Leonard 対・Leonard 系：</strong>一方の基底で対角、他方で既約三重対角になる作用素の対。thin かつ dual thin な既約 T-加群は Leonard 系と一致し、Askey スキーム／q-Racah 多項式で分類される（Terwilliger, arXiv:math/0306301, 2003）<span class="badge v">[V]</span>。</li>
+          <li><strong>三重対角対・q-Onsager・量子群：</strong>tridiagonal algebra、(q-)Onsager 代数、U<sub>q</sub>(ŝl<sub>2</sub>) の表現へつながる大きな表現論の層がある <span class="badge v">[S]</span>。</li>
+          <li><strong>ほぼ可換性（almost commutative）：</strong>非 primary な既約加群がすべて1次元である性質。Tanaka (2010, <em>J. Algebraic Combin.</em> 33 (2011) 1–10) は同値条件を与え、その1つが「1類スキームと有限アーベル群スキームの wreath 積であること」<span class="badge v">[S]</span>。この概念が §3 の Bastian–Humphries へ直結します。</li>
+        </ul>
+        <div class="callout">
+          <p><strong>2生成元への帰着が保証されるのは、P-かつ Q-多項式の場合。</strong>（それ以外のスキームで T = ⟨A, A*⟩ となる場合を排除するものではありません。）距離正則グラフ／P・Q-多項式スキームでは M は単一の隣接行列 A = A<sub>1</sub> で、M* は A* = A*<sub>1</sub>(x) で生成されるため T = ⟨A, A*⟩ となります <span class="badge v">[S]</span>。これは §5 の「生成元の部分集合による生成」とは別の話です。</p>
+        </div>
+        <p class="small">主要参考文献：Bannai–Ito, <em>Algebraic Combinatorics I</em> (1984)／Brouwer–Cohen–Neumaier, <em>Distance-Regular Graphs</em> (1989)／Herman 概説 (2021)。</p>
+      </section>
+
+      <section id="cyclotomic">
+        <h2 class="sec"><span class="num">03</span>円分／gcd スキーム — 文献が実際に扱っている対象</h2>
+        <p>ここが最も混同しやすい箇所です。似た名前の対象が3つあります。</p>
+        <div class="cards">
+          <div class="card"><h4>① 有限体円分スキーム Cyc(q, N)</h4><p>F<sub>q</sub><sup>×</sup> の部分群の剰余類 C<sub>i</sub> を用い、x − y ∈ C<sub>i</sub> で関係を分ける。文献で「cyclotomic scheme」と言えば通常こちら。Ishibashi–Ito–Yamada (1999) が Jacobi 和で T の表現を解析し、類数2の場合に既約表現を完全に決定 <span class="badge v">[S]</span>。</p></div>
+          <div class="card"><h4>② 群アソシエーション・スキーム</h4><p>共役類ごとに分けるスキーム。G がアーベルなら類は単元集合になり、dim T<sub>0</sub> = |G|<sup>2</sup>、すなわち T は全行列代数 M<sub>|G|</sub>(ℂ) に一致する（Bannai–Munemasa, <em>Kyushu J. Math.</em> 49 (1995) 93–102）<span class="badge v">[V]</span>。gcd 殻への融合とは別物で、この結論は A<sub>N</sub> へ移らない。</p></div>
+          <div class="card"><h4>③ 巡回群上の軌道 Schur 環 — PAG の対象</h4><p>自己同型群の部分群の軌道で割る S-環。部分群が全体 Aut(ℤ/N) = (ℤ/N)<sup>×</sup> のとき、軌道がちょうど gcd 殻になる。これが PAG の A<sub>N</sub> の属する族。</p></div>
+          <div class="card"><h4>④ 1類スキームの輪積と直積 — ③と同じもの</h4><p>N = p<sup>k</sup> では、v<sub>p</sub>(x − y) = j ⇔「下の桁から見て最初に違う p 進の桁が j」なので、③のスキームは K<sub>p</sub> の k 重の輪積 K<sub>p</sub> ≀ ⋯ ≀ K<sub>p</sub> と<strong>同型</strong>です。一般の N では中国剰余定理により、素数冪の因子の直積 Π<sub>p</sub> K<sub>p</sub><sup>≀v<sub>p</sub>(N)</sup> になります。したがって Bhattacharyya–Song–Tanaka (2010) の結果は A<sub>N</sub>（N が素数冪）にそのまま当てはまります（改訂前の版の「構成が異なるので読めない」は誤り）。</p></div>
+        </div>
+
+        <h3>最も近い2026年の結果 — Bastian–Humphries</h3>
+        <div class="callout teal">
+          <p><strong>Bastian–Humphries, “Schur rings over cyclic groups having Almost Commutative Terwilliger algebras”, arXiv:2606.19095（2026年6月17日投稿）<span class="badge v">[V] 要旨確認</span></strong></p>
+          <p>巡回群上の軌道 Schur 環で、ほぼ可換な Terwilliger 代数を生むものを分類した。要旨によれば、自己同型の部分群は自明なものか、<strong>巡回群の位数が素数冪のときに全体の自己同型群</strong>である場合に限る。位数 2<sup>n</sup> ではこの2つだけ。奇素数 p の p<sup>n</sup> では位数 p<sup>n−1</sup> の部分群も許される。<strong>素数冪でない位数では、自明な部分群から来る軌道環だけ</strong>がほぼ可換になる。さらに wedge 積を扱い、巡回群上の Schur 環がほぼ可換な T を生む条件を完全に決定している。</p>
+        </div>
+        <p><strong>PAG への読み替え（解釈であり引用ではない）：</strong>PAG の環は全体の自己同型群による軌道環なので、この定理により <strong>A<sub>N</sub> がほぼ可換であるのは N が素数冪のときに限る</strong>ことになります。N が相異なる素因数を2つ以上持てば、ほぼ可換ではありません。これは PAG が経験してきた「素数冪と合成数で振る舞いが分かれる」という分岐に、文献側の錨を与える結果です。リポジトリの辞書（<span class="mono">records/audit256/dictionary_before_part256.md</span>）には、同論文の本文に素数冪の次元式（p 奇数で (3k²+5k+2)/2、p = 2 で (3k²+3k+2)/2）と、Hanaki–Kim–Maekawa を引用した Thm 5.2（T(A × B) ≅ T(A) ⊗ T(B)）がある、と記録されています（本文の一部の確認。本ページの調査では要旨だけ）。この読み替えは数値でも確かめました：素数冪 11 個（≤ 32）はすべてほぼ可換、素数冪でない 7 個（6 ≤ N ≤ 30）はすべてほぼ可換でない（<span class="mono">records/terwilliger-check/</span>。辞書の記録では ≤ 128 で 45/45、6 ≤ N ≤ 60 で 34/34）。</p>
+        <p><span class="badge found">既知</span> gcd／軌道スキームの T(0) の次元と Wedderburn 分解は、上の同型により既知の結果から出ます。素数冪では BST の T(K<sub>p</sub><sup>≀k</sup>) ≅ M<sub>k+1</sub>(ℂ) ⊕ ℂ<sup>k(k+1)/2 − b</sup>（b は p = 2 で k、ほかで 0）で、dim A<sub>p<sup>k</sup></sub> = (3k²+5k+2)/2（p 奇数）、(3k²+3k+2)/2（p = 2）。一般の N では直積のテンソル積定理（下）により dim A<sub>N</sub> = Π<sub>p</sub> dim A<sub>p<sup>k<sub>p</sub></sup></sub>。数値：素数冪 11 個で次元式と一致（辞書の記録では ≤ 128 で 44/44）、互いに素な 6 組で次元が積になる（改訂前の版の「見つからず」は誤り）。</p>
+
+        <h3>積に関する定理が実際に証明していること</h3>
+        <table>
+          <thead><tr><th>論文</th><th>対象</th><th>証明していること</th></tr></thead>
+          <tbody>
+            <tr><td>Bhattacharyya–Song–Tanaka, <em>J. Algebraic Combin.</em> 31 (2010) 455–466 <span class="badge v">[V]</span></td><td>1類スキーム K<sub>n</sub> = H(1,n) の wreath 積 K<sub>n₁</sub> ≀ … ≀ K<sub>n<sub>d</sub></sub></td><td>三重正則性。dim T = (d+1)² + ½d(d+1) − b（b は K₂ 因子の数）。T ≅ M<sub>d+1</sub>(ℂ) ⊕ M₁(ℂ)<sup>⊕(½d(d+1)−b)</sup>（改訂前の版の指数 d(d+1)−b は誤り。N = 27 で計算値 22 は ½ の側と一致）。非 primary 加群はすべて1次元。ℤ/p<sup>k</sup> の gcd スキームはこの族（K<sub>p</sub><sup>≀k</sup>）。</td></tr>
+            <tr><td>Song–Xu, arXiv:1008.2228 (2010) <span class="badge v">[V]</span></td><td>同じ wreath 積</td><td>Bose–Mesner 代数と Terwilliger 代数の代数構造の完全な記述（要旨）。</td></tr>
+            <tr><td>Hanaki–Kim–Maekawa, <em>J. Algebra</em> 343 (2011) 195–200 <span class="badge v">[S]</span></td><td>アソシエーション・スキームの直積と wreath 積</td><td><strong>Thm 3.1：T(X × Y, (x₀, y₀)) ≅ T(X, x₀) ⊗<sub>ℂ</sub> T(Y, y₀)（仮定なし）</strong>。Thm 4.1：輪積（Y が thin か1類のとき）の中心冪等元。リポジトリの辞書は著者版 PDF で定理の文を確認したと記録（本ページの調査では本文に届かず。CLAUDE.md §3 には「本文は取得できず」とあり、記録の食い違いは未解消）。直積については初等的にも示せる（下）。</td></tr>
+            <tr><td>Kim, arXiv:1103.4216 (2011) <span class="badge v">[V]</span></td><td>巡回スキーム C<sub>p₁</sub> ≀ … ≀ C<sub>p<sub>d</sub></sub> の wreath 積</td><td>三重正則であり、T の構造を中心原始冪等元で決定。ここで「cyclic scheme」は関係が巡回群をなす thin スキームの意味で、gcd スキームではない。</td></tr>
+            <tr><td>Levstein–Maldonado–Penazzi（Song–Xu が引用）<span class="badge v">[S]</span></td><td>Hamming スキーム H(d,q)</td><td>T(H(d,q)) は T(H(1,q)) の対称 d-テンソルである。</td></tr>
+            <tr><td>Watanabe, arXiv:2305.19258 (2024) ／ Jiang, arXiv:2503.02837 (2025) <span class="badge v">[S]</span></td><td>一般化 wreath 積 ／ 群可除スキームの直積（任意の体 F 上）</td><td>隣接代数と Terwilliger 代数の既約表現 ／ 中心・半単純性・Jacobson 根基・Wedderburn–Artin 分解。</td></tr>
+            <tr><td>Maleki, arXiv:2310.19609 (2023) <span class="badge v">[V]</span></td><td>C<sub>n</sub> ⋊ C₂ の群スキーム</td><td>dim T = ½ (n² + 3nτ + 4τ²)、τ = gcd(s−1, n)、および完全な Wedderburn 成分。</td></tr>
+          </tbody>
+        </table>
+        <p>合成数 N については、中国式剰余定理で ℤ/N が素数冪部分の直積になり、全体の単位群による軌道スキームは<strong>素数冪の gcd スキームの直積スキーム</strong>そのものです（gcd(x, ab) = gcd(x, a)·gcd(x, b)）。したがって HKM Thm 3.1 と BST から、一般の N の dim A<sub>N</sub> と Wedderburn 分解が出ます。この適用を明示した文献は見ていませんが、数行の帰結です <span class="badge found">既知の帰結</span>。</p>
+        <p><strong>直積スキームのテンソル積定理</strong> <span class="mono">T(X×Y) ≅ T(X) ⊗ T(Y)</span> は HKM Thm 3.1 にあり、初等的にも示せます：直積スキームの関係行列 A<sub>i</sub>⊗B<sub>j</sub> と双対冪等元 E*<sub>i</sub>⊗F*<sub>j</sub> は T(X)⊗T(Y) に入り、逆に A<sub>i</sub>⊗I = Σ<sub>j</sub> A<sub>i</sub>⊗B<sub>j</sub> と E*<sub>i</sub>⊗I が T(X)⊗1 を、同様に 1⊗T(Y) を生成します。Hamming スキームの T が対称テンソル冪になるのは、Hamming スキームが直積スキームの関係を対称化して融合したものだからで、この定理の反例ではありません（改訂前の版の「見つからず」は誤り）。</p>
+        <p class="small">関連：Bastian の学位論文 “Terwilliger Algebras for Several Finite Groups”（BYU, 2021）は有限アーベル群と二面体群の群スキームの Wedderburn 分解を扱う <span class="badge v">[S]</span>。</p>
+      </section>
+
+      <section id="maps">
+        <h2 class="sec"><span class="num">04</span>レベル間写像と極限 — 最大の相違</h2>
+        <p><span class="badge notfound">見つからず</span> 異なるスキームの Terwilliger 代数の間の準同型を<strong>一般理論として</strong>扱う文献は、調査した出典では見つかりませんでした。ただし PAG のレベル間写像の個々の結果は、次のように地位が分かれます（ラベルはリポジトリの判定による）。</p>
+        <ul>
+          <li><strong>単位的な写像の存在の側</strong>（gcd(N, M/N) = 1 のとき、Part 258、PAG262）：直積のテンソル積定理（HKM）から出る <span class="badge found">既知</span></li>
+          <li><strong>単位的な写像の不存在の側</strong>（素数 p が N と M/N の両方を割るとき、引き戻しと両立し殻を混ぜない単位的な写像はない）：<span class="badge notfound">新規候補（小さい）</span> 確信度 低〜中。盲検の問いテストと構築側の本文照合（Bastian–Humphries・Watanabe・Kim）で見つからず。MathSciNet・zbMATH と HKM 本文での確認が済むまで、外部で新規性として使わない（CLAUDE.md §3）</li>
+          <li><strong>全 N | M の非単位的な角の写像</strong>（Part 260、PAG264）：E 側は商スキームの冪等元による角の作用素版で <span class="badge found">既知</span>、ほかは［再導出（小さい）］。近い構造として、輪積の角の代数（単位的でない部分代数）と、別の設定の単位的でない準同型（超立方体の一般化 Terwilliger 代数、arXiv:2301.08366）がある（リポジトリの記録による）</li>
+          <li><strong>整除順序上の帰納系と極限</strong>（Part 261、PAG265）：［再導出（小さい）］。局所的な単位元の文は、各段が単位的で移行写像が乗法を保つ直極限の一般論で、内容を運ぶのは左単位元がないことだけ</li>
+        </ul>
+        <p>したがって、PAG の「単位的 vs 角の写像」の二分法のうち、既知でないと言えるのは不存在の側だけで、それも照合の範囲での判定です。</p>
+        <h3>隣接しているが、同じではない文献</h3>
+        <div class="cards">
+          <div class="card"><h4>スキームの圏と関手性 — Bose–Mesner まで</h4><p>Hanaki のアソシエーション・スキームの圏 AS／AS₀（基点つき）では単射・全射が特徴づけられ、核は部分スキーム、余核は商スキームになる <span class="badge v">[S]</span>。French, “Functors from Association Schemes”, arXiv:1208.1173 は許容射の広い部分圏を与え、そこで「スキームを代数へ送る標準的構成（隣接代数）」が関手的になる。Kuribayashi–Matsuo の要約では、French の系 6.6 は「スキーム ↦ Bose–Mesner 代数」が関手であること <span class="badge v">[S]</span>。T(x) への拡張は見つからなかった。T は基点と双対冪等元に依存し、スキームの射がそのデータを保つとは限らないため、当然の難所でもある。</p></div>
+          <div class="card"><h4>積の定理はレベル間写像ではない</h4><p>§3 の直積／wreath 積の結果は、単一の積スキームの T を因子のデータで記述するもので、T(小さいレベル) → T(大きいレベル) という準同型ではなく、ℂ<sup>X</sup> 上の引き戻しも含まない。</p></div>
+          <div class="card"><h4>複数基点の変種も、同一スキームの内部</h4><p>Suzuki の頂点集合に関する T や、Marashdeh の2基点版 T(a,b) = ⟨T(a), T(b)⟩（arXiv:2609.00462、素数位数の circulant／Paley グラフ）<span class="badge v">[S]</span> は、1つの M<sub>p</sub>(ℂ) の中で生成元を増やす構成であり、異なるスキームの間の写像ではない。</p></div>
+        </div>
+      </section>
+
+      <section id="generation">
+        <h2 class="sec"><span class="num">05</span>生成の分類 — 生成元の部分集合で全体が生成されるか</h2>
+        <p><span class="badge notfound">見つからず</span> Z/N の円分／gcd スキームについては、<strong>{E<sub>t</sub>} ∪ {E*<sub>t</sub>} のどの部分集合が T(0) 全体を生成するかを分類した論文は、調査した出典では見つかりませんでした。</strong>ただし地位は分かれます：素数冪の場合と ⟨M*, E<sub>N</sub>⟩ = A<sub>N</sub> ⇔ N ∈ {1, 4} ∪ 素数 は、構造定理と次元公式から数行で従います <span class="badge found">既知の帰結</span>。新規候補として残るのは<strong>合成数 N</strong> の項目 66（2つの双対な代数の和の条件）と項目 67〜69（完全な分類）だけで、評価は「小さいノートの水準」、確信度は中、MathSciNet・zbMATH での照合は未実施です（CLAUDE.md §3 の候補1）。</p>
+        <p>文献にある「生成」に関する話題は、性格の異なる2つだけです。</p>
+        <ul>
+          <li><strong>粗い2生成元への帰着（§2）：</strong>P・Q-多項式スキームではすべての A<sub>i</sub> が A<sub>1</sub> の多項式、すべての A*<sub>i</sub> が A*<sub>1</sub> の多項式になるため、生成元集合が ⟨A, A*⟩ へ潰れる。これは M と M* の内部での多項式生成の話であり、冪等元の部分集合の分類ではない。しかも gcd スキームは一般にその意味で P・Q-多項式ではないため、PAG の問いはこれでは解けない。</li>
+          <li><strong>三重積による生成：</strong>三重正則性に関連して、T が三重積 E*<sub>i</sub> A<sub>j</sub> E*<sub>k</sub> の張る部分空間（Bannai–Munemasa／Bhattacharyya–Song–Tanaka の T₀）で生成される、という主題がある <span class="badge v">[S]</span>。これも生成元の部分集合の分類ではない。</li>
+        </ul>
+      </section>
+
+      <section id="connections">
+        <h2 class="sec"><span class="num">06</span>外部への接続 — 項目ごとに</h2>
+        <p>PAG の単行書層や指標論的内容が Terwilliger 文献とつながるかを、5項目に分けて調べた結果です。</p>
+        <table>
+          <thead><tr><th>主題</th><th>判定</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td>Dirichlet 指標の根数／Gauss 和の位相を代数構造として</td><td><span class="badge notfound">見つからず</span></td><td>弱い形の接続はある。有限体円分スキームの固有値（第一固有行列）は Gauss 周期であり、その T-加群の構造は <strong>Jacobi 和</strong>で支配される（Ishibashi–Ito–Yamada 1999）。Shiratani–Yamada (1997) は Jacobi 和の有理性と、類数2円分スキームの T-部分加群の可約性を結ぶ <span class="badge v">[S]</span>。Jacobi 和は Gauss 和の商・積なので、Gauss 和の偏角は F<sub>q</sub> 円分の T-加群論に入る。しかし、Dirichlet 指標の根数 ε(χ)／Tate の ε 因子を Terwilliger 代数の構造定数・中心冪等元・不変量とする出典は見つからず、mod N の指標についても同様のものは見つからなかった。なお PAG 側でも、根数は公理 A1 で位相として入れたもので、A1 は導かれていない（公準のまま）。</td></tr>
+            <tr><td>Tate 理論と ε 因子</td><td><span class="badge notfound">見つからず</span></td><td>調査した範囲で、Tate の学位論文、局所／大域 ε 因子、L(s,χ) の関数等式に言及する Terwilliger 代数の論文は見つからなかった。</td></tr>
+            <tr><td>Bost–Connes 系／ℚ/ℤ の C* 代数</td><td><span class="badge notfound">見つからず</span></td><td>Bost–Connes 系自体はよく知られている。C*(ℚ/ℤ) ⋊ ℕ<sup>×</sup> を e(r)（r ∈ ℚ/ℤ）と等長作用素 μ<sub>n</sub> で生成し、分配関数は ζ(β)、対称性としてイデール類群の連結成分による商が作用する（Shirbisheh, arXiv:0808.1767）<span class="badge v">[S]</span>。しかし、ある Terwilliger 代数を Bost–Connes 代数と同一視したり、埋め込んだり、写像で結んだりする出典は見つからなかった。ℚ/ℤ や ℤ/N、単位根から作られるという表面的な類似にもかかわらず、である。PAG 側でも、角の写像が群環の側で Bost–Connes の ρ と一致することは数値で確かめただけで、Lean の外（Part 260）。</td></tr>
+            <tr><td>イデール／アデール／イデール類群</td><td><span class="badge notfound">見つからず</span></td><td>Terwilliger 理論の側では見つからなかった。上記のイデール類群の出現は Bost–Connes 理論の内部のもので、T(x) への橋はない。文献の Terwilliger 代数は ℂ 上（モジュラー版では体／環上）の有限次元行列代数であり、Ẑ = lim← ℤ/N のような射有限／アデール的な構成による T は見つからなかった（§4 の極限の欠如と連動）。</td></tr>
+            <tr><td>微分作用素の自己共役拡張の境界条件（D = −i d/du、境界ユニタリ）</td><td><span class="badge notfound">見つからず</span></td><td>Terwilliger 文献で「self-adjoint」は、T が共役転置で閉じ半単純であるという意味だけである <span class="badge v">[V]</span>。差分作用素との接続はある。Askey–Wilson の2階 q-差分作用素が三重対角対を実現する（Terwilliger, arXiv:math/0307016）<span class="badge v">[S]</span> という双スペクトル／差分作用素の接続だが、円柱上の −i d/du、欠陥指数、拡張を境界ユニタリでパラメトライズする話ではない。そのような拡張理論と T を結ぶ出典は見つからなかった。</td></tr>
+          </tbody>
+        </table>
+        <div class="callout red">
+          <p><strong>含意：</strong>PAG の単行書層 — イデール類群の円柱 Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub> 上の D = −i∂<sub>u</sub>、自己共役拡張の境界ユニタリ U、公理 A1 による Tate の γ 因子との接着 — は、Terwilliger 代数としては記述できません。それは T の理論の内部には対応する問題設定自体がないからです。PAG の中で Terwilliger と重なるのは有限レベルの代数 A<sub>N</sub> の層までであり、それより上は PAG 独自の構成です。</p>
+        </div>
+      </section>
+
+      <section id="breadth">
+        <h2 class="sec"><span class="num">07</span>逆方向 — 一般理論が持ち、Z/N 限定の理論が持たないもの</h2>
+        <p>相違は一方向ではありません。一般の Terwilliger 理論は、Z/N 上のスキームだけを見る理論では届かない広がりを持ちます。</p>
+        <ul>
+          <li><strong>任意のアソシエーション・スキーム：</strong>デザイン、有限幾何、置換群、ラテン方格、正多面体などに由来するスキーム。例：正十二面体の T ≅ M₆(ℂ) ⊕ M₆(ℂ) ⊕ M₂(ℂ)（Levstein–Penazzi、Terwilliger の予想への反例でもある）<span class="badge v">[S]</span>。任意の有限集合 X と任意の基点 x が対象で、スキームが頂点推移的でない場合 T(x) は実際に x に依存する。ℤ/N の基点 0 のような高対称な状況では見えない現象である。</li>
+          <li><strong>非可換スキームと任意の係数：</strong>Hanaki は任意の（可換とは限らない）スキームに対し、任意の可換単位的環上で T を定義した。モジュラー版（“Modular Terwilliger algebras”, arXiv:2004.09692／<em>Graphs Combin.</em> 37 (2021)）では、正標数で T が半単純でないことがあり（標数が valency を割る場合）、Johnson スキーム J(n,2) の dim T が標数により 16 か 15 になる <span class="badge v">[S]</span>。</li>
+          <li><strong>直径が無限に伸びる距離正則グラフの族：</strong>Hamming スキーム H(d,q)（T は対称テンソル冪、超立方体 Q<sub>D</sub> では T は U(sl₂(ℂ)) の準同型像、Go, <em>Eur. J. Combin.</em> 23 (2002)）、Johnson スキーム J(v,d)、Grassmann、双対極空間、Doob スキーム（Shrikhande グラフと K₄ の直積、Tanabe, <em>J. Algebraic Combin.</em> 6 (1997) 173–195 <span class="badge v">[V]</span>）、Odd グラフ、距離二部正則グラフ、一般化四角形、木。いずれも ℤ/N 上のスキームではない。</li>
+          <li><strong>非アーベル群の群スキーム：</strong>任意の有限群 G の共役類スキーム（Bannai–Munemasa の次元の評価、S₅・A₅ に対する Balmaceda–Oura、C<sub>n</sub> ⋊ C₂ に対する Maleki、Bastian–Humphries の Camina／Frobenius 分類）。単位元における基点理論は ℤ/N に対応物を持たない <span class="badge v">[V/S]</span>。</li>
+          <li><strong>スキームを離れた抽象的加群論：</strong>Leonard 対／系、三重対角対と tridiagonal algebra、(q-)Onsager 代数、U<sub>q</sub>(sl₂) とアフィン量子群、Askey–Wilson 多項式という表現論の建造物全体（§2）。ℤ/N の族が見られるのは、その薄い一片にすぎない。</li>
+          <li><strong>純粋構造の外の応用：</strong>符号とデザインに対する Delsarte の LP／SDP bound、Assmus–Mattson 型定理（Tanaka 2009）、スピン模型と type-II 行列、Hamming／Johnson グラフ上の量子ウォークとエンタングルメント（Vinet ら）<span class="badge v">[S]</span>。</li>
+        </ul>
+        <div class="callout teal">
+          <p><strong>釣り合い：</strong>PAG の単一レベルの構造（素数冪・テンソル積）は一般理論の特別な場合です。一般理論の中に特殊ケースとして見つからなかったのは、単位的なレベル間写像の不存在の側（§4）、合成数 N の生成の分類（§5）、単行書層の主題（§6）です。前の2つは新規候補（確信度 低〜中、照合未完）、最後のものは Terwilliger 理論に問題設定がない、という意味です。両者は包含関係ではなく、<strong>1つの代数 A<sub>N</sub> = T(0) を共有する、異なる方向への拡張</strong>です。</p>
+        </div>
+      </section>
+
+      <section id="dictionary">
+        <h2 class="sec"><span class="num">08</span>辞書との照合 — 帰属は維持する</h2>
+        <p>改訂前の版はこの節で「辞書の Part 225–226（素数冪の Wedderburn／次元）と Part 228（テンソル分解）の［既知］の帰属は直接的でない可能性がある」と書いていました。<strong>この注意は撤回します。</strong>根拠は次のとおりです。</p>
+        <div class="callout teal">
+          <p><strong>Part 225–226：</strong>ℤ/p<sup>k</sup> の gcd スキームは K<sub>p</sub><sup>≀k</sup> と同型なので、BST (2010) の結果そのものです。次元式は Bastian–Humphries (2026) の式とも一致します（辞書の記録、数値 ≤ 128 で 44/44、本ページの再計算でも素数冪 11 個で一致）。</p>
+          <p><strong>Part 228：</strong>互いに素な a, b で ℤ/ab のスキームは直積スキームで、T(X×Y) ≅ T(X)⊗T(Y) は HKM Thm 3.1（辞書は定理の文を本文で確認と記録）にあり、初等的にも示せます。数値：互いに素な 6 組で dim A<sub>ab</sub> = dim A<sub>a</sub>·dim A<sub>b</sub>。</p>
+          <p>したがって辞書の［既知］はそのまま維持します。</p>
+        </div>
+        <h3>未確認事項（オープンなまま残すもの）</h3>
+        <ul>
+          <li>HKM の本文：辞書は「著者版 PDF で Thm 3.1 の文を確認」とし、CLAUDE.md §3（候補3の項）は「本文は構築側の環境から取得できず」としています。どのセッションで確認したかの記録を揃える必要があります。テンソル積定理そのものは初等的な議論で裏づけられるので、帰属の結論は変わりません。</li>
+          <li>Bastian–Humphries, arXiv:2606.19095 の本文：次元式と Thm 5.2 の存在は辞書の記録（本文の一部の確認）によります。本ページの調査では要旨だけで、この環境からは arXiv を直接開けませんでした。</li>
+          <li>Ishibashi–Ito–Yamada (1999) は、類数2／Jacobi 和に関する Oberwolfach 報告と引用文献側の要約による確認で、本文は未精読（書誌情報自体は確認済み）。</li>
+          <li>「homomorphism／inductive limit／pullback／corner + Terwilliger」という検索語で索引されていない 2025–2026 年の新しいプレプリントがレベル間写像を扱っている可能性は、排除できない。すべての「見つからず」は調査した出典の範囲に限る。</li>
+        </ul>
+      </section>
+
+      <section id="table">
+        <h2 class="sec"><span class="num">09</span>対照表 — 一覧</h2>
+        <table>
+          <thead><tr><th>観点</th><th>Terwilliger 代数（一般理論）</th><th>アーデル射影幾何学（PAG）</th></tr></thead>
+          <tbody>
+            <tr><td>基本対象</td><td>任意の有限集合 X 上の任意のアソシエーション・スキームと基点 x</td><td>ℤ/N 上の gcd 殻スキーム（全体の単位群による軌道 S-環）と基点 0 に限定</td></tr>
+            <tr><td>代数の定義</td><td>T(x) = Bose–Mesner 代数と双対冪等元で生成</td><td>A<sub>N</sub> = E<sub>t</sub> と D<sub>t</sub> = E*<sub>t</sub> で生成 — <strong>定義は一致（A<sub>N</sub> = T(0)）</strong></td></tr>
+            <tr><td>基点依存性</td><td>非頂点推移的なら T(x) は x に依存しうる。それ自体が研究対象</td><td>基点は 0 に固定。依存性の問題は現れない</td></tr>
+            <tr><td>係数</td><td>ℂ が標準だが、Hanaki 以来、任意の環・正標数（モジュラー）も対象。半単純でない場合もある</td><td>ℂ 上の有限次元代数のみ</td></tr>
+            <tr><td>構造論の到達点</td><td>スキームごとの Wedderburn 分解・次元が蓄積。gcd／軌道スキームは K<sub>p</sub><sup>≀k</sup> の直積なので、BST と HKM Thm 3.1 から次元と分解が出る</td><td>素数冪・合成数の構造結果を Lean で保持。内容は既知（BST・HKM・Bastian–Humphries）で、Lean の証明は形式化の仕事（§8）</td></tr>
+            <tr><td>ほぼ可換性</td><td>Tanaka の分類、Bastian–Humphries (2026) の軌道環の分類</td><td>全体 Aut の軌道環なので、A<sub>N</sub> がほぼ可換なのは N が素数冪のときに限る（§3 の読み替え）</td></tr>
+            <tr><td>異なるレベル間の写像</td><td>一般理論は <span class="badge notfound">見つからず</span>。関手性は Bose–Mesner 代数まで（Hanaki の圏、French の許容射）。輪積の角の代数など近い構造はある</td><td>単位的な写像：存在の側は既知、不存在の側は新規候補（確信度 低〜中、照合未完）。角の写像：E 側は既知、ほかは再導出（小さい）。帰納系と極限：再導出（小さい）</td></tr>
+            <tr><td>生成の分類</td><td>P・Q-多項式での ⟨A, A*⟩ への帰着、三重正則での三重積による生成。冪等元の部分集合の分類は <span class="badge notfound">見つからず</span></td><td>生成元の部分集合が全体を生成する条件を、例外なしに分類。素数冪の場合は既知の帰結、合成数 N の項目 66〜69 だけが新規候補（確信度 中、照合未完）</td></tr>
+            <tr><td>指標論との関わり</td><td>有限体円分の固有値は Gauss 周期、加群構造は Jacobi 和（IIY 1999）</td><td>Hartley／cas 核の変換を通じ、Dirichlet 指標の Gauss 和と根数 W(χ) が係数として現れる（A1 で入れた位相。ルート数との同定は Lean の外）。文献に同型の構造は <span class="badge notfound">見つからず</span></td></tr>
+            <tr><td>無限・大域の層</td><td>なし。有限次元行列代数の理論にとどまる</td><td>単行書層：C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub>、D = −i∂<sub>u</sub>、境界ユニタリ U、公理 A1（Tate の γ 因子による接着）。素数と無限素点を「点」とする幾何の定義層</td></tr>
+            <tr><td>応用</td><td>Delsarte bound、符号・デザイン、スピン模型、量子ウォーク</td><td>新しい幾何の設立文書の構成要素。符号理論への応用は射程にない</td></tr>
+          </tbody>
+        </table>
+        <div class="tagrow">
+          <span class="tag">共有点：A<sub>N</sub> = T(0) と単一レベルの構造（既知）</span><span class="tag">新規候補（照合未完）：単位的な写像の不存在の側／合成数 N の生成の分類</span><span class="tag">Terwilliger 理論の外：単行書層（Tate の γ 因子・自己共役拡張）</span><span class="tag">文献側にのみある：任意のスキーム／Leonard 対／モジュラー／Delsarte 応用</span>
+        </div>
+      </section>
+
+      <section id="sources">
+        <h2 class="sec"><span class="num">10</span>出典</h2>
+        <p class="small">検証区分：[V] = 2026-11-20 の調査で出版社／arXiv ページの要旨または本文を確認。[S] = 検索索引の抜粋、書誌リスト、引用論文の要約による確認。各「見つからず」は、調査した出典の範囲での不存在の報告であり、不存在の証明ではありません。</p>
+        <ol class="sources">
+          <li>Terwilliger, P., “The subconstituent algebra of an association scheme” I–III, <em>J. Algebraic Combin.</em> 1 (1992) 363–388; 2 (1993) 73–103, 177–210. <a href="https://mat.ub.edu/EMIS/journals/JACO/Volume1_4/t21566811q423213.fulltext.pdf">全文 PDF</a> [V]</li>
+          <li>Maleki, R., “On the Terwilliger algebra of the group association scheme of C<sub>n</sub> ⋊ C<sub>2</sub>”, arXiv:2310.19609 (2023). <a href="https://arxiv.org/abs/2310.19609">arXiv</a> [V]</li>
+          <li>Bannai, E. &amp; Munemasa, A., “The Terwilliger algebras of group association schemes”, <em>Kyushu J. Math.</em> 49 (1995) 93–102. <a href="https://www.math.is.tohoku.ac.jp/~munemasa/documents/T-alg-gp.pdf">PDF</a> [V]</li>
+          <li>Bhattacharyya, S., Song, S.-Y. &amp; Tanaka, H., “Terwilliger algebras of wreath products of one-class association schemes”, <em>J. Algebraic Combin.</em> 31 (2010) 455–466. <a href="https://mat.ub.edu/EMIS/journals/JACO/Volume31_3/q6uk7j772331187r.fulltext.pdf">全文 PDF</a> [V]</li>
+          <li>Kim, J., “On wreath products of cyclic schemes”, arXiv:1103.4216 (2011). <a href="https://arxiv.org/abs/1103.4216">arXiv</a> [V]</li>
+          <li>Bastian, N. L. &amp; Humphries, S. P., “Almost Commutative Terwilliger Algebras of Group Association Schemes I”, arXiv:2409.09167 (2024). <a href="https://arxiv.org/abs/2409.09167">arXiv</a> [V]</li>
+          <li>Bastian, N. L. &amp; Humphries, S. P., “Schur rings over cyclic groups having Almost Commutative Terwilliger algebras”, arXiv:2606.19095 (2026). <a href="https://arxiv.org/abs/2606.19095v1">arXiv</a> [V]</li>
+          <li>Terwilliger, P., “Leonard pairs and the q-Racah polynomials”, arXiv:math/0306301 (2003). <a href="https://arxiv.org/abs/math/0306301">arXiv</a> [S/V]</li>
+          <li>Ishibashi, H., Ito, T. &amp; Yamada, M., “Terwilliger algebras of cyclotomic schemes and Jacobi sums”, <em>Eur. J. Combin.</em> 20 (1999) 397–410. 書誌は arXiv:2609.00462 の参考文献で確認、内容は Oberwolfach 報告による [S]</li>
+          <li>Hanaki, A., Kim, J. &amp; Maekawa, K., “Terwilliger algebras of direct and wreath products of association schemes”, <em>J. Algebra</em> 343 (2011) 195–200. 著者の出版物ページと KPP セミナー要旨による [S]</li>
+          <li>Hanaki, A., “A category of association schemes” ／ French, C., “Functors from Association Schemes”, arXiv:1208.1173. <a href="https://arxiv.org/pdf/1208.1173">arXiv PDF</a> [S]</li>
+          <li>Herman, A., “A survey of semisimple algebras in algebraic combinatorics”, <em>Indian J. Pure Appl. Math.</em> 52 (2021) 631–642 [S]</li>
+          <li>Hanaki, A., “Modular Terwilliger algebras of association schemes”, arXiv:2004.09692 (2020). <a href="https://arxiv.org/pdf/2004.09692">arXiv PDF</a> [S]</li>
+          <li>Song, S.-Y. &amp; Xu, B., “On wreath products of one-class association schemes”, arXiv:1008.2228 (2010). <a href="https://arxiv.org/pdf/1008.2228">arXiv PDF</a> [S/V]</li>
+          <li>Shirbisheh, V., Bost–Connes 系の解説, arXiv:0808.1767. <a href="https://arxiv.org/pdf/0808.1767">arXiv PDF</a> [S]（Bost–Connes 自体の記述用。Terwilliger との接続を示す出典ではない）</li>
+          <li>Marashdeh, M., “Two-basepoint Terwilliger algebras and the quantum symmetry of prime-order circulants”, arXiv:2609.00462 (2026) [S]</li>
+          <li>arXiv:2301.08366（超立方体の一般化 Terwilliger 代数の単位的でない準同型）— 改訂で追加。リポジトリの記録（<span class="mono">notes/pag2_candidate3_literature_builder.md</span>）による。題・著者は未確認。</li>
+          <li>リポジトリの辞書 <span class="mono">records/audit256/dictionary_before_part256.md</span>（同定 §0、文献表、数値 (1c)(5b)(6d)(6e)）と CLAUDE.md §3 — 改訂で追加。</li>
+          <li>数値の再計算 <span class="mono">records/terwilliger-check/tw_check.py</span>（出力は同じフォルダの <span class="mono">tw_check_output.txt</span>）— 改訂で追加。素数冪 11 個と合成数 7 個の dim A<sub>N</sub>・中心の次元・ほぼ可換性、互いに素な 6 組の次元の積。</li>
+        </ol>
+        <details>
+          <summary>この調査の方法と限界</summary>
+          <div>
+            <p>本ページは2026年11月20日に実施した文献調査（出版社／arXiv ページの原文確認を含む）に基づきます。「見つからず」と記した項目は、対象を絞った検索（準同型、帰納極限、引き戻し、corner などと Terwilliger の組み合わせを含む）で該当論文が現れなかったという意味で、数学的な不存在の主張ではありません。Hanaki–Kim–Maekawa (2011) と Ishibashi–Ito–Yamada (1999) の本文は未精読であり、それらに関する記述は要約レベル [S] です。Bastian–Humphries (2026) については要旨を確認し、PAG への含意は「読み替え（解釈）」として引用と区別して記しました。</p>
+          </div>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <section id="revision" style="max-width:1120px;margin:0 auto">
+    <h2 class="sec"><span class="num">R</span>改訂記録（2026-11-20）</h2>
+    <p class="small">精査で見つかった点を反映しました。<strong>どの直しも独立照合を受けていません。</strong></p>
+    <ul>
+      <li><strong>帰属の誤り：</strong>素数冪の gcd スキームは K<sub>p</sub><sup>≀k</sup> と同型で、BST がそのまま当てはまる（以前は「構成が異なるので読めない」）。直積スキームのテンソル積定理は HKM Thm 3.1 にあり初等的にも示せる（以前は「見つからず」）。§8 の「辞書の［既知］を見直すべき」を撤回した。</li>
+      <li><strong>新規性の書き方：</strong>§4・§5・対照表・タグ行の「見つからず」「PAG 側にのみある」を、リポジトリの判定に合わせて［既知／再導出／新規候補］と確信度で書き分けた。新規候補は単位的な写像の不存在の側と合成数 N の生成の分類だけで、どちらも照合未完。</li>
+      <li><strong>式の誤り：</strong>§1 で E<sub>t</sub> と D<sub>t</sub>（= E*<sub>t</sub>）の説明が入れ替わっていたのを直した。BST の Wedderburn 分解の指数を ½d(d+1) − b に直した。</li>
+      <li><strong>言い過ぎ・表記：</strong>§2 の「P・Q 多項式の場合だけ」を「保証されるのは」に直した。根数の文字化け（𝔀）を W(χ) に直し、反転の W と別の記号であることと、A1 で入れた位相であることを添えた。Bost–Connes との一致は PAG 側でも数値だけ（Lean の外）と明記した。軌道 Schur 環の呼び名（cyclotomic S-ring）を添えた。</li>
+      <li><strong>数値：</strong>Bastian–Humphries の読み替え（ほぼ可換 ⇔ N が素数冪）と次元式を、独立に書いたスクリプトで再計算して確かめた（<span class="mono">records/terwilliger-check/</span>）。</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>アーデル射影幾何学と Terwilliger 代数の相違 — 文献調査に基づく比較（2026年11月20日）。A<sub>N</sub> = T(0) という同一視と単一レベルの構造（既知）を共有点とし、レベル間写像・帰納極限・生成分類を［既知／再導出／新規候補］に書き分け、単行書層を Terwilliger 理論の外、任意のスキームと Leonard 対の理論を Terwilliger 側の広がりとして整理した。2026-11-20 改訂（改訂記録を参照）。</p>
+  </footer>
+</div>
+</body>
+</html>
