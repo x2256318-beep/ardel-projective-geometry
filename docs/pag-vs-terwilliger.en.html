@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Ardel Projective Geometry and the Terwilliger Algebra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f4; --surface:#ffffff; --surface2:#eef1ee; --ink:#1a1e1c; --muted:#5a6560; --line:#d8ddd8;
+  --accent:#9a2c1e; --accent-soft:#f3e2de; --teal:#1e4d4a; --teal-soft:#dfeae8; --amber:#7a5a12; --amber-soft:#f5ecd2;
+  --found:#1e4d4a; --notfound:#9a2c1e;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#141716; --surface:#1e2220; --surface2:#262b28; --ink:#eceeec; --muted:#a7b0aa; --line:#363d39; --accent:#e08a7a; --accent-soft:#3a2320; --teal:#8fc0ba; --teal-soft:#223332; --amber:#d9b96a; --amber-soft:#332d1a; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px 80px}
+.hero{padding:44px 0 28px;border-bottom:3px solid var(--ink)}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(28px,5.2vw,48px);line-height:1.25;margin:14px 0 16px;letter-spacing:.01em}
+.lead{font-size:17px;line-height:1.9;max-width:820px;color:var(--ink)}
+.lead strong{background:linear-gradient(transparent 62%, var(--amber-soft) 62%)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.meta span{font-size:12.5px;border:1px solid var(--line);background:var(--surface);padding:6px 10px;border-radius:999px;color:var(--muted)}
+.verdict{margin:28px 0;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);padding:22px 22px 18px}
+.verdict h2{margin:0 0 10px;font-family:"Noto Serif JP",serif;font-size:20px}
+.verdict-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+@media(max-width:700px){.verdict-grid{grid-template-columns:1fr}}
+.vbox{padding:14px 16px;border:1px solid var(--line)}
+.vbox.same{border-left:4px solid var(--teal)} .vbox.diff{border-left:4px solid var(--accent)}
+.vbox h3{margin:0 0 6px;font-size:14px} .vbox p{margin:0;font-size:14px;line-height:1.75;color:var(--muted)}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:36px;margin-top:36px}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+nav.toc{position:sticky;top:16px;align-self:start}
+@media(max-width:860px){nav.toc{position:static}}
+nav.toc h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-family:"IBM Plex Mono",monospace}
+nav.toc ol{margin:0;padding:0;list-style:none;counter-reset:toc}
+nav.toc li{border-top:1px solid var(--line)}
+nav.toc a{display:flex;gap:10px;padding:10px 4px;min-height:44px;align-items:center;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
+nav.toc a::before{counter-increment:toc;content:counter(toc,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--accent)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+section:first-child{padding-top:6px}
+h2.sec{font-family:"Noto Serif JP",serif;font-size:26px;line-height:1.4;margin:0 0 8px;display:flex;gap:12px;align-items:baseline}
+h2.sec .num{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#fff;background:var(--ink);padding:3px 8px;border-radius:2px;flex-shrink:0;transform:translateY(-2px)}
+@media (prefers-color-scheme: dark){h2.sec .num{background:var(--accent);color:#141716}}
+h3{font-family:"Noto Serif JP",serif;font-size:19px;margin:28px 0 8px}
+p{margin:10px 0} .small{font-size:13.5px;color:var(--muted);line-height:1.75}
+code, .mono{font-family:"IBM Plex Mono",monospace;font-size:.92em;background:var(--surface2);padding:1px 5px;border-radius:3px}
+.formula{background:var(--surface);border:1px solid var(--line);padding:16px 18px;margin:16px 0;font-family:"IBM Plex Mono",monospace;font-size:14px;line-height:1.9;overflow-x:auto;white-space:nowrap}
+.callout{padding:16px 18px;margin:18px 0;border:1px solid var(--line);background:var(--surface)}
+.callout.warn{border-left:4px solid var(--amber);background:var(--amber-soft)}
+.callout.teal{border-left:4px solid var(--teal)}
+.callout.red{border-left:4px solid var(--accent)}
+.callout p:first-child{margin-top:0}.callout p:last-child{margin-bottom:0}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;vertical-align:middle;white-space:nowrap}
+.badge.found{background:var(--teal-soft);color:var(--teal);border:1px solid var(--teal)}
+.badge.notfound{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent)}
+.badge.v{background:var(--surface2);color:var(--muted);border:1px solid var(--line);font-family:"IBM Plex Mono",monospace}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;line-height:1.7;background:var(--surface)}
+th,td{border:1px solid var(--line);padding:12px 12px;vertical-align:top;text-align:left}
+th{background:var(--surface2);font-weight:700;font-size:13px}
+td:first-child{font-weight:700;width:22%}
+@media(max-width:700px){
+  table,thead,tbody,tr,th,td{display:block;width:100%}
+  thead{display:none}
+  tr{border:1px solid var(--line);margin-bottom:12px;background:var(--surface)}
+  td{border:none;border-top:1px solid var(--line)} td:first-child{border-top:none;background:var(--surface2)}
+}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);padding:16px}
+.card h4{margin:0 0 6px;font-size:15px} .card p{font-size:14px;color:var(--muted);margin:6px 0}
+ul,ol{padding-left:1.3em} li{margin:6px 0}
+.timeline{border-left:2px solid var(--line);margin:18px 0 18px 6px;padding-left:20px}
+.timeline div{position:relative;margin-bottom:16px}
+.timeline div::before{content:"";position:absolute;left:-27px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.timeline b{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent)}
+details{background:var(--surface);border:1px solid var(--line);margin:12px 0}
+summary{padding:14px 16px;cursor:pointer;font-weight:700;min-height:48px;display:flex;align-items:center}
+details div{padding:0 16px 16px;font-size:14.5px}
+.sources{font-size:13.5px;line-height:1.75}
+.sources li{margin:10px 0;word-break:break-word}
+footer{padding:28px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
+.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tag{font-size:12px;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Comparative Research — survey of 2026-11-20</div>
+    <h1>Ardel Projective Geometry<br>and the Terwilliger Algebra</h1>
+    <p class="lead">The conclusion has two layers. At the finite level, the algebra <strong>A<sub>N</sub> of Ardel projective geometry (PAG) is the Terwilliger algebra T(0)</strong>: the definitions coincide, and <strong>the single-level structure (Wedderburn decomposition and dimension for prime powers, tensor decomposition for coprime moduli) is known</strong> (BST 2010, Hanaki–Kim–Maekawa 2011, Bastian–Humphries 2026). Of what PAG builds on top, the level-to-level maps are known on the existence side and on the E-side of the corner maps, and the directed system is a [small re-derivation]; <strong>the only remaining novelty candidates are the non-existence side for unital maps and the generation classification for composite N</strong> (both at low–medium confidence, with MathSciNet/zbMATH checks still outstanding). The monograph layer (Tate's γ-factors, self-adjoint extensions) has no corresponding problem setting in Terwilliger theory. Conversely, the general theory — arbitrary schemes, Leonard pairs — extends far beyond PAG's restriction to ℤ/N.</p>
+    <div class="meta">
+      <span>Survey date: 2026-11-20</span><span>Verification: [V] source text checked / [S] summary level</span><span>“Not found” means “not found in the sources surveyed”</span><span>Revised 2026-11-20 with the corrections from a review (<a href="#revision">revision record</a>; the corrections have not been independently checked)</span><span>English edition of <span class="mono">docs/pag-vs-terwilliger.html</span></span>
+    </div>
+    <div class="verdict">
+      <h2>Three points first</h2>
+      <div class="verdict-grid">
+        <div class="vbox same"><h3>What is identical</h3><p>A<sub>N</sub> coincides, by checking definitions, with the Terwilliger algebra T(0) of the orbit Schur ring (orbit S-ring) on ℤ/N whose basic sets are the gcd shells. PAG's name “shell algebra” is another name for this identification.</p></div>
+        <div class="vbox diff"><h3>Where the differences concentrate</h3><p>“How to connect the algebras for different N” and “what to connect the algebra to.” Of the former, only the non-existence side for unital maps is not known (novelty candidate, low–medium confidence). The latter (the monograph layer) lies outside Terwilliger theory. On single-level structure, by contrast, the literature is far broader, and PAG's prime-power and tensor results are special cases of it.</p></div>
+      </div>
+      <p class="small" style="margin-top:14px">⚠ Terminology trap: in the literature, “cyclotomic scheme” usually means the scheme on a finite field <span class="mono">F<sub>q</sub></span> defined by cosets, which is a different object from the gcd-shell scheme on ℤ/N. Confusing the two would wrongly transfer finite-field results (Jacobi sums and the like) to PAG. The standard name for PAG's object is the scheme coming from the “orbit Schur ring over a cyclic group (cyclotomic S-ring).”</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#identity">The identification</a></li>
+        <li><a href="#terwilliger">What the Terwilliger algebra is</a></li>
+        <li><a href="#cyclotomic">Cyclotomic / gcd schemes</a></li>
+        <li><a href="#maps">Level-to-level maps and limits</a></li>
+        <li><a href="#generation">Generation classification</a></li>
+        <li><a href="#connections">Outward connections</a></li>
+        <li><a href="#breadth">Breadth of the general theory</a></li>
+        <li><a href="#dictionary">Check against the dictionary</a></li>
+        <li><a href="#table">Comparison table</a></li>
+        <li><a href="#sources">Sources</a></li>
+        <li><a href="#revision">Revision record</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="identity">
+        <h2 class="sec"><span class="num">01</span>The identification — A<sub>N</sub> = T(0)</h2>
+        <p>PAG's finite-level algebra A<sub>N</sub> is generated inside <span class="mono">End(ℂ<sup>ℤ/N</sup>)</span> by two kinds of operators.</p>
+        <div class="formula">D<sub>t</sub> ≡ E*<sub>t</sub> : diagonal projection onto the shell { x ∈ ℤ/N : gcd(x, N) = t } (t | N) = dual idempotent at base point 0<br>E<sub>t</sub> : projection onto the frequency-side shell (functions whose Fourier transform is supported on the shell) = primitive idempotent of the Bose–Mesner algebra</div>
+        <p>E<sub>t</sub> is a primitive idempotent of the Bose–Mesner algebra of the association scheme whose relations are separated by gcd. D<sub>t</sub> is the dual idempotent E*<sub>t</sub> with respect to base point 0 — exactly the diagonal projection onto the point-side shell (the pre-revision version called this projection E<sub>t</sub>). This pair of generator families is precisely the definition of the Terwilliger algebra.</p>
+        <div class="callout teal">
+          <p><strong>Definition (Terwilliger, 1992) <span class="badge v">[V]</span></strong></p>
+          <p>For a commutative association scheme Y and a vertex x, introduce the non-commutative, associative, semisimple ℂ-algebra T = T(x), called the subconstituent algebra. In modern formulation it is “the subalgebra of the matrix algebra generated by the Bose–Mesner algebra and the dual idempotents with respect to x” (confirmed from the abstract of Maleki, arXiv:2310.19609).</p>
+          <p class="small">Sources: Terwilliger, “The subconstituent algebra of an association scheme” I–III, <em>J. Algebraic Combin.</em> 1 (1992), 2 (1993). / Survey by Herman, <em>Indian J. Pure Appl. Math.</em> 52 (2021) 631–642 <span class="badge v">[S]</span></p>
+        </div>
+        <p>So the difference is not “whether A<sub>N</sub> is a Terwilliger algebra.” It lies in <strong>which scheme's T it is</strong>, and <strong>what is built on top of T</strong>.</p>
+        <p>PAG's scheme is special. It is the orbit Schur ring under the full automorphism group <span class="mono">(ℤ/N)<sup>×</sup></span>, whose basic sets are exactly the gcd shells. It has only as many classes as N has divisors, so its Bose–Mesner algebra is small. This is why the result “for group schemes T is the full matrix algebra” (below) does not transfer to PAG.</p>
+      </section>
+
+      <section id="terwilliger">
+        <h2 class="sec"><span class="num">02</span>What the Terwilliger algebra is — the standard theory</h2>
+        <p>The Terwilliger algebra (subconstituent algebra), introduced by Paul Terwilliger in 1992, is an algebra reflecting the combinatorial structure of an association scheme. Its generators are the adjacency matrices A<sub>i</sub> (or their primitive idempotents E<sub>i</sub>) and the dual idempotents E*<sub>i</sub>(x), diagonal matrices determined by a base point x.</p>
+        <div class="formula">T(x) = ⟨ { A<sub>i</sub> } ∪ { E*<sub>i</sub>(x) } ⟩ ⊆ M<sub>|X|</sub>(ℂ), &nbsp; (E*<sub>i</sub>(x))<sub>uu</sub> = (A<sub>i</sub>)<sub>x,u</sub></div>
+        <h3>Central themes</h3>
+        <ul>
+          <li><strong>Irreducible modules and thinness:</strong> decompose the standard module V = ℂ<sup>X</sup> into irreducible T-modules. dim E*<sub>i</sub>W ≤ 1 is called thin, dim E<sub>i</sub>W ≤ 1 dual thin. Classifying modules by invariants such as endpoint and diameter is the backbone of Parts I–III <span class="badge v">[V]</span>.</li>
+          <li><strong>Wedderburn decomposition:</strong> T is closed under conjugate transpose and semisimple, so T ≅ ⊕ Mat<sub>n<sub>i</sub></sub>(ℂ). Determining the components, multiplicities and dimension scheme by scheme is the standard “structure problem.”</li>
+          <li><strong>P-/Q-polynomial schemes:</strong> linked to Delsarte theory (1973, coding theory); the Bose–Mesner linear-programming bound is refined to a semidefinite bound via the Terwilliger algebra (Schrijver, Tanaka) <span class="badge v">[S]</span>.</li>
+          <li><strong>Leonard pairs and systems:</strong> pairs of operators, each diagonal in a basis in which the other is irreducible tridiagonal. Irreducible T-modules that are thin and dual thin coincide with Leonard systems, classified by the Askey scheme / q-Racah polynomials (Terwilliger, arXiv:math/0306301, 2003) <span class="badge v">[V]</span>.</li>
+          <li><strong>Tridiagonal pairs, q-Onsager, quantum groups:</strong> a large representation-theoretic layer leading to tridiagonal algebras, (q-)Onsager algebras and representations of U<sub>q</sub>(ŝl<sub>2</sub>) <span class="badge v">[S]</span>.</li>
+          <li><strong>Almost commutativity:</strong> the property that every non-primary irreducible module is one-dimensional. Tanaka (2010; <em>J. Algebraic Combin.</em> 33 (2011) 1–10) gave equivalent conditions, one being “a wreath product of one-class schemes and finite abelian group schemes” <span class="badge v">[S]</span>. This concept leads directly to Bastian–Humphries in §3.</li>
+        </ul>
+        <div class="callout">
+          <p><strong>Reduction to two generators is guaranteed in the P- and Q-polynomial case.</strong> (This does not rule out T = ⟨A, A*⟩ for other schemes.) For distance-regular graphs / P- and Q-polynomial schemes, M is generated by the single adjacency matrix A = A<sub>1</sub> and M* by A* = A*<sub>1</sub>(x), so T = ⟨A, A*⟩ <span class="badge v">[S]</span>. This is a different matter from §5's “generation by subsets of the generators.”</p>
+        </div>
+        <p class="small">Main references: Bannai–Ito, <em>Algebraic Combinatorics I</em> (1984) / Brouwer–Cohen–Neumaier, <em>Distance-Regular Graphs</em> (1989) / Herman survey (2021).</p>
+      </section>
+
+      <section id="cyclotomic">
+        <h2 class="sec"><span class="num">03</span>Cyclotomic / gcd schemes — what the literature actually treats</h2>
+        <p>This is where confusion is easiest. Several objects have similar names.</p>
+        <div class="cards">
+          <div class="card"><h4>① Finite-field cyclotomic scheme Cyc(q, N)</h4><p>Uses the cosets C<sub>i</sub> of a subgroup of F<sub>q</sub><sup>×</sup>, with relations x − y ∈ C<sub>i</sub>. This is usually what “cyclotomic scheme” means in the literature. Ishibashi–Ito–Yamada (1999) analyzed the representations of T via Jacobi sums and determined the irreducible representations completely in the class-number-2 case <span class="badge v">[S]</span>.</p></div>
+          <div class="card"><h4>② Group association scheme</h4><p>Relations by conjugacy class. If G is abelian the classes are singletons, dim T<sub>0</sub> = |G|<sup>2</sup>, i.e. T equals the full matrix algebra M<sub>|G|</sub>(ℂ) (Bannai–Munemasa, <em>Kyushu J. Math.</em> 49 (1995) 93–102) <span class="badge v">[V]</span>. This is not the fusion into gcd shells, and the conclusion does not transfer to A<sub>N</sub>.</p></div>
+          <div class="card"><h4>③ Orbit Schur ring over a cyclic group — PAG's object</h4><p>The S-ring obtained by quotienting by the orbits of a subgroup of the automorphism group. When the subgroup is all of Aut(ℤ/N) = (ℤ/N)<sup>×</sup>, the orbits are exactly the gcd shells. This is the family to which PAG's A<sub>N</sub> belongs.</p></div>
+          <div class="card"><h4>④ Wreath and direct products of one-class schemes — the same as ③</h4><p>For N = p<sup>k</sup>, v<sub>p</sub>(x − y) = j ⇔ “the first p-adic digit (from the bottom) at which x and y differ is j”, so the scheme of ③ is <strong>isomorphic</strong> to the k-fold wreath product K<sub>p</sub> ≀ ⋯ ≀ K<sub>p</sub>. For general N, by the Chinese remainder theorem, it is the direct product Π<sub>p</sub> K<sub>p</sub><sup>≀v<sub>p</sub>(N)</sup> of the prime-power factors. Hence the results of Bhattacharyya–Song–Tanaka (2010) apply directly to A<sub>N</sub> for N a prime power (the pre-revision statement “the construction differs, so the formula cannot be read as A<sub>N</sub>'s” was wrong).</p></div>
+        </div>
+
+        <h3>The closest 2026 result — Bastian–Humphries</h3>
+        <div class="callout teal">
+          <p><strong>Bastian–Humphries, “Schur rings over cyclic groups having Almost Commutative Terwilliger algebras”, arXiv:2606.19095 (submitted 17 June 2026) <span class="badge v">[V] abstract checked</span></strong></p>
+          <p>Classifies the orbit Schur rings over cyclic groups that give almost commutative Terwilliger algebras. According to the abstract, the subgroup of automorphisms must be trivial, or <strong>the full automorphism group when the order of the cyclic group is a prime power</strong>. For order 2<sup>n</sup> these are the only two; for p<sup>n</sup> with p an odd prime, a subgroup of order p<sup>n−1</sup> is also allowed. <strong>For orders that are not prime powers, only the orbit ring of the trivial subgroup</strong> is almost commutative. It also treats wedge products and determines completely when a Schur ring over a cyclic group gives an almost commutative T.</p>
+        </div>
+        <p><strong>Reading for PAG (an interpretation, not a quotation):</strong> PAG's ring is the orbit ring of the full automorphism group, so by this theorem <strong>A<sub>N</sub> is almost commutative exactly when N is a prime power</strong>; if N has two or more distinct prime factors, it is not. This gives a literature anchor for the split between prime powers and composite numbers that PAG has encountered. The repository's dictionary (<span class="mono">records/audit256/dictionary_before_part256.md</span>) records that the paper's body contains the prime-power dimension formula ((3k²+5k+2)/2 for p odd, (3k²+3k+2)/2 for p = 2) and a Thm 5.2 citing Hanaki–Kim–Maekawa (T(A × B) ≅ T(A) ⊗ T(B)) (partial check of the body; this page's survey saw only the abstract). The reading was also checked numerically: all 11 prime powers (≤ 32) are almost commutative, and all 7 non-prime-powers (6 ≤ N ≤ 30) are not (<span class="mono">records/terwilliger-check/</span>; the dictionary records 45/45 up to 128 and 34/34 for 6 ≤ N ≤ 60).</p>
+        <p><span class="badge found">Known</span> The dimension and Wedderburn decomposition of T(0) for the gcd / orbit scheme follow from known results via the isomorphism above. For prime powers, BST gives T(K<sub>p</sub><sup>≀k</sup>) ≅ M<sub>k+1</sub>(ℂ) ⊕ ℂ<sup>k(k+1)/2 − b</sup> (b = k for p = 2, 0 otherwise), so dim A<sub>p<sup>k</sup></sub> = (3k²+5k+2)/2 (p odd), (3k²+3k+2)/2 (p = 2). For general N, the tensor product theorem for direct products (below) gives dim A<sub>N</sub> = Π<sub>p</sub> dim A<sub>p<sup>k<sub>p</sub></sup></sub>. Numerics: the dimension formula matches for 11 prime powers (the dictionary records 44/44 up to 128), and the dimension is multiplicative for 6 coprime pairs (the pre-revision “not found” was wrong).</p>
+
+        <h3>What the product theorems actually prove</h3>
+        <table>
+          <thead><tr><th>Paper</th><th>Object</th><th>What it proves</th></tr></thead>
+          <tbody>
+            <tr><td>Bhattacharyya–Song–Tanaka, <em>J. Algebraic Combin.</em> 31 (2010) 455–466 <span class="badge v">[V]</span></td><td>Wreath products K<sub>n₁</sub> ≀ … ≀ K<sub>n<sub>d</sub></sub> of one-class schemes K<sub>n</sub> = H(1,n)</td><td>Triple regularity. dim T = (d+1)² + ½d(d+1) − b (b = number of K₂ factors). T ≅ M<sub>d+1</sub>(ℂ) ⊕ M₁(ℂ)<sup>⊕(½d(d+1)−b)</sup> (the pre-revision exponent d(d+1)−b was wrong; for N = 27 the computed value 22 matches the ½ version). All non-primary modules are one-dimensional. The gcd scheme on ℤ/p<sup>k</sup> belongs to this family (K<sub>p</sub><sup>≀k</sup>).</td></tr>
+            <tr><td>Song–Xu, arXiv:1008.2228 (2010) <span class="badge v">[V]</span></td><td>The same wreath products</td><td>Complete description of the algebraic structure of the Bose–Mesner and Terwilliger algebras (abstract).</td></tr>
+            <tr><td>Hanaki–Kim–Maekawa, <em>J. Algebra</em> 343 (2011) 195–200 <span class="badge v">[S]</span></td><td>Direct and wreath products of association schemes</td><td><strong>Thm 3.1: T(X × Y, (x₀, y₀)) ≅ T(X, x₀) ⊗<sub>ℂ</sub> T(Y, y₀) (no hypotheses)</strong>. Thm 4.1: central idempotents of wreath products (when Y is thin or one-class). The repository's dictionary records that the theorem statement was checked in the authors' PDF (this page's survey did not reach the body; CLAUDE.md §3 says “the body could not be retrieved” — an unresolved discrepancy in the records). The direct-product case can also be shown elementarily (below).</td></tr>
+            <tr><td>Kim, arXiv:1103.4216 (2011) <span class="badge v">[V]</span></td><td>Wreath products C<sub>p₁</sub> ≀ … ≀ C<sub>p<sub>d</sub></sub> of cyclic schemes</td><td>Triply regular; the structure of T determined via central primitive idempotents. Here “cyclic scheme” means a thin scheme whose relations form a cyclic group, not the gcd scheme.</td></tr>
+            <tr><td>Levstein–Maldonado–Penazzi (cited by Song–Xu) <span class="badge v">[S]</span></td><td>Hamming scheme H(d,q)</td><td>T(H(d,q)) is the symmetric d-th tensor power of T(H(1,q)).</td></tr>
+            <tr><td>Watanabe, arXiv:2305.19258 (2024) / Jiang, arXiv:2503.02837 (2025) <span class="badge v">[S]</span></td><td>Generalized wreath products / direct products of group-divisible schemes (over any field F)</td><td>Irreducible representations of the adjacency and Terwilliger algebras / center, semisimplicity, Jacobson radical, Wedderburn–Artin decomposition.</td></tr>
+            <tr><td>Maleki, arXiv:2310.19609 (2023) <span class="badge v">[V]</span></td><td>Group scheme of C<sub>n</sub> ⋊ C₂</td><td>dim T = ½ (n² + 3nτ + 4τ²), τ = gcd(s−1, n), and the complete Wedderburn components.</td></tr>
+          </tbody>
+        </table>
+        <p>For composite N, the Chinese remainder theorem makes ℤ/N a direct product of its prime-power parts, and the orbit scheme under the full unit group is <strong>exactly the direct product scheme of the prime-power gcd schemes</strong> (gcd(x, ab) = gcd(x, a)·gcd(x, b)). Hence HKM Thm 3.1 and BST give dim A<sub>N</sub> and the Wedderburn decomposition for general N. I have not seen a paper that states this application explicitly, but it is a consequence in a few lines <span class="badge found">Known consequence</span>.</p>
+        <p><strong>The tensor product theorem for direct product schemes</strong>, <span class="mono">T(X×Y) ≅ T(X) ⊗ T(Y)</span>, is HKM Thm 3.1 and can also be shown elementarily: the relation matrices A<sub>i</sub>⊗B<sub>j</sub> and dual idempotents E*<sub>i</sub>⊗F*<sub>j</sub> of the direct product lie in T(X)⊗T(Y); conversely A<sub>i</sub>⊗I = Σ<sub>j</sub> A<sub>i</sub>⊗B<sub>j</sub> and E*<sub>i</sub>⊗I generate T(X)⊗1, and likewise for 1⊗T(Y). The Hamming scheme's T is a symmetric tensor power because the Hamming scheme is a fusion obtained by symmetrizing the relations of the direct product; it is not a counterexample to this theorem (the pre-revision “not found” was wrong).</p>
+        <p class="small">Related: Bastian's thesis “Terwilliger Algebras for Several Finite Groups” (BYU, 2021) treats the Wedderburn decompositions of group schemes of finite abelian and dihedral groups <span class="badge v">[S]</span>.</p>
+      </section>
+
+      <section id="maps">
+        <h2 class="sec"><span class="num">04</span>Level-to-level maps and limits — the largest difference</h2>
+        <p><span class="badge notfound">Not found</span> No paper treating homomorphisms between Terwilliger algebras of different schemes <strong>as a general theory</strong> was found in the sources surveyed. The individual results on PAG's level-to-level maps, however, differ in status as follows (labels per the repository's assessments).</p>
+        <ul>
+          <li><strong>Existence side for unital maps</strong> (when gcd(N, M/N) = 1; Part 258, PAG262): follows from the tensor product theorem for direct products (HKM) <span class="badge found">Known</span></li>
+          <li><strong>Non-existence side for unital maps</strong> (when a prime p divides both N and M/N, there is no unital map that is compatible with pullback and does not mix shells): <span class="badge notfound">Novelty candidate (small)</span>, confidence low–medium. Not found in a blind question test or in the builder's text checks (Bastian–Humphries, Watanabe, Kim). Not to be used externally as novel until MathSciNet/zbMATH and the HKM text have been checked (CLAUDE.md §3).</li>
+          <li><strong>Non-unital corner maps for all N | M</strong> (Part 260, PAG264): the E-side is the operator version of corners by idempotents of quotient schemes <span class="badge found">Known</span>; the rest is a [small re-derivation]. Nearby structures: corner algebras of wreath products (non-unital subalgebras) and non-unital homomorphisms in another setting (generalized Terwilliger algebras of hypercubes, arXiv:2301.08366) (per the repository's records).</li>
+          <li><strong>Directed system and limit over the divisibility order</strong> (Part 261, PAG265): [small re-derivation]. The local-unit statement is general nonsense for direct limits of unital stages with multiplicative transition maps; the only content carried is the absence of a left unit.</li>
+        </ul>
+        <p>So, of PAG's “unital vs corner map” dichotomy, only the non-existence side can be said to be not known — and that too is a judgement within the range checked.</p>
+        <h3>Adjacent literature that is not the same thing</h3>
+        <div class="cards">
+          <div class="card"><h4>Categories of schemes and functoriality — up to Bose–Mesner</h4><p>In Hanaki's category of association schemes AS / AS₀ (pointed), monomorphisms and epimorphisms are characterized; kernels are subschemes and cokernels quotient schemes <span class="badge v">[S]</span>. French, “Functors from Association Schemes”, arXiv:1208.1173, gives a broad subcategory of admissible morphisms on which “the standard construction sending a scheme to an algebra (the adjacency algebra)” is functorial. In Kuribayashi–Matsuo's summary, French's Corollary 6.6 says that “scheme ↦ Bose–Mesner algebra” is a functor <span class="badge v">[S]</span>. No extension to T(x) was found — a natural sticking point, since T depends on a base point and dual idempotents that morphisms of schemes need not preserve.</p></div>
+          <div class="card"><h4>Product theorems are not level-to-level maps</h4><p>The direct/wreath product results of §3 describe the T of a single product scheme in terms of the factors' data; they are not homomorphisms T(smaller level) → T(larger level) and involve no pullback on ℂ<sup>X</sup>.</p></div>
+          <div class="card"><h4>Multi-base-point variants also stay inside one scheme</h4><p>Suzuki's T with respect to a vertex set, and Marashdeh's two-base-point version T(a,b) = ⟨T(a), T(b)⟩ (arXiv:2609.00462, prime-order circulant/Paley graphs) <span class="badge v">[S]</span>, add generators inside a single M<sub>p</sub>(ℂ); they are not maps between different schemes.</p></div>
+        </div>
+      </section>
+
+      <section id="generation">
+        <h2 class="sec"><span class="num">05</span>Generation classification — when do subsets of the generators generate everything?</h2>
+        <p><span class="badge notfound">Not found</span> For the cyclotomic / gcd scheme on ℤ/N, <strong>no paper classifying which subsets of {E<sub>t</sub>} ∪ {E*<sub>t</sub>} generate all of T(0) was found in the sources surveyed.</strong> The status is split, however: the prime-power case and ⟨M*, E<sub>N</sub>⟩ = A<sub>N</sub> ⇔ N ∈ {1, 4} ∪ primes follow in a few lines from the structure theorem and the dimension formula <span class="badge found">Known consequence</span>. The only remaining novelty candidates are, for <strong>composite N</strong>, item 66 (the condition for the sum of two dual algebras) and items 67–69 (the complete classification): assessed as “at the level of a small note,” confidence medium, MathSciNet/zbMATH checks not done (candidate 1 of CLAUDE.md §3).</p>
+        <p>The literature has only two generation themes, of a different character:</p>
+        <ul>
+          <li><strong>Coarse reduction to two generators (§2):</strong> in P- and Q-polynomial schemes every A<sub>i</sub> is a polynomial in A<sub>1</sub> and every A*<sub>i</sub> a polynomial in A*<sub>1</sub>, so the generating set collapses to ⟨A, A*⟩. This is polynomial generation inside M and M*, not a classification of subsets of idempotents. Moreover the gcd scheme is in general not P- and Q-polynomial in that sense, so this does not answer PAG's question.</li>
+          <li><strong>Generation by triple products:</strong> in connection with triple regularity, T is generated by the span of triple products E*<sub>i</sub> A<sub>j</sub> E*<sub>k</sub> (T₀ of Bannai–Munemasa / Bhattacharyya–Song–Tanaka) <span class="badge v">[S]</span>. This too is not a classification of generator subsets.</li>
+        </ul>
+      </section>
+
+      <section id="connections">
+        <h2 class="sec"><span class="num">06</span>Outward connections — item by item</h2>
+        <p>Results of checking, in five items, whether PAG's monograph layer and character-theoretic content connect to the Terwilliger literature.</p>
+        <table>
+          <thead><tr><th>Topic</th><th>Verdict</th><th>Content</th></tr></thead>
+          <tbody>
+            <tr><td>Root numbers of Dirichlet characters / phases of Gauss sums as algebraic structure</td><td><span class="badge notfound">Not found</span></td><td>A weak connection exists. The eigenvalues (first eigenmatrix) of finite-field cyclotomic schemes are Gauss periods, and the T-module structure is governed by <strong>Jacobi sums</strong> (Ishibashi–Ito–Yamada 1999). Shiratani–Yamada (1997) link the rationality of Jacobi sums to the reducibility of T-submodules for class-number-2 cyclotomic schemes <span class="badge v">[S]</span>. Since Jacobi sums are quotients/products of Gauss sums, arguments of Gauss sums enter the T-module theory of F<sub>q</sub>-cyclotomic schemes. But no source was found treating the root number ε(χ) of a Dirichlet character / Tate's ε-factors as structure constants, central idempotents or invariants of a Terwilliger algebra, and nothing similar for characters mod N. On the PAG side, too, the root number is put in as a phase by axiom A1, and A1 is not derived (it remains a postulate).</td></tr>
+            <tr><td>Tate theory and ε-factors</td><td><span class="badge notfound">Not found</span></td><td>Within the range surveyed, no Terwilliger-algebra paper mentioning Tate's thesis, local/global ε-factors, or the functional equation of L(s,χ) was found.</td></tr>
+            <tr><td>Bost–Connes system / C*-algebra of ℚ/ℤ</td><td><span class="badge notfound">Not found</span></td><td>The Bost–Connes system itself is well known: C*(ℚ/ℤ) ⋊ ℕ<sup>×</sup> generated by e(r) (r ∈ ℚ/ℤ) and isometries μ<sub>n</sub>, partition function ζ(β), with the idele class group modulo its connected component acting as symmetries (Shirbisheh, arXiv:0808.1767) <span class="badge v">[S]</span>. But no source identifying, embedding, or mapping a Terwilliger algebra to the Bost–Connes algebra was found, despite the superficial resemblance of being built from ℚ/ℤ, ℤ/N and roots of unity. On the PAG side, that the corner maps agree with Bost–Connes's ρ on the group-ring side was checked only numerically, outside Lean (Part 260).</td></tr>
+            <tr><td>Ideles / adeles / idele class group</td><td><span class="badge notfound">Not found</span></td><td>Not found on the Terwilliger side. The idele class group above appears within Bost–Connes theory, with no bridge to T(x). Terwilliger algebras in the literature are finite-dimensional matrix algebras over ℂ (over fields/rings in the modular version); no T built by a profinite/adelic construction such as Ẑ = lim← ℤ/N was found (tied to the absence of limits in §4).</td></tr>
+            <tr><td>Boundary conditions of self-adjoint extensions of differential operators (D = −i d/du, boundary unitary)</td><td><span class="badge notfound">Not found</span></td><td>In the Terwilliger literature, “self-adjoint” only means that T is closed under conjugate transpose and semisimple <span class="badge v">[V]</span>. There is a connection to difference operators — the second-order Askey–Wilson q-difference operator realizes a tridiagonal pair (Terwilliger, arXiv:math/0307016) <span class="badge v">[S]</span> — a bispectral/difference-operator connection, but not about −i d/du on a cylinder, deficiency indices, or parametrizing extensions by boundary unitaries. No source linking such extension theory to T was found.</td></tr>
+          </tbody>
+        </table>
+        <div class="callout red">
+          <p><strong>Implication:</strong> PAG's monograph layer — D = −i∂<sub>u</sub> on the idele-class cylinder Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub>, the boundary unitary U of self-adjoint extensions, and the gluing to Tate's γ-factors by axiom A1 — cannot be described as a Terwilliger algebra, because the theory of T has no corresponding problem setting. Within PAG, the overlap with Terwilliger theory stops at the layer of the finite-level algebras A<sub>N</sub>; above that, the constructions are PAG's own.</p>
+        </div>
+      </section>
+
+      <section id="breadth">
+        <h2 class="sec"><span class="num">07</span>The other direction — what the general theory has and a ℤ/N-only theory lacks</h2>
+        <p>The difference is not one-way. The general Terwilliger theory has a breadth that a theory of schemes on ℤ/N alone cannot reach.</p>
+        <ul>
+          <li><strong>Arbitrary association schemes:</strong> schemes from designs, finite geometries, permutation groups, Latin squares, regular polyhedra, and more. Example: the dodecahedron's T ≅ M₆(ℂ) ⊕ M₆(ℂ) ⊕ M₂(ℂ) (Levstein–Penazzi; also a counterexample to a conjecture of Terwilliger) <span class="badge v">[S]</span>. Any finite set X and any base point x are allowed; when the scheme is not vertex-transitive, T(x) genuinely depends on x — a phenomenon invisible in a highly symmetric setting like base point 0 in ℤ/N.</li>
+          <li><strong>Non-commutative schemes and arbitrary coefficients:</strong> Hanaki defined T for arbitrary (not necessarily commutative) schemes over any commutative unital ring. In the modular version (“Modular Terwilliger algebras”, arXiv:2004.09692 / <em>Graphs Combin.</em> 37 (2021)), T can fail to be semisimple in positive characteristic (when the characteristic divides a valency); for the Johnson scheme J(n,2), dim T is 16 or 15 depending on the characteristic <span class="badge v">[S]</span>.</li>
+          <li><strong>Families of distance-regular graphs with unbounded diameter:</strong> Hamming schemes H(d,q) (T a symmetric tensor power; for the hypercube Q<sub>D</sub>, T is a homomorphic image of U(sl₂(ℂ)), Go, <em>Eur. J. Combin.</em> 23 (2002)), Johnson schemes J(v,d), Grassmann, dual polar spaces, Doob schemes (direct products of Shrikhande graphs and K₄; Tanabe, <em>J. Algebraic Combin.</em> 6 (1997) 173–195 <span class="badge v">[V]</span>), Odd graphs, distance-biregular graphs, generalized quadrangles, trees. None of these are schemes on ℤ/N.</li>
+          <li><strong>Group schemes of non-abelian groups:</strong> conjugacy-class schemes of arbitrary finite groups G (Bannai–Munemasa's dimension bounds; Balmaceda–Oura for S₅ and A₅; Maleki for C<sub>n</sub> ⋊ C₂; Bastian–Humphries's Camina/Frobenius classification). The base-point theory at the identity has no counterpart on ℤ/N <span class="badge v">[V/S]</span>.</li>
+          <li><strong>Abstract module theory beyond schemes:</strong> the whole representation-theoretic edifice of Leonard pairs/systems, tridiagonal pairs and tridiagonal algebras, (q-)Onsager algebras, U<sub>q</sub>(sl₂) and affine quantum groups, and Askey–Wilson polynomials (§2). The ℤ/N family sees only a thin slice of it.</li>
+          <li><strong>Applications outside pure structure:</strong> Delsarte's LP/SDP bounds for codes and designs, Assmus–Mattson-type theorems (Tanaka 2009), spin models and type-II matrices, quantum walks and entanglement on Hamming/Johnson graphs (Vinet et al.) <span class="badge v">[S]</span>.</li>
+        </ul>
+        <div class="callout teal">
+          <p><strong>Balance:</strong> PAG's single-level structure (prime powers, tensor products) is a special case of the general theory. What was not found as a special case within the general theory is the non-existence side for unital level-to-level maps (§4), the generation classification for composite N (§5), and the themes of the monograph layer (§6). The first two are novelty candidates (low–medium confidence, checks incomplete); the last means Terwilliger theory has no problem setting for them. The two are not related by inclusion; they are <strong>extensions in different directions sharing one algebra A<sub>N</sub> = T(0)</strong>.</p>
+        </div>
+      </section>
+
+      <section id="dictionary">
+        <h2 class="sec"><span class="num">08</span>Check against the dictionary — the attributions stand</h2>
+        <p>The pre-revision version said in this section that “the [known] attributions in the dictionary for Parts 225–226 (prime-power Wedderburn/dimension) and Part 228 (tensor decomposition) may be less direct than written.” <strong>That warning is withdrawn</strong>, for these reasons.</p>
+        <div class="callout teal">
+          <p><strong>Parts 225–226:</strong> the gcd scheme on ℤ/p<sup>k</sup> is isomorphic to K<sub>p</sub><sup>≀k</sup>, so these are exactly the results of BST (2010). The dimension formula also agrees with that of Bastian–Humphries (2026) (dictionary records: 44/44 up to 128; this page's recomputation also matches for 11 prime powers).</p>
+          <p><strong>Part 228:</strong> for coprime a, b the scheme on ℤ/ab is a direct product scheme, and T(X×Y) ≅ T(X)⊗T(Y) is HKM Thm 3.1 (the dictionary records checking the theorem statement in the body), and can also be shown elementarily. Numerics: dim A<sub>ab</sub> = dim A<sub>a</sub>·dim A<sub>b</sub> for 6 coprime pairs.</p>
+          <p>The dictionary's [known] labels therefore stand as they are.</p>
+        </div>
+        <h3>Unchecked items (left open)</h3>
+        <ul>
+          <li>The HKM body: the dictionary says “Thm 3.1 checked in the authors' PDF,” while CLAUDE.md §3 (candidate 3) says “the body could not be retrieved from the builder's environment.” Which session checked it needs to be recorded consistently. Since the tensor product theorem itself is backed by an elementary argument, the conclusion on attribution does not change.</li>
+          <li>The body of Bastian–Humphries, arXiv:2606.19095: the presence of the dimension formula and Thm 5.2 rests on the dictionary's records (partial check of the body). This page's survey saw only the abstract, and arXiv could not be opened directly from this environment.</li>
+          <li>Ishibashi–Ito–Yamada (1999) was checked via an Oberwolfach report and summaries in citing papers; the body was not read (the bibliographic data itself was confirmed).</li>
+          <li>The possibility cannot be ruled out that a new 2025–2026 preprint not indexed under search terms like “homomorphism / inductive limit / pullback / corner + Terwilliger” treats level-to-level maps. Every “not found” is limited to the sources surveyed.</li>
+        </ul>
+      </section>
+
+      <section id="table">
+        <h2 class="sec"><span class="num">09</span>Comparison table</h2>
+        <table>
+          <thead><tr><th>Aspect</th><th>Terwilliger algebra (general theory)</th><th>Ardel projective geometry (PAG)</th></tr></thead>
+          <tbody>
+            <tr><td>Basic object</td><td>Any association scheme on any finite set X, with a base point x</td><td>Restricted to the gcd-shell scheme on ℤ/N (orbit S-ring of the full unit group) with base point 0</td></tr>
+            <tr><td>Definition of the algebra</td><td>T(x) generated by the Bose–Mesner algebra and the dual idempotents</td><td>A<sub>N</sub> generated by E<sub>t</sub> and D<sub>t</sub> = E*<sub>t</sub> — <strong>definitions coincide (A<sub>N</sub> = T(0))</strong></td></tr>
+            <tr><td>Base-point dependence</td><td>For non-vertex-transitive schemes T(x) may depend on x; itself a research topic</td><td>Base point fixed at 0; the dependence question does not arise</td></tr>
+            <tr><td>Coefficients</td><td>ℂ is standard, but since Hanaki arbitrary rings and positive characteristic (modular) too; may fail to be semisimple</td><td>Finite-dimensional algebras over ℂ only</td></tr>
+            <tr><td>State of structure theory</td><td>Wedderburn decompositions and dimensions accumulated scheme by scheme. The gcd/orbit scheme is a direct product of K<sub>p</sub><sup>≀k</sup>, so its dimension and decomposition follow from BST and HKM Thm 3.1</td><td>Structure results for prime powers and composites held in Lean. The content is known (BST, HKM, Bastian–Humphries); the Lean proofs are formalization work (§8)</td></tr>
+            <tr><td>Almost commutativity</td><td>Tanaka's classification; Bastian–Humphries (2026) classification of orbit rings</td><td>Orbit ring of the full Aut, so A<sub>N</sub> is almost commutative exactly when N is a prime power (§3 reading)</td></tr>
+            <tr><td>Maps between levels</td><td>General theory <span class="badge notfound">not found</span>. Functoriality only up to the Bose–Mesner algebra (Hanaki's category, French's admissible morphisms). Nearby structures exist, such as corner algebras of wreath products</td><td>Unital maps: existence side known, non-existence side a novelty candidate (low–medium, checks incomplete). Corner maps: E-side known, rest a small re-derivation. Directed system and limit: small re-derivation</td></tr>
+            <tr><td>Generation classification</td><td>Reduction to ⟨A, A*⟩ for P- and Q-polynomial schemes; generation by triple products for triply regular schemes. Classification of idempotent subsets <span class="badge notfound">not found</span></td><td>Conditions under which subsets of generators generate everything, classified without exceptions. Prime-power case a known consequence; only items 66–69 for composite N are novelty candidates (medium, checks incomplete)</td></tr>
+            <tr><td>Relation to character theory</td><td>Eigenvalues of finite-field cyclotomic schemes are Gauss periods; module structure governed by Jacobi sums (IIY 1999)</td><td>Through the Hartley/cas kernel transform, Gauss sums of Dirichlet characters and the root number 𝔀(χ) = τ(χ)/(i<sup>a</sup>√N) (<span class="mono">rootNum</span>; a different symbol from the inversion W) appear as coefficients (Part 262 formalized writing the equator coefficients in terms of 𝔀; the phase itself is put in by A1, and the identification with root numbers is outside Lean). Isomorphic structure in the literature <span class="badge notfound">not found</span></td></tr>
+            <tr><td>Infinite / global layer</td><td>None; stays within finite-dimensional matrix algebras</td><td>Monograph layer: C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub>, D = −i∂<sub>u</sub>, boundary unitary U, axiom A1 (gluing by Tate's γ-factors). The definitional layer of a geometry whose “points” are the primes and the infinite place</td></tr>
+            <tr><td>Applications</td><td>Delsarte bounds, codes and designs, spin models, quantum walks</td><td>A component of the founding document of a new geometry; coding-theory applications are out of scope</td></tr>
+          </tbody>
+        </table>
+        <div class="tagrow">
+          <span class="tag">Shared: A<sub>N</sub> = T(0) and single-level structure (known)</span><span class="tag">Novelty candidates (checks incomplete): non-existence side for unital maps / generation classification for composite N</span><span class="tag">Outside Terwilliger theory: monograph layer (Tate's γ-factors, self-adjoint extensions)</span><span class="tag">Only in the literature: arbitrary schemes / Leonard pairs / modular / Delsarte applications</span>
+        </div>
+      </section>
+
+      <section id="sources">
+        <h2 class="sec"><span class="num">10</span>Sources</h2>
+        <p class="small">Verification: [V] = abstract or body checked on the publisher/arXiv page in the 2026-11-20 survey. [S] = checked via search-index excerpts, bibliographies, or summaries in citing papers. Every “not found” reports absence within the sources surveyed, not a proof of non-existence.</p>
+        <ol class="sources">
+          <li>Terwilliger, P., “The subconstituent algebra of an association scheme” I–III, <em>J. Algebraic Combin.</em> 1 (1992) 363–388; 2 (1993) 73–103, 177–210. <a href="https://mat.ub.edu/EMIS/journals/JACO/Volume1_4/t21566811q423213.fulltext.pdf">Full-text PDF</a> [V]</li>
+          <li>Maleki, R., “On the Terwilliger algebra of the group association scheme of C<sub>n</sub> ⋊ C<sub>2</sub>”, arXiv:2310.19609 (2023). <a href="https://arxiv.org/abs/2310.19609">arXiv</a> [V]</li>
+          <li>Bannai, E. &amp; Munemasa, A., “The Terwilliger algebras of group association schemes”, <em>Kyushu J. Math.</em> 49 (1995) 93–102. <a href="https://www.math.is.tohoku.ac.jp/~munemasa/documents/T-alg-gp.pdf">PDF</a> [V]</li>
+          <li>Bhattacharyya, S., Song, S.-Y. &amp; Tanaka, H., “Terwilliger algebras of wreath products of one-class association schemes”, <em>J. Algebraic Combin.</em> 31 (2010) 455–466. <a href="https://mat.ub.edu/EMIS/journals/JACO/Volume31_3/q6uk7j772331187r.fulltext.pdf">Full-text PDF</a> [V]</li>
+          <li>Kim, J., “On wreath products of cyclic schemes”, arXiv:1103.4216 (2011). <a href="https://arxiv.org/abs/1103.4216">arXiv</a> [V]</li>
+          <li>Bastian, N. L. &amp; Humphries, S. P., “Almost Commutative Terwilliger Algebras of Group Association Schemes I”, arXiv:2409.09167 (2024). <a href="https://arxiv.org/abs/2409.09167">arXiv</a> [V]</li>
+          <li>Bastian, N. L. &amp; Humphries, S. P., “Schur rings over cyclic groups having Almost Commutative Terwilliger algebras”, arXiv:2606.19095 (2026). <a href="https://arxiv.org/abs/2606.19095v1">arXiv</a> [V]</li>
+          <li>Terwilliger, P., “Leonard pairs and the q-Racah polynomials”, arXiv:math/0306301 (2003). <a href="https://arxiv.org/abs/math/0306301">arXiv</a> [S/V]</li>
+          <li>Ishibashi, H., Ito, T. &amp; Yamada, M., “Terwilliger algebras of cyclotomic schemes and Jacobi sums”, <em>Eur. J. Combin.</em> 20 (1999) 397–410. Bibliographic data confirmed from the references of arXiv:2609.00462; content via an Oberwolfach report [S]</li>
+          <li>Hanaki, A., Kim, J. &amp; Maekawa, K., “Terwilliger algebras of direct and wreath products of association schemes”, <em>J. Algebra</em> 343 (2011) 195–200. Via the authors' publication page and a KPP seminar abstract [S]</li>
+          <li>Hanaki, A., “A category of association schemes” / French, C., “Functors from Association Schemes”, arXiv:1208.1173. <a href="https://arxiv.org/pdf/1208.1173">arXiv PDF</a> [S]</li>
+          <li>Herman, A., “A survey of semisimple algebras in algebraic combinatorics”, <em>Indian J. Pure Appl. Math.</em> 52 (2021) 631–642 [S]</li>
+          <li>Hanaki, A., “Modular Terwilliger algebras of association schemes”, arXiv:2004.09692 (2020). <a href="https://arxiv.org/pdf/2004.09692">arXiv PDF</a> [S]</li>
+          <li>Song, S.-Y. &amp; Xu, B., “On wreath products of one-class association schemes”, arXiv:1008.2228 (2010). <a href="https://arxiv.org/pdf/1008.2228">arXiv PDF</a> [S/V]</li>
+          <li>Shirbisheh, V., exposition of the Bost–Connes system, arXiv:0808.1767. <a href="https://arxiv.org/pdf/0808.1767">arXiv PDF</a> [S] (for describing Bost–Connes itself; not a source for any connection to Terwilliger)</li>
+          <li>Marashdeh, M., “Two-basepoint Terwilliger algebras and the quantum symmetry of prime-order circulants”, arXiv:2609.00462 (2026) [S]</li>
+          <li>arXiv:2301.08366 (non-unital homomorphisms of generalized Terwilliger algebras of hypercubes) — added in revision, per the repository's records (<span class="mono">notes/pag2_candidate3_literature_builder.md</span>). Title and authors unconfirmed.</li>
+          <li>The repository's dictionary <span class="mono">records/audit256/dictionary_before_part256.md</span> (identification §0, literature table, numerics (1c)(5b)(6d)(6e)) and CLAUDE.md §3 — added in revision.</li>
+          <li>Numerical recomputation <span class="mono">records/terwilliger-check/tw_check.py</span> (output in <span class="mono">tw_check_output.txt</span> in the same folder) — added in revision: dim A<sub>N</sub>, center dimension and almost commutativity for 11 prime powers and 7 composites, and multiplicativity of dimension for 6 coprime pairs.</li>
+        </ol>
+        <details>
+          <summary>Method and limits of this survey</summary>
+          <div>
+            <p>This page is based on a literature survey carried out on 20 November 2026 (including checks of source text on publisher/arXiv pages). Items marked “not found” mean that targeted searches (including combinations of homomorphism, inductive limit, pullback, corner, etc. with Terwilliger) turned up no relevant paper; they are not claims of mathematical non-existence. The bodies of Hanaki–Kim–Maekawa (2011) and Ishibashi–Ito–Yamada (1999) were not read in this survey, and statements about them are at summary level [S] (for HKM Thm 3.1, see the repository dictionary's record). For Bastian–Humphries (2026) the abstract was checked, and implications for PAG are written as a “reading (interpretation),” kept separate from quotation.</p>
+          </div>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <section id="revision" style="max-width:1120px;margin:0 auto">
+    <h2 class="sec"><span class="num">R</span>Revision record (2026-11-20)</h2>
+    <p class="small">Corrections from a review. <strong>None has been independently checked.</strong> The Japanese edition carries the same corrections.</p>
+    <ul>
+      <li><strong>Attribution errors:</strong> the prime-power gcd scheme is isomorphic to K<sub>p</sub><sup>≀k</sup>, so BST applies directly (previously “the construction differs, so it cannot be read”). The tensor product theorem for direct product schemes is HKM Thm 3.1 and can be shown elementarily (previously “not found”). §8's “the dictionary's [known] labels should be reviewed” is withdrawn.</li>
+      <li><strong>How novelty is written:</strong> the “not found” / “only on the PAG side” wording in §4, §5, the comparison table and the tag row was rewritten with [known / re-derivation / novelty candidate] labels and confidence, matching the repository's assessments. The only novelty candidates are the non-existence side for unital maps and the generation classification for composite N, both with checks incomplete.</li>
+      <li><strong>Formula errors:</strong> §1 had the descriptions of E<sub>t</sub> and D<sub>t</sub> (= E*<sub>t</sub>) swapped; fixed. The exponent in BST's Wedderburn decomposition corrected to ½d(d+1) − b.</li>
+      <li><strong>Overstatements and notation:</strong> §2's “only in the P- and Q-polynomial case” changed to “guaranteed in.” The root-number symbol 𝔀(χ) now carries its value (τ(χ)/(i<sup>a</sup>√N), <span class="mono">rootNum</span>), the note that it differs from the inversion W, and that the phase is put in by A1 (during revision it was once replaced by W(χ) as supposed mojibake; restored, since 𝔀 is the project's notation used in Part 262). Agreement with Bost–Connes is stated as numerical only on the PAG side (outside Lean). The name “cyclotomic S-ring” for the orbit Schur ring was added.</li>
+      <li><strong>Numerics:</strong> the Bastian–Humphries reading (almost commutative ⇔ N a prime power) and the dimension formula were rechecked with an independently written script (<span class="mono">records/terwilliger-check/</span>).</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Ardel Projective Geometry and the Terwilliger Algebra — a comparison based on a literature survey (20 November 2026). Taking the identification A<sub>N</sub> = T(0) and the single-level structure (known) as shared ground, it sorts the level-to-level maps, the directed limit and the generation classification into [known / re-derivation / novelty candidate], places the monograph layer outside Terwilliger theory, and treats arbitrary schemes and Leonard-pair theory as the breadth of the Terwilliger side. Revised 2026-11-20 (see the revision record). English edition of <span class="mono">docs/pag-vs-terwilliger.html</span>.</p>
+  </footer>
+</div>
+</body>
+</html>

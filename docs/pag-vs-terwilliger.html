@@ -101,7 +101,7 @@ footer{padding:28px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
     <h1>アーデル射影幾何学と<br>Terwilliger 代数の相違</h1>
     <p class="lead">結論は二層です。有限レベルでは、アーデル射影幾何学（PAG）の代数 <strong>A<sub>N</sub> は Terwilliger 代数 T(0) そのもの</strong>です。定義が一致し、<strong>単一レベルの構造（素数冪の Wedderburn 分解と次元、互いに素な法でのテンソル積分解）は既知</strong>です（BST 2010、Hanaki–Kim–Maekawa 2011、Bastian–Humphries 2026）。PAG がその上に積むもののうち、レベル間写像は存在の側と角の写像の E 側が既知、帰納系は［再導出（小さい）］で、<strong>新規候補として残るのは、単位的な写像の不存在の側と、合成数 N の生成の分類だけ</strong>です（どちらも確信度は低〜中で、MathSciNet・zbMATH での照合は未実施）。単行書層（Tate の γ 因子、自己共役拡張）は、Terwilliger 理論に対応する問題設定がありません。逆に、一般の Terwilliger 理論が扱う任意のスキームや Leonard 対の世界は、ℤ/N に限る PAG の外に広がっています。</p>
     <div class="meta">
-      <span>調査日：2026年11月20日</span><span>検証区分：[V] 原文確認 ／ [S] 要約レベル</span><span>「見つからず」は「調査した出典の範囲で見つからず」の意味</span><span>改訂：2026-11-20 精査の修正を反映（<a href="#revision">改訂記録</a>。修正は独立照合を未実施）</span>
+      <span>調査日：2026年11月20日</span><span>検証区分：[V] 原文確認 ／ [S] 要約レベル</span><span>「見つからず」は「調査した出典の範囲で見つからず」の意味</span><span>改訂：2026-11-20 精査の修正を反映（<a href="#revision">改訂記録</a>。修正は独立照合を未実施）</span><span>英語版：<span class="mono">docs/pag-vs-terwilliger.en.html</span></span>
     </div>
     <div class="verdict">
       <h2>まず押さえるべき3点</h2>
@@ -293,7 +293,7 @@ footer{padding:28px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
             <tr><td>ほぼ可換性</td><td>Tanaka の分類、Bastian–Humphries (2026) の軌道環の分類</td><td>全体 Aut の軌道環なので、A<sub>N</sub> がほぼ可換なのは N が素数冪のときに限る（§3 の読み替え）</td></tr>
             <tr><td>異なるレベル間の写像</td><td>一般理論は <span class="badge notfound">見つからず</span>。関手性は Bose–Mesner 代数まで（Hanaki の圏、French の許容射）。輪積の角の代数など近い構造はある</td><td>単位的な写像：存在の側は既知、不存在の側は新規候補（確信度 低〜中、照合未完）。角の写像：E 側は既知、ほかは再導出（小さい）。帰納系と極限：再導出（小さい）</td></tr>
             <tr><td>生成の分類</td><td>P・Q-多項式での ⟨A, A*⟩ への帰着、三重正則での三重積による生成。冪等元の部分集合の分類は <span class="badge notfound">見つからず</span></td><td>生成元の部分集合が全体を生成する条件を、例外なしに分類。素数冪の場合は既知の帰結、合成数 N の項目 66〜69 だけが新規候補（確信度 中、照合未完）</td></tr>
-            <tr><td>指標論との関わり</td><td>有限体円分の固有値は Gauss 周期、加群構造は Jacobi 和（IIY 1999）</td><td>Hartley／cas 核の変換を通じ、Dirichlet 指標の Gauss 和と根数 W(χ) が係数として現れる（A1 で入れた位相。ルート数との同定は Lean の外）。文献に同型の構造は <span class="badge notfound">見つからず</span></td></tr>
+            <tr><td>指標論との関わり</td><td>有限体円分の固有値は Gauss 周期、加群構造は Jacobi 和（IIY 1999）</td><td>Hartley／cas 核の変換を通じ、Dirichlet 指標の Gauss 和と根数 𝔀(χ) = τ(χ)/(i<sup>a</sup>√N)（<span class="mono">rootNum</span>。反転の W とは別の記号）が係数として現れる（Part 262 で赤道の係数を 𝔀 で書く形を Lean 化。位相そのものは A1 で入れたもの、ルート数との同定は Lean の外）。文献に同型の構造は <span class="badge notfound">見つからず</span></td></tr>
             <tr><td>無限・大域の層</td><td>なし。有限次元行列代数の理論にとどまる</td><td>単行書層：C<sub>ℚ</sub> ≅ Ẑ<sup>×</sup> × ℝ<sub>&gt;0</sub>、D = −i∂<sub>u</sub>、境界ユニタリ U、公理 A1（Tate の γ 因子による接着）。素数と無限素点を「点」とする幾何の定義層</td></tr>
             <tr><td>応用</td><td>Delsarte bound、符号・デザイン、スピン模型、量子ウォーク</td><td>新しい幾何の設立文書の構成要素。符号理論への応用は射程にない</td></tr>
           </tbody>
@@ -330,7 +330,7 @@ footer{padding:28px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
         <details>
           <summary>この調査の方法と限界</summary>
           <div>
-            <p>本ページは2026年11月20日に実施した文献調査（出版社／arXiv ページの原文確認を含む）に基づきます。「見つからず」と記した項目は、対象を絞った検索（準同型、帰納極限、引き戻し、corner などと Terwilliger の組み合わせを含む）で該当論文が現れなかったという意味で、数学的な不存在の主張ではありません。Hanaki–Kim–Maekawa (2011) と Ishibashi–Ito–Yamada (1999) の本文は未精読であり、それらに関する記述は要約レベル [S] です。Bastian–Humphries (2026) については要旨を確認し、PAG への含意は「読み替え（解釈）」として引用と区別して記しました。</p>
+            <p>本ページは2026年11月20日に実施した文献調査（出版社／arXiv ページの原文確認を含む）に基づきます。「見つからず」と記した項目は、対象を絞った検索（準同型、帰納極限、引き戻し、corner などと Terwilliger の組み合わせを含む）で該当論文が現れなかったという意味で、数学的な不存在の主張ではありません。Hanaki–Kim–Maekawa (2011) と Ishibashi–Ito–Yamada (1999) の本文は未精読であり、それらに関する記述は要約レベル [S] です（HKM Thm 3.1 についてはリポジトリの辞書の記録を参照）。Bastian–Humphries (2026) については要旨を確認し、PAG への含意は「読み替え（解釈）」として引用と区別して記しました。</p>
           </div>
         </details>
       </section>
@@ -344,7 +344,7 @@ footer{padding:28px 0 0;color:var(--muted);font-size:13px;line-height:1.8}
       <li><strong>帰属の誤り：</strong>素数冪の gcd スキームは K<sub>p</sub><sup>≀k</sup> と同型で、BST がそのまま当てはまる（以前は「構成が異なるので読めない」）。直積スキームのテンソル積定理は HKM Thm 3.1 にあり初等的にも示せる（以前は「見つからず」）。§8 の「辞書の［既知］を見直すべき」を撤回した。</li>
       <li><strong>新規性の書き方：</strong>§4・§5・対照表・タグ行の「見つからず」「PAG 側にのみある」を、リポジトリの判定に合わせて［既知／再導出／新規候補］と確信度で書き分けた。新規候補は単位的な写像の不存在の側と合成数 N の生成の分類だけで、どちらも照合未完。</li>
       <li><strong>式の誤り：</strong>§1 で E<sub>t</sub> と D<sub>t</sub>（= E*<sub>t</sub>）の説明が入れ替わっていたのを直した。BST の Wedderburn 分解の指数を ½d(d+1) − b に直した。</li>
-      <li><strong>言い過ぎ・表記：</strong>§2 の「P・Q 多項式の場合だけ」を「保証されるのは」に直した。根数の文字化け（𝔀）を W(χ) に直し、反転の W と別の記号であることと、A1 で入れた位相であることを添えた。Bost–Connes との一致は PAG 側でも数値だけ（Lean の外）と明記した。軌道 Schur 環の呼び名（cyclotomic S-ring）を添えた。</li>
+      <li><strong>言い過ぎ・表記：</strong>§2 の「P・Q 多項式の場合だけ」を「保証されるのは」に直した。根数の記号 𝔀(χ) に、値（τ(χ)/(i<sup>a</sup>√N)、<span class="mono">rootNum</span>）と、反転の W と別の記号であること、A1 で入れた位相であることを添えた（改訂の途中で一度「文字化け」として W(χ) に置き換えたが、𝔀 は Part 262 で使っているプロジェクトの記号なので戻した）。Bost–Connes との一致は PAG 側でも数値だけ（Lean の外）と明記した。軌道 Schur 環の呼び名（cyclotomic S-ring）を添えた。</li>
       <li><strong>数値：</strong>Bastian–Humphries の読み替え（ほぼ可換 ⇔ N が素数冪）と次元式を、独立に書いたスクリプトで再計算して確かめた（<span class="mono">records/terwilliger-check/</span>）。</li>
     </ul>
   </section>
