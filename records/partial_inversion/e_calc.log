@@ -1,0 +1,21 @@
+5*7: N=35 |P_N|=15 conj-classes per prime=[2, 3] parities present=[2, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=2, SG1_over_LocG1=0, Par_over_Loc=1, ParG1_over_LocG1=0, SG2_over_Loc=2, SG1G2_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=2, SG1_over_LocG1=2, Par_over_Loc=1, ParG1_over_LocG1=1, SG2_over_Loc=2, SG1G2_over_LocG1=2
+5*13: N=65 |P_N|=33 conj-classes per prime=[2, 6] parities present=[2, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=5, SG1_over_LocG1=0, Par_over_Loc=1, ParG1_over_LocG1=0, SG2_over_Loc=2, SG1G2_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=5, SG1_over_LocG1=5, Par_over_Loc=1, ParG1_over_LocG1=1, SG2_over_Loc=2, SG1G2_over_LocG1=2
+3*5: N=15 |P_N|=3 conj-classes per prime=[1, 2] parities present=[1, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=0, SG1_over_LocG1=0, Par_over_Loc=0, ParG1_over_LocG1=0, SG2_over_Loc=0, SG1G2_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=0, SG1_over_LocG1=0, Par_over_Loc=0, ParG1_over_LocG1=0, SG2_over_Loc=0, SG1G2_over_LocG1=0
+5*9: N=45 |P_N|=12 conj-classes per prime=[2, 2] parities present=[2, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=1, SG1_over_LocG1=0, Par_over_Loc=1, ParG1_over_LocG1=0, SG2_over_Loc=1, SG1G2_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=1, SG1_over_LocG1=1, Par_over_Loc=1, ParG1_over_LocG1=1, SG2_over_Loc=1, SG1G2_over_LocG1=1
+7*13: N=91 |P_N|=55 conj-classes per prime=[3, 6] parities present=[2, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=10, SG1_over_LocG1=0, Par_over_Loc=1, ParG1_over_LocG1=0, SG2_over_Loc=5, SG1G2_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=10, SG1_over_LocG1=10, Par_over_Loc=1, ParG1_over_LocG1=1, SG2_over_Loc=5, SG1G2_over_LocG1=5
+5*7*13: N=455 |P_N|=165 conj-classes per prime=[2, 3, 6] parities present=[2, 2, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=27, SG1_over_LocG1=0, Par_over_Loc=4, ParG1_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=27, SG1_over_LocG1=27, Par_over_Loc=4, ParG1_over_LocG1=4
+3*5*7: N=105 |P_N|=15 conj-classes per prime=[1, 2, 3] parities present=[1, 2, 2]  rootNum satisfies (L): True
+   [continuous (dim over R)] S_over_Loc=2, SG1_over_LocG1=0, Par_over_Loc=1, ParG1_over_LocG1=0
+   [sign part (dim over F2)] S_over_Loc=2, SG1_over_LocG1=2, Par_over_Loc=1, ParG1_over_LocG1=1
