@@ -425,7 +425,7 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 
 ## 17. Part 260（PAG264、短期層）で足した名前（角の写像 A_N → A_M、2026-11-19）
 
-（Part 257〜259 の名前はこの辞書に未記入で、行そのものがない。例：`listChar`、`shellLift`、`twLift`、`UDvd`、`sqLim`、`canon`。下の「未記入の件数」はこの節の表の右列についての数で、行のない名前は含まない（2026-11-19 夕方の統合照合の指摘で明記した）。）
+（2026-11-20 に §21 で行を足した（補足 16）。以下は当時の記録：Part 257〜259 の名前はこの辞書に未記入で、行そのものがない。例：`listChar`、`shellLift`、`twLift`、`UDvd`、`sqLim`、`canon`。下の「未記入の件数」はこの節の表の右列についての数で、行のない名前は含まない（2026-11-19 夕方の統合照合の指摘で明記した）。）
 
 | 名前・主張 | 文献の言葉 | 出典・注意 |
 |---|---|---|
@@ -467,7 +467,40 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | 名前・主張 | 文献の言葉 | 出典・注意 |
 |---|---|---|
 | `conj_Jhat_eq_gauss`（［既知］）・`conj_Jhat_eq_rootNum`・`conj_Jhat_sq_eq_rootNum`（［再導出（小さい）］） | ヤコビ和はガウス和の比 J = G₁G₂/G₁₂（積が原始的なとき）と |G|² = N。位相 conj(Ĵ) はガウス和の位相の余境界（2 乗で符号が消える） | K. Conrad, Gauss and Jacobi sums on finite fields and ℤ/mℤ の定理 3.15・3.12（法 m は一般。WebFetch の要約で確認）。符号つきの形・𝔀 による形を書いた文献は見つかっていない。Long–Pigno–Pinner（arXiv:1410.6179）の式 (10) は符号のない比（すべて原始的なとき。出典は Zhang–Yao の補題 3、Zhang–Xu の補題 1。WebFetch の要約で確認）。以前の版の「符号つきの形は LPP の式 (10)」は誤り（統合照合 I の指摘） |
-| `equator_intertwine_rootNum`・`equator_intertwine_proj_rootNum` | P¹(ℤ/p^K) の 2 チャートの畳み込みの、重なりでの比較（この設定の文献の名前は見つからなかった） | Part 21（PAG25）・Part 25（PAG29）の定理の係数の書き換え。射影直線の版は 2 チャートの版を `projFunEquiv` で移したもので同値（手の論証、Lean の文ではない）。設定そのものは盲検の 1 回の検索では見つからなかった |
+| `equator_intertwine_rootNum`・`equator_intertwine_proj_rootNum` | 2 チャートの比較そのものは文献用語なし。各チャートの中身は、乗法的指標の畳み込みがヤコビ和倍になること χ₁ ⋆ χ₂ = J(χ₁, χ₂)·χ₁χ₂（有限体 F_p の場合、χ₁χ₂ が自明でないとき）。北のチャートでは χ̄ の畳み込みなので係数は conj(J)。（2026-11-20 に補足 16 の作業で足した） | 畳み込みの式は N. Katz「Exponential Sums」の翻訳 arXiv:2308.11611 の Lemma 1.3.2 と arXiv:2406.11529 の §3（どちらも F_p。検索結果の抜粋で確認、2026-11-20）。ℤ/p^k での形は Part 20（PAG24）の `equator_intertwine` の Lean の文で、文献では確かめていない。2 チャートの比較の文献は、検索 1 回（convolution / inversion / projective line / Jacobi sum / two charts）で見つからなかった（見つからなかったは不存在の証明ではない）。Part 21（PAG25）・Part 25（PAG29）の定理の係数の書き換え。射影直線の版は 2 チャートの版を `projFunEquiv` で移したもので同値（手の論証、Lean の文ではない）。設定そのものは盲検の 1 回の検索では見つからなかった |
 | 条件「U'² が赤道で B_S を B_N に移す」の解の集まり（Lean の外） | 部分群の補集合の上で乗法的な関数は準同型に延びる（|X/Y| ≥ 3）、ポントリャーギン双対 | 盲検の照合者の手計算（補題を書いた文献は探していない）。加法指標の取り替えで局所定数が χ(b) 倍になること（Tate、Biswas arXiv:1401.5591 §4.3） |
 
-- 未記入の件数（この節）：1（作用素の形の 2 つの行：この設定の文献の名前は見つかっていない。2026-11-20 に 0 から直した。統合照合 I の指摘）。
+- 未記入の件数（この節）：0（2026-11-20 に補足 16 の作業で、作用素の形の行の右列を埋めた：比較そのものは「文献用語なし」、各チャートの畳み込みはヤコビ和倍の式。それまでは 1 と数えていた。統合照合 I の指摘）。
+
+## 21. 行のなかった名前の追加（補足 16、2026-11-20。Parts 257〜261（PAG261〜PAG265）と parFac）
+
+- 欠落の種類（補足 16 の 5）：辞書の欠落には、右列が空の行だけでなく、**行そのものがない名前**もある。§7 の指標（右列が空の行の数）はこれを拾わないので、未記入の件数を数えるときは、各パートの新しい定義名に行があるかも確かめる。
+- さらった範囲（補足 16 の 4）：2026-11-20 に、PAG261〜PAG265 の `def`・`abbrev`・`structure`・`instance` の宣言を機械的に抜き出した（`grep -nE "^\s*(noncomputable )?(def|abbrev|structure|inductive|class|instance)\s"`）。定理の名前は対象にしていない。抜き出した定義名のうち、§17・§18 に行のあったもの（`fsum`、`cornerOp`、`cornerHom`、`CornerLim`、`ofCorner`）を除き、すべて下の表に入れた。インスタンス（`lvl_neZero`、`NeZero (primeProd S)`、`DirectedSystem` の 3 つ）は名前ではないので行にせず、所属する定義の行に書いた。補足 16 は `parFac` を Part 257 としていたが、定義は PAG256（Part 252）にある。
+- 書き方（補足 16 の 2・3）：文献の言葉が見つからない場合は「文献用語なし」と書いた。文献の言葉を書く場合は、根拠と確かめ方を添えた。「定義の読み」は、Lean の定義を読んで標準の数学用語と照らしたことを指し、文献の本文は開いていない。
+
+| 名前 | Part（PAG） | 文献の言葉 | 根拠・確かめ方 |
+|---|---|---|---|
+| `lvl` | Part 257（PAG261） | 文献用語なし（法の積 ∏ N_i を返す補助。インスタンス `lvl_neZero` を含む） | ― |
+| `listChar` | Part 257（PAG261） | 互いに素な法の指標の積 χ = χ₁⋯χ_k（法 ∏ q_i の指標） | Bristol 大学の講義ノート「13. Gauss sums」の Lemma 13.3 の設定（(q₁, q₂) = 1、χ_i は法 q_i、χ = χ₁χ₂）。検索結果の抜粋で確認（2026-11-20）。 |
+| `cross` | Part 257（PAG261） | ガウス和の乗法公式 τ(χ₁χ₂) = τ(χ₁)τ(χ₂)χ₁(q₂)χ₂(q₁) の交差項 χ₁(q₂)χ₂(q₁)（k 個への一般化） | 同上の Lemma 13.3（2 個の場合）。k 個の形は Part 257 の Lean の文で、文献での k 個の形は確かめていない。K. Conrad の Gauss and Jacobi sums on finite fields and ℤ/mℤ にはこの公式はない（WebFetch の要約、2026-11-20）。 |
+| `oddCount` | Part 257（PAG261） | 文献用語なし（奇の指標の個数。i^a の分の符号の数え上げ） | ― |
+| `shellLift` | Part 258（PAG262） | 直積スキームの Terwilliger 代数のテンソル積分解 T(X × Y) ≅ T(X) ⊗ T(Y) を通した、左の因子の埋め込み S ↦ S ⊗ 1 | 分解は Hanaki–Kim–Maekawa（2011）の Thm 3.1（§3 の文献表の行。本文は構築側で取得できず、盲検の申告）と、Part 228 の `shellAlgTensorEquiv`（§3 の行 `crtConj`）。埋め込み S ↦ S ⊗ 1 そのものは定義の読み（`Algebra.TensorProduct.includeLeft`）。 |
+| `dTop` | Part 258（PAG262） | 基点の双対べき等元 E*_0（D_N = δ_0 への射影） | §3 の行「D_t … D_N = δ_0 への射影 ↔ 双対べき等元 E*_t、E*_0」。定義の読み。 |
+| `eTop` | Part 258（PAG262） | 自明な原始べき等元 E_0 = J/\|X\|（定数 1/N の畳み込み） | §3 の行「E_ND_NE_N = (1/N)E_N ↔ \|X\|E_0E*_0E_0 = E_0」。定義の読み。 |
+| `UDvd` | Part 259（PAG263） | ユニタリ約数（unitary divisor、Hall divisor）：d ∣ n かつ gcd(d, n/d) = 1 | E. Cohen, Arithmetical functions associated with the unitary divisors of an integer, Math. Z. 74（1960）66–80（書誌は EuDML で確認、本文は読んでいない）。定義は Wikipedia の Unitary divisor の項で確認（2026-11-20）。 |
+| `fC` | Part 259（PAG263） | M と M* を入れ替える T の自己同型（Curtin–Nomura の hyper-duality にあたる。定義の全条件との照合は未了） | §3 の行 `fourierConj`。`fC` はそれを A_N に制限したもの（定義の読み）。 |
+| `Compat` | Part 259（PAG263） | 文献用語なし（Part 258 の条件 (i) 引き戻しとの両立、(ii) 殻を混ぜない（強い読み）） | ― |
+| `CompatF` | Part 259（PAG263） | 文献用語なし（`Compat` に (iii) フーリエとの両立を足した条件） | ― |
+| `canon` | Part 259（PAG263） | 互いに素な段では `shellLift` と同じ型の埋め込み（直積スキームのテンソル積分解を通した S ↦ S ⊗ 1） | 定義は (i)(ii)(iii) を満たす唯一の写像の選択。`shellLift` との一致は Part 259 の一意性の定理から出る見込みで、この表のために Lean では確かめていない。文献の言葉は `shellLift` の行と同じ根拠。 |
+| `chi2` | Part 259（PAG263） | ℤ/2 の自明でない加法指標 x ↦ (−1)^x | 定義の読み。 |
+| `chiMul`・`chiConj`・`twist2`・`twTensLin`・`twTens`・`twLift` | Part 259（PAG263） | 文献用語なし（ℤ/2 の符号指標による捩れと、それを通した互いに素な段の捩れた写像） | 照合した範囲（Part 259 の盲検の問いテストと R1 の査定）で、この写像を書いた文献は見つかっていない。 |
+| `primeProd` | Part 259（PAG263） | 文献用語なし（素数の有限集合の積。無平方数。インスタンス `NeZero` を含む） | ― |
+| `sqMap` | Part 259（PAG263） | 文献用語なし（無平方数の段の帰納系の移行写像。`DirectedSystem` のインスタンスを含む） | ― |
+| `sqLim` | Part 259（PAG263） | 加群の帰納極限（直極限） | Mathlib の `Module.DirectLimit`（定義の読み）。代数の構造と制限テンソル積との同型は Lean の外。 |
+| `pullLin` | Part 260（PAG264） | 引き戻し π^*（ℤ/M → ℤ/N に沿った関数の引き戻し）の線形写像 | §17 の `fsum` の行（押し出しと引き戻しの随伴）。定義の読み。 |
+| `fsumLin` | Part 260（PAG264） | 押し出し π_*（繊維の和）の線形写像 | §17 の `fsum` の行。定義の読み。 |
+| `cornerSys` | Part 261（PAG265） | 帰納系（directed system）の移行写像。各段は §17 の角の写像 | Mathlib の `DirectedSystem`（定義の読み）。インスタンス `DirectedSystem` を含む。 |
+| `parFac` | Part 252（PAG256） | 規約 T のもとで、原始指標について無限素点の局所定数 ε(1/2, χ_∞, ψ_∞) と値が一致する因子 (−i)^a | CLAUDE.md §1 と文献照合 `notes/pag2_literature_ia_sign.md`（独立照合 1 回と統合照合 2 回。値の一致は Lean の外、確信度は 2026-11-19 の著者の判断で高）。 |
+
+- 未記入の件数（この節）：0（すべての行に文献の言葉か「文献用語なし」がある）。「文献用語なし」の行は 9 つ（`lvl`、`oddCount`、`Compat`、`CompatF`、捩れの 6 つをまとめた行、`primeProd`、`sqMap`）。
+- 次の統合照合で完全性を確かめるときは、上のさらい方で同じ範囲を抜き出し、この表と突き合わせる。
