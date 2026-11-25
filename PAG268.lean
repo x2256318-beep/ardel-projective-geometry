@@ -33,7 +33,7 @@ Lean の外（盲検の問いテスト `records/p1_lift/outputs/blind_output.md`
 内部照合：Part 254（PAG258）の `pullL_charU`、Part 24（PAG28）の `projFun_south`・`projFun_north`、Part 20（PAG24）の `ket0_apply`・`chi_cast_inv`、Part 25（PAG29）の `projFun_ketS` を使った。
 機械的な照合（全宣言 4409 件、対象 18 件、候補の組 144、照合 256 回）で一致なし（網羅ではない）。近いもの（C）：Part 28（PAG32）の `negProj`（トーラスの u = −1 の場合）、Part 252（PAG256）の `inv_apply_units_inv`（`mul_inv_apply_unit` の近く）。
 
-ラベル（見込み、閉鎖で確定）：1〜4 は［再導出（小さい）］。新規候補なし。
+ラベル（2026-11-25 22:28 の著者の判断による閉鎖で確定）：1〜4 は［再導出（小さい）］。新規候補なし。
 -/
 import PAG267
 import PAG29
