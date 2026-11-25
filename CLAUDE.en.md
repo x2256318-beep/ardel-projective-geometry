@@ -66,7 +66,6 @@ The purpose of this procedure is not to avoid mapping to existing mathematics. T
 
 ## 6. Things not to do
 
-- Writing this theory as "an approach to the Riemann hypothesis". The monograph itself explicitly denies this. The third stage (explicit formulas, correspondence with zeros) is not started and is outside the scope of claims, and the mismatch between the counting of the spectrum and of the zeros is also treated as settled.
 - Writing known results (§3) as new. Limit novelty claims to the two candidates of §3, and state the confidence alongside.
 - Writing the author's definitions of the geometry (§1) as if they were formalized content. Conversely, do not modify the definitions themselves on the grounds that they are the interpretive layer.
 - Writing that axiom A1 was "derived" (§2).
