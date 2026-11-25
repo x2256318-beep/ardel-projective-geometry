@@ -1,0 +1,2 @@
+統合照合 VI：依頼文 records/ledger_V/integrated/request_VI.md（全文をそのまま渡した）。入力 input_VI.md。
+起動：2026-11-26 06:12:11 JST。所要：約 194 秒（ツール 11 回）。
