@@ -1,3 +1,4 @@
+"""P¹(ℤ/N) の還元の数値照合（Part 263（PAG267）、2026-11-25）：全射性、点の数の公式、反転との可換、赤道の逆像と上の段の赤道の一致の判定。"""
 from math import gcd
 def P1(N):
     pts=set()
@@ -31,7 +32,8 @@ for M in range(1,49):
         if img!=PN: bad+=1; print("not surj",N,M)
         # W commute
         for (a,b) in PM:
-            assert canon(b%N,a%N,N)==canon(*canon(b,a,M),N) if False else True
+            c=canon(a%N,b%N,N)
+            assert canon(b%N,a%N,N)==canon(c[1],c[0],N)   # red(W q) = W(red q)（統合照合 I-a の指摘で、何も確かめていなかった行を置き換えた）
         # equator preimage vs upper equator: zero-extension compat?
         # f on equator(N) indicator of one point; zero-extend then pull vs pull then zero-extend
         eqN=[x for x in PN if isEq(*x,N)]
