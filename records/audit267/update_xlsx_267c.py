@@ -5,6 +5,6 @@ R = '/home/claude/ardel-projective-geometry/verification/lean_verification_statu
 wb = openpyxl.load_workbook(R); ws = wb['定理と証明']; n = 0
 for r in range(3724, 3758):
     v = ws.cell(r, 1).value
-    if 'ラベル（見込み、閉鎖で確定）' in v:
+    if v and 'ラベル（見込み、閉鎖で確定）' in v:  # 統合照合 V-a の指摘で空のセルに備えた
         ws.cell(r, 1).value = v.replace('ラベル（見込み、閉鎖で確定）', 'ラベル（2026-11-25 19:11 の閉鎖で確定）'); n += 1
 wb.save(R); print('label cells', n)

@@ -1,0 +1,2 @@
+統合照合 V-a・V-b：依頼文 records/ledger_V/integrated/request_Va.md・request_Vb.md（全文をそのまま渡した）。入力 input_Va.md・input_Vb.md。
+起動：2026-11-26 06:00:16 JST（2 つ同時）。V-a の所要：約 123 秒（ツール 5 回）。V-b の所要：約 136 秒（ツール 4 回）。
