@@ -1,0 +1,3 @@
+統合照合 II-a・II-b：依頼文 records/audit267/integrated/request_IIa.md・request_IIb.md（全文をそのまま渡した）。入力 input_IIa.md・input_IIb.md。
+起動：2026-11-25 18:46 JST ごろ（2 つ同時）。II-b の所要：約 158 秒（ツール 9 回）。
+II-a の所要：約 184 秒（ツール 6 回）。
