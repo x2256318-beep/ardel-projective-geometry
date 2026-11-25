@@ -1,0 +1,848 @@
+[
+ {
+  "target": "PAG.Part268.chiPt",
+  "module": "PAG268",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part27.ProjLine",
+    "module": "PAG27",
+    "score": 0.765
+   },
+   {
+    "name": "PAG.Part267.Fsp",
+    "module": "PAG267",
+    "score": 0.693
+   },
+   {
+    "name": "PAG.Part27.Wproj",
+    "module": "PAG27",
+    "score": 0.661
+   },
+   {
+    "name": "PAG.Part32.negProj",
+    "module": "PAG32",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part28.Wpull",
+    "module": "PAG28",
+    "score": 0.618
+   },
+   {
+    "name": "PAG.Part267.red",
+    "module": "PAG267",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part267.eqPt",
+    "module": "PAG267",
+    "score": 0.594
+   },
+   {
+    "name": "PAG.Part32.tildePull",
+    "module": "PAG32",
+    "score": 0.57
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.chiPt_Wproj",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part27.Wproj_Wproj",
+    "module": "PAG27",
+    "score": 0.864
+   },
+   {
+    "name": "PAG.Part28.Wpull_Wpull",
+    "module": "PAG28",
+    "score": 0.81
+   },
+   {
+    "name": "PAG.Part35.Wpull_smul",
+    "module": "PAG35",
+    "score": 0.807
+   },
+   {
+    "name": "PAG.Part267.Wproj_eqPt",
+    "module": "PAG267",
+    "score": 0.712
+   },
+   {
+    "name": "PAG.Part267.red_Wproj",
+    "module": "PAG267",
+    "score": 0.706
+   },
+   {
+    "name": "PAG.Part27.mk_eq_mk",
+    "module": "PAG27",
+    "score": 0.652
+   },
+   {
+    "name": "PAG.Part32.tildePull_Wpull",
+    "module": "PAG32",
+    "score": 0.638
+   },
+   {
+    "name": "PAG.Part27.toProj_Wpt",
+    "module": "PAG27",
+    "score": 0.596
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.chiPt_eqPt",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.eqPt_injective",
+    "module": "PAG267",
+    "score": 0.757
+   },
+   {
+    "name": "PAG.Part267.Wproj_eqPt",
+    "module": "PAG267",
+    "score": 0.69
+   },
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.671
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.638
+   },
+   {
+    "name": "PAG.Part27.mk_eq_mk",
+    "module": "PAG27",
+    "score": 0.539
+   },
+   {
+    "name": "PAG.Part267.extE_eqPt",
+    "module": "PAG267",
+    "score": 0.491
+   },
+   {
+    "name": "PAG.Part267.extE_off",
+    "module": "PAG267",
+    "score": 0.49
+   },
+   {
+    "name": "PAG.Part27.Wproj_Wproj",
+    "module": "PAG27",
+    "score": 0.485
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.chiPt_mk",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part27.mk_eq_mk",
+    "module": "PAG27",
+    "score": 0.661
+   },
+   {
+    "name": "PAG.Part27.Wproj_Wproj",
+    "module": "PAG27",
+    "score": 0.561
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.533
+   },
+   {
+    "name": "PAG.Part32.negProj_negProj",
+    "module": "PAG32",
+    "score": 0.531
+   },
+   {
+    "name": "PAG.Part28.Wpull_Wpull",
+    "module": "PAG28",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part35.Wpull_smul",
+    "module": "PAG35",
+    "score": 0.524
+   },
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.522
+   },
+   {
+    "name": "PAG.Part27.card_ProjLine",
+    "module": "PAG27",
+    "score": 0.515
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.chiPt_not_compat",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.red_zeroPt",
+    "module": "PAG267",
+    "score": 0.826
+   },
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.662
+   },
+   {
+    "name": "PAG.Part267.red_surjective",
+    "module": "PAG267",
+    "score": 0.621
+   },
+   {
+    "name": "PAG.Part267.red_comp",
+    "module": "PAG267",
+    "score": 0.592
+   },
+   {
+    "name": "PAG.Part267.red_self",
+    "module": "PAG267",
+    "score": 0.583
+   },
+   {
+    "name": "PAG.Part267.red_Wproj",
+    "module": "PAG267",
+    "score": 0.582
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.577
+   },
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.571
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.chiPt_red_congr",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.838
+   },
+   {
+    "name": "PAG.Part267.red_surjective",
+    "module": "PAG267",
+    "score": 0.786
+   },
+   {
+    "name": "PAG.Part267.red_comp",
+    "module": "PAG267",
+    "score": 0.749
+   },
+   {
+    "name": "PAG.Part267.red_self",
+    "module": "PAG267",
+    "score": 0.738
+   },
+   {
+    "name": "PAG.Part267.red_Wproj",
+    "module": "PAG267",
+    "score": 0.736
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.73
+   },
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.722
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.686
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.chiPt_torus",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part27.mk_eq_mk",
+    "module": "PAG27",
+    "score": 0.543
+   },
+   {
+    "name": "PAG.Part27.Wproj_Wproj",
+    "module": "PAG27",
+    "score": 0.473
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.461
+   },
+   {
+    "name": "PAG.Part32.negProj_negProj",
+    "module": "PAG32",
+    "score": 0.448
+   },
+   {
+    "name": "PAG.Part27.card_ProjLine",
+    "module": "PAG27",
+    "score": 0.447
+   },
+   {
+    "name": "PAG.Part28.Wpull_Wpull",
+    "module": "PAG28",
+    "score": 0.443
+   },
+   {
+    "name": "PAG.Part35.Wpull_smul",
+    "module": "PAG35",
+    "score": 0.442
+   },
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.44
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.extChi",
+  "module": "PAG268",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part267.red",
+    "module": "PAG267",
+    "score": 0.746
+   },
+   {
+    "name": "PAG.Part267.pullP",
+    "module": "PAG267",
+    "score": 0.521
+   },
+   {
+    "name": "PAG.Part27.Wproj",
+    "module": "PAG27",
+    "score": 0.511
+   },
+   {
+    "name": "PAG.Part32.negProj",
+    "module": "PAG32",
+    "score": 0.483
+   },
+   {
+    "name": "PAG.Part28.Wpull",
+    "module": "PAG28",
+    "score": 0.478
+   },
+   {
+    "name": "PAG.Part267.eqPt",
+    "module": "PAG267",
+    "score": 0.471
+   },
+   {
+    "name": "PAG.Part27.ProjLine",
+    "module": "PAG27",
+    "score": 0.466
+   },
+   {
+    "name": "PAG.Part32.tildePull",
+    "module": "PAG32",
+    "score": 0.459
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.extChi_changeLevel",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.717
+   },
+   {
+    "name": "PAG.Part267.red_surjective",
+    "module": "PAG267",
+    "score": 0.673
+   },
+   {
+    "name": "PAG.Part267.red_comp",
+    "module": "PAG267",
+    "score": 0.641
+   },
+   {
+    "name": "PAG.Part267.red_self",
+    "module": "PAG267",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part267.red_Wproj",
+    "module": "PAG267",
+    "score": 0.63
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.625
+   },
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.618
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.615
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.extChi_eqPt",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.79
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.751
+   },
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.681
+   },
+   {
+    "name": "PAG.Part267.red_surjective",
+    "module": "PAG267",
+    "score": 0.639
+   },
+   {
+    "name": "PAG.Part267.eqPt_injective",
+    "module": "PAG267",
+    "score": 0.61
+   },
+   {
+    "name": "PAG.Part267.red_comp",
+    "module": "PAG267",
+    "score": 0.608
+   },
+   {
+    "name": "PAG.Part267.red_self",
+    "module": "PAG267",
+    "score": 0.599
+   },
+   {
+    "name": "PAG.Part267.red_Wproj",
+    "module": "PAG267",
+    "score": 0.598
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.extChi_torus",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.617
+   },
+   {
+    "name": "PAG.Part267.red_surjective",
+    "module": "PAG267",
+    "score": 0.579
+   },
+   {
+    "name": "PAG.Part267.red_comp",
+    "module": "PAG267",
+    "score": 0.552
+   },
+   {
+    "name": "PAG.Part267.red_self",
+    "module": "PAG267",
+    "score": 0.544
+   },
+   {
+    "name": "PAG.Part267.red_Wproj",
+    "module": "PAG267",
+    "score": 0.542
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.538
+   },
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.532
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.506
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.ketS_proj_zero_eq",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part29.projFun_ketS",
+    "module": "PAG29",
+    "score": 0.895
+   },
+   {
+    "name": "PAG.Part29.ketS_proj.congr_simp",
+    "module": "PAG29",
+    "score": 0.888
+   },
+   {
+    "name": "PAG.Part29.ketS0_eq_ketN0_proj",
+    "module": "PAG29",
+    "score": 0.855
+   },
+   {
+    "name": "PAG.Part32.tildePull_ketS",
+    "module": "PAG32",
+    "score": 0.852
+   },
+   {
+    "name": "PAG.Part29.thmA_BSproj",
+    "module": "PAG29",
+    "score": 0.841
+   },
+   {
+    "name": "PAG.Part29.Wpull_ketS_proj",
+    "module": "PAG29",
+    "score": 0.824
+   },
+   {
+    "name": "PAG.Part29.projFun_ketN",
+    "module": "PAG29",
+    "score": 0.811
+   },
+   {
+    "name": "PAG.Part38.adjoint_ketS",
+    "module": "PAG38",
+    "score": 0.809
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.mul_inv_apply_unit",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part207.gcd_val_unit_mul",
+    "module": "PAG207",
+    "score": 0.696
+   },
+   {
+    "name": "PAG.Part256.inv_apply_units_inv",
+    "module": "PAG256",
+    "score": 0.669
+   },
+   {
+    "name": "PAG.Part207.exists_unit_mul_gcd",
+    "module": "PAG207",
+    "score": 0.633
+   },
+   {
+    "name": "PAG.Part135.unit_pow_two",
+    "module": "PAG135",
+    "score": 0.505
+   },
+   {
+    "name": "PAG.Part16.isPrimitive_inv",
+    "module": "PAG16",
+    "score": 0.504
+   },
+   {
+    "name": "PAG.Part27.isUnit_units_mul_iff",
+    "module": "PAG27",
+    "score": 0.472
+   },
+   {
+    "name": "PAG.Part27.scale_div",
+    "module": "PAG27",
+    "score": 0.439
+   },
+   {
+    "name": "PAG.Part218.liftc_mul_liftc_inv",
+    "module": "PAG218",
+    "score": 0.436
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.pullP_extChi",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.pullP_injective",
+    "module": "PAG267",
+    "score": 0.836
+   },
+   {
+    "name": "PAG.Part267.Wfun_comp_pullP",
+    "module": "PAG267",
+    "score": 0.699
+   },
+   {
+    "name": "PAG.Part267.resE_comp_pullP",
+    "module": "PAG267",
+    "score": 0.67
+   },
+   {
+    "name": "PAG.Part267.extE_compat_iff",
+    "module": "PAG267",
+    "score": 0.649
+   },
+   {
+    "name": "PAG.Part267.ofP_injective",
+    "module": "PAG267",
+    "score": 0.632
+   },
+   {
+    "name": "PAG.Part267.extE_not_compat",
+    "module": "PAG267",
+    "score": 0.569
+   },
+   {
+    "name": "PAG.Part267.WL_WL",
+    "module": "PAG267",
+    "score": 0.562
+   },
+   {
+    "name": "PAG.Part267.WL_ofP",
+    "module": "PAG267",
+    "score": 0.547
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.resE_extChi",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.651
+   },
+   {
+    "name": "PAG.Part267.resE_comp_pullP",
+    "module": "PAG267",
+    "score": 0.642
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.619
+   },
+   {
+    "name": "PAG.Part267.resE_extE",
+    "module": "PAG267",
+    "score": 0.616
+   },
+   {
+    "name": "PAG.Part267.red_mk",
+    "module": "PAG267",
+    "score": 0.561
+   },
+   {
+    "name": "PAG.Part267.red_surjective",
+    "module": "PAG267",
+    "score": 0.526
+   },
+   {
+    "name": "PAG.Part267.resL_surjective",
+    "module": "PAG267",
+    "score": 0.518
+   },
+   {
+    "name": "PAG.Part267.resL_ofP",
+    "module": "PAG267",
+    "score": 0.505
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.torus",
+  "module": "PAG268",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part27.Wproj",
+    "module": "PAG27",
+    "score": 0.603
+   },
+   {
+    "name": "PAG.Part32.negProj",
+    "module": "PAG32",
+    "score": 0.571
+   },
+   {
+    "name": "PAG.Part28.Wpull",
+    "module": "PAG28",
+    "score": 0.565
+   },
+   {
+    "name": "PAG.Part267.eqPt",
+    "module": "PAG267",
+    "score": 0.557
+   },
+   {
+    "name": "PAG.Part267.red",
+    "module": "PAG267",
+    "score": 0.556
+   },
+   {
+    "name": "PAG.Part27.ProjLine",
+    "module": "PAG27",
+    "score": 0.551
+   },
+   {
+    "name": "PAG.Part32.tildePull",
+    "module": "PAG32",
+    "score": 0.52
+   },
+   {
+    "name": "PAG.Part27.toProj",
+    "module": "PAG27",
+    "score": 0.512
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.torusU",
+  "module": "PAG268",
+  "kind": "def",
+  "cands": [
+   {
+    "name": "PAG.Part267.eqU",
+    "module": "PAG267",
+    "score": 0.548
+   },
+   {
+    "name": "PAG.Part267.redU",
+    "module": "PAG267",
+    "score": 0.474
+   },
+   {
+    "name": "PAG.Part27.Unimod",
+    "module": "PAG27",
+    "score": 0.464
+   },
+   {
+    "name": "PAG.Part27.ProjLine",
+    "module": "PAG27",
+    "score": 0.46
+   },
+   {
+    "name": "PAG.Part267.zeroU",
+    "module": "PAG267",
+    "score": 0.424
+   },
+   {
+    "name": "PAG.Part267.infU",
+    "module": "PAG267",
+    "score": 0.419
+   },
+   {
+    "name": "PAG.Part267.Fsp",
+    "module": "PAG267",
+    "score": 0.368
+   },
+   {
+    "name": "PAG.Part27.projSetoid",
+    "module": "PAG27",
+    "score": 0.368
+   }
+  ]
+ },
+ {
+  "target": "PAG.Part268.torus_eqPt",
+  "module": "PAG268",
+  "kind": "thm",
+  "cands": [
+   {
+    "name": "PAG.Part267.eqPt_injective",
+    "module": "PAG267",
+    "score": 0.668
+   },
+   {
+    "name": "PAG.Part267.Wproj_eqPt",
+    "module": "PAG267",
+    "score": 0.605
+   },
+   {
+    "name": "PAG.Part267.exists_eqPt_of_red",
+    "module": "PAG267",
+    "score": 0.588
+   },
+   {
+    "name": "PAG.Part267.red_eqPt",
+    "module": "PAG267",
+    "score": 0.559
+   },
+   {
+    "name": "PAG.Part27.mk_eq_mk",
+    "module": "PAG27",
+    "score": 0.523
+   },
+   {
+    "name": "PAG.Part27.Wproj_Wproj",
+    "module": "PAG27",
+    "score": 0.456
+   },
+   {
+    "name": "PAG.Part267.exists_redU",
+    "module": "PAG267",
+    "score": 0.444
+   },
+   {
+    "name": "PAG.Part267.extE_eqPt",
+    "module": "PAG267",
+    "score": 0.433
+   }
+  ]
+ }
+]

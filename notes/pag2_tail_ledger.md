@@ -4,6 +4,13 @@
 
 ## 開いている項目
 
+### L16：Part 264（PAG268）の独立照合の後の直し（2026-11-25 夜）
+
+- 範囲：独立照合（`records/audit268/outputs/check_output.md`）の指摘を受けた直し。形式文は変えていない。
+  - PAG268.lean の冒頭の説明に「注意（独立照合の指摘）」の 4 項（主指標の `extChi` の値、`extChi` の [NeZero N]、1 ≤ K と 1 ≤ c、4 と `extChi` の一致の条件）。作り直してエラー・警告 0。
+  - ノート `notes/pag2_pag268_p1_char_extension.md` の §3・§6。
+- 扱い：閉じるときの統合照合に、L15 と一緒に載せる。
+
 ### L15：統合照合 I-a・I-b の後の直し（2026-11-25 夜）
 
 - 範囲：I-a（`records/audit267/outputs/integrated_Ia_output.md`）と I-b（`records/audit267/outputs/integrated_Ib_output.md`）の指摘を受けた直し。
