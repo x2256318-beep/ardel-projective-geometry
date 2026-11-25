@@ -1,0 +1,2 @@
+統合照合 IV：依頼文 records/audit268/integrated/request_IV.md（全文をそのまま渡した）。入力 input_IV.md。
+起動：2026-11-25 19:45:48 JST。所要：約 212 秒（ツール 9 回）。
