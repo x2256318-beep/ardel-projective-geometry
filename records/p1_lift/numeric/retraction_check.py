@@ -42,4 +42,4 @@ for M in range(1,61):
             if M%N: continue
             if N>1 and rho(a%N,b%N,N)!=r%N: bad+=1
 print("compat failures:",bad)
-print("all checks passed")
+print("all checks passed" if bad==0 else "FAILED")  # 統合照合 III-a の指摘で、無条件の表示を直した

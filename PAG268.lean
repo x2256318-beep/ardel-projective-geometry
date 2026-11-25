@@ -10,20 +10,24 @@
 主な定理：
 1. `chiPt χ` は P¹(ℤ/N) の上で well-defined（定義）。赤道では χ（`chiPt_eqPt`）、反転 W で χ⁻¹ の関数に移り（`chiPt_Wproj`）、トーラスの作用で χ(u) 倍（`chiPt_torus`）。
 2. `extChi χ` の赤道への制限は χ（`extChi_eqPt`、`resE_extChi`）。N ∣ M のとき、χ を法 M に上げた指標の `extChi` は、`extChi χ` の引き戻し（`extChi_changeLevel`、段の言葉で `pullP_extChi`）。トーラスの作用で χ(u) 倍（`extChi_torus`）。
-3. 法 N の式 `chiPt χ` をそのまま使うと、原始的でない χ では引き戻しと両立しない（`chiPt_not_compat`：法 2 の自明な指標と点 0）。
+3. 法 N の式 `chiPt χ` をそのまま使うと、原始的でない χ では引き戻しと両立しない場合がある（`chiPt_not_compat`：法 2 の自明な指標と点 0 の証人 1 つ。
+   崩れるかどうかは新しい素数が増えるかどうかによる：法 3 の指標を法 9 に上げたものは原始的でないが両立する。統合照合 III-a の照合者の数値、Lean の外）。
 4. p が素数で 1 ≤ c ≤ K のとき、Part 25（PAG29）の殻 0 の南ケット `ketS_proj K 0 c` は、法 p^c の `chiPt χ` の引き戻しの |S_0|^(−1/2) 倍（`ketS_proj_zero_eq`）。
-   したがって、2 チャートのモデル（Part 19〜25（PAG23〜PAG29））の殻 0 のケットは、素数冪の法では `extChi` と同じ形の関数（原始指標なら規格化の定数倍で `extChi` そのもの）。
+   |S_0| = `sz p K 0` = φ(p^K)。
+   読み（Lean の外）：素数冪の法では、導手が 1 でない（主指標でない）χ について、法 p^c で単数であることと導手の法で単数であることが同じなので
+   `chiPt χ` = `extChi χ` が成り立ち、`extChi_changeLevel` と合わせて、殻 0 のケットは規格化の定数倍で法 p^K の `extChi` に一致する見込み
+   （`extChi χ = chiPt χ` は形式化していない。統合照合 III-a の指摘で、条件を「原始指標」から「導手 > 1」に直し、この段を読みとして分けた）。
 
 注意（独立照合の指摘）：
 - 導手 1 の指標（主指標）の `extChi` は、法 1 の P¹ が 1 点で 0 も単数なので、P¹(ℤ/N) の全点（0 と ∞ を含む）で 1。導手 > 1 の指標の `extChi` は 0 と ∞ で 0。
-- `extChi` の定義は [NeZero N] を引数に取らない（節の変数は使われたときだけ入る）。`extChi_changeLevel` は [NeZero M] だけを仮定する。M = 0 では両立が崩れる見込み（照合者の手計算、Lean の外）。
+- `extChi` の定義は [NeZero N] を引数に取らない（節の変数は使われたときだけ入る）。`extChi_changeLevel` は [NeZero M] だけを仮定する。M = 0 では両立が崩れる見込み（照合者の手計算、照合者の確信度：中、Lean の外）。
 - 4 の 1 ≤ K は 1 ≤ c と c ≤ K から出る（`ketS_proj` の型の引数として置いた）。1 ≤ c は外せない（c = 0、p = 2、K = 1 の点 ∞ で 0 ≠ 1。照合者の手計算）。
-- 4 の右辺は法 p^c の `chiPt χ` の引き戻しで、`extChi` と一致するのは χ が法 p^c で原始的なとき。
+- 4 の右辺は法 p^c の `chiPt χ` の引き戻し。`extChi` との一致は上の読み（導手 > 1 のとき、Lean の外）。主指標では一致しない（`extChi` は定数 1、ケットは 0 と ∞ の近くで 0）。
 
 Lean の外（盲検の問いテスト `records/p1_lift/outputs/blind_output.md`、照合者の確信度つき）：
 - 引き戻しと両立し赤道への制限が恒等な延長の族は多い（導手ごとのアフィン空間、確信度：高）。トーラスとも両立する族は一意で、`extChi` で与えられる（確信度：高、照合者の手の証明と数値）。
-- レトラクション（点ごとの写像）の形の延長はあるが、トーラスと両立するものはない（点 0 がトーラスで固定されるため）。N によらない同次形式の比では書けない（確信度：高）。
-- `Uinf` の持ち上げ（P¹ の上の関数の作用素で、制限すると `Uinf`、引き戻しと両立）は存在するが、ユニタリ・トーラス・W の条件を全部課しても一意でない（確信度：高、数値の反例）。局所性の条件を足すと一意（確信度：中〜高）。W とは可換にできない。
+- レトラクション（点ごとの写像）の形の延長はあるが、トーラスと両立するものはない（N ∣ 2 を除く。点 0 がトーラスで固定されるため）。N によらない同次形式の比では書けない（確信度：高）。
+- `Uinf` の持ち上げ（P¹ の上の関数の作用素で、制限すると `Uinf`、引き戻しと両立）は存在するが、ユニタリ・トーラス・W の条件を全部課しても一意でない（確信度：高、数値の反例）。局所性の条件を足すと一意（確信度：中〜高）。W とは可換にできない（赤道の上で W V W = U⁻¹ が強制される）。
 - 答えは F_q[t] でも同じ形の見込み（対照群）で、ℚ に固有の算術は運ばない。
 
 内部照合：Part 254（PAG258）の `pullL_charU`、Part 24（PAG28）の `projFun_south`・`projFun_north`、Part 20（PAG24）の `ket0_apply`・`chi_cast_inv`、Part 25（PAG29）の `projFun_ketS` を使った。
@@ -178,7 +182,7 @@ theorem resE_extChi (a : Lvl) (χ : DirichletCharacter ℂ a.val) :
 /-! ## 3. 法 N の式をそのまま使うと両立しない（証人） -/
 
 /-- 法 2 の自明な指標（導手 1）では、法 2 の式 χ(a)·χ⁻¹(b) は点 0 で 0、
-法 1 の式を引き戻したものは 1。法 N の式 χ(a)χ̄(b) は、原始的でない χ では引き戻しと両立しない。 -/
+法 1 の式を引き戻したものは 1。法 N の式 χ(a)χ̄(b) は、原始的でない χ では引き戻しと両立しない場合がある（証人 1 つ）。 -/
 theorem chiPt_not_compat :
     chiPt (changeLevel (one_dvd 2) (1 : DirichletCharacter ℂ 1)) (zeroPt 2) ≠
       chiPt (1 : DirichletCharacter ℂ 1) (red (one_dvd 2) (zeroPt 2)) := by
@@ -236,9 +240,13 @@ end ket
 
 end PAG.Part268
 
+#print axioms PAG.Part268.mul_inv_apply_unit
+#print axioms PAG.Part268.chiPt_mk
 #print axioms PAG.Part268.chiPt_eqPt
 #print axioms PAG.Part268.chiPt_Wproj
+#print axioms PAG.Part268.torus_eqPt
 #print axioms PAG.Part268.chiPt_torus
+#print axioms PAG.Part268.chiPt_red_congr
 #print axioms PAG.Part268.extChi_eqPt
 #print axioms PAG.Part268.extChi_changeLevel
 #print axioms PAG.Part268.extChi_torus

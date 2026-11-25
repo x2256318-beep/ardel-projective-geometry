@@ -33,7 +33,7 @@ for M in range(1,49):
         # W commute
         for (a,b) in PM:
             c=canon(a%N,b%N,N)
-            assert canon(b%N,a%N,N)==canon(c[1],c[0],N)   # red(W q) = W(red q)（統合照合 I-a の指摘で、何も確かめていなかった行を置き換えた）
+            assert canon(b%N,a%N,N)==canon(c[1],c[0],N)   # red(W q) = W(red q)（統合照合 I-a の指摘で、何も確かめていなかった行を置き換えた。法 M の canon を経由しない弱い検査：統合照合 III-b の指摘）
         # equator preimage vs upper equator: zero-extension compat?
         # f on equator(N) indicator of one point; zero-extend then pull vs pull then zero-extend
         eqN=[x for x in PN if isEq(*x,N)]

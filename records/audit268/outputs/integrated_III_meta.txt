@@ -1,0 +1,2 @@
+統合照合 III-a・III-b：依頼文 records/audit268/integrated/request_IIIa.md・request_IIIb.md（全文をそのまま渡した）。入力 input_IIIa.md・input_IIIb.md。
+起動：2026-11-25 19:36:57 JST（2 つ同時）。III-a の所要：約 189 秒（ツール 7 回）。III-b の所要：約 201 秒（ツール 5 回）。
