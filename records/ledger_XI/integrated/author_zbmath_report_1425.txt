@@ -1,0 +1,25 @@
+6検索すべて終わりました。方法を1点だけ先に：zbMATH のウェブ画面はクラウドブラウザから Cloudflare の検証で塞がれ、テキスト取得も 403 でした。そこで、いただいた6本の検索文字列をそのまま zbMATH の公式公開 API に通しました（同じデータベースです）。例外は HKM の「cited by」で、これはウェブの項目ページにしか出ておらず API では取れませんでした。代替として Semantic Scholar の引用一覧（16件、OpenAlex の被引用数16とも一致）を付けます。zbMATH 自身の一覧が必要なら、項目ページを直接開く必要があります。
+
+**候補1**
+- 検索1（ti:Terwilliger & (cyclic | cyclotomic | "Schur ring")）：**2件**
+  1. Zbl 0944.05101 — Ishibashi, Haruo; Ito, Tatsuro; Yamada, Mieko「Terwilliger algebras of cyclotomic schemes and Jacobi sums」Eur. J. Comb. 20(5), 397–410 (1999)。レビューによれば有限体上の円分スキームで T が中心化代数 S と一致するかの問題で、Gauss 和に帰着、e=2 で完全な答え。ℤ/N でも生成系でもありません。
+  2. arXiv:2606.19095 — Bastian, Nicholas L.; Humphries, Stephen P.「Schur rings over cyclic groups having Almost Commutative Terwilliger algebras」(2026)。要旨を直接確認しました：有限巡回群上の軌道 Schur 環のうち Terwilliger 代数が概可換になるものの分類で、素数冪の位数の場合は自明か全体の自己同型群（奇素数では位数 p^{n−1} のものも）、非素数冪（合成数）の位数では自明なものだけ。分類の対象は Schur 環であって、T(0) の生成系ではありません。
+- 検索2（"Terwilliger algebra" & generat* & (cyclic | "Schur ring")）：**4件**
+  1. arXiv:2409.09167 — Bastian & Humphries「Almost Commutative Terwilliger Algebras of Group Association Schemes I: Classification」(2024)
+  2. Zbl 1533.05301 — Maleki, Roghayeh「On the Terwilliger algebra of the group association scheme of C_n ⋊ C_2」Discrete Math. 347(2) (2024)
+  3. Zbl 0969.11029 — Shiratani, Katsumi; Yamada, Mieko「On rationality of Jacobi sums」Colloq. Math. 73(2), 251–260 (1997)
+  4. arXiv:2609.06747 — Lu, Zhipeng「Punctured adjacency-degree algebras of Cartesian products」(2026)
+- 結論：この2検索の範囲では、ℤ/N 上の円分（軌道）Schur 環の T(0) について生成系を分類した項目は**見つかりませんでした**。合成数 N に触れるのは BH (2026) ですが、扱っているのは概可換性の分類です。
+
+**候補3**
+- Hanaki 検索（ai:hanaki.akihide & ti:Terwilliger）：**3件** — Zbl 1479.05366（Modular Terwilliger algebras of association schemes, 2021）、**Zbl 1235.05157（HKM, J. Algebra 343(1), 195–200 (2011)）**、Zbl 1516.05228（Hanaki & Yoshikawa, 2023）。
+- HKM を引用する論文（Semantic Scholar、16件）：Kim (2011, quasi-thin)、Maldonado & Penazzi (2012)、Kim (2015)、Muzychuk & Xu (2016)、Song, Xu & Zhou (2017)、Xu (2017)、Xu (2019, varietal)、Balmaceda & Briones (2022)、Watanabe (2023, 一般化リース積）、Bastian & Humphries I (2024)、Bastian (2024, II)、Yang et al. (2024 ×2)、Herman (2024)、Yang et al. (2025)、Yang et al. (2026)、Bastian & Humphries (2026)。全てリース積・積構造の後続研究で、商に沿った写像を扱うものは題からは見えません。
+- キーワード検索（"Terwilliger algebra" & (homomorphism | quotient | fusion | "quotient scheme")）：**16件**。題と zbMATH レビュー本文を走査した結果、異なるスキームの T のあいだの準同型や、商スキームに沿った写像を扱う項目は**見つかりませんでした**。したがって、そうした写像が単位元を保つかどうかについても、この範囲では記述がありません。近接したものは3件だけです：Curtin (2008) は原始的でない Bose–Mesner 代数の話（T ではありません）、Huang & Lee (2026) は普遍代数から T への全射準同型（スキーム間の写像ではありません）、Jiang (2022) の quotient は1つの T の内部の商加群です。
+
+**方向γ**
+- **0件**でした。API の応答は「successful access. No results found」。対照として "Bost-Connes" 単独では57件返るので、0件は検索式の失敗ではなく、この conjunction の結果です。
+
+**書誌**
+- 3人目の著者は **Yamada, Mieko（山田美枝子）** で、Tamada ではありません。Ishibashi, Haruo; Ito, Tatsuro; Yamada, Mieko「Terwilliger algebras of cyclotomic schemes and Jacobi sums」Eur. J. Comb. 20(5), 397–410 (1999)、Zbl 0944.05101、DOI 10.1006/eujc.1998.0276。
+
+残るのは MathSciNet 側の照合（候補1・3・γ）です。
