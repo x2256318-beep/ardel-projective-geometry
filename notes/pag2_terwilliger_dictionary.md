@@ -78,7 +78,7 @@
 |---|---|---|
 | P. Terwilliger, The subconstituent algebra of an association scheme I, J. Algebraic Combin. 1 (1992) 363–388；II・III, 同 2 (1993) 73–103, 177–210 | T(x) を M と M* の生成する代数として定義。半単純 | 書誌と要旨（emis） |
 | G. Bhattacharyya, S. Y. Song, R. Tanaka, Terwilliger algebras of wreath products of one-class association schemes, J. Algebraic Combin. 31 (2010) 455–466 | K_{n₁} ≀ ⋯ ≀ K_{n_d} は三重正則。主でない加群はすべて 1 次元。T(K_n^{≀d}) ≅ M_{d+1} ⊕ ℂ^{d(d+1)/2}（n ≥ 3）・ℂ^{d(d−1)/2}（n = 2） | 要旨（今回）。構造の式は前回の会話で確認 |
-| A. Hanaki, K. Kim, Y. Maekawa, Terwilliger algebras of direct and wreath products of association schemes, J. Algebra 343 (2011) 195–200 | **Thm 3.1：T(X × Y, S × T, (x₀, y₀)) ≅ T(X, S, x₀) ⊗_ℂ T(Y, T, y₀)**（仮定なし）。Thm 4.1：輪積 X ≀ Y（Y が thin か 1 クラスのとき）の中心べき等元 | 本文（著者版 PDF）の定理の文を確認 |
+| A. Hanaki, K. Kim, Y. Maekawa, Terwilliger algebras of direct and wreath products of association schemes, J. Algebra 343 (2011) 195–200 | **Thm 3.1：T(X × Y, S × T, (x₀, y₀)) ≅ T(X, S, x₀) ⊗_ℂ T(Y, T, y₀)**（仮定なし）。Thm 4.1：輪積 X ≀ Y（Y が thin か 1 クラスのとき）の中心べき等元 | 本文（著者版 PDF）の定理の文を確認（後注 2026-11-26 13:52、著者側（Muse）が信州大学の機関リポジトリの著者版プレプリント（2010-09-13 投稿）を読んだ結果による。構築側は本文を開いていない。定理 3.1（§3）は追加の仮定のない同型で、証明は M_{X×Y}(ℂ) ≅ M_X(ℂ) ⊗ M_Y(ℂ) のもとでの等号 T(S × T) = T(S) ⊗ T(T) を、生成元 σ_{(s,t)} = σ_s ⊗ σ_t、ε_{(x₀,y₀)(s,t)} = ε_{x₀s} ⊗ ε_{y₀t} での両向きの包含で示す。仮定（Y が thin か class-one）は定理 4.1（輪積）だけに付く。commutative・Schur・cyclotomic の語は本文にない。商（T(X/Y) 型）・fusion・部分スキームに沿った写像・準同型の記述は、この本文の範囲では見つからなかった（不存在の証明ではない）。唯一の epimorphism は補題 4.4 の証明中の T(S ∘ T) → M_{χ(1)}(ℂ)。文献表 [5] に Song「Fusion relation in products of association schemes」がある（HKM 自身の記述ではない）。書誌は J. Algebra 343(1) (2011) 195–200、DOI 10.1016/j.jalgebra.2011.05.035（リポジトリのレコードによる）。） |
 | S. Y. Song, B. Xu, arXiv:1008.2228；S. Y. Song, B. Xu, S. Zhou, Discrete Math. 340 (2017) 892–905 | 1 クラスのスキームの輪積の BM 代数と T の完全な構造。組合せ的拡大による見直し | 要旨だけ |
 | N. L. Bastian, S. P. Humphries, Schur rings over cyclic groups having almost commutative Terwilliger algebras, arXiv:2606.19095（2026-06） | 軌道 Schur 環 S(C_n, H) の T。n = p^k、H = Aut で次元 (3k²+5k+2)/2（p 奇数）・(3k²+3k+2)/2（p = 2）。Thm 4.6：合成数の n での almost commutative の判定。Thm 5.2：T(A × B) ≅ T(A) ⊗ T(B)（Hanaki–Kim–Maekawa を引用）。生成の結果はない | 前回の会話で要旨と本文の一部を確認。今回は要旨の抜粋だけ |
 | Y. Watanabe, Terwilliger algebras of generalized wreath products of association schemes, arXiv:2305.19258（2024） | 主べき等元 ε_0 = Σ (1/k_i)E*_i J E*_i（principal idempotent） | 検索結果の抜粋 |
@@ -117,7 +117,7 @@ MUSE の報告が挙げた Bannai–Munemasa (1995) は群スキーム（共役�
 | 45〜46（224〜225） | 二重可換子の構造、A = A″ | *-閉な行列代数の二重可換子定理 | 既知（一般論） | Lean の証明（ジャコブソンの稠密性定理）は形式化の仕事 |
 | 47（226） | dim A・dim A′・dim Z の素数べきごとの積の式 | dim T(0) = Π_p dim T(K_p^{≀k_p}) | 既知 | BST の次元（Bastian–Humphries の式とも一致）と HKM Thm 3.1。数値 (5)。確信度 高 |
 | 48（227） | ℂ^X ≅ ⊕ W_p ⊗ ℂ^{m(c)} | 標準加群の等型分解 | 既知（一般論） | — |
-| 49（228） | A_{ab} ≅ A_a ⊗ A_b | T(X × Y) ≅ T(X) ⊗ T(Y) | 既知 | HKM Thm 3.1（本文で確認）、Bastian–Humphries Thm 5.2。確信度 高 |
+| 49（228） | A_{ab} ≅ A_a ⊗ A_b | T(X × Y) ≅ T(X) ⊗ T(Y) | 既知 | HKM Thm 3.1（本文で確認）、Bastian–Humphries Thm 5.2。確信度 高（後注 2026-11-26 13:52、著者側（Muse）が信州大学の機関リポジトリの著者版プレプリント（2010-09-13 投稿）を読んだ結果による。構築側は本文を開いていない。定理 3.1 は仮定なしで、任意のスキームと任意の基点に当てはまるので、円分スキーム（基点 0）が仮定を満たすかの別の確認は要らない。［既知］のラベルはこのまま。） |
 | 50〜51（229〜230） | A′・Z の中国剰余定理による分解、(L(B) ⊔ R(B′))^c = L(B^c) ⊔ R(B′^c) | テンソル積の可換子と中心 | 既知の帰結・既知（一般論） | 有限次元の可換子定理。Lean では半単純を仮定しない形で示した |
 | 52〜53（231〜232） | 単数倍・dilComm の分解、原始指標の中国剰余定理、ブロックの射影と中心の極小べき等元の分解 | H = H_a × H_b、等型成分の分解 | 標準の計算＋既知 | ディリクレ指標の中国剰余定理は古典 |
 | 54〜56（233〜235） | 非対角の行列単位の位相（ゲージ）、ゲージつきクロネッカー積、族のテンソル積の同型 Ψ | 選んだ行列単位の基底の取り替え | 形式化固有 | 同型の存在は既知。位相 λ は PAG の行列単位の選び方による量 |
@@ -219,7 +219,7 @@ PAG の定義は使わず、関係 R_t の行列から組み立て直しまし�
 ## 8. 限界と未確認
 
 - 文献の確認は、要旨・抜粋・定理の文までです。
-  - HKM は本文の Thm 3.1 を読みました。BST・Bastian–Humphries は要旨と主な主張です（Bastian–Humphries の本文の一部は前回）。
+  - HKM は本文の Thm 3.1 を読みました。（後注 2026-11-26 13:52、著者側（Muse）が信州大学の機関リポジトリの著者版プレプリント（2010-09-13 投稿）を読んだ結果による。構築側は本文を開いていない。この行と §3 の文献表の行は「本文で確認」と書き、下の `shellLift` の行・材料索引 5.1・下書きは「本文は構築側で取得できず」と書いていて、記録の中で食い違っていた（どの回に誰が読んだかは記録で追えていない）。著者側の読みで、定理 3.1 の文は文献表の行のとおりと確かめられた。）BST・Bastian–Humphries は要旨と主な主張です（Bastian–Humphries の本文の一部は前回）。
   - Song–Xu・Song–Xu–Zhou・Watanabe・Curtin–Nomura の本文は読んでいません。Bastian の学位論文も確認していません。
   - Bastian–Humphries の Thm 4.6 の正確な仮定は原文で確かめていません。素冪では BST により almost commutative なので、そこでの「合成数」は素冪でない数の意味と読みました。
 - 「既知の帰結」は、数行で従うと私が判断したものです。その推論は Lean にしていません（PAG の Lean の証明は、これとは独立に済んでいます）。
@@ -485,7 +485,7 @@ Part の番号は使っていません。詳しい記録は `pag2_audit_after_pa
 | `listChar` | Part 257（PAG261） | 互いに素な法の指標の積 χ = χ₁⋯χ_k（法 ∏ q_i の指標） | Bristol 大学の講義ノート「13. Gauss sums」の Lemma 13.3 の設定（(q₁, q₂) = 1、χ_i は法 q_i、χ = χ₁χ₂）。検索結果の抜粋で確認（2026-11-20）。 |
 | `cross` | Part 257（PAG261） | ガウス和の乗法公式 τ(χ₁χ₂) = τ(χ₁)τ(χ₂)χ₁(q₂)χ₂(q₁) の交差項 χ₁(q₂)χ₂(q₁)（k 個への一般化） | 同上の Lemma 13.3（2 個の場合）。k 個の形は Part 257 の Lean の文で、文献での k 個の形は確かめていない。K. Conrad の Gauss and Jacobi sums on finite fields and ℤ/mℤ にはこの公式はない（WebFetch の要約、2026-11-20）。 |
 | `oddCount` | Part 257（PAG261） | 文献用語なし（奇の指標の個数。i^a の分の符号の数え上げ） | ― |
-| `shellLift` | Part 258（PAG262） | 直積スキームの Terwilliger 代数のテンソル積分解 T(X × Y) ≅ T(X) ⊗ T(Y) を通した、左の因子の埋め込み S ↦ S ⊗ 1 | 分解は Hanaki–Kim–Maekawa（2011）の Thm 3.1（§3 の文献表の行。本文は構築側で取得できず、盲検の申告）と、Part 228 の `shellAlgTensorEquiv`（§3 の行 `crtConj`）。埋め込み S ↦ S ⊗ 1 そのものは定義の読み（`Algebra.TensorProduct.includeLeft`）。 |
+| `shellLift` | Part 258（PAG262） | 直積スキームの Terwilliger 代数のテンソル積分解 T(X × Y) ≅ T(X) ⊗ T(Y) を通した、左の因子の埋め込み S ↦ S ⊗ 1 | 分解は Hanaki–Kim–Maekawa（2011）の Thm 3.1（§3 の文献表の行。本文は構築側で取得できず、盲検の申告）（後注 2026-11-26 13:52、著者側（Muse）が信州大学の機関リポジトリの著者版プレプリント（2010-09-13 投稿）を読んだ結果による。構築側は本文を開いていない。定理 3.1 は文献表の行のとおり、仮定なしの同型。）と、Part 228 の `shellAlgTensorEquiv`（§3 の行 `crtConj`）。埋め込み S ↦ S ⊗ 1 そのものは定義の読み（`Algebra.TensorProduct.includeLeft`）。 |
 | `dTop` | Part 258（PAG262） | 基点の双対べき等元 E*_0（D_N = δ_0 への射影） | §3 の行「D_t … D_N = δ_0 への射影 ↔ 双対べき等元 E*_t、E*_0」。定義の読み。 |
 | `eTop` | Part 258（PAG262） | 自明な原始べき等元 E_0 = J/\|X\|（定数 1/N の畳み込み） | §3 の行「E_ND_NE_N = (1/N)E_N ↔ \|X\|E_0E*_0E_0 = E_0」。定義の読み。 |
 | `UDvd` | Part 259（PAG263） | ユニタリ約数（unitary divisor、Hall divisor）：d ∣ n かつ gcd(d, n/d) = 1 | E. Cohen, Arithmetical functions associated with the unitary divisors of an integer, Math. Z. 74（1960）66–80（書誌は EuDML で確認、本文は読んでいない）。定義は Wikipedia の Unitary divisor の項で確認（2026-11-20）。 |
