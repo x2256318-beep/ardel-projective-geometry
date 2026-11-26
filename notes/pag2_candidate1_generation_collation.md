@@ -26,7 +26,7 @@
   - 項目 67〜69（素冪）：既知の 1 次元加群の番号（Song–Xu の中心べき等元）の上の短い場合分けです。
   - 項目 67〜69（合成数）：既知の構造（テンソル積）の上の追加の計算で、文献の結果から直ちには出ません。**残余はここにあります。**
 - **判定（確信度：中）。** 新規候補のまま残ります。ただし範囲は「合成数の N での生成の分類」（項目 66 の合成数の場合と 67〜69）に絞られます。新しい現象ではなく「書かれていない計算」の種類です。著者の新しい規則の「残余が計算の細部だけなら小さいノート」に当たる見込みです。CLAUDE.md §3 の書き換えは著者側で行われます。
-- **MathSciNet・zbMATH：未実施。**
+- **MathSciNet・zbMATH：未実施。**（後注 2026-11-26 14:25、著者側（Muse）が zbMATH の公開 API で §3 の検索式を実行した結果による。構築側は zbMATH を開けていない。詳細は `pag2_literature_zbmath_20261126.md` §6。zbMATH は済み：2 つの検索（ti:Terwilliger & (cyclic | cyclotomic | "Schur ring") で 2 件、"Terwilliger algebra" & generat* & (cyclic | "Schur ring") で 4 件）の範囲で、生成系の分類は見つからなかった（不存在の証明ではない）。Ishibashi–Ito–Yamada の 3 人目は Yamada, Mieko（Zbl 0944.05101）。未了は MathSciNet。）
   - MathSciNet はこのコンテナからは使えません。
   - zbMATH Open は直接の検索ができません。「zbMATH」を含むウェブ検索でも zbMATH の項目は出てきませんでした。
   - 正式な文献調査は、著者側か専門家への照会でお願いします。

@@ -36,7 +36,7 @@
   - BC の群環の帰納系は、整除の順序のすべての段 n ∣ m を使う。
   - 一方、殻代数 A_N（= T(0)）の側では、引き戻しと両立し殻を混ぜない単位的な写像があるのは互いに素な段だけで（Part 258（PAG262）の `PAG.Part262.exists_compatible_hom_iff`。殻を混ぜない条件は強い読み、2026-11-19 に著者が確定）、添字の順序は有向でない（Part 259（PAG263）の `PAG.Part263.not_isDirected_udvd`）。
   - したがって、BC の帰納系をそのまま T(0) の側に持ち上げる形は、この条件のもとでは取れない。γ の問いは、この食い違いを踏まえて「どの条件のもとで、何が T(0) の側に届くか」と立て直す余地がある。
-- 方向 γ は開いたまま。MathSciNet・zbMATH は著者側の作業として残る。
+- 方向 γ は開いたまま。MathSciNet・zbMATH は著者側の作業として残る。（後注 2026-11-26 14:25、著者側（Muse）が zbMATH の公開 API で §3 の検索式を実行した結果による。構築側は zbMATH を開けていない。詳細は `pag2_literature_zbmath_20261126.md` §6。zbMATH は "Bost-Connes" & ("association scheme" | Terwilliger | "Schur ring") で 0 件（"Bost-Connes" 単独では 57 件）。残るのは MathSciNet。）
 
 ## §3 記録
 

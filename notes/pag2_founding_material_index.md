@@ -389,9 +389,9 @@
   - 範囲は Part 245〜248（PAG249〜PAG252）。項目 66 の宣言が PAG249（Part 245）にあるため、CLAUDE.md §3 の「Part 246–248」を 2026-11-19 に著者の承認で訂正した。
   - 項目 66：`PAG.Part249.sumSub_eq_shellAlg_iff`。項目 68：`PAG.Part251.addEAlg_one_eq_shellAlg_iff`。完全な分類：`PAG.Part252.addEAlg_eq_shellAlg_iff_all`。
   - 新規候補として残る範囲は合成数の N（確信度：中）。評価は「小さいノートの水準」。
-  - MathSciNet・zbMATH は未実施。ノートの言葉では「著者側か専門家への照会」をお願いしている。
+  - MathSciNet・zbMATH は未実施。ノートの言葉では「著者側か専門家への照会」をお願いしている。（後注 2026-11-26 14:25、著者側（Muse）が zbMATH の公開 API で §3 の検索式を実行した結果による。構築側は zbMATH を開けていない。詳細は `pag2_literature_zbmath_20261126.md` §6。zbMATH：2 つの検索（2 件・4 件）の範囲で、ℤ/N 上の円分（軌道）Schur 環の T(0) の生成系を分類した項目は見つからなかった（不存在の証明ではない）。合成数の N に触れるのは Bastian–Humphries（2026）だけで、扱うのは Terwilliger 代数が almost commutative になる Schur 環の分類。未了は MathSciNet。候補 1 の地位と、外部で新規性として使わない扱いは変えない。）
   - ノート：`pag2_candidate1_generation_collation.md`、CLAUDE.md §3。
-- 候補 3：Part 258 の不存在の側（5.1）。骨格は、その文献照合（MathSciNet・zbMATH）を著者自身の作業としている。
+- 候補 3：Part 258 の不存在の側（5.1）。骨格は、その文献照合（MathSciNet・zbMATH）を著者自身の作業としている。（後注 2026-11-26 14:25、著者側（Muse）が zbMATH の公開 API で §3 の検索式を実行した結果による。構築側は zbMATH を開けていない。詳細は `pag2_literature_zbmath_20261126.md` §6。zbMATH：キーワード検索 16 件の題とレビューの範囲で、異なるスキームの T のあいだの準同型・商スキームに沿った写像を扱う項目は見つからなかった。HKM の被引用 16 件（Semantic Scholar。zbMATH の cited by は API で取れず）は題を見た範囲で輪積・積構造の後続で、商に沿った写像は題からは見えない。未了は MathSciNet。）
 - かつての候補 2（定理 2.6 の提示形）は候補から外れた（2.3）。
 
 **6.3 Bost–Connes との接続。**
@@ -431,9 +431,9 @@
 
 - **著者の確認待ち**：なし（2026-11-19 にすべて閉じた。「貼り合わせ」は U、Part 258 の条件は強い読み）。
 - **著者側の作業**（担当は骨格と CLAUDE.md §2 の記載による）：
-  - 方向 γ の文献照合（6.3）。構築側で開ける範囲は 2026-11-19 に済み、MathSciNet・zbMATH が残る。
+  - 方向 γ の文献照合（6.3）。構築側で開ける範囲は 2026-11-19 に済み、MathSciNet・zbMATH が残る。（後注 2026-11-26 14:25、著者側（Muse）が zbMATH の公開 API で §3 の検索式を実行した結果による。構築側は zbMATH を開けていない。詳細は `pag2_literature_zbmath_20261126.md` §6。zbMATH は 0 件（"Bost-Connes" 単独では 57 件で、検索式の失敗ではない）。残るのは MathSciNet。）
   - 候補 3 の文献照合（5.1）。MathSciNet・zbMATH と、Hanaki–Kim–Maekawa の本文（構築側の環境から取得できない）が残る。（後注 2026-11-26 12:1x：構築側がもう 1 回試した。信州大学の機関リポジトリの PDF（`soar-ir.repo.nii.ac.jp/record/11832`）は検索結果に要旨と序論の冒頭だけが出て、本文は取得の道具では開けなかった（リダイレクト先の URL が長すぎて取得の許可リストで拒まれる）。商に沿った写像の確認は著者側の作業のまま。）（後注 2026-11-26 13:52、著者側（Muse）が信州大学の機関リポジトリの著者版プレプリント（2010-09-13 投稿）を読んだ結果による。構築側は本文を開いていない。この項目のうち HKM の本文は済んだ：商に沿った写像の記述は本文の範囲で見つからなかった。残るのは MathSciNet・zbMATH。）
-  - 候補 1 の MathSciNet・zbMATH（6.2。ノートの言葉では「著者側か専門家への照会」）。
+  - 候補 1 の MathSciNet・zbMATH（6.2。ノートの言葉では「著者側か専門家への照会」）。（後注 2026-11-26 14:25、著者側（Muse）が zbMATH の公開 API で §3 の検索式を実行した結果による。構築側は zbMATH を開けていない。詳細は `pag2_literature_zbmath_20261126.md` §6。zbMATH は済み（6.2 の後注）。残るのは MathSciNet。候補 3 も同じく zbMATH は済み、残るのは MathSciNet。）
 - **Lean の外・数値のみで残るもの**：
   - 構造定理 C_ℚ ≅ Ẑ^× × ℝ_{>0}（1.2・1.3）。
   - 定理 2.6 の逆向き（2.2）。

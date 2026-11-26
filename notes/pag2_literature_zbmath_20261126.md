@@ -11,7 +11,7 @@
 ## §2 一般のウェブ検索で分かったこと
 
 1. **Hanaki–Kim–Maekawa の本文は、信州大学の機関リポジトリで公開されているとみられる**（ファイルは開けていない）（`soar-ir.repo.nii.ac.jp/record/11832/files/Terwilliger_algebras_direct_wreath_products.pdf`。題・著者・要旨はウェブ検索の抜粋で確認）。ただし、ファイルが長い署名つきの URL に転送され、構築側の取得の道具では開けなかった。著者がこの URL を開けば本文を確かめられる。書誌：J. Algebra 343 (2011) 195–200（Kim arXiv:1109.1334 の要旨による）。候補 3 で確かめたいのは、商 ℤ/M → ℤ/N に沿った写像（単位的な写像を含む）を扱っているかどうか。（後注 2026-11-26 13:52、著者側（Muse）が信州大学の機関リポジトリの著者版プレプリント（2010-09-13 投稿）を読んだ結果による。構築側は本文を開いていない。定理 3.1 は仮定なしの同型、仮定は定理 4.1（輪積）だけ。商に沿った写像の記述はこの本文の範囲で見つからなかった。書誌は J. Algebra 343(1) (2011) 195–200、DOI 10.1016/j.jalgebra.2011.05.035 で、Kim の引用と一致。詳細は辞書 §3 の文献表の行の後注。）
-2. **円分スキームの Terwilliger 代数と Jacobi 和の論文**：Bastian–Humphries（arXiv:2409.09167）の文献表の [23] は「Haruo Ishibashi, Tatsuro Ito, Mieko Tamada, Terwilliger algebras of cyclotomic schemes and Jacobi sums, European Journal of Combinatorics 20 (1999) 397–410」（取得ツールの要約による）。この鎖の記録（`pag2_candidate1_generation_collation.md`、辞書）では著者を「Ishibashi–Ito–Yamada」と書いており、3 人目の著者名が食い違う（どちらが正しいかは未確認。統合照合 IX の照合者のウェブ検索で、dblp のレコードのキーが `journals/ejc/IshibashiIY99`（3 人目の頭文字が Y）だったので、Yamada の見込み（dblp のキーによる。頁は未見））。Akiyama（Acta Arith. 75 (1996)）は、Jacobi 和の有理性が円分スキームの Terwilliger 代数の既約加群の特徴づけに使われると書いている（私的版の抜粋）。
+2. **円分スキームの Terwilliger 代数と Jacobi 和の論文**：Bastian–Humphries（arXiv:2409.09167）の文献表の [23] は「Haruo Ishibashi, Tatsuro Ito, Mieko Tamada, Terwilliger algebras of cyclotomic schemes and Jacobi sums, European Journal of Combinatorics 20 (1999) 397–410」（取得ツールの要約による）。この鎖の記録（`pag2_candidate1_generation_collation.md`、辞書）では著者を「Ishibashi–Ito–Yamada」と書いており、3 人目の著者名が食い違う（どちらが正しいかは未確認。（後注 2026-11-26 14:25：zbMATH の項目 Zbl 0944.05101 で 3 人目は Yamada, Mieko と確定。著者側の API 検索による。DOI 10.1006/eujc.1998.0276。Bastian–Humphries の文献表の「Tamada」は誤記とみられる。）統合照合 IX の照合者のウェブ検索で、dblp のレコードのキーが `journals/ejc/IshibashiIY99`（3 人目の頭文字が Y）だったので、Yamada の見込み（dblp のキーによる。頁は未見））。Akiyama（Acta Arith. 75 (1996)）は、Jacobi 和の有理性が円分スキームの Terwilliger 代数の既約加群の特徴づけに使われると書いている（私的版の抜粋）。
    - 位置づけ（構築側の読み、確信度：中）：この論文の「円分スキーム」は有限体の上のもの（乗法群の部分群の剰余類）で、この鎖の ℤ/N 上の軌道 Schur 環（候補 1 の対象）とは別の対象（記録の既存の注意どおり）。ただし、Terwilliger 代数の構造に Jacobi 和が現れる点は、Part 262（PAG266）の赤道の係数（Jacobi 和の 𝔀 による書き換え）と近い。Part 262 のラベル（ガウス和の形［既知］、ほか［再導出（小さい）］）を変える根拠にはならないが、辞書 §20 の近い先行として載せる価値がある（本文は未確認）。
 2b. **局所環の上の円分スキーム**（同日の追加の検索）：H. Ishibashi「The Terwilliger algebras of certain association schemes over the Galois rings of characteristic 4」Graphs and Combinatorics 12 (1996) 39–54（DOI 10.1007/BF01858443。unpaywall の頁の要旨と文献表で確認）。標数 4 の Galois 環の上の円分スキームについて、Terwilliger 代数の既約加群の多くが標準の形をとり、そうでない場合は環の上の Jacobi 和の関係が成り立つこと、class 3 では Jacobi 和で既約加群が完全に決まることを示す。有限体の場合の先行は Ishibashi–Ito–Munemasa「The Terwilliger algebras of cyclotomic schemes and the rationality of Jacobi sums」（Algebraic Combinatorics, Fukuoka 1993, pp. 43–44、同じ頁の文献表による）。
    - 位置づけ（構築側の読み、確信度：低〜中）：標数 4 の Galois 環の次数 1 は ℤ/4 なので、ℤ/p^k の上の軌道スキームの Terwilliger 代数と Jacobi 和の関係について、局所環の場合の先行に当たる可能性がある（この鎖の素数冪の結果はすでに［既知］）。Part 262（PAG266）の赤道の係数（素数冪の法での Jacobi 和）の近い先行の候補として辞書に載せる。本文は未確認で、「円分スキーム」の定義（単数群のどの部分群の剰余類か）がこの鎖の軌道スキームと一致するかも未確認。
@@ -47,3 +47,19 @@ MathSciNet（購読が必要）：上と同じ語に加えて、Hanaki–Kim–M
 - Claude in Chrome：拡張がつながっておらず使えなかった（著者はモバイルのアプリから送信）。
 - 著者が §3 の 6 つの検索式の URL をメッセージに貼って送った（許可リストの条件は満たした）。6 つとも WebFetch がサイト側のエラー（client_error）で失敗し、ページの中身は 1 文字も取れなかった。zbMATH の側が自動取得を受け付けないとみられる（原因の見立ては構築側の推測）。
 - 結論：zbMATH・MathSciNet の照合は、構築側の環境からは実施できない。著者側（ブラウザで開く）の作業として残る。候補 1・候補 3・方向 γ の地位と留保は変えない。
+
+## §6 著者側の zbMATH 照合（2026-11-26 14:25 受領）
+
+- 方法（著者側の報告）：zbMATH のウェブ画面はクラウドブラウザから Cloudflare の検証で塞がれ、テキスト取得も 403。§3 の 6 つの検索文字列をそのまま zbMATH Open の公開 API に通した（同じデータベース）。HKM の「cited by」はウェブの項目ページにしかなく API で取れないので、Semantic Scholar の引用一覧（16 件。OpenAlex の被引用数 16 と一致）で代えた。構築側は zbMATH を開けておらず、以下は著者側の報告をもとに構築側が書いた。
+- 候補 1：
+  - `ti:Terwilliger & (cyclic | cyclotomic | "Schur ring")`：2 件。Zbl 0944.05101（Ishibashi–Ito–Yamada、Eur. J. Comb. 20(5) 397–410 (1999)。有限体の上の円分スキームで T が中心化代数と一致するかの問題、Gauss 和に帰着、e = 2 で完全な答え。ℤ/N でも生成系でもない）。arXiv:2606.19095（Bastian–Humphries 2026。巡回群の上の軌道 Schur 環のうち T が almost commutative になるものの分類。著者側が要旨を直接確認）。
+  - `"Terwilliger algebra" & generat* & (cyclic | "Schur ring")`：4 件。arXiv:2409.09167（Bastian–Humphries 2024）、Zbl 1533.05301（Maleki、C_n ⋊ C_2 の群スキーム、Discrete Math. 347(2) 2024）、Zbl 0969.11029（Shiratani–Yamada、Jacobi 和の有理性、Colloq. Math. 73(2) 1997）、arXiv:2609.06747（Lu 2026）。
+  - 結論：この 2 検索の範囲で、ℤ/N 上の円分（軌道）Schur 環の T(0) の生成系を分類した項目は見つからなかった（不存在の証明ではない）。
+- 候補 3：
+  - `ai:hanaki.akihide & ti:Terwilliger`：3 件（Zbl 1479.05366（2021、modular）、Zbl 1235.05157（HKM、J. Algebra 343(1) 195–200 (2011)）、Zbl 1516.05228（Hanaki–Yoshikawa 2023））。
+  - HKM の被引用（Semantic Scholar、16 件）：Kim 2011、Maldonado–Penazzi 2012、Kim 2015、Muzychuk–Xu 2016、Song–Xu–Zhou 2017、Xu 2017・2019、Balmaceda–Briones 2022、Watanabe 2023、Bastian–Humphries 2024、Bastian 2024、Yang ほか 2024（2 本）・2025・2026、Herman 2024、Bastian–Humphries 2026。題を見た範囲では輪積・積構造の後続で、商に沿った写像は見えない（本文・要旨は見ていない）。
+  - `"Terwilliger algebra" & (homomorphism | quotient | fusion | "quotient scheme")`：16 件。題とレビューの範囲で、異なるスキームの T のあいだの準同型・商スキームに沿った写像を扱う項目は見つからなかった。近いもの 3 件：Curtin 2008（原始的でない Bose–Mesner 代数。T ではない）、Huang–Lee 2026（普遍代数から T への全射準同型。スキームのあいだの写像ではない）、Jiang 2022（1 つの T の中の商加群）。
+- 方向 γ：`"Bost-Connes" & ("association scheme" | Terwilliger | "Schur ring")`：0 件（API の応答「No results found」。対照として "Bost-Connes" 単独は 57 件）。
+- 書誌：Ishibashi–Ito の論文の 3 人目は Yamada, Mieko（Zbl 0944.05101、DOI 10.1006/eujc.1998.0276）。
+- 限界：検索はこの 6 つの式に限る。レビューのない項目は題だけで判断している。「見つからなかった」は不存在の証明ではない。
+- 地位：候補 1・候補 3・方向 γ の地位は変えない。CLAUDE.md §3 の留保のうち未了は MathSciNet だけになり、外部（応募書類を含む）で新規性として使わない扱いは変わらない。CLAUDE.md の §3 の「MathSciNet・zbMATH は未実施」の文面は、著者のファイルなので構築側では書き換えていない。
