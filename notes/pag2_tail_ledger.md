@@ -4,6 +4,13 @@
 
 ## 開いている項目
 
+### L43：玩具「∞ と −∞ と 0 が射影でねじれて繋がる」の原点からの積み上げ（2026-11-27 08:1x、新しい材料）
+
+- 著者の依頼（08:04）と設定の回答による。新しいノート `notes/pag2_toy_origin_buildup.md` と `records/toy_origin/`（`toy_check.py` とログ）。新しいパートではなく短期層の小さいノート。解像度は使わない。
+- 引き継ぎメモに 1 行。
+- 基礎文書の本文・索引・CLAUDE.md は変えていない。
+- 扱い：照合は受けていない。次のパートの統合照合に載せる（著者が求めれば独立の照合にかける）。
+
 ### L42：短縮版 CLAUDE.md の統合照合の後の直し（2026-11-27 07:1x）
 
 - 範囲：短縮版の網羅性の統合照合（`records/claude_md_slim_check/output_recheck.md`）の指摘を受けた CLAUDE.md・CLAUDE.en.md の直し（M1〜M6、L3、L6、L7、L9、V11、V13、V14 の一部）。一覧は `records/claude_md_slim_check/fixes.md` の 2 回目の節。
