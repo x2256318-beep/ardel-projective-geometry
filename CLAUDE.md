@@ -100,7 +100,7 @@
 
 ## 7. 参照
 
-- `CLAUDE-history.md`：2026-11-26 時点の全文（判断の経緯・根拠の正文）
+- `CLAUDE-history.md`：2026-11-26 時点の全文（判断の経緯・根拠の正文）。英語版は `CLAUDE.en.md`（短縮版の訳）と `CLAUDE-history.en.md`（旧英訳の全文）
 - `notes/pag2_founding_material_index.md`：基礎文書の索引
 - `notes/pag2_terwilliger_dictionary.md`：辞書
 - `notes/pag2_tail_ledger.md`：照合の尾の台帳
