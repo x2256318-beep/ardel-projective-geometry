@@ -40,3 +40,10 @@ MathSciNet（購読が必要）：上と同じ語に加えて、Hanaki–Kim–M
 - WebSearch（限定なし）：「Hanaki Kim Maekawa "Terwilliger algebras" direct products association schemes」「Terwilliger algebra cyclotomic association scheme Z_n generators classification」「"Terwilliger algebras of direct and wreath products of association schemes" J. Algebra 343 2011」「Ishibashi Ito Tamada "Terwilliger algebras of cyclotomic schemes and Jacobi sums"」。
 - WebFetch：Hanaki–Kim–Maekawa の PDF（転送先の URL が 250 文字を超え、取得できなかった）、arXiv:2409.09167（文献表の [23] を確認）。
 - 「見つからなかった」は不存在の証明ではない。
+
+## §5 2 回目の試み（2026-11-26 13:55〜14:00、著者の 13:55 の依頼「候補 1・候補 3・方向 γ の MathSciNet・zbMATH 照合」）
+
+- WebFetch で `api.zbmath.org` の検索 API と `zbmath.org/?q=…` を構築側が組み立てて試した：許可リストにないとして断られた。
+- Claude in Chrome：拡張がつながっておらず使えなかった（著者はモバイルのアプリから送信）。
+- 著者が §3 の 6 つの検索式の URL をメッセージに貼って送った（許可リストの条件は満たした）。6 つとも WebFetch がサイト側のエラー（client_error）で失敗し、ページの中身は 1 文字も取れなかった。zbMATH の側が自動取得を受け付けないとみられる（原因の見立ては構築側の推測）。
+- 結論：zbMATH・MathSciNet の照合は、構築側の環境からは実施できない。著者側（ブラウザで開く）の作業として残る。候補 1・候補 3・方向 γ の地位と留保は変えない。
