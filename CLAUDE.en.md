@@ -19,6 +19,7 @@ The purpose of these steps is not to avoid mapping. What is to be prevented is t
 - The aim is to build "Ardel projective geometry" (**the original path**). Ardel is short for idele-adele, the author's coinage for a geometry containing the multiplicative ideles and the additive adeles. PAG stands for Projective Adelic Geometry. The name means "fusing adelic geometry and idelic geometry by projection."
 - The points are the primes plus the infinite place. At the infinite place, the infinitely large and the infinitely small overlap.
   - Reading of the "overlap": a **twisted gluing (boundary unitary U)**. The reading of the identification of the two ends as a group quotient is not adopted because it is incompatible with A1 (a cubic character mod 9 is a counterexample). A quotient by W is compatible with A1 but is not adopted either (D does not descend to the quotient).
+  - In the toy (`notes/pag2_toy_origin_buildup.md`), "twisted connection" is read as the rotation of complex character pairs (the rotation, by the A1 phase 𝔀(χ), of the plane obtained by realifying the pair χ, χ̄), not the Möbius-type −1 (the author's choice, 2026-11-27 08:21).
 - The foundation is discrete; continuous objects such as the line do not exist in the foundation.
 - The line is the effective form that emerges when the resolution is lowered.
   - The resolution parameter is **undecided**. Do not identify it with N, K, or Λ.
