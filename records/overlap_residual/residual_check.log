@@ -1,0 +1,5 @@
+(a) 原始指標 2657 個（法 3〜120）：残り r と (−i)^a の差の最大 5.6e-14
+(b) ∏ε_p = 1 となる原始指標 36 個。そのときの (法, a, 𝔀) の例： [(5, 0, np.complex128(1+0j)), (8, 0, np.complex128(1+0j)), (12, 0, np.complex128(1+0j)), (13, 0, np.complex128(1+0j)), (17, 0, np.complex128(1+0j)), (21, 0, np.complex128(1+0j)), (24, 0, np.complex128(1+0j)), (28, 0, np.complex128(1+0j))]
+    𝔀 の値の集合： [(np.float64(1.0), np.float64(-0.0))]
+(c) N ∣ 24 の原始指標： [(3, 1, np.complex128(1+0j), np.complex128(-1j)), (4, 1, np.complex128(1+0j), np.complex128(-1j)), (8, 0, np.complex128(1+0j), np.complex128(1+0j)), (8, 1, np.complex128(1+0j), np.complex128(-1j)), (12, 0, np.complex128(1+0j), np.complex128(1+0j)), (24, 1, np.complex128(1+0j), np.complex128(-1j)), (24, 0, np.complex128(1+0j), np.complex128(1+0j))]
+(d) 作用素としての「素点で恒等」：段 9 のログ（records/toy_origin/stage9/padic_axis.log）の (a)・(b) のとおり、分岐する素点の J_p∘F_p は幅 e ≥ 1 の平行移動、不分岐の素点の記号 σ(z) = (1 − p^{−1/2}z)/(1 − p^{−1/2}z^{−1}) は恒等的に 1 ではない。したがって「素点の貼り合わせが恒等」は作用素としてはどの素点でも起こらず、値 ε_p(1/2) の側の条件としてだけ意味を持つ。
